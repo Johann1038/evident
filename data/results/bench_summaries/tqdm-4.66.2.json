@@ -1,0 +1,26 @@
+{
+ "dist": "tqdm",
+ "version": "4.66.2",
+ "advisories": 1,
+ "tops": [
+  "tqdm"
+ ],
+ "probe_errors": {},
+ "advisory_symbols": {
+  "CVE-2024-34062": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  }
+ },
+ "triggerable": {
+  "CVE-2024-34062": {
+   "trigger": [
+    "cast"
+   ],
+   "safe": [
+    "bar"
+   ]
+  }
+ }
+}

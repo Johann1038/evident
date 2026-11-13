@@ -1,0 +1,16 @@
+{
+ "dist": "markdown",
+ "version": "3.3.4",
+ "advisories": 1,
+ "tops": [
+  "markdown"
+ ],
+ "probe_errors": {},
+ "advisory_symbols": {
+  "CVE-2025-69534": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  }
+ }
+}

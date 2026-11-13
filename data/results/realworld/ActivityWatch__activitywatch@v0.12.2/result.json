@@ -1,0 +1,363 @@
+{
+ "id": "ActivityWatch__activitywatch@v0.12.2",
+ "meta": {
+  "id": "ActivityWatch__activitywatch@v0.12.2",
+  "repo": "ActivityWatch/activitywatch",
+  "tag": "v0.12.2",
+  "published_at": "2023-03-22T17:00:53Z",
+  "stars": 19601,
+  "lock_kind": "poetry",
+  "lock_file": "poetry.lock",
+  "lock_path": "poetry.lock",
+  "subdir": "",
+  "manifest": "pyproject.toml",
+  "requires_python": "^3.8,<3.11",
+  "description": "The best free and open-source automated time tracker. Cross-platform, extensible, privacy-focused.",
+  "topics": [
+   "activitywatch",
+   "afk",
+   "analytics",
+   "app",
+   "cross-platform",
+   "dashboard",
+   "productivity",
+   "quantified-self",
+   "time-tracker",
+   "time-tracking",
+   "timetracker",
+   "timetracking"
+  ]
+ },
+ "python": "3.10",
+ "summary": {
+  "locked": 24,
+  "installed": 22,
+  "direct": 8,
+  "transitive": 14,
+  "edges": 31,
+  "edges_from_lock": true
+ },
+ "stats": {
+  "app_modules": 4,
+  "pkgs_analysed": 7,
+  "pkgs_no_source": 0,
+  "seconds": 118.74,
+  "funcs": 11252,
+  "roots": 22
+ },
+ "scan_seconds": 122.9,
+ "sdist_only": [
+  "future",
+  "pefile"
+ ],
+ "baseline_resolution": {
+  "ok": true,
+  "seconds": 0.6,
+  "error": ""
+ },
+ "baseline_drift": 0,
+ "strategies": {
+  "audit_fix": {
+   "planned": {
+    "future": "1.0.0",
+    "pyinstaller": "6.0.0",
+    "pytest": "9.0.3",
+    "setuptools": "84.1.0"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 0.3,
+   "residual_findings": 0,
+   "residual_risk_evident": 0.0,
+   "residual_risk_vm": 0.0,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 6,
+   "major_bumps": 4,
+   "added": 1,
+   "removed": 0,
+   "planned_changes": 4,
+   "unplanned_changes": 2,
+   "plan_not_realised": 0
+  },
+  "latest": {
+   "planned": {
+    "future": "1.0.0",
+    "setuptools": "84.2.1",
+    "pytest": "9.2.0",
+    "pyinstaller": "6.22.3"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 0.3,
+   "residual_findings": 0,
+   "residual_risk_evident": 0.0,
+   "residual_risk_vm": 0.0,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 8,
+   "major_bumps": 6,
+   "added": 1,
+   "removed": 0,
+   "planned_changes": 4,
+   "unplanned_changes": 4,
+   "plan_not_realised": 0
+  },
+  "upgrade_all": {
+   "planned": null,
+   "ok": true,
+   "error": "",
+   "seconds": 3.1,
+   "residual_findings": 1,
+   "residual_risk_evident": 0.00028799876446249323,
+   "residual_risk_vm": 0.8699999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 24,
+   "major_bumps": 11,
+   "added": 5,
+   "removed": 0
+  },
+  "vm_opt": {
+   "planned": {
+    "future": "1.0.0",
+    "pluggy": "1.7.0",
+    "pyinstaller": "6.0.0",
+    "pytest": "9.0.3",
+    "setuptools": "84.2.1"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 2.4,
+   "model_residual": 0.0,
+   "model_cost": 14.7,
+   "scope": 7,
+   "residual_findings": 0,
+   "residual_risk_evident": 0.0,
+   "residual_risk_vm": 0.0,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 6,
+   "major_bumps": 4,
+   "added": 1,
+   "removed": 0,
+   "planned_changes": 5,
+   "unplanned_changes": 1,
+   "plan_not_realised": 0
+  },
+  "coral_opt": {
+   "planned": {},
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.1,
+   "model_residual": 0.56,
+   "model_cost": 0.0,
+   "scope": 7,
+   "residual_findings": 8,
+   "residual_risk_evident": 0.001853785150563175,
+   "residual_risk_vm": 5.6,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 0,
+   "major_bumps": 0,
+   "added": 0,
+   "removed": 0,
+   "planned_changes": 0,
+   "unplanned_changes": 0,
+   "plan_not_realised": 0
+  },
+  "cape_opt": {
+   "planned": {
+    "future": "1.0.0",
+    "pyinstaller": "6.0.0",
+    "setuptools": "84.2.1"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.3,
+   "model_residual": 0.23799999999999996,
+   "model_cost": 9.5,
+   "scope": 7,
+   "residual_findings": 1,
+   "residual_risk_evident": 0.00022510248256838553,
+   "residual_risk_vm": 0.6799999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 3,
+   "major_bumps": 3,
+   "added": 0,
+   "removed": 0,
+   "planned_changes": 3,
+   "unplanned_changes": 0,
+   "plan_not_realised": 0
+  },
+  "evident": {
+   "planned": {},
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.1,
+   "model_residual": 0.0018537851505631751,
+   "model_cost": 0.0,
+   "scope": 7,
+   "residual_findings": 8,
+   "residual_risk_evident": 0.001853785150563175,
+   "residual_risk_vm": 5.6,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 0,
+   "major_bumps": 0,
+   "added": 0,
+   "removed": 0,
+   "planned_changes": 0,
+   "unplanned_changes": 0,
+   "plan_not_realised": 0
+  }
+ },
+ "original": {
+  "residual_findings": 8,
+  "residual_risk_evident": 0.001853785150563175,
+  "residual_risk_vm": 5.6,
+  "residual_confirmed": 0,
+  "new_findings": 0,
+  "changed": 0,
+  "major_bumps": 0,
+  "added": 0,
+  "removed": 0
+ },
+ "pareto_evident": [
+  {
+   "lambda": 0.0,
+   "risk": 0.0007448243908512757,
+   "cost": 12.9,
+   "changes": 5
+  },
+  {
+   "lambda": 0.02,
+   "risk": 0.0018537851505631751,
+   "cost": 0.0,
+   "changes": 0
+  },
+  {
+   "lambda": 0.05,
+   "risk": 0.0018537851505631751,
+   "cost": 0.0,
+   "changes": 0
+  },
+  {
+   "lambda": 0.1,
+   "risk": 0.0018537851505631751,
+   "cost": 0.0,
+   "changes": 0
+  },
+  {
+   "lambda": 0.2,
+   "risk": 0.0018537851505631751,
+   "cost": 0.0,
+   "changes": 0
+  },
+  {
+   "lambda": 0.5,
+   "risk": 0.0018537851505631751,
+   "cost": 0.0,
+   "changes": 0
+  },
+  {
+   "lambda": 1.0,
+   "risk": 0.0018537851505631751,
+   "cost": 0.0,
+   "changes": 0
+  },
+  {
+   "lambda": 2.0,
+   "risk": 0.0018537851505631751,
+   "cost": 0.0,
+   "changes": 0
+  },
+  {
+   "lambda": 5.0,
+   "risk": 0.0018537851505631751,
+   "cost": 0.0,
+   "changes": 0
+  },
+  {
+   "lambda": 100.0,
+   "risk": 0.0018537851505631751,
+   "cost": 0.0,
+   "changes": 0
+  }
+ ],
+ "pareto_vm": [
+  {
+   "lambda": 0.0,
+   "risk": 0.0,
+   "cost": 20.7,
+   "changes": 7
+  },
+  {
+   "lambda": 0.02,
+   "risk": 0.0,
+   "cost": 14.7,
+   "changes": 5
+  },
+  {
+   "lambda": 0.05,
+   "risk": 0.0,
+   "cost": 14.7,
+   "changes": 5
+  },
+  {
+   "lambda": 0.1,
+   "risk": 0.0,
+   "cost": 14.7,
+   "changes": 5
+  },
+  {
+   "lambda": 0.2,
+   "risk": 0.6799999999999999,
+   "cost": 9.5,
+   "changes": 3
+  },
+  {
+   "lambda": 0.5,
+   "risk": 3.13,
+   "cost": 3.0,
+   "changes": 1
+  },
+  {
+   "lambda": 1.0,
+   "risk": 5.6,
+   "cost": 0.0,
+   "changes": 0
+  },
+  {
+   "lambda": 2.0,
+   "risk": 5.6,
+   "cost": 0.0,
+   "changes": 0
+  },
+  {
+   "lambda": 5.0,
+   "risk": 5.6,
+   "cost": 0.0,
+   "changes": 0
+  },
+  {
+   "lambda": 100.0,
+   "risk": 5.6,
+   "cost": 0.0,
+   "changes": 0
+  }
+ ],
+ "decision": {
+  "uncertain": 0,
+  "critical": 0,
+  "evpi_total": 0,
+  "top": []
+ },
+ "remediation_seconds": 8.0,
+ "status": "ok"
+}

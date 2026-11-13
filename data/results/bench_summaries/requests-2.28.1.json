@@ -1,0 +1,70 @@
+{
+ "dist": "requests",
+ "version": "2.28.1",
+ "advisories": 4,
+ "tops": [
+  "requests"
+ ],
+ "probe_errors": {},
+ "advisory_symbols": {
+  "CVE-2024-47081": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2024-35195": {
+   "gran": "function",
+   "n": 2,
+   "status": "functions"
+  },
+  "CVE-2026-25645": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2023-32681": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  }
+ },
+ "triggerable": {
+  "CVE-2024-47081": {
+   "trigger": [],
+   "safe": [
+    "prepare",
+    "proxies",
+    "requote",
+    "merge"
+   ]
+  },
+  "CVE-2024-35195": {
+   "trigger": [],
+   "safe": [
+    "prepare",
+    "proxies",
+    "requote",
+    "merge"
+   ]
+  },
+  "CVE-2026-25645": {
+   "trigger": [],
+   "safe": [
+    "prepare",
+    "proxies",
+    "requote",
+    "merge"
+   ]
+  },
+  "CVE-2023-32681": {
+   "trigger": [
+    "proxies"
+   ],
+   "safe": [
+    "prepare",
+    "requote",
+    "merge"
+   ]
+  }
+ }
+}

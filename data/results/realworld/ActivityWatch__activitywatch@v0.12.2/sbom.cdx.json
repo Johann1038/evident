@@ -1,0 +1,725 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.6",
+ "serialNumber": "urn:uuid:be466c43-249f-4946-8464-54c4580c9bf9",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-11-12T10:24:06+00:00",
+  "tools": {
+   "components": [
+    {
+     "type": "application",
+     "name": "evident",
+     "version": "0.1.0"
+    }
+   ]
+  },
+  "component": {
+   "type": "application",
+   "bom-ref": "app",
+   "name": "ActivityWatch/activitywatch"
+  }
+ },
+ "components": [
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/altgraph@0.17.3",
+   "name": "altgraph",
+   "version": "0.17.3",
+   "purl": "pkg:pypi/altgraph@0.17.3",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/attrs@22.2.0",
+   "name": "attrs",
+   "version": "22.2.0",
+   "purl": "pkg:pypi/attrs@22.2.0",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/coverage@7.0.5",
+   "name": "coverage",
+   "version": "7.0.5",
+   "purl": "pkg:pypi/coverage@7.0.5",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/exceptiongroup@1.1.0",
+   "name": "exceptiongroup",
+   "version": "1.1.0",
+   "purl": "pkg:pypi/exceptiongroup@1.1.0",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/future@0.18.2",
+   "name": "future",
+   "version": "0.18.2",
+   "purl": "pkg:pypi/future@0.18.2",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/iniconfig@2.0.0",
+   "name": "iniconfig",
+   "version": "2.0.0",
+   "purl": "pkg:pypi/iniconfig@2.0.0",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/mypy@0.991",
+   "name": "mypy",
+   "version": "0.991",
+   "purl": "pkg:pypi/mypy@0.991",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/mypy-extensions@0.4.3",
+   "name": "mypy-extensions",
+   "version": "0.4.3",
+   "purl": "pkg:pypi/mypy-extensions@0.4.3",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/packaging@23.0",
+   "name": "packaging",
+   "version": "23.0",
+   "purl": "pkg:pypi/packaging@23.0",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/pefile@2022.5.30",
+   "name": "pefile",
+   "version": "2022.5.30",
+   "purl": "pkg:pypi/pefile@2022.5.30",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/pluggy@1.0.0",
+   "name": "pluggy",
+   "version": "1.0.0",
+   "purl": "pkg:pypi/pluggy@1.0.0",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/psutil@5.9.4",
+   "name": "psutil",
+   "version": "5.9.4",
+   "purl": "pkg:pypi/psutil@5.9.4",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/py-cpuinfo@9.0.0",
+   "name": "py-cpuinfo",
+   "version": "9.0.0",
+   "purl": "pkg:pypi/py-cpuinfo@9.0.0",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/pyinstaller@5.7.0",
+   "name": "pyinstaller",
+   "version": "5.7.0",
+   "purl": "pkg:pypi/pyinstaller@5.7.0",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/pyinstaller-hooks-contrib@2022.14",
+   "name": "pyinstaller-hooks-contrib",
+   "version": "2022.14",
+   "purl": "pkg:pypi/pyinstaller-hooks-contrib@2022.14",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/pytest@7.2.0",
+   "name": "pytest",
+   "version": "7.2.0",
+   "purl": "pkg:pypi/pytest@7.2.0",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/pytest-benchmark@4.0.0",
+   "name": "pytest-benchmark",
+   "version": "4.0.0",
+   "purl": "pkg:pypi/pytest-benchmark@4.0.0",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/pytest-cov@4.0.0",
+   "name": "pytest-cov",
+   "version": "4.0.0",
+   "purl": "pkg:pypi/pytest-cov@4.0.0",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/pywin32-ctypes@0.2.0",
+   "name": "pywin32-ctypes",
+   "version": "0.2.0",
+   "purl": "pkg:pypi/pywin32-ctypes@0.2.0",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/setuptools@65.6.3",
+   "name": "setuptools",
+   "version": "65.6.3",
+   "purl": "pkg:pypi/setuptools@65.6.3",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/tomli@2.0.1",
+   "name": "tomli",
+   "version": "2.0.1",
+   "purl": "pkg:pypi/tomli@2.0.1",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/typing-extensions@4.4.0",
+   "name": "typing-extensions",
+   "version": "4.4.0",
+   "purl": "pkg:pypi/typing-extensions@4.4.0",
+   "scope": "required"
+  }
+ ],
+ "dependencies": [
+  {
+   "ref": "app",
+   "dependsOn": [
+    "pkg:pypi/pytest@7.2.0",
+    "pkg:pypi/pyinstaller@5.7.0",
+    "pkg:pypi/pywin32-ctypes@0.2.0",
+    "pkg:pypi/pytest-benchmark@4.0.0",
+    "pkg:pypi/pytest-cov@4.0.0",
+    "pkg:pypi/pefile@2022.5.30",
+    "pkg:pypi/mypy@0.991",
+    "pkg:pypi/psutil@5.9.4"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/altgraph@0.17.3",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/attrs@22.2.0",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/coverage@7.0.5",
+   "dependsOn": [
+    "pkg:pypi/tomli@2.0.1"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/exceptiongroup@1.1.0",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/future@0.18.2",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/iniconfig@2.0.0",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/mypy@0.991",
+   "dependsOn": [
+    "pkg:pypi/mypy-extensions@0.4.3",
+    "pkg:pypi/tomli@2.0.1",
+    "pkg:pypi/typing-extensions@4.4.0"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/mypy-extensions@0.4.3",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/packaging@23.0",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/pefile@2022.5.30",
+   "dependsOn": [
+    "pkg:pypi/future@0.18.2"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/pluggy@1.0.0",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/psutil@5.9.4",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/py-cpuinfo@9.0.0",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/pyinstaller@5.7.0",
+   "dependsOn": [
+    "pkg:pypi/altgraph@0.17.3",
+    "pkg:pypi/pefile@2022.5.30",
+    "pkg:pypi/pyinstaller-hooks-contrib@2022.14",
+    "pkg:pypi/pywin32-ctypes@0.2.0",
+    "pkg:pypi/setuptools@65.6.3"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/pyinstaller-hooks-contrib@2022.14",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/pytest@7.2.0",
+   "dependsOn": [
+    "pkg:pypi/attrs@22.2.0",
+    "pkg:pypi/exceptiongroup@1.1.0",
+    "pkg:pypi/iniconfig@2.0.0",
+    "pkg:pypi/packaging@23.0",
+    "pkg:pypi/pluggy@1.0.0",
+    "pkg:pypi/tomli@2.0.1"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/pytest-benchmark@4.0.0",
+   "dependsOn": [
+    "pkg:pypi/py-cpuinfo@9.0.0",
+    "pkg:pypi/pytest@7.2.0"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/pytest-cov@4.0.0",
+   "dependsOn": [
+    "pkg:pypi/coverage@7.0.5",
+    "pkg:pypi/pytest@7.2.0"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/pywin32-ctypes@0.2.0",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/setuptools@65.6.3",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/tomli@2.0.1",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/typing-extensions@4.4.0",
+   "dependsOn": []
+  }
+ ],
+ "vulnerabilities": [
+  {
+   "id": "CVE-2022-40899",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-v3c5-jqr6-7qm8"
+   },
+   "ratings": [
+    {
+     "score": 8.7,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/future@0.18.2"
+    }
+   ],
+   "analysis": {
+    "state": "not_affected",
+    "justification": "vulnerable_code_not_present",
+    "detail": "EVIDENT p_exposed=0.000 class=NOT_IMPORTED"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "REFUTED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "REFUTED"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2023-49797",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-9w2p-rh8c-v9g5"
+   },
+   "ratings": [
+    {
+     "score": 8.8,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/pyinstaller@5.7.0"
+    }
+   ],
+   "analysis": {
+    "state": "not_affected",
+    "justification": "vulnerable_code_not_present",
+    "detail": "EVIDENT p_exposed=0.000 class=NOT_IMPORTED"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "REFUTED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "REFUTED"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2025-59042",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-p2xp-xx3r-mffc"
+   },
+   "ratings": [
+    {
+     "score": 7.0,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/pyinstaller@5.7.0"
+    }
+   ],
+   "analysis": {
+    "state": "not_affected",
+    "justification": "vulnerable_code_not_present",
+    "detail": "EVIDENT p_exposed=0.000 class=NOT_IMPORTED"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "REFUTED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "REFUTED"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2025-71176",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-6w46-j5rx-g56g"
+   },
+   "ratings": [
+    {
+     "score": 6.8,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/pytest@7.2.0"
+    }
+   ],
+   "analysis": {
+    "state": "not_affected",
+    "justification": "vulnerable_code_not_present",
+    "detail": "EVIDENT p_exposed=0.000 class=NOT_IMPORTED"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "REFUTED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "REFUTED"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2025-47273",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-5rjg-fvgr-3xxf"
+   },
+   "ratings": [
+    {
+     "score": 8.8,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/setuptools@65.6.3"
+    }
+   ],
+   "analysis": {
+    "state": "not_affected",
+    "justification": "vulnerable_code_not_present",
+    "detail": "EVIDENT p_exposed=0.000 class=NOT_IMPORTED"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "REFUTED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "REFUTED"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2024-6345",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-cx63-2mw6-8hw5"
+   },
+   "ratings": [
+    {
+     "score": 8.8,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/setuptools@65.6.3"
+    }
+   ],
+   "analysis": {
+    "state": "not_affected",
+    "justification": "vulnerable_code_not_present",
+    "detail": "EVIDENT p_exposed=0.000 class=NOT_IMPORTED"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "REFUTED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "REFUTED"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-59890",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-h35f-9h28-mq5c"
+   },
+   "ratings": [
+    {
+     "score": 6.1,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/setuptools@65.6.3"
+    }
+   ],
+   "analysis": {
+    "state": "not_affected",
+    "justification": "vulnerable_code_not_present",
+    "detail": "EVIDENT p_exposed=0.000 class=NOT_IMPORTED"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "REFUTED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "REFUTED"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "GHSA-xmj3-9gf7-h52w",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-xmj3-9gf7-h52w"
+   },
+   "ratings": [
+    {
+     "score": 1.0,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/setuptools@65.6.3"
+    }
+   ],
+   "analysis": {
+    "state": "not_affected",
+    "justification": "vulnerable_code_not_present",
+    "detail": "EVIDENT p_exposed=0.000 class=NOT_IMPORTED"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "REFUTED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "REFUTED"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  }
+ ]
+}

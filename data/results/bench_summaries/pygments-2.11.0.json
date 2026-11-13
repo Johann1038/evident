@@ -1,0 +1,31 @@
+{
+ "dist": "pygments",
+ "version": "2.11.0",
+ "advisories": 2,
+ "tops": [
+  "pygments"
+ ],
+ "probe_errors": {},
+ "advisory_symbols": {
+  "CVE-2026-4539": {
+   "gran": "module",
+   "n": 1,
+   "status": "module_only"
+  },
+  "CVE-2022-40896": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  }
+ },
+ "triggerable": {
+  "CVE-2022-40896": {
+   "trigger": [],
+   "safe": [
+    "python",
+    "byname",
+    "smithy"
+   ]
+  }
+ }
+}

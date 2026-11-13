@@ -1,0 +1,85 @@
+{
+ "dist": "jinja2",
+ "version": "3.1.2",
+ "advisories": 5,
+ "tops": [
+  "jinja2"
+ ],
+ "probe_errors": {},
+ "advisory_symbols": {
+  "CVE-2025-27516": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2024-56201": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2024-22195": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2024-34064": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2024-56326": {
+   "gran": "function",
+   "n": 5,
+   "status": "functions"
+  }
+ },
+ "triggerable": {
+  "CVE-2025-27516": {
+   "trigger": [],
+   "safe": [
+    "render",
+    "xmlattr",
+    "sandbox",
+    "loader"
+   ]
+  },
+  "CVE-2024-56201": {
+   "trigger": [],
+   "safe": [
+    "render",
+    "xmlattr",
+    "sandbox",
+    "loader"
+   ]
+  },
+  "CVE-2024-22195": {
+   "trigger": [
+    "xmlattr"
+   ],
+   "safe": [
+    "render",
+    "sandbox",
+    "loader"
+   ]
+  },
+  "CVE-2024-34064": {
+   "trigger": [
+    "xmlattr"
+   ],
+   "safe": [
+    "render",
+    "sandbox",
+    "loader"
+   ]
+  },
+  "CVE-2024-56326": {
+   "trigger": [],
+   "safe": [
+    "render",
+    "xmlattr",
+    "sandbox",
+    "loader"
+   ]
+  }
+ }
+}

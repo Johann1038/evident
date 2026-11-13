@@ -1,0 +1,158 @@
+{
+ "dist": "pyjwt",
+ "version": "2.3.0",
+ "advisories": 14,
+ "tops": [
+  "jwt"
+ ],
+ "probe_errors": {},
+ "advisory_symbols": {
+  "CVE-2026-101917": {
+   "gran": "function",
+   "n": 4,
+   "status": "functions"
+  },
+  "CVE-2026-101918": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2026-32597": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  },
+  "CVE-2026-48522": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  },
+  "CVE-2026-102267": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2026-102268": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2022-29217": {
+   "gran": "function",
+   "n": 2,
+   "status": "functions"
+  },
+  "CVE-2026-48524": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  },
+  "CVE-2026-102269": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2026-102270": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "GHSA-pxh4-856f-4h89": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2026-102275": {
+   "gran": "module",
+   "n": 1,
+   "status": "module_only"
+  },
+  "CVE-2026-48526": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  },
+  "CVE-2025-45768": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  }
+ },
+ "triggerable": {
+  "CVE-2026-101917": {
+   "trigger": [
+    "jwkclient"
+   ],
+   "safe": [
+    "encode",
+    "decode",
+    "header"
+   ]
+  },
+  "CVE-2026-101918": {
+   "trigger": [],
+   "safe": [
+    "encode",
+    "decode",
+    "header",
+    "jwkclient"
+   ]
+  },
+  "CVE-2026-102267": {
+   "trigger": [],
+   "safe": [
+    "encode",
+    "decode",
+    "header",
+    "jwkclient"
+   ]
+  },
+  "CVE-2026-102268": {
+   "trigger": [],
+   "safe": [
+    "encode",
+    "decode",
+    "header",
+    "jwkclient"
+   ]
+  },
+  "CVE-2022-29217": {
+   "trigger": [
+    "encode",
+    "decode",
+    "header"
+   ],
+   "safe": [
+    "jwkclient"
+   ]
+  },
+  "CVE-2026-102269": {
+   "trigger": [
+    "decode",
+    "header"
+   ],
+   "safe": [
+    "encode",
+    "jwkclient"
+   ]
+  },
+  "CVE-2026-102270": {
+   "trigger": [],
+   "safe": [
+    "encode",
+    "decode",
+    "header",
+    "jwkclient"
+   ]
+  },
+  "GHSA-pxh4-856f-4h89": {
+   "trigger": [],
+   "safe": [
+    "encode",
+    "decode",
+    "header",
+    "jwkclient"
+   ]
+  }
+ }
+}

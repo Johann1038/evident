@@ -1,0 +1,22 @@
+{
+ "advisory": "GHSA-xmj3-9gf7-h52w",
+ "package": "setuptools",
+ "commits": [
+  {
+   "repo": "pypa/setuptools",
+   "sha": "6d07b8d17890dda58d944ac51e58f54af92d52af",
+   "parent": "8419f006d4e34c4ecfc7a0bd1bc6993855adc3cc",
+   "py_files": 1
+  }
+ ],
+ "files": [
+  {
+   "path": "setuptools/wheel.py",
+   "functions": [
+    "Wheel._fix_namespace_packages"
+   ],
+   "module_level": true
+  }
+ ],
+ "status": "functions"
+}

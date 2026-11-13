@@ -1,0 +1,14 @@
+{
+ "advisory": "GHSA-5cpq-8wj7-hf2v",
+ "package": "cryptography",
+ "commits": [
+  {
+   "repo": "pyca/cryptography",
+   "sha": "8708245ccdeaff21d65eea68a4f8d2a7c5949a22",
+   "parent": "31436a486661cd863d4c77e40facf93fbb2d9f54",
+   "py_files": 0
+  }
+ ],
+ "files": [],
+ "status": "no_python_change"
+}

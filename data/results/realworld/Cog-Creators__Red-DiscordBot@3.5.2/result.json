@@ -1,0 +1,417 @@
+{
+ "id": "Cog-Creators__Red-DiscordBot@3.5.2",
+ "meta": {
+  "id": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "repo": "Cog-Creators/Red-DiscordBot",
+  "tag": "3.5.2",
+  "published_at": "2023-05-14T20:36:03Z",
+  "stars": 5761,
+  "lock_kind": "requirements",
+  "lock_file": "base.txt",
+  "lock_path": "requirements/base.txt",
+  "subdir": "",
+  "manifest": "pyproject.toml",
+  "requires_python": null,
+  "description": "A multi-function Discord bot",
+  "topics": [
+   "bot",
+   "chatbot",
+   "discord",
+   "discord-bot",
+   "fun",
+   "moderation",
+   "modular",
+   "music",
+   "python",
+   "trivia"
+  ]
+ },
+ "python": "3.10",
+ "summary": {
+  "locked": 43,
+  "installed": 38,
+  "direct": 12,
+  "transitive": 26,
+  "edges": 64,
+  "edges_from_lock": false
+ },
+ "stats": {
+  "app_modules": 211,
+  "pkgs_analysed": 15,
+  "pkgs_no_source": 0,
+  "seconds": 91.64,
+  "funcs": 10189,
+  "roots": 2608
+ },
+ "scan_seconds": 92.3,
+ "sdist_only": [],
+ "baseline_resolution": {
+  "ok": true,
+  "seconds": 1.5,
+  "error": ""
+ },
+ "baseline_drift": 0,
+ "strategies": {
+  "audit_fix": {
+   "planned": {
+    "aiohttp": "3.14.4",
+    "brotli": "1.2.1",
+    "idna": "3.15",
+    "markdown": "3.8.1",
+    "orjson": "3.11.6",
+    "pycares": "4.9.0",
+    "pygments": "2.20.0"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 0.7,
+   "residual_findings": 0,
+   "residual_risk_evident": 0.0,
+   "residual_risk_vm": 0.0,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 11,
+   "major_bumps": 0,
+   "added": 2,
+   "removed": 0,
+   "planned_changes": 7,
+   "unplanned_changes": 4,
+   "plan_not_realised": 0
+  },
+  "latest": {
+   "planned": {
+    "orjson": "3.13.0",
+    "pygments": "2.21.0",
+    "aiohttp": "3.14.5",
+    "pycares": "5.2.1",
+    "brotli": "1.2.1",
+    "markdown": "3.11.3",
+    "idna": "3.20"
+   },
+   "ok": false,
+   "error": " you require markdown==3.11.3, we can conclude that your requirements are unsatisfiable.\n\nhint: The `--python-version` value (>=3.10) includes Python versions that are not supported by your dependencies (e.g., markdown==3.11.3 only supports >=3.11). Consider using a higher `--python-version` value.\n",
+   "seconds": 0.3
+  },
+  "upgrade_all": {
+   "planned": null,
+   "ok": true,
+   "error": "",
+   "seconds": 5.5,
+   "residual_findings": 0,
+   "residual_risk_evident": 0.0,
+   "residual_risk_vm": 0.0,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 37,
+   "major_bumps": 12,
+   "added": 3,
+   "removed": 0
+  },
+  "vm_opt": {
+   "planned": {
+    "aiohttp": "3.14.5",
+    "aiosignal": "1.4.0",
+    "brotli": "1.2.1",
+    "idna": "3.20",
+    "markdown": "3.8.1",
+    "orjson": "3.11.6",
+    "pycares": "4.9.0",
+    "pygments": "2.20.0",
+    "yarl": "1.25.1"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 3.1,
+   "model_residual": 0.0,
+   "model_cost": 15.299999999999997,
+   "scope": 9,
+   "residual_findings": 0,
+   "residual_risk_evident": 0.0,
+   "residual_risk_vm": 0.0,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 11,
+   "major_bumps": 0,
+   "added": 2,
+   "removed": 0,
+   "planned_changes": 9,
+   "unplanned_changes": 2,
+   "plan_not_realised": 0
+  },
+  "coral_opt": {
+   "planned": {
+    "aiohttp": "3.14.5",
+    "aiosignal": "1.4.0",
+    "brotli": "1.2.1",
+    "idna": "3.20",
+    "markdown": "3.8.1",
+    "orjson": "3.11.6",
+    "pycares": "4.9.0",
+    "yarl": "1.25.1"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.2,
+   "model_residual": 0.16499999999999998,
+   "model_cost": 13.599999999999998,
+   "scope": 9,
+   "residual_findings": 1,
+   "residual_risk_evident": 0.1895844809367713,
+   "residual_risk_vm": 0.32999999999999996,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 10,
+   "major_bumps": 0,
+   "added": 2,
+   "removed": 0,
+   "planned_changes": 8,
+   "unplanned_changes": 2,
+   "plan_not_realised": 0
+  },
+  "cape_opt": {
+   "planned": {
+    "aiohttp": "3.14.5",
+    "aiosignal": "1.4.0",
+    "brotli": "1.2.1",
+    "idna": "3.20",
+    "markdown": "3.8.1",
+    "orjson": "3.11.6",
+    "pycares": "4.9.0",
+    "pygments": "2.20.0",
+    "yarl": "1.25.1"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.2,
+   "model_residual": 0.0,
+   "model_cost": 15.299999999999997,
+   "scope": 9,
+   "residual_findings": 0,
+   "residual_risk_evident": 0.0,
+   "residual_risk_vm": 0.0,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 11,
+   "major_bumps": 0,
+   "added": 2,
+   "removed": 0,
+   "planned_changes": 9,
+   "unplanned_changes": 2,
+   "plan_not_realised": 0
+  },
+  "evident": {
+   "planned": {
+    "aiohttp": "3.14.5",
+    "aiosignal": "1.4.0",
+    "brotli": "1.2.1",
+    "idna": "3.20",
+    "markdown": "3.8.1",
+    "orjson": "3.11.6",
+    "pycares": "4.9.0",
+    "pygments": "2.20.0",
+    "yarl": "1.25.1"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.3,
+   "model_residual": 0.0,
+   "model_cost": 15.299999999999997,
+   "scope": 9,
+   "residual_findings": 0,
+   "residual_risk_evident": 0.0,
+   "residual_risk_vm": 0.0,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 11,
+   "major_bumps": 0,
+   "added": 2,
+   "removed": 0,
+   "planned_changes": 9,
+   "unplanned_changes": 2,
+   "plan_not_realised": 0
+  }
+ },
+ "original": {
+  "residual_findings": 60,
+  "residual_risk_evident": 23.29328537439016,
+  "residual_risk_vm": 40.13999999999999,
+  "residual_confirmed": 5,
+  "new_findings": 0,
+  "changed": 0,
+  "major_bumps": 0,
+  "added": 0,
+  "removed": 0
+ },
+ "pareto_evident": [
+  {
+   "lambda": 0.0,
+   "risk": 0.0,
+   "cost": 15.299999999999997,
+   "changes": 9
+  },
+  {
+   "lambda": 0.02,
+   "risk": 0.0,
+   "cost": 15.299999999999997,
+   "changes": 9
+  },
+  {
+   "lambda": 0.05,
+   "risk": 0.0,
+   "cost": 15.299999999999997,
+   "changes": 9
+  },
+  {
+   "lambda": 0.1,
+   "risk": 0.0,
+   "cost": 15.299999999999997,
+   "changes": 9
+  },
+  {
+   "lambda": 0.2,
+   "risk": 0.4768336944773339,
+   "cost": 11.899999999999999,
+   "changes": 7
+  },
+  {
+   "lambda": 0.5,
+   "risk": 0.968825883079294,
+   "cost": 10.2,
+   "changes": 6
+  },
+  {
+   "lambda": 1.0,
+   "risk": 2.8494366858039135,
+   "cost": 6.8,
+   "changes": 4
+  },
+  {
+   "lambda": 2.0,
+   "risk": 4.627168460618996,
+   "cost": 5.1,
+   "changes": 3
+  },
+  {
+   "lambda": 5.0,
+   "risk": 23.293285374390166,
+   "cost": 0.0,
+   "changes": 0
+  },
+  {
+   "lambda": 100.0,
+   "risk": 23.293285374390166,
+   "cost": 0.0,
+   "changes": 0
+  }
+ ],
+ "pareto_vm": [
+  {
+   "lambda": 0.0,
+   "risk": 0.0,
+   "cost": 15.299999999999997,
+   "changes": 9
+  },
+  {
+   "lambda": 0.02,
+   "risk": 0.0,
+   "cost": 15.299999999999997,
+   "changes": 9
+  },
+  {
+   "lambda": 0.05,
+   "risk": 0.0,
+   "cost": 15.299999999999997,
+   "changes": 9
+  },
+  {
+   "lambda": 0.1,
+   "risk": 0.0,
+   "cost": 15.299999999999997,
+   "changes": 9
+  },
+  {
+   "lambda": 0.2,
+   "risk": 0.32999999999999996,
+   "cost": 13.599999999999998,
+   "changes": 8
+  },
+  {
+   "lambda": 0.5,
+   "risk": 1.58,
+   "cost": 10.2,
+   "changes": 6
+  },
+  {
+   "lambda": 1.0,
+   "risk": 4.54,
+   "cost": 6.8,
+   "changes": 4
+  },
+  {
+   "lambda": 2.0,
+   "risk": 7.25,
+   "cost": 5.1,
+   "changes": 3
+  },
+  {
+   "lambda": 5.0,
+   "risk": 7.25,
+   "cost": 5.1,
+   "changes": 3
+  },
+  {
+   "lambda": 100.0,
+   "risk": 40.13999999999999,
+   "cost": 0.0,
+   "changes": 0
+  }
+ ],
+ "decision": {
+  "uncertain": 60,
+  "critical": 3,
+  "evpi_total": 0.20315230537597306,
+  "top": [
+   {
+    "package": "pycares",
+    "advisory": "CVE-2025-48945",
+    "p": 0.5744984270811252,
+    "critical": true,
+    "evpi": 0.07233526739620869
+   },
+   {
+    "package": "pygments",
+    "advisory": "CVE-2026-4539",
+    "p": 0.5744984270811252,
+    "critical": true,
+    "evpi": 0.07233526739620869
+   },
+   {
+    "package": "markdown",
+    "advisory": "CVE-2025-69534",
+    "p": 0.6559895848026134,
+    "critical": true,
+    "evpi": 0.0584817705835557
+   },
+   {
+    "package": "aiohttp",
+    "advisory": "CVE-2026-54279",
+    "p": 0.5744984270811252,
+    "critical": false,
+    "evpi": 0.0
+   },
+   {
+    "package": "aiohttp",
+    "advisory": "CVE-2026-123817",
+    "p": 0.8072878303971307,
+    "critical": false,
+    "evpi": 0.0
+   }
+  ]
+ },
+ "remediation_seconds": 17.0,
+ "status": "ok"
+}

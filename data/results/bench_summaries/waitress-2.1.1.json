@@ -1,0 +1,52 @@
+{
+ "dist": "waitress",
+ "version": "2.1.1",
+ "advisories": 3,
+ "tops": [
+  "waitress"
+ ],
+ "probe_errors": {},
+ "advisory_symbols": {
+  "CVE-2024-49769": {
+   "gran": "function",
+   "n": 9,
+   "status": "functions"
+  },
+  "CVE-2024-49768": {
+   "gran": "function",
+   "n": 2,
+   "status": "functions"
+  },
+  "CVE-2022-31015": {
+   "gran": "function",
+   "n": 6,
+   "status": "functions"
+  }
+ },
+ "triggerable": {
+  "CVE-2024-49769": {
+   "trigger": [],
+   "safe": [
+    "parse",
+    "chunked",
+    "adjust"
+   ]
+  },
+  "CVE-2024-49768": {
+   "trigger": [],
+   "safe": [
+    "parse",
+    "chunked",
+    "adjust"
+   ]
+  },
+  "CVE-2022-31015": {
+   "trigger": [],
+   "safe": [
+    "parse",
+    "chunked",
+    "adjust"
+   ]
+  }
+ }
+}

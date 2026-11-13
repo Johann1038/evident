@@ -1,0 +1,33 @@
+{
+ "advisory": "GHSA-pjjw-qhg8-p2p9",
+ "package": "aiohttp",
+ "commits": [
+  {
+   "repo": "aio-libs/aiohttp",
+   "sha": "996de2629ef6b4c2934a7c04dfd49d0950d4c43b",
+   "parent": "8c128d4f042ca36ebdc55ecdd76099b7722331ba",
+   "py_files": 1
+  },
+  {
+   "repo": "aio-libs/aiohttp",
+   "sha": "bcc416e533796d04fb8124ef1e7686b1f338767a",
+   "parent": "b30c0cd2c96e57cc273ffe29c0313487b364f15a",
+   "py_files": 1
+  }
+ ],
+ "files": [
+  {
+   "path": "aiohttp/__init__.py",
+   "functions": [],
+   "module_level": true
+  },
+  {
+   "path": "aiohttp/http_parser.py",
+   "functions": [
+    "HttpParser.parse_headers"
+   ],
+   "module_level": false
+  }
+ ],
+ "status": "functions"
+}

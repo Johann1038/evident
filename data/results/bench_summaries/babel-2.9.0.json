@@ -1,0 +1,26 @@
+{
+ "dist": "babel",
+ "version": "2.9.0",
+ "advisories": 1,
+ "tops": [
+  "babel"
+ ],
+ "probe_errors": {},
+ "advisory_symbols": {
+  "CVE-2021-42771": {
+   "gran": "function",
+   "n": 2,
+   "status": "functions"
+  }
+ },
+ "triggerable": {
+  "CVE-2021-42771": {
+   "trigger": [
+    "locale",
+    "load",
+    "number"
+   ],
+   "safe": []
+  }
+ }
+}

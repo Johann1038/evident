@@ -1,0 +1,392 @@
+{
+ "id": "pyppeteer__pyppeteer@4e88a900bff77b63e62b88bed5afd5f78902db27",
+ "meta": {
+  "id": "pyppeteer__pyppeteer@4e88a900bff77b63e62b88bed5afd5f78902db27",
+  "repo": "pyppeteer/pyppeteer",
+  "tag": "4e88a900bff77b63e62b88bed5afd5f78902db27",
+  "published_at": "2023-02-16T00:17:06Z",
+  "stars": 3936,
+  "lock_kind": "poetry",
+  "lock_file": "poetry.lock",
+  "lock_path": "poetry.lock",
+  "subdir": "",
+  "manifest": "pyproject.toml",
+  "requires_python": "^3.7",
+  "description": "Headless chrome/chromium automation library (unofficial port of puppeteer)",
+  "topics": [
+   "automation",
+   "chromium",
+   "puppeteer"
+  ]
+ },
+ "python": "3.10",
+ "summary": {
+  "locked": 77,
+  "installed": 77,
+  "direct": 22,
+  "transitive": 55,
+  "edges": 119,
+  "edges_from_lock": true
+ },
+ "stats": {
+  "app_modules": 53,
+  "pkgs_analysed": 28,
+  "pkgs_no_source": 0,
+  "seconds": 234.16,
+  "funcs": 16721,
+  "roots": 424
+ },
+ "scan_seconds": 242.4,
+ "sdist_only": [
+  "m2r",
+  "sphinxcontrib-asyncio",
+  "syncer"
+ ],
+ "baseline_resolution": {
+  "ok": true,
+  "seconds": 10.3,
+  "error": ""
+ },
+ "baseline_drift": 10,
+ "strategies": {
+  "audit_fix": {
+   "planned": {
+    "bleach": "6.4.0",
+    "certifi": "2026.10.18",
+    "filelock": "4.2.1",
+    "idna": "3.15",
+    "jinja2": "3.1.6",
+    "mistune": "3.3.0",
+    "pygments": "2.20.0",
+    "pylint": "4.0.9",
+    "pytest": "9.0.3",
+    "requests": "2.33.0",
+    "tornado": "6.6",
+    "tqdm": "4.66.3",
+    "urllib3": "2.8.0",
+    "virtualenv": "21.14.9",
+    "zipp": "3.19.1"
+   },
+   "ok": false,
+   "error": "se you require filelock==4.2.1, we can conclude that your requirements are unsatisfiable.\n\nhint: The `--python-version` value (>=3.10) includes Python versions that are not supported by your dependencies (e.g., filelock==4.2.1 only supports >=3.11). Consider using a higher `--python-version` value.\n",
+   "seconds": 1.8
+  },
+  "latest": {
+   "planned": {
+    "pylint": "4.1.3",
+    "bleach": "6.4.0",
+    "idna": "3.20",
+    "tqdm": "4.70.1",
+    "zipp": "4.1.2",
+    "tornado": "6.6.1",
+    "urllib3": "2.8.0",
+    "certifi": "2026.10.23",
+    "mistune": "3.4.0",
+    "jinja2": "3.1.6",
+    "pygments": "2.21.0",
+    "requests": "2.34.2",
+    "virtualenv": "21.15.6",
+    "pytest": "9.2.0",
+    "filelock": "4.2.10"
+   },
+   "ok": false,
+   "error": " you require filelock==4.2.10, we can conclude that your requirements are unsatisfiable.\n\nhint: The `--python-version` value (>=3.10) includes Python versions that are not supported by your dependencies (e.g., filelock==4.2.10 only supports >=3.11). Consider using a higher `--python-version` value.\n",
+   "seconds": 2.2
+  },
+  "upgrade_all": {
+   "planned": null,
+   "ok": true,
+   "error": "",
+   "seconds": 12.8,
+   "residual_findings": 20,
+   "residual_risk_evident": 0.18130210078045472,
+   "residual_risk_vm": 9.729999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 16,
+   "changed": 83,
+   "major_bumps": 44,
+   "added": 13,
+   "removed": 0
+  },
+  "vm_opt": {
+   "planned": {
+    "bleach": "6.4.0",
+    "certifi": "2026.10.23",
+    "distlib": "0.4.4",
+    "filelock": "4.2.10",
+    "idna": "3.20",
+    "jinja2": "3.1.6",
+    "mistune": "3.4.0",
+    "packaging": "26.3",
+    "platformdirs": "4.14.5",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.2.0",
+    "requests": "2.33.0",
+    "tornado": "6.6.1",
+    "tqdm": "4.70.1",
+    "typing-extensions": "4.16.0",
+    "urllib3": "2.8.0",
+    "virtualenv": "21.14.13",
+    "zipp": "3.23.1"
+   },
+   "ok": false,
+   "iterations": 6,
+   "error": " you require filelock==4.2.10, we can conclude that your requirements are unsatisfiable.\n\nhint: The `--python-version` value (>=3.10) includes Python versions that are not supported by your dependencies (e.g., filelock==4.2.10 only supports >=3.11). Consider using a higher `--python-version` value.\n",
+   "seconds": 37.7,
+   "model_residual": 0.54,
+   "model_cost": 47.30000000000001,
+   "scope": 21
+  },
+  "coral_opt": {
+   "planned": {
+    "bleach": "6.4.0",
+    "certifi": "2026.10.23",
+    "distlib": "0.4.4",
+    "filelock": "4.2.10",
+    "idna": "3.20",
+    "jinja2": "3.1.6",
+    "mistune": "3.4.0",
+    "packaging": "26.3",
+    "platformdirs": "4.14.5",
+    "pygments": "2.21.0",
+    "requests": "2.33.0",
+    "tornado": "6.6.1",
+    "typing-extensions": "4.16.0",
+    "urllib3": "2.8.0",
+    "virtualenv": "21.14.13",
+    "zipp": "3.23.1"
+   },
+   "ok": false,
+   "iterations": 6,
+   "error": " you require filelock==4.2.10, we can conclude that your requirements are unsatisfiable.\n\nhint: The `--python-version` value (>=3.10) includes Python versions that are not supported by your dependencies (e.g., filelock==4.2.10 only supports >=3.11). Consider using a higher `--python-version` value.\n",
+   "seconds": 14.0,
+   "model_residual": 0.8049999999999999,
+   "model_cost": 38.599999999999994,
+   "scope": 21
+  },
+  "cape_opt": {
+   "planned": {
+    "bleach": "6.4.0",
+    "certifi": "2026.10.23",
+    "distlib": "0.4.4",
+    "filelock": "4.2.10",
+    "idna": "3.20",
+    "jinja2": "3.1.6",
+    "mistune": "3.3.3",
+    "packaging": "26.3",
+    "platformdirs": "4.14.5",
+    "pygments": "2.20.0",
+    "requests": "2.33.0",
+    "tornado": "6.6.1",
+    "tqdm": "4.66.3",
+    "typing-extensions": "4.16.0",
+    "urllib3": "2.8.0",
+    "virtualenv": "21.15.6",
+    "zipp": "3.19.1"
+   },
+   "ok": false,
+   "iterations": 6,
+   "error": " you require filelock==4.2.10, we can conclude that your requirements are unsatisfiable.\n\nhint: The `--python-version` value (>=3.10) includes Python versions that are not supported by your dependencies (e.g., filelock==4.2.10 only supports >=3.11). Consider using a higher `--python-version` value.\n",
+   "seconds": 13.3,
+   "model_residual": 0.732,
+   "model_cost": 40.8,
+   "scope": 21
+  },
+  "evident": {
+   "planned": {
+    "certifi": "2026.10.18",
+    "requests": "2.33.0",
+    "tornado": "6.6.1",
+    "urllib3": "2.8.0",
+    "zipp": "3.19.1"
+   },
+   "ok": false,
+   "iterations": 6,
+   "error": "und when resolving dependencies\n  cause: Because tornado==6.6.1 has no usable wheels and you require tornado==6.6.1, we can conclude that your requirements are unsatisfiable.\n\nhint: Wheels are required for `tornado` because building from source is disabled for all packages (i.e., with `--no-build`)\n",
+   "seconds": 0.8,
+   "model_residual": 0.5740280230638348,
+   "model_cost": 12.1,
+   "scope": 21
+  }
+ },
+ "original": {
+  "residual_findings": 96,
+  "residual_risk_evident": 7.669142682118797,
+  "residual_risk_vm": 60.68000000000001,
+  "residual_confirmed": 1,
+  "new_findings": 0,
+  "changed": 0,
+  "major_bumps": 0,
+  "added": 0,
+  "removed": 0
+ },
+ "pareto_evident": [
+  {
+   "lambda": 0.0,
+   "risk": 0.0,
+   "cost": 53.80000000000001,
+   "changes": 21
+  },
+  {
+   "lambda": 0.02,
+   "risk": 0.2303930522565321,
+   "cost": 18.999999999999996,
+   "changes": 8
+  },
+  {
+   "lambda": 0.05,
+   "risk": 0.3750059646993964,
+   "cost": 15.099999999999998,
+   "changes": 6
+  },
+  {
+   "lambda": 0.1,
+   "risk": 0.5740280230638348,
+   "cost": 12.1,
+   "changes": 5
+  },
+  {
+   "lambda": 0.2,
+   "risk": 0.8351336694839231,
+   "cost": 10.399999999999999,
+   "changes": 4
+  },
+  {
+   "lambda": 0.5,
+   "risk": 1.2877664829977262,
+   "cost": 8.7,
+   "changes": 3
+  },
+  {
+   "lambda": 1.0,
+   "risk": 7.669142682118794,
+   "cost": 0.0,
+   "changes": 0
+  },
+  {
+   "lambda": 2.0,
+   "risk": 7.669142682118794,
+   "cost": 0.0,
+   "changes": 0
+  },
+  {
+   "lambda": 5.0,
+   "risk": 7.669142682118794,
+   "cost": 0.0,
+   "changes": 0
+  },
+  {
+   "lambda": 100.0,
+   "risk": 7.669142682118794,
+   "cost": 0.0,
+   "changes": 0
+  }
+ ],
+ "pareto_vm": [
+  {
+   "lambda": 0.0,
+   "risk": 0.0,
+   "cost": 53.80000000000001,
+   "changes": 21
+  },
+  {
+   "lambda": 0.02,
+   "risk": 0.0,
+   "cost": 53.80000000000001,
+   "changes": 21
+  },
+  {
+   "lambda": 0.05,
+   "risk": 0.0,
+   "cost": 53.80000000000001,
+   "changes": 21
+  },
+  {
+   "lambda": 0.1,
+   "risk": 0.54,
+   "cost": 47.30000000000001,
+   "changes": 19
+  },
+  {
+   "lambda": 0.2,
+   "risk": 1.6099999999999999,
+   "cost": 38.599999999999994,
+   "changes": 16
+  },
+  {
+   "lambda": 0.5,
+   "risk": 2.9099999999999997,
+   "cost": 33.89999999999999,
+   "changes": 14
+  },
+  {
+   "lambda": 1.0,
+   "risk": 18.860000000000003,
+   "cost": 15.099999999999998,
+   "changes": 6
+  },
+  {
+   "lambda": 2.0,
+   "risk": 34.97,
+   "cost": 4.7,
+   "changes": 2
+  },
+  {
+   "lambda": 5.0,
+   "risk": 45.89999999999999,
+   "cost": 1.7,
+   "changes": 1
+  },
+  {
+   "lambda": 100.0,
+   "risk": 60.67999999999999,
+   "cost": 0.0,
+   "changes": 0
+  }
+ ],
+ "decision": {
+  "uncertain": 16,
+  "critical": 2,
+  "evpi_total": 0.10226225450093378,
+  "top": [
+   {
+    "package": "zipp",
+    "advisory": "CVE-2024-5569",
+    "p": 0.6559895848026134,
+    "critical": true,
+    "evpi": 0.0584817705835557
+   },
+   {
+    "package": "tqdm",
+    "advisory": "CVE-2024-34062",
+    "p": 0.25753225833751786,
+    "critical": true,
+    "evpi": 0.04378048391737808
+   },
+   {
+    "package": "certifi",
+    "advisory": "CVE-2024-39689",
+    "p": 0.5744984270811252,
+    "critical": false,
+    "evpi": 0.0
+   },
+   {
+    "package": "certifi",
+    "advisory": "CVE-2022-23491",
+    "p": 0.5744984270811252,
+    "critical": false,
+    "evpi": 0.0
+   },
+   {
+    "package": "certifi",
+    "advisory": "GHSA-6q48-6c7w-9gw2",
+    "p": 0.6559895848026134,
+    "critical": false,
+    "evpi": 0.0
+   }
+  ]
+ },
+ "remediation_seconds": 98.7,
+ "status": "ok"
+}

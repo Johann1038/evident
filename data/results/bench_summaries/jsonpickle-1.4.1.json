@@ -1,0 +1,16 @@
+{
+ "dist": "jsonpickle",
+ "version": "1.4.1",
+ "advisories": 1,
+ "tops": [
+  "jsonpickle"
+ ],
+ "probe_errors": {},
+ "advisory_symbols": {
+  "CVE-2020-22083": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  }
+ }
+}

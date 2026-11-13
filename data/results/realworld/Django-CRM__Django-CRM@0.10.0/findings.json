@@ -1,0 +1,7474 @@
+[
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2025-13473",
+  "ids": [
+   "GHSA-2mcm-79hx-8fxw",
+   "PYSEC-2026-42"
+  ],
+  "cves": [
+   "CVE-2025-13473"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00798,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-02-03T15:16:11.593Z",
+  "fixed": [
+   "4.2.28",
+   "5.2.11",
+   "6.0.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2025-14550",
+  "ids": [
+   "GHSA-33mw-q7rj-mjwj",
+   "PYSEC-2026-43"
+  ],
+  "cves": [
+   "CVE-2025-14550"
+  ],
+  "cvss": 7.5,
+  "epss": 0.01112,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-02-03T15:16:11.750Z",
+  "fixed": [
+   "4.2.28",
+   "5.2.11",
+   "6.0.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "django.core.handlers.asgi.ASGIRequest.__init__"
+     ],
+     "witness": [
+      "__app__.cases.views.CaseDetailView.post",
+      "django.contrib.gis.utils.layermapping.LayerMapping.save",
+      "django.core.handlers.asgi.ASGIRequest.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2026-48588",
+  "ids": [
+   "GHSA-3h9f-r86x-qvjx",
+   "PYSEC-2026-2090"
+  ],
+  "cves": [
+   "CVE-2026-48588"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00429,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-07-07T15:16:47.447Z",
+  "fixed": [
+   "5.2.16",
+   "6.0.7"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "django.middleware.cache.UpdateCacheMiddleware.process_response"
+     ],
+     "witness": [
+      "__app__.crm.settings.<module>",
+      "django.utils.deprecation.MiddlewareMixin.__call__",
+      "django.middleware.cache.UpdateCacheMiddleware.process_response"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2026-1285",
+  "ids": [
+   "GHSA-4rrr-2h4v-f3j9",
+   "PYSEC-2026-45"
+  ],
+  "cves": [
+   "CVE-2026-1285"
+  ],
+  "cvss": 7.5,
+  "epss": 0.01112,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-02-03T15:16:13.570Z",
+  "fixed": [
+   "4.2.28",
+   "5.2.11",
+   "6.0.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "vulnerable symbols not found in installed source",
+     "granularity": "function",
+     "symbols": [
+      "django.utils.text.TruncateHTMLParser.handle_endtag"
+     ],
+     "witness": [],
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2024-45230",
+  "ids": [
+   "GHSA-5hgc-2vfp-mqvc",
+   "PYSEC-2024-102"
+  ],
+  "cves": [
+   "CVE-2024-45230"
+  ],
+  "cvss": 6.9,
+  "epss": 0.25773,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2024-10-08T16:15:00Z",
+  "fixed": [
+   "4.2.16",
+   "5.0.9",
+   "5.1.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.8072878303971307,
+  "exposure_class": "STATICALLY_REACHABLE",
+  "vex": {
+   "state": "exploitable"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "CONFIRMED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "function",
+     "symbols": [
+      "django.utils.html.Urlizer.trim_punctuation"
+     ],
+     "witness": [
+      "__app__.crm.settings.<module>",
+      "django.contrib.auth.password_validation.<module>",
+      "django.utils.html.<module>",
+      "django.utils.html.Urlizer.__call__",
+      "django.utils.html.Urlizer.handle_word",
+      "django.utils.html.Urlizer.trim_punctuation"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2026-33033",
+  "ids": [
+   "GHSA-5mf9-h53q-7mhq",
+   "PYSEC-2026-48"
+  ],
+  "cves": [
+   "CVE-2026-33033"
+  ],
+  "cvss": 6.5,
+  "epss": 0.00913,
+  "kev": false,
+  "severity_w": 0.65,
+  "published": "2026-04-07T15:17:39.220Z",
+  "fixed": [
+   "4.2.30",
+   "5.2.13",
+   "6.0.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2026-1312",
+  "ids": [
+   "GHSA-6426-9fv3-65x8",
+   "PYSEC-2026-47"
+  ],
+  "cves": [
+   "CVE-2026-1312"
+  ],
+  "cvss": 5.4,
+  "epss": 0.00897,
+  "kev": false,
+  "severity_w": 0.54,
+  "published": "2026-02-03T15:16:13.833Z",
+  "fixed": [
+   "4.2.28",
+   "5.2.11",
+   "6.0.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "django.db.models.sql.compiler.SQLCompiler._order_by_pairs",
+      "django.db.models.sql.query.Query.add_filtered_relation"
+     ],
+     "witness": [
+      "__app__.teams.models.Teams.get_users",
+      "django.db.backends.ddl_references.Expressions.__str__",
+      "django.db.models.sql.compiler.SQLCompiler.compile",
+      "django.db.backends.mysql.compiler.SQLUpdateCompiler.as_sql",
+      "django.db.models.sql.compiler.SQLCompiler.get_order_by",
+      "django.db.models.sql.compiler.SQLCompiler._order_by_pairs"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2025-57833",
+  "ids": [
+   "GHSA-6w2r-r2m5-xq5w",
+   "PYSEC-2025-105"
+  ],
+  "cves": [
+   "CVE-2025-57833"
+  ],
+  "cvss": 8.1,
+  "epss": 0.28271,
+  "kev": false,
+  "severity_w": 0.8099999999999999,
+  "published": "2025-09-03T21:15:32.850Z",
+  "fixed": [
+   "4.2.24",
+   "5.1.12",
+   "5.2.6"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "django.db.models.sql.query.Query.add_filtered_relation"
+     ],
+     "witness": [
+      "__app__.common.models.Document.get_team_users",
+      "django.db.models.query.QuerySet.values_list",
+      "django.db.models.query.QuerySet._values",
+      "django.db.models.query.QuerySet.annotate",
+      "django.db.models.query.QuerySet._annotate",
+      "django.db.models.sql.query.Query.add_filtered_relation"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2024-41990",
+  "ids": [
+   "GHSA-795c-9xpc-xw6g",
+   "PYSEC-2024-68"
+  ],
+  "cves": [
+   "CVE-2024-41990"
+  ],
+  "cvss": 6.9,
+  "epss": 0.01258,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2024-08-07T15:15:00Z",
+  "fixed": [
+   "4.2.15",
+   "5.0.8"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.8072878303971307,
+  "exposure_class": "STATICALLY_REACHABLE",
+  "vex": {
+   "state": "exploitable"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "CONFIRMED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "function",
+     "symbols": [
+      "django.utils.html.Urlizer.trim_punctuation"
+     ],
+     "witness": [
+      "__app__.crm.settings.<module>",
+      "django.contrib.auth.password_validation.<module>",
+      "django.utils.html.<module>",
+      "django.utils.html.Urlizer.__call__",
+      "django.utils.html.Urlizer.handle_word",
+      "django.utils.html.Urlizer.trim_punctuation"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2023-41164",
+  "ids": [
+   "GHSA-7h4p-27mh-hmrw",
+   "PYSEC-2023-225"
+  ],
+  "cves": [
+   "CVE-2023-41164"
+  ],
+  "cvss": 6.9,
+  "epss": 0.01519,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2023-11-03T05:15:00Z",
+  "fixed": [
+   "3.2.21",
+   "4.1.11",
+   "4.2.5"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.8072878303971307,
+  "exposure_class": "STATICALLY_REACHABLE",
+  "vex": {
+   "state": "exploitable"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "CONFIRMED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "function",
+     "symbols": [
+      "django.utils.encoding.repercent_broken_unicode"
+     ],
+     "witness": [
+      "__app__.emails.tests.UserCreation.setUp",
+      "django.test.client.Client.__init__",
+      "django.test.client.ClientHandler.__call__",
+      "django.core.handlers.wsgi.WSGIRequest.__init__",
+      "django.core.handlers.wsgi.get_path_info",
+      "django.utils.encoding.repercent_broken_unicode"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2025-48432",
+  "ids": [
+   "GHSA-7xr5-9hcq-chf9",
+   "PYSEC-2025-47"
+  ],
+  "cves": [
+   "CVE-2025-48432"
+  ],
+  "cvss": 4.0,
+  "epss": 0.00807,
+  "kev": false,
+  "severity_w": 0.4,
+  "published": "2025-06-05T03:15:25Z",
+  "fixed": [
+   "4.2.22",
+   "5.1.10",
+   "5.2.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2024-53907",
+  "ids": [
+   "GHSA-8498-2h75-472j",
+   "PYSEC-2024-156"
+  ],
+  "cves": [
+   "CVE-2024-53907"
+  ],
+  "cvss": 7.5,
+  "epss": 0.01388,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2024-12-06T12:15:17Z",
+  "fixed": [
+   "4.2.17",
+   "5.0.10",
+   "5.1.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 7
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2026-8404",
+  "ids": [
+   "GHSA-8cjm-8mp7-r2xf",
+   "PYSEC-2026-201"
+  ],
+  "cves": [
+   "CVE-2026-8404"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00274,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-06-03T14:16:47.650Z",
+  "fixed": [
+   "5.2.15",
+   "6.0.6"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "django.middleware.cache.UpdateCacheMiddleware.process_response"
+     ],
+     "witness": [
+      "__app__.crm.settings.<module>",
+      "django.utils.deprecation.MiddlewareMixin.__call__",
+      "django.middleware.cache.UpdateCacheMiddleware.process_response"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2025-32873",
+  "ids": [
+   "GHSA-8j24-cjrq-gr2m",
+   "PYSEC-2025-37"
+  ],
+  "cves": [
+   "CVE-2025-32873"
+  ],
+  "cvss": 5.3,
+  "epss": 0.1431,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2025-05-08T04:17:18Z",
+  "fixed": [
+   "4.2.21",
+   "5.1.9",
+   "5.2.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "django.utils.html.strip_tags"
+     ],
+     "witness": [
+      "__app__.cases.views.CaseDetailView.post",
+      "django.db.models.base.Model.save",
+      "django.db.models.base.Model._prepare_related_fields_for_save",
+      "django.db.models.base.Model.full_clean",
+      "wagtail.models.WorkflowState.clean",
+      "wagtail.rich_text.RichTextMaxLengthValidator.clean",
+      "django.utils.html.strip_tags"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2026-25673",
+  "ids": [
+   "GHSA-8p8v-wh79-9r56",
+   "PYSEC-2026-2448"
+  ],
+  "cves": [
+   "CVE-2026-25673"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00842,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-03-03T15:31:41Z",
+  "fixed": [
+   "4.2.29",
+   "5.2.12",
+   "6.0.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2026-53878",
+  "ids": [
+   "GHSA-8qcx-xf44-272x",
+   "PYSEC-2026-2092"
+  ],
+  "cves": [
+   "CVE-2026-53878"
+  ],
+  "cvss": 6.1,
+  "epss": 0.00327,
+  "kev": false,
+  "severity_w": 0.61,
+  "published": "2026-07-07T15:16:48.583Z",
+  "fixed": [
+   "5.2.16",
+   "6.0.7"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "vulnerable symbols not found in installed source",
+     "granularity": "function",
+     "symbols": [
+      "django.core.validators.DomainNameValidator.__init__"
+     ],
+     "witness": [],
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2026-48587",
+  "ids": [
+   "GHSA-923m-gv2p-w5qp",
+   "PYSEC-2026-198"
+  ],
+  "cves": [
+   "CVE-2026-48587"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00367,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-06-03T14:16:44.983Z",
+  "fixed": [
+   "5.2.15",
+   "6.0.6"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "django.utils.cache.has_vary_header"
+     ],
+     "witness": [
+      "__app__.crm.settings.<module>",
+      "django.utils.deprecation.MiddlewareMixin.__call__",
+      "django.middleware.cache.UpdateCacheMiddleware.process_response",
+      "django.utils.cache.has_vary_header"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2026-33034",
+  "ids": [
+   "GHSA-933h-hp56-hf7m",
+   "PYSEC-2026-49"
+  ],
+  "cves": [
+   "CVE-2026-33034"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00799,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-04-07T15:17:39.393Z",
+  "fixed": [
+   "4.2.30",
+   "5.2.13",
+   "6.0.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2024-39330",
+  "ids": [
+   "GHSA-9jmf-237g-qf46",
+   "PYSEC-2024-58"
+  ],
+  "cves": [
+   "CVE-2024-39330"
+  ],
+  "cvss": 8.7,
+  "epss": 0.01008,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2024-07-10T05:15:00Z",
+  "fixed": [
+   "4.2.14",
+   "5.0.7"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "django.core.files.storage.base.Storage.save",
+      "django.core.files.utils.validate_file_name"
+     ],
+     "witness": [
+      "__app__.cases.views.CaseDetailView.post",
+      "django.core.files.storage.base.Storage.save"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2026-53877",
+  "ids": [
+   "GHSA-crhf-3pfg-w68w",
+   "PYSEC-2026-2091"
+  ],
+  "cves": [
+   "CVE-2026-53877"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00527,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2026-07-07T15:16:48.453Z",
+  "fixed": [
+   "5.2.16",
+   "6.0.7"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "django.contrib.gis.gdal.raster.source.GDALRaster.__init__"
+     ],
+     "witness": [
+      "__app__.cases.views.CaseDetailView.post",
+      "django.contrib.gis.utils.layermapping.LayerMapping.save",
+      "django.contrib.gis.gdal.raster.source.GDALRaster.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2024-39614",
+  "ids": [
+   "GHSA-f6f8-9mx6-9mx2",
+   "PYSEC-2024-59"
+  ],
+  "cves": [
+   "CVE-2024-39614"
+  ],
+  "cvss": 8.7,
+  "epss": 0.28637,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2024-07-10T05:15:00Z",
+  "fixed": [
+   "4.2.14",
+   "5.0.7"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "django.utils.translation.trans_real.get_supported_language_variant",
+      "django.utils.translation.trans_real.parse_accept_lang_header"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2025-64459",
+  "ids": [
+   "GHSA-frmv-pr5f-9mcr",
+   "PYSEC-2025-108"
+  ],
+  "cves": [
+   "CVE-2025-64459"
+  ],
+  "cvss": 9.1,
+  "epss": 0.19257,
+  "kev": false,
+  "severity_w": 0.9099999999999999,
+  "published": "2025-11-05T15:15:41.080Z",
+  "fixed": [
+   "4.2.26",
+   "5.1.14",
+   "5.2.8"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.8072878303971307,
+  "exposure_class": "STATICALLY_REACHABLE",
+  "vex": {
+   "state": "exploitable"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "CONFIRMED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "function",
+     "symbols": [
+      "django.db.models.query_utils.Q.__init__"
+     ],
+     "witness": [
+      "__app__.common.views.ApiHomeView.get",
+      "django.db.models.query_utils.Q.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2026-1287",
+  "ids": [
+   "GHSA-gvg8-93h5-g6qq",
+   "PYSEC-2026-46"
+  ],
+  "cves": [
+   "CVE-2026-1287"
+  ],
+  "cvss": 8.1,
+  "epss": 0.00843,
+  "kev": false,
+  "severity_w": 0.8099999999999999,
+  "published": "2026-02-03T15:16:13.703Z",
+  "fixed": [
+   "4.2.28",
+   "5.2.11",
+   "6.0.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "django.db.models.sql.query.Query.check_alias"
+     ],
+     "witness": [
+      "__app__.leads.views.LeadDetailView.put",
+      "django.db.models.sql.query.Query.exists",
+      "django.db.models.sql.query.Query.add_annotation",
+      "django.db.models.sql.query.Query.check_alias"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2026-6873",
+  "ids": [
+   "GHSA-h7pc-vwp9-298g",
+   "PYSEC-2026-199"
+  ],
+  "cves": [
+   "CVE-2026-6873"
+  ],
+  "cvss": 4.3,
+  "epss": 0.00245,
+  "kev": false,
+  "severity_w": 0.43,
+  "published": "2026-06-03T14:16:46.483Z",
+  "fixed": [
+   "5.2.15",
+   "6.0.6"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "django.core.signing.get_cookie_signer",
+      "django.http.request.HttpRequest.get_signed_cookie",
+      "django.http.response.HttpResponseBase.set_signed_cookie"
+     ],
+     "witness": [
+      "__app__.cases.views.CaseDetailView.post",
+      "django.contrib.gis.utils.layermapping.LayerMapping.save",
+      "django.contrib.messages.storage.cookie.CookieStorage.__init__",
+      "django.core.signing.get_cookie_signer"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2023-43665",
+  "ids": [
+   "GHSA-h8gc-pgj2-vjm3",
+   "PYSEC-2023-226"
+  ],
+  "cves": [
+   "CVE-2023-43665"
+  ],
+  "cvss": 8.7,
+  "epss": 0.01462,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2023-11-03T05:15:00Z",
+  "fixed": [
+   "3.2.22",
+   "4.1.12",
+   "4.2.6"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "django.utils.text.Truncator.__init__",
+      "django.utils.text.Truncator._truncate_html"
+     ],
+     "witness": [
+      "__app__.cms.models.BlogListPage.get_context",
+      "django.contrib.admin.widgets.ForeignKeyRawIdWidget.get_context",
+      "django.contrib.admin.widgets.ForeignKeyRawIdWidget.label_and_url_for_value",
+      "django.utils.text.Truncator.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2025-59681",
+  "ids": [
+   "GHSA-hpr9-3m2g-3j9p",
+   "PYSEC-2025-106"
+  ],
+  "cves": [
+   "CVE-2025-59681"
+  ],
+  "cvss": 9.8,
+  "epss": 0.00662,
+  "kev": false,
+  "severity_w": 0.9800000000000001,
+  "published": "2025-10-01T19:15:36.487Z",
+  "fixed": [
+   "4.2.25",
+   "5.1.13",
+   "5.2.7"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "django.db.models.sql.query.Query.check_alias"
+     ],
+     "witness": [
+      "__app__.leads.views.LeadDetailView.put",
+      "django.db.models.sql.query.Query.exists",
+      "django.db.models.sql.query.Query.add_annotation",
+      "django.db.models.sql.query.Query.check_alias"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2023-36053",
+  "ids": [
+   "GHSA-jh3w-4vvf-mjgr",
+   "PYSEC-2023-100"
+  ],
+  "cves": [
+   "CVE-2023-36053"
+  ],
+  "cvss": 8.7,
+  "epss": 0.02978,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2023-07-03T13:15:00Z",
+  "fixed": [
+   "3.2.20",
+   "4.1.10",
+   "4.2.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.8072878303971307,
+  "exposure_class": "STATICALLY_REACHABLE",
+  "vex": {
+   "state": "exploitable"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "CONFIRMED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "function",
+     "symbols": [
+      "django.core.validators.EmailValidator.__call__",
+      "django.core.validators.URLValidator.__call__",
+      "django.forms.fields.EmailField.__init__"
+     ],
+     "witness": [
+      "__app__.cms.models.<module>",
+      "wagtail.fields.<module>",
+      "django.core.validators.<module>",
+      "django.core.validators.EmailValidator.__call__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2024-41989",
+  "ids": [
+   "GHSA-jh75-99hh-qvx9",
+   "PYSEC-2024-67"
+  ],
+  "cves": [
+   "CVE-2024-41989"
+  ],
+  "cvss": 6.9,
+  "epss": 0.012,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2024-08-07T15:15:00Z",
+  "fixed": [
+   "4.2.15",
+   "5.0.8"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "django.template.defaultfilters.floatformat"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2024-53908",
+  "ids": [
+   "GHSA-m9g8-fxxm-xg86",
+   "PYSEC-2024-157"
+  ],
+  "cves": [
+   "CVE-2024-53908"
+  ],
+  "cvss": 9.8,
+  "epss": 0.01415,
+  "kev": false,
+  "severity_w": 0.9800000000000001,
+  "published": "2024-12-06T12:15:18Z",
+  "fixed": [
+   "4.2.17",
+   "5.0.10",
+   "5.1.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 7
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2026-25674",
+  "ids": [
+   "GHSA-mjgh-79qc-68w3",
+   "PYSEC-2026-2449"
+  ],
+  "cves": [
+   "CVE-2026-25674"
+  ],
+  "cvss": 3.7,
+  "epss": 0.00373,
+  "kev": false,
+  "severity_w": 0.37,
+  "published": "2026-03-03T15:31:41Z",
+  "fixed": [
+   "4.2.29",
+   "5.2.12",
+   "6.0.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2026-4292",
+  "ids": [
+   "GHSA-mmwr-2jhp-mc7j",
+   "PYSEC-2026-53"
+  ],
+  "cves": [
+   "CVE-2026-4292"
+  ],
+  "cvss": 2.7,
+  "epss": 0.00305,
+  "kev": false,
+  "severity_w": 0.27,
+  "published": "2026-04-07T15:17:46.650Z",
+  "fixed": [
+   "4.2.30",
+   "5.2.13",
+   "6.0.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2026-3902",
+  "ids": [
+   "GHSA-mvfq-ggxm-9mc5",
+   "PYSEC-2026-51"
+  ],
+  "cves": [
+   "CVE-2026-3902"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00443,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-04-07T15:17:46.353Z",
+  "fixed": [
+   "4.2.30",
+   "5.2.13",
+   "6.0.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2026-1207",
+  "ids": [
+   "GHSA-mwm9-4648-f68q",
+   "PYSEC-2026-44"
+  ],
+  "cves": [
+   "CVE-2026-1207"
+  ],
+  "cvss": 8.1,
+  "epss": 0.12819,
+  "kev": false,
+  "severity_w": 0.8099999999999999,
+  "published": "2026-02-03T15:16:13.433Z",
+  "fixed": [
+   "4.2.28",
+   "5.2.11",
+   "6.0.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "django.contrib.gis.db.backends.postgis.operations.PostGISOperator.check_raster"
+     ],
+     "witness": [
+      "__app__.teams.models.Teams.get_users",
+      "django.db.backends.ddl_references.Expressions.__str__",
+      "django.db.models.sql.compiler.SQLCompiler.compile",
+      "django.contrib.gis.db.backends.postgis.operations.PostGISOperator.as_sql",
+      "django.contrib.gis.db.backends.postgis.operations.PostGISOperator.check_raster"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2025-26699",
+  "ids": [
+   "GHSA-p3fp-8748-vqfq",
+   "PYSEC-2025-13"
+  ],
+  "cves": [
+   "CVE-2025-26699"
+  ],
+  "cvss": 5.0,
+  "epss": 0.0083,
+  "kev": false,
+  "severity_w": 0.5,
+  "published": "2025-03-06T19:15:27Z",
+  "fixed": [
+   "4.2.20",
+   "5.0.13",
+   "5.1.7"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "django.utils.text.wrap",
+      "django.utils.text.wrap._generator"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2024-42005",
+  "ids": [
+   "GHSA-pv4p-cwwg-4rph",
+   "PYSEC-2024-70"
+  ],
+  "cves": [
+   "CVE-2024-42005"
+  ],
+  "cvss": 9.3,
+  "epss": 0.01503,
+  "kev": false,
+  "severity_w": 0.93,
+  "published": "2024-08-07T15:15:00Z",
+  "fixed": [
+   "4.2.15",
+   "5.0.8"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "django.db.models.sql.query.Query.set_values"
+     ],
+     "witness": [
+      "__app__.common.models.Document.get_team_users",
+      "django.db.models.query.QuerySet.values_list",
+      "django.db.models.query.QuerySet._values",
+      "django.db.models.sql.query.Query.set_values"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2026-4277",
+  "ids": [
+   "GHSA-pwjp-ccjc-ghwg",
+   "PYSEC-2026-52"
+  ],
+  "cves": [
+   "CVE-2026-4277"
+  ],
+  "cvss": 9.8,
+  "epss": 0.00466,
+  "kev": false,
+  "severity_w": 0.9800000000000001,
+  "published": "2026-04-07T15:17:46.500Z",
+  "fixed": [
+   "4.2.30",
+   "5.2.13",
+   "6.0.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2026-15830",
+  "ids": [
+   "GHSA-q238-5cxm-5c9h",
+   "PYSEC-2026-3717"
+  ],
+  "cves": [
+   "CVE-2026-15830"
+  ],
+  "cvss": 6.9,
+  "epss": 0.01113,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2026-08-04T17:16:46.593Z",
+  "fixed": [
+   "5.2.17",
+   "6.0.8",
+   "6.1.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "django.contrib.gis.db.backends.mysql.features.DatabaseFeatures.supports_geometry_field_unique_index",
+      "django.contrib.gis.db.backends.mysql.operations.MySQLOperations.get_geometry_converter.converter",
+      "django.contrib.gis.db.backends.oracle.features.DatabaseFeatures.django_test_skips",
+      "django.contrib.gis.db.backends.oracle.operations.OracleOperations.get_geometry_converter.converter",
+      "django.contrib.gis.db.backends.postgis.operations.PostGISOperations.get_geometry_converter",
+      "django.contrib.gis.db.backends.postgis.operations.PostGISOperations.get_geometry_converter.converter",
+      "django.contrib.gis.db.backends.spatialite.operations.SpatiaLiteOperations.get_geometry_converter",
+      "django.contrib.gis.db.backends.spatialite.operations.SpatiaLiteOperations.get_geometry_converter.converter",
+      "django.contrib.gis.db.models.fields.BaseSpatialField.get_prep_value",
+      "django.contrib.gis.db.models.fields.GeometryField.__init__",
+      "django.contrib.gis.db.models.fields.GeometryField.deconstruct",
+      "django.contrib.gis.db.models.fields.GeometryField.formfield",
+      "django.contrib.gis.db.models.proxy.SpatialProxy.__get__",
+      "django.contrib.gis.forms.fields.GeometryField.__init__",
+      "django.contrib.gis.forms.fields.GeometryField.to_python",
+      "django.contrib.gis.forms.widgets.BaseGeometryWidget.deserialize",
+      "django.contrib.gis.geos.geometry.GEOSGeometry.__init__",
+      "django.contrib.gis.geos.geometry.GEOSGeometryBase._from_wkb",
+      "django.contrib.gis.geos.geometry.GEOSGeometryBase._from_wkt",
+      "django.contrib.gis.geos.prototypes.io._WKBReader.limit_hex"
+     ],
+     "witness": [
+      "__app__.teams.models.Teams.get_users",
+      "django.db.backends.ddl_references.Expressions.__str__",
+      "django.db.models.sql.compiler.SQLCompiler.compile",
+      "django.contrib.gis.db.models.aggregates.GeoAggregate.as_sql",
+      "django.contrib.gis.db.backends.spatialite.operations.SpatiaLiteOperations.spatial_aggregate_name",
+      "django.contrib.gis.db.backends.spatialite.operations.SpatiaLiteOperations.get_geometry_converter"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2025-59682",
+  "ids": [
+   "GHSA-q95w-c7qg-hrff",
+   "PYSEC-2026-1296"
+  ],
+  "cves": [
+   "CVE-2025-59682"
+  ],
+  "cvss": 3.1,
+  "epss": 0.00966,
+  "kev": false,
+  "severity_w": 0.31,
+  "published": "2025-10-01T21:31:22Z",
+  "fixed": [
+   "4.2.25",
+   "5.1.13",
+   "5.2.7"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "django.utils.archive.BaseArchive.target_filename"
+     ],
+     "witness": [
+      "__app__.cases.views.CaseDetailView.post",
+      "django.db.models.base.Model.save",
+      "django.db.models.base.Model._prepare_related_fields_for_save",
+      "django.db.models.base.Model.full_clean",
+      "wagtail.models.WorkflowState.clean",
+      "wagtail.whitelist.Whitelister.clean",
+      "wagtail.whitelist.Whitelister.clean_node",
+      "wagtail.whitelist.Whitelister.clean_string_node",
+      "django.utils.archive.TarArchive.extract",
+      "django.utils.archive.BaseArchive.target_filename"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2024-56374",
+  "ids": [
+   "GHSA-qcgg-j2x8-h9g8",
+   "PYSEC-2025-1"
+  ],
+  "cves": [
+   "CVE-2024-56374"
+  ],
+  "cvss": 5.8,
+  "epss": 0.01277,
+  "kev": false,
+  "severity_w": 0.58,
+  "published": "2025-01-14T19:15:32Z",
+  "fixed": [
+   "4.2.18",
+   "5.0.11",
+   "5.1.5"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.8072878303971307,
+  "exposure_class": "STATICALLY_REACHABLE",
+  "vex": {
+   "state": "exploitable"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "CONFIRMED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 7
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "function",
+     "symbols": [
+      "django.db.models.fields.GenericIPAddressField.__init__",
+      "django.db.models.fields.GenericIPAddressField.deconstruct",
+      "django.forms.fields.GenericIPAddressField.__init__",
+      "django.forms.fields.GenericIPAddressField.to_python",
+      "django.utils.ipv6.clean_ipv6_address",
+      "django.utils.ipv6.is_valid_ipv6_address"
+     ],
+     "witness": [
+      "__app__.cases.serializer.<module>",
+      "rest_framework.serializers.<module>",
+      "django.db.models.fields.<module>",
+      "django.core.validators.URLValidator.__call__",
+      "django.core.validators.validate_ipv6_address",
+      "django.utils.ipv6.is_valid_ipv6_address"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2024-38875",
+  "ids": [
+   "GHSA-qg2p-9jwr-mmqf",
+   "PYSEC-2024-56"
+  ],
+  "cves": [
+   "CVE-2024-38875"
+  ],
+  "cvss": 8.7,
+  "epss": 0.01187,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2024-07-10T05:15:00Z",
+  "fixed": [
+   "4.2.14",
+   "5.0.7"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.8072878303971307,
+  "exposure_class": "STATICALLY_REACHABLE",
+  "vex": {
+   "state": "exploitable"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "CONFIRMED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "function",
+     "symbols": [
+      "django.utils.html.Urlizer.trim_punctuation"
+     ],
+     "witness": [
+      "__app__.crm.settings.<module>",
+      "django.contrib.auth.password_validation.<module>",
+      "django.utils.html.<module>",
+      "django.utils.html.Urlizer.__call__",
+      "django.utils.html.Urlizer.handle_word",
+      "django.utils.html.Urlizer.trim_punctuation"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2023-46695",
+  "ids": [
+   "GHSA-qmf9-6jqf-j8fq",
+   "PYSEC-2023-222"
+  ],
+  "cves": [
+   "CVE-2023-46695"
+  ],
+  "cvss": 8.7,
+  "epss": 0.53447,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2023-11-02T06:15:00Z",
+  "fixed": [
+   "3.2.23",
+   "4.1.13",
+   "4.2.7"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "django.contrib.auth.forms.UsernameField.to_python"
+     ],
+     "witness": [
+      "__app__.common.views.DomainDetailView.delete",
+      "rest_framework.authtoken.admin.TokenAdmin.get_object",
+      "django.contrib.auth.forms.UsernameField.to_python"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2025-64458",
+  "ids": [
+   "GHSA-qw25-v68c-qjf3",
+   "PYSEC-2025-107"
+  ],
+  "cves": [
+   "CVE-2025-64458"
+  ],
+  "cvss": 7.5,
+  "epss": 0.01909,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2025-11-05T15:15:40.940Z",
+  "fixed": [
+   "4.2.26",
+   "5.1.14",
+   "5.2.8"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.8072878303971307,
+  "exposure_class": "STATICALLY_REACHABLE",
+  "vex": {
+   "state": "exploitable"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "CONFIRMED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "function",
+     "symbols": [
+      "django.http.response.HttpResponseRedirectBase.__init__"
+     ],
+     "witness": [
+      "__app__.emails.views.email_move_to_trash",
+      "django.http.response.HttpResponseRedirectBase.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2024-41991",
+  "ids": [
+   "GHSA-r836-hh6v-rg5g",
+   "PYSEC-2024-69"
+  ],
+  "cves": [
+   "CVE-2024-41991"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00954,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2024-08-07T15:15:00Z",
+  "fixed": [
+   "4.2.15",
+   "5.0.8"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.8072878303971307,
+  "exposure_class": "STATICALLY_REACHABLE",
+  "vex": {
+   "state": "exploitable"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "CONFIRMED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "function",
+     "symbols": [
+      "django.contrib.admin.widgets.AdminURLFieldWidget.get_context",
+      "django.utils.html.Urlizer.handle_word",
+      "django.utils.html.Urlizer.is_email_simple"
+     ],
+     "witness": [
+      "__app__.crm.settings.<module>",
+      "django.contrib.auth.password_validation.<module>",
+      "django.utils.html.<module>",
+      "django.utils.html.Urlizer.__call__",
+      "django.utils.html.Urlizer.handle_word"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2025-13372",
+  "ids": [
+   "GHSA-rqw2-ghq9-44m7",
+   "PYSEC-2025-104"
+  ],
+  "cves": [
+   "CVE-2025-13372"
+  ],
+  "cvss": 4.3,
+  "epss": 0.00926,
+  "kev": false,
+  "severity_w": 0.43,
+  "published": "2025-12-02T16:15:53.907Z",
+  "fixed": [
+   "4.2.27",
+   "5.1.15",
+   "5.2.9"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "module",
+     "symbols": [
+      "django.db.backends.postgresql.operations.<module>"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2024-45231",
+  "ids": [
+   "GHSA-rrqc-c2jx-6jgv",
+   "PYSEC-2026-1297"
+  ],
+  "cves": [
+   "CVE-2024-45231"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00788,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2024-10-08T18:33:13Z",
+  "fixed": [
+   "4.2.16",
+   "5.0.9",
+   "5.1.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "django.contrib.auth.forms.PasswordResetForm.send_mail"
+     ],
+     "witness": [
+      "__app__.cases.views.CaseDetailView.post",
+      "django.contrib.auth.forms.PasswordResetForm.save",
+      "django.contrib.auth.forms.PasswordResetForm.send_mail"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2024-27351",
+  "ids": [
+   "GHSA-vm8q-m57g-pff3",
+   "PYSEC-2024-47"
+  ],
+  "cves": [
+   "CVE-2024-27351"
+  ],
+  "cvss": 5.3,
+  "epss": 0.01854,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2024-03-15T20:15:00Z",
+  "fixed": [
+   "3.2.25",
+   "4.2.11",
+   "5.0.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "module",
+     "symbols": [
+      "django.utils.text.<module>"
+     ],
+     "witness": [
+      "__app__.accounts.models.<module>",
+      "django.utils.text.<module>"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2025-64460",
+  "ids": [
+   "GHSA-vrcr-9hj9-jcg6",
+   "PYSEC-2025-109"
+  ],
+  "cves": [
+   "CVE-2025-64460"
+  ],
+  "cvss": 7.5,
+  "epss": 0.02162,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2025-12-02T16:15:56.013Z",
+  "fixed": [
+   "4.2.27",
+   "5.1.15",
+   "5.2.9"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "django.core.serializers.xml_serializer.Deserializer.__next__",
+      "django.core.serializers.xml_serializer.getInnerText"
+     ],
+     "witness": [
+      "__app__.common.models.Document.get_team_users",
+      "django.core.serializers.xml_serializer.Deserializer.__next__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2026-15307",
+  "ids": [
+   "GHSA-wvqv-fj8w-qmhm",
+   "PYSEC-2026-4035"
+  ],
+  "cves": [
+   "CVE-2026-15307"
+  ],
+  "cvss": 8.8,
+  "epss": 0.01134,
+  "kev": false,
+  "severity_w": 0.8800000000000001,
+  "published": "2026-08-04T18:31:27Z",
+  "fixed": [
+   "5.2.17",
+   "6.0.8"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "django.contrib.gis.db.models.fields.BaseSpatialField.get_prep_value",
+      "django.contrib.gis.db.models.fields.BaseSpatialField.get_raster_prep_value",
+      "django.contrib.gis.gdal.raster.source.GDALRaster.__init__",
+      "django.contrib.gis.gdal.raster.source.GDALRaster._flush"
+     ],
+     "witness": [
+      "__app__.cms.models.BlogListPage.get_context",
+      "wagtail.blocks.stream_block.StreamValue.RawDataView.__getitem__",
+      "django.contrib.gis.db.models.fields.BaseSpatialField.get_prep_value"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2024-39329",
+  "ids": [
+   "GHSA-x7q2-wr7g-xqmf",
+   "PYSEC-2024-57"
+  ],
+  "cves": [
+   "CVE-2024-39329"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00889,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2024-07-10T05:15:00Z",
+  "fixed": [
+   "4.2.14",
+   "5.0.7"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "django.contrib.auth.hashers.check_password",
+      "django.contrib.auth.hashers.verify_password"
+     ],
+     "witness": [
+      "__app__.teams.models.Teams.get_users",
+      "django.contrib.auth.base_user.AbstractBaseUser.__str__",
+      "django.contrib.auth.base_user.AbstractBaseUser.get_username",
+      "django.contrib.auth.base_user.AbstractBaseUser.check_password",
+      "django.contrib.auth.hashers.check_password"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "django",
+  "version": "4.2.1",
+  "advisory": "CVE-2024-24680",
+  "ids": [
+   "GHSA-xxj9-f6rv-m3x4",
+   "PYSEC-2024-28"
+  ],
+  "cves": [
+   "CVE-2024-24680"
+  ],
+  "cvss": 8.2,
+  "epss": 0.01606,
+  "kev": false,
+  "severity_w": 0.82,
+  "published": "2024-02-06T22:16:00Z",
+  "fixed": [
+   "3.2.24",
+   "4.2.10",
+   "5.0.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "django.contrib.humanize.templatetags.humanize.intcomma"
+     ],
+     "witness": [
+      "__app__.cms.models.BlogListPage.get_context",
+      "wagtail.admin.views.chooser.SearchView.get",
+      "django.contrib.humanize.templatetags.humanize.intcomma"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "python-dotenv",
+  "version": "1.0.0",
+  "advisory": "CVE-2026-28684",
+  "ids": [
+   "GHSA-mf9w-mj56-hr94",
+   "PYSEC-2026-2270"
+  ],
+  "cves": [
+   "CVE-2026-28684"
+  ],
+  "cvss": 6.6,
+  "epss": 0.00252,
+  "kev": false,
+  "severity_w": 0.6599999999999999,
+  "published": "2026-04-20T17:16:33.087Z",
+  "fixed": [
+   "1.2.2"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "dotenv.cli.set_value",
+      "dotenv.cli.unset",
+      "dotenv.main.rewrite",
+      "dotenv.main.set_key",
+      "dotenv.main.unset_key"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "djangorestframework",
+  "version": "3.14.0",
+  "advisory": "CVE-2026-73228",
+  "ids": [
+   "GHSA-2m8g-3cmr-wg3w",
+   "PYSEC-2026-3827"
+  ],
+  "cves": [
+   "CVE-2026-73228"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00557,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-09-01T19:24:51Z",
+  "fixed": [
+   "3.17.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "rest_framework.request.Request._parse"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "djangorestframework",
+  "version": "3.14.0",
+  "advisory": "CVE-2026-114138",
+  "ids": [
+   "GHSA-33wh-fxxf-88vv"
+  ],
+  "cves": [
+   "CVE-2026-114138"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00595,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-10-22T16:17:13Z",
+  "fixed": [
+   "3.18.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "rest_framework.negotiation.DefaultContentNegotiation.get_accept_list",
+      "rest_framework.negotiation.DefaultContentNegotiation.select_parser",
+      "rest_framework.negotiation.DefaultContentNegotiation.select_renderer",
+      "rest_framework.request.is_form_media_type",
+      "rest_framework.utils.mediatypes._MediaType.__init__",
+      "rest_framework.utils.mediatypes._MediaType.match",
+      "rest_framework.utils.mediatypes.order_by_precedence"
+     ],
+     "witness": [
+      "__app__.crm.server_settings.<module>",
+      "sentry_sdk.integrations.<module>",
+      "rest_framework.views.APIView.initial",
+      "rest_framework.views.APIView.perform_content_negotiation",
+      "rest_framework.negotiation.DefaultContentNegotiation.select_renderer",
+      "rest_framework.negotiation.DefaultContentNegotiation.get_accept_list"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "djangorestframework",
+  "version": "3.14.0",
+  "advisory": "CVE-2026-114136",
+  "ids": [
+   "GHSA-3547-9m27-7rxg"
+  ],
+  "cves": [
+   "CVE-2026-114136"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00503,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-10-22T16:16:09Z",
+  "fixed": [
+   "3.18.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "rest_framework.parsers.FormParser.parse",
+      "rest_framework.parsers.JSONParser.parse",
+      "rest_framework.parsers.MultiPartParser.parse"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "djangorestframework",
+  "version": "3.14.0",
+  "advisory": "CVE-2026-73229",
+  "ids": [
+   "GHSA-g47c-3xmw-q6m2",
+   "PYSEC-2026-3828"
+  ],
+  "cves": [
+   "CVE-2026-73229"
+  ],
+  "cvss": 4.3,
+  "epss": 0.00373,
+  "kev": false,
+  "severity_w": 0.43,
+  "published": "2026-09-01T19:24:29Z",
+  "fixed": [
+   "3.17.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "rest_framework.renderers.AdminRenderer.render"
+     ],
+     "witness": [
+      "__app__.common.views.DocumentDetailView.delete",
+      "rest_framework.test.APIRequestFactory.delete",
+      "rest_framework.test.APIRequestFactory._encode_data",
+      "rest_framework.renderers.AdminRenderer.render"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "djangorestframework",
+  "version": "3.14.0",
+  "advisory": "CVE-2024-21520",
+  "ids": [
+   "GHSA-gw84-84pc-xp82",
+   "PYSEC-2026-1304"
+  ],
+  "cves": [
+   "CVE-2024-21520"
+  ],
+  "cvss": 6.1,
+  "epss": 0.01133,
+  "kev": false,
+  "severity_w": 0.61,
+  "published": "2024-06-26T06:30:29Z",
+  "fixed": [
+   "3.15.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "rest_framework.templatetags.rest_framework.break_long_headers"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "djangorestframework",
+  "version": "3.14.0",
+  "advisory": "CVE-2026-114137",
+  "ids": [
+   "GHSA-xw6w-gcfp-cf8m"
+  ],
+  "cves": [
+   "CVE-2026-114137"
+  ],
+  "cvss": 7.4,
+  "epss": 0.00512,
+  "kev": false,
+  "severity_w": 0.74,
+  "published": "2026-10-22T16:18:05Z",
+  "fixed": [
+   "3.18.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "rest_framework.authtoken.admin.TokenAdmin.delete_model",
+      "rest_framework.authtoken.models.TokenProxy.pk"
+     ],
+     "witness": [
+      "__app__.cms.models.BlogListPage.get_context",
+      "wagtail.admin.views.generic.workflow.PreviewRevisionForTask.get",
+      "django.contrib.admin.options.ModelAdmin.get_actions",
+      "django.contrib.admin.options.ModelAdmin._filter_actions_by_permissions",
+      "django.contrib.admin.options.ModelAdmin._delete_view",
+      "rest_framework.authtoken.admin.TokenAdmin.delete_model"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "djangorestframework-simplejwt",
+  "version": "5.2.2",
+  "advisory": "CVE-2024-22513",
+  "ids": [
+   "GHSA-5vcc-86wm-547q",
+   "PYSEC-2026-1305"
+  ],
+  "cves": [
+   "CVE-2024-22513"
+  ],
+  "cvss": null,
+  "epss": 0.00804,
+  "kev": false,
+  "severity_w": 0.5,
+  "published": "2024-03-16T09:30:35Z",
+  "fixed": [
+   "5.5.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "rest_framework_simplejwt.tokens.Token.for_user"
+     ],
+     "witness": [
+      "__app__.common.views.GoogleLoginView.post",
+      "rest_framework_simplejwt.tokens.BlacklistMixin.for_user",
+      "rest_framework_simplejwt.tokens.Token.for_user"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "sentry-sdk",
+  "version": "1.24.0",
+  "advisory": "CVE-2024-40647",
+  "ids": [
+   "GHSA-g92j-qhmh-64v2",
+   "PYSEC-2026-1917"
+  ],
+  "cves": [
+   "CVE-2024-40647"
+  ],
+  "cvss": 2.5,
+  "epss": 0.002,
+  "kev": false,
+  "severity_w": 0.25,
+  "published": "2024-07-18T17:18:46Z",
+  "fixed": [
+   "1.45.1",
+   "2.8.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "sentry_sdk.integrations.stdlib._install_subprocess.sentry_patched_popen_init"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "wagtail",
+  "version": "5.0.1",
+  "advisory": "CVE-2026-55468",
+  "ids": [
+   "GHSA-3vrh-m9w7-v94f",
+   "PYSEC-2026-3939"
+  ],
+  "cves": [
+   "CVE-2026-55468"
+  ],
+  "cvss": 4.3,
+  "epss": 0.00342,
+  "kev": false,
+  "severity_w": 0.43,
+  "published": "2026-08-20T18:42:25Z",
+  "fixed": [
+   "7.0.9",
+   "7.3.4",
+   "7.4.3",
+   "8.0rc2"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 5
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "wagtail",
+  "version": "5.0.1",
+  "advisory": "CVE-2026-25517",
+  "ids": [
+   "GHSA-4qvv-g3vr-m348",
+   "PYSEC-2026-2030"
+  ],
+  "cves": [
+   "CVE-2026-25517"
+  ],
+  "cvss": 5.1,
+  "epss": 0.00384,
+  "kev": false,
+  "severity_w": 0.51,
+  "published": "2026-02-03T18:35:52Z",
+  "fixed": [
+   "6.3.6",
+   "7.0.4",
+   "7.1.3",
+   "7.2.2",
+   "7.3"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 6
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "wagtail.admin.views.generic.preview.PreviewOnCreate.session_key",
+      "wagtail.admin.views.generic.preview.PreviewOnEdit.get_object",
+      "wagtail.admin.views.pages.preview.PreviewOnCreate.get_object",
+      "wagtail.admin.views.pages.preview.PreviewOnEdit.get_object",
+      "wagtail.contrib.settings.views.PreviewOnEdit.get_object",
+      "wagtail.contrib.settings.views.PreviewOnEdit.setup"
+     ],
+     "witness": [
+      "__app__.cases.views.CaseDetailView.post",
+      "django.views.generic.edit.BaseUpdateView.get",
+      "wagtail.admin.views.generic.models.EditView.get_object",
+      "wagtail.admin.views.generic.preview.PreviewOnEdit.get_object"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "wagtail",
+  "version": "5.0.1",
+  "advisory": "CVE-2026-44200",
+  "ids": [
+   "GHSA-67rv-mg8q-5pf3",
+   "PYSEC-2026-149"
+  ],
+  "cves": [
+   "CVE-2026-44200"
+  ],
+  "cvss": 6.5,
+  "epss": 0.00201,
+  "kev": false,
+  "severity_w": 0.65,
+  "published": "2026-05-08T20:23:11Z",
+  "fixed": [
+   "7.0.7",
+   "7.3.2"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "wagtail",
+  "version": "5.0.1",
+  "advisory": "CVE-2026-54262",
+  "ids": [
+   "GHSA-8634-mr4j-r72c",
+   "PYSEC-2026-615"
+  ],
+  "cves": [
+   "CVE-2026-54262"
+  ],
+  "cvss": 4.3,
+  "epss": 0.0027,
+  "kev": false,
+  "severity_w": 0.43,
+  "published": "2026-07-01T22:16:49.787Z",
+  "fixed": [
+   "7.0.8",
+   "7.3.3",
+   "7.4.2"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "wagtail",
+  "version": "5.0.1",
+  "advisory": "CVE-2026-125105",
+  "ids": [
+   "GHSA-92hv-j533-69wc"
+  ],
+  "cves": [
+   "CVE-2026-125105"
+  ],
+  "cvss": 3.7,
+  "epss": 0.00284,
+  "kev": false,
+  "severity_w": 0.37,
+  "published": "2026-08-20T18:45:09Z",
+  "fixed": [
+   "7.0.9",
+   "7.3.4",
+   "7.4.3",
+   "8.0rc2"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "wagtail",
+  "version": "5.0.1",
+  "advisory": "CVE-2026-123820",
+  "ids": [
+   "GHSA-c2xx-cjmh-9q8f"
+  ],
+  "cves": [
+   "CVE-2026-123820"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00297,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-08-20T18:45:14Z",
+  "fixed": [
+   "7.0.9",
+   "7.3.4",
+   "7.4.3",
+   "8.0rc2"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "wagtail",
+  "version": "5.0.1",
+  "advisory": "CVE-2026-44198",
+  "ids": [
+   "GHSA-c4mr-889m-vgf6",
+   "PYSEC-2026-147"
+  ],
+  "cves": [
+   "CVE-2026-44198"
+  ],
+  "cvss": 4.3,
+  "epss": 0.00162,
+  "kev": false,
+  "severity_w": 0.43,
+  "published": "2026-05-08T20:19:08Z",
+  "fixed": [
+   "7.0.7",
+   "7.3.2"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "wagtail",
+  "version": "5.0.1",
+  "advisory": "CVE-2026-44197",
+  "ids": [
+   "GHSA-c6wj-9vcj-75pj",
+   "PYSEC-2026-146"
+  ],
+  "cves": [
+   "CVE-2026-44197"
+  ],
+  "cvss": 6.5,
+  "epss": 0.00204,
+  "kev": false,
+  "severity_w": 0.65,
+  "published": "2026-05-08T20:17:31Z",
+  "fixed": [
+   "7.0.7",
+   "7.3.2"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "wagtail",
+  "version": "5.0.1",
+  "advisory": "CVE-2026-54260",
+  "ids": [
+   "GHSA-f2p5-j6fg-5cxf",
+   "PYSEC-2026-613"
+  ],
+  "cves": [
+   "CVE-2026-54260"
+  ],
+  "cvss": 4.3,
+  "epss": 0.00373,
+  "kev": false,
+  "severity_w": 0.43,
+  "published": "2026-07-01T22:16:49.523Z",
+  "fixed": [
+   "7.0.8",
+   "7.3.3",
+   "7.4.2"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "wagtail",
+  "version": "5.0.1",
+  "advisory": "CVE-2023-45809",
+  "ids": [
+   "GHSA-fc75-58r8-rm3h",
+   "PYSEC-2023-219"
+  ],
+  "cves": [
+   "CVE-2023-45809"
+  ],
+  "cvss": 2.7,
+  "epss": 0.00555,
+  "kev": false,
+  "severity_w": 0.27,
+  "published": "2023-10-19T15:50:58Z",
+  "fixed": [
+   "4.1.9",
+   "5.0.5",
+   "5.1.3"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "module",
+     "symbols": [
+      "wagtail.users.views.bulk_actions.user_bulk_action.<module>"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "wagtail",
+  "version": "5.0.1",
+  "advisory": "CVE-2026-54259",
+  "ids": [
+   "GHSA-h54r-xq46-qwqm",
+   "PYSEC-2026-612"
+  ],
+  "cves": [
+   "CVE-2026-54259"
+  ],
+  "cvss": 4.3,
+  "epss": 0.0027,
+  "kev": false,
+  "severity_w": 0.43,
+  "published": "2026-07-01T22:16:49.297Z",
+  "fixed": [
+   "7.0.8",
+   "7.3.3",
+   "7.4.2"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "wagtail",
+  "version": "5.0.1",
+  "advisory": "CVE-2026-125106",
+  "ids": [
+   "GHSA-jm5p-837g-rv8g"
+  ],
+  "cves": [
+   "CVE-2026-125106"
+  ],
+  "cvss": 6.5,
+  "epss": 0.00306,
+  "kev": false,
+  "severity_w": 0.65,
+  "published": "2026-08-20T18:45:27Z",
+  "fixed": [
+   "7.0.9",
+   "7.3.4",
+   "7.4.3",
+   "8.0rc2"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "wagtail",
+  "version": "5.0.1",
+  "advisory": "CVE-2024-39317",
+  "ids": [
+   "GHSA-jmp3-39vp-fwg8",
+   "PYSEC-2024-86"
+  ],
+  "cves": [
+   "CVE-2024-39317"
+  ],
+  "cvss": 7.1,
+  "epss": 0.0061,
+  "kev": false,
+  "severity_w": 0.71,
+  "published": "2024-07-11T13:21:42Z",
+  "fixed": [
+   "5.2.6",
+   "6.0.6",
+   "6.1.3"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "wagtail.search.utils.separate_filters_from_query"
+     ],
+     "witness": [
+      "__app__.cms.models.BlogListPage.get_context",
+      "wagtail.admin.views.chooser.SearchView.get",
+      "wagtail.admin.views.pages.search.search",
+      "wagtail.admin.views.pages.search.page_filter_search",
+      "wagtail.search.utils.parse_query_string",
+      "wagtail.search.utils.separate_filters_from_query"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "wagtail",
+  "version": "5.0.1",
+  "advisory": "CVE-2026-28223",
+  "ids": [
+   "GHSA-p4v8-rw59-93cq",
+   "PYSEC-2026-2308"
+  ],
+  "cves": [
+   "CVE-2026-28223"
+  ],
+  "cvss": 6.1,
+  "epss": 0.00535,
+  "kev": false,
+  "severity_w": 0.61,
+  "published": "2026-03-03T17:59:30Z",
+  "fixed": [
+   "6.3.8",
+   "7.0.6",
+   "7.2.3",
+   "7.3.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 5
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "module",
+     "symbols": [
+      "wagtail.admin.views.account.<module>",
+      "wagtail.contrib.simple_translation.views.<module>"
+     ],
+     "witness": [
+      "__app__.crm.urls.<module>",
+      "wagtail.admin.urls.<module>",
+      "wagtail.admin.views.account.<module>"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "wagtail",
+  "version": "5.0.1",
+  "advisory": "CVE-2026-28222",
+  "ids": [
+   "GHSA-p5cm-246w-84jm",
+   "PYSEC-2026-2307"
+  ],
+  "cves": [
+   "CVE-2026-28222"
+  ],
+  "cvss": 6.1,
+  "epss": 0.00503,
+  "kev": false,
+  "severity_w": 0.61,
+  "published": "2026-03-03T17:57:18Z",
+  "fixed": [
+   "6.3.8",
+   "7.0.6",
+   "7.2.3",
+   "7.3.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 5
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "wagtail.contrib.table_block.templatetags.table_block_tags.cell_classname",
+      "wagtail.contrib.table_block.templatetags.table_block_tags.cell_span",
+      "wagtail.contrib.table_block.tests.TestTableBlock.test_render_empty_table"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "wagtail",
+  "version": "5.0.1",
+  "advisory": "CVE-2026-44201",
+  "ids": [
+   "GHSA-p5gm-92h4-6pv6",
+   "PYSEC-2026-150"
+  ],
+  "cves": [
+   "CVE-2026-44201"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00256,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-05-08T20:21:38Z",
+  "fixed": [
+   "7.0.7",
+   "7.3.2"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "wagtail",
+  "version": "5.0.1",
+  "advisory": "CVE-2026-44199",
+  "ids": [
+   "GHSA-pwm3-7fv4-g6xx",
+   "PYSEC-2026-148"
+  ],
+  "cves": [
+   "CVE-2026-44199"
+  ],
+  "cvss": 6.5,
+  "epss": 0.00174,
+  "kev": false,
+  "severity_w": 0.65,
+  "published": "2026-05-08T20:20:12Z",
+  "fixed": [
+   "7.0.7",
+   "7.3.2"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "wagtail",
+  "version": "5.0.1",
+  "advisory": "CVE-2026-54261",
+  "ids": [
+   "GHSA-r6p4-grq7-xm4m",
+   "PYSEC-2026-614"
+  ],
+  "cves": [
+   "CVE-2026-54261"
+  ],
+  "cvss": 6.5,
+  "epss": 0.0034,
+  "kev": false,
+  "severity_w": 0.65,
+  "published": "2026-07-01T22:16:49.653Z",
+  "fixed": [
+   "7.0.8",
+   "7.3.3",
+   "7.4.2"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Django-CRM__Django-CRM@0.10.0",
+  "package": "wagtail",
+  "version": "5.0.1",
+  "advisory": "CVE-2026-123819",
+  "ids": [
+   "GHSA-x5cx-w6p2-mxf2"
+  ],
+  "cves": [
+   "CVE-2026-123819"
+  ],
+  "cvss": 6.5,
+  "epss": 0.00306,
+  "kev": false,
+  "severity_w": 0.65,
+  "published": "2026-08-20T18:45:23Z",
+  "fixed": [
+   "7.0.9",
+   "7.3.4",
+   "7.4.3",
+   "8.0rc2"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ }
+]

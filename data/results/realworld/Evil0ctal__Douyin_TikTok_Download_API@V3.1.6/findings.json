@@ -1,0 +1,8965 @@
+[
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54279",
+  "ids": [
+   "GHSA-2fqr-mr3j-6wp8",
+   "PYSEC-2026-2112"
+  ],
+  "cves": [
+   "CVE-2026-54279"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00493,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:08:51Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.cookiejar.CookieJar._load_json_data",
+      "aiohttp.cookiejar.CookieJar.load",
+      "aiohttp.cookiejar.CookieJar.save"
+     ],
+     "witness": [
+      "__app__.web_api.startup_event",
+      "aiohttp.client_reqrep.ClientResponse.start",
+      "aiohttp.cookiejar.CookieJar.load"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-123817",
+  "ids": [
+   "GHSA-2g87-pp6c-29x5"
+  ],
+  "cves": [
+   "CVE-2026-123817"
+  ],
+  "cvss": 8.7,
+  "epss": 0.00328,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2026-10-19T17:07:23Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client.ClientSession._ws_connect",
+      "aiohttp.client_ws.ClientWebSocketResponse.__init__",
+      "aiohttp.client_ws.ClientWebSocketResponse._handle_ping_pong_exception",
+      "aiohttp.client_ws.ClientWebSocketResponse.close",
+      "aiohttp.client_ws.ClientWebSocketResponse.receive",
+      "aiohttp.http_parser.HttpParser.feed_data",
+      "aiohttp.web_protocol.RequestHandler.__init__",
+      "aiohttp.web_protocol.RequestHandler._resume_msg_queue_reading",
+      "aiohttp.web_protocol.RequestHandler.data_received",
+      "aiohttp.web_protocol.RequestHandler.eof_received",
+      "aiohttp.web_protocol.RequestHandler.finish_response",
+      "aiohttp.web_ws.WebSocketResponse._handle_ping_pong_exception",
+      "aiohttp.web_ws.WebSocketResponse._post_start",
+      "aiohttp.web_ws.WebSocketResponse.close"
+     ],
+     "witness": [
+      "__app__.web_api.download_douyin_discover",
+      "aiohttp.http_websocket.WebSocketError.__str__",
+      "aiohttp.client_ws.ClientWebSocketResponse.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34514",
+  "ids": [
+   "GHSA-2vrm-gr82-f7m5",
+   "PYSEC-2026-2096"
+  ],
+  "cves": [
+   "CVE-2026-34514"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00327,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-04-01T21:16:59.417Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.formdata.FormData.add_field"
+     ],
+     "witness": [
+      "__app__.web_api.download_douyin_discover",
+      "aiohttp.http_websocket.WebSocketError.__str__",
+      "aiohttp.formdata.FormData.__init__",
+      "aiohttp.formdata.FormData.add_fields",
+      "aiohttp.formdata.FormData.add_field"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34517",
+  "ids": [
+   "GHSA-3wq7-rqq7-wx6j",
+   "PYSEC-2026-2099"
+  ],
+  "cves": [
+   "CVE-2026-34517"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00399,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-04-01T21:16:59.870Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2023-37276",
+  "ids": [
+   "GHSA-45c4-8wx5-qw6w",
+   "PYSEC-2023-120"
+  ],
+  "cves": [
+   "CVE-2023-37276"
+  ],
+  "cvss": 6.9,
+  "epss": 0.01337,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2023-07-20T14:52:00Z",
+  "fixed": [
+   "3.8.5"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "module",
+     "symbols": [
+      "aiohttp.<module>"
+     ],
+     "witness": [
+      "__app__.web_api.<module>",
+      "aiohttp.<module>"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111063",
+  "ids": [
+   "GHSA-494j-54xm-rwp3"
+  ],
+  "cves": [
+   "CVE-2026-111063"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00233,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2026-10-19T17:07:47Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.cookiejar.CookieJar.filter_cookies"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request",
+      "aiohttp.cookiejar.CookieJar.filter_cookies"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54273",
+  "ids": [
+   "GHSA-4fvr-rgm6-gqmc",
+   "PYSEC-2026-2107"
+  ],
+  "cves": [
+   "CVE-2026-54273"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00493,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:10:32Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.base_protocol.BaseProtocol.pause_reading",
+      "aiohttp.base_protocol.BaseProtocol.resume_reading",
+      "aiohttp.http_parser.HttpParser.__init__",
+      "aiohttp.http_parser.HttpParser.feed_data",
+      "aiohttp.http_parser.HttpParser.feed_eof",
+      "aiohttp.web_protocol.RequestHandler.__init__",
+      "aiohttp.web_protocol.RequestHandler.data_received",
+      "aiohttp.web_protocol.RequestHandler.keep_alive",
+      "aiohttp.web_protocol.RequestHandler.start"
+     ],
+     "witness": [
+      "__app__.web_api.download_file_hybrid",
+      "aiohttp.client_ws.ClientWebSocketResponse.close",
+      "aiohttp.streams.FlowControlDataQueue.feed_data",
+      "aiohttp.base_protocol.BaseProtocol.pause_reading"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54275",
+  "ids": [
+   "GHSA-4m7w-qmgq-4wj5",
+   "PYSEC-2026-237"
+  ],
+  "cves": [
+   "CVE-2026-54275"
+  ],
+  "cvss": 7.5,
+  "epss": 0.0047,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:11:13Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69226",
+  "ids": [
+   "GHSA-54jq-c3m8-4m76",
+   "PYSEC-2026-1097"
+  ],
+  "cves": [
+   "CVE-2025-69226"
+  ],
+  "cvss": 2.7,
+  "epss": 0.00368,
+  "kev": false,
+  "severity_w": 0.27,
+  "published": "2026-01-05T23:09:51Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_urldispatcher.StaticResource._handle",
+      "aiohttp.web_urldispatcher.StaticResource.resolve"
+     ],
+     "witness": [
+      "__app__.web_api.<module>",
+      "aiohttp.<module>",
+      "aiohttp.payload.<module>",
+      "aiohttp.web_routedef.StaticDef.register",
+      "aiohttp.web_urldispatcher.UrlDispatcher.add_static",
+      "aiohttp.web_urldispatcher.StaticResource.__init__",
+      "aiohttp.web_urldispatcher.StaticResource.resolve"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2024-23334",
+  "ids": [
+   "GHSA-5h86-8mv2-jq9f",
+   "PYSEC-2024-24"
+  ],
+  "cves": [
+   "CVE-2024-23334"
+  ],
+  "cvss": 8.2,
+  "epss": 0.76875,
+  "kev": false,
+  "severity_w": 0.82,
+  "published": "2024-01-29T22:31:03Z",
+  "fixed": [
+   "3.9.2"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_urldispatcher.StaticResource._handle",
+      "aiohttp.web_urldispatcher.StaticResource.url_for"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2024-30251",
+  "ids": [
+   "GHSA-5m98-qgg9-wh84",
+   "PYSEC-2026-1098"
+  ],
+  "cves": [
+   "CVE-2024-30251"
+  ],
+  "cvss": 7.5,
+  "epss": 0.01094,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2024-05-03T17:29:54Z",
+  "fixed": [
+   "3.9.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.formdata.FormData.add_field",
+      "aiohttp.multipart.BodyPartReader.__init__",
+      "aiohttp.multipart.BodyPartReader._read_chunk_from_length",
+      "aiohttp.multipart.BodyPartReader.decode",
+      "aiohttp.multipart.BodyPartReader.get_charset",
+      "aiohttp.multipart.MultipartReader.__init__",
+      "aiohttp.multipart.MultipartReader._get_boundary",
+      "aiohttp.multipart.MultipartReader._get_part_reader",
+      "aiohttp.multipart.MultipartReader.next",
+      "aiohttp.multipart.MultipartWriter.__init__",
+      "aiohttp.multipart.MultipartWriter.append_payload",
+      "aiohttp.multipart.MultipartWriter.write"
+     ],
+     "witness": [
+      "__app__.web_api.download_douyin_discover",
+      "aiohttp.http_websocket.WebSocketError.__str__",
+      "aiohttp.formdata.FormData.__init__",
+      "aiohttp.formdata.FormData.add_fields",
+      "aiohttp.formdata.FormData.add_field"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111064",
+  "ids": [
+   "GHSA-5wr8-gcqf-gqf3"
+  ],
+  "cves": [
+   "CVE-2026-111064"
+  ],
+  "cvss": 8.2,
+  "epss": 0.00399,
+  "kev": false,
+  "severity_w": 0.82,
+  "published": "2026-10-19T17:08:04Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_protocol.RequestHandler.__init__",
+      "aiohttp.web_protocol.RequestHandler.connection_made"
+     ],
+     "witness": [
+      "__app__.web_api.download_douyin_discover",
+      "aiohttp.http_websocket.WebSocketError.__str__",
+      "aiohttp.web_protocol.RequestHandler.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34520",
+  "ids": [
+   "GHSA-63hf-3vf5-4wqf",
+   "PYSEC-2026-2102"
+  ],
+  "cves": [
+   "CVE-2026-34520"
+  ],
+  "cvss": 9.1,
+  "epss": 0.00479,
+  "kev": false,
+  "severity_w": 0.9099999999999999,
+  "published": "2026-04-01T21:17:00.333Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HeadersParser.parse_headers"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request",
+      "aiohttp.multipart.MultipartReader.release",
+      "aiohttp.multipart.MultipartReader.next",
+      "aiohttp.multipart.MultipartReader.fetch_next_part",
+      "aiohttp.multipart.MultipartReader._read_headers",
+      "aiohttp.http_parser.HeadersParser.parse_headers"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54277",
+  "ids": [
+   "GHSA-63hw-fmq6-xxg2",
+   "PYSEC-2026-2110"
+  ],
+  "cves": [
+   "CVE-2026-54277"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00563,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:09:16Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69224",
+  "ids": [
+   "GHSA-69f9-5gxw-wvc2",
+   "PYSEC-2026-1099"
+  ],
+  "cves": [
+   "CVE-2025-69224"
+  ],
+  "cvss": 2.7,
+  "epss": 0.0025,
+  "kev": false,
+  "severity_w": 0.27,
+  "published": "2026-01-05T22:58:57Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HttpParser.parse_headers",
+      "aiohttp.http_parser.HttpRequestParser._is_chunked_te",
+      "aiohttp.http_parser._is_supported_upgrade"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111065",
+  "ids": [
+   "GHSA-6cjc-53gc-5rqm"
+  ],
+  "cves": [
+   "CVE-2026-111065"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00395,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2026-10-20T19:57:24Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client.ClientSession._request",
+      "aiohttp.cookiejar.CookieJar.update_cookies"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69228",
+  "ids": [
+   "GHSA-6jhg-hg63-jvvf",
+   "PYSEC-2026-1100"
+  ],
+  "cves": [
+   "CVE-2025-69228"
+  ],
+  "cvss": 6.6,
+  "epss": 0.00407,
+  "kev": false,
+  "severity_w": 0.6599999999999999,
+  "published": "2026-01-05T23:13:14Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69223",
+  "ids": [
+   "GHSA-6mq8-rvhq-8wgg",
+   "PYSEC-2026-1101"
+  ],
+  "cves": [
+   "CVE-2025-69223"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00583,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-01-05T22:58:41Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.DeflateBuffer.__init__",
+      "aiohttp.http_parser.DeflateBuffer.feed_data",
+      "aiohttp.http_parser.DeflateBuffer.set_exception",
+      "aiohttp.multipart.BodyPartReader.__init__",
+      "aiohttp.multipart.BodyPartReader._decode_content",
+      "aiohttp.multipart.BodyPartReader.decode",
+      "aiohttp.multipart.BodyPartReader.read",
+      "aiohttp.multipart.BodyPartReaderPayload.write",
+      "aiohttp.multipart.MultipartPayloadWriter.__init__",
+      "aiohttp.multipart.MultipartWriter.write",
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "witness": [
+      "__app__.web_api.download_douyin_discover",
+      "aiohttp.http_websocket.WebSocketError.__str__",
+      "aiohttp.http_parser.DeflateBuffer.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2024-27306",
+  "ids": [
+   "GHSA-7gpw-8wmc-pm8g",
+   "PYSEC-2026-1102"
+  ],
+  "cves": [
+   "CVE-2024-27306"
+  ],
+  "cvss": 6.1,
+  "epss": 0.00666,
+  "kev": false,
+  "severity_w": 0.61,
+  "published": "2024-04-18T13:45:21Z",
+  "fixed": [
+   "3.9.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_urldispatcher.StaticResource._directory_as_html"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2024-52304",
+  "ids": [
+   "GHSA-8495-4g3g-x7pr",
+   "PYSEC-2026-1103"
+  ],
+  "cves": [
+   "CVE-2024-52304"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00563,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2024-11-18T21:02:32Z",
+  "fixed": [
+   "3.10.11"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HttpPayloadParser.feed_data"
+     ],
+     "witness": [
+      "__app__.web_api.download_file_hybrid",
+      "aiohttp.client_ws.ClientWebSocketResponse.close",
+      "aiohttp.http_parser.HttpPayloadParser.feed_data"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2024-23829",
+  "ids": [
+   "GHSA-8qpw-xqxj-h4r2",
+   "PYSEC-2024-26"
+  ],
+  "cves": [
+   "CVE-2024-23829"
+  ],
+  "cvss": 6.9,
+  "epss": 0.01029,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2024-01-29T22:30:07Z",
+  "fixed": [
+   "3.9.2"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HeadersParser.parse_headers",
+      "aiohttp.http_parser.HttpParser.feed_data",
+      "aiohttp.http_parser.HttpPayloadParser.feed_data",
+      "aiohttp.http_parser.HttpRequestParser.parse_message",
+      "aiohttp.http_parser.HttpResponseParser.parse_message"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request",
+      "aiohttp.multipart.MultipartReader.release",
+      "aiohttp.multipart.MultipartReader.next",
+      "aiohttp.multipart.MultipartReader.fetch_next_part",
+      "aiohttp.multipart.MultipartReader._read_headers",
+      "aiohttp.http_parser.HeadersParser.parse_headers"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-53643",
+  "ids": [
+   "GHSA-9548-qrrj-x5pj",
+   "PYSEC-2026-1104"
+  ],
+  "cves": [
+   "CVE-2025-53643"
+  ],
+  "cvss": 1.7,
+  "epss": 0.00355,
+  "kev": false,
+  "severity_w": 0.16999999999999998,
+  "published": "2025-07-14T19:33:31Z",
+  "fixed": [
+   "3.12.14"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HeadersParser.parse_headers",
+      "aiohttp.http_parser.HttpParser.feed_data",
+      "aiohttp.http_parser.HttpPayloadParser.__init__",
+      "aiohttp.http_parser.HttpPayloadParser.feed_data",
+      "aiohttp.http_parser.HttpRequestParser.parse_message",
+      "aiohttp.http_parser.HttpResponseParser.parse_message",
+      "aiohttp.multipart.MultipartReader._read_headers"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request",
+      "aiohttp.multipart.MultipartReader.release",
+      "aiohttp.multipart.MultipartReader.next",
+      "aiohttp.multipart.MultipartReader.fetch_next_part",
+      "aiohttp.multipart.MultipartReader._read_headers",
+      "aiohttp.http_parser.HeadersParser.parse_headers"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34518",
+  "ids": [
+   "GHSA-966j-vmvw-g2g9",
+   "PYSEC-2026-2100"
+  ],
+  "cves": [
+   "CVE-2026-34518"
+  ],
+  "cvss": 5.3,
+  "epss": 0.0035,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-04-01T21:17:00.020Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client.ClientSession._request"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54280",
+  "ids": [
+   "GHSA-9x8q-7h8h-wcw9",
+   "PYSEC-2026-2113"
+  ],
+  "cves": [
+   "CVE-2026-54280"
+  ],
+  "cvss": 7.5,
+  "epss": 0.0046,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:10:44Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_response.Response.write_eof"
+     ],
+     "witness": [
+      "__app__.web_api.startup_event",
+      "aiohttp.web_protocol.RequestHandler.start",
+      "aiohttp.web_protocol.RequestHandler._handle_request",
+      "aiohttp.web_protocol.RequestHandler.finish_response",
+      "aiohttp.web_response.Response.write_eof"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111066",
+  "ids": [
+   "GHSA-9xw5-w5jj-pvcg"
+  ],
+  "cves": [
+   "CVE-2026-111066"
+  ],
+  "cvss": 8.2,
+  "epss": 0.00412,
+  "kev": false,
+  "severity_w": 0.82,
+  "published": "2026-10-20T19:52:09Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_request.BaseRequest._finish",
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34525",
+  "ids": [
+   "GHSA-c427-h43c-vf67",
+   "PYSEC-2026-2103"
+  ],
+  "cves": [
+   "CVE-2026-34525"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00299,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2026-04-01T21:17:00.490Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HeadersParser.parse_headers",
+      "aiohttp.http_parser.HttpParser.parse_headers"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request",
+      "aiohttp.multipart.MultipartReader.release",
+      "aiohttp.multipart.MultipartReader.next",
+      "aiohttp.multipart.MultipartReader.fetch_next_part",
+      "aiohttp.multipart.MultipartReader._read_headers",
+      "aiohttp.http_parser.HeadersParser.parse_headers"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-69244",
+  "ids": [
+   "GHSA-cq5v-8q36-5273",
+   "PYSEC-2026-3545"
+  ],
+  "cves": [
+   "CVE-2026-69244"
+  ],
+  "cvss": 7.1,
+  "epss": 0.00528,
+  "kev": false,
+  "severity_w": 0.71,
+  "published": "2026-08-03T20:51:13Z",
+  "fixed": [
+   "3.14.3"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111748",
+  "ids": [
+   "GHSA-f9xw-jh8m-3mwq"
+  ],
+  "cves": [
+   "CVE-2026-111748"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00386,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2026-10-20T20:01:40Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HttpRequestParser.parse_message",
+      "aiohttp.web_request.BaseRequest.__init__"
+     ],
+     "witness": [
+      "__app__.web_api.download_douyin_discover",
+      "aiohttp.http_websocket.WebSocketError.__str__",
+      "aiohttp.web_request.BaseRequest.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69230",
+  "ids": [
+   "GHSA-fh55-r93g-j68g",
+   "PYSEC-2026-1105"
+  ],
+  "cves": [
+   "CVE-2025-69230"
+  ],
+  "cvss": 2.7,
+  "epss": 0.00364,
+  "kev": false,
+  "severity_w": 0.27,
+  "published": "2026-01-05T23:13:46Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54278",
+  "ids": [
+   "GHSA-g3cq-j2xw-wf74",
+   "PYSEC-2026-2111"
+  ],
+  "cves": [
+   "CVE-2026-54278"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00493,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:09:51Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.streams.StreamReader._read_nowait"
+     ],
+     "witness": [
+      "__app__.web_api.download_file_hybrid",
+      "aiohttp.streams.StreamReader.read",
+      "aiohttp.streams.StreamReader._read_nowait"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69229",
+  "ids": [
+   "GHSA-g84x-mcqj-x9qq",
+   "PYSEC-2026-1106"
+  ],
+  "cves": [
+   "CVE-2025-69229"
+  ],
+  "cvss": 6.6,
+  "epss": 0.00404,
+  "kev": false,
+  "severity_w": 0.6599999999999999,
+  "published": "2026-01-05T23:13:29Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.streams.StreamReader.__init__",
+      "aiohttp.streams.StreamReader._read_nowait_chunk",
+      "aiohttp.streams.StreamReader.begin_http_chunk_receiving",
+      "aiohttp.streams.StreamReader.end_http_chunk_receiving",
+      "aiohttp.streams.StreamReader.readchunk"
+     ],
+     "witness": [
+      "__app__.web_api.download_douyin_discover",
+      "aiohttp.http_websocket.WebSocketError.__str__",
+      "aiohttp.streams.StreamReader.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2023-47627",
+  "ids": [
+   "GHSA-gfw2-4jvh-wgfg",
+   "PYSEC-2023-246"
+  ],
+  "cves": [
+   "CVE-2023-47627"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00857,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2023-11-14T21:15:00Z",
+  "fixed": [
+   "3.8.6"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HeadersParser.parse_headers",
+      "aiohttp.http_parser.HttpParser.feed_data",
+      "aiohttp.http_parser.HttpParser.parse_headers",
+      "aiohttp.http_parser.HttpPayloadParser.feed_data",
+      "aiohttp.http_parser.HttpRequestParser.parse_message",
+      "aiohttp.http_parser.HttpResponseParser.parse_message"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request",
+      "aiohttp.multipart.MultipartReader.release",
+      "aiohttp.multipart.MultipartReader.next",
+      "aiohttp.multipart.MultipartReader.fetch_next_part",
+      "aiohttp.multipart.MultipartReader._read_headers",
+      "aiohttp.http_parser.HeadersParser.parse_headers"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111749",
+  "ids": [
+   "GHSA-gx76-c99x-2c96"
+  ],
+  "cves": [
+   "CVE-2026-111749"
+  ],
+  "cvss": 2.3,
+  "epss": 0.00384,
+  "kev": false,
+  "severity_w": 0.22999999999999998,
+  "published": "2026-10-20T19:58:14Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.8072878303971307,
+  "exposure_class": "STATICALLY_REACHABLE",
+  "vex": {
+   "state": "exploitable"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "CONFIRMED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.abc.AbstractCookieJar.host_only_cookies",
+      "aiohttp.cookiejar.CookieJar.__init__",
+      "aiohttp.cookiejar.CookieJar._delete_cookies",
+      "aiohttp.cookiejar.CookieJar.filter_cookies",
+      "aiohttp.cookiejar.CookieJar.host_only_cookies",
+      "aiohttp.cookiejar.CookieJar.save",
+      "aiohttp.cookiejar.CookieJar.update_cookies",
+      "aiohttp.cookiejar.DummyCookieJar.host_only_cookies"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.cookiejar.CookieJar.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34513",
+  "ids": [
+   "GHSA-hcc4-c3v8-rx92",
+   "PYSEC-2026-2095"
+  ],
+  "cves": [
+   "CVE-2026-34513"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00457,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-04-01T21:16:59.267Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.8072878303971307,
+  "exposure_class": "STATICALLY_REACHABLE",
+  "vex": {
+   "state": "exploitable"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "CONFIRMED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.connector.TCPConnector.__init__",
+      "aiohttp.connector._DNSCacheTable.__init__",
+      "aiohttp.connector._DNSCacheTable.add",
+      "aiohttp.connector._DNSCacheTable.next_addrs",
+      "aiohttp.connector._DNSCacheTable.remove"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.connector.TCPConnector.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-47265",
+  "ids": [
+   "GHSA-hg6j-4rv6-33pg",
+   "PYSEC-2026-2105"
+  ],
+  "cves": [
+   "CVE-2026-47265"
+  ],
+  "cvss": 7.5,
+  "epss": 0.0015,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-02T20:16:37.903Z",
+  "fixed": [
+   "3.14.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client.ClientSession._request"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54276",
+  "ids": [
+   "GHSA-hpj7-wq8m-9hgp",
+   "PYSEC-2026-2109"
+  ],
+  "cves": [
+   "CVE-2026-54276"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00307,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2026-06-15T20:09:06Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34993",
+  "ids": [
+   "GHSA-jg22-mg44-37j8",
+   "PYSEC-2026-2104"
+  ],
+  "cves": [
+   "CVE-2026-34993"
+  ],
+  "cvss": 7.3,
+  "epss": 0.00179,
+  "kev": false,
+  "severity_w": 0.73,
+  "published": "2026-06-02T20:16:34.857Z",
+  "fixed": [
+   "3.14.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.cookiejar.CookieJar.load",
+      "aiohttp.cookiejar.CookieJar.save"
+     ],
+     "witness": [
+      "__app__.web_api.startup_event",
+      "aiohttp.client_reqrep.ClientResponse.start",
+      "aiohttp.cookiejar.CookieJar.load"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69227",
+  "ids": [
+   "GHSA-jj3x-wxrx-4x23",
+   "PYSEC-2026-1107"
+  ],
+  "cves": [
+   "CVE-2025-69227"
+  ],
+  "cvss": 6.6,
+  "epss": 0.00396,
+  "kev": false,
+  "severity_w": 0.6599999999999999,
+  "published": "2026-01-05T23:10:15Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.multipart.BodyPartReader._read_chunk_from_stream",
+      "aiohttp.multipart.BodyPartReader.read_chunk",
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "witness": [
+      "__app__.web_api.api_logs",
+      "aiohttp.multipart.BodyPartReaderPayload.write",
+      "aiohttp.multipart.BodyPartReader.read_chunk",
+      "aiohttp.multipart.BodyPartReader._read_chunk_from_stream"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34516",
+  "ids": [
+   "GHSA-m5qp-6w8w-w647",
+   "PYSEC-2026-2098"
+  ],
+  "cves": [
+   "CVE-2026-34516"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00457,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-04-01T21:16:59.723Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.multipart.MultipartReader.__init__",
+      "aiohttp.multipart.MultipartReader._get_part_reader",
+      "aiohttp.multipart.MultipartReader._read_headers",
+      "aiohttp.streams.EmptyStreamReader.readline",
+      "aiohttp.streams.StreamReader.readline",
+      "aiohttp.streams.StreamReader.readuntil",
+      "aiohttp.web_protocol.RequestHandler.__init__",
+      "aiohttp.web_request.BaseRequest.multipart"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request",
+      "aiohttp.multipart.MultipartReader.release",
+      "aiohttp.multipart.MultipartReader.next",
+      "aiohttp.multipart.MultipartReader.fetch_next_part",
+      "aiohttp.multipart.MultipartReader._get_part_reader"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-50269",
+  "ids": [
+   "GHSA-m6qw-4cw2-hm4m",
+   "PYSEC-2026-2106"
+  ],
+  "cves": [
+   "CVE-2026-50269"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00533,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:07:26Z",
+  "fixed": [
+   "3.14.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.payload.Payload._binary_headers"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-69243",
+  "ids": [
+   "GHSA-mfx4-hv73-q22v",
+   "PYSEC-2026-3546"
+  ],
+  "cves": [
+   "CVE-2026-69243"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00443,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2026-08-03T20:46:10Z",
+  "fixed": [
+   "3.14.2"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HttpParser.__init__",
+      "aiohttp.http_parser.HttpParser.feed_data"
+     ],
+     "witness": [
+      "__app__.web_api.download_douyin_discover",
+      "aiohttp.http_websocket.WebSocketError.__str__",
+      "aiohttp.http_parser.HttpParser.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-59881",
+  "ids": [
+   "GHSA-mq44-7p77-q5h7",
+   "PYSEC-2026-3547"
+  ],
+  "cves": [
+   "CVE-2026-59881"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00524,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2026-08-03T20:40:55Z",
+  "fixed": [
+   "3.14.2"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client.ClientSession._ws_connect"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69225",
+  "ids": [
+   "GHSA-mqqc-3gqh-h2x8",
+   "PYSEC-2026-1109"
+  ],
+  "cves": [
+   "CVE-2025-69225"
+  ],
+  "cvss": 2.7,
+  "epss": 0.00282,
+  "kev": false,
+  "severity_w": 0.27,
+  "published": "2026-01-05T23:09:30Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_request.BaseRequest.http_range"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34519",
+  "ids": [
+   "GHSA-mwh4-6h8g-pg8w",
+   "PYSEC-2026-2101"
+  ],
+  "cves": [
+   "CVE-2026-34519"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00304,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-04-01T21:17:00.170Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_writer._py_serialize_headers",
+      "aiohttp.web_exceptions.HTTPException.__init__",
+      "aiohttp.web_response.StreamResponse._set_status"
+     ],
+     "witness": [
+      "__app__.web_api.download_douyin_discover",
+      "aiohttp.http_websocket.WebSocketError.__str__",
+      "aiohttp.http_writer._py_serialize_headers"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34515",
+  "ids": [
+   "GHSA-p998-jp59-783m",
+   "PYSEC-2026-2097"
+  ],
+  "cves": [
+   "CVE-2026-34515"
+  ],
+  "cvss": 7.5,
+  "epss": 0.0045,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-04-01T21:16:59.570Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_urldispatcher.StaticResource._handle"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "GHSA-pjjw-qhg8-p2p9",
+  "ids": [
+   "GHSA-pjjw-qhg8-p2p9"
+  ],
+  "cves": [],
+  "cvss": null,
+  "epss": 0.0,
+  "kev": false,
+  "severity_w": 0.5,
+  "published": "2023-11-27T23:15:38Z",
+  "fixed": [
+   "3.8.6"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HttpParser.parse_headers"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111750",
+  "ids": [
+   "GHSA-pqxq-w44r-73xw"
+  ],
+  "cves": [
+   "CVE-2026-111750"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00382,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2026-10-20T19:52:21Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HttpParser.feed_data"
+     ],
+     "witness": [
+      "__app__.web_api.download_file_hybrid",
+      "aiohttp.client_ws.ClientWebSocketResponse.close",
+      "aiohttp.http_parser.HttpParser.feed_data"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2023-49081",
+  "ids": [
+   "GHSA-q3qx-c6g2-7pw2",
+   "PYSEC-2023-250"
+  ],
+  "cves": [
+   "CVE-2023-49081"
+  ],
+  "cvss": 7.2,
+  "epss": 0.00882,
+  "kev": false,
+  "severity_w": 0.72,
+  "published": "2023-11-27T23:17:42Z",
+  "fixed": [
+   "3.9.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client_reqrep.ClientRequest.send"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request",
+      "aiohttp.client_reqrep.ClientRequest.send"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2023-49082",
+  "ids": [
+   "GHSA-qvrw-v9rv-5rjx",
+   "PYSEC-2023-251"
+  ],
+  "cves": [
+   "CVE-2023-49082"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00948,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2023-11-27T23:17:24Z",
+  "fixed": [
+   "3.9.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client_reqrep.ClientRequest.__init__"
+     ],
+     "witness": [
+      "__app__.web_api.download_douyin_discover",
+      "aiohttp.http_websocket.WebSocketError.__str__",
+      "aiohttp.client_reqrep.ClientRequest.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-22815",
+  "ids": [
+   "GHSA-w2fm-2cpv-w7v5",
+   "PYSEC-2026-2094"
+  ],
+  "cves": [
+   "CVE-2026-22815"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00457,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2026-04-01T19:45:17Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.8072878303971307,
+  "exposure_class": "STATICALLY_REACHABLE",
+  "vex": {
+   "state": "exploitable"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "CONFIRMED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.client.ClientSession._request",
+      "aiohttp.client_proto.ResponseHandler.set_response_params",
+      "aiohttp.http_exceptions.LineTooLong.__init__",
+      "aiohttp.http_parser.HeadersParser.parse_headers",
+      "aiohttp.http_parser.HttpParser.__init__",
+      "aiohttp.http_parser.HttpParser.feed_data",
+      "aiohttp.http_parser.HttpPayloadParser.__init__",
+      "aiohttp.http_parser.HttpPayloadParser.feed_data",
+      "aiohttp.http_parser.HttpRequestParser.parse_message",
+      "aiohttp.http_parser.HttpResponseParser.parse_message",
+      "aiohttp.web_protocol.RequestHandler.__init__"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "aiohttp.client.ClientSession.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54274",
+  "ids": [
+   "GHSA-xcgm-r5h9-7989",
+   "PYSEC-2026-2108"
+  ],
+  "cves": [
+   "CVE-2026-54274"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00539,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:11:22Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "anyio",
+  "version": "3.6.2",
+  "advisory": "CVE-2026-64847",
+  "ids": [
+   "GHSA-5p39-cfhj-2xmp",
+   "PYSEC-2026-4024"
+  ],
+  "cves": [
+   "CVE-2026-64847"
+  ],
+  "cvss": 6.8,
+  "epss": 0.00157,
+  "kev": false,
+  "severity_w": 0.6799999999999999,
+  "published": "2026-09-18T17:17:10Z",
+  "fixed": [
+   "4.14.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "anyio.to_process.process_worker"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "anyio",
+  "version": "3.6.2",
+  "advisory": "CVE-2026-63374",
+  "ids": [
+   "GHSA-82r6-8w77-94w6",
+   "PYSEC-2026-4025"
+  ],
+  "cves": [
+   "CVE-2026-63374"
+  ],
+  "cvss": 9.3,
+  "epss": 0.00289,
+  "kev": false,
+  "severity_w": 0.93,
+  "published": "2026-09-18T17:17:18Z",
+  "fixed": [
+   "4.14.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "anyio._core._sockets.getaddrinfo",
+      "anyio.streams.tls.TLSStream.wrap"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "brotli",
+  "version": "1.0.9",
+  "advisory": "CVE-2025-6176",
+  "ids": [
+   "GHSA-2qfp-q593-8484",
+   "PYSEC-2026-2401"
+  ],
+  "cves": [
+   "CVE-2025-6176"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00533,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2025-10-31T00:30:35Z",
+  "fixed": [
+   "1.2.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "brotli",
+  "version": "1.0.9",
+  "advisory": "CVE-2026-111497",
+  "ids": [
+   "GHSA-9v8h-qqgm-4m35",
+   "PYSEC-2026-4322"
+  ],
+  "cves": [
+   "CVE-2026-111497"
+  ],
+  "cvss": 9.8,
+  "epss": 0.82641,
+  "kev": true,
+  "severity_w": 1.9600000000000002,
+  "published": "2026-10-22T15:32:49Z",
+  "fixed": [
+   "1.2.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "fastapi",
+  "version": "0.92.0",
+  "advisory": "CVE-2024-24762",
+  "ids": [
+   "PYSEC-2024-38"
+  ],
+  "cves": [
+   "CVE-2024-24762"
+  ],
+  "cvss": 7.5,
+  "epss": 0.01523,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2024-02-05T15:15:00Z",
+  "fixed": [
+   "0.109.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "h11",
+  "version": "0.14.0",
+  "advisory": "CVE-2025-43859",
+  "ids": [
+   "GHSA-vqfr-h8mv-ghfj",
+   "PYSEC-2026-348"
+  ],
+  "cves": [
+   "CVE-2025-43859"
+  ],
+  "cvss": 9.1,
+  "epss": 0.00594,
+  "kev": false,
+  "severity_w": 0.9099999999999999,
+  "published": "2025-04-24T16:07:56Z",
+  "fixed": [
+   "0.16.0"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "h11._readers.ChunkedReader.__call__",
+      "h11._readers.ChunkedReader.__init__"
+     ],
+     "witness": [
+      "__app__.web_api.<module>",
+      "uvicorn.<module>",
+      "uvicorn.config.<module>",
+      "h11.<module>",
+      "h11._util.<module>",
+      "h11._readers.ChunkedReader.__call__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "idna",
+  "version": "3.4",
+  "advisory": "CVE-2026-45409",
+  "ids": [
+   "GHSA-65pc-fj4g-8rjx",
+   "PYSEC-2026-215"
+  ],
+  "cves": [
+   "CVE-2026-45409"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00408,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2026-05-19T14:34:32Z",
+  "fixed": [
+   "3.15"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "idna",
+  "version": "3.4",
+  "advisory": "CVE-2024-3651",
+  "ids": [
+   "GHSA-jjg7-2v4v-x38h",
+   "PYSEC-2024-60"
+  ],
+  "cves": [
+   "CVE-2024-3651"
+  ],
+  "cvss": 7.5,
+  "epss": 0.01386,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2024-04-11T21:32:40Z",
+  "fixed": [
+   "3.7"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "module",
+     "symbols": [
+      "idna.package_data.<module>"
+     ],
+     "witness": [
+      "__app__.web_api.<module>",
+      "aiohttp.<module>",
+      "aiohttp.tracing.<module>",
+      "yarl.<module>",
+      "yarl._url.<module>",
+      "idna.<module>",
+      "idna.package_data.<module>"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "orjson",
+  "version": "3.8.6",
+  "advisory": "CVE-2025-67221",
+  "ids": [
+   "GHSA-hx9q-6w63-j58v",
+   "PYSEC-2026-107"
+  ],
+  "cves": [
+   "CVE-2025-67221"
+  ],
+  "cvss": 7.7,
+  "epss": 0.00633,
+  "kev": false,
+  "severity_w": 0.77,
+  "published": "2026-01-22T17:16:01.433Z",
+  "fixed": [
+   "3.11.5",
+   "3.11.6"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "orjson",
+  "version": "3.8.6",
+  "advisory": "CVE-2024-27454",
+  "ids": [
+   "GHSA-pwr2-4v36-6qpr",
+   "PYSEC-2024-40"
+  ],
+  "cves": [
+   "CVE-2024-27454"
+  ],
+  "cvss": 7.5,
+  "epss": 0.01187,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2024-02-26T16:28:00Z",
+  "fixed": [
+   "3.9.15"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "pydantic",
+  "version": "1.10.5",
+  "advisory": "CVE-2024-3772",
+  "ids": [
+   "GHSA-mr82-8j83-vxmv",
+   "PYSEC-2026-1812"
+  ],
+  "cves": [
+   "CVE-2024-3772"
+  ],
+  "cvss": 5.9,
+  "epss": 0.00957,
+  "kev": false,
+  "severity_w": 0.5900000000000001,
+  "published": "2024-04-15T03:31:00Z",
+  "fixed": [
+   "1.10.13",
+   "2.4.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "pydantic.networks._build_pretty_email_regex",
+      "pydantic.networks.validate_email"
+     ],
+     "witness": [
+      "__app__.web_app.error_do",
+      "pydantic.main.BaseModel.__init__",
+      "pydantic.dataclasses._dataclass_validate_assignment_setattr",
+      "pydantic.networks.EmailStr.validate",
+      "pydantic.networks.validate_email"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "starlette",
+  "version": "0.25.0",
+  "advisory": "CVE-2025-54121",
+  "ids": [
+   "GHSA-2c2j-9gv5-cj73",
+   "PYSEC-2026-1941"
+  ],
+  "cves": [
+   "CVE-2025-54121"
+  ],
+  "cvss": 5.3,
+  "epss": 0.0066,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2025-07-21T19:34:23Z",
+  "fixed": [
+   "0.47.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "starlette.datastructures.UploadFile.content_type",
+      "starlette.datastructures.UploadFile.write"
+     ],
+     "witness": [
+      "__app__.web_api.api_logs",
+      "starlette.datastructures.UploadFile.write"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "starlette",
+  "version": "0.25.0",
+  "advisory": "CVE-2026-54283",
+  "ids": [
+   "GHSA-82w8-qh3p-5jfq",
+   "PYSEC-2026-249"
+  ],
+  "cves": [
+   "CVE-2026-54283"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00481,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:39:53Z",
+  "fixed": [
+   "1.3.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "starlette",
+  "version": "0.25.0",
+  "advisory": "CVE-2026-48710",
+  "ids": [
+   "GHSA-86qp-5c8j-p5mr",
+   "PYSEC-2026-161"
+  ],
+  "cves": [
+   "CVE-2026-48710"
+  ],
+  "cvss": 6.5,
+  "epss": 0.70288,
+  "kev": true,
+  "severity_w": 1.3,
+  "published": "2026-05-22T13:10:03Z",
+  "fixed": [
+   "1.0.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.8072878303971307,
+  "exposure_class": "STATICALLY_REACHABLE",
+  "vex": {
+   "state": "exploitable"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "CONFIRMED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "function",
+     "symbols": [
+      "starlette.datastructures.URL.__init__"
+     ],
+     "witness": [
+      "__app__.web_api.<module>",
+      "fastapi.applications.FastAPI.__init__",
+      "starlette.routing.Router.__call__",
+      "starlette.datastructures.URL.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "starlette",
+  "version": "0.25.0",
+  "advisory": "CVE-2024-47874",
+  "ids": [
+   "GHSA-f96h-pmfr-66vw",
+   "PYSEC-2026-1943"
+  ],
+  "cves": [
+   "CVE-2024-47874"
+  ],
+  "cvss": 8.7,
+  "epss": 0.00653,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2024-10-15T18:12:57Z",
+  "fixed": [
+   "0.40.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "starlette.formparsers.MultiPartParser.on_part_data",
+      "starlette.formparsers._user_safe_decode"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "starlette",
+  "version": "0.25.0",
+  "advisory": "CVE-2026-54282",
+  "ids": [
+   "GHSA-jp82-jpqv-5vv3",
+   "PYSEC-2026-248"
+  ],
+  "cves": [
+   "CVE-2026-54282"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00273,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-06-15T20:38:08Z",
+  "fixed": [
+   "1.3.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "starlette",
+  "version": "0.25.0",
+  "advisory": "CVE-2023-29159",
+  "ids": [
+   "GHSA-v5gw-mw7f-84px",
+   "PYSEC-2023-83"
+  ],
+  "cves": [
+   "CVE-2023-29159"
+  ],
+  "cvss": 6.3,
+  "epss": 0.02593,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2023-05-17T03:49:14Z",
+  "fixed": [
+   "0.27.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "starlette.staticfiles.StaticFiles.lookup_path"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "starlette",
+  "version": "0.25.0",
+  "advisory": "CVE-2026-48818",
+  "ids": [
+   "GHSA-wqp7-x3pw-xc5r",
+   "PYSEC-2026-2281"
+  ],
+  "cves": [
+   "CVE-2026-48818"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00368,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:16:30Z",
+  "fixed": [
+   "1.1.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "starlette.staticfiles.StaticFiles.lookup_path"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "starlette",
+  "version": "0.25.0",
+  "advisory": "CVE-2026-48817",
+  "ids": [
+   "GHSA-x746-7m8f-x49c",
+   "PYSEC-2026-2280"
+  ],
+  "cves": [
+   "CVE-2026-48817"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00213,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-06-15T20:16:05Z",
+  "fixed": [
+   "1.1.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "tornado",
+  "version": "6.2",
+  "advisory": "CVE-2026-103261",
+  "ids": [
+   "GHSA-3hv7-mjh2-fv65"
+  ],
+  "cves": [
+   "CVE-2026-103261"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00467,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-09-30T23:49:25Z",
+  "fixed": [
+   "6.5.9"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "tornado.httputil.HTTPServerRequest.__init__"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "tenacity.BaseAction.__str__",
+      "tornado.httputil.HTTPServerRequest.__repr__",
+      "tornado.httputil.HTTPServerRequest.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "tornado",
+  "version": "6.2",
+  "advisory": "CVE-2026-49853",
+  "ids": [
+   "GHSA-3x9g-8vmp-wqvf",
+   "PYSEC-2026-3387"
+  ],
+  "cves": [
+   "CVE-2026-49853"
+  ],
+  "cvss": 7.7,
+  "epss": 0.00445,
+  "kev": false,
+  "severity_w": 0.77,
+  "published": "2026-06-15T20:20:00Z",
+  "fixed": [
+   "6.5.6"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "tornado",
+  "version": "6.2",
+  "advisory": "CVE-2024-14029",
+  "ids": [
+   "GHSA-753j-mpmx-qq6g"
+  ],
+  "cves": [
+   "CVE-2024-14029"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00361,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2024-06-06T21:41:20Z",
+  "fixed": [
+   "6.4.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "tornado.http1connection.HTTP1Connection._can_keep_alive",
+      "tornado.http1connection.HTTP1Connection._read_body",
+      "tornado.http1connection.HTTP1Connection.write_headers",
+      "tornado.http1connection.parse_hex_int",
+      "tornado.httputil.HTTPHeaders.parse_line"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "tenacity.BaseRetrying.__repr__",
+      "tornado.web.HTTPError.__str__",
+      "tornado.queues.Queue.get",
+      "tornado.simple_httpclient._HTTPConnection.__init__",
+      "tornado.simple_httpclient._HTTPConnection.run",
+      "tornado.http1connection.HTTP1Connection.read_response",
+      "tornado.http1connection.HTTP1Connection._read_message",
+      "tornado.http1connection.HTTP1Connection._can_keep_alive"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "tornado",
+  "version": "6.2",
+  "advisory": "CVE-2026-35536",
+  "ids": [
+   "GHSA-78cv-mqj4-43f7",
+   "GHSA-fqwm-6jpj-5wxc",
+   "PYSEC-2026-2287"
+  ],
+  "cves": [
+   "CVE-2026-35536"
+  ],
+  "cvss": 7.2,
+  "epss": 0.00246,
+  "kev": false,
+  "severity_w": 0.72,
+  "published": "2026-03-11T22:17:00Z",
+  "fixed": [
+   "6.5.5"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "tornado.web.RequestHandler.set_cookie"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "tenacity.BaseRetrying.__repr__",
+      "tornado.web.HTTPError.__str__",
+      "tornado.test.web_test.CookieTest.get_handlers.SetCookieMaxAgeHandler.get",
+      "tornado.web.RequestHandler.set_cookie"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "tornado",
+  "version": "6.2",
+  "advisory": "CVE-2025-47287",
+  "ids": [
+   "GHSA-7cx3-6m66-7c5m",
+   "PYSEC-2026-1974"
+  ],
+  "cves": [
+   "CVE-2025-47287"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00745,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2025-05-16T14:12:40Z",
+  "fixed": [
+   "6.5"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "tornado.httputil.parse_body_arguments",
+      "tornado.httputil.parse_multipart_form_data",
+      "tornado.web.RequestHandler._execute",
+      "tornado.web._HandlerDelegate.finish",
+      "tornado.web.addslash",
+      "tornado.web.authenticated",
+      "tornado.web.removeslash"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "tenacity.BaseAction.__str__",
+      "tornado.httputil.HTTPServerRequest.__repr__",
+      "tornado.httputil.HTTPServerRequest._parse_body",
+      "tornado.httputil.parse_body_arguments"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "tornado",
+  "version": "6.2",
+  "advisory": "CVE-2026-91990",
+  "ids": [
+   "GHSA-8423-8fgw-73vq"
+  ],
+  "cves": [
+   "CVE-2026-91990"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00424,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2026-09-01T20:17:38Z",
+  "fixed": [
+   "6.5.8"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "tornado.httputil.parse_multipart_form_data"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "tenacity.BaseAction.__str__",
+      "tornado.httputil.HTTPServerRequest.__repr__",
+      "tornado.httputil.HTTPServerRequest._parse_body",
+      "tornado.httputil.parse_body_arguments",
+      "tornado.httputil.parse_multipart_form_data"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "tornado",
+  "version": "6.2",
+  "advisory": "CVE-2024-52804",
+  "ids": [
+   "GHSA-8w49-h785-mj3c",
+   "PYSEC-2026-1975"
+  ],
+  "cves": [
+   "CVE-2024-52804"
+  ],
+  "cvss": 7.5,
+  "epss": 0.01044,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2024-11-22T20:26:41Z",
+  "fixed": [
+   "6.4.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "tornado.httputil._unquote_cookie"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "tenacity.BaseAction.__str__",
+      "tornado.httputil.HTTPServerRequest.__repr__",
+      "tornado.httputil.HTTPServerRequest.cookies",
+      "tornado.httputil.parse_cookie",
+      "tornado.httputil._unquote_cookie"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "tornado",
+  "version": "6.2",
+  "advisory": "CVE-2026-103263",
+  "ids": [
+   "GHSA-c2m8-h5v5-343r"
+  ],
+  "cves": [
+   "CVE-2026-103263"
+  ],
+  "cvss": 8.2,
+  "epss": 0.00522,
+  "kev": false,
+  "severity_w": 0.82,
+  "published": "2026-09-30T23:48:55Z",
+  "fixed": [
+   "6.5.9"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "tornado.web.StaticFileHandler._stat",
+      "tornado.web.StaticFileHandler.get_content",
+      "tornado.web.StaticFileHandler.initialize",
+      "tornado.web.StaticFileHandler.validate_absolute_path"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "tenacity.BaseRetrying.__repr__",
+      "tornado.web.HTTPError.__str__",
+      "tornado.web.StaticFileHandler.get",
+      "tornado.web.StaticFileHandler.get_content_size",
+      "tornado.web.StaticFileHandler._stat"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "tornado",
+  "version": "6.2",
+  "advisory": "CVE-2025-67725",
+  "ids": [
+   "GHSA-c98p-7wgm-6p64",
+   "PYSEC-2025-266"
+  ],
+  "cves": [
+   "CVE-2025-67725"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00559,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2025-12-12T06:15:41.380Z",
+  "fixed": [
+   "6.5.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "tornado.httputil._parseparam"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "tenacity.BaseAction.__str__",
+      "tornado.httputil.HTTPServerRequest.__repr__",
+      "tornado.httputil.HTTPServerRequest._parse_body",
+      "tornado.httputil.parse_body_arguments",
+      "tornado.httputil.parse_multipart_form_data",
+      "tornado.httputil._parse_header",
+      "tornado.httputil._parseparam"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "tornado",
+  "version": "6.2",
+  "advisory": "CVE-2026-103262",
+  "ids": [
+   "GHSA-chx6-46f5-w4vp"
+  ],
+  "cves": [
+   "CVE-2026-103262"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00628,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-09-30T23:49:13Z",
+  "fixed": [
+   "6.5.9"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "tornado.curl_httpclient.CurlAsyncHTTPClient._curl_setup_request",
+      "tornado.curl_httpclient.CurlAsyncHTTPClient._finish",
+      "tornado.curl_httpclient.CurlAsyncHTTPClient._process_queue",
+      "tornado.curl_httpclient.CurlAsyncHTTPClient.initialize",
+      "tornado.curl_httpclient._CurlStreamingBuffer.__init__",
+      "tornado.curl_httpclient._CurlStreamingBuffer.write"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "tenacity.BaseRetrying.__repr__",
+      "tornado.web.HTTPError.__str__",
+      "tornado.test.auth_test.OAuth1ClientLoginCoroutineHandler.get",
+      "tornado.auth.OAuthMixin.get_authenticated_user",
+      "tornado.httpclient.AsyncHTTPClient.fetch",
+      "tornado.curl_httpclient.CurlAsyncHTTPClient.fetch_impl",
+      "tornado.curl_httpclient.CurlAsyncHTTPClient._process_queue",
+      "tornado.curl_httpclient.CurlAsyncHTTPClient._curl_setup_request"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "tornado",
+  "version": "6.2",
+  "advisory": "CVE-2026-49854",
+  "ids": [
+   "GHSA-cx3h-4qpv-8hc9",
+   "PYSEC-2026-3388"
+  ],
+  "cves": [
+   "CVE-2026-49854"
+  ],
+  "cvss": 3.7,
+  "epss": 0.00419,
+  "kev": false,
+  "severity_w": 0.37,
+  "published": "2026-06-12T18:30:19Z",
+  "fixed": [
+   "6.5.6"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "tornado",
+  "version": "6.2",
+  "advisory": "CVE-2023-28370",
+  "ids": [
+   "GHSA-hj3f-6gcp-jg8j",
+   "PYSEC-2023-75"
+  ],
+  "cves": [
+   "CVE-2023-28370"
+  ],
+  "cvss": 6.1,
+  "epss": 0.01142,
+  "kev": false,
+  "severity_w": 0.61,
+  "published": "2023-05-25T10:15:00Z",
+  "fixed": [
+   "6.3.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "tornado.web.StaticFileHandler.validate_absolute_path"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "tenacity.BaseRetrying.__repr__",
+      "tornado.web.HTTPError.__str__",
+      "tornado.web.StaticFileHandler.get",
+      "tornado.web.StaticFileHandler.validate_absolute_path"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "tornado",
+  "version": "6.2",
+  "advisory": "CVE-2025-67726",
+  "ids": [
+   "GHSA-jhmp-mqwm-3gq8",
+   "PYSEC-2025-267"
+  ],
+  "cves": [
+   "CVE-2025-67726"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00535,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2025-12-12T07:15:44.920Z",
+  "fixed": [
+   "6.5.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "tornado.httputil._parseparam"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "tenacity.BaseAction.__str__",
+      "tornado.httputil.HTTPServerRequest.__repr__",
+      "tornado.httputil.HTTPServerRequest._parse_body",
+      "tornado.httputil.parse_body_arguments",
+      "tornado.httputil.parse_multipart_form_data",
+      "tornado.httputil._parse_header",
+      "tornado.httputil._parseparam"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "tornado",
+  "version": "6.2",
+  "advisory": "CVE-2026-49855",
+  "ids": [
+   "GHSA-mgf9-4vpg-hj56",
+   "PYSEC-2026-3389"
+  ],
+  "cves": [
+   "CVE-2026-49855"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00572,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:19:28Z",
+  "fixed": [
+   "6.5.6"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "tornado",
+  "version": "6.2",
+  "advisory": "CVE-2026-82397",
+  "ids": [
+   "GHSA-mpf4-983q-p7j4",
+   "PYSEC-2026-3928"
+  ],
+  "cves": [
+   "CVE-2026-82397"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00346,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-09-02T14:38:43Z",
+  "fixed": [
+   "6.5.8"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "tornado.escape.parse_qs_bytes",
+      "tornado.httputil.parse_body_arguments"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "tenacity.BaseAction.__str__",
+      "tornado.httputil.HTTPServerRequest.__repr__",
+      "tornado.httputil.HTTPServerRequest.__init__",
+      "tornado.escape.parse_qs_bytes"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "tornado",
+  "version": "6.2",
+  "advisory": "CVE-2026-116577",
+  "ids": [
+   "GHSA-pcg2-g6cj-q92c"
+  ],
+  "cves": [
+   "CVE-2026-116577"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00384,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-10-28T22:43:41Z",
+  "fixed": [
+   "6.6"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "tornado.httputil.HTTPHeaders.__init__",
+      "tornado.httputil.HTTPHeaders.add",
+      "tornado.httputil.HTTPHeaders.parse_line"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "tenacity.BaseRetrying.__repr__",
+      "tornado.web.HTTPError.__str__",
+      "tornado.queues.Queue.get",
+      "tornado.httputil.HTTPHeaders.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "tornado",
+  "version": "6.2",
+  "advisory": "CVE-2025-67724",
+  "ids": [
+   "GHSA-pr2v-jx2c-wg9f",
+   "PYSEC-2025-265"
+  ],
+  "cves": [
+   "CVE-2025-67724"
+  ],
+  "cvss": 6.1,
+  "epss": 0.0024,
+  "kev": false,
+  "severity_w": 0.61,
+  "published": "2025-12-12T06:15:41.213Z",
+  "fixed": [
+   "6.5.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "tornado.web.RequestHandler.send_error",
+      "tornado.web.RequestHandler.set_status",
+      "tornado.web.RequestHandler.write_error"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "tenacity.BaseRetrying.__repr__",
+      "tornado.web.HTTPError.__str__",
+      "tornado.test.web_test.ErrorResponseTest.get_handlers.WriteErrorHandler.get",
+      "tornado.web.RequestHandler.send_error"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "tornado",
+  "version": "6.2",
+  "advisory": "CVE-2026-91992",
+  "ids": [
+   "GHSA-pw6j-qg29-8w7f"
+  ],
+  "cves": [
+   "CVE-2026-91992"
+  ],
+  "cvss": 5.9,
+  "epss": 0.00239,
+  "kev": false,
+  "severity_w": 0.5900000000000001,
+  "published": "2026-06-15T20:37:24Z",
+  "fixed": [
+   "6.5.7"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "tornado",
+  "version": "6.2",
+  "advisory": "CVE-2026-116578",
+  "ids": [
+   "GHSA-pw9p-v7r6-gx4p"
+  ],
+  "cves": [
+   "CVE-2026-116578"
+  ],
+  "cvss": 2.1,
+  "epss": 0.00459,
+  "kev": false,
+  "severity_w": 0.21000000000000002,
+  "published": "2026-10-28T22:43:45Z",
+  "fixed": [
+   "6.6"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "tornado.web.RedirectHandler.get",
+      "tornado.web.StaticFileHandler.validate_absolute_path",
+      "tornado.web._is_protocol_relative",
+      "tornado.web.is_absolute"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "tenacity.BaseRetrying.__repr__",
+      "tornado.web.HTTPError.__str__",
+      "tornado.web.RedirectHandler.get"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "tornado",
+  "version": "6.2",
+  "advisory": "CVE-2026-31958",
+  "ids": [
+   "GHSA-qjxf-f2mg-c6mc",
+   "PYSEC-2026-140"
+  ],
+  "cves": [
+   "CVE-2026-31958"
+  ],
+  "cvss": 8.7,
+  "epss": 0.00417,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2026-03-11T20:16:16.617Z",
+  "fixed": [
+   "6.5.5"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "tornado.httputil.doctests",
+      "tornado.httputil.parse_body_arguments",
+      "tornado.httputil.parse_multipart_form_data"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "tenacity.BaseAction.__str__",
+      "tornado.httputil.HTTPServerRequest.__repr__",
+      "tornado.httputil.HTTPServerRequest._parse_body",
+      "tornado.httputil.parse_body_arguments"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "tornado",
+  "version": "6.2",
+  "advisory": "CVE-2023-54397",
+  "ids": [
+   "GHSA-qppv-j76h-2rpx"
+  ],
+  "cves": [
+   "CVE-2023-54397"
+  ],
+  "cvss": null,
+  "epss": 0.00377,
+  "kev": false,
+  "severity_w": 0.5,
+  "published": "2023-08-14T21:34:17Z",
+  "fixed": [
+   "6.3.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "tornado.http1connection.HTTP1Connection._read_body",
+      "tornado.http1connection.HTTP1Connection._read_chunked_body",
+      "tornado.http1connection.HTTP1Connection.write_headers",
+      "tornado.http1connection.HTTP1ServerConnection._server_request_loop"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "tenacity.BaseRetrying.__repr__",
+      "tornado.web.HTTPError.__str__",
+      "tornado.queues.Queue.get",
+      "tornado.simple_httpclient._HTTPConnection.__init__",
+      "tornado.simple_httpclient._HTTPConnection.run",
+      "tornado.http1connection.HTTP1Connection.read_response",
+      "tornado.http1connection.HTTP1Connection._read_message",
+      "tornado.http1connection.HTTP1Connection._read_body"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "tornado",
+  "version": "6.2",
+  "advisory": "CVE-2026-115927",
+  "ids": [
+   "GHSA-r4j5-9xpp-3985"
+  ],
+  "cves": [
+   "CVE-2026-115927"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00384,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-10-28T22:43:50Z",
+  "fixed": [
+   "6.6"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "tornado.http1connection.HTTP1Connection._read_body_until_close",
+      "tornado.http1connection.HTTP1Connection._read_chunked_body",
+      "tornado.http1connection.HTTP1Connection._read_fixed_body",
+      "tornado.httpserver._CallableAdapter.__init__",
+      "tornado.httpserver._CallableAdapter.data_received",
+      "tornado.httpserver._CallableAdapter.finish",
+      "tornado.simple_httpclient._HTTPConnection.__init__",
+      "tornado.simple_httpclient._HTTPConnection.data_received",
+      "tornado.simple_httpclient._HTTPConnection.finish",
+      "tornado.web._HandlerDelegate.__init__",
+      "tornado.web._HandlerDelegate.data_received",
+      "tornado.web._HandlerDelegate.finish"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "tenacity.BaseRetrying.__repr__",
+      "tornado.web.HTTPError.__str__",
+      "tornado.queues.Queue.get",
+      "tornado.simple_httpclient._HTTPConnection.__init__",
+      "tornado.simple_httpclient._HTTPConnection.run",
+      "tornado.http1connection.HTTP1Connection.read_response",
+      "tornado.http1connection.HTTP1Connection._read_message",
+      "tornado.http1connection.HTTP1Connection._read_body",
+      "tornado.http1connection.HTTP1Connection._read_body_until_close"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "package": "tornado",
+  "version": "6.2",
+  "advisory": "CVE-2024-58384",
+  "ids": [
+   "GHSA-w235-7p84-xx57"
+  ],
+  "cves": [
+   "CVE-2024-58384"
+  ],
+  "cvss": 6.5,
+  "epss": 0.00249,
+  "kev": false,
+  "severity_w": 0.65,
+  "published": "2024-06-06T21:46:31Z",
+  "fixed": [
+   "6.4.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "tornado.curl_httpclient.CurlAsyncHTTPClient._curl_setup_request",
+      "tornado.http1connection.HTTP1Connection.write_headers"
+     ],
+     "witness": [
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "tenacity.BaseRetrying.__repr__",
+      "tornado.web.HTTPError.__str__",
+      "tornado.test.auth_test.OAuth1ClientLoginCoroutineHandler.get",
+      "tornado.auth.OAuthMixin.get_authenticated_user",
+      "tornado.httpclient.AsyncHTTPClient.fetch",
+      "tornado.curl_httpclient.CurlAsyncHTTPClient.fetch_impl",
+      "tornado.curl_httpclient.CurlAsyncHTTPClient._process_queue",
+      "tornado.curl_httpclient.CurlAsyncHTTPClient._curl_setup_request"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ }
+]

@@ -1,0 +1,28 @@
+{
+ "advisory": "GHSA-vp47-9734-prjw",
+ "package": "asteval",
+ "commits": [
+  {
+   "repo": "lmfit/asteval",
+   "sha": "45bb47533f7abb5479618ae7f6a809215700dcb2",
+   "parent": "b57e8c07fe5e8cdde6e2f569e4b5a2e5e413890d",
+   "py_files": 2
+  }
+ ],
+ "files": [
+  {
+   "path": "asteval/asteval.py",
+   "functions": [
+    "Interpreter.on_attribute",
+    "Interpreter.on_formattedvalue"
+   ],
+   "module_level": true
+  },
+  {
+   "path": "asteval/astutils.py",
+   "functions": [],
+   "module_level": true
+  }
+ ],
+ "status": "functions"
+}

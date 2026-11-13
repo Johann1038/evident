@@ -1,0 +1,393 @@
+{
+ "id": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+ "meta": {
+  "id": "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6",
+  "repo": "Evil0ctal/Douyin_TikTok_Download_API",
+  "tag": "V3.1.6",
+  "published_at": "2023-03-08T01:10:35Z",
+  "stars": 21357,
+  "lock_kind": "requirements",
+  "lock_file": "requirements.txt",
+  "lock_path": "requirements.txt",
+  "subdir": "",
+  "manifest": null,
+  "requires_python": null,
+  "description": "\ud83d\ude80 \u81ea\u6258\u7ba1\u7684\u6296\u97f3\u3001TikTok\u3001B \u7ad9\u6570\u636e\u91c7\u96c6\u4e0e\u65e0\u6c34\u5370\u89c6\u9891\u4e0b\u8f7d API\uff0c\u652f\u6301 AI agent \u901a\u8fc7 MCP \u8c03\u7528\u4e0e\u79bb\u7ebf\u8bed\u97f3\u8f6c\u6587\u5b57\uff0cDocker \u4e00\u952e\u90e8\u7f72\u3002| Self-hosted TikTok, Douyin & Bilibili scraper and no-watermark video downloader \u2014 async REST API, MCP server for AI agen",
+  "topics": [
+   "bilibili",
+   "crawler",
+   "data-collection",
+   "douyin",
+   "douyin-api",
+   "downloader",
+   "fastapi",
+   "mcp-server",
+   "model-context-protocol",
+   "openapi",
+   "rest-api",
+   "scraper",
+   "social-media",
+   "speech-to-text",
+   "tiktok",
+   "tiktok-api",
+   "tiktok-downloader",
+   "tiktok-scraper",
+   "video-downloader",
+   "web-scraping"
+  ]
+ },
+ "python": "3.10",
+ "summary": {
+  "locked": 33,
+  "installed": 32,
+  "direct": 8,
+  "transitive": 24,
+  "edges": 47,
+  "edges_from_lock": false
+ },
+ "stats": {
+  "app_modules": 4,
+  "pkgs_analysed": 13,
+  "pkgs_no_source": 0,
+  "seconds": 8.61,
+  "funcs": 6817,
+  "roots": 51
+ },
+ "scan_seconds": 8.7,
+ "sdist_only": [
+  "pyexecjs",
+  "pywebio"
+ ],
+ "baseline_resolution": {
+  "ok": true,
+  "seconds": 0.6,
+  "error": ""
+ },
+ "baseline_drift": 1,
+ "strategies": {
+  "audit_fix": {
+   "planned": {
+    "aiohttp": "3.14.4",
+    "anyio": "4.14.2",
+    "brotli": "1.2.1",
+    "fastapi": "0.109.1",
+    "h11": "0.16.0",
+    "idna": "3.15",
+    "orjson": "3.11.6",
+    "pydantic": "1.10.13",
+    "starlette": "1.3.1",
+    "tornado": "6.6"
+   },
+   "ok": false,
+   "error": "en resolving dependencies\n  cause: Because fastapi==0.109.1 depends on starlette>=0.35.0,<0.36.0 and you require fastapi==0.109.1, we can conclude that you require starlette>=0.35.0,<0.36.0.\n         And because you require starlette==1.3.1, we can conclude that your requirements are unsatisfiable.\n",
+   "seconds": 0.1
+  },
+  "latest": {
+   "planned": {
+    "anyio": "4.16.0",
+    "orjson": "3.13.0",
+    "fastapi": "0.162.5",
+    "aiohttp": "3.14.5",
+    "starlette": "1.10.0",
+    "tornado": "6.6.1",
+    "h11": "0.16.0",
+    "brotli": "1.2.1",
+    "idna": "3.20",
+    "pydantic": "2.14.3"
+   },
+   "ok": false,
+   "error": "ou require starlette==1.10.0, we can conclude that your requirements are unsatisfiable.\n\nhint: The `--python-version` value (>=3.10) includes Python versions that are not supported by your dependencies (e.g., starlette==1.10.0 only supports >=3.11). Consider using a higher `--python-version` value.\n",
+   "seconds": 0.1
+  },
+  "upgrade_all": {
+   "planned": null,
+   "ok": true,
+   "error": "",
+   "seconds": 1.0,
+   "residual_findings": 3,
+   "residual_risk_evident": 0.729613002393029,
+   "residual_risk_vm": 1.27,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 38,
+   "major_bumps": 11,
+   "added": 9,
+   "removed": 0
+  },
+  "vm_opt": {
+   "planned": {
+    "aiohttp": "3.14.4",
+    "aiosignal": "1.4.0",
+    "anyio": "4.14.2",
+    "brotli": "1.2.1",
+    "fastapi": "0.162.5",
+    "h11": "0.16.0",
+    "idna": "3.20",
+    "orjson": "3.13.0",
+    "pydantic": "2.14.3",
+    "starlette": "1.3.1",
+    "tornado": "6.6.1",
+    "typing-extensions": "4.16.0",
+    "yarl": "1.25.1"
+   },
+   "ok": false,
+   "iterations": 6,
+   "error": "und when resolving dependencies\n  cause: Because tornado==6.6.1 has no usable wheels and you require tornado==6.6.1, we can conclude that your requirements are unsatisfiable.\n\nhint: Wheels are required for `tornado` because building from source is disabled for all packages (i.e., with `--no-build`)\n",
+   "seconds": 0.8,
+   "model_residual": 0.0,
+   "model_cost": 26.999999999999996,
+   "scope": 13
+  },
+  "coral_opt": {
+   "planned": {
+    "aiohttp": "3.14.4",
+    "aiosignal": "1.4.0",
+    "anyio": "4.14.2",
+    "brotli": "1.2.1",
+    "fastapi": "0.162.5",
+    "h11": "0.16.0",
+    "idna": "3.20",
+    "orjson": "3.13.0",
+    "pydantic": "2.14.3",
+    "starlette": "1.10.0",
+    "tornado": "6.6.1",
+    "typing-extensions": "4.16.0",
+    "yarl": "1.25.1"
+   },
+   "ok": false,
+   "iterations": 6,
+   "error": "ou require starlette==1.10.0, we can conclude that your requirements are unsatisfiable.\n\nhint: The `--python-version` value (>=3.10) includes Python versions that are not supported by your dependencies (e.g., starlette==1.10.0 only supports >=3.11). Consider using a higher `--python-version` value.\n",
+   "seconds": 0.4,
+   "model_residual": 0.0,
+   "model_cost": 26.999999999999996,
+   "scope": 13
+  },
+  "cape_opt": {
+   "planned": {
+    "aiohttp": "3.14.4",
+    "aiosignal": "1.4.0",
+    "anyio": "4.16.0",
+    "brotli": "1.2.1",
+    "fastapi": "0.162.5",
+    "h11": "0.16.0",
+    "idna": "3.15",
+    "orjson": "3.11.6",
+    "pydantic": "2.14.3",
+    "starlette": "1.10.0",
+    "tornado": "6.6",
+    "typing-extensions": "4.16.0",
+    "yarl": "1.25.1"
+   },
+   "ok": false,
+   "iterations": 6,
+   "error": "ou require starlette==1.10.0, we can conclude that your requirements are unsatisfiable.\n\nhint: The `--python-version` value (>=3.10) includes Python versions that are not supported by your dependencies (e.g., starlette==1.10.0 only supports >=3.11). Consider using a higher `--python-version` value.\n",
+   "seconds": 0.5,
+   "model_residual": 0.0,
+   "model_cost": 26.999999999999996,
+   "scope": 13
+  },
+  "evident": {
+   "planned": {
+    "aiohttp": "3.14.4",
+    "aiosignal": "1.4.0",
+    "anyio": "4.16.0",
+    "brotli": "1.2.1",
+    "fastapi": "0.162.5",
+    "h11": "0.16.0",
+    "idna": "3.15",
+    "orjson": "3.11.6",
+    "pydantic": "2.14.3",
+    "starlette": "1.10.0",
+    "tornado": "6.6",
+    "typing-extensions": "4.16.0",
+    "yarl": "1.25.1"
+   },
+   "ok": false,
+   "iterations": 6,
+   "error": "ou require starlette==1.10.0, we can conclude that your requirements are unsatisfiable.\n\nhint: The `--python-version` value (>=3.10) includes Python versions that are not supported by your dependencies (e.g., starlette==1.10.0 only supports >=3.11). Consider using a higher `--python-version` value.\n",
+   "seconds": 0.4,
+   "model_residual": 0.0,
+   "model_cost": 26.999999999999996,
+   "scope": 13
+  }
+ },
+ "original": {
+  "residual_findings": 93,
+  "residual_risk_evident": 34.7250443352375,
+  "residual_risk_vm": 63.089999999999996,
+  "residual_confirmed": 4,
+  "new_findings": 0,
+  "changed": 0,
+  "major_bumps": 0,
+  "added": 0,
+  "removed": 0
+ },
+ "pareto_evident": [
+  {
+   "lambda": 0.0,
+   "risk": 0.0,
+   "cost": 26.999999999999996,
+   "changes": 13
+  },
+  {
+   "lambda": 0.02,
+   "risk": 0.0,
+   "cost": 26.999999999999996,
+   "changes": 13
+  },
+  {
+   "lambda": 0.05,
+   "risk": 0.0,
+   "cost": 26.999999999999996,
+   "changes": 13
+  },
+  {
+   "lambda": 0.1,
+   "risk": 0.0,
+   "cost": 26.999999999999996,
+   "changes": 13
+  },
+  {
+   "lambda": 0.2,
+   "risk": 0.0,
+   "cost": 26.999999999999996,
+   "changes": 13
+  },
+  {
+   "lambda": 0.5,
+   "risk": 4.889113840768463,
+   "cost": 12.399999999999999,
+   "changes": 7
+  },
+  {
+   "lambda": 1.0,
+   "risk": 6.769724643493083,
+   "cost": 9.0,
+   "changes": 5
+  },
+  {
+   "lambda": 2.0,
+   "risk": 8.547456418308165,
+   "cost": 7.300000000000001,
+   "changes": 4
+  },
+  {
+   "lambda": 5.0,
+   "risk": 26.031859511829186,
+   "cost": 1.7,
+   "changes": 1
+  },
+  {
+   "lambda": 100.0,
+   "risk": 34.725044335237506,
+   "cost": 0.0,
+   "changes": 0
+  }
+ ],
+ "pareto_vm": [
+  {
+   "lambda": 0.0,
+   "risk": 0.0,
+   "cost": 26.999999999999996,
+   "changes": 13
+  },
+  {
+   "lambda": 0.02,
+   "risk": 0.0,
+   "cost": 26.999999999999996,
+   "changes": 13
+  },
+  {
+   "lambda": 0.05,
+   "risk": 0.0,
+   "cost": 26.999999999999996,
+   "changes": 13
+  },
+  {
+   "lambda": 0.1,
+   "risk": 0.0,
+   "cost": 26.999999999999996,
+   "changes": 13
+  },
+  {
+   "lambda": 0.2,
+   "risk": 0.0,
+   "cost": 26.999999999999996,
+   "changes": 13
+  },
+  {
+   "lambda": 0.5,
+   "risk": 0.0,
+   "cost": 26.999999999999996,
+   "changes": 13
+  },
+  {
+   "lambda": 1.0,
+   "risk": 12.709999999999999,
+   "cost": 9.0,
+   "changes": 5
+  },
+  {
+   "lambda": 2.0,
+   "risk": 15.42,
+   "cost": 7.300000000000001,
+   "changes": 4
+  },
+  {
+   "lambda": 5.0,
+   "risk": 15.42,
+   "cost": 7.300000000000001,
+   "changes": 4
+  },
+  {
+   "lambda": 100.0,
+   "risk": 63.089999999999996,
+   "cost": 0.0,
+   "changes": 0
+  }
+ ],
+ "decision": {
+  "uncertain": 93,
+  "critical": 3,
+  "evpi_total": 0.07233526739620869,
+  "top": [
+   {
+    "package": "h11",
+    "advisory": "CVE-2025-43859",
+    "p": 0.5744984270811252,
+    "critical": true,
+    "evpi": 0.07233526739620869
+   },
+   {
+    "package": "aiohttp",
+    "advisory": "CVE-2026-54279",
+    "p": 0.5744984270811252,
+    "critical": false,
+    "evpi": 0.0
+   },
+   {
+    "package": "aiohttp",
+    "advisory": "CVE-2026-123817",
+    "p": 0.5744984270811252,
+    "critical": false,
+    "evpi": 0.0
+   },
+   {
+    "package": "aiohttp",
+    "advisory": "CVE-2026-34514",
+    "p": 0.5744984270811252,
+    "critical": false,
+    "evpi": 0.0
+   },
+   {
+    "package": "aiohttp",
+    "advisory": "CVE-2026-34517",
+    "p": 0.25753225833751786,
+    "critical": false,
+    "evpi": 0.0
+   }
+  ]
+ },
+ "remediation_seconds": 8.1,
+ "status": "ok"
+}

@@ -1,0 +1,94 @@
+{
+ "dist": "starlette",
+ "version": "0.25.0",
+ "advisories": 8,
+ "tops": [
+  "starlette"
+ ],
+ "probe_errors": {},
+ "advisory_symbols": {
+  "CVE-2025-54121": {
+   "gran": "function",
+   "n": 2,
+   "status": "functions"
+  },
+  "CVE-2026-54283": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  },
+  "CVE-2026-48710": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2024-47874": {
+   "gran": "function",
+   "n": 2,
+   "status": "functions"
+  },
+  "CVE-2026-54282": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  },
+  "CVE-2023-29159": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2026-48818": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2026-48817": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  }
+ },
+ "triggerable": {
+  "CVE-2025-54121": {
+   "trigger": [],
+   "safe": [
+    "url",
+    "headers",
+    "form"
+   ]
+  },
+  "CVE-2026-48710": {
+   "trigger": [
+    "url"
+   ],
+   "safe": [
+    "headers",
+    "form"
+   ]
+  },
+  "CVE-2024-47874": {
+   "trigger": [],
+   "safe": [
+    "url",
+    "headers",
+    "form"
+   ]
+  },
+  "CVE-2023-29159": {
+   "trigger": [],
+   "safe": [
+    "url",
+    "headers",
+    "form"
+   ]
+  },
+  "CVE-2026-48818": {
+   "trigger": [],
+   "safe": [
+    "url",
+    "headers",
+    "form"
+   ]
+  }
+ }
+}

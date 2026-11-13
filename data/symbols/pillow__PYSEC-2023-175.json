@@ -1,0 +1,7 @@
+{
+ "advisory": "PYSEC-2023-175",
+ "package": "pillow",
+ "commits": [],
+ "files": [],
+ "status": "no_commit"
+}

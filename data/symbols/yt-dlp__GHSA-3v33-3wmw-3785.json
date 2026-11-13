@@ -1,0 +1,23 @@
+{
+ "advisory": "GHSA-3v33-3wmw-3785",
+ "package": "yt-dlp",
+ "commits": [
+  {
+   "repo": "yt-dlp/yt-dlp",
+   "sha": "6075a029dba70a89675ae1250e7cdfd91f0eba41",
+   "parent": "cc767e9490056efaaa11c186b0d032e4b4969180",
+   "py_files": 1
+  }
+ ],
+ "files": [
+  {
+   "path": "yt_dlp/extractor/douyutv.py",
+   "functions": [
+    "DouyuBaseIE._download_cryptojs_md5",
+    "DouyuBaseIE._get_cryptojs_md5"
+   ],
+   "module_level": true
+  }
+ ],
+ "status": "functions"
+}

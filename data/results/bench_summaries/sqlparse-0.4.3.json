@@ -1,0 +1,119 @@
+{
+ "dist": "sqlparse",
+ "version": "0.4.3",
+ "advisories": 8,
+ "tops": [
+  "sqlparse"
+ ],
+ "probe_errors": {},
+ "advisory_symbols": {
+  "GHSA-27jp-wm6q-gp25": {
+   "gran": "function",
+   "n": 2,
+   "status": "functions"
+  },
+  "CVE-2024-4340": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2026-59894": {
+   "gran": "function",
+   "n": 2,
+   "status": "functions"
+  },
+  "CVE-2026-84305": {
+   "gran": "function",
+   "n": 2,
+   "status": "functions"
+  },
+  "CVE-2026-71491": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2026-59893": {
+   "gran": "function",
+   "n": 2,
+   "status": "functions"
+  },
+  "CVE-2026-54284": {
+   "gran": "function",
+   "n": 2,
+   "status": "functions"
+  },
+  "CVE-2023-30608": {
+   "gran": "module",
+   "n": 1,
+   "status": "module_only"
+  }
+ },
+ "triggerable": {
+  "GHSA-27jp-wm6q-gp25": {
+   "trigger": [
+    "format",
+    "parse",
+    "strip"
+   ],
+   "safe": [
+    "split"
+   ]
+  },
+  "CVE-2024-4340": {
+   "trigger": [
+    "format",
+    "parse",
+    "split",
+    "strip"
+   ],
+   "safe": []
+  },
+  "CVE-2026-59894": {
+   "trigger": [],
+   "safe": [
+    "format",
+    "parse",
+    "split",
+    "strip"
+   ]
+  },
+  "CVE-2026-84305": {
+   "trigger": [
+    "format"
+   ],
+   "safe": [
+    "parse",
+    "split",
+    "strip"
+   ]
+  },
+  "CVE-2026-71491": {
+   "trigger": [
+    "format",
+    "parse",
+    "strip"
+   ],
+   "safe": [
+    "split"
+   ]
+  },
+  "CVE-2026-59893": {
+   "trigger": [
+    "format",
+    "parse",
+    "split",
+    "strip"
+   ],
+   "safe": []
+  },
+  "CVE-2026-54284": {
+   "trigger": [
+    "format",
+    "parse",
+    "split",
+    "strip"
+   ],
+   "safe": []
+  }
+ }
+}

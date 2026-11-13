@@ -1,0 +1,52 @@
+{
+ "advisory": "GHSA-69qj-pvh9-c5wg",
+ "package": "yt-dlp",
+ "commits": [
+  {
+   "repo": "yt-dlp/yt-dlp",
+   "sha": "5faffa999fd33b373d47773e8ee639d072accec2",
+   "parent": "7aac95eae663be82cffeaf2a8c1193a5e349e401",
+   "py_files": 5
+  }
+ ],
+ "files": [
+  {
+   "path": "yt_dlp/YoutubeDL.py",
+   "functions": [
+    "YoutubeDL.__init__",
+    "YoutubeDL.prepare_outtmpl",
+    "YoutubeDL.prepare_outtmpl.create_key"
+   ],
+   "module_level": true
+  },
+  {
+   "path": "yt_dlp/__init__.py",
+   "functions": [
+    "main"
+   ],
+   "module_level": true
+  },
+  {
+   "path": "yt_dlp/options.py",
+   "functions": [
+    "create_parser"
+   ],
+   "module_level": false
+  },
+  {
+   "path": "yt_dlp/postprocessor/exec.py",
+   "functions": [
+    "ExecPP.__init__"
+   ],
+   "module_level": true
+  },
+  {
+   "path": "yt_dlp/utils/_utils.py",
+   "functions": [
+    "is_path_like"
+   ],
+   "module_level": true
+  }
+ ],
+ "status": "functions"
+}

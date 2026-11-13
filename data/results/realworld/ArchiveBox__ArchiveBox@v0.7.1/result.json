@@ -1,0 +1,66 @@
+{
+ "id": "ArchiveBox__ArchiveBox@v0.7.1",
+ "meta": {
+  "id": "ArchiveBox__ArchiveBox@v0.7.1",
+  "repo": "ArchiveBox/ArchiveBox",
+  "tag": "v0.7.1",
+  "published_at": "2023-05-04T05:53:18Z",
+  "stars": 29013,
+  "lock_kind": "pdm",
+  "lock_file": "pdm.lock",
+  "lock_path": "pdm.lock",
+  "subdir": "",
+  "manifest": "pyproject.toml",
+  "requires_python": ">=3.9",
+  "description": "\ud83d\uddc3 Open source self-hosted web archiving. Takes URLs/browser history/bookmarks/Pocket/Pinboard/etc., saves HTML, JS, PDFs, media, and more...",
+  "topics": [
+   "archivebox",
+   "backups",
+   "bookmark-archiver",
+   "browser-bookmarks",
+   "chromium",
+   "digipres",
+   "firefox",
+   "headless-browser",
+   "internet-archiving",
+   "pinboard",
+   "pocket",
+   "python",
+   "rss",
+   "self-hosted",
+   "singlefile",
+   "warc",
+   "wayback-machine",
+   "web-archiving",
+   "wget",
+   "youtube-dl"
+  ]
+ },
+ "python": "3.10",
+ "summary": {
+  "locked": 52,
+  "installed": 46,
+  "direct": 13,
+  "transitive": 33,
+  "edges": 64,
+  "edges_from_lock": true
+ },
+ "stats": {
+  "app_modules": 102,
+  "pkgs_analysed": 16,
+  "pkgs_no_source": 0,
+  "seconds": 408.91,
+  "funcs": 23758,
+  "roots": 469
+ },
+ "scan_seconds": 413.3,
+ "sdist_only": [
+  "python-ldap"
+ ],
+ "baseline_resolution": {
+  "ok": false,
+  "seconds": 4.1,
+  "error": "bled for all packages (i.e., with `--no-build`)\n\nhint: Wheels are required for `django-auth-ldap` because building from source is disabled for all packages (i.e., with `--no-build`)\n\nhint: The `--python-version` value (>=3.10) includes Python versions that are not supported by your dependencies (e.g., django-auth-ldap==5.4.0 only supports >=3.11). Consider using a higher `--python-version` value.\n"
+ },
+ "status": "baseline_unresolvable"
+}

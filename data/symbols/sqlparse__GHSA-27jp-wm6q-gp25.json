@@ -1,0 +1,23 @@
+{
+ "advisory": "GHSA-27jp-wm6q-gp25",
+ "package": "sqlparse",
+ "commits": [
+  {
+   "repo": "andialbrecht/sqlparse",
+   "sha": "40ed3aa958657fa4a82055927fa9de70ab903360",
+   "parent": "3e593bf6334324ecc5ea6e36b0f6cf7a7e3a41f6",
+   "py_files": 1
+  }
+ ],
+ "files": [
+  {
+   "path": "sqlparse/engine/grouping.py",
+   "functions": [
+    "_group",
+    "_group_matching"
+   ],
+   "module_level": true
+  }
+ ],
+ "status": "functions"
+}

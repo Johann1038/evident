@@ -1,0 +1,7 @@
+{
+ "advisory": "GHSA-h4gh-qq45-vh27",
+ "package": "cryptography",
+ "commits": [],
+ "files": [],
+ "status": "no_commit"
+}

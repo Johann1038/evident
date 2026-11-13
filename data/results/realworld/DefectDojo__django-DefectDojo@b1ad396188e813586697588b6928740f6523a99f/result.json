@@ -1,0 +1,66 @@
+{
+ "id": "DefectDojo__django-DefectDojo@b1ad396188e813586697588b6928740f6523a99f",
+ "meta": {
+  "id": "DefectDojo__django-DefectDojo@b1ad396188e813586697588b6928740f6523a99f",
+  "repo": "DefectDojo/django-DefectDojo",
+  "tag": "b1ad396188e813586697588b6928740f6523a99f",
+  "published_at": "2023-05-31T19:04:38Z",
+  "stars": 5221,
+  "lock_kind": "requirements",
+  "lock_file": "requirements.txt",
+  "lock_path": "requirements.txt",
+  "subdir": "",
+  "manifest": null,
+  "requires_python": null,
+  "description": "Open-Source Unified Vulnerability Management, DevSecOps & ASPM",
+  "topics": [
+   "analytics",
+   "appsec",
+   "automation",
+   "devsecops",
+   "django",
+   "hacktoberfest",
+   "kubernetes",
+   "owasp",
+   "python",
+   "security",
+   "security-automation",
+   "security-orchestration",
+   "vulnerability-correlation",
+   "vulnerability-databases",
+   "vulnerability-management"
+  ]
+ },
+ "python": "3.10",
+ "summary": {
+  "locked": 75,
+  "installed": 75,
+  "direct": 56,
+  "transitive": 19,
+  "edges": 117,
+  "edges_from_lock": false
+ },
+ "stats": {
+  "app_modules": 801,
+  "pkgs_analysed": 40,
+  "pkgs_no_source": 0,
+  "seconds": 179.7,
+  "funcs": 33074,
+  "roots": 3511
+ },
+ "scan_seconds": 180.9,
+ "sdist_only": [
+  "cpe",
+  "djangosaml2",
+  "json-log-formatter",
+  "pycurl",
+  "uwsgi",
+  "vobject"
+ ],
+ "baseline_resolution": {
+  "ok": false,
+  "seconds": 0.3,
+  "error": "error: No solution found when resolving dependencies\n  cause: Because all versions of mysqlclient have no usable wheels and you require mysqlclient, we can conclude that your requirements are unsatisfiable.\n\nhint: Wheels are required for `mysqlclient` because building from source is disabled for all packages (i.e., with `--no-build`)\n"
+ },
+ "status": "baseline_unresolvable"
+}

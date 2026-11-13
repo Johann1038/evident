@@ -1,0 +1,67 @@
+{
+ "dist": "setuptools",
+ "version": "65.5.0",
+ "advisories": 5,
+ "tops": [
+  "pkg_resources",
+  "setuptools"
+ ],
+ "probe_errors": {},
+ "advisory_symbols": {
+  "CVE-2025-47273": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2024-6345": {
+   "gran": "function",
+   "n": 6,
+   "status": "functions"
+  },
+  "CVE-2026-59890": {
+   "gran": "function",
+   "n": 2,
+   "status": "functions"
+  },
+  "CVE-2022-40897": {
+   "gran": "module",
+   "n": 1,
+   "status": "module_only"
+  },
+  "GHSA-xmj3-9gf7-h52w": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  }
+ },
+ "triggerable": {
+  "CVE-2025-47273": {
+   "trigger": [],
+   "safe": [
+    "index",
+    "egg"
+   ]
+  },
+  "CVE-2024-6345": {
+   "trigger": [],
+   "safe": [
+    "index",
+    "egg"
+   ]
+  },
+  "CVE-2026-59890": {
+   "trigger": [],
+   "safe": [
+    "index",
+    "egg"
+   ]
+  },
+  "GHSA-xmj3-9gf7-h52w": {
+   "trigger": [],
+   "safe": [
+    "index",
+    "egg"
+   ]
+  }
+ }
+}

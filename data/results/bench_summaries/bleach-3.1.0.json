@@ -1,0 +1,63 @@
+{
+ "dist": "bleach",
+ "version": "3.1.0",
+ "advisories": 6,
+ "tops": [
+  "bleach"
+ ],
+ "probe_errors": {
+  "clean": "ModuleNotFoundError: No module named 'pkg_resources'",
+  "linkify": "ModuleNotFoundError: No module named 'pkg_resources'",
+  "clean_tags": "ModuleNotFoundError: No module named 'pkg_resources'"
+ },
+ "advisory_symbols": {
+  "GHSA-8rfp-98v4-mmr6": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  },
+  "GHSA-gj48-438w-jh9v": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  },
+  "CVE-2020-6816": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  },
+  "CVE-2020-6802": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2020-6817": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  },
+  "CVE-2021-23980": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  }
+ },
+ "triggerable": {
+  "CVE-2020-6802": {
+   "trigger": [],
+   "safe": [
+    "clean",
+    "linkify",
+    "clean_tags"
+   ]
+  },
+  "CVE-2021-23980": {
+   "trigger": [],
+   "safe": [
+    "clean",
+    "linkify",
+    "clean_tags"
+   ]
+  }
+ }
+}

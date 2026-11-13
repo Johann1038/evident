@@ -1,0 +1,31 @@
+{
+ "dist": "certifi",
+ "version": "2022.9.24",
+ "advisories": 4,
+ "tops": [
+  "certifi"
+ ],
+ "probe_errors": {},
+ "advisory_symbols": {
+  "CVE-2024-39689": {
+   "gran": "module",
+   "n": 1,
+   "status": "module_only"
+  },
+  "CVE-2022-23491": {
+   "gran": "module",
+   "n": 1,
+   "status": "module_only"
+  },
+  "GHSA-6q48-6c7w-9gw2": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  },
+  "CVE-2023-37920": {
+   "gran": "module",
+   "n": 1,
+   "status": "module_only"
+  }
+ }
+}

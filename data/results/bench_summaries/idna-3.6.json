@@ -1,0 +1,21 @@
+{
+ "dist": "idna",
+ "version": "3.6",
+ "advisories": 2,
+ "tops": [
+  "idna"
+ ],
+ "probe_errors": {},
+ "advisory_symbols": {
+  "CVE-2026-45409": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  },
+  "CVE-2024-3651": {
+   "gran": "module",
+   "n": 1,
+   "status": "module_only"
+  }
+ }
+}

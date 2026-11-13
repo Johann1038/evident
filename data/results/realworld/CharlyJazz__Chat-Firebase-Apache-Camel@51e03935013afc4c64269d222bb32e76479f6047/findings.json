@@ -1,0 +1,4829 @@
+[
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "anyio",
+  "version": "3.5.0",
+  "advisory": "CVE-2026-64847",
+  "ids": [
+   "GHSA-5p39-cfhj-2xmp",
+   "PYSEC-2026-4024"
+  ],
+  "cves": [
+   "CVE-2026-64847"
+  ],
+  "cvss": 6.8,
+  "epss": 0.00157,
+  "kev": false,
+  "severity_w": 0.6799999999999999,
+  "published": "2026-09-18T17:17:10Z",
+  "fixed": [
+   "4.14.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "anyio.to_process.process_worker"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "anyio",
+  "version": "3.5.0",
+  "advisory": "CVE-2026-63374",
+  "ids": [
+   "GHSA-82r6-8w77-94w6",
+   "PYSEC-2026-4025"
+  ],
+  "cves": [
+   "CVE-2026-63374"
+  ],
+  "cvss": 9.3,
+  "epss": 0.00289,
+  "kev": false,
+  "severity_w": 0.93,
+  "published": "2026-09-18T17:17:18Z",
+  "fixed": [
+   "4.14.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "anyio._core._sockets.getaddrinfo",
+      "anyio.streams.tls.TLSStream.wrap"
+     ],
+     "witness": [
+      "__app__.app.api.v1.users.get_users",
+      "__app__.app.tests.conftest.connection",
+      "httpx._transports.default.HTTPTransport.__exit__",
+      "httpx._transports.default.map_httpcore_exceptions",
+      "httpx._models.URL.__init__",
+      "httpx._client.AsyncClient.get",
+      "httpx._client.AsyncClient.request",
+      "httpx._client.AsyncClient.send",
+      "httpx._client.AsyncClient._send_handling_auth",
+      "httpx._client.AsyncClient._send_handling_redirects",
+      "httpx._client.AsyncClient._send_single_request",
+      "httpx._transports.default.AsyncHTTPTransport.handle_async_request"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "ecdsa",
+  "version": "0.17.0",
+  "advisory": "CVE-2026-33936",
+  "ids": [
+   "GHSA-9f5j-8jwj-x28g",
+   "PYSEC-2026-2467"
+  ],
+  "cves": [
+   "CVE-2026-33936"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00485,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-03-27T15:56:01Z",
+  "fixed": [
+   "0.19.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "ecdsa.der.remove_constructed",
+      "ecdsa.der.remove_implicit",
+      "ecdsa.der.remove_octet_string"
+     ],
+     "witness": [
+      "__app__.app.core.security.create_access_token",
+      "jose.jwt.encode",
+      "jose.backends.ecdsa_backend.ECDSAECKey.__init__",
+      "ecdsa.keys.VerifyingKey.from_pem",
+      "ecdsa.keys.SigningKey.from_der",
+      "ecdsa.der.remove_constructed"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "ecdsa",
+  "version": "0.17.0",
+  "advisory": "CVE-2024-23342",
+  "ids": [
+   "GHSA-wj6h-64fc-37mp",
+   "PYSEC-2026-1325"
+  ],
+  "cves": [
+   "CVE-2024-23342"
+  ],
+  "cvss": 7.4,
+  "epss": 0.00985,
+  "kev": false,
+  "severity_w": 0.74,
+  "published": "2024-01-22T21:35:27Z",
+  "fixed": [],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "fastapi",
+  "version": "0.75.1",
+  "advisory": "CVE-2024-24762",
+  "ids": [
+   "PYSEC-2024-38"
+  ],
+  "cves": [
+   "CVE-2024-24762"
+  ],
+  "cvss": 7.5,
+  "epss": 0.01523,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2024-02-05T15:15:00Z",
+  "fixed": [
+   "0.109.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "h11",
+  "version": "0.13.0",
+  "advisory": "CVE-2025-43859",
+  "ids": [
+   "GHSA-vqfr-h8mv-ghfj",
+   "PYSEC-2026-348"
+  ],
+  "cves": [
+   "CVE-2025-43859"
+  ],
+  "cvss": 9.1,
+  "epss": 0.00594,
+  "kev": false,
+  "severity_w": 0.9099999999999999,
+  "published": "2025-04-24T16:07:56Z",
+  "fixed": [
+   "0.16.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.3451089243298269,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "h11._readers.ChunkedReader.__call__",
+      "h11._readers.ChunkedReader.__init__"
+     ],
+     "witness": [
+      "__app__.app.api.v1.users.get_users",
+      "__app__.app.tests.conftest.connection",
+      "httpx._transports.default.HTTPTransport.__exit__",
+      "httpx._transports.default.map_httpcore_exceptions",
+      "httpcore._sync.http11.HTTP11ConnectionByteStream.__iter__",
+      "httpcore._sync.http11.HTTP11Connection._receive_response_body",
+      "httpcore._sync.http11.HTTP11Connection._receive_event",
+      "h11._connection.Connection.next_event",
+      "h11._readers.ChunkedReader.__call__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "idna",
+  "version": "3.3",
+  "advisory": "CVE-2026-45409",
+  "ids": [
+   "GHSA-65pc-fj4g-8rjx",
+   "PYSEC-2026-215"
+  ],
+  "cves": [
+   "CVE-2026-45409"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00408,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2026-05-19T14:34:32Z",
+  "fixed": [
+   "3.15"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "idna",
+  "version": "3.3",
+  "advisory": "CVE-2024-3651",
+  "ids": [
+   "GHSA-jjg7-2v4v-x38h",
+   "PYSEC-2024-60"
+  ],
+  "cves": [
+   "CVE-2024-3651"
+  ],
+  "cvss": 7.5,
+  "epss": 0.01386,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2024-04-11T21:32:40Z",
+  "fixed": [
+   "3.7"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "module",
+     "symbols": [
+      "idna.package_data.<module>"
+     ],
+     "witness": [
+      "__app__.app.api.v1.users.get_users",
+      "__app__.app.tests.conftest.connection",
+      "httpx._transports.default.HTTPTransport.__exit__",
+      "httpx._transports.default.map_httpcore_exceptions",
+      "httpx._utils.URLPattern.__init__",
+      "httpx._models.<module>",
+      "idna.<module>",
+      "idna.package_data.<module>"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "mako",
+  "version": "1.2.0",
+  "advisory": "CVE-2026-44307",
+  "ids": [
+   "GHSA-2h4p-vjrc-8xpq",
+   "PYSEC-2026-2617"
+  ],
+  "cves": [
+   "CVE-2026-44307"
+  ],
+  "cvss": 8.7,
+  "epss": 0.00742,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2026-05-06T21:45:16Z",
+  "fixed": [
+   "1.3.12"
+  ],
+  "depth": null,
+  "direct": false,
+  "p_exposed": 0.0,
+  "exposure_class": "NOT_INSTALLED",
+  "vex": {
+   "state": "not_affected",
+   "justification": "component_not_present"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "REFUTED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "REFUTED",
+    "detail": {
+     "reason": "marker/target-environment excludes package",
+     "scope": "none"
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "mako",
+  "version": "1.2.0",
+  "advisory": "CVE-2026-102991",
+  "ids": [
+   "GHSA-5639-2j2p-m4mx",
+   "PYSEC-2026-4243"
+  ],
+  "cves": [
+   "CVE-2026-102991"
+  ],
+  "cvss": 6.5,
+  "epss": 0.00356,
+  "kev": false,
+  "severity_w": 0.65,
+  "published": "2026-10-05T23:42:02Z",
+  "fixed": [
+   "1.4.2"
+  ],
+  "depth": null,
+  "direct": false,
+  "p_exposed": 0.0,
+  "exposure_class": "NOT_INSTALLED",
+  "vex": {
+   "state": "not_affected",
+   "justification": "component_not_present"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "REFUTED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "REFUTED",
+    "detail": {
+     "reason": "marker/target-environment excludes package",
+     "scope": "none"
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "mako",
+  "version": "1.2.0",
+  "advisory": "CVE-2026-41205",
+  "ids": [
+   "GHSA-v92g-xgxw-vvmm",
+   "PYSEC-2026-88"
+  ],
+  "cves": [
+   "CVE-2026-41205"
+  ],
+  "cvss": 7.7,
+  "epss": 0.00361,
+  "kev": false,
+  "severity_w": 0.77,
+  "published": "2026-04-16T21:16:40Z",
+  "fixed": [
+   "1.3.11"
+  ],
+  "depth": null,
+  "direct": false,
+  "p_exposed": 0.0,
+  "exposure_class": "NOT_INSTALLED",
+  "vex": {
+   "state": "not_affected",
+   "justification": "component_not_present"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "REFUTED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "REFUTED",
+    "detail": {
+     "reason": "marker/target-environment excludes package",
+     "scope": "none"
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "mako",
+  "version": "1.2.0",
+  "advisory": "CVE-2022-40023",
+  "ids": [
+   "GHSA-v973-fxgf-6xhp",
+   "PYSEC-2022-260"
+  ],
+  "cves": [
+   "CVE-2022-40023"
+  ],
+  "cvss": 8.7,
+  "epss": 0.0232,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2022-09-07T13:15:00Z",
+  "fixed": [
+   "1.2.2"
+  ],
+  "depth": null,
+  "direct": false,
+  "p_exposed": 0.0,
+  "exposure_class": "NOT_INSTALLED",
+  "vex": {
+   "state": "not_affected",
+   "justification": "component_not_present"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "REFUTED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "REFUTED",
+    "detail": {
+     "reason": "marker/target-environment excludes package",
+     "scope": "none"
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "pyasn1",
+  "version": "0.4.8",
+  "advisory": "CVE-2026-119196",
+  "ids": [
+   "GHSA-2qm8-x737-gmw5"
+  ],
+  "cves": [
+   "CVE-2026-119196"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00425,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-10-30T23:07:04Z",
+  "fixed": [
+   "0.6.5"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "vulnerable symbols not found in installed source",
+     "granularity": "function",
+     "symbols": [
+      "pyasn1.codec.ber.decoder.BitStringPayloadDecoder.indefLenValueDecoder",
+      "pyasn1.codec.ber.decoder.BitStringPayloadDecoder.valueDecoder"
+     ],
+     "witness": [],
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "pyasn1",
+  "version": "0.4.8",
+  "advisory": "CVE-2026-59885",
+  "ids": [
+   "GHSA-8ppf-4f7h-5ppj",
+   "PYSEC-2026-3456"
+  ],
+  "cves": [
+   "CVE-2026-59885"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00616,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-07-14T17:17:14.880Z",
+  "fixed": [
+   "0.6.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "pyasn1.codec.ber.decoder.ObjectIdentifierPayloadDecoder.valueDecoder",
+      "pyasn1.codec.ber.decoder.RelativeOIDPayloadDecoder.valueDecoder",
+      "pyasn1.codec.ber.encoder.ObjectIdentifierEncoder.encodeValue",
+      "pyasn1.codec.ber.encoder.RelativeOIDEncoder.encodeValue"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "pyasn1",
+  "version": "0.4.8",
+  "advisory": "CVE-2026-119195",
+  "ids": [
+   "GHSA-9m75-vc3g-4x39"
+  ],
+  "cves": [
+   "CVE-2026-119195"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00527,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-10-30T23:03:51Z",
+  "fixed": [
+   "0.6.5"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "vulnerable symbols not found in installed source",
+     "granularity": "function",
+     "symbols": [
+      "pyasn1.codec.ber.decoder.AnyPayloadDecoder.indefLenValueDecoder",
+      "pyasn1.codec.ber.decoder.OctetStringPayloadDecoder.indefLenValueDecoder",
+      "pyasn1.codec.ber.decoder.OctetStringPayloadDecoder.valueDecoder"
+     ],
+     "witness": [],
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "pyasn1",
+  "version": "0.4.8",
+  "advisory": "CVE-2026-119194",
+  "ids": [
+   "GHSA-fm9c-5rcf-2q5p"
+  ],
+  "cves": [
+   "CVE-2026-119194"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00425,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-10-30T23:03:37Z",
+  "fixed": [
+   "0.6.5"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "vulnerable symbols not found in installed source",
+     "granularity": "function",
+     "symbols": [
+      "pyasn1.codec.ber.decoder.ConstructedPayloadDecoderBase._decodeComponentsSchemaless"
+     ],
+     "witness": [],
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "pyasn1",
+  "version": "0.4.8",
+  "advisory": "CVE-2026-59886",
+  "ids": [
+   "GHSA-hm4w-wwcw-mr6r",
+   "PYSEC-2026-3457"
+  ],
+  "cves": [
+   "CVE-2026-59886"
+  ],
+  "cvss": 7.5,
+  "epss": 0.0044,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-07-14T17:17:15.010Z",
+  "fixed": [
+   "0.6.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "pyasn1.type.univ.Real.__float__",
+      "pyasn1.type.univ.Real.__normalizeBase10"
+     ],
+     "witness": [
+      "__app__.app.core.security.create_access_token",
+      "jose.jwt.encode",
+      "rsa.key.PrivateKey.__init__",
+      "pyasn1.type.univ.Real.__int__",
+      "pyasn1.type.univ.Real.__float__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "pyasn1",
+  "version": "0.4.8",
+  "advisory": "CVE-2026-30922",
+  "ids": [
+   "GHSA-jr27-m4p2-rc6r",
+   "PYSEC-2026-2263"
+  ],
+  "cves": [
+   "CVE-2026-30922"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00835,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-03-17T16:17:33Z",
+  "fixed": [
+   "0.6.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "vulnerable symbols not found in installed source",
+     "granularity": "function",
+     "symbols": [
+      "pyasn1.codec.ber.decoder.SingleItemDecoder.__call__"
+     ],
+     "witness": [],
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "pyasn1",
+  "version": "0.4.8",
+  "advisory": "CVE-2026-59884",
+  "ids": [
+   "GHSA-m4p7-r5rc-7g4j",
+   "PYSEC-2026-3455"
+  ],
+  "cves": [
+   "CVE-2026-59884"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00616,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-07-14T17:17:14.750Z",
+  "fixed": [
+   "0.6.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.8072878303971307,
+  "exposure_class": "STATICALLY_REACHABLE",
+  "vex": {
+   "state": "exploitable"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "CONFIRMED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "function",
+     "symbols": [
+      "pyasn1.codec.ber.decoder.SingleItemDecoder.__call__",
+      "pyasn1.type.tag.Tag.__init__",
+      "pyasn1.type.tag.Tag.__repr__",
+      "pyasn1.type.tag.TagSet.__repr__"
+     ],
+     "witness": [
+      "__app__.app.core.security.<module>",
+      "jose.jwt.<module>",
+      "jose.jws.<module>",
+      "jose.backends.<module>",
+      "jose.backends.rsa_backend.<module>",
+      "jose.backends._asn1.<module>",
+      "pyasn1.type.univ.<module>",
+      "pyasn1.type.tag.Tag.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "pyasn1",
+  "version": "0.4.8",
+  "advisory": "CVE-2026-119197",
+  "ids": [
+   "GHSA-mm57-4v3p-rchx"
+  ],
+  "cves": [
+   "CVE-2026-119197"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00425,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-10-30T23:06:46Z",
+  "fixed": [
+   "0.6.5"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "vulnerable symbols not found in installed source",
+     "granularity": "function",
+     "symbols": [
+      "pyasn1.codec.ber.decoder.RealPayloadDecoder.valueDecoder"
+     ],
+     "witness": [],
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "pydantic",
+  "version": "1.9.0",
+  "advisory": "CVE-2024-3772",
+  "ids": [
+   "GHSA-mr82-8j83-vxmv",
+   "PYSEC-2026-1812"
+  ],
+  "cves": [
+   "CVE-2024-3772"
+  ],
+  "cvss": 5.9,
+  "epss": 0.00957,
+  "kev": false,
+  "severity_w": 0.5900000000000001,
+  "published": "2024-04-15T03:31:00Z",
+  "fixed": [
+   "1.10.13",
+   "2.4.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "pydantic.networks._build_pretty_email_regex",
+      "pydantic.networks.validate_email"
+     ],
+     "witness": [
+      "__app__.app.schemas.user.<module>",
+      "pydantic.main.BaseModel.__init__",
+      "pydantic.main.validate_model",
+      "pydantic.networks.NameEmail.validate",
+      "pydantic.networks.validate_email"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "python-dotenv",
+  "version": "0.20.0",
+  "advisory": "CVE-2026-28684",
+  "ids": [
+   "GHSA-mf9w-mj56-hr94",
+   "PYSEC-2026-2270"
+  ],
+  "cves": [
+   "CVE-2026-28684"
+  ],
+  "cvss": 6.6,
+  "epss": 0.00252,
+  "kev": false,
+  "severity_w": 0.6599999999999999,
+  "published": "2026-04-20T17:16:33.087Z",
+  "fixed": [
+   "1.2.2"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "dotenv.cli.set_value",
+      "dotenv.cli.unset",
+      "dotenv.main.rewrite",
+      "dotenv.main.set_key",
+      "dotenv.main.unset_key"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "python-jose",
+  "version": "3.3.0",
+  "advisory": "CVE-2024-33663",
+  "ids": [
+   "GHSA-3qf3-8w2g-rqmx",
+   "GHSA-6c5p-j8vq-pqhj",
+   "PYSEC-2024-232",
+   "PYSEC-2026-4298"
+  ],
+  "cves": [
+   "CVE-2024-33663",
+   "CVE-2026-85394"
+  ],
+  "cvss": 9.3,
+  "epss": 0.00307,
+  "kev": false,
+  "severity_w": 0.93,
+  "published": "2024-04-26T00:15:09Z",
+  "fixed": [
+   "3.4.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 4
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "python-jose",
+  "version": "3.3.0",
+  "advisory": "CVE-2024-33664",
+  "ids": [
+   "GHSA-cjwg-qfpm-7377",
+   "PYSEC-2024-233"
+  ],
+  "cves": [
+   "CVE-2024-33664"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00777,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2024-04-26T00:15:09Z",
+  "fixed": [
+   "3.4.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "python-jose",
+  "version": "3.3.0",
+  "advisory": "CVE-2024-29370",
+  "ids": [
+   "PYSEC-2025-185"
+  ],
+  "cves": [
+   "CVE-2024-29370"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00185,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2025-12-17T16:16:04.457Z",
+  "fixed": [],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "python-multipart",
+  "version": "0.0.5",
+  "advisory": "CVE-2024-24762",
+  "ids": [
+   "GHSA-2jv5-9r88-3w3p",
+   "PYSEC-2026-1850"
+  ],
+  "cves": [
+   "CVE-2024-24762"
+  ],
+  "cvss": 7.5,
+  "epss": 0.01523,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2024-02-12T17:28:12Z",
+  "fixed": [
+   "0.0.7"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "multipart.multipart.parse_options_header"
+     ],
+     "witness": [
+      "__app__.app.api.health.health",
+      "starlette.responses.Response.__call__",
+      "multipart.multipart.parse_options_header"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "python-multipart",
+  "version": "0.0.5",
+  "advisory": "CVE-2024-53981",
+  "ids": [
+   "GHSA-59g5-xgcq-4qw3",
+   "PYSEC-2026-1851"
+  ],
+  "cves": [
+   "CVE-2024-53981"
+  ],
+  "cvss": 8.7,
+  "epss": 0.00635,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2024-12-02T21:37:04Z",
+  "fixed": [
+   "0.0.18"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "python-multipart",
+  "version": "0.0.5",
+  "advisory": "CVE-2026-53539",
+  "ids": [
+   "GHSA-5rvq-cxj2-64vf",
+   "PYSEC-2026-3036"
+  ],
+  "cves": [
+   "CVE-2026-53539"
+  ],
+  "cvss": 7.5,
+  "epss": 0.0046,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:24:09Z",
+  "fixed": [
+   "0.0.30"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "python-multipart",
+  "version": "0.0.5",
+  "advisory": "CVE-2026-53538",
+  "ids": [
+   "GHSA-6jv3-5f52-599m",
+   "PYSEC-2026-3037"
+  ],
+  "cves": [
+   "CVE-2026-53538"
+  ],
+  "cvss": 3.7,
+  "epss": 0.00256,
+  "kev": false,
+  "severity_w": 0.37,
+  "published": "2026-06-15T20:22:25Z",
+  "fixed": [
+   "0.0.30"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "python-multipart",
+  "version": "0.0.5",
+  "advisory": "CVE-2026-40347",
+  "ids": [
+   "GHSA-mj87-hwqh-73pj",
+   "PYSEC-2026-3038"
+  ],
+  "cves": [
+   "CVE-2026-40347"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00351,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-04-15T19:45:44Z",
+  "fixed": [
+   "0.0.26"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "python-multipart",
+  "version": "0.0.5",
+  "advisory": "CVE-2026-42561",
+  "ids": [
+   "GHSA-pp6c-gr5w-3c5g",
+   "PYSEC-2026-3039"
+  ],
+  "cves": [
+   "CVE-2026-42561"
+  ],
+  "cvss": 7.5,
+  "epss": 0.0074,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-05-06T21:56:14Z",
+  "fixed": [
+   "0.0.27"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "python-multipart",
+  "version": "0.0.5",
+  "advisory": "CVE-2026-53540",
+  "ids": [
+   "GHSA-v9pg-7xvm-68hf",
+   "PYSEC-2026-3040"
+  ],
+  "cves": [
+   "CVE-2026-53540"
+  ],
+  "cvss": 3.7,
+  "epss": 0.00342,
+  "kev": false,
+  "severity_w": 0.37,
+  "published": "2026-06-15T20:23:45Z",
+  "fixed": [
+   "0.0.31"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "python-multipart",
+  "version": "0.0.5",
+  "advisory": "CVE-2026-53537",
+  "ids": [
+   "GHSA-vffw-93wf-4j4q",
+   "PYSEC-2026-3041"
+  ],
+  "cves": [
+   "CVE-2026-53537"
+  ],
+  "cvss": 3.7,
+  "epss": 0.00291,
+  "kev": false,
+  "severity_w": 0.37,
+  "published": "2026-06-15T20:20:51Z",
+  "fixed": [
+   "0.0.30"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "python-multipart",
+  "version": "0.0.5",
+  "advisory": "CVE-2026-24486",
+  "ids": [
+   "GHSA-wp53-j4wj-2cfg",
+   "PYSEC-2026-1852"
+  ],
+  "cves": [
+   "CVE-2026-24486"
+  ],
+  "cvss": 8.6,
+  "epss": 0.02206,
+  "kev": false,
+  "severity_w": 0.86,
+  "published": "2026-01-26T23:28:05Z",
+  "fixed": [
+   "0.0.22"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "starlette",
+  "version": "0.17.1",
+  "advisory": "CVE-2025-54121",
+  "ids": [
+   "GHSA-2c2j-9gv5-cj73",
+   "PYSEC-2026-1941"
+  ],
+  "cves": [
+   "CVE-2025-54121"
+  ],
+  "cvss": 5.3,
+  "epss": 0.0066,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2025-07-21T19:34:23Z",
+  "fixed": [
+   "0.47.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "starlette.datastructures.UploadFile.content_type",
+      "starlette.datastructures.UploadFile.write"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "starlette",
+  "version": "0.17.1",
+  "advisory": "CVE-2023-30798",
+  "ids": [
+   "GHSA-74m5-2c7w-9w3x",
+   "PYSEC-2023-48"
+  ],
+  "cves": [
+   "CVE-2023-30798"
+  ],
+  "cvss": 8.7,
+  "epss": 0.01299,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2023-02-14T21:31:28Z",
+  "fixed": [
+   "0.25.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "starlette.formparsers.MultiPartParser.__init__",
+      "starlette.formparsers.MultiPartParser.on_end",
+      "starlette.formparsers.MultiPartParser.on_header_end",
+      "starlette.formparsers.MultiPartParser.on_header_field",
+      "starlette.formparsers.MultiPartParser.on_header_value",
+      "starlette.formparsers.MultiPartParser.on_headers_finished",
+      "starlette.formparsers.MultiPartParser.on_part_begin",
+      "starlette.formparsers.MultiPartParser.on_part_data",
+      "starlette.formparsers.MultiPartParser.on_part_end",
+      "starlette.formparsers.MultiPartParser.parse",
+      "starlette.requests.Request._get_form",
+      "starlette.requests.Request.form"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "starlette",
+  "version": "0.17.1",
+  "advisory": "CVE-2026-54283",
+  "ids": [
+   "GHSA-82w8-qh3p-5jfq",
+   "PYSEC-2026-249"
+  ],
+  "cves": [
+   "CVE-2026-54283"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00481,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:39:53Z",
+  "fixed": [
+   "1.3.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "starlette",
+  "version": "0.17.1",
+  "advisory": "CVE-2026-48710",
+  "ids": [
+   "GHSA-86qp-5c8j-p5mr",
+   "PYSEC-2026-161"
+  ],
+  "cves": [
+   "CVE-2026-48710"
+  ],
+  "cvss": 6.5,
+  "epss": 0.70288,
+  "kev": true,
+  "severity_w": 1.3,
+  "published": "2026-05-22T13:10:03Z",
+  "fixed": [
+   "1.0.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.8072878303971307,
+  "exposure_class": "STATICALLY_REACHABLE",
+  "vex": {
+   "state": "exploitable"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "CONFIRMED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "function",
+     "symbols": [
+      "starlette.datastructures.URL.__init__"
+     ],
+     "witness": [
+      "__app__.app.api.health.<module>",
+      "starlette.routing.Router.__call__",
+      "starlette.datastructures.URL.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "starlette",
+  "version": "0.17.1",
+  "advisory": "CVE-2024-47874",
+  "ids": [
+   "GHSA-f96h-pmfr-66vw",
+   "PYSEC-2026-1943"
+  ],
+  "cves": [
+   "CVE-2024-47874"
+  ],
+  "cvss": 8.7,
+  "epss": 0.00653,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2024-10-15T18:12:57Z",
+  "fixed": [
+   "0.40.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "starlette.formparsers.MultiPartParser.on_part_data",
+      "starlette.formparsers._user_safe_decode"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "starlette",
+  "version": "0.17.1",
+  "advisory": "CVE-2026-54282",
+  "ids": [
+   "GHSA-jp82-jpqv-5vv3",
+   "PYSEC-2026-248"
+  ],
+  "cves": [
+   "CVE-2026-54282"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00273,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-06-15T20:38:08Z",
+  "fixed": [
+   "1.3.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "starlette",
+  "version": "0.17.1",
+  "advisory": "CVE-2023-29159",
+  "ids": [
+   "GHSA-v5gw-mw7f-84px",
+   "PYSEC-2023-83"
+  ],
+  "cves": [
+   "CVE-2023-29159"
+  ],
+  "cvss": 6.3,
+  "epss": 0.02593,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2023-05-17T03:49:14Z",
+  "fixed": [
+   "0.27.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "starlette.staticfiles.StaticFiles.lookup_path"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "starlette",
+  "version": "0.17.1",
+  "advisory": "CVE-2026-48818",
+  "ids": [
+   "GHSA-wqp7-x3pw-xc5r",
+   "PYSEC-2026-2281"
+  ],
+  "cves": [
+   "CVE-2026-48818"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00368,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:16:30Z",
+  "fixed": [
+   "1.1.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "starlette.staticfiles.StaticFiles.lookup_path"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "starlette",
+  "version": "0.17.1",
+  "advisory": "CVE-2026-48817",
+  "ids": [
+   "GHSA-x746-7m8f-x49c",
+   "PYSEC-2026-2280"
+  ],
+  "cves": [
+   "CVE-2026-48817"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00213,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-06-15T20:16:05Z",
+  "fixed": [
+   "1.1.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "black",
+  "version": "22.3.0",
+  "advisory": "CVE-2026-32274",
+  "ids": [
+   "GHSA-3936-cmfr-pm3m",
+   "PYSEC-2026-2121"
+  ],
+  "cves": [
+   "CVE-2026-32274"
+  ],
+  "cvss": 8.7,
+  "epss": 0.00691,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2026-03-12T18:33:10Z",
+  "fixed": [
+   "26.3.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.15470308788598575,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "black.cache.Cache.read",
+      "black.handle_ipynb_magics.create_token",
+      "black.handle_ipynb_magics.get_token",
+      "black.handle_ipynb_magics.replace_magics",
+      "black.handle_ipynb_magics.unmask_cell",
+      "black.mode.Mode.get_cache_key"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "black",
+  "version": "22.3.0",
+  "advisory": "CVE-2026-114134",
+  "ids": [
+   "GHSA-cg8m-r9f2-5wm2"
+  ],
+  "cves": [
+   "CVE-2026-114134"
+  ],
+  "cvss": 8.7,
+  "epss": 0.00404,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2026-10-22T16:18:57Z",
+  "fixed": [
+   "26.10.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.3940617577197149,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "black",
+  "version": "22.3.0",
+  "advisory": "CVE-2024-21503",
+  "ids": [
+   "GHSA-fj7x-q9j7-g6q6",
+   "PYSEC-2024-48"
+  ],
+  "cves": [
+   "CVE-2024-21503"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00979,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2024-03-19T05:15:00Z",
+  "fixed": [
+   "24.3.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.15470308788598575,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "black.strings.lines_with_leading_tabs_expanded"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "black",
+  "version": "22.3.0",
+  "advisory": "CVE-2026-31900",
+  "ids": [
+   "PYSEC-2026-2120"
+  ],
+  "cves": [
+   "CVE-2026-31900"
+  ],
+  "cvss": 9.8,
+  "epss": 0.00522,
+  "kev": false,
+  "severity_w": 0.9800000000000001,
+  "published": "2026-03-11T20:16:15.960Z",
+  "fixed": [
+   "26.3.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.3940617577197149,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (module_only)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "certifi",
+  "version": "2021.10.8",
+  "advisory": "CVE-2024-39689",
+  "ids": [
+   "GHSA-248v-346w-9cwc",
+   "PYSEC-2024-230"
+  ],
+  "cves": [
+   "CVE-2024-39689"
+  ],
+  "cvss": 7.5,
+  "epss": 0.01049,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2024-07-05T19:15:10Z",
+  "fixed": [
+   "2024.7.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.3451089243298269,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "module",
+     "symbols": [
+      "certifi.<module>"
+     ],
+     "witness": [
+      "__app__.app.api.v1.users.get_users",
+      "__app__.app.tests.conftest.connection",
+      "httpx._transports.default.HTTPTransport.__exit__",
+      "httpx._transports.default.map_httpcore_exceptions",
+      "httpx._utils.URLPattern.__init__",
+      "httpx.<module>",
+      "httpx._config.<module>",
+      "certifi.<module>"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "certifi",
+  "version": "2021.10.8",
+  "advisory": "CVE-2022-23491",
+  "ids": [
+   "GHSA-43fp-rhv2-5gv8",
+   "PYSEC-2022-42986"
+  ],
+  "cves": [
+   "CVE-2022-23491"
+  ],
+  "cvss": 6.8,
+  "epss": 0.0053,
+  "kev": false,
+  "severity_w": 0.6799999999999999,
+  "published": "2022-12-07T22:15:00Z",
+  "fixed": [
+   "2022.12.07",
+   "2022.12.7"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.3451089243298269,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "module",
+     "symbols": [
+      "certifi.<module>"
+     ],
+     "witness": [
+      "__app__.app.api.v1.users.get_users",
+      "__app__.app.tests.conftest.connection",
+      "httpx._transports.default.HTTPTransport.__exit__",
+      "httpx._transports.default.map_httpcore_exceptions",
+      "httpx._utils.URLPattern.__init__",
+      "httpx.<module>",
+      "httpx._config.<module>",
+      "certifi.<module>"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "certifi",
+  "version": "2021.10.8",
+  "advisory": "GHSA-6q48-6c7w-9gw2",
+  "ids": [
+   "GHSA-6q48-6c7w-9gw2",
+   "PYSEC-2026-4320"
+  ],
+  "cves": [],
+  "cvss": 9.1,
+  "epss": 0.0,
+  "kev": false,
+  "severity_w": 0.9099999999999999,
+  "published": "2026-10-20T19:35:05Z",
+  "fixed": [
+   "2026.10.18"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.3940617577197149,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "certifi",
+  "version": "2021.10.8",
+  "advisory": "CVE-2023-37920",
+  "ids": [
+   "GHSA-xqr8-7jwr-rhp7",
+   "PYSEC-2023-135"
+  ],
+  "cves": [
+   "CVE-2023-37920"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00568,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2023-07-25T14:43:53Z",
+  "fixed": [
+   "2023.7.22"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.3451089243298269,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "module",
+     "symbols": [
+      "certifi.<module>"
+     ],
+     "witness": [
+      "__app__.app.api.v1.users.get_users",
+      "__app__.app.tests.conftest.connection",
+      "httpx._transports.default.HTTPTransport.__exit__",
+      "httpx._transports.default.map_httpcore_exceptions",
+      "httpx._utils.URLPattern.__init__",
+      "httpx.<module>",
+      "httpx._config.<module>",
+      "certifi.<module>"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "httpx",
+  "version": "0.22.0",
+  "advisory": "CVE-2021-41945",
+  "ids": [
+   "GHSA-h8pj-cxx2-jfg2",
+   "PYSEC-2022-183"
+  ],
+  "cves": [
+   "CVE-2021-41945"
+  ],
+  "cvss": 9.3,
+  "epss": 0.02118,
+  "kev": false,
+  "severity_w": 0.93,
+  "published": "2022-04-28T14:15:00Z",
+  "fixed": [
+   "0.20.0",
+   "0.23.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.3940617577197149,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047",
+  "package": "pytest",
+  "version": "7.1.1",
+  "advisory": "CVE-2025-71176",
+  "ids": [
+   "GHSA-6w46-j5rx-g56g",
+   "PYSEC-2026-1845"
+  ],
+  "cves": [
+   "CVE-2025-71176"
+  ],
+  "cvss": 6.8,
+  "epss": 0.00154,
+  "kev": false,
+  "severity_w": 0.6799999999999999,
+  "published": "2026-01-22T06:30:29Z",
+  "fixed": [
+   "9.0.3"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.3451089243298269,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "_pytest.tmpdir.TempPathFactory.getbasetemp"
+     ],
+     "witness": [
+      "__app__.app.api.v1.users.get_users",
+      "__app__.app.tests.conftest.connection",
+      "_pytest.python_api.RaisesContext.__exit__",
+      "_pytest.pytester.Pytester.__init__",
+      "_pytest.tmpdir.TempPathFactory.mktemp",
+      "_pytest.tmpdir.TempPathFactory.getbasetemp"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ }
+]

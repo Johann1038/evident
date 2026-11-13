@@ -1,0 +1,66 @@
+{
+ "dist": "python-multipart",
+ "version": "0.0.6",
+ "advisories": 9,
+ "tops": [
+  "multipart"
+ ],
+ "probe_errors": {},
+ "advisory_symbols": {
+  "CVE-2024-24762": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2024-53981": {
+   "gran": "none",
+   "n": 0,
+   "status": "functions"
+  },
+  "CVE-2026-53539": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  },
+  "CVE-2026-53538": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  },
+  "CVE-2026-40347": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  },
+  "CVE-2026-42561": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  },
+  "CVE-2026-53540": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  },
+  "CVE-2026-53537": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  },
+  "CVE-2026-24486": {
+   "gran": "none",
+   "n": 0,
+   "status": "functions"
+  }
+ },
+ "triggerable": {
+  "CVE-2024-24762": {
+   "trigger": [
+    "options"
+   ],
+   "safe": [
+    "qs"
+   ]
+  }
+ }
+}

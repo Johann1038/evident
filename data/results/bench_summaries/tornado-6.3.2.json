@@ -1,0 +1,291 @@
+{
+ "dist": "tornado",
+ "version": "6.3.2",
+ "advisories": 22,
+ "tops": [
+  "tornado"
+ ],
+ "probe_errors": {},
+ "advisory_symbols": {
+  "CVE-2026-103261": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2026-49853": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  },
+  "CVE-2024-14029": {
+   "gran": "function",
+   "n": 5,
+   "status": "functions"
+  },
+  "CVE-2026-35536": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2025-47287": {
+   "gran": "function",
+   "n": 7,
+   "status": "functions"
+  },
+  "CVE-2026-91990": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2024-52804": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2026-103263": {
+   "gran": "function",
+   "n": 4,
+   "status": "functions"
+  },
+  "CVE-2025-67725": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2026-103262": {
+   "gran": "function",
+   "n": 6,
+   "status": "functions"
+  },
+  "CVE-2026-49854": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  },
+  "CVE-2025-67726": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2026-49855": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  },
+  "CVE-2026-82397": {
+   "gran": "function",
+   "n": 2,
+   "status": "functions"
+  },
+  "CVE-2026-116577": {
+   "gran": "function",
+   "n": 3,
+   "status": "functions"
+  },
+  "CVE-2025-67724": {
+   "gran": "function",
+   "n": 3,
+   "status": "functions"
+  },
+  "CVE-2026-91992": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  },
+  "CVE-2026-116578": {
+   "gran": "function",
+   "n": 4,
+   "status": "functions"
+  },
+  "CVE-2026-31958": {
+   "gran": "function",
+   "n": 3,
+   "status": "functions"
+  },
+  "CVE-2023-54397": {
+   "gran": "function",
+   "n": 4,
+   "status": "functions"
+  },
+  "CVE-2026-115927": {
+   "gran": "function",
+   "n": 12,
+   "status": "functions"
+  },
+  "CVE-2024-58384": {
+   "gran": "function",
+   "n": 2,
+   "status": "functions"
+  }
+ },
+ "triggerable": {
+  "CVE-2026-103261": {
+   "trigger": [],
+   "safe": [
+    "headers",
+    "cookie",
+    "body",
+    "escape"
+   ]
+  },
+  "CVE-2024-14029": {
+   "trigger": [
+    "headers"
+   ],
+   "safe": [
+    "cookie",
+    "body",
+    "escape"
+   ]
+  },
+  "CVE-2026-35536": {
+   "trigger": [],
+   "safe": [
+    "headers",
+    "cookie",
+    "body",
+    "escape"
+   ]
+  },
+  "CVE-2025-47287": {
+   "trigger": [
+    "body"
+   ],
+   "safe": [
+    "headers",
+    "cookie",
+    "escape"
+   ]
+  },
+  "CVE-2026-91990": {
+   "trigger": [],
+   "safe": [
+    "headers",
+    "cookie",
+    "body",
+    "escape"
+   ]
+  },
+  "CVE-2024-52804": {
+   "trigger": [
+    "cookie"
+   ],
+   "safe": [
+    "headers",
+    "body",
+    "escape"
+   ]
+  },
+  "CVE-2026-103263": {
+   "trigger": [],
+   "safe": [
+    "headers",
+    "cookie",
+    "body",
+    "escape"
+   ]
+  },
+  "CVE-2025-67725": {
+   "trigger": [],
+   "safe": [
+    "headers",
+    "cookie",
+    "body",
+    "escape"
+   ]
+  },
+  "CVE-2026-103262": {
+   "trigger": [],
+   "safe": [
+    "headers",
+    "cookie",
+    "body",
+    "escape"
+   ]
+  },
+  "CVE-2025-67726": {
+   "trigger": [],
+   "safe": [
+    "headers",
+    "cookie",
+    "body",
+    "escape"
+   ]
+  },
+  "CVE-2026-82397": {
+   "trigger": [
+    "body"
+   ],
+   "safe": [
+    "headers",
+    "cookie",
+    "escape"
+   ]
+  },
+  "CVE-2026-116577": {
+   "trigger": [
+    "headers"
+   ],
+   "safe": [
+    "cookie",
+    "body",
+    "escape"
+   ]
+  },
+  "CVE-2025-67724": {
+   "trigger": [],
+   "safe": [
+    "headers",
+    "cookie",
+    "body",
+    "escape"
+   ]
+  },
+  "CVE-2026-116578": {
+   "trigger": [],
+   "safe": [
+    "headers",
+    "cookie",
+    "body",
+    "escape"
+   ]
+  },
+  "CVE-2026-31958": {
+   "trigger": [
+    "body"
+   ],
+   "safe": [
+    "headers",
+    "cookie",
+    "escape"
+   ]
+  },
+  "CVE-2023-54397": {
+   "trigger": [],
+   "safe": [
+    "headers",
+    "cookie",
+    "body",
+    "escape"
+   ]
+  },
+  "CVE-2026-115927": {
+   "trigger": [],
+   "safe": [
+    "headers",
+    "cookie",
+    "body",
+    "escape"
+   ]
+  },
+  "CVE-2024-58384": {
+   "trigger": [],
+   "safe": [
+    "headers",
+    "cookie",
+    "body",
+    "escape"
+   ]
+  }
+ }
+}

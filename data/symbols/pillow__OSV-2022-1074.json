@@ -1,0 +1,22 @@
+{
+ "advisory": "OSV-2022-1074",
+ "package": "pillow",
+ "commits": [
+  {
+   "repo": "python-pillow/Pillow",
+   "sha": "f7363c1091c70356d92e56abfca6b65bef9e7b26",
+   "parent": "be8a28d03d8a19add45fd3c9ec57d4499c23af1d",
+   "py_files": 1
+  }
+ ],
+ "files": [
+  {
+   "path": "src/PIL/BlpImagePlugin.py",
+   "functions": [
+    "BLP1Decoder._decode_jpeg_stream"
+   ],
+   "module_level": false
+  }
+ ],
+ "status": "functions"
+}

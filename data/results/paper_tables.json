@@ -1,0 +1,1114 @@
+{
+ "bench": {
+  "n_rows": 962,
+  "n_packages": 14,
+  "n_advisories": 61,
+  "label_rate": 0.5738045738045738
+ },
+ "bench_methods": {
+  "version_match": {
+   "brier": 0.4261954261954262,
+   "ece": 0.42619542619542616,
+   "logloss": 3.925462323565972,
+   "auc": 0.5,
+   "P@5": 0.6142857142857142,
+   "R@5": 0.1920331790123457,
+   "NDCG@5": 0.5929132271535106,
+   "P@10": 0.5571428571428572,
+   "R@10": 0.3335813492063493,
+   "NDCG@10": 0.5740321501373049,
+   "AP": 0.6176843592190348,
+   "brier_ci": [
+    0.39753118503118506,
+    0.45634095634095634
+   ]
+  },
+  "coral_style": {
+   "brier": 0.18609147609147608,
+   "ece": 0.11663201663201665,
+   "logloss": 1.0703133907706057,
+   "auc": 0.782091728525981,
+   "P@5": 0.8142857142857143,
+   "R@5": 0.24619708994708997,
+   "NDCG@5": 0.815952984085554,
+   "P@10": 0.8071428571428572,
+   "R@10": 0.47711364638447973,
+   "NDCG@10": 0.8301039235547328,
+   "AP": 0.8153628916370649,
+   "brier_ci": [
+    0.1700880977130977,
+    0.20283939708939708
+   ]
+  },
+  "cape_style": {
+   "brier": 0.24788461538461543,
+   "ece": 0.25893970893970897,
+   "logloss": 1.4303975069647639,
+   "auc": 0.7518557794273595,
+   "P@5": 0.8,
+   "R@5": 0.22893242945326278,
+   "NDCG@5": 0.7793274100782066,
+   "P@10": 0.7928571428571429,
+   "R@10": 0.4520502645502646,
+   "NDCG@10": 0.8016381319959048,
+   "AP": 0.7798022357772293,
+   "brier_ci": [
+    0.22681899688149693,
+    0.2709294438669439
+   ]
+  },
+  "logistic": {
+   "brier": 0.12678010569106257,
+   "ece": 0.05583909620619932,
+   "logloss": 0.3673011995362088,
+   "auc": 0.8790562036055143,
+   "P@5": 1.0,
+   "R@5": 0.29396770282186946,
+   "NDCG@5": 1.0,
+   "P@10": 0.9357142857142858,
+   "R@10": 0.5244433421516754,
+   "NDCG@10": 0.9783873893682138,
+   "AP": 0.924973970793798,
+   "brier_ci": [
+    0.11659336272190733,
+    0.1373267969420372
+   ]
+  },
+  "logistic_iso": {
+   "brier": 0.1273892651495448,
+   "ece": 0.052096644886991596,
+   "logloss": 0.3866751210409222,
+   "auc": 0.8771650759985861,
+   "P@5": 0.9714285714285715,
+   "R@5": 0.2780946869488536,
+   "NDCG@5": 0.981256417498237,
+   "P@10": 0.942857142857143,
+   "R@10": 0.5323798500881833,
+   "NDCG@10": 0.982078759241573,
+   "AP": 0.9297717988618875,
+   "brier_ci": [
+    0.11769733175880391,
+    0.13825065172226247
+   ]
+  },
+  "evident": {
+   "brier": 0.12691590145014864,
+   "ece": 0.049262574078585204,
+   "logloss": 0.3619538917920263,
+   "auc": 0.8785083068221986,
+   "P@5": 1.0,
+   "R@5": 0.29396770282186946,
+   "NDCG@5": 1.0,
+   "P@10": 0.9285714285714287,
+   "R@10": 0.5204750881834215,
+   "NDCG@10": 0.9718034987339841,
+   "AP": 0.9232110747707412,
+   "brier_ci": [
+    0.11607484583801514,
+    0.13760686469917854
+   ]
+  },
+  "evident_noL5": {
+   "brier": 0.1674388355991612,
+   "ece": 0.01590298460426676,
+   "logloss": 0.49405866444269836,
+   "auc": 0.7624182573347472,
+   "P@5": 0.8428571428571429,
+   "R@5": 0.251860119047619,
+   "NDCG@5": 0.8370068443124037,
+   "P@10": 0.8285714285714286,
+   "R@10": 0.49078207671957674,
+   "NDCG@10": 0.8505049476315467,
+   "AP": 0.8236257473519989,
+   "brier_ci": [
+    0.1534846751056849,
+    0.18025582756903205
+   ]
+  },
+  "evident_noL4": {
+   "brier": 0.1462799718580196,
+   "ece": 0.002233377636915245,
+   "logloss": 0.40695053038593576,
+   "auc": 0.8173824673029338,
+   "P@5": 0.9857142857142858,
+   "R@5": 0.28603119488536155,
+   "NDCG@5": 0.9906282087491185,
+   "P@10": 0.9000000000000001,
+   "R@10": 0.4847608024691357,
+   "NDCG@10": 0.9505637203944216,
+   "AP": 0.8899141882668441,
+   "brier_ci": [
+    0.13918235465992815,
+    0.15355281107828803
+   ]
+  },
+  "evident_noL3b": {
+   "brier": 0.2450530179189412,
+   "ece": 0.02603127610428857,
+   "logloss": 0.6832455741261206,
+   "auc": 0.7703892718275008,
+   "P@5": 0.8142857142857144,
+   "R@5": 0.2375992063492063,
+   "NDCG@5": 0.8165707326901066,
+   "P@10": 0.8071428571428573,
+   "R@10": 0.47211199294532635,
+   "NDCG@10": 0.8321467913018982,
+   "AP": 0.7538874909772489,
+   "brier_ci": [
+    0.2392356309636622,
+    0.25106492379587164
+   ]
+  },
+  "evident_L4only_fixed": {
+   "brier": 0.18482328482328483,
+   "ece": 0.10395010395010397,
+   "logloss": 1.056964344720487,
+   "auc": 0.782091728525981,
+   "P@5": 0.8428571428571431,
+   "R@5": 0.26361331569664903,
+   "NDCG@5": 0.8426196874650019,
+   "P@10": 0.8,
+   "R@10": 0.48152281746031755,
+   "NDCG@10": 0.8360194139135897,
+   "AP": 0.8405669781950439,
+   "brier_ci": [
+    0.16803846153846153,
+    0.20367255717255717
+   ]
+  },
+  "cvss_only": {
+   "P@5": 0.5428571428571428,
+   "R@5": 0.15815145502645506,
+   "NDCG@5": 0.570897748451771,
+   "P@10": 0.5214285714285714,
+   "R@10": 0.30514219576719576,
+   "NDCG@10": 0.558482789228319,
+   "AP": 0.6077565550423708
+  },
+  "epss_only": {
+   "P@5": 0.5285714285714286,
+   "R@5": 0.1609485229276896,
+   "NDCG@5": 0.5381749374556227,
+   "P@10": 0.5928571428571427,
+   "R@10": 0.3592234347442681,
+   "NDCG@10": 0.5922636532373314,
+   "AP": 0.6234715248627217
+  }
+ },
+ "bench_confusion": {
+  "L3b": {
+   "tp": 552,
+   "fp": 288,
+   "fn": 0,
+   "tn": 122,
+   "precision": 0.6571428571428571,
+   "recall": 1.0
+  },
+  "L4": {
+   "tp": 343,
+   "fp": 81,
+   "fn": 209,
+   "tn": 329,
+   "precision": 0.8089622641509434,
+   "recall": 0.6213768115942029
+  },
+  "L4p": {
+   "tp": 543,
+   "fp": 229,
+   "fn": 9,
+   "tn": 181,
+   "precision": 0.7033678756476683,
+   "recall": 0.9836956521739131
+  },
+  "L5": {
+   "tp": 277,
+   "fp": 61,
+   "fn": 275,
+   "tn": 349,
+   "precision": 0.8195266272189349,
+   "recall": 0.5018115942028986
+  },
+  "L4_refuted_false_negative_rate": 0.0
+ },
+ "bench_patterns": {
+  "E1_direct": {
+   "L3b": {
+    "CONFIRMED": 61
+   },
+   "L4": {
+    "CONFIRMED": 42,
+    "POSSIBLE": 18,
+    "UNKNOWN": 1
+   },
+   "L5": {
+    "NOT_OBSERVED": 32,
+    "OBSERVED": 29
+   },
+   "label": {
+    "1": 61
+   }
+  },
+  "E2_wrapper": {
+   "L3b": {
+    "CONFIRMED": 61
+   },
+   "L4": {
+    "CONFIRMED": 42,
+    "POSSIBLE": 18,
+    "UNKNOWN": 1
+   },
+   "L5": {
+    "OBSERVED": 34,
+    "NOT_OBSERVED": 27
+   },
+   "label": {
+    "1": 61
+   }
+  },
+  "E3_alias": {
+   "L3b": {
+    "CONFIRMED": 61
+   },
+   "L4": {
+    "CONFIRMED": 42,
+    "POSSIBLE": 18,
+    "UNKNOWN": 1
+   },
+   "L5": {
+    "NOT_OBSERVED": 35,
+    "OBSERVED": 26
+   },
+   "label": {
+    "1": 61
+   }
+  },
+  "E4_dict_dispatch": {
+   "L3b": {
+    "CONFIRMED": 61
+   },
+   "L4": {
+    "CONFIRMED": 42,
+    "POSSIBLE": 18,
+    "UNKNOWN": 1
+   },
+   "L5": {
+    "NOT_OBSERVED": 23,
+    "OBSERVED": 38
+   },
+   "label": {
+    "1": 61
+   }
+  },
+  "E5_getattr_computed": {
+   "L3b": {
+    "CONFIRMED": 61
+   },
+   "L4": {
+    "POSSIBLE": 56,
+    "CONFIRMED": 4,
+    "UNKNOWN": 1
+   },
+   "L5": {
+    "OBSERVED": 24,
+    "NOT_OBSERVED": 37
+   },
+   "label": {
+    "1": 61
+   }
+  },
+  "E6_class_method": {
+   "L3b": {
+    "CONFIRMED": 61
+   },
+   "L4": {
+    "CONFIRMED": 42,
+    "POSSIBLE": 18,
+    "UNKNOWN": 1
+   },
+   "L5": {
+    "OBSERVED": 30,
+    "NOT_OBSERVED": 31
+   },
+   "label": {
+    "1": 61
+   }
+  },
+  "E7_callback": {
+   "L3b": {
+    "CONFIRMED": 61
+   },
+   "L4": {
+    "CONFIRMED": 42,
+    "POSSIBLE": 18,
+    "UNKNOWN": 1
+   },
+   "L5": {
+    "NOT_OBSERVED": 35,
+    "OBSERVED": 26
+   },
+   "label": {
+    "1": 61
+   }
+  },
+  "E8_decorator_registry": {
+   "L3b": {
+    "CONFIRMED": 61
+   },
+   "L4": {
+    "CONFIRMED": 42,
+    "POSSIBLE": 18,
+    "UNKNOWN": 1
+   },
+   "L5": {
+    "OBSERVED": 34,
+    "NOT_OBSERVED": 27
+   },
+   "label": {
+    "1": 61
+   }
+  },
+  "E9_transitive": {
+   "L3b": {
+    "CONFIRMED": 61
+   },
+   "L4": {
+    "CONFIRMED": 42,
+    "POSSIBLE": 18,
+    "UNKNOWN": 1
+   },
+   "L5": {
+    "NOT_OBSERVED": 28,
+    "OBSERVED": 33
+   },
+   "label": {
+    "1": 61
+   }
+  },
+  "N1_dead_code": {
+   "L3b": {
+    "CONFIRMED": 61
+   },
+   "L4": {
+    "REFUTED": 10,
+    "POSSIBLE": 40,
+    "UNKNOWN": 7,
+    "CONFIRMED": 4
+   },
+   "L5": {
+    "NOT_OBSERVED": 60,
+    "OBSERVED": 1
+   },
+   "label": {
+    "0": 60,
+    "1": 1
+   }
+  },
+  "N2_safe_api": {
+   "L3b": {
+    "CONFIRMED": 54
+   },
+   "L4": {
+    "REFUTED": 5,
+    "POSSIBLE": 25,
+    "UNKNOWN": 7,
+    "CONFIRMED": 17
+   },
+   "L5": {
+    "NOT_OBSERVED": 54
+   },
+   "label": {
+    "0": 54
+   }
+  },
+  "N3_import_only": {
+   "L3b": {
+    "CONFIRMED": 61
+   },
+   "L4": {
+    "REFUTED": 10,
+    "POSSIBLE": 40,
+    "UNKNOWN": 7,
+    "CONFIRMED": 4
+   },
+   "L5": {
+    "NOT_OBSERVED": 60,
+    "OBSERVED": 1
+   },
+   "label": {
+    "0": 60,
+    "1": 1
+   }
+  },
+  "N4_not_imported": {
+   "L3b": {
+    "REFUTED": 61
+   },
+   "L4": {
+    "REFUTED": 61
+   },
+   "L5": {
+    "NOT_OBSERVED": 61
+   },
+   "label": {
+    "0": 61
+   }
+  },
+  "N5_guarded_branch": {
+   "L3b": {
+    "CONFIRMED": 61
+   },
+   "L4": {
+    "CONFIRMED": 42,
+    "POSSIBLE": 18,
+    "UNKNOWN": 1
+   },
+   "L5": {
+    "NOT_OBSERVED": 60,
+    "OBSERVED": 1
+   },
+   "label": {
+    "0": 60,
+    "1": 1
+   }
+  },
+  "N6_test_only": {
+   "L3b": {
+    "REFUTED": 61
+   },
+   "L4": {
+    "REFUTED": 61
+   },
+   "L5": {
+    "OBSERVED": 61
+   },
+   "label": {
+    "0": 61
+   }
+  },
+  "N7_transitive_safe": {
+   "L3b": {
+    "CONFIRMED": 54
+   },
+   "L4": {
+    "REFUTED": 5,
+    "POSSIBLE": 25,
+    "UNKNOWN": 7,
+    "CONFIRMED": 17
+   },
+   "L5": {
+    "NOT_OBSERVED": 54
+   },
+   "label": {
+    "0": 54
+   }
+  }
+ },
+ "realworld_n": {
+  "snapshots": 14,
+  "resolvable": 10,
+  "lock_kinds": {
+   "poetry": 4,
+   "pdm": 1,
+   "pipfile": 2,
+   "requirements": 7
+  },
+  "unresolvable": [
+   "ArchiveBox__ArchiveBox@v0.7.1",
+   "CTFd__CTFd@3.5.3",
+   "DefectDojo__django-DefectDojo@b1ad396188e813586697588b6928740f6523a99f",
+   "pinry__pinry@c40baf3803dc975f293b1cde1a6acea32ce300ae"
+  ]
+ },
+ "realworld_scan": {
+  "installed": {
+   "sum": 619.0,
+   "median": 42.0,
+   "mean": 44.214285714285715
+  },
+  "direct": {
+   "sum": 262.0,
+   "median": 16.5,
+   "mean": 18.714285714285715
+  },
+  "transitive": {
+   "sum": 357.0,
+   "median": 25.0,
+   "mean": 25.5
+  },
+  "findings": {
+   "sum": 1229.0,
+   "median": 78.5,
+   "mean": 87.78571428571429
+  },
+  "vuln_pkgs": {
+   "sum": 153.0,
+   "median": 11.5,
+   "mean": 10.928571428571429
+  },
+  "transitive_findings_share": {
+   "sum": 8.78355476564506,
+   "median": 0.6143867924528301,
+   "mean": 0.6273967689746472
+  },
+  "expected_exposed": {
+   "sum": 599.3493956588088,
+   "median": 39.35070687911426,
+   "mean": 42.81067111848635
+  },
+  "confirmed_reachable": {
+   "sum": 69.0,
+   "median": 3.5,
+   "mean": 4.928571428571429
+  },
+  "l4_unknown": {
+   "sum": 551.0,
+   "median": 36.0,
+   "mean": 39.357142857142854
+  },
+  "l3b_refuted": {
+   "sum": 8.0,
+   "median": 0.0,
+   "mean": 0.5714285714285714
+  },
+  "live": {
+   "sum": 1218.0,
+   "median": 78.5,
+   "mean": 87.0
+  }
+ },
+ "remediation": {
+  "audit_fix": {
+   "ok": {
+    "mean": 0.4,
+    "median": 0.0,
+    "n": 10
+   },
+   "changed": {
+    "mean": 24.5,
+    "median": 15.0,
+    "n": 4
+   },
+   "major_bumps": {
+    "mean": 3.75,
+    "median": 3.5,
+    "n": 4
+   },
+   "residual_findings": {
+    "mean": 10.5,
+    "median": 0.0,
+    "n": 4
+   },
+   "residual_risk_evident": {
+    "mean": 3.2854899049881223,
+    "median": 0.0,
+    "n": 4
+   },
+   "residual_risk_vm": {
+    "mean": 8.3375,
+    "median": 0.0,
+    "n": 4
+   },
+   "residual_confirmed": {
+    "mean": 0.0,
+    "median": 0.0,
+    "n": 4
+   },
+   "new_findings": {
+    "mean": 10.5,
+    "median": 0.0,
+    "n": 4
+   },
+   "unplanned_changes": {
+    "mean": 19.0,
+    "median": 9.0,
+    "n": 4
+   },
+   "plan_not_realised": {
+    "mean": 0.0,
+    "median": 0.0,
+    "n": 4
+   },
+   "risk_reduction_evident": {
+    "mean": 0.8889522441964668,
+    "median": 1.0,
+    "n": 4
+   },
+   "risk_reduction_vm": {
+    "mean": 0.8329158316633266,
+    "median": 1.0,
+    "n": 4
+   },
+   "confirmed_fixed": {
+    "mean": 1.0,
+    "median": 1.0,
+    "n": 4
+   },
+   "seconds": {
+    "mean": 0.7,
+    "median": 0.55,
+    "n": 4
+   }
+  },
+  "latest": {
+   "ok": {
+    "mean": 0.1,
+    "median": 0.0,
+    "n": 10
+   },
+   "changed": {
+    "mean": 8.0,
+    "median": 8.0,
+    "n": 1
+   },
+   "major_bumps": {
+    "mean": 6.0,
+    "median": 6.0,
+    "n": 1
+   },
+   "residual_findings": {
+    "mean": 0.0,
+    "median": 0.0,
+    "n": 1
+   },
+   "residual_risk_evident": {
+    "mean": 0.0,
+    "median": 0.0,
+    "n": 1
+   },
+   "residual_risk_vm": {
+    "mean": 0.0,
+    "median": 0.0,
+    "n": 1
+   },
+   "residual_confirmed": {
+    "mean": 0.0,
+    "median": 0.0,
+    "n": 1
+   },
+   "new_findings": {
+    "mean": 0.0,
+    "median": 0.0,
+    "n": 1
+   },
+   "unplanned_changes": {
+    "mean": 4.0,
+    "median": 4.0,
+    "n": 1
+   },
+   "plan_not_realised": {
+    "mean": 0.0,
+    "median": 0.0,
+    "n": 1
+   },
+   "risk_reduction_evident": {
+    "mean": 1.0,
+    "median": 1.0,
+    "n": 1
+   },
+   "risk_reduction_vm": {
+    "mean": 1.0,
+    "median": 1.0,
+    "n": 1
+   },
+   "confirmed_fixed": {
+    "mean": 1.0,
+    "median": 1.0,
+    "n": 1
+   },
+   "seconds": {
+    "mean": 0.3,
+    "median": 0.3,
+    "n": 1
+   }
+  },
+  "upgrade_all": {
+   "ok": {
+    "mean": 1.0,
+    "median": 1.0,
+    "n": 10
+   },
+   "changed": {
+    "mean": 55.0,
+    "median": 56.0,
+    "n": 10
+   },
+   "major_bumps": {
+    "mean": 17.4,
+    "median": 11.5,
+    "n": 10
+   },
+   "residual_findings": {
+    "mean": 13.2,
+    "median": 2.0,
+    "n": 10
+   },
+   "residual_risk_evident": {
+    "mean": 4.36057180428066,
+    "median": 0.09079504977245861,
+    "n": 10
+   },
+   "residual_risk_vm": {
+    "mean": 9.633000000000001,
+    "median": 1.0699999999999998,
+    "n": 10
+   },
+   "residual_confirmed": {
+    "mean": 0.1,
+    "median": 0.0,
+    "n": 10
+   },
+   "new_findings": {
+    "mean": 6.6,
+    "median": 0.0,
+    "n": 10
+   },
+   "risk_reduction_evident": {
+    "mean": 0.8527639560508511,
+    "median": 0.9776741940196355,
+    "n": 10
+   },
+   "risk_reduction_vm": {
+    "mean": 0.820786187374636,
+    "median": 0.9122564420442452,
+    "n": 10
+   },
+   "confirmed_fixed": {
+    "mean": 0.95,
+    "median": 1.0,
+    "n": 10
+   },
+   "seconds": {
+    "mean": 4.35,
+    "median": 3.1500000000000004,
+    "n": 10
+   }
+  },
+  "vm_opt": {
+   "ok": {
+    "mean": 0.6,
+    "median": 1.0,
+    "n": 10
+   },
+   "changed": {
+    "mean": 31.666666666666668,
+    "median": 23.0,
+    "n": 6
+   },
+   "major_bumps": {
+    "mean": 4.5,
+    "median": 4.0,
+    "n": 6
+   },
+   "residual_findings": {
+    "mean": 7.166666666666667,
+    "median": 0.0,
+    "n": 6
+   },
+   "residual_risk_evident": {
+    "mean": 2.22447862232779,
+    "median": 0.0,
+    "n": 6
+   },
+   "residual_risk_vm": {
+    "mean": 5.6450000000000005,
+    "median": 0.0,
+    "n": 6
+   },
+   "residual_confirmed": {
+    "mean": 0.0,
+    "median": 0.0,
+    "n": 6
+   },
+   "new_findings": {
+    "mean": 7.166666666666667,
+    "median": 0.0,
+    "n": 6
+   },
+   "unplanned_changes": {
+    "mean": 22.0,
+    "median": 7.5,
+    "n": 6
+   },
+   "plan_not_realised": {
+    "mean": 0.0,
+    "median": 0.0,
+    "n": 6
+   },
+   "risk_reduction_evident": {
+    "mean": 0.9248526129662876,
+    "median": 1.0,
+    "n": 6
+   },
+   "risk_reduction_vm": {
+    "mean": 0.8870008466660909,
+    "median": 1.0,
+    "n": 6
+   },
+   "confirmed_fixed": {
+    "mean": 1.0,
+    "median": 1.0,
+    "n": 6
+   },
+   "seconds": {
+    "mean": 3.7833333333333337,
+    "median": 2.75,
+    "n": 6
+   },
+   "iterations": {
+    "mean": 2.0,
+    "median": 1.0,
+    "n": 6
+   }
+  },
+  "coral_opt": {
+   "ok": {
+    "mean": 0.6,
+    "median": 1.0,
+    "n": 10
+   },
+   "changed": {
+    "mean": 29.166666666666668,
+    "median": 19.5,
+    "n": 6
+   },
+   "major_bumps": {
+    "mean": 3.0,
+    "median": 3.0,
+    "n": 6
+   },
+   "residual_findings": {
+    "mean": 10.833333333333334,
+    "median": 3.0,
+    "n": 6
+   },
+   "residual_risk_evident": {
+    "mean": 2.8670261137717543,
+    "median": 0.22943982976770128,
+    "n": 6
+   },
+   "residual_risk_vm": {
+    "mean": 8.036666666666669,
+    "median": 1.48,
+    "n": 6
+   },
+   "residual_confirmed": {
+    "mean": 0.16666666666666666,
+    "median": 0.0,
+    "n": 6
+   },
+   "new_findings": {
+    "mean": 8.166666666666666,
+    "median": 0.0,
+    "n": 6
+   },
+   "unplanned_changes": {
+    "mean": 22.0,
+    "median": 8.0,
+    "n": 6
+   },
+   "plan_not_realised": {
+    "mean": 0.0,
+    "median": 0.0,
+    "n": 6
+   },
+   "risk_reduction_evident": {
+    "mean": 0.7065651664020093,
+    "median": 0.8833692588068618,
+    "n": 6
+   },
+   "risk_reduction_vm": {
+    "mean": 0.6656355219873906,
+    "median": 0.8928492945564004,
+    "n": 6
+   },
+   "confirmed_fixed": {
+    "mean": 0.9166666666666666,
+    "median": 1.0,
+    "n": 6
+   },
+   "seconds": {
+    "mean": 0.6833333333333332,
+    "median": 0.75,
+    "n": 6
+   },
+   "iterations": {
+    "mean": 2.0,
+    "median": 1.0,
+    "n": 6
+   }
+  },
+  "cape_opt": {
+   "ok": {
+    "mean": 0.6,
+    "median": 1.0,
+    "n": 10
+   },
+   "changed": {
+    "mean": 31.166666666666668,
+    "median": 23.0,
+    "n": 6
+   },
+   "major_bumps": {
+    "mean": 4.333333333333333,
+    "median": 3.5,
+    "n": 6
+   },
+   "residual_findings": {
+    "mean": 7.333333333333333,
+    "median": 0.5,
+    "n": 6
+   },
+   "residual_risk_evident": {
+    "mean": 2.2245161394082182,
+    "median": 0.00011255124128419277,
+    "n": 6
+   },
+   "residual_risk_vm": {
+    "mean": 5.758333333333334,
+    "median": 0.26,
+    "n": 6
+   },
+   "residual_confirmed": {
+    "mean": 0.0,
+    "median": 0.0,
+    "n": 6
+   },
+   "new_findings": {
+    "mean": 7.166666666666667,
+    "median": 0.0,
+    "n": 6
+   },
+   "unplanned_changes": {
+    "mean": 21.833333333333332,
+    "median": 7.5,
+    "n": 6
+   },
+   "plan_not_realised": {
+    "mean": 0.0,
+    "median": 0.0,
+    "n": 6
+   },
+   "risk_reduction_evident": {
+    "mean": 0.9046145177281925,
+    "median": 0.9966533505059294,
+    "n": 6
+   },
+   "risk_reduction_vm": {
+    "mean": 0.8667627514279957,
+    "median": 0.9951708766716196,
+    "n": 6
+   },
+   "confirmed_fixed": {
+    "mean": 1.0,
+    "median": 1.0,
+    "n": 6
+   },
+   "seconds": {
+    "mean": 0.65,
+    "median": 0.5,
+    "n": 6
+   },
+   "iterations": {
+    "mean": 2.0,
+    "median": 1.0,
+    "n": 6
+   }
+  },
+  "evident": {
+   "ok": {
+    "mean": 0.6,
+    "median": 1.0,
+    "n": 10
+   },
+   "changed": {
+    "mean": 28.833333333333332,
+    "median": 19.0,
+    "n": 6
+   },
+   "major_bumps": {
+    "mean": 2.6666666666666665,
+    "median": 3.0,
+    "n": 6
+   },
+   "residual_findings": {
+    "mean": 11.333333333333334,
+    "median": 4.0,
+    "n": 6
+   },
+   "residual_risk_evident": {
+    "mean": 2.8108601491892293,
+    "median": 0.20850634404567792,
+    "n": 6
+   },
+   "residual_risk_vm": {
+    "mean": 8.573333333333334,
+    "median": 2.7299999999999995,
+    "n": 6
+   },
+   "residual_confirmed": {
+    "mean": 0.16666666666666666,
+    "median": 0.0,
+    "n": 6
+   },
+   "new_findings": {
+    "mean": 8.166666666666666,
+    "median": 0.0,
+    "n": 6
+   },
+   "unplanned_changes": {
+    "mean": 21.833333333333332,
+    "median": 7.5,
+    "n": 6
+   },
+   "plan_not_realised": {
+    "mean": 0.0,
+    "median": 0.0,
+    "n": 6
+   },
+   "risk_reduction_evident": {
+    "mean": 0.7148729413317412,
+    "median": 0.9064470823566126,
+    "n": 6
+   },
+   "risk_reduction_vm": {
+    "mean": 0.6646550613404684,
+    "median": 0.8979071318099987,
+    "n": 6
+   },
+   "confirmed_fixed": {
+    "mean": 0.9166666666666666,
+    "median": 1.0,
+    "n": 6
+   },
+   "seconds": {
+    "mean": 0.6999999999999998,
+    "median": 0.6499999999999999,
+    "n": 6
+   },
+   "iterations": {
+    "mean": 1.8333333333333333,
+    "median": 1.0,
+    "n": 6
+   }
+  }
+ },
+ "decision": {
+  "projects": 10,
+  "uncertain_total": 695,
+  "critical_total": 30,
+  "median_critical": 3.0
+ },
+ "baseline_drift": {
+  "median": 8.5,
+  "mean": 13.8
+ },
+ "exposure_classes": {
+  "NOT_IMPORTED": 8,
+  "IMPORTED_REACH_UNKNOWN": 409,
+  "NOT_INSTALLED": 11,
+  "POSSIBLY_REACHABLE": 561,
+  "STATICALLY_REACHABLE": 69,
+  "INSTALLED_UNKNOWN": 54,
+  "DEV_ONLY": 117
+ }
+}

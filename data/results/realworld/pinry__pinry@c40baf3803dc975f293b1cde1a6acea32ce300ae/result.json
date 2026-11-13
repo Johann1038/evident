@@ -1,0 +1,57 @@
+{
+ "id": "pinry__pinry@c40baf3803dc975f293b1cde1a6acea32ce300ae",
+ "meta": {
+  "id": "pinry__pinry@c40baf3803dc975f293b1cde1a6acea32ce300ae",
+  "repo": "pinry/pinry",
+  "tag": "c40baf3803dc975f293b1cde1a6acea32ce300ae",
+  "published_at": "2022-12-02T14:11:01Z",
+  "stars": 3432,
+  "lock_kind": "poetry",
+  "lock_file": "poetry.lock",
+  "lock_path": "poetry.lock",
+  "subdir": "",
+  "manifest": "pyproject.toml",
+  "requires_python": ">=3.7",
+  "description": "Pinry, a tiling image board system for people who want to save, tag, and share images, videos and webpages in an easy to skim through format. It's open-source and self-hosted.",
+  "topics": [
+   "django",
+   "huaban",
+   "images",
+   "node",
+   "pinterest",
+   "python",
+   "self-hosted",
+   "vue"
+  ]
+ },
+ "python": "3.10",
+ "summary": {
+  "locked": 58,
+  "installed": 54,
+  "direct": 19,
+  "transitive": 35,
+  "edges": 76,
+  "edges_from_lock": true
+ },
+ "stats": {
+  "app_modules": 60,
+  "pkgs_analysed": 27,
+  "pkgs_no_source": 0,
+  "seconds": 265.3,
+  "funcs": 19082,
+  "roots": 125
+ },
+ "scan_seconds": 269.8,
+ "sdist_only": [
+  "csscompressor",
+  "htmlmin",
+  "jsmin",
+  "qrcode"
+ ],
+ "baseline_resolution": {
+  "ok": false,
+  "seconds": 1.5,
+  "error": "error: No solution found when resolving dependencies\n  cause: Because all versions of coreschema have no usable wheels and you require coreschema, we can conclude that your requirements are unsatisfiable.\n\nhint: Wheels are required for `coreschema` because building from source is disabled for all packages (i.e., with `--no-build`)\n"
+ },
+ "status": "baseline_unresolvable"
+}

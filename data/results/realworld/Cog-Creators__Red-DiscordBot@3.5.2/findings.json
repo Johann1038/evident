@@ -1,0 +1,5847 @@
+[
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54279",
+  "ids": [
+   "GHSA-2fqr-mr3j-6wp8",
+   "PYSEC-2026-2112"
+  ],
+  "cves": [
+   "CVE-2026-54279"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00493,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:08:51Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.cookiejar.CookieJar._load_json_data",
+      "aiohttp.cookiejar.CookieJar.load",
+      "aiohttp.cookiejar.CookieJar.save"
+     ],
+     "witness": [
+      "__app__.redbot.core._rpc.RPC.initialize",
+      "aiohttp.client_reqrep.ClientResponse.start",
+      "aiohttp.cookiejar.CookieJar.load"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-123817",
+  "ids": [
+   "GHSA-2g87-pp6c-29x5"
+  ],
+  "cves": [
+   "CVE-2026-123817"
+  ],
+  "cvss": 8.7,
+  "epss": 0.00328,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2026-10-19T17:07:23Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.8072878303971307,
+  "exposure_class": "STATICALLY_REACHABLE",
+  "vex": {
+   "state": "exploitable"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "CONFIRMED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client.ClientSession._ws_connect",
+      "aiohttp.client_ws.ClientWebSocketResponse.__init__",
+      "aiohttp.client_ws.ClientWebSocketResponse._handle_ping_pong_exception",
+      "aiohttp.client_ws.ClientWebSocketResponse.close",
+      "aiohttp.client_ws.ClientWebSocketResponse.receive",
+      "aiohttp.http_parser.HttpParser.feed_data",
+      "aiohttp.web_protocol.RequestHandler.__init__",
+      "aiohttp.web_protocol.RequestHandler._resume_msg_queue_reading",
+      "aiohttp.web_protocol.RequestHandler.data_received",
+      "aiohttp.web_protocol.RequestHandler.eof_received",
+      "aiohttp.web_protocol.RequestHandler.finish_response",
+      "aiohttp.web_ws.WebSocketResponse._handle_ping_pong_exception",
+      "aiohttp.web_ws.WebSocketResponse._post_start",
+      "aiohttp.web_ws.WebSocketResponse.close"
+     ],
+     "witness": [
+      "__app__.redbot.core._rpc.RPC._pre_login",
+      "aiohttp_json_rpc.rpc.JsonRpc.__call__",
+      "aiohttp_json_rpc.rpc.JsonRpc.handle_request",
+      "aiohttp_json_rpc.rpc.JsonRpc.handle_websocket_request",
+      "aiohttp.web_ws.WebSocketResponse.prepare",
+      "aiohttp.web_ws.WebSocketResponse._post_start"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34514",
+  "ids": [
+   "GHSA-2vrm-gr82-f7m5",
+   "PYSEC-2026-2096"
+  ],
+  "cves": [
+   "CVE-2026-34514"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00327,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-04-01T21:16:59.417Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.formdata.FormData.add_field"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.audio.core.commands.playlists.PlaylistCommands.command_playlist_upload",
+      "discord.http.HTTPClient.request",
+      "aiohttp.formdata.FormData.add_field"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34517",
+  "ids": [
+   "GHSA-3wq7-rqq7-wx6j",
+   "PYSEC-2026-2099"
+  ],
+  "cves": [
+   "CVE-2026-34517"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00399,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-04-01T21:16:59.870Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.audio.apis.spotify.SpotifyWrapper.post",
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2023-37276",
+  "ids": [
+   "GHSA-45c4-8wx5-qw6w",
+   "PYSEC-2023-120"
+  ],
+  "cves": [
+   "CVE-2023-37276"
+  ],
+  "cvss": 6.9,
+  "epss": 0.01337,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2023-07-20T14:52:00Z",
+  "fixed": [
+   "3.8.5"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "module",
+     "symbols": [
+      "aiohttp.<module>"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.audio.core.abc.<module>",
+      "aiohttp.<module>"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111063",
+  "ids": [
+   "GHSA-494j-54xm-rwp3"
+  ],
+  "cves": [
+   "CVE-2026-111063"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00233,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2026-10-19T17:07:47Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.cookiejar.CookieJar.filter_cookies"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.streams.streams.Streams.stream_alert",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request",
+      "aiohttp.cookiejar.CookieJar.filter_cookies"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54273",
+  "ids": [
+   "GHSA-4fvr-rgm6-gqmc",
+   "PYSEC-2026-2107"
+  ],
+  "cves": [
+   "CVE-2026-54273"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00493,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:10:32Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.base_protocol.BaseProtocol.pause_reading",
+      "aiohttp.base_protocol.BaseProtocol.resume_reading",
+      "aiohttp.http_parser.HttpParser.__init__",
+      "aiohttp.http_parser.HttpParser.feed_data",
+      "aiohttp.http_parser.HttpParser.feed_eof",
+      "aiohttp.web_protocol.RequestHandler.__init__",
+      "aiohttp.web_protocol.RequestHandler.data_received",
+      "aiohttp.web_protocol.RequestHandler.keep_alive",
+      "aiohttp.web_protocol.RequestHandler.start"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.audio.core.events.dpy.DpyEvents.cog_unload",
+      "aiohttp.web_ws.WebSocketResponse.close",
+      "aiohttp.streams.StreamReader.feed_data",
+      "aiohttp.base_protocol.BaseProtocol.pause_reading"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54275",
+  "ids": [
+   "GHSA-4m7w-qmgq-4wj5",
+   "PYSEC-2026-237"
+  ],
+  "cves": [
+   "CVE-2026-54275"
+  ],
+  "cvss": 7.5,
+  "epss": 0.0047,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:11:13Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69226",
+  "ids": [
+   "GHSA-54jq-c3m8-4m76",
+   "PYSEC-2026-1097"
+  ],
+  "cves": [
+   "CVE-2025-69226"
+  ],
+  "cvss": 2.7,
+  "epss": 0.00368,
+  "kev": false,
+  "severity_w": 0.27,
+  "published": "2026-01-05T23:09:51Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_urldispatcher.StaticResource._handle",
+      "aiohttp.web_urldispatcher.StaticResource.resolve"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.audio.core.abc.<module>",
+      "aiohttp.<module>",
+      "aiohttp.payload.<module>",
+      "aiohttp.web_routedef.StaticDef.register",
+      "aiohttp.web_urldispatcher.UrlDispatcher.add_static",
+      "aiohttp.web_urldispatcher.StaticResource.__init__",
+      "aiohttp.web_urldispatcher.StaticResource.resolve"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2024-23334",
+  "ids": [
+   "GHSA-5h86-8mv2-jq9f",
+   "PYSEC-2024-24"
+  ],
+  "cves": [
+   "CVE-2024-23334"
+  ],
+  "cvss": 8.2,
+  "epss": 0.76875,
+  "kev": false,
+  "severity_w": 0.82,
+  "published": "2024-01-29T22:31:03Z",
+  "fixed": [
+   "3.9.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_urldispatcher.StaticResource._handle",
+      "aiohttp.web_urldispatcher.StaticResource.url_for"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2024-30251",
+  "ids": [
+   "GHSA-5m98-qgg9-wh84",
+   "PYSEC-2026-1098"
+  ],
+  "cves": [
+   "CVE-2024-30251"
+  ],
+  "cvss": 7.5,
+  "epss": 0.01094,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2024-05-03T17:29:54Z",
+  "fixed": [
+   "3.9.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.formdata.FormData.add_field",
+      "aiohttp.multipart.BodyPartReader.__init__",
+      "aiohttp.multipart.BodyPartReader._read_chunk_from_length",
+      "aiohttp.multipart.BodyPartReader.decode",
+      "aiohttp.multipart.BodyPartReader.get_charset",
+      "aiohttp.multipart.MultipartReader.__init__",
+      "aiohttp.multipart.MultipartReader._get_boundary",
+      "aiohttp.multipart.MultipartReader._get_part_reader",
+      "aiohttp.multipart.MultipartReader.next",
+      "aiohttp.multipart.MultipartWriter.__init__",
+      "aiohttp.multipart.MultipartWriter.append_payload",
+      "aiohttp.multipart.MultipartWriter.write"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.audio.core.commands.playlists.PlaylistCommands.command_playlist_upload",
+      "discord.http.HTTPClient.request",
+      "aiohttp.formdata.FormData.add_field"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111064",
+  "ids": [
+   "GHSA-5wr8-gcqf-gqf3"
+  ],
+  "cves": [
+   "CVE-2026-111064"
+  ],
+  "cvss": 8.2,
+  "epss": 0.00399,
+  "kev": false,
+  "severity_w": 0.82,
+  "published": "2026-10-19T17:08:04Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_protocol.RequestHandler.__init__",
+      "aiohttp.web_protocol.RequestHandler.connection_made"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.trivia.trivia.Trivia.triviaset_payout_multiplier",
+      "aiohttp.web_app.Application.__init__",
+      "aiohttp.web_protocol.RequestHandler.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34520",
+  "ids": [
+   "GHSA-63hf-3vf5-4wqf",
+   "PYSEC-2026-2102"
+  ],
+  "cves": [
+   "CVE-2026-34520"
+  ],
+  "cvss": 9.1,
+  "epss": 0.00479,
+  "kev": false,
+  "severity_w": 0.9099999999999999,
+  "published": "2026-04-01T21:17:00.333Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HeadersParser.parse_headers"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.audio.apis.spotify.SpotifyWrapper.post",
+      "aiohttp.web_request.BaseRequest.post",
+      "aiohttp.multipart.MultipartReader.next",
+      "aiohttp.multipart.MultipartReader.fetch_next_part",
+      "aiohttp.multipart.MultipartReader._read_headers",
+      "aiohttp.http_parser.HeadersParser.parse_headers"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54277",
+  "ids": [
+   "GHSA-63hw-fmq6-xxg2",
+   "PYSEC-2026-2110"
+  ],
+  "cves": [
+   "CVE-2026-54277"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00563,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:09:16Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69224",
+  "ids": [
+   "GHSA-69f9-5gxw-wvc2",
+   "PYSEC-2026-1099"
+  ],
+  "cves": [
+   "CVE-2025-69224"
+  ],
+  "cvss": 2.7,
+  "epss": 0.0025,
+  "kev": false,
+  "severity_w": 0.27,
+  "published": "2026-01-05T22:58:57Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HttpParser.parse_headers",
+      "aiohttp.http_parser.HttpRequestParser._is_chunked_te",
+      "aiohttp.http_parser._is_supported_upgrade"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111065",
+  "ids": [
+   "GHSA-6cjc-53gc-5rqm"
+  ],
+  "cves": [
+   "CVE-2026-111065"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00395,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2026-10-20T19:57:24Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client.ClientSession._request",
+      "aiohttp.cookiejar.CookieJar.update_cookies"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.streams.streams.Streams.stream_alert",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69228",
+  "ids": [
+   "GHSA-6jhg-hg63-jvvf",
+   "PYSEC-2026-1100"
+  ],
+  "cves": [
+   "CVE-2025-69228"
+  ],
+  "cvss": 6.6,
+  "epss": 0.00407,
+  "kev": false,
+  "severity_w": 0.6599999999999999,
+  "published": "2026-01-05T23:13:14Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.audio.apis.spotify.SpotifyWrapper.post",
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69223",
+  "ids": [
+   "GHSA-6mq8-rvhq-8wgg",
+   "PYSEC-2026-1101"
+  ],
+  "cves": [
+   "CVE-2025-69223"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00583,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-01-05T22:58:41Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.DeflateBuffer.__init__",
+      "aiohttp.http_parser.DeflateBuffer.feed_data",
+      "aiohttp.http_parser.DeflateBuffer.set_exception",
+      "aiohttp.multipart.BodyPartReader.__init__",
+      "aiohttp.multipart.BodyPartReader._decode_content",
+      "aiohttp.multipart.BodyPartReader.decode",
+      "aiohttp.multipart.BodyPartReader.read",
+      "aiohttp.multipart.BodyPartReaderPayload.write",
+      "aiohttp.multipart.MultipartPayloadWriter.__init__",
+      "aiohttp.multipart.MultipartWriter.write",
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.trivia.trivia.Trivia.triviaset_payout_multiplier",
+      "aiohttp.web_app.Application.__init__",
+      "aiohttp.http_parser.DeflateBuffer.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2024-27306",
+  "ids": [
+   "GHSA-7gpw-8wmc-pm8g",
+   "PYSEC-2026-1102"
+  ],
+  "cves": [
+   "CVE-2024-27306"
+  ],
+  "cvss": 6.1,
+  "epss": 0.00666,
+  "kev": false,
+  "severity_w": 0.61,
+  "published": "2024-04-18T13:45:21Z",
+  "fixed": [
+   "3.9.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_urldispatcher.StaticResource._directory_as_html"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2024-52304",
+  "ids": [
+   "GHSA-8495-4g3g-x7pr",
+   "PYSEC-2026-1103"
+  ],
+  "cves": [
+   "CVE-2024-52304"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00563,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2024-11-18T21:02:32Z",
+  "fixed": [
+   "3.10.11"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HttpPayloadParser.feed_data"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.audio.core.events.dpy.DpyEvents.cog_unload",
+      "aiohttp.web_ws.WebSocketResponse.close",
+      "aiohttp.http_parser.HttpPayloadParser.feed_data"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2024-23829",
+  "ids": [
+   "GHSA-8qpw-xqxj-h4r2",
+   "PYSEC-2024-26"
+  ],
+  "cves": [
+   "CVE-2024-23829"
+  ],
+  "cvss": 6.9,
+  "epss": 0.01029,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2024-01-29T22:30:07Z",
+  "fixed": [
+   "3.9.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HeadersParser.parse_headers",
+      "aiohttp.http_parser.HttpParser.feed_data",
+      "aiohttp.http_parser.HttpPayloadParser.feed_data",
+      "aiohttp.http_parser.HttpRequestParser.parse_message",
+      "aiohttp.http_parser.HttpResponseParser.parse_message"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.audio.apis.spotify.SpotifyWrapper.post",
+      "aiohttp.web_request.BaseRequest.post",
+      "aiohttp.multipart.MultipartReader.next",
+      "aiohttp.multipart.MultipartReader.fetch_next_part",
+      "aiohttp.multipart.MultipartReader._read_headers",
+      "aiohttp.http_parser.HeadersParser.parse_headers"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-53643",
+  "ids": [
+   "GHSA-9548-qrrj-x5pj",
+   "PYSEC-2026-1104"
+  ],
+  "cves": [
+   "CVE-2025-53643"
+  ],
+  "cvss": 1.7,
+  "epss": 0.00355,
+  "kev": false,
+  "severity_w": 0.16999999999999998,
+  "published": "2025-07-14T19:33:31Z",
+  "fixed": [
+   "3.12.14"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HeadersParser.parse_headers",
+      "aiohttp.http_parser.HttpParser.feed_data",
+      "aiohttp.http_parser.HttpPayloadParser.__init__",
+      "aiohttp.http_parser.HttpPayloadParser.feed_data",
+      "aiohttp.http_parser.HttpRequestParser.parse_message",
+      "aiohttp.http_parser.HttpResponseParser.parse_message",
+      "aiohttp.multipart.MultipartReader._read_headers"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.audio.apis.spotify.SpotifyWrapper.post",
+      "aiohttp.web_request.BaseRequest.post",
+      "aiohttp.multipart.MultipartReader.next",
+      "aiohttp.multipart.MultipartReader.fetch_next_part",
+      "aiohttp.multipart.MultipartReader._read_headers",
+      "aiohttp.http_parser.HeadersParser.parse_headers"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34518",
+  "ids": [
+   "GHSA-966j-vmvw-g2g9",
+   "PYSEC-2026-2100"
+  ],
+  "cves": [
+   "CVE-2026-34518"
+  ],
+  "cvss": 5.3,
+  "epss": 0.0035,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-04-01T21:17:00.020Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client.ClientSession._request"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.streams.streams.Streams.stream_alert",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54280",
+  "ids": [
+   "GHSA-9x8q-7h8h-wcw9",
+   "PYSEC-2026-2113"
+  ],
+  "cves": [
+   "CVE-2026-54280"
+  ],
+  "cvss": 7.5,
+  "epss": 0.0046,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:10:44Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_response.Response.write_eof"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.general.general.General.flip",
+      "aiohttp.client_reqrep.ClientRequest.send",
+      "aiohttp.client_reqrep.ClientRequest.write_bytes",
+      "aiohttp.web_response.Response.write_eof"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111066",
+  "ids": [
+   "GHSA-9xw5-w5jj-pvcg"
+  ],
+  "cves": [
+   "CVE-2026-111066"
+  ],
+  "cvss": 8.2,
+  "epss": 0.00412,
+  "kev": false,
+  "severity_w": 0.82,
+  "published": "2026-10-20T19:52:09Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_request.BaseRequest._finish",
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.audio.apis.spotify.SpotifyWrapper.post",
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34525",
+  "ids": [
+   "GHSA-c427-h43c-vf67",
+   "PYSEC-2026-2103"
+  ],
+  "cves": [
+   "CVE-2026-34525"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00299,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2026-04-01T21:17:00.490Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HeadersParser.parse_headers",
+      "aiohttp.http_parser.HttpParser.parse_headers"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.audio.apis.spotify.SpotifyWrapper.post",
+      "aiohttp.web_request.BaseRequest.post",
+      "aiohttp.multipart.MultipartReader.next",
+      "aiohttp.multipart.MultipartReader.fetch_next_part",
+      "aiohttp.multipart.MultipartReader._read_headers",
+      "aiohttp.http_parser.HeadersParser.parse_headers"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-69244",
+  "ids": [
+   "GHSA-cq5v-8q36-5273",
+   "PYSEC-2026-3545"
+  ],
+  "cves": [
+   "CVE-2026-69244"
+  ],
+  "cvss": 7.1,
+  "epss": 0.00528,
+  "kev": false,
+  "severity_w": 0.71,
+  "published": "2026-08-03T20:51:13Z",
+  "fixed": [
+   "3.14.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111748",
+  "ids": [
+   "GHSA-f9xw-jh8m-3mwq"
+  ],
+  "cves": [
+   "CVE-2026-111748"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00386,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2026-10-20T20:01:40Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HttpRequestParser.parse_message",
+      "aiohttp.web_request.BaseRequest.__init__"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.trivia.trivia.Trivia.triviaset_payout_multiplier",
+      "aiohttp.web_app.Application.__init__",
+      "aiohttp.web_request.BaseRequest.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69230",
+  "ids": [
+   "GHSA-fh55-r93g-j68g",
+   "PYSEC-2026-1105"
+  ],
+  "cves": [
+   "CVE-2025-69230"
+  ],
+  "cvss": 2.7,
+  "epss": 0.00364,
+  "kev": false,
+  "severity_w": 0.27,
+  "published": "2026-01-05T23:13:46Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54278",
+  "ids": [
+   "GHSA-g3cq-j2xw-wf74",
+   "PYSEC-2026-2111"
+  ],
+  "cves": [
+   "CVE-2026-54278"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00493,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:09:51Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.streams.StreamReader._read_nowait"
+     ],
+     "witness": [
+      "__app__.redbot.core.core_commands.Core._set_bot_avatar",
+      "aiohttp.streams.StreamReader.read",
+      "aiohttp.streams.StreamReader._read_nowait"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69229",
+  "ids": [
+   "GHSA-g84x-mcqj-x9qq",
+   "PYSEC-2026-1106"
+  ],
+  "cves": [
+   "CVE-2025-69229"
+  ],
+  "cvss": 6.6,
+  "epss": 0.00404,
+  "kev": false,
+  "severity_w": 0.6599999999999999,
+  "published": "2026-01-05T23:13:29Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.streams.StreamReader.__init__",
+      "aiohttp.streams.StreamReader._read_nowait_chunk",
+      "aiohttp.streams.StreamReader.begin_http_chunk_receiving",
+      "aiohttp.streams.StreamReader.end_http_chunk_receiving",
+      "aiohttp.streams.StreamReader.readchunk"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.trivia.trivia.Trivia.triviaset_payout_multiplier",
+      "aiohttp.web_app.Application.__init__",
+      "aiohttp.streams.StreamReader.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2023-47627",
+  "ids": [
+   "GHSA-gfw2-4jvh-wgfg",
+   "PYSEC-2023-246"
+  ],
+  "cves": [
+   "CVE-2023-47627"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00857,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2023-11-14T21:15:00Z",
+  "fixed": [
+   "3.8.6"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HeadersParser.parse_headers",
+      "aiohttp.http_parser.HttpParser.feed_data",
+      "aiohttp.http_parser.HttpParser.parse_headers",
+      "aiohttp.http_parser.HttpPayloadParser.feed_data",
+      "aiohttp.http_parser.HttpRequestParser.parse_message",
+      "aiohttp.http_parser.HttpResponseParser.parse_message"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.audio.apis.spotify.SpotifyWrapper.post",
+      "aiohttp.web_request.BaseRequest.post",
+      "aiohttp.multipart.MultipartReader.next",
+      "aiohttp.multipart.MultipartReader.fetch_next_part",
+      "aiohttp.multipart.MultipartReader._read_headers",
+      "aiohttp.http_parser.HeadersParser.parse_headers"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111749",
+  "ids": [
+   "GHSA-gx76-c99x-2c96"
+  ],
+  "cves": [
+   "CVE-2026-111749"
+  ],
+  "cvss": 2.3,
+  "epss": 0.00384,
+  "kev": false,
+  "severity_w": 0.22999999999999998,
+  "published": "2026-10-20T19:58:14Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.8072878303971307,
+  "exposure_class": "STATICALLY_REACHABLE",
+  "vex": {
+   "state": "exploitable"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "CONFIRMED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.abc.AbstractCookieJar.host_only_cookies",
+      "aiohttp.cookiejar.CookieJar.__init__",
+      "aiohttp.cookiejar.CookieJar._delete_cookies",
+      "aiohttp.cookiejar.CookieJar.filter_cookies",
+      "aiohttp.cookiejar.CookieJar.host_only_cookies",
+      "aiohttp.cookiejar.CookieJar.save",
+      "aiohttp.cookiejar.CookieJar.update_cookies",
+      "aiohttp.cookiejar.DummyCookieJar.host_only_cookies"
+     ],
+     "witness": [
+      "__app__.redbot.core.core_commands.Core._set_bot_avatar",
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.cookiejar.CookieJar.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34513",
+  "ids": [
+   "GHSA-hcc4-c3v8-rx92",
+   "PYSEC-2026-2095"
+  ],
+  "cves": [
+   "CVE-2026-34513"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00457,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-04-01T21:16:59.267Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.8072878303971307,
+  "exposure_class": "STATICALLY_REACHABLE",
+  "vex": {
+   "state": "exploitable"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "CONFIRMED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.connector.TCPConnector.__init__",
+      "aiohttp.connector._DNSCacheTable.__init__",
+      "aiohttp.connector._DNSCacheTable.add",
+      "aiohttp.connector._DNSCacheTable.next_addrs",
+      "aiohttp.connector._DNSCacheTable.remove"
+     ],
+     "witness": [
+      "__app__.redbot.core.core_commands.Core._set_bot_avatar",
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.connector.TCPConnector.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-47265",
+  "ids": [
+   "GHSA-hg6j-4rv6-33pg",
+   "PYSEC-2026-2105"
+  ],
+  "cves": [
+   "CVE-2026-47265"
+  ],
+  "cvss": 7.5,
+  "epss": 0.0015,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-02T20:16:37.903Z",
+  "fixed": [
+   "3.14.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client.ClientSession._request"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.streams.streams.Streams.stream_alert",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54276",
+  "ids": [
+   "GHSA-hpj7-wq8m-9hgp",
+   "PYSEC-2026-2109"
+  ],
+  "cves": [
+   "CVE-2026-54276"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00307,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2026-06-15T20:09:06Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34993",
+  "ids": [
+   "GHSA-jg22-mg44-37j8",
+   "PYSEC-2026-2104"
+  ],
+  "cves": [
+   "CVE-2026-34993"
+  ],
+  "cvss": 7.3,
+  "epss": 0.00179,
+  "kev": false,
+  "severity_w": 0.73,
+  "published": "2026-06-02T20:16:34.857Z",
+  "fixed": [
+   "3.14.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.cookiejar.CookieJar.load",
+      "aiohttp.cookiejar.CookieJar.save"
+     ],
+     "witness": [
+      "__app__.redbot.core._rpc.RPC.initialize",
+      "aiohttp.client_reqrep.ClientResponse.start",
+      "aiohttp.cookiejar.CookieJar.load"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69227",
+  "ids": [
+   "GHSA-jj3x-wxrx-4x23",
+   "PYSEC-2026-1107"
+  ],
+  "cves": [
+   "CVE-2025-69227"
+  ],
+  "cvss": 6.6,
+  "epss": 0.00396,
+  "kev": false,
+  "severity_w": 0.6599999999999999,
+  "published": "2026-01-05T23:10:15Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.multipart.BodyPartReader._read_chunk_from_stream",
+      "aiohttp.multipart.BodyPartReader.read_chunk",
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.audio.apis.spotify.SpotifyWrapper.post",
+      "aiohttp.web_request.BaseRequest.post",
+      "aiohttp.multipart.BodyPartReader.read_chunk",
+      "aiohttp.multipart.BodyPartReader._read_chunk_from_stream"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34516",
+  "ids": [
+   "GHSA-m5qp-6w8w-w647",
+   "PYSEC-2026-2098"
+  ],
+  "cves": [
+   "CVE-2026-34516"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00457,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-04-01T21:16:59.723Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.multipart.MultipartReader.__init__",
+      "aiohttp.multipart.MultipartReader._get_part_reader",
+      "aiohttp.multipart.MultipartReader._read_headers",
+      "aiohttp.streams.EmptyStreamReader.readline",
+      "aiohttp.streams.StreamReader.readline",
+      "aiohttp.streams.StreamReader.readuntil",
+      "aiohttp.web_protocol.RequestHandler.__init__",
+      "aiohttp.web_request.BaseRequest.multipart"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.audio.apis.spotify.SpotifyWrapper.post",
+      "aiohttp.web_request.BaseRequest.post",
+      "aiohttp.web_request.BaseRequest.multipart",
+      "aiohttp.multipart.MultipartReader.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-50269",
+  "ids": [
+   "GHSA-m6qw-4cw2-hm4m",
+   "PYSEC-2026-2106"
+  ],
+  "cves": [
+   "CVE-2026-50269"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00533,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:07:26Z",
+  "fixed": [
+   "3.14.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.payload.Payload._binary_headers"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-69243",
+  "ids": [
+   "GHSA-mfx4-hv73-q22v",
+   "PYSEC-2026-3546"
+  ],
+  "cves": [
+   "CVE-2026-69243"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00443,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2026-08-03T20:46:10Z",
+  "fixed": [
+   "3.14.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HttpParser.__init__",
+      "aiohttp.http_parser.HttpParser.feed_data"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.trivia.trivia.Trivia.triviaset_payout_multiplier",
+      "aiohttp.web_app.Application.__init__",
+      "aiohttp.http_parser.HttpParser.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-59881",
+  "ids": [
+   "GHSA-mq44-7p77-q5h7",
+   "PYSEC-2026-3547"
+  ],
+  "cves": [
+   "CVE-2026-59881"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00524,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2026-08-03T20:40:55Z",
+  "fixed": [
+   "3.14.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client.ClientSession._ws_connect"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.audio.core.events.lavalink.LavalinkEvents._websocket_closed_handler",
+      "lavalink.node.Node.connect",
+      "lavalink.node.Node._multi_try_connect",
+      "aiohttp.client.ClientSession.ws_connect",
+      "aiohttp.client.ClientSession._ws_connect"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69225",
+  "ids": [
+   "GHSA-mqqc-3gqh-h2x8",
+   "PYSEC-2026-1109"
+  ],
+  "cves": [
+   "CVE-2025-69225"
+  ],
+  "cvss": 2.7,
+  "epss": 0.00282,
+  "kev": false,
+  "severity_w": 0.27,
+  "published": "2026-01-05T23:09:30Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_request.BaseRequest.http_range"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34519",
+  "ids": [
+   "GHSA-mwh4-6h8g-pg8w",
+   "PYSEC-2026-2101"
+  ],
+  "cves": [
+   "CVE-2026-34519"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00304,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-04-01T21:17:00.170Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.8072878303971307,
+  "exposure_class": "STATICALLY_REACHABLE",
+  "vex": {
+   "state": "exploitable"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "CONFIRMED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_writer._py_serialize_headers",
+      "aiohttp.web_exceptions.HTTPException.__init__",
+      "aiohttp.web_response.StreamResponse._set_status"
+     ],
+     "witness": [
+      "__app__.redbot.core._rpc.RPC._pre_login",
+      "aiohttp_json_rpc.rpc.JsonRpc.__call__",
+      "aiohttp_json_rpc.rpc.JsonRpc.handle_request",
+      "aiohttp_json_rpc.rpc.JsonRpc.handle_websocket_request",
+      "aiohttp.web_ws.WebSocketResponse.prepare",
+      "aiohttp.web_ws.WebSocketResponse._pre_start",
+      "aiohttp.web_ws.WebSocketResponse._handshake",
+      "aiohttp.web_exceptions.HTTPException.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34515",
+  "ids": [
+   "GHSA-p998-jp59-783m",
+   "PYSEC-2026-2097"
+  ],
+  "cves": [
+   "CVE-2026-34515"
+  ],
+  "cvss": 7.5,
+  "epss": 0.0045,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-04-01T21:16:59.570Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_urldispatcher.StaticResource._handle"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "GHSA-pjjw-qhg8-p2p9",
+  "ids": [
+   "GHSA-pjjw-qhg8-p2p9"
+  ],
+  "cves": [],
+  "cvss": null,
+  "epss": 0.0,
+  "kev": false,
+  "severity_w": 0.5,
+  "published": "2023-11-27T23:15:38Z",
+  "fixed": [
+   "3.8.6"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HttpParser.parse_headers"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111750",
+  "ids": [
+   "GHSA-pqxq-w44r-73xw"
+  ],
+  "cves": [
+   "CVE-2026-111750"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00382,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2026-10-20T19:52:21Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HttpParser.feed_data"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.audio.core.events.dpy.DpyEvents.cog_unload",
+      "aiohttp.web_ws.WebSocketResponse.close",
+      "aiohttp.http_parser.HttpParser.feed_data"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2023-49081",
+  "ids": [
+   "GHSA-q3qx-c6g2-7pw2",
+   "PYSEC-2023-250"
+  ],
+  "cves": [
+   "CVE-2023-49081"
+  ],
+  "cvss": 7.2,
+  "epss": 0.00882,
+  "kev": false,
+  "severity_w": 0.72,
+  "published": "2023-11-27T23:17:42Z",
+  "fixed": [
+   "3.9.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client_reqrep.ClientRequest.send"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.general.general.General.flip",
+      "aiohttp.client_reqrep.ClientRequest.send"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2023-49082",
+  "ids": [
+   "GHSA-qvrw-v9rv-5rjx",
+   "PYSEC-2023-251"
+  ],
+  "cves": [
+   "CVE-2023-49082"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00948,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2023-11-27T23:17:24Z",
+  "fixed": [
+   "3.9.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client_reqrep.ClientRequest.__init__"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.trivia.trivia.Trivia.triviaset_payout_multiplier",
+      "aiohttp.web_app.Application.__init__",
+      "aiohttp.client_reqrep.ClientRequest.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-22815",
+  "ids": [
+   "GHSA-w2fm-2cpv-w7v5",
+   "PYSEC-2026-2094"
+  ],
+  "cves": [
+   "CVE-2026-22815"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00457,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2026-04-01T19:45:17Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.8072878303971307,
+  "exposure_class": "STATICALLY_REACHABLE",
+  "vex": {
+   "state": "exploitable"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "CONFIRMED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.client.ClientSession._request",
+      "aiohttp.client_proto.ResponseHandler.set_response_params",
+      "aiohttp.http_exceptions.LineTooLong.__init__",
+      "aiohttp.http_parser.HeadersParser.parse_headers",
+      "aiohttp.http_parser.HttpParser.__init__",
+      "aiohttp.http_parser.HttpParser.feed_data",
+      "aiohttp.http_parser.HttpPayloadParser.__init__",
+      "aiohttp.http_parser.HttpPayloadParser.feed_data",
+      "aiohttp.http_parser.HttpRequestParser.parse_message",
+      "aiohttp.http_parser.HttpResponseParser.parse_message",
+      "aiohttp.web_protocol.RequestHandler.__init__"
+     ],
+     "witness": [
+      "__app__.redbot.core.core_commands.Core._set_bot_avatar",
+      "aiohttp.client.ClientSession.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54274",
+  "ids": [
+   "GHSA-xcgm-r5h9-7989",
+   "PYSEC-2026-2108"
+  ],
+  "cves": [
+   "CVE-2026-54274"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00539,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:11:22Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "brotli",
+  "version": "1.0.9",
+  "advisory": "CVE-2025-6176",
+  "ids": [
+   "GHSA-2qfp-q593-8484",
+   "PYSEC-2026-2401"
+  ],
+  "cves": [
+   "CVE-2025-6176"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00533,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2025-10-31T00:30:35Z",
+  "fixed": [
+   "1.2.0"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "brotli",
+  "version": "1.0.9",
+  "advisory": "CVE-2026-111497",
+  "ids": [
+   "GHSA-9v8h-qqgm-4m35",
+   "PYSEC-2026-4322"
+  ],
+  "cves": [
+   "CVE-2026-111497"
+  ],
+  "cvss": 9.8,
+  "epss": 0.82641,
+  "kev": true,
+  "severity_w": 1.9600000000000002,
+  "published": "2026-10-22T15:32:49Z",
+  "fixed": [
+   "1.2.1"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "idna",
+  "version": "3.4",
+  "advisory": "CVE-2026-45409",
+  "ids": [
+   "GHSA-65pc-fj4g-8rjx",
+   "PYSEC-2026-215"
+  ],
+  "cves": [
+   "CVE-2026-45409"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00408,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2026-05-19T14:34:32Z",
+  "fixed": [
+   "3.15"
+  ],
+  "depth": 4,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 4
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "idna",
+  "version": "3.4",
+  "advisory": "CVE-2024-3651",
+  "ids": [
+   "GHSA-jjg7-2v4v-x38h",
+   "PYSEC-2024-60"
+  ],
+  "cves": [
+   "CVE-2024-3651"
+  ],
+  "cvss": 7.5,
+  "epss": 0.01386,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2024-04-11T21:32:40Z",
+  "fixed": [
+   "3.7"
+  ],
+  "depth": 4,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 4
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "module",
+     "symbols": [
+      "idna.package_data.<module>"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.downloader.repo_manager.<module>",
+      "yarl.<module>",
+      "yarl._url.<module>",
+      "idna.<module>",
+      "idna.package_data.<module>"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "markdown",
+  "version": "3.4.3",
+  "advisory": "CVE-2025-69534",
+  "ids": [
+   "GHSA-5wmx-573v-2qwq",
+   "PYSEC-2026-89"
+  ],
+  "cves": [
+   "CVE-2025-69534"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00663,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-03-05T15:16:11.243Z",
+  "fixed": [
+   "3.8.1"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "orjson",
+  "version": "3.8.12",
+  "advisory": "CVE-2025-67221",
+  "ids": [
+   "GHSA-hx9q-6w63-j58v",
+   "PYSEC-2026-107"
+  ],
+  "cves": [
+   "CVE-2025-67221"
+  ],
+  "cvss": 7.7,
+  "epss": 0.00633,
+  "kev": false,
+  "severity_w": 0.77,
+  "published": "2026-01-22T17:16:01.433Z",
+  "fixed": [
+   "3.11.5",
+   "3.11.6"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "orjson",
+  "version": "3.8.12",
+  "advisory": "CVE-2024-27454",
+  "ids": [
+   "GHSA-pwr2-4v36-6qpr",
+   "PYSEC-2024-40"
+  ],
+  "cves": [
+   "CVE-2024-27454"
+  ],
+  "cvss": 7.5,
+  "epss": 0.01187,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2024-02-26T16:28:00Z",
+  "fixed": [
+   "3.9.15"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "pycares",
+  "version": "4.3.0",
+  "advisory": "CVE-2025-48945",
+  "ids": [
+   "GHSA-5qpg-rh4j-qp35"
+  ],
+  "cves": [
+   "CVE-2025-48945"
+  ],
+  "cvss": null,
+  "epss": 0.00484,
+  "kev": false,
+  "severity_w": 0.5,
+  "published": "2025-06-16T16:09:47Z",
+  "fixed": [
+   "4.9.0"
+  ],
+  "depth": 4,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 4
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "pycares.Channel.__init__",
+      "pycares.Channel._do_query",
+      "pycares.Channel.cancel",
+      "pycares.Channel.getaddrinfo",
+      "pycares.Channel.gethostbyaddr",
+      "pycares.Channel.gethostbyname",
+      "pycares.Channel.getnameinfo",
+      "pycares._addrinfo_cb",
+      "pycares._host_cb",
+      "pycares._nameinfo_cb",
+      "pycares._query_cb",
+      "pycares._sock_state_cb"
+     ],
+     "witness": [
+      "__app__.redbot.cogs.trivia.trivia.Trivia.triviaset_payout_multiplier",
+      "aiohttp.web_app.Application.__init__",
+      "aiohttp.resolver.AsyncResolver.__init__",
+      "aiodns.DNSResolver.__init__",
+      "pycares.Channel.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "pygments",
+  "version": "2.15.1",
+  "advisory": "CVE-2026-4539",
+  "ids": [
+   "GHSA-5239-wwwm-4pmq",
+   "PYSEC-2026-2987"
+  ],
+  "cves": [
+   "CVE-2026-4539"
+  ],
+  "cvss": 3.3,
+  "epss": 0.00162,
+  "kev": false,
+  "severity_w": 0.32999999999999996,
+  "published": "2026-03-22T06:30:15Z",
+  "fixed": [
+   "2.20.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "module",
+     "symbols": [
+      "pygments.lexers.archetype.<module>"
+     ],
+     "witness": [
+      "__app__.redbot.logging.<module>",
+      "rich.syntax.<module>",
+      "pygments.lexers.<module>",
+      "pygments.lexers._mapping.<module>",
+      "pygments.lexers.archetype.<module>"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "Cog-Creators__Red-DiscordBot@3.5.2",
+  "package": "zipp",
+  "version": "3.15.0",
+  "advisory": "CVE-2024-5569",
+  "ids": [
+   "GHSA-jfmj-5v4g-7637",
+   "PYSEC-2026-2074"
+  ],
+  "cves": [
+   "CVE-2024-5569"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00236,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2024-07-09T00:31:40Z",
+  "fixed": [
+   "3.19.1"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.0,
+  "exposure_class": "NOT_INSTALLED",
+  "vex": {
+   "state": "not_affected",
+   "justification": "component_not_present"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "REFUTED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "REFUTED",
+    "detail": {
+     "reason": "marker/target-environment excludes package",
+     "scope": "none"
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ }
+]

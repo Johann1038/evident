@@ -1,0 +1,65 @@
+{
+ "dist": "mako",
+ "version": "1.2.1",
+ "advisories": 4,
+ "tops": [
+  "mako"
+ ],
+ "probe_errors": {},
+ "advisory_symbols": {
+  "CVE-2026-44307": {
+   "gran": "function",
+   "n": 2,
+   "status": "functions"
+  },
+  "CVE-2026-102991": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2026-41205": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2022-40023": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  }
+ },
+ "triggerable": {
+  "CVE-2026-44307": {
+   "trigger": [
+    "render"
+   ],
+   "safe": [
+    "lookup"
+   ]
+  },
+  "CVE-2026-102991": {
+   "trigger": [
+    "render"
+   ],
+   "safe": [
+    "lookup"
+   ]
+  },
+  "CVE-2026-41205": {
+   "trigger": [
+    "render"
+   ],
+   "safe": [
+    "lookup"
+   ]
+  },
+  "CVE-2022-40023": {
+   "trigger": [
+    "render"
+   ],
+   "safe": [
+    "lookup"
+   ]
+  }
+ }
+}

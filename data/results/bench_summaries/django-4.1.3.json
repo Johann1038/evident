@@ -1,0 +1,385 @@
+{
+ "dist": "django",
+ "version": "4.1.3",
+ "advisories": 20,
+ "tops": [
+  "django"
+ ],
+ "probe_errors": {
+  "truncator": "run: AppRegistryNotReady: The translation infrastructure cannot be initialized before the apps registry is ready. Check that you don't make non-lazy gettext calls at import time.",
+  "template": "run: AppRegistryNotReady: Apps aren't loaded yet."
+ },
+ "advisory_symbols": {
+  "CVE-2023-24580": {
+   "gran": "function",
+   "n": 3,
+   "status": "functions"
+  },
+  "CVE-2026-48588": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2025-57833": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2023-41164": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2025-48432": {
+   "gran": "none",
+   "n": 0,
+   "status": "no_commit"
+  },
+  "CVE-2026-8404": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2026-53878": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2026-48587": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2026-53877": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2025-64459": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2026-6873": {
+   "gran": "function",
+   "n": 3,
+   "status": "functions"
+  },
+  "CVE-2023-43665": {
+   "gran": "function",
+   "n": 2,
+   "status": "functions"
+  },
+  "CVE-2023-36053": {
+   "gran": "function",
+   "n": 3,
+   "status": "functions"
+  },
+  "CVE-2026-15830": {
+   "gran": "function",
+   "n": 25,
+   "status": "functions"
+  },
+  "CVE-2023-23969": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2023-46695": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2025-64458": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2023-31047": {
+   "gran": "function",
+   "n": 2,
+   "status": "functions"
+  },
+  "CVE-2024-45231": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2026-15307": {
+   "gran": "function",
+   "n": 4,
+   "status": "functions"
+  }
+ },
+ "triggerable": {
+  "CVE-2023-24580": {
+   "trigger": [],
+   "safe": [
+    "strip_tags",
+    "truncator",
+    "urlize",
+    "uri_to_iri",
+    "safe_url",
+    "duration",
+    "numformat",
+    "email",
+    "template"
+   ]
+  },
+  "CVE-2026-48588": {
+   "trigger": [],
+   "safe": [
+    "strip_tags",
+    "truncator",
+    "urlize",
+    "uri_to_iri",
+    "safe_url",
+    "duration",
+    "numformat",
+    "email",
+    "template"
+   ]
+  },
+  "CVE-2025-57833": {
+   "trigger": [],
+   "safe": [
+    "strip_tags",
+    "truncator",
+    "urlize",
+    "uri_to_iri",
+    "safe_url",
+    "duration",
+    "numformat",
+    "email",
+    "template"
+   ]
+  },
+  "CVE-2023-41164": {
+   "trigger": [
+    "uri_to_iri"
+   ],
+   "safe": [
+    "strip_tags",
+    "truncator",
+    "urlize",
+    "safe_url",
+    "duration",
+    "numformat",
+    "email",
+    "template"
+   ]
+  },
+  "CVE-2026-8404": {
+   "trigger": [],
+   "safe": [
+    "strip_tags",
+    "truncator",
+    "urlize",
+    "uri_to_iri",
+    "safe_url",
+    "duration",
+    "numformat",
+    "email",
+    "template"
+   ]
+  },
+  "CVE-2026-53878": {
+   "trigger": [],
+   "safe": [
+    "strip_tags",
+    "truncator",
+    "urlize",
+    "uri_to_iri",
+    "safe_url",
+    "duration",
+    "numformat",
+    "email",
+    "template"
+   ]
+  },
+  "CVE-2026-48587": {
+   "trigger": [],
+   "safe": [
+    "strip_tags",
+    "truncator",
+    "urlize",
+    "uri_to_iri",
+    "safe_url",
+    "duration",
+    "numformat",
+    "email",
+    "template"
+   ]
+  },
+  "CVE-2026-53877": {
+   "trigger": [],
+   "safe": [
+    "strip_tags",
+    "truncator",
+    "urlize",
+    "uri_to_iri",
+    "safe_url",
+    "duration",
+    "numformat",
+    "email",
+    "template"
+   ]
+  },
+  "CVE-2025-64459": {
+   "trigger": [],
+   "safe": [
+    "strip_tags",
+    "truncator",
+    "urlize",
+    "uri_to_iri",
+    "safe_url",
+    "duration",
+    "numformat",
+    "email",
+    "template"
+   ]
+  },
+  "CVE-2026-6873": {
+   "trigger": [],
+   "safe": [
+    "strip_tags",
+    "truncator",
+    "urlize",
+    "uri_to_iri",
+    "safe_url",
+    "duration",
+    "numformat",
+    "email",
+    "template"
+   ]
+  },
+  "CVE-2023-43665": {
+   "trigger": [
+    "truncator"
+   ],
+   "safe": [
+    "strip_tags",
+    "urlize",
+    "uri_to_iri",
+    "safe_url",
+    "duration",
+    "numformat",
+    "email",
+    "template"
+   ]
+  },
+  "CVE-2023-36053": {
+   "trigger": [
+    "email"
+   ],
+   "safe": [
+    "strip_tags",
+    "truncator",
+    "urlize",
+    "uri_to_iri",
+    "safe_url",
+    "duration",
+    "numformat",
+    "template"
+   ]
+  },
+  "CVE-2026-15830": {
+   "trigger": [],
+   "safe": [
+    "strip_tags",
+    "truncator",
+    "urlize",
+    "uri_to_iri",
+    "safe_url",
+    "duration",
+    "numformat",
+    "email",
+    "template"
+   ]
+  },
+  "CVE-2023-23969": {
+   "trigger": [],
+   "safe": [
+    "strip_tags",
+    "truncator",
+    "urlize",
+    "uri_to_iri",
+    "safe_url",
+    "duration",
+    "numformat",
+    "email",
+    "template"
+   ]
+  },
+  "CVE-2023-46695": {
+   "trigger": [],
+   "safe": [
+    "strip_tags",
+    "truncator",
+    "urlize",
+    "uri_to_iri",
+    "safe_url",
+    "duration",
+    "numformat",
+    "email",
+    "template"
+   ]
+  },
+  "CVE-2025-64458": {
+   "trigger": [],
+   "safe": [
+    "strip_tags",
+    "truncator",
+    "urlize",
+    "uri_to_iri",
+    "safe_url",
+    "duration",
+    "numformat",
+    "email",
+    "template"
+   ]
+  },
+  "CVE-2023-31047": {
+   "trigger": [],
+   "safe": [
+    "strip_tags",
+    "truncator",
+    "urlize",
+    "uri_to_iri",
+    "safe_url",
+    "duration",
+    "numformat",
+    "email",
+    "template"
+   ]
+  },
+  "CVE-2024-45231": {
+   "trigger": [],
+   "safe": [
+    "strip_tags",
+    "truncator",
+    "urlize",
+    "uri_to_iri",
+    "safe_url",
+    "duration",
+    "numformat",
+    "email",
+    "template"
+   ]
+  },
+  "CVE-2026-15307": {
+   "trigger": [],
+   "safe": [
+    "strip_tags",
+    "truncator",
+    "urlize",
+    "uri_to_iri",
+    "safe_url",
+    "duration",
+    "numformat",
+    "email",
+    "template"
+   ]
+  }
+ }
+}

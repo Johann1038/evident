@@ -1,0 +1,172 @@
+{
+ "dist": "werkzeug",
+ "version": "2.2.2",
+ "advisories": 10,
+ "tops": [
+  "werkzeug"
+ ],
+ "probe_errors": {},
+ "advisory_symbols": {
+  "CVE-2026-27199": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2024-34069": {
+   "gran": "function",
+   "n": 10,
+   "status": "functions"
+  },
+  "CVE-2026-21860": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2024-49766": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2026-102598": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2025-66221": {
+   "gran": "function",
+   "n": 1,
+   "status": "functions"
+  },
+  "CVE-2023-46136": {
+   "gran": "function",
+   "n": 14,
+   "status": "functions"
+  },
+  "CVE-2023-23934": {
+   "gran": "function",
+   "n": 2,
+   "status": "functions"
+  },
+  "CVE-2024-49767": {
+   "gran": "function",
+   "n": 14,
+   "status": "functions"
+  },
+  "CVE-2023-25577": {
+   "gran": "function",
+   "n": 7,
+   "status": "functions"
+  }
+ },
+ "triggerable": {
+  "CVE-2026-27199": {
+   "trigger": [
+    "safejoin"
+   ],
+   "safe": [
+    "options",
+    "filename",
+    "multipart",
+    "cookie"
+   ]
+  },
+  "CVE-2024-34069": {
+   "trigger": [],
+   "safe": [
+    "options",
+    "filename",
+    "safejoin",
+    "multipart",
+    "cookie"
+   ]
+  },
+  "CVE-2026-21860": {
+   "trigger": [
+    "safejoin"
+   ],
+   "safe": [
+    "options",
+    "filename",
+    "multipart",
+    "cookie"
+   ]
+  },
+  "CVE-2024-49766": {
+   "trigger": [
+    "safejoin"
+   ],
+   "safe": [
+    "options",
+    "filename",
+    "multipart",
+    "cookie"
+   ]
+  },
+  "CVE-2026-102598": {
+   "trigger": [
+    "safejoin"
+   ],
+   "safe": [
+    "options",
+    "filename",
+    "multipart",
+    "cookie"
+   ]
+  },
+  "CVE-2025-66221": {
+   "trigger": [
+    "safejoin"
+   ],
+   "safe": [
+    "options",
+    "filename",
+    "multipart",
+    "cookie"
+   ]
+  },
+  "CVE-2023-46136": {
+   "trigger": [
+    "multipart",
+    "cookie"
+   ],
+   "safe": [
+    "options",
+    "filename",
+    "safejoin"
+   ]
+  },
+  "CVE-2023-23934": {
+   "trigger": [
+    "cookie"
+   ],
+   "safe": [
+    "options",
+    "filename",
+    "safejoin",
+    "multipart"
+   ]
+  },
+  "CVE-2024-49767": {
+   "trigger": [
+    "multipart",
+    "cookie"
+   ],
+   "safe": [
+    "options",
+    "filename",
+    "safejoin"
+   ]
+  },
+  "CVE-2023-25577": {
+   "trigger": [
+    "multipart"
+   ],
+   "safe": [
+    "options",
+    "filename",
+    "safejoin",
+    "cookie"
+   ]
+  }
+ }
+}

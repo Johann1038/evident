@@ -1,0 +1,7597 @@
+[
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54279",
+  "ids": [
+   "GHSA-2fqr-mr3j-6wp8",
+   "PYSEC-2026-2112"
+  ],
+  "cves": [
+   "CVE-2026-54279"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00493,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:08:51Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.cookiejar.CookieJar._load_json_data",
+      "aiohttp.cookiejar.CookieJar.load",
+      "aiohttp.cookiejar.CookieJar.save"
+     ],
+     "witness": [
+      "__app__.metagpt.roles.engineer.Engineer._act_sp",
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.client_reqrep.ClientRequest.update_cookies",
+      "aiohttp.cookiejar.CookieJar.load"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-123817",
+  "ids": [
+   "GHSA-2g87-pp6c-29x5"
+  ],
+  "cves": [
+   "CVE-2026-123817"
+  ],
+  "cvss": 8.7,
+  "epss": 0.00328,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2026-10-19T17:07:23Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client.ClientSession._ws_connect",
+      "aiohttp.client_ws.ClientWebSocketResponse.__init__",
+      "aiohttp.client_ws.ClientWebSocketResponse._handle_ping_pong_exception",
+      "aiohttp.client_ws.ClientWebSocketResponse.close",
+      "aiohttp.client_ws.ClientWebSocketResponse.receive",
+      "aiohttp.http_parser.HttpParser.feed_data",
+      "aiohttp.web_protocol.RequestHandler.__init__",
+      "aiohttp.web_protocol.RequestHandler._resume_msg_queue_reading",
+      "aiohttp.web_protocol.RequestHandler.data_received",
+      "aiohttp.web_protocol.RequestHandler.eof_received",
+      "aiohttp.web_protocol.RequestHandler.finish_response",
+      "aiohttp.web_ws.WebSocketResponse._handle_ping_pong_exception",
+      "aiohttp.web_ws.WebSocketResponse._post_start",
+      "aiohttp.web_ws.WebSocketResponse.close"
+     ],
+     "witness": [
+      "__app__.metagpt.roles.engineer.Engineer._act_sp",
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.client_ws.ClientWebSocketResponse.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34514",
+  "ids": [
+   "GHSA-2vrm-gr82-f7m5",
+   "PYSEC-2026-2096"
+  ],
+  "cves": [
+   "CVE-2026-34514"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00327,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-04-01T21:16:59.417Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.formdata.FormData.add_field"
+     ],
+     "witness": [
+      "__app__.metagpt.roles.engineer.Engineer._act_sp",
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.formdata.FormData.__init__",
+      "aiohttp.formdata.FormData.add_fields",
+      "aiohttp.formdata.FormData.add_field"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34517",
+  "ids": [
+   "GHSA-3wq7-rqq7-wx6j",
+   "PYSEC-2026-2099"
+  ],
+  "cves": [
+   "CVE-2026-34517"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00399,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-04-01T21:16:59.870Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "witness": [
+      "__app__.metagpt.document_store.document.read_data",
+      "langchain.document_loaders.telegram.TelegramChatApiLoader.load",
+      "langchain.utilities.powerbi.PowerBIDataset.run",
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2023-37276",
+  "ids": [
+   "GHSA-45c4-8wx5-qw6w",
+   "PYSEC-2023-120"
+  ],
+  "cves": [
+   "CVE-2023-37276"
+  ],
+  "cvss": 6.9,
+  "epss": 0.01337,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2023-07-20T14:52:00Z",
+  "fixed": [
+   "3.8.5"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "module",
+     "symbols": [
+      "aiohttp.<module>"
+     ],
+     "witness": [
+      "__app__.metagpt.tools.search_engine_serpapi.<module>",
+      "aiohttp.<module>"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111063",
+  "ids": [
+   "GHSA-494j-54xm-rwp3"
+  ],
+  "cves": [
+   "CVE-2026-111063"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00233,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2026-10-19T17:07:47Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.cookiejar.CookieJar.filter_cookies"
+     ],
+     "witness": [
+      "__app__.metagpt.tools.search_engine_serpapi.SerpAPIWrapper.results",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request",
+      "aiohttp.cookiejar.CookieJar.filter_cookies"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54273",
+  "ids": [
+   "GHSA-4fvr-rgm6-gqmc",
+   "PYSEC-2026-2107"
+  ],
+  "cves": [
+   "CVE-2026-54273"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00493,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:10:32Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.base_protocol.BaseProtocol.pause_reading",
+      "aiohttp.base_protocol.BaseProtocol.resume_reading",
+      "aiohttp.http_parser.HttpParser.__init__",
+      "aiohttp.http_parser.HttpParser.feed_data",
+      "aiohttp.http_parser.HttpParser.feed_eof",
+      "aiohttp.web_protocol.RequestHandler.__init__",
+      "aiohttp.web_protocol.RequestHandler.data_received",
+      "aiohttp.web_protocol.RequestHandler.keep_alive",
+      "aiohttp.web_protocol.RequestHandler.start"
+     ],
+     "witness": [
+      "__app__.metagpt.document_store.faiss_store.FaissStore._load",
+      "langchain.utilities.serpapi.HiddenPrints.__exit__",
+      "aiohttp.web_ws.WebSocketResponse.close",
+      "aiohttp.streams.StreamReader.feed_data",
+      "aiohttp.base_protocol.BaseProtocol.pause_reading"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54275",
+  "ids": [
+   "GHSA-4m7w-qmgq-4wj5",
+   "PYSEC-2026-237"
+  ],
+  "cves": [
+   "CVE-2026-54275"
+  ],
+  "cvss": 7.5,
+  "epss": 0.0047,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:11:13Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69226",
+  "ids": [
+   "GHSA-54jq-c3m8-4m76",
+   "PYSEC-2026-1097"
+  ],
+  "cves": [
+   "CVE-2025-69226"
+  ],
+  "cvss": 2.7,
+  "epss": 0.00368,
+  "kev": false,
+  "severity_w": 0.27,
+  "published": "2026-01-05T23:09:51Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_urldispatcher.StaticResource._handle",
+      "aiohttp.web_urldispatcher.StaticResource.resolve"
+     ],
+     "witness": [
+      "__app__.metagpt.tools.search_engine_serpapi.<module>",
+      "aiohttp.<module>",
+      "aiohttp.payload.<module>",
+      "aiohttp.web_routedef.StaticDef.register",
+      "aiohttp.web_urldispatcher.UrlDispatcher.add_static",
+      "aiohttp.web_urldispatcher.StaticResource.__init__",
+      "aiohttp.web_urldispatcher.StaticResource.resolve"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2024-23334",
+  "ids": [
+   "GHSA-5h86-8mv2-jq9f",
+   "PYSEC-2024-24"
+  ],
+  "cves": [
+   "CVE-2024-23334"
+  ],
+  "cvss": 8.2,
+  "epss": 0.76875,
+  "kev": false,
+  "severity_w": 0.82,
+  "published": "2024-01-29T22:31:03Z",
+  "fixed": [
+   "3.9.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_urldispatcher.StaticResource._handle",
+      "aiohttp.web_urldispatcher.StaticResource.url_for"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2024-30251",
+  "ids": [
+   "GHSA-5m98-qgg9-wh84",
+   "PYSEC-2026-1098"
+  ],
+  "cves": [
+   "CVE-2024-30251"
+  ],
+  "cvss": 7.5,
+  "epss": 0.01094,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2024-05-03T17:29:54Z",
+  "fixed": [
+   "3.9.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.formdata.FormData.add_field",
+      "aiohttp.multipart.BodyPartReader.__init__",
+      "aiohttp.multipart.BodyPartReader._read_chunk_from_length",
+      "aiohttp.multipart.BodyPartReader.decode",
+      "aiohttp.multipart.BodyPartReader.get_charset",
+      "aiohttp.multipart.MultipartReader.__init__",
+      "aiohttp.multipart.MultipartReader._get_boundary",
+      "aiohttp.multipart.MultipartReader._get_part_reader",
+      "aiohttp.multipart.MultipartReader.next",
+      "aiohttp.multipart.MultipartWriter.__init__",
+      "aiohttp.multipart.MultipartWriter.append_payload",
+      "aiohttp.multipart.MultipartWriter.write"
+     ],
+     "witness": [
+      "__app__.metagpt.roles.engineer.Engineer._act_sp",
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.formdata.FormData.__init__",
+      "aiohttp.formdata.FormData.add_fields",
+      "aiohttp.formdata.FormData.add_field"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111064",
+  "ids": [
+   "GHSA-5wr8-gcqf-gqf3"
+  ],
+  "cves": [
+   "CVE-2026-111064"
+  ],
+  "cvss": 8.2,
+  "epss": 0.00399,
+  "kev": false,
+  "severity_w": 0.82,
+  "published": "2026-10-19T17:08:04Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_protocol.RequestHandler.__init__",
+      "aiohttp.web_protocol.RequestHandler.connection_made"
+     ],
+     "witness": [
+      "__app__.metagpt.roles.engineer.Engineer._act_sp",
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.web_protocol.RequestHandler.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34520",
+  "ids": [
+   "GHSA-63hf-3vf5-4wqf",
+   "PYSEC-2026-2102"
+  ],
+  "cves": [
+   "CVE-2026-34520"
+  ],
+  "cvss": 9.1,
+  "epss": 0.00479,
+  "kev": false,
+  "severity_w": 0.9099999999999999,
+  "published": "2026-04-01T21:17:00.333Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HeadersParser.parse_headers"
+     ],
+     "witness": [
+      "__app__.metagpt.document_store.document.read_data",
+      "langchain.document_loaders.telegram.TelegramChatApiLoader.load",
+      "langchain.utilities.powerbi.PowerBIDataset.run",
+      "aiohttp.web_request.BaseRequest.post",
+      "aiohttp.multipart.MultipartReader.next",
+      "aiohttp.multipart.MultipartReader.fetch_next_part",
+      "aiohttp.multipart.MultipartReader._read_headers",
+      "aiohttp.http_parser.HeadersParser.parse_headers"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54277",
+  "ids": [
+   "GHSA-63hw-fmq6-xxg2",
+   "PYSEC-2026-2110"
+  ],
+  "cves": [
+   "CVE-2026-54277"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00563,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:09:16Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69224",
+  "ids": [
+   "GHSA-69f9-5gxw-wvc2",
+   "PYSEC-2026-1099"
+  ],
+  "cves": [
+   "CVE-2025-69224"
+  ],
+  "cvss": 2.7,
+  "epss": 0.0025,
+  "kev": false,
+  "severity_w": 0.27,
+  "published": "2026-01-05T22:58:57Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HttpParser.parse_headers",
+      "aiohttp.http_parser.HttpRequestParser._is_chunked_te",
+      "aiohttp.http_parser._is_supported_upgrade"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111065",
+  "ids": [
+   "GHSA-6cjc-53gc-5rqm"
+  ],
+  "cves": [
+   "CVE-2026-111065"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00395,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2026-10-20T19:57:24Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client.ClientSession._request",
+      "aiohttp.cookiejar.CookieJar.update_cookies"
+     ],
+     "witness": [
+      "__app__.metagpt.tools.search_engine_serpapi.SerpAPIWrapper.results",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69228",
+  "ids": [
+   "GHSA-6jhg-hg63-jvvf",
+   "PYSEC-2026-1100"
+  ],
+  "cves": [
+   "CVE-2025-69228"
+  ],
+  "cvss": 6.6,
+  "epss": 0.00407,
+  "kev": false,
+  "severity_w": 0.6599999999999999,
+  "published": "2026-01-05T23:13:14Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "witness": [
+      "__app__.metagpt.document_store.document.read_data",
+      "langchain.document_loaders.telegram.TelegramChatApiLoader.load",
+      "langchain.utilities.powerbi.PowerBIDataset.run",
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69223",
+  "ids": [
+   "GHSA-6mq8-rvhq-8wgg",
+   "PYSEC-2026-1101"
+  ],
+  "cves": [
+   "CVE-2025-69223"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00583,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-01-05T22:58:41Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.DeflateBuffer.__init__",
+      "aiohttp.http_parser.DeflateBuffer.feed_data",
+      "aiohttp.http_parser.DeflateBuffer.set_exception",
+      "aiohttp.multipart.BodyPartReader.__init__",
+      "aiohttp.multipart.BodyPartReader._decode_content",
+      "aiohttp.multipart.BodyPartReader.decode",
+      "aiohttp.multipart.BodyPartReader.read",
+      "aiohttp.multipart.BodyPartReaderPayload.write",
+      "aiohttp.multipart.MultipartPayloadWriter.__init__",
+      "aiohttp.multipart.MultipartWriter.write",
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "witness": [
+      "__app__.metagpt.roles.engineer.Engineer._act_sp",
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.http_parser.DeflateBuffer.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2024-27306",
+  "ids": [
+   "GHSA-7gpw-8wmc-pm8g",
+   "PYSEC-2026-1102"
+  ],
+  "cves": [
+   "CVE-2024-27306"
+  ],
+  "cvss": 6.1,
+  "epss": 0.00666,
+  "kev": false,
+  "severity_w": 0.61,
+  "published": "2024-04-18T13:45:21Z",
+  "fixed": [
+   "3.9.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_urldispatcher.StaticResource._directory_as_html"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2024-52304",
+  "ids": [
+   "GHSA-8495-4g3g-x7pr",
+   "PYSEC-2026-1103"
+  ],
+  "cves": [
+   "CVE-2024-52304"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00563,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2024-11-18T21:02:32Z",
+  "fixed": [
+   "3.10.11"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HttpPayloadParser.feed_data"
+     ],
+     "witness": [
+      "__app__.metagpt.document_store.faiss_store.FaissStore._load",
+      "langchain.utilities.serpapi.HiddenPrints.__exit__",
+      "aiohttp.web_ws.WebSocketResponse.close",
+      "aiohttp.http_parser.HttpPayloadParser.feed_data"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2024-23829",
+  "ids": [
+   "GHSA-8qpw-xqxj-h4r2",
+   "PYSEC-2024-26"
+  ],
+  "cves": [
+   "CVE-2024-23829"
+  ],
+  "cvss": 6.9,
+  "epss": 0.01029,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2024-01-29T22:30:07Z",
+  "fixed": [
+   "3.9.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HeadersParser.parse_headers",
+      "aiohttp.http_parser.HttpParser.feed_data",
+      "aiohttp.http_parser.HttpPayloadParser.feed_data",
+      "aiohttp.http_parser.HttpRequestParser.parse_message",
+      "aiohttp.http_parser.HttpResponseParser.parse_message"
+     ],
+     "witness": [
+      "__app__.metagpt.document_store.document.read_data",
+      "langchain.document_loaders.telegram.TelegramChatApiLoader.load",
+      "langchain.utilities.powerbi.PowerBIDataset.run",
+      "aiohttp.web_request.BaseRequest.post",
+      "aiohttp.multipart.MultipartReader.next",
+      "aiohttp.multipart.MultipartReader.fetch_next_part",
+      "aiohttp.multipart.MultipartReader._read_headers",
+      "aiohttp.http_parser.HeadersParser.parse_headers"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-53643",
+  "ids": [
+   "GHSA-9548-qrrj-x5pj",
+   "PYSEC-2026-1104"
+  ],
+  "cves": [
+   "CVE-2025-53643"
+  ],
+  "cvss": 1.7,
+  "epss": 0.00355,
+  "kev": false,
+  "severity_w": 0.16999999999999998,
+  "published": "2025-07-14T19:33:31Z",
+  "fixed": [
+   "3.12.14"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HeadersParser.parse_headers",
+      "aiohttp.http_parser.HttpParser.feed_data",
+      "aiohttp.http_parser.HttpPayloadParser.__init__",
+      "aiohttp.http_parser.HttpPayloadParser.feed_data",
+      "aiohttp.http_parser.HttpRequestParser.parse_message",
+      "aiohttp.http_parser.HttpResponseParser.parse_message",
+      "aiohttp.multipart.MultipartReader._read_headers"
+     ],
+     "witness": [
+      "__app__.metagpt.document_store.document.read_data",
+      "langchain.document_loaders.telegram.TelegramChatApiLoader.load",
+      "langchain.utilities.powerbi.PowerBIDataset.run",
+      "aiohttp.web_request.BaseRequest.post",
+      "aiohttp.multipart.MultipartReader.next",
+      "aiohttp.multipart.MultipartReader.fetch_next_part",
+      "aiohttp.multipart.MultipartReader._read_headers",
+      "aiohttp.http_parser.HeadersParser.parse_headers"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34518",
+  "ids": [
+   "GHSA-966j-vmvw-g2g9",
+   "PYSEC-2026-2100"
+  ],
+  "cves": [
+   "CVE-2026-34518"
+  ],
+  "cvss": 5.3,
+  "epss": 0.0035,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-04-01T21:17:00.020Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client.ClientSession._request"
+     ],
+     "witness": [
+      "__app__.metagpt.tools.search_engine_serpapi.SerpAPIWrapper.results",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54280",
+  "ids": [
+   "GHSA-9x8q-7h8h-wcw9",
+   "PYSEC-2026-2113"
+  ],
+  "cves": [
+   "CVE-2026-54280"
+  ],
+  "cvss": 7.5,
+  "epss": 0.0046,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:10:44Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_response.Response.write_eof"
+     ],
+     "witness": [
+      "__app__.metagpt.document_store.document.read_data",
+      "langchain.document_loaders.datadog_logs.DatadogLogsLoader.load",
+      "langchain.utilities.zapier.ZapierNLAWrapper.run",
+      "aiohttp.client_reqrep.ClientRequest.send",
+      "aiohttp.client_reqrep.ClientRequest.write_bytes",
+      "aiohttp.web_response.Response.write_eof"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111066",
+  "ids": [
+   "GHSA-9xw5-w5jj-pvcg"
+  ],
+  "cves": [
+   "CVE-2026-111066"
+  ],
+  "cvss": 8.2,
+  "epss": 0.00412,
+  "kev": false,
+  "severity_w": 0.82,
+  "published": "2026-10-20T19:52:09Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_request.BaseRequest._finish",
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "witness": [
+      "__app__.metagpt.document_store.document.read_data",
+      "langchain.document_loaders.telegram.TelegramChatApiLoader.load",
+      "langchain.utilities.powerbi.PowerBIDataset.run",
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34525",
+  "ids": [
+   "GHSA-c427-h43c-vf67",
+   "PYSEC-2026-2103"
+  ],
+  "cves": [
+   "CVE-2026-34525"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00299,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2026-04-01T21:17:00.490Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HeadersParser.parse_headers",
+      "aiohttp.http_parser.HttpParser.parse_headers"
+     ],
+     "witness": [
+      "__app__.metagpt.document_store.document.read_data",
+      "langchain.document_loaders.telegram.TelegramChatApiLoader.load",
+      "langchain.utilities.powerbi.PowerBIDataset.run",
+      "aiohttp.web_request.BaseRequest.post",
+      "aiohttp.multipart.MultipartReader.next",
+      "aiohttp.multipart.MultipartReader.fetch_next_part",
+      "aiohttp.multipart.MultipartReader._read_headers",
+      "aiohttp.http_parser.HeadersParser.parse_headers"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-69244",
+  "ids": [
+   "GHSA-cq5v-8q36-5273",
+   "PYSEC-2026-3545"
+  ],
+  "cves": [
+   "CVE-2026-69244"
+  ],
+  "cvss": 7.1,
+  "epss": 0.00528,
+  "kev": false,
+  "severity_w": 0.71,
+  "published": "2026-08-03T20:51:13Z",
+  "fixed": [
+   "3.14.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111748",
+  "ids": [
+   "GHSA-f9xw-jh8m-3mwq"
+  ],
+  "cves": [
+   "CVE-2026-111748"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00386,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2026-10-20T20:01:40Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HttpRequestParser.parse_message",
+      "aiohttp.web_request.BaseRequest.__init__"
+     ],
+     "witness": [
+      "__app__.metagpt.roles.engineer.Engineer._act_sp",
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.web_request.BaseRequest.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69230",
+  "ids": [
+   "GHSA-fh55-r93g-j68g",
+   "PYSEC-2026-1105"
+  ],
+  "cves": [
+   "CVE-2025-69230"
+  ],
+  "cvss": 2.7,
+  "epss": 0.00364,
+  "kev": false,
+  "severity_w": 0.27,
+  "published": "2026-01-05T23:13:46Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54278",
+  "ids": [
+   "GHSA-g3cq-j2xw-wf74",
+   "PYSEC-2026-2111"
+  ],
+  "cves": [
+   "CVE-2026-54278"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00493,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:09:51Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.streams.StreamReader._read_nowait"
+     ],
+     "witness": [
+      "__app__.metagpt.document_store.faiss_store.FaissStore._load",
+      "langchain.utilities.serpapi.HiddenPrints.__exit__",
+      "aiohttp.web_ws.WebSocketResponse.close",
+      "aiohttp.streams.StreamReader.read",
+      "aiohttp.streams.StreamReader._read_nowait"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69229",
+  "ids": [
+   "GHSA-g84x-mcqj-x9qq",
+   "PYSEC-2026-1106"
+  ],
+  "cves": [
+   "CVE-2025-69229"
+  ],
+  "cvss": 6.6,
+  "epss": 0.00404,
+  "kev": false,
+  "severity_w": 0.6599999999999999,
+  "published": "2026-01-05T23:13:29Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.streams.StreamReader.__init__",
+      "aiohttp.streams.StreamReader._read_nowait_chunk",
+      "aiohttp.streams.StreamReader.begin_http_chunk_receiving",
+      "aiohttp.streams.StreamReader.end_http_chunk_receiving",
+      "aiohttp.streams.StreamReader.readchunk"
+     ],
+     "witness": [
+      "__app__.metagpt.roles.engineer.Engineer._act_sp",
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.streams.StreamReader.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2023-47627",
+  "ids": [
+   "GHSA-gfw2-4jvh-wgfg",
+   "PYSEC-2023-246"
+  ],
+  "cves": [
+   "CVE-2023-47627"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00857,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2023-11-14T21:15:00Z",
+  "fixed": [
+   "3.8.6"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HeadersParser.parse_headers",
+      "aiohttp.http_parser.HttpParser.feed_data",
+      "aiohttp.http_parser.HttpParser.parse_headers",
+      "aiohttp.http_parser.HttpPayloadParser.feed_data",
+      "aiohttp.http_parser.HttpRequestParser.parse_message",
+      "aiohttp.http_parser.HttpResponseParser.parse_message"
+     ],
+     "witness": [
+      "__app__.metagpt.document_store.document.read_data",
+      "langchain.document_loaders.telegram.TelegramChatApiLoader.load",
+      "langchain.utilities.powerbi.PowerBIDataset.run",
+      "aiohttp.web_request.BaseRequest.post",
+      "aiohttp.multipart.MultipartReader.next",
+      "aiohttp.multipart.MultipartReader.fetch_next_part",
+      "aiohttp.multipart.MultipartReader._read_headers",
+      "aiohttp.http_parser.HeadersParser.parse_headers"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111749",
+  "ids": [
+   "GHSA-gx76-c99x-2c96"
+  ],
+  "cves": [
+   "CVE-2026-111749"
+  ],
+  "cvss": 2.3,
+  "epss": 0.00384,
+  "kev": false,
+  "severity_w": 0.22999999999999998,
+  "published": "2026-10-20T19:58:14Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.8072878303971307,
+  "exposure_class": "STATICALLY_REACHABLE",
+  "vex": {
+   "state": "exploitable"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "CONFIRMED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.abc.AbstractCookieJar.host_only_cookies",
+      "aiohttp.cookiejar.CookieJar.__init__",
+      "aiohttp.cookiejar.CookieJar._delete_cookies",
+      "aiohttp.cookiejar.CookieJar.filter_cookies",
+      "aiohttp.cookiejar.CookieJar.host_only_cookies",
+      "aiohttp.cookiejar.CookieJar.save",
+      "aiohttp.cookiejar.CookieJar.update_cookies",
+      "aiohttp.cookiejar.DummyCookieJar.host_only_cookies"
+     ],
+     "witness": [
+      "__app__.metagpt.tools.search_engine_serpapi.SerpAPIWrapper.results",
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.cookiejar.CookieJar.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34513",
+  "ids": [
+   "GHSA-hcc4-c3v8-rx92",
+   "PYSEC-2026-2095"
+  ],
+  "cves": [
+   "CVE-2026-34513"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00457,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-04-01T21:16:59.267Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.8072878303971307,
+  "exposure_class": "STATICALLY_REACHABLE",
+  "vex": {
+   "state": "exploitable"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "CONFIRMED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.connector.TCPConnector.__init__",
+      "aiohttp.connector._DNSCacheTable.__init__",
+      "aiohttp.connector._DNSCacheTable.add",
+      "aiohttp.connector._DNSCacheTable.next_addrs",
+      "aiohttp.connector._DNSCacheTable.remove"
+     ],
+     "witness": [
+      "__app__.metagpt.tools.search_engine_serpapi.SerpAPIWrapper.results",
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.connector.TCPConnector.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-47265",
+  "ids": [
+   "GHSA-hg6j-4rv6-33pg",
+   "PYSEC-2026-2105"
+  ],
+  "cves": [
+   "CVE-2026-47265"
+  ],
+  "cvss": 7.5,
+  "epss": 0.0015,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-02T20:16:37.903Z",
+  "fixed": [
+   "3.14.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client.ClientSession._request"
+     ],
+     "witness": [
+      "__app__.metagpt.tools.search_engine_serpapi.SerpAPIWrapper.results",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54276",
+  "ids": [
+   "GHSA-hpj7-wq8m-9hgp",
+   "PYSEC-2026-2109"
+  ],
+  "cves": [
+   "CVE-2026-54276"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00307,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2026-06-15T20:09:06Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34993",
+  "ids": [
+   "GHSA-jg22-mg44-37j8",
+   "PYSEC-2026-2104"
+  ],
+  "cves": [
+   "CVE-2026-34993"
+  ],
+  "cvss": 7.3,
+  "epss": 0.00179,
+  "kev": false,
+  "severity_w": 0.73,
+  "published": "2026-06-02T20:16:34.857Z",
+  "fixed": [
+   "3.14.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.cookiejar.CookieJar.load",
+      "aiohttp.cookiejar.CookieJar.save"
+     ],
+     "witness": [
+      "__app__.metagpt.roles.engineer.Engineer._act_sp",
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.client_reqrep.ClientRequest.update_cookies",
+      "aiohttp.cookiejar.CookieJar.load"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69227",
+  "ids": [
+   "GHSA-jj3x-wxrx-4x23",
+   "PYSEC-2026-1107"
+  ],
+  "cves": [
+   "CVE-2025-69227"
+  ],
+  "cvss": 6.6,
+  "epss": 0.00396,
+  "kev": false,
+  "severity_w": 0.6599999999999999,
+  "published": "2026-01-05T23:10:15Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.multipart.BodyPartReader._read_chunk_from_stream",
+      "aiohttp.multipart.BodyPartReader.read_chunk",
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "witness": [
+      "__app__.metagpt.tools.search_engine_serpapi.SerpAPIWrapper.results",
+      "aiohttp.multipart.BodyPartReader.json",
+      "aiohttp.multipart.BodyPartReader.read",
+      "aiohttp.multipart.BodyPartReader.read_chunk",
+      "aiohttp.multipart.BodyPartReader._read_chunk_from_stream"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34516",
+  "ids": [
+   "GHSA-m5qp-6w8w-w647",
+   "PYSEC-2026-2098"
+  ],
+  "cves": [
+   "CVE-2026-34516"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00457,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-04-01T21:16:59.723Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.multipart.MultipartReader.__init__",
+      "aiohttp.multipart.MultipartReader._get_part_reader",
+      "aiohttp.multipart.MultipartReader._read_headers",
+      "aiohttp.streams.EmptyStreamReader.readline",
+      "aiohttp.streams.StreamReader.readline",
+      "aiohttp.streams.StreamReader.readuntil",
+      "aiohttp.web_protocol.RequestHandler.__init__",
+      "aiohttp.web_request.BaseRequest.multipart"
+     ],
+     "witness": [
+      "__app__.metagpt.document_store.document.read_data",
+      "langchain.document_loaders.telegram.TelegramChatApiLoader.load",
+      "langchain.utilities.powerbi.PowerBIDataset.run",
+      "aiohttp.web_request.BaseRequest.post",
+      "aiohttp.web_request.BaseRequest.multipart",
+      "aiohttp.multipart.MultipartReader.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-50269",
+  "ids": [
+   "GHSA-m6qw-4cw2-hm4m",
+   "PYSEC-2026-2106"
+  ],
+  "cves": [
+   "CVE-2026-50269"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00533,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:07:26Z",
+  "fixed": [
+   "3.14.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.payload.Payload._binary_headers"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-69243",
+  "ids": [
+   "GHSA-mfx4-hv73-q22v",
+   "PYSEC-2026-3546"
+  ],
+  "cves": [
+   "CVE-2026-69243"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00443,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2026-08-03T20:46:10Z",
+  "fixed": [
+   "3.14.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HttpParser.__init__",
+      "aiohttp.http_parser.HttpParser.feed_data"
+     ],
+     "witness": [
+      "__app__.metagpt.roles.engineer.Engineer._act_sp",
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.http_parser.HttpParser.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-59881",
+  "ids": [
+   "GHSA-mq44-7p77-q5h7",
+   "PYSEC-2026-3547"
+  ],
+  "cves": [
+   "CVE-2026-59881"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00524,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2026-08-03T20:40:55Z",
+  "fixed": [
+   "3.14.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client.ClientSession._ws_connect"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69225",
+  "ids": [
+   "GHSA-mqqc-3gqh-h2x8",
+   "PYSEC-2026-1109"
+  ],
+  "cves": [
+   "CVE-2025-69225"
+  ],
+  "cvss": 2.7,
+  "epss": 0.00282,
+  "kev": false,
+  "severity_w": 0.27,
+  "published": "2026-01-05T23:09:30Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_request.BaseRequest.http_range"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34519",
+  "ids": [
+   "GHSA-mwh4-6h8g-pg8w",
+   "PYSEC-2026-2101"
+  ],
+  "cves": [
+   "CVE-2026-34519"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00304,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-04-01T21:17:00.170Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_writer._py_serialize_headers",
+      "aiohttp.web_exceptions.HTTPException.__init__",
+      "aiohttp.web_response.StreamResponse._set_status"
+     ],
+     "witness": [
+      "__app__.metagpt.roles.engineer.Engineer._act_sp",
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.http_writer._py_serialize_headers"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34515",
+  "ids": [
+   "GHSA-p998-jp59-783m",
+   "PYSEC-2026-2097"
+  ],
+  "cves": [
+   "CVE-2026-34515"
+  ],
+  "cvss": 7.5,
+  "epss": 0.0045,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-04-01T21:16:59.570Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_urldispatcher.StaticResource._handle"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "GHSA-pjjw-qhg8-p2p9",
+  "ids": [
+   "GHSA-pjjw-qhg8-p2p9"
+  ],
+  "cves": [],
+  "cvss": null,
+  "epss": 0.0,
+  "kev": false,
+  "severity_w": 0.5,
+  "published": "2023-11-27T23:15:38Z",
+  "fixed": [
+   "3.8.6"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HttpParser.parse_headers"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111750",
+  "ids": [
+   "GHSA-pqxq-w44r-73xw"
+  ],
+  "cves": [
+   "CVE-2026-111750"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00382,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2026-10-20T19:52:21Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HttpParser.feed_data"
+     ],
+     "witness": [
+      "__app__.metagpt.document_store.faiss_store.FaissStore._load",
+      "langchain.utilities.serpapi.HiddenPrints.__exit__",
+      "aiohttp.web_ws.WebSocketResponse.close",
+      "aiohttp.http_parser.HttpParser.feed_data"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2023-49081",
+  "ids": [
+   "GHSA-q3qx-c6g2-7pw2",
+   "PYSEC-2023-250"
+  ],
+  "cves": [
+   "CVE-2023-49081"
+  ],
+  "cvss": 7.2,
+  "epss": 0.00882,
+  "kev": false,
+  "severity_w": 0.72,
+  "published": "2023-11-27T23:17:42Z",
+  "fixed": [
+   "3.9.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client_reqrep.ClientRequest.send"
+     ],
+     "witness": [
+      "__app__.metagpt.document_store.document.read_data",
+      "langchain.document_loaders.datadog_logs.DatadogLogsLoader.load",
+      "langchain.utilities.zapier.ZapierNLAWrapper.run",
+      "aiohttp.client_reqrep.ClientRequest.send"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2023-49082",
+  "ids": [
+   "GHSA-qvrw-v9rv-5rjx",
+   "PYSEC-2023-251"
+  ],
+  "cves": [
+   "CVE-2023-49082"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00948,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2023-11-27T23:17:24Z",
+  "fixed": [
+   "3.9.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client_reqrep.ClientRequest.__init__"
+     ],
+     "witness": [
+      "__app__.metagpt.roles.engineer.Engineer._act_sp",
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.client_reqrep.ClientRequest.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-22815",
+  "ids": [
+   "GHSA-w2fm-2cpv-w7v5",
+   "PYSEC-2026-2094"
+  ],
+  "cves": [
+   "CVE-2026-22815"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00457,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2026-04-01T19:45:17Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.8072878303971307,
+  "exposure_class": "STATICALLY_REACHABLE",
+  "vex": {
+   "state": "exploitable"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "CONFIRMED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.client.ClientSession._request",
+      "aiohttp.client_proto.ResponseHandler.set_response_params",
+      "aiohttp.http_exceptions.LineTooLong.__init__",
+      "aiohttp.http_parser.HeadersParser.parse_headers",
+      "aiohttp.http_parser.HttpParser.__init__",
+      "aiohttp.http_parser.HttpParser.feed_data",
+      "aiohttp.http_parser.HttpPayloadParser.__init__",
+      "aiohttp.http_parser.HttpPayloadParser.feed_data",
+      "aiohttp.http_parser.HttpRequestParser.parse_message",
+      "aiohttp.http_parser.HttpResponseParser.parse_message",
+      "aiohttp.web_protocol.RequestHandler.__init__"
+     ],
+     "witness": [
+      "__app__.metagpt.tools.search_engine_serpapi.SerpAPIWrapper.results",
+      "aiohttp.client.ClientSession.__init__"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54274",
+  "ids": [
+   "GHSA-xcgm-r5h9-7989",
+   "PYSEC-2026-2108"
+  ],
+  "cves": [
+   "CVE-2026-54274"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00539,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:11:22Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "langchain",
+  "version": "0.0.231",
+  "advisory": "CVE-2023-36258",
+  "ids": [
+   "GHSA-2qmj-7962-cjq8",
+   "PYSEC-2023-98"
+  ],
+  "cves": [
+   "CVE-2023-36258"
+  ],
+  "cvss": 9.8,
+  "epss": 0.01065,
+  "kev": false,
+  "severity_w": 0.9800000000000001,
+  "published": "2023-07-03T21:15:00Z",
+  "fixed": [
+   "0.0.247"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "langchain.chains.pal.base.PALChain._call",
+      "langchain.chains.pal.base.PALChain.from_colored_object_prompt",
+      "langchain.chains.pal.base.PALChain.from_math_prompt",
+      "langchain.chains.pal.base.PALChain.raise_deprecation",
+      "langchain.utilities.python.PythonREPL.run"
+     ],
+     "witness": [
+      "__app__.metagpt.document_store.document.read_data",
+      "langchain.document_loaders.datadog_logs.DatadogLogsLoader.load",
+      "langchain.agents.load_tools._get_pal_colored_objects",
+      "langchain.chains.pal.base.PALChain.from_colored_object_prompt"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "langchain",
+  "version": "0.0.231",
+  "advisory": "CVE-2026-45134",
+  "ids": [
+   "GHSA-3644-q5cj-c5c7",
+   "PYSEC-2026-2555"
+  ],
+  "cves": [
+   "CVE-2026-45134"
+  ],
+  "cvss": 7.1,
+  "epss": 0.00199,
+  "kev": false,
+  "severity_w": 0.71,
+  "published": "2026-05-13T15:29:30Z",
+  "fixed": [
+   "0.3.30"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "langchain",
+  "version": "0.0.231",
+  "advisory": "CVE-2024-2965",
+  "ids": [
+   "GHSA-3hjh-jh2h-vrg6",
+   "PYSEC-2024-118"
+  ],
+  "cves": [
+   "CVE-2024-2965"
+  ],
+  "cvss": 4.7,
+  "epss": 0.00304,
+  "kev": false,
+  "severity_w": 0.47000000000000003,
+  "published": "2024-06-06T19:15:00Z",
+  "fixed": [
+   "0.2.5"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "langchain",
+  "version": "0.0.231",
+  "advisory": "CVE-2024-8309",
+  "ids": [
+   "GHSA-45pg-36p6-83v9",
+   "PYSEC-2026-1507"
+  ],
+  "cves": [
+   "CVE-2024-8309"
+  ],
+  "cvss": 4.9,
+  "epss": 0.13738,
+  "kev": false,
+  "severity_w": 0.49000000000000005,
+  "published": "2024-10-29T15:32:05Z",
+  "fixed": [
+   "0.2.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "langchain",
+  "version": "0.0.231",
+  "advisory": "CVE-2023-36188",
+  "ids": [
+   "GHSA-57fc-8q82-gfp3",
+   "PYSEC-2023-109"
+  ],
+  "cves": [
+   "CVE-2023-36188"
+  ],
+  "cvss": 9.8,
+  "epss": 0.0188,
+  "kev": false,
+  "severity_w": 0.9800000000000001,
+  "published": "2023-07-06T14:15:00Z",
+  "fixed": [
+   "0.0.247"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "langchain.chains.pal.base.PALChain._call",
+      "langchain.chains.pal.base.PALChain.from_colored_object_prompt",
+      "langchain.chains.pal.base.PALChain.from_math_prompt",
+      "langchain.chains.pal.base.PALChain.raise_deprecation",
+      "langchain.utilities.python.PythonREPL.run"
+     ],
+     "witness": [
+      "__app__.metagpt.document_store.document.read_data",
+      "langchain.document_loaders.datadog_logs.DatadogLogsLoader.load",
+      "langchain.agents.load_tools._get_pal_colored_objects",
+      "langchain.chains.pal.base.PALChain.from_colored_object_prompt"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "langchain",
+  "version": "0.0.231",
+  "advisory": "CVE-2023-46229",
+  "ids": [
+   "GHSA-655w-fm8m-m478",
+   "PYSEC-2023-205"
+  ],
+  "cves": [
+   "CVE-2023-46229"
+  ],
+  "cvss": 8.8,
+  "epss": 0.47625,
+  "kev": false,
+  "severity_w": 0.8800000000000001,
+  "published": "2023-10-19T05:15:00Z",
+  "fixed": [
+   "0.0.317"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "langchain.document_loaders.recursive_url_loader.RecursiveUrlLoader.__init__"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "langchain",
+  "version": "0.0.231",
+  "advisory": "CVE-2023-34541",
+  "ids": [
+   "GHSA-6643-h7h5-x9wh",
+   "PYSEC-2023-92"
+  ],
+  "cves": [
+   "CVE-2023-34541"
+  ],
+  "cvss": 9.8,
+  "epss": 0.00935,
+  "kev": false,
+  "severity_w": 0.9800000000000001,
+  "published": "2023-06-20T15:15:00Z",
+  "fixed": [
+   "0.0.247"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (too_broad)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "langchain",
+  "version": "0.0.231",
+  "advisory": "CVE-2023-32786",
+  "ids": [
+   "GHSA-6h8p-4hx9-w66c",
+   "PYSEC-2026-1508"
+  ],
+  "cves": [
+   "CVE-2023-32786"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00709,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2023-10-21T00:30:47Z",
+  "fixed": [
+   "0.0.329"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "langchain",
+  "version": "0.0.231",
+  "advisory": "CVE-2023-36281",
+  "ids": [
+   "GHSA-7gfq-f96f-g85j",
+   "PYSEC-2023-151"
+  ],
+  "cves": [
+   "CVE-2023-36281"
+  ],
+  "cvss": 9.8,
+  "epss": 0.03412,
+  "kev": false,
+  "severity_w": 0.9800000000000001,
+  "published": "2023-08-22T19:16:00Z",
+  "fixed": [
+   "0.0.171",
+   "0.0.312"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "langchain.prompts.base.jinja2_formatter",
+      "langchain.prompts.loading._load_prompt"
+     ],
+     "witness": [
+      "__app__.metagpt.document_store.document.read_data",
+      "langchain.document_loaders.datadog_logs.DatadogLogsLoader.load",
+      "langchain.prompts.base.jinja2_formatter"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "langchain",
+  "version": "0.0.231",
+  "advisory": "CVE-2023-36189",
+  "ids": [
+   "GHSA-7q94-qpjr-xpgm",
+   "PYSEC-2023-110"
+  ],
+  "cves": [
+   "CVE-2023-36189"
+  ],
+  "cvss": 8.7,
+  "epss": 0.01237,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2023-07-06T14:15:00Z",
+  "fixed": [
+   "0.0.247"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (too_broad)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "langchain",
+  "version": "0.0.231",
+  "advisory": "CVE-2023-32785",
+  "ids": [
+   "GHSA-8h5w-f6q9-wg35",
+   "PYSEC-2026-372"
+  ],
+  "cves": [
+   "CVE-2023-32785"
+  ],
+  "cvss": 9.8,
+  "epss": 0.0,
+  "kev": false,
+  "severity_w": 0.9800000000000001,
+  "published": "2023-10-21T00:30:47Z",
+  "fixed": [
+   "0.0.247"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "langchain",
+  "version": "0.0.231",
+  "advisory": "CVE-2023-38896",
+  "ids": [
+   "GHSA-92j5-3459-qgp4",
+   "PYSEC-2023-146"
+  ],
+  "cves": [
+   "CVE-2023-38896"
+  ],
+  "cvss": 9.8,
+  "epss": 0.01822,
+  "kev": false,
+  "severity_w": 0.9800000000000001,
+  "published": "2023-08-15T17:15:00Z",
+  "fixed": [
+   "0.0.195",
+   "0.0.236"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "langchain.chains.pal.base.PALChain._call",
+      "langchain.chains.pal.base.PALChain.from_colored_object_prompt",
+      "langchain.chains.pal.base.PALChain.from_math_prompt",
+      "langchain.chains.pal.base.PALChain.raise_deprecation",
+      "langchain.utilities.python.PythonREPL.run"
+     ],
+     "witness": [
+      "__app__.metagpt.document_store.document.read_data",
+      "langchain.document_loaders.datadog_logs.DatadogLogsLoader.load",
+      "langchain.agents.load_tools._get_pal_colored_objects",
+      "langchain.chains.pal.base.PALChain.from_colored_object_prompt"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "langchain",
+  "version": "0.0.231",
+  "advisory": "CVE-2023-39631",
+  "ids": [
+   "GHSA-f73w-4m7g-ch9x",
+   "PYSEC-2023-162"
+  ],
+  "cves": [
+   "CVE-2023-39631"
+  ],
+  "cvss": 9.8,
+  "epss": 0.016,
+  "kev": false,
+  "severity_w": 0.9800000000000001,
+  "published": "2023-09-01T16:15:00Z",
+  "fixed": [
+   "0.0.308"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "langchain",
+  "version": "0.0.231",
+  "advisory": "CVE-2023-38860",
+  "ids": [
+   "GHSA-fj32-q626-pjjc",
+   "PYSEC-2023-145"
+  ],
+  "cves": [
+   "CVE-2023-38860"
+  ],
+  "cvss": 9.8,
+  "epss": 0.01405,
+  "kev": false,
+  "severity_w": 0.9800000000000001,
+  "published": "2023-08-15T17:15:00Z",
+  "fixed": [
+   "0.0.247"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (too_broad)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "langchain",
+  "version": "0.0.231",
+  "advisory": "CVE-2026-55443",
+  "ids": [
+   "GHSA-gr75-jv2w-4656",
+   "PYSEC-2026-2192"
+  ],
+  "cves": [
+   "CVE-2026-55443"
+  ],
+  "cvss": 5.5,
+  "epss": 0.0021,
+  "kev": false,
+  "severity_w": 0.55,
+  "published": "2026-06-16T15:03:14Z",
+  "fixed": [
+   "1.3.9"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "langchain",
+  "version": "0.0.231",
+  "advisory": "CVE-2023-36095",
+  "ids": [
+   "GHSA-gwqq-6vq7-5j86",
+   "PYSEC-2023-138"
+  ],
+  "cves": [
+   "CVE-2023-36095"
+  ],
+  "cvss": 9.8,
+  "epss": 0.0117,
+  "kev": false,
+  "severity_w": 0.9800000000000001,
+  "published": "2023-08-05T03:15:00Z",
+  "fixed": [
+   "0.0.236"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "langchain.chains.pal.base.PALChain._call",
+      "langchain.chains.pal.base.PALChain.from_colored_object_prompt",
+      "langchain.chains.pal.base.PALChain.from_math_prompt",
+      "langchain.chains.pal.base.PALChain.raise_deprecation",
+      "langchain.utilities.python.PythonREPL.run"
+     ],
+     "witness": [
+      "__app__.metagpt.document_store.document.read_data",
+      "langchain.document_loaders.datadog_logs.DatadogLogsLoader.load",
+      "langchain.agents.load_tools._get_pal_colored_objects",
+      "langchain.chains.pal.base.PALChain.from_colored_object_prompt"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "langchain",
+  "version": "0.0.231",
+  "advisory": "CVE-2024-28088",
+  "ids": [
+   "GHSA-h59x-p739-982c",
+   "PYSEC-2024-43"
+  ],
+  "cves": [
+   "CVE-2024-28088"
+  ],
+  "cvss": null,
+  "epss": 0.01726,
+  "kev": false,
+  "severity_w": 0.5,
+  "published": "2024-03-04T00:15:00Z",
+  "fixed": [
+   "0.0.339",
+   "0.1.11"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "langchain",
+  "version": "0.0.231",
+  "advisory": "CVE-2024-0243",
+  "ids": [
+   "GHSA-h9j7-5xvc-qhg5",
+   "PYSEC-2026-1509"
+  ],
+  "cves": [
+   "CVE-2024-0243"
+  ],
+  "cvss": 3.7,
+  "epss": 0.00517,
+  "kev": false,
+  "severity_w": 0.37,
+  "published": "2024-02-26T18:30:29Z",
+  "fixed": [
+   "0.1.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "langchain",
+  "version": "0.0.231",
+  "advisory": "CVE-2023-39659",
+  "ids": [
+   "GHSA-prgp-w7vf-ch62",
+   "PYSEC-2023-147"
+  ],
+  "cves": [
+   "CVE-2023-39659"
+  ],
+  "cvss": 9.8,
+  "epss": 0.01521,
+  "kev": false,
+  "severity_w": 0.9800000000000001,
+  "published": "2023-08-15T17:15:00Z",
+  "fixed": [
+   "0.0.233",
+   "0.0.325"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "langchain.agents.agent_toolkits.csv.base.create_csv_agent",
+      "langchain.agents.agent_toolkits.pandas.base._get_functions_multi_prompt",
+      "langchain.agents.agent_toolkits.pandas.base._get_functions_prompt_and_tools",
+      "langchain.agents.agent_toolkits.pandas.base._get_functions_single_prompt",
+      "langchain.agents.agent_toolkits.pandas.base._get_multi_prompt",
+      "langchain.agents.agent_toolkits.pandas.base._get_prompt_and_tools",
+      "langchain.agents.agent_toolkits.pandas.base._get_single_prompt",
+      "langchain.agents.agent_toolkits.pandas.base.create_pandas_dataframe_agent",
+      "langchain.agents.agent_toolkits.python.base.create_python_agent",
+      "langchain.agents.agent_toolkits.spark.base._validate_spark_connect_df",
+      "langchain.agents.agent_toolkits.spark.base._validate_spark_df",
+      "langchain.agents.agent_toolkits.spark.base.create_spark_dataframe_agent",
+      "langchain.agents.load_tools._get_python_repl",
+      "langchain.tools._import_python_tool_PythonAstREPLTool",
+      "langchain.tools._import_python_tool_PythonREPLTool",
+      "langchain.tools.python.tool.PythonAstREPLTool._arun",
+      "langchain.tools.python.tool.PythonAstREPLTool._run",
+      "langchain.tools.python.tool.PythonAstREPLTool.validate_python_version",
+      "langchain.tools.python.tool.PythonREPLTool._arun",
+      "langchain.tools.python.tool.PythonREPLTool._run"
+     ],
+     "witness": [
+      "__app__.metagpt.document_store.document.read_data",
+      "langchain.document_loaders.datadog_logs.DatadogLogsLoader.load",
+      "langchain.agents.load_tools._get_python_repl"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "langchain",
+  "version": "0.0.231",
+  "advisory": "CVE-2024-3571",
+  "ids": [
+   "GHSA-rgp8-pm28-3759",
+   "PYSEC-2026-1510"
+  ],
+  "cves": [
+   "CVE-2024-3571"
+  ],
+  "cvss": 6.5,
+  "epss": 0.01871,
+  "kev": false,
+  "severity_w": 0.65,
+  "published": "2024-04-16T00:30:34Z",
+  "fixed": [
+   "0.0.353"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "langchain",
+  "version": "0.0.231",
+  "advisory": "CVE-2024-5998",
+  "ids": [
+   "PYSEC-2024-323"
+  ],
+  "cves": [
+   "CVE-2024-5998"
+  ],
+  "cvss": 7.8,
+  "epss": 0.00361,
+  "kev": false,
+  "severity_w": 0.78,
+  "published": "2024-09-17T12:15:02.977Z",
+  "fixed": [
+   "0.2.9"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "pydantic",
+  "version": "1.10.7",
+  "advisory": "CVE-2024-3772",
+  "ids": [
+   "GHSA-mr82-8j83-vxmv",
+   "PYSEC-2026-1812"
+  ],
+  "cves": [
+   "CVE-2024-3772"
+  ],
+  "cvss": 5.9,
+  "epss": 0.00957,
+  "kev": false,
+  "severity_w": 0.5900000000000001,
+  "published": "2024-04-15T03:31:00Z",
+  "fixed": [
+   "1.10.13",
+   "2.4.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "pydantic.networks._build_pretty_email_regex",
+      "pydantic.networks.validate_email"
+     ],
+     "witness": [
+      "__app__.metagpt.environment.<module>",
+      "pydantic.main.BaseModel.__init__",
+      "pydantic.dataclasses._dataclass_validate_assignment_setattr",
+      "pydantic.networks.EmailStr.validate",
+      "pydantic.networks.validate_email"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "pytest",
+  "version": "7.2.2",
+  "advisory": "CVE-2025-71176",
+  "ids": [
+   "GHSA-6w46-j5rx-g56g",
+   "PYSEC-2026-1845"
+  ],
+  "cves": [
+   "CVE-2025-71176"
+  ],
+  "cvss": 6.8,
+  "epss": 0.00154,
+  "kev": false,
+  "severity_w": 0.6799999999999999,
+  "published": "2026-01-22T06:30:29Z",
+  "fixed": [
+   "9.0.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "_pytest.tmpdir.TempPathFactory.getbasetemp"
+     ],
+     "witness": [
+      "__app__.metagpt.document_store.document.read_data",
+      "pandas.core.frame.DataFrame.__repr__",
+      "_pytest._py.path.LocalPath.__init__",
+      "_pytest.pytester.Pytester.__init__",
+      "_pytest.tmpdir.TempPathFactory.mktemp",
+      "_pytest.tmpdir.TempPathFactory.getbasetemp"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "setuptools",
+  "version": "65.6.3",
+  "advisory": "CVE-2025-47273",
+  "ids": [
+   "GHSA-5rjg-fvgr-3xxf",
+   "PYSEC-2025-49"
+  ],
+  "cves": [
+   "CVE-2025-47273"
+  ],
+  "cvss": 8.8,
+  "epss": 0.01592,
+  "kev": false,
+  "severity_w": 0.8800000000000001,
+  "published": "2025-05-17T16:15:19Z",
+  "fixed": [
+   "78.1.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "vulnerable symbols not found in installed source",
+     "granularity": "function",
+     "symbols": [
+      "setuptools.package_index.PackageIndex._resolve_download_filename"
+     ],
+     "witness": [],
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "setuptools",
+  "version": "65.6.3",
+  "advisory": "CVE-2024-6345",
+  "ids": [
+   "GHSA-cx63-2mw6-8hw5",
+   "PYSEC-2026-1918"
+  ],
+  "cves": [
+   "CVE-2024-6345"
+  ],
+  "cvss": 8.8,
+  "epss": 0.01939,
+  "kev": false,
+  "severity_w": 0.8800000000000001,
+  "published": "2024-07-15T03:30:57Z",
+  "fixed": [
+   "70.0.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "setuptools.package_index.PackageIndex._download_git",
+      "setuptools.package_index.PackageIndex._download_hg",
+      "setuptools.package_index.PackageIndex._download_svn",
+      "setuptools.package_index.PackageIndex._download_url",
+      "setuptools.package_index.PackageIndex._vcs_split_rev_from_url",
+      "setuptools.package_index.PackageIndex.download"
+     ],
+     "witness": [
+      "__app__.setup.<module>",
+      "setuptools.setup",
+      "setuptools._install_setup_requires",
+      "setuptools.dist.Distribution.parse_config_files",
+      "setuptools.config.pyprojecttoml.apply_configuration",
+      "setuptools.config.pyprojecttoml.read_configuration",
+      "setuptools.config.pyprojecttoml.validate",
+      "setuptools.config._validate_pyproject.<module>",
+      "setuptools.config._validate_pyproject.formats.<module>",
+      "setuptools._vendor.packaging.requirements.<module>",
+      "setuptools._vendor.packaging.specifiers.<module>",
+      "setuptools._vendor.packaging.utils.<module>"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "setuptools",
+  "version": "65.6.3",
+  "advisory": "CVE-2026-59890",
+  "ids": [
+   "GHSA-h35f-9h28-mq5c",
+   "PYSEC-2026-3447"
+  ],
+  "cves": [
+   "CVE-2026-59890"
+  ],
+  "cvss": 6.1,
+  "epss": 0.0053,
+  "kev": false,
+  "severity_w": 0.61,
+  "published": "2026-07-08T17:17:27.020Z",
+  "fixed": [
+   "83.0.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "setuptools.command.egg_info.translate_pattern",
+      "setuptools.unicode_utils.filesys_decode"
+     ],
+     "witness": [
+      "__app__.setup.<module>",
+      "setuptools.setup",
+      "setuptools._install_setup_requires",
+      "setuptools.dist.Distribution.parse_config_files",
+      "setuptools.config.pyprojecttoml.apply_configuration",
+      "setuptools.config.pyprojecttoml.read_configuration",
+      "setuptools.config.pyprojecttoml.validate",
+      "setuptools.config._validate_pyproject.<module>",
+      "setuptools.config._validate_pyproject.formats.<module>",
+      "setuptools._vendor.packaging.requirements.<module>",
+      "setuptools._vendor.packaging.specifiers.<module>",
+      "setuptools._vendor.packaging.utils.<module>"
+     ],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "setuptools",
+  "version": "65.6.3",
+  "advisory": "GHSA-xmj3-9gf7-h52w",
+  "ids": [
+   "GHSA-xmj3-9gf7-h52w"
+  ],
+  "cves": [],
+  "cvss": 1.0,
+  "epss": 0.0,
+  "kev": false,
+  "severity_w": 0.1,
+  "published": "2026-10-23T21:44:11Z",
+  "fixed": [
+   "84.1.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "setuptools.wheel.Wheel._fix_namespace_packages"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "FoundationAgents__MetaGPT@v0.1.0",
+  "package": "tqdm",
+  "version": "4.64.0",
+  "advisory": "CVE-2024-34062",
+  "ids": [
+   "GHSA-g7vv-2v7x-gj9p",
+   "PYSEC-2026-1976"
+  ],
+  "cves": [
+   "CVE-2024-34062"
+  ],
+  "cvss": 3.9,
+  "epss": 0.00436,
+  "kev": false,
+  "severity_w": 0.39,
+  "published": "2024-05-03T19:33:28Z",
+  "fixed": [
+   "4.66.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.25753225833751786,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region",
+     "granularity": "function",
+     "symbols": [
+      "tqdm.cli.cast"
+     ],
+     "witness": [],
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ }
+]

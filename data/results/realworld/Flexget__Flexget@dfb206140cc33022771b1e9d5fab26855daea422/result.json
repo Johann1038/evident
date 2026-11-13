@@ -1,0 +1,59 @@
+{
+ "id": "Flexget__Flexget@dfb206140cc33022771b1e9d5fab26855daea422",
+ "meta": {
+  "id": "Flexget__Flexget@dfb206140cc33022771b1e9d5fab26855daea422",
+  "repo": "Flexget/Flexget",
+  "tag": "dfb206140cc33022771b1e9d5fab26855daea422",
+  "published_at": "2023-05-31T15:13:29Z",
+  "stars": 1992,
+  "lock_kind": "poetry",
+  "lock_file": "poetry.lock",
+  "lock_path": "poetry.lock",
+  "subdir": "",
+  "manifest": "pyproject.toml",
+  "requires_python": ">=3.7",
+  "description": "The official FlexGet repository",
+  "topics": [
+   "automation",
+   "hacktoberfest",
+   "movies",
+   "python",
+   "rss",
+   "torrent",
+   "tv"
+  ]
+ },
+ "python": "3.10",
+ "summary": {
+  "locked": 162,
+  "installed": 155,
+  "direct": 56,
+  "transitive": 99,
+  "edges": 294,
+  "edges_from_lock": true
+ },
+ "stats": {
+  "app_modules": 643,
+  "pkgs_analysed": 71,
+  "pkgs_no_source": 0,
+  "seconds": 149.63,
+  "funcs": 52203,
+  "roots": 3804
+ },
+ "scan_seconds": 151.4,
+ "sdist_only": [
+  "enzyme",
+  "pynzb",
+  "pyrss2gen",
+  "pysftp",
+  "pysrt",
+  "sgmllib3k",
+  "zxcvbn"
+ ],
+ "baseline_resolution": {
+  "ok": false,
+  "seconds": 10.1,
+  "error": "irements are unsatisfiable.\n\nhint: Wheels are required for `pysrt` because building from source is disabled for all packages (i.e., with `--no-build`)\n\nhint: Wheels are required for `subliminal` because building from source is disabled for all packages (i.e., with `--no-build`)\n\nhint: Wheels are required for `srt` because building from source is disabled for all packages (i.e., with `--no-build`)\n"
+ },
+ "status": "baseline_unresolvable"
+}

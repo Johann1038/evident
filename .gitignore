@@ -1,0 +1,25 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+# large / regenerable data
+data/cache/
+data/intel/
+data/snapshots/
+data/sources/
+data/work/
+bench/envs/
+# keep results small and versioned
+!data/results/
+# local working files
+paper.docx
+~$*.docx
+PLAN.md
+bench/apps/
+data/*.log
+data/*.err
+data/collect*.log
+data/intel/*.pkl

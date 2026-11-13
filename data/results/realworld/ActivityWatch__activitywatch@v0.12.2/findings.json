@@ -1,0 +1,703 @@
+[
+ {
+  "snapshot": "ActivityWatch__activitywatch@v0.12.2",
+  "package": "future",
+  "version": "0.18.2",
+  "advisory": "CVE-2022-40899",
+  "ids": [
+   "GHSA-v3c5-jqr6-7qm8",
+   "PYSEC-2022-42991"
+  ],
+  "cves": [
+   "CVE-2022-40899"
+  ],
+  "cvss": 8.7,
+  "epss": 0.01925,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2022-12-23T00:15:00Z",
+  "fixed": [
+   "0.18.3"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.000331033062600567,
+  "exposure_class": "NOT_IMPORTED",
+  "vex": {
+   "state": "not_affected",
+   "justification": "vulnerable_code_not_present"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "REFUTED",
+  "L4_state": "REFUTED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "poetry"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "REFUTED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "REFUTED",
+    "detail": {
+     "reason": "package not imported",
+     "granularity": "import"
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "ActivityWatch__activitywatch@v0.12.2",
+  "package": "pyinstaller",
+  "version": "5.7.0",
+  "advisory": "CVE-2023-49797",
+  "ids": [
+   "GHSA-9w2p-rh8c-v9g5",
+   "PYSEC-2023-292"
+  ],
+  "cves": [
+   "CVE-2023-49797"
+  ],
+  "cvss": 8.8,
+  "epss": 0.00324,
+  "kev": false,
+  "severity_w": 0.8800000000000001,
+  "published": "2023-12-09T00:39:46Z",
+  "fixed": [
+   "5.13.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.000331033062600567,
+  "exposure_class": "NOT_IMPORTED",
+  "vex": {
+   "state": "not_affected",
+   "justification": "vulnerable_code_not_present"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "REFUTED",
+  "L4_state": "REFUTED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "poetry"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "REFUTED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "REFUTED",
+    "detail": {
+     "reason": "package not imported",
+     "granularity": "import"
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "ActivityWatch__activitywatch@v0.12.2",
+  "package": "pyinstaller",
+  "version": "5.7.0",
+  "advisory": "CVE-2025-59042",
+  "ids": [
+   "GHSA-p2xp-xx3r-mffc",
+   "PYSEC-2026-1813"
+  ],
+  "cves": [
+   "CVE-2025-59042"
+  ],
+  "cvss": 7.0,
+  "epss": 0.00126,
+  "kev": false,
+  "severity_w": 0.7,
+  "published": "2025-09-10T20:30:18Z",
+  "fixed": [
+   "6.0.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.000331033062600567,
+  "exposure_class": "NOT_IMPORTED",
+  "vex": {
+   "state": "not_affected",
+   "justification": "vulnerable_code_not_present"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "REFUTED",
+  "L4_state": "REFUTED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "poetry"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "REFUTED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "REFUTED",
+    "detail": {
+     "reason": "package not imported",
+     "granularity": "import"
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "ActivityWatch__activitywatch@v0.12.2",
+  "package": "pytest",
+  "version": "7.2.0",
+  "advisory": "CVE-2025-71176",
+  "ids": [
+   "GHSA-6w46-j5rx-g56g",
+   "PYSEC-2026-1845"
+  ],
+  "cves": [
+   "CVE-2025-71176"
+  ],
+  "cvss": 6.8,
+  "epss": 0.00154,
+  "kev": false,
+  "severity_w": 0.6799999999999999,
+  "published": "2026-01-22T06:30:29Z",
+  "fixed": [
+   "9.0.3"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.000331033062600567,
+  "exposure_class": "NOT_IMPORTED",
+  "vex": {
+   "state": "not_affected",
+   "justification": "vulnerable_code_not_present"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "REFUTED",
+  "L4_state": "REFUTED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "poetry"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "REFUTED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "REFUTED",
+    "detail": {
+     "reason": "package not imported",
+     "granularity": "import"
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "ActivityWatch__activitywatch@v0.12.2",
+  "package": "setuptools",
+  "version": "65.6.3",
+  "advisory": "CVE-2025-47273",
+  "ids": [
+   "GHSA-5rjg-fvgr-3xxf",
+   "PYSEC-2025-49"
+  ],
+  "cves": [
+   "CVE-2025-47273"
+  ],
+  "cvss": 8.8,
+  "epss": 0.01592,
+  "kev": false,
+  "severity_w": 0.8800000000000001,
+  "published": "2025-05-17T16:15:19Z",
+  "fixed": [
+   "78.1.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.000331033062600567,
+  "exposure_class": "NOT_IMPORTED",
+  "vex": {
+   "state": "not_affected",
+   "justification": "vulnerable_code_not_present"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "REFUTED",
+  "L4_state": "REFUTED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "poetry"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "REFUTED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "REFUTED",
+    "detail": {
+     "reason": "package not imported",
+     "granularity": "import"
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "ActivityWatch__activitywatch@v0.12.2",
+  "package": "setuptools",
+  "version": "65.6.3",
+  "advisory": "CVE-2024-6345",
+  "ids": [
+   "GHSA-cx63-2mw6-8hw5",
+   "PYSEC-2026-1918"
+  ],
+  "cves": [
+   "CVE-2024-6345"
+  ],
+  "cvss": 8.8,
+  "epss": 0.01939,
+  "kev": false,
+  "severity_w": 0.8800000000000001,
+  "published": "2024-07-15T03:30:57Z",
+  "fixed": [
+   "70.0.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.000331033062600567,
+  "exposure_class": "NOT_IMPORTED",
+  "vex": {
+   "state": "not_affected",
+   "justification": "vulnerable_code_not_present"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "REFUTED",
+  "L4_state": "REFUTED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "poetry"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "REFUTED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "REFUTED",
+    "detail": {
+     "reason": "package not imported",
+     "granularity": "import"
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "ActivityWatch__activitywatch@v0.12.2",
+  "package": "setuptools",
+  "version": "65.6.3",
+  "advisory": "CVE-2026-59890",
+  "ids": [
+   "GHSA-h35f-9h28-mq5c",
+   "PYSEC-2026-3447"
+  ],
+  "cves": [
+   "CVE-2026-59890"
+  ],
+  "cvss": 6.1,
+  "epss": 0.0053,
+  "kev": false,
+  "severity_w": 0.61,
+  "published": "2026-07-08T17:17:27.020Z",
+  "fixed": [
+   "83.0.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.000331033062600567,
+  "exposure_class": "NOT_IMPORTED",
+  "vex": {
+   "state": "not_affected",
+   "justification": "vulnerable_code_not_present"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "REFUTED",
+  "L4_state": "REFUTED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "poetry"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "REFUTED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "REFUTED",
+    "detail": {
+     "reason": "package not imported",
+     "granularity": "import"
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "ActivityWatch__activitywatch@v0.12.2",
+  "package": "setuptools",
+  "version": "65.6.3",
+  "advisory": "GHSA-xmj3-9gf7-h52w",
+  "ids": [
+   "GHSA-xmj3-9gf7-h52w"
+  ],
+  "cves": [],
+  "cvss": 1.0,
+  "epss": 0.0,
+  "kev": false,
+  "severity_w": 0.1,
+  "published": "2026-10-23T21:44:11Z",
+  "fixed": [
+   "84.1.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.000331033062600567,
+  "exposure_class": "NOT_IMPORTED",
+  "vex": {
+   "state": "not_affected",
+   "justification": "vulnerable_code_not_present"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "REFUTED",
+  "L4_state": "REFUTED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "poetry"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "REFUTED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "REFUTED",
+    "detail": {
+     "reason": "package not imported",
+     "granularity": "import"
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ }
+]
