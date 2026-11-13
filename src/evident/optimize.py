@@ -59,8 +59,46 @@ def deps_of(name: str, version: str, tenv: TargetEnv) -> dict[str, SpecifierSet]
     return out
 
 
-def wheel_releases_after(p: str, cur: str, today: str) -> list[Version]:
-    """Releases newer than `cur` that publish a wheel (resolution never builds source distributions)."""
+_TAGS: dict[str, frozenset] = {}
+
+
+def supported_tags(python: str) -> frozenset:
+    """Wheel tags installable on CPython `python` / Linux x86-64 / manylinux2014 (glibc 2.17), the resolver's target."""
+    if python not in _TAGS:
+        from packaging import tags
+        major, minor = (int(x) for x in python.split(".")[:2])
+        plats = [f"manylinux_2_{g}_x86_64" for g in range(17, 4, -1)] + \
+                ["manylinux2014_x86_64", "manylinux2010_x86_64", "manylinux1_x86_64", "linux_x86_64"]
+        ts = set(tags.cpython_tags((major, minor), platforms=plats))
+        ts |= set(tags.compatible_tags((major, minor), interpreter=f"cp{major}{minor}", platforms=plats))
+        _TAGS[python] = frozenset(ts)
+    return _TAGS[python]
+
+
+def usable_wheel(files: list[dict], python: str) -> bool:
+    """True if some non-yanked wheel installs on the target interpreter and platform."""
+    from packaging.utils import InvalidWheelFilename, parse_wheel_filename
+    sup = supported_tags(python)
+    full = python + ".12"
+    for f in files:
+        if f.get("packagetype") != "bdist_wheel" or f.get("yanked"):
+            continue
+        rp = f.get("requires_python")
+        if rp:
+            spec = _spec(rp)
+            if spec is not None and not spec.contains(full, prereleases=True):
+                continue
+        try:
+            _, _, _, tg = parse_wheel_filename(f["filename"])
+        except (InvalidWheelFilename, KeyError):
+            continue
+        if tg & sup:
+            return True
+    return False
+
+
+def wheel_releases_after(p: str, cur: str, today: str, python: str = "3.10") -> list[Version]:
+    """Releases newer than `cur` with a wheel usable on the target (resolution never builds sdists)."""
     cv = _V(cur)
     later = [v for v, _ in pypi.releases(p, before=today) if cv is None or v > cv]
     j = pypi.project(p) or {}
@@ -68,7 +106,7 @@ def wheel_releases_after(p: str, cur: str, today: str) -> list[Version]:
     out = []
     for v in later:
         fl = files.get(str(v)) or next((f for k, f in files.items() if _V(k) == v), [])
-        if any(f.get("packagetype") == "bdist_wheel" and not f.get("yanked") for f in fl):
+        if usable_wheel(fl, python):
             out.append(v)
     return out
 
@@ -127,7 +165,7 @@ class Remediator:
             return self.cands[p]
         cur = self.pins[p]
         cv = _V(cur)
-        later = wheel_releases_after(p, cur, self.today)
+        later = wheel_releases_after(p, cur, self.today, self.tenv.python)
         advs = load_osv().get(p, [])
         cand = {cur}
 
@@ -358,7 +396,7 @@ class Remediator:
 
 
 # ---------------------------------------------------------------- baseline strategies
-def plan_audit_fix(pins, findings, today) -> dict[str, str]:
+def plan_audit_fix(pins, findings, today, python: str = "3.10") -> dict[str, str]:
     """pip-audit --fix style: each vulnerable package to the smallest version fixing all its findings."""
     out = {}
     by = {}
@@ -366,18 +404,18 @@ def plan_audit_fix(pins, findings, today) -> dict[str, str]:
         by.setdefault(f.package, set()).add(f.advisory)
     for p, ids in by.items():
         advs = [a for a in load_osv().get(p, []) if a.id in ids]
-        for v in wheel_releases_after(p, pins[p], today):
+        for v in wheel_releases_after(p, pins[p], today, python):
             if not any(a.affects(str(v)) for a in advs):
                 out[p] = str(v)
                 break
     return out
 
 
-def plan_latest(pins, findings, today) -> dict[str, str]:
+def plan_latest(pins, findings, today, python: str = "3.10") -> dict[str, str]:
     """Upgrade every vulnerable package to its latest (wheel-published) release."""
     out = {}
     for p in {f.package for f in findings}:
-        rels = wheel_releases_after(p, pins[p], today)
+        rels = wheel_releases_after(p, pins[p], today, python)
         if rels:
             out[p] = str(rels[-1])
     return out

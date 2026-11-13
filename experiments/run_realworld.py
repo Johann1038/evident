@@ -127,7 +127,7 @@ def one(snap: str, model_json: str) -> dict:
     strategies = {}
     # conventional strategies
     for name, planfn in (("audit_fix", plan_audit_fix), ("latest", plan_latest)):
-        ch = planfn(pins, live, TODAY)
+        ch = planfn(pins, live, TODAY, r["python"])
         res = verify(ch) if ch else base
         strategies[name] = {"planned": ch, "ok": res.ok, "error": res.error[-300:], "seconds": round(res.seconds, 1),
                             **(evaluate(res.pins, pins, fidx, p_new_of, ch) if res.ok else {})}

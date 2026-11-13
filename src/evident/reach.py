@@ -125,12 +125,20 @@ class Program:
         return n
 
     def build(self) -> None:
+        import time
         for m in list(self.mods.values()):
+            src = None
+            for attempt in range(3):   # files can be briefly locked (e.g. by an antivirus scan)
+                try:
+                    src = m.path.read_text("utf8", errors="replace")
+                    break
+                except OSError:
+                    time.sleep(0.5 * (attempt + 1))
             try:
-                src = m.path.read_text("utf8", errors="replace")
-                m.tree = ast.parse(src)
+                m.tree = ast.parse(src) if src is not None else None
             except (SyntaxError, ValueError, RecursionError):
                 m.tree = None
+            if m.tree is None:
                 continue
             _Collector(self, m).collect()
         for m in self.mods.values():

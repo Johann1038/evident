@@ -137,29 +137,53 @@ def fig_evidence_funnel(rw):
     return dict(cls)
 
 
+def _front_auc(pts, key, r0):
+    """Area under the residual-fraction vs changes curve (lower = better), on a common change grid."""
+    if not pts or r0 <= 0:
+        return None
+    pts = sorted(pts, key=lambda p: p["changes"])
+    grid = np.arange(0, 31)
+    xs = [p["changes"] for p in pts]
+    ys = [p[key] / r0 for p in pts]
+    # best residual achievable with at most g changes (step function)
+    vals = [min([y for x, y in zip(xs, ys) if x <= g] or [1.0]) for g in grid]
+    return float(np.mean(vals))
+
+
 def fig_pareto(rw):
-    fig, ax = plt.subplots(figsize=(3.2, 2.5))
-    R_e, C_e, R_v, C_v = defaultdict(list), defaultdict(list), defaultdict(list), defaultdict(list)
-    for r in rw:
-        pe, pv = r.get("pareto_evident") or [], r.get("pareto_vm") or []
-        if not pe or not pv:
-            continue
-        r0e = max(p["risk"] for p in pe) or 1
-        r0v = max(p["risk"] for p in pv) or 1
-        for p in pe:
-            R_e[p["lambda"]].append(p["risk"] / r0e)
-            C_e[p["lambda"]].append(p["changes"])
-        for p in pv:
-            R_v[p["lambda"]].append(p["risk"] / r0v)
-            C_v[p["lambda"]].append(p["changes"])
-    for R, C, lab, m in ((R_e, C_e, "EVIDENT weights", "o"), (R_v, C_v, "Version-match weights", "s")):
-        lams = sorted(R)
-        ax.plot([np.mean(C[l]) for l in lams], [np.mean(R[l]) for l in lams], marker=m, ms=3, lw=0.9, label=lab)
+    """Fronts scored under a common yardstick (calibrated expected exposure), from pareto_common.json."""
+    p = RES / "pareto_common.json"
+    if not p.exists():
+        return {}
+    d = json.loads(p.read_text("utf8"))
+    fig, ax = plt.subplots(figsize=(3.3, 2.5))
+    stats = {}
+    for name, lab, m in (("evident", "Calibrated (EVIDENT) weights", "o"), ("vm", "Version-match weights", "s")):
+        by = defaultdict(list)
+        for v in d.values():
+            for q in v["fronts"][name]:
+                by[q["lambda"]].append((q["changes"], q["exposure"] / max(v["r0_exposure"], 1e-9)))
+        lams = sorted(by)
+        ax.plot([np.mean([a for a, _ in by[l]]) for l in lams], [np.mean([b for _, b in by[l]]) for l in lams],
+                marker=m, ms=3, lw=0.9, label=lab, c="k" if name == "evident" else None)
     ax.set_xlabel("Mean packages changed per project")
-    ax.set_ylabel("Residual risk (fraction of max.)")
+    ax.set_ylabel("Remaining expected exposure")
     ax.legend(fontsize=6, frameon=False)
     fig.savefig(FIG / "pareto.png")
     plt.close(fig)
+    # per-project front comparison under the common yardstick
+    diffs = []
+    for sid, v in d.items():
+        ae = _front_auc(v["fronts"]["evident"], "exposure", v["r0_exposure"])
+        av = _front_auc(v["fronts"]["vm"], "exposure", v["r0_exposure"])
+        if ae is not None and av is not None:
+            diffs.append((sid, av - ae))
+    if diffs:
+        dv = np.array([x for _, x in diffs])
+        stats = {"projects": len(dv), "mean_auc_gain": float(dv.mean()), "median_auc_gain": float(np.median(dv)),
+                 "better": int((dv > 1e-3).sum()), "worse": int((dv < -1e-3).sum()),
+                 "per_project": dict(diffs)}
+    return stats
 
 
 def tables(ev, rw):
@@ -234,7 +258,28 @@ def main():
     T = tables(ev, rw)
     if rw:
         T["exposure_classes"] = fig_evidence_funnel(rw)
-        fig_pareto([r for r in rw if r.get("status") == "ok"])
+        T["pareto_common"] = fig_pareto([r for r in rw if r.get("status") == "ok"])
+        # does the benefit of calibrated weights grow with how discriminative the evidence is?
+        pc = T["pareto_common"].get("per_project", {})
+        xs, ys = [], []
+        for r in rw:
+            if r["id"] not in pc:
+                continue
+            fs = json.loads((RES / "realworld" / r["id"] / "findings.json").read_text("utf8"))
+            if not fs:
+                continue
+            disc = sum(1 for f in fs if f["exposure_class"] in ("NOT_INSTALLED", "DEV_ONLY", "NOT_IMPORTED",
+                                                                   "STATICALLY_UNREACHABLE", "STATICALLY_REACHABLE"))
+            xs.append(disc / len(fs))
+            ys.append(pc[r["id"]])
+        if len(xs) > 3:
+            from scipy.stats import spearmanr
+            rho, pval = spearmanr(xs, ys)
+            hi = [y for x, y in zip(xs, ys) if x >= np.median(xs)]
+            lo = [y for x, y in zip(xs, ys) if x < np.median(xs)]
+            T["pareto_vs_discrimination"] = {"spearman_rho": float(rho), "p": float(pval), "n": len(xs),
+                                             "gain_high_disc": float(np.mean(hi)) if hi else 0.0,
+                                             "gain_low_disc": float(np.mean(lo)) if lo else 0.0}
     (RES / "paper_tables.json").write_text(json.dumps(T, indent=1), "utf8")
     print(json.dumps({k: T[k] for k in ("bench", "realworld_n", "decision", "baseline_drift") if k in T}, indent=1))
 

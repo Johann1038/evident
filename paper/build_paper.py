@@ -85,9 +85,11 @@ ABSTRACT = (
     f"calibration error at or below {f3(max(v['evident']['ece'] for v in EV['missingness'].values()))} when up to "
     f"all static and runtime evidence is missing. On {n_snap} historical snapshots of open-source Python "
     f"applications, {pct(dismissable_share)} of {n_find} version-matched findings are not installed, development-only, "
-    f"not imported or statically unreachable, and evidence-weighted plans remove "
-    f"{pct(ev_rr)} of expected exposure while changing {ev_ch:.1f} packages per project on average, versus "
-    f"{vm_ch:.1f} for an evidence-agnostic optimiser and {up_ch:.1f} for upgrading everything.")
+    f"not imported or statically unreachable; resolver-verified plans remove {pct(ev_rr)} of expected exposure "
+    f"with {ev_ch:.1f} package changes per project on average, compared with {up_ch:.1f} for upgrading everything, "
+    f"whereas independent per-package fixes resolve in only {pct(au_ok, 0)} of projects. We also find that, when most "
+    "findings are only possibly reachable, calibrated weights yield plans similar to unweighted ones, which bounds "
+    "what exposure evidence can contribute to remediation.")
 
 KEYWORDS = ("software supply chain security, software composition analysis, vulnerability reachability, "
             "calibration, dependency remediation, constraint optimisation, Python")
@@ -454,8 +456,8 @@ def build():
            f"discrimination (AUC {f3(M['evident_noL5']['auc'])} without it) and static evidence improves AP from "
            f"{f3(M['evident_noL4']['AP'])} to {f3(M['evident']['AP'])}. Keeping the staged structure but replacing "
            f"learned probabilities with fixed coefficients raises Brier to {f3(M['evident_L4only_fixed']['brier'])}: "
-           "calibration, not structure alone, produces reliable probabilities. In the remediation study, replacing "
-           "calibrated weights by version-match or fixed weights changes the plans as reported in Table 4.")
+           "calibration, not structure alone, produces reliable probabilities. For remediation, Table 4 and Figure 5 "
+           "show the effect of replacing calibrated weights by version-match, CORAL-style or CAPE-style weights.")
 
     # ---------------------------------------------------------------- 6 Discussion
     P.h1("Discussion and Threats to Validity")
@@ -483,10 +485,13 @@ def build():
     # ---------------------------------------------------------------- 7 Conclusion
     P.h1("Conclusion")
     P.para("EVIDENT treats a vulnerability finding as a hypothesis that needs evidence before it becomes an upgrade. "
-           "Graded three-valued evidence, a staged model calibrated on runtime ground truth, and a resolver-verified "
-           "optimiser together reduce the number of changes needed for a given reduction in exposure and make every "
-           "recommendation explainable. Future work includes framework-aware entry points, exploit-oriented test "
-           "generation as a stronger L5 signal, and a labelled corpus of real applications.")
+           "Graded three-valued evidence and a staged model calibrated on runtime ground truth produce exposure "
+           "probabilities that remain calibrated when evidence is missing, and a resolver-verified optimiser turns "
+           "them into plans that resolve where independent upgrades fail and change far fewer packages than upgrading "
+           "everything. On real projects, the remaining limit is the discriminative power of static evidence: when "
+           "most findings are only possibly reachable, weighting barely changes the plan. Future work therefore "
+           "targets stronger evidence, namely framework-aware entry points, exploit-oriented test generation as an L5 "
+           "signal, and a labelled corpus of real applications.")
     P.h_unnumbered("Data Availability")
     P._first = True
     P.para("The implementation, EVIDENT-Bench (generator, probes, traces and labels), mined vulnerable symbols, the "
@@ -504,24 +509,50 @@ def msup_star():
 
 
 def remediation_text() -> str:
-    ev, vm, up, au = "evident", "vm_opt", "upgrade_all", "audit_fix"
+    ev, vm, up, au, la = "evident", "vm_opt", "upgrade_all", "audit_fix", "latest"
     s = (f"Table 4 compares the strategies. Upgrading everything removes "
          f"{pct(strat(up, 'risk_reduction_evident'), 0)} of expected exposure but changes {strat(up, 'changed'):.1f} "
          f"packages per project, {strat(up, 'major_bumps'):.1f} of them across major versions, and introduces "
-         f"{strat(up, 'new_findings'):.1f} new findings. The pip-audit-style minimal fix resolves in "
-         f"{pct(strat(au, 'ok'), 0)} of projects. With the same optimiser, version-match weights (every finding "
-         f"counts) change {strat(vm, 'changed'):.1f} packages and remove {pct(strat(vm, 'risk_reduction_evident'), 0)} "
-         f"of expected exposure; calibrated weights change {strat(ev, 'changed'):.1f} packages and remove "
-         f"{pct(strat(ev, 'risk_reduction_evident'), 0)}, and fix {pct(strat(ev, 'confirmed_fixed'), 0)} of the "
-         f"findings with a confirmed static path. ")
-    ratio = (strat(vm, 'changed') / strat(ev, 'changed')) if strat(ev, 'changed') else float("nan")
-    s += (f"EVIDENT thus needs {ratio:.1f}× fewer changes than the evidence-agnostic optimiser for "
-          f"{'a comparable' if abs(strat(ev, 'risk_reduction_evident') - strat(vm, 'risk_reduction_evident')) < 0.1 else 'a'} "
-          "reduction of expected exposure; the price is that findings judged unexposed remain in the version-matched "
-          f"count ({pct(strat(ev, 'risk_reduction_vm'), 0)} of version-matched risk removed versus "
-          f"{pct(strat(vm, 'risk_reduction_vm'), 0)}), which EVIDENT documents with VEX justifications. Figure 5 shows "
-          "the Pareto fronts: for any budget of changed packages the calibrated weights concentrate the changes on "
-          "exposed findings.")
+         f"{strat(up, 'new_findings'):.1f} new findings. Upgrading each vulnerable package independently resolves "
+         f"in only {pct(strat(au, 'ok'), 0)} (minimal fix) and {pct(strat(la, 'ok'), 0)} (latest) of projects, "
+         "because independent upgrades violate the constraints of other installed packages. The optimiser, which "
+         "encodes these constraints and is verified by the resolver, produced a resolvable plan in "
+         f"{pct(strat(ev, 'ok'), 0)} of projects; with calibrated weights it changes {strat(ev, 'changed'):.1f} "
+         f"packages ({strat(ev, 'major_bumps'):.1f} major bumps), removes {pct(strat(ev, 'risk_reduction_evident'), 0)} "
+         f"of expected exposure and fixes {pct(strat(ev, 'confirmed_fixed'), 0)} of the findings with a confirmed "
+         f"static path. With version-match weights the same optimiser changes {strat(vm, 'changed'):.1f} packages and "
+         f"removes {pct(strat(vm, 'risk_reduction_evident'), 0)}. ")
+    pc = T.get("pareto_common") or {}
+    pd = T.get("pareto_vs_discrimination") or {}
+    if pc:
+        gain = pc["mean_auc_gain"]
+        if abs(gain) < 0.01:
+            verdict = ("the two fronts are practically indistinguishable (mean difference in area under the front "
+                       f"{gain:+.3f}; calibrated weights better on {pc['better']} and worse on {pc['worse']} of "
+                       f"{pc['projects']} projects)")
+        elif gain > 0:
+            verdict = (f"calibrated weights lower the front by {gain:.3f} on average (better on {pc['better']}, worse "
+                       f"on {pc['worse']} of {pc['projects']} projects)")
+        else:
+            verdict = (f"calibrated weights raise the front by {-gain:.3f} on average (better on {pc['better']}, worse "
+                       f"on {pc['worse']} of {pc['projects']} projects)")
+        s += ("To compare weightings fairly, Figure 5 scores the plans of both weightings for a sweep of λ with the "
+              f"same yardstick, the calibrated expected exposure validated in RQ2: {verdict}. ")
+        s += (f"The median per-project difference is {pc['median_auc_gain']:+.3f}, so the mean is driven by a few "
+              "projects. ") if abs(pc["median_auc_gain"] - pc["mean_auc_gain"]) > 0.01 else ""
+        if pd:
+            stats_txt = (f"Spearman ρ = {pd['spearman_rho']:.2f}, p = {pd['p']:.2f}, n = {pd['n']}; mean difference "
+                         f"{pd['gain_high_disc']:+.3f} above and {pd['gain_low_disc']:+.3f} below the median share")
+            if pd["p"] < 0.05 and pd["spearman_rho"] > 0:
+                s += ("The benefit grows with how discriminative the evidence is, measured as the share of findings the "
+                      f"evidence classifies decisively ({stats_txt}). ")
+            else:
+                s += ("We hypothesised that the benefit would grow with the share of findings that the evidence classifies "
+                      f"decisively, but the data do not support this ({stats_txt}). ")
+        s += ("In the current corpus most findings are only *possibly* reachable, so calibrated probabilities are "
+              "similar across findings and weighting by them approaches counting. The practical benefit of evidence in "
+              "remediation is therefore less in the choice of plan than in what accompanies it: every finding that is "
+              "left unfixed carries a probability and, where decisive, a VEX justification.")
     return s
 
 
@@ -533,9 +564,10 @@ def closed_loop_text() -> str:
             f"target or conflicted with newer metadata. Of the {n_snap} snapshots, {n_ok} resolved in metadata-only "
             f"mode. EVIDENT plans were verified in {pct(strat(ev, 'ok'), 0)} of them, after {strat(ev, 'iterations'):.1f} "
             f"solver/resolver iterations on average (counter-example cuts), taking {strat(ev, 'seconds'):.0f} s per "
-            f"project. On average the resolver made {strat(ev, 'unplanned_changes'):.1f} changes beyond the plan, and "
-            f"{strat(ev, 'plan_not_realised'):.1f} planned versions were not realised, which is why EVIDENT reports "
-            f"the re-scanned environment rather than the plan. Of {DEC['uncertain_total']} uncertain findings in the "
+            f"project. On average the resolver made {strat(ev, 'unplanned_changes'):.1f} changes beyond the plan "
+            f"(compared with {BD['mean']:.1f} when re-resolving without any plan), and "
+            f"{strat(ev, 'plan_not_realised'):.1f} planned versions were not realised; the realised environment, not "
+            f"the plan, is therefore what EVIDENT re-scans and reports. Of {DEC['uncertain_total']} uncertain findings in the "
             f"resolvable projects, only {DEC['critical_total']} ({pct(DEC['critical_total'] / max(DEC['uncertain_total'], 1))}) "
             f"would change the optimal plan if resolved (median {DEC['median_critical']:.0f} per project); these are "
             "the findings worth manual triage.")
