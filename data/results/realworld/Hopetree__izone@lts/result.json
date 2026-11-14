@@ -1,0 +1,348 @@
+{
+ "id": "Hopetree__izone@lts",
+ "meta": {
+  "id": "Hopetree__izone@lts",
+  "repo": "Hopetree/izone",
+  "tag": "lts",
+  "published_at": "2024-02-28T04:29:26Z",
+  "stars": 1232,
+  "lock_kind": "requirements",
+  "lock_file": "requirements.txt",
+  "lock_path": "requirements.txt",
+  "subdir": "",
+  "manifest": null,
+  "requires_python": null,
+  "description": "\u4e00\u4e2a\u57fa\u4e8eDjango\u7684\u535a\u5ba2\u9879\u76ee\uff0c\u4e5f\u53ef\u4ee5\u5f53\u505a\u4e00\u4e2a\u6587\u6863\u7ba1\u7406\u7f51\u7ad9\u4f7f\u7528\uff0c\u81ea\u5e26\u8bc4\u8bba\u3001\u5b9a\u65f6\u4efb\u52a1\u7b49\u529f\u80fd\uff0c\u754c\u9762\u7b80\u7ea6\u800c\u4e0d\u7b80\u5355",
+  "topics": [
+   "blog",
+   "bootstrap",
+   "django",
+   "docker",
+   "python"
+  ]
+ },
+ "python": "3.10",
+ "summary": {
+  "locked": 56,
+  "installed": 54,
+  "direct": 28,
+  "transitive": 26,
+  "edges": 80,
+  "edges_from_lock": false
+ },
+ "stats": {
+  "app_modules": 101,
+  "pkgs_analysed": 24,
+  "pkgs_no_source": 0,
+  "seconds": 35.34,
+  "funcs": 20787,
+  "roots": 374,
+  "app_refs": {
+   "djangorestframework": [
+    "rest_framework",
+    "rest_framework.fields.ReadOnlyField",
+    "rest_framework.pagination",
+    "rest_framework.permissions",
+    "rest_framework.relations.SlugRelatedField",
+    "rest_framework.routers",
+    "rest_framework.routers.DefaultRouter",
+    "rest_framework.serializers",
+    "rest_framework.viewsets"
+   ],
+   "django": [
+    "django",
+    "django.apps",
+    "django.conf",
+    "django.conf.urls",
+    "django.conf.urls.static",
+    "django.conf.urls.static.static",
+    "django.contrib",
+    "django.contrib.admin",
+    "django.contrib.admin.decorators.register",
+    "django.contrib.auth",
+    "django.contrib.auth.backends",
+    "django.contrib.auth.context_processors",
+    "django.contrib.auth.decorators",
+    "django.contrib.auth.middleware",
+    "django.contrib.auth.models",
+    "django.contrib.auth.password_validation",
+    "django.contrib.contenttypes",
+    "django.contrib.humanize",
+    "django.contrib.messages",
+    "django.contrib.messages.api.add_message",
+    "django.contrib.messages.context_processors",
+    "django.contrib.messages.middleware",
+    "django.contrib.sessions",
+    "django.contrib.sessions.middleware",
+    "django.contrib.sitemaps",
+    "django.contrib.sitemaps.views",
+    "django.contrib.sites",
+    "django.contrib.staticfiles",
+    "django.contrib.syndication",
+    "django.contrib.syndication.views",
+    "django.core",
+    "django.core.cache",
+    "django.core.exceptions",
+    "django.core.exceptions.ImproperlyConfigured",
+    "django.core.management",
+    "django.core.management.base",
+    "django.core.management.call_command",
+    "django.core.management.execute_from_command_line",
+    "django.core.wsgi",
+    "django.core.wsgi.get_wsgi_application",
+    "django.db",
+    "django.db.backends",
+    "django.db.backends.mysql",
+    "django.db.models",
+    "django.db.models.aggregates",
+    "django.db.models.aggregates.Count",
+    "django.db.models.aggregates.Sum",
+    "django.db.models.base.Model.save",
+    "django.db.models.fields.BooleanField",
+    "django.db.models.fields.CharField",
+    "django.db.models.fields.DateTimeField",
+    "django.db.models.fields.IntegerField",
+    "django.db.models.fields.SlugField",
+    "django.db.models.fields.TextField",
+    "django.db.models.fields.URLField",
+    "django.db.models.fields.related.ForeignKey",
+    "django.db.models.fields.related.ManyToManyField",
+    "django.db.models.query_utils.Q",
+    "django.db.models.signals",
+    "django.dispatch",
+    "django.dispatch.dispatcher.receiver",
+    "django.forms",
+    "django.forms.forms.BaseForm.is_valid",
+    "django.forms.models.BaseModelForm.save",
+    "django.http",
+    "django.http.response.Http404",
+    "django.http.response.HttpResponseBadRequest",
+    "django.http.response.HttpResponseForbidden",
+    "django.http.response.JsonResponse",
+    "django.middleware",
+    "django.middleware.clickjacking",
+    "django.middleware.common",
+    "django.middleware.csrf",
+    "django.middleware.security",
+    "django.shortcuts",
+    "django.shortcuts.get_object_or_404",
+    "django.shortcuts.redirect",
+    "django.shortcuts.render",
+    "django.template",
+    "django.template.backends",
+    "django.template.backends.django",
+    "django.template.context_processors",
+    "django.template.library.Library",
+    "django.templatetags",
+    "django.templatetags.static",
+    "django.templatetags.static.static",
+    "django.test",
+    "django.urls",
+    "django.urls.base.reverse",
+    "django.urls.conf.include",
+    "django.urls.exceptions",
+    "django.utils",
+    "django.utils.datetime_safe",
+    "django.utils.datetime_safe.datetime",
+    "django.utils.decorators",
+    "django.utils.decorators.method_decorator",
+    "django.utils.encoding",
+    "django.utils.encoding.force_text",
+    "django.utils.html",
+    "django.utils.log",
+    "django.utils.safestring.mark_safe",
+    "django.utils.six",
+    "django.utils.text",
+    "django.views",
+    "django.views.decorators",
+    "django.views.decorators.http",
+    "django.views.decorators.http.require_http_methods",
+    "django.views.generic",
+    "django.views.generic.base.View.as_view"
+   ],
+   "markdown": [
+    "markdown",
+    "markdown.blockprocessors",
+    "markdown.core.Markdown",
+    "markdown.core.Markdown.convert",
+    "markdown.core.markdown",
+    "markdown.extensions",
+    "markdown.extensions.codehilite",
+    "markdown.extensions.codehilite.CodeHiliteExtension",
+    "markdown.extensions.extra",
+    "markdown.extensions.toc",
+    "markdown.extensions.toc.TocExtension",
+    "markdown.inlinepatterns"
+   ],
+   "django-imagekit": [
+    "imagekit",
+    "imagekit.models",
+    "imagekit.models.fields.ProcessedImageField",
+    "imagekit.processors"
+   ],
+   "django-haystack": [
+    "haystack",
+    "haystack.backends",
+    "haystack.backends.BaseSearchBackend.build_models_list",
+    "haystack.backends.EmptyResults",
+    "haystack.constants",
+    "haystack.exceptions",
+    "haystack.exceptions.MissingDependency",
+    "haystack.exceptions.SearchBackendError",
+    "haystack.fields.BooleanField",
+    "haystack.fields.CharField",
+    "haystack.fields.IntegerField",
+    "haystack.generic_views",
+    "haystack.indexes",
+    "haystack.inputs",
+    "haystack.inputs.BaseInput.prepare",
+    "haystack.inputs.Clean",
+    "haystack.inputs.Exact",
+    "haystack.inputs.PythonData",
+    "haystack.models",
+    "haystack.models.SearchResult",
+    "haystack.query",
+    "haystack.query.SearchQuerySet",
+    "haystack.signals",
+    "haystack.utils",
+    "haystack.utils.app_loading",
+    "haystack.utils.app_loading.haystack_get_model",
+    "haystack.utils.get_model_ct",
+    "haystack.utils.log",
+    "haystack.utils.log.getLogger"
+   ],
+   "pygments": [
+    "pygments",
+    "pygments.formatters",
+    "pygments.formatters.html"
+   ],
+   "requests": [
+    "requests",
+    "requests.api.get",
+    "requests.api.post"
+   ],
+   "django-celery-results": [
+    "django_celery_results",
+    "django_celery_results.models"
+   ],
+   "celery": [
+    "celery",
+    "celery.app.base.Celery"
+   ],
+   "django-allauth": [
+    "allauth",
+    "allauth.account",
+    "allauth.account.auth_backends",
+    "allauth.socialaccount",
+    "allauth.socialaccount.providers",
+    "allauth.socialaccount.providers.github",
+    "allauth.socialaccount.providers.weibo",
+    "allauth.urls"
+   ],
+   "django-redis": [
+    "django_redis",
+    "django_redis.cache",
+    "django_redis.client"
+   ]
+  },
+  "reflection_kinds": {
+   "markdown": [
+    "import_module",
+    "plugin"
+   ],
+   "pillow": [
+    "__import__",
+    "namespace",
+    "setattr"
+   ],
+   "django": [
+    "__import__",
+    "dyn_class",
+    "eval",
+    "exec",
+    "import_module",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "django-celery-results": [
+    "setattr"
+   ],
+   "djangorestframework": [
+    "import_module",
+    "monkeypatch",
+    "namespace",
+    "setattr"
+   ],
+   "celery": [
+    "__import__",
+    "dyn_class",
+    "exec",
+    "import_module",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "urllib3": [
+    "__import__",
+    "exec",
+    "namespace",
+    "setattr"
+   ],
+   "requests": [
+    "__import__",
+    "namespace",
+    "setattr"
+   ],
+   "django-haystack": [
+    "import_module"
+   ],
+   "django-allauth": [
+    "__import__",
+    "import_module",
+    "setattr"
+   ],
+   "pygments": [
+    "__import__",
+    "dyn_class",
+    "exec",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "django-redis": [
+    "import_module"
+   ],
+   "django-imagekit": [
+    "dyn_class",
+    "import_module",
+    "setattr"
+   ],
+   "django-appconf": [
+    "dyn_class",
+    "import_module",
+    "setattr"
+   ],
+   "__app__": [
+    "setattr"
+   ]
+  }
+ },
+ "scan_seconds": 36.4,
+ "sdist_only": [
+  "django-allauth",
+  "django-haystack",
+  "jieba",
+  "markdown-checklist",
+  "olefile",
+  "pilkit",
+  "sgmllib3k",
+  "user-agent"
+ ],
+ "baseline_resolution": {
+  "ok": false,
+  "seconds": 0.7,
+  "error": "error: No solution found when resolving dependencies\n  cause: Because all versions of mysqlclient have no usable wheels and you require mysqlclient, we can conclude that your requirements are unsatisfiable.\n\nhint: Wheels are required for `mysqlclient` because building from source is disabled for all packages (i.e., with `--no-build`)\n"
+ },
+ "status": "baseline_unresolvable"
+}

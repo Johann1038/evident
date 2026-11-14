@@ -1,10 +1,10 @@
 {
  "bomFormat": "CycloneDX",
  "specVersion": "1.6",
- "serialNumber": "urn:uuid:4de45c26-4324-494f-b309-1e81cdc6171c",
+ "serialNumber": "urn:uuid:30fb3733-e56d-4762-a871-b1d5b320d1fa",
  "version": 1,
  "metadata": {
-  "timestamp": "2026-11-12T10:28:39+00:00",
+  "timestamp": "2026-11-13T16:20:51+00:00",
   "tools": {
    "components": [
     {
@@ -626,62 +626,62 @@
   {
    "ref": "app",
    "dependsOn": [
-    "pkg:pypi/titlecase@2.3",
-    "pkg:pypi/django-prometheus@2.3.1",
-    "pkg:pypi/markdown@3.4.3",
-    "pkg:pypi/gitpython@3.1.31",
     "pkg:pypi/vobject@0.9.6.1",
-    "pkg:pypi/django-split-settings@1.2.0",
-    "pkg:pypi/django-filter@23.2",
-    "pkg:pypi/pillow@9.5.0",
-    "pkg:pypi/cpe@1.2.1",
-    "pkg:pypi/django-fieldsignals@0.7.0",
-    "pkg:pypi/django-celery-results@2.5.1",
-    "pkg:pypi/mysqlclient@2.1.1",
+    "pkg:pypi/django-tagulous@1.3.3",
+    "pkg:pypi/whitenoise@5.2.0",
+    "pkg:pypi/django-slack@5.19.0",
+    "pkg:pypi/gunicorn@20.1.0",
+    "pkg:pypi/django-polymorphic@3.1.0",
     "pkg:pypi/pycurl@7.45.2",
     "pkg:pypi/django-crispy-forms@2.0",
-    "pkg:pypi/django-debug-toolbar-request-history@0.1.4",
-    "pkg:pypi/drf-yasg@1.21.5",
-    "pkg:pypi/djangosaml2@1.5.8",
-    "pkg:pypi/social-auth-app-django@5.2.0",
-    "pkg:pypi/supervisor@4.2.5",
-    "pkg:pypi/django-slack@5.19.0",
-    "pkg:pypi/django-tagulous@1.3.3",
-    "pkg:pypi/fontawesomefree@6.4.0",
-    "pkg:pypi/django-test-migrations@1.3.0",
-    "pkg:pypi/drf-spectacular@0.26.2",
-    "pkg:pypi/psycopg2-binary@2.9.6",
-    "pkg:pypi/hyperlink@21.0.0",
-    "pkg:pypi/uwsgi@2.0.21",
-    "pkg:pypi/django-extensions@3.2.1",
-    "pkg:pypi/django-environ@0.10.0",
-    "pkg:pypi/debugpy@1.6.7",
-    "pkg:pypi/asteval@0.9.29",
-    "pkg:pypi/python-gitlab@3.14.0",
-    "pkg:pypi/blackduck@1.1.0",
-    "pkg:pypi/humanize@4.6.0",
-    "pkg:pypi/packageurl-python@0.11.1",
+    "pkg:pypi/django-watson@1.6.3",
+    "pkg:pypi/cvss@2.6",
     "pkg:pypi/django-ratelimit@4.0.0",
     "pkg:pypi/django-crum@0.7.9",
-    "pkg:pypi/django-watson@1.6.3",
-    "pkg:pypi/netaddr@0.8.0",
-    "pkg:pypi/openpyxl@3.1.2",
-    "pkg:pypi/django-auditlog@2.3.0",
-    "pkg:pypi/html2text@2020.1.16",
-    "pkg:pypi/gunicorn@20.1.0",
-    "pkg:pypi/lxml@4.9.2",
-    "pkg:pypi/pygithub@1.58.2",
-    "pkg:pypi/vcrpy-unittest@0.1.7",
-    "pkg:pypi/django-polymorphic@3.1.0",
-    "pkg:pypi/json-log-formatter@0.5.2",
-    "pkg:pypi/vulners@2.0.10",
-    "pkg:pypi/django-dbbackup@4.0.2",
     "pkg:pypi/xlrd@1.2.0",
-    "pkg:pypi/jira@3.5.0",
-    "pkg:pypi/bleach@6.0.0",
-    "pkg:pypi/cvss@2.6",
+    "pkg:pypi/lxml@4.9.2",
+    "pkg:pypi/social-auth-app-django@5.2.0",
+    "pkg:pypi/djangosaml2@1.5.8",
+    "pkg:pypi/vulners@2.0.10",
+    "pkg:pypi/pygithub@1.58.2",
     "pkg:pypi/django-imagekit@4.1.0",
-    "pkg:pypi/whitenoise@5.2.0"
+    "pkg:pypi/debugpy@1.6.7",
+    "pkg:pypi/django-split-settings@1.2.0",
+    "pkg:pypi/uwsgi@2.0.21",
+    "pkg:pypi/django-environ@0.10.0",
+    "pkg:pypi/asteval@0.9.29",
+    "pkg:pypi/drf-spectacular@0.26.2",
+    "pkg:pypi/django-debug-toolbar-request-history@0.1.4",
+    "pkg:pypi/mysqlclient@2.1.1",
+    "pkg:pypi/cpe@1.2.1",
+    "pkg:pypi/humanize@4.6.0",
+    "pkg:pypi/html2text@2020.1.16",
+    "pkg:pypi/json-log-formatter@0.5.2",
+    "pkg:pypi/hyperlink@21.0.0",
+    "pkg:pypi/django-test-migrations@1.3.0",
+    "pkg:pypi/markdown@3.4.3",
+    "pkg:pypi/packageurl-python@0.11.1",
+    "pkg:pypi/django-dbbackup@4.0.2",
+    "pkg:pypi/drf-yasg@1.21.5",
+    "pkg:pypi/gitpython@3.1.31",
+    "pkg:pypi/django-celery-results@2.5.1",
+    "pkg:pypi/openpyxl@3.1.2",
+    "pkg:pypi/vcrpy-unittest@0.1.7",
+    "pkg:pypi/jira@3.5.0",
+    "pkg:pypi/django-fieldsignals@0.7.0",
+    "pkg:pypi/django-extensions@3.2.1",
+    "pkg:pypi/psycopg2-binary@2.9.6",
+    "pkg:pypi/python-gitlab@3.14.0",
+    "pkg:pypi/netaddr@0.8.0",
+    "pkg:pypi/bleach@6.0.0",
+    "pkg:pypi/pillow@9.5.0",
+    "pkg:pypi/titlecase@2.3",
+    "pkg:pypi/django-prometheus@2.3.1",
+    "pkg:pypi/blackduck@1.1.0",
+    "pkg:pypi/fontawesomefree@6.4.0",
+    "pkg:pypi/django-auditlog@2.3.0",
+    "pkg:pypi/supervisor@4.2.5",
+    "pkg:pypi/django-filter@23.2"
    ]
   },
   {
@@ -2201,7 +2201,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2393,7 +2393,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2441,7 +2441,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2537,7 +2537,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -2921,7 +2921,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2969,7 +2969,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -3257,7 +3257,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -5316,7 +5316,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -5503,7 +5503,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -5738,7 +5738,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -6501,7 +6501,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -6549,7 +6549,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -6597,7 +6597,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -6645,7 +6645,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -6885,7 +6885,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -7989,7 +7989,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -8085,7 +8085,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {

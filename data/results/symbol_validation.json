@@ -1,0 +1,46 @@
+{
+ "advisories_mined": 774,
+ "status": {
+  "module_only": 31,
+  "functions": 548,
+  "no_commit": 134,
+  "no_python_change": 56,
+  "too_broad": 5
+ },
+ "functions_per_advisory": {
+  "median": 2.0,
+  "mean": 3.3175182481751824,
+  "max": 114,
+  "share_more_than_5": 0.14416058394160583
+ },
+ "multi_commit": {
+  "advisories": 101,
+  "mean_jaccard": 0.6963815352038385
+ },
+ "path_mapping": {
+  "mapped_files": 982,
+  "unmapped_files": 225,
+  "rate": 0.8135874067937034,
+  "unmapped_examples": [
+   "aiohttp: aiohttp/compression_utils.py",
+   "aiohttp: aiohttp/_cookie_helpers.py",
+   "aiohttp: aiohttp/_websocket/reader_py.py",
+   "aiohttp: aiohttp/_websocket/reader_py.py",
+   "aiohttp: aiohttp/_websocket/reader_py.py",
+   "aiohttp: aiohttp/client_middleware_digest_auth.py",
+   "aiohttp: aiohttp/_websocket/reader_py.py",
+   "black: action/main.py",
+   "black: action/main.py",
+   "brotli: scrapy/downloadermiddlewares/httpcompression.py",
+   "brotli: scrapy/utils/_compression.py",
+   "brotli: scrapy/utils/gz.py",
+   "cryptography: src/cryptography/hazmat/backends/openssl/ciphers.py",
+   "cryptography: src/cryptography/hazmat/backends/openssl/ciphers.py",
+   "cryptography: vectors/cryptography_vectors/__about__.py"
+  ]
+ },
+ "bench_triggerability": {
+  "function_level": 190,
+  "triggerable": 61
+ }
+}

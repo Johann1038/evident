@@ -1,10 +1,10 @@
 {
  "bomFormat": "CycloneDX",
  "specVersion": "1.6",
- "serialNumber": "urn:uuid:235f8ee1-f72f-4928-b73c-efa45e07bd58",
+ "serialNumber": "urn:uuid:3a54adb4-28b4-47e0-b81b-3d1360ac7fb3",
  "version": 1,
  "metadata": {
-  "timestamp": "2026-11-12T10:24:47+00:00",
+  "timestamp": "2026-11-13T16:18:45+00:00",
   "tools": {
    "components": [
     {
@@ -490,31 +490,31 @@
   {
    "ref": "app",
    "dependsOn": [
+    "pkg:pypi/jmespath@0.10.0",
+    "pkg:pypi/redis@4.4.4",
     "pkg:pypi/wtforms@2.3.1",
+    "pkg:pypi/flask-caching@1.8.0",
+    "pkg:pypi/mako@1.1.3",
+    "pkg:pypi/flask-restx@0.5.1",
+    "pkg:pypi/flask-marshmallow@0.10.1",
+    "pkg:pypi/freezegun@1.2.2",
+    "pkg:pypi/cmarkgfm@2022.10.27",
     "pkg:pypi/flask-migrate@2.5.3",
     "pkg:pypi/sqlalchemy-utils@0.41.0",
-    "pkg:pypi/gunicorn@20.1.0",
-    "pkg:pypi/python-editor@1.0.4",
-    "pkg:pypi/flask-marshmallow@0.10.1",
-    "pkg:pypi/flask-caching@1.8.0",
     "pkg:pypi/flask-script@2.0.6",
     "pkg:pypi/botocore@1.16.26",
-    "pkg:pypi/jmespath@0.10.0",
-    "pkg:pypi/zope-event@4.5.0",
-    "pkg:pypi/dataset@1.3.1",
-    "pkg:pypi/freezegun@1.2.2",
-    "pkg:pypi/gevent@22.10.2",
     "pkg:pypi/boto3@1.13.9",
-    "pkg:pypi/mako@1.1.3",
-    "pkg:pypi/cmarkgfm@2022.10.27",
-    "pkg:pypi/tenacity@6.2.0",
-    "pkg:pypi/greenlet@2.0.1",
+    "pkg:pypi/python-editor@1.0.4",
     "pkg:pypi/pybluemonday@0.0.11",
-    "pkg:pypi/redis@4.4.4",
+    "pkg:pypi/gunicorn@20.1.0",
+    "pkg:pypi/dataset@1.3.1",
+    "pkg:pypi/greenlet@2.0.1",
     "pkg:pypi/python-geoacumen-city@2023.4.15",
+    "pkg:pypi/zope-event@4.5.0",
+    "pkg:pypi/tenacity@6.2.0",
     "pkg:pypi/s3transfer@0.3.3",
-    "pkg:pypi/flask-restx@0.5.1",
-    "pkg:pypi/pydantic@1.6.2"
+    "pkg:pypi/pydantic@1.6.2",
+    "pkg:pypi/gevent@22.10.2"
    ]
   },
   {
@@ -1241,7 +1241,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -1577,7 +1577,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -1625,7 +1625,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -1673,7 +1673,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -1721,7 +1721,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -1817,7 +1817,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -1865,7 +1865,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2585,7 +2585,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2681,7 +2681,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2729,7 +2729,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2777,7 +2777,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2825,7 +2825,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2921,7 +2921,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {

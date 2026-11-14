@@ -1,0 +1,1307 @@
+{
+ "id": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+ "meta": {
+  "id": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "repo": "alexta69/metube",
+  "tag": "5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "published_at": "2023-05-27T16:21:57Z",
+  "stars": 15250,
+  "lock_kind": "pipfile",
+  "lock_file": "Pipfile.lock",
+  "lock_path": "Pipfile.lock",
+  "subdir": "",
+  "manifest": "Pipfile",
+  "requires_python": null,
+  "description": "Self-hosted video downloader for YouTube and other sites (web UI for yt-dlp)",
+  "topics": [
+   "self-hosted",
+   "youtube",
+   "youtube-dl",
+   "yt-dlp"
+  ]
+ },
+ "python": "3.8",
+ "summary": {
+  "locked": 29,
+  "installed": 27,
+  "direct": 4,
+  "transitive": 23,
+  "edges": 39,
+  "edges_from_lock": false
+ },
+ "stats": {
+  "app_modules": 3,
+  "pkgs_analysed": 10,
+  "pkgs_no_source": 0,
+  "seconds": 56.97,
+  "funcs": 11406,
+  "roots": 55,
+  "app_refs": {
+   "python-socketio": [
+    "socketio",
+    "socketio.asyncio_server.AsyncServer"
+   ],
+   "aiohttp": [
+    "aiohttp",
+    "aiohttp.web",
+    "aiohttp.web.run_app",
+    "aiohttp.web_app.Application",
+    "aiohttp.web_exceptions.HTTPBadRequest",
+    "aiohttp.web_exceptions.HTTPFound",
+    "aiohttp.web_fileresponse.FileResponse",
+    "aiohttp.web_response.Response",
+    "aiohttp.web_routedef.RouteTableDef"
+   ],
+   "yt-dlp": [
+    "yt_dlp",
+    "yt_dlp.YoutubeDL"
+   ]
+  },
+  "reflection_kinds": {
+   "yt-dlp": [
+    "import_module",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "aiohttp": [
+    "import_module"
+   ],
+   "python-engineio": [
+    "import_module"
+   ],
+   "pycryptodomex": [
+    "dyn_class",
+    "setattr"
+   ],
+   "__app__": [
+    "setattr"
+   ]
+  }
+ },
+ "scan_seconds": 62.7,
+ "sdist_only": [],
+ "baseline_resolution": {
+  "ok": true,
+  "seconds": 72.3,
+  "error": ""
+ },
+ "baseline_drift": 2,
+ "strategies": {
+  "audit_fix": {
+   "planned": {
+    "brotli": "1.2.1",
+    "certifi": "2026.10.18",
+    "idna": "3.15",
+    "pycryptodomex": "3.19.1",
+    "python-engineio": "4.13.2",
+    "python-socketio": "5.16.2"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 1.1,
+   "residual_findings": 61,
+   "residual_risk_evident": 21.165382152019195,
+   "residual_risk_vm": 40.139999999999986,
+   "residual_confirmed": 1,
+   "new_findings": 0,
+   "changed": 11,
+   "major_bumps": 1,
+   "added": 5,
+   "removed": 0,
+   "realised_changes": {
+    "brotli": [
+     "1.0.9",
+     "1.2.1"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.18"
+    ],
+    "dill": [
+     null,
+     "0.4.0"
+    ],
+    "h11": [
+     null,
+     "0.16.0"
+    ],
+    "idna": [
+     "3.4",
+     "3.15"
+    ],
+    "pycryptodomex": [
+     "3.18.0",
+     "3.19.1"
+    ],
+    "python-engineio": [
+     "4.4.1",
+     "4.13.2"
+    ],
+    "python-socketio": [
+     "5.8.0",
+     "5.16.2"
+    ],
+    "simple-websocket": [
+     null,
+     "1.1.0"
+    ],
+    "wrapt": [
+     null,
+     "1.17.3"
+    ],
+    "wsproto": [
+     null,
+     "1.2.0"
+    ]
+   },
+   "planned_changes": 6,
+   "unplanned_changes": 5,
+   "unplanned_major": 0,
+   "unplanned_added": 5,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 2,
+    "details": [
+     {
+      "package": "python-socketio",
+      "version": "5.16.2",
+      "missing": [
+       "socketio.asyncio_server.AsyncServer"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "latest": {
+   "planned": {
+    "yt-dlp": "2024.10.22",
+    "aiohttp": "3.10.11",
+    "brotli": "1.2.1",
+    "pylint": "3.2.7",
+    "certifi": "2026.10.23",
+    "pycryptodomex": "3.24.2",
+    "python-engineio": "4.15.1",
+    "python-socketio": "5.18.1",
+    "idna": "3.15"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 0.9,
+   "residual_findings": 57,
+   "residual_risk_evident": 19.5225241051132,
+   "residual_risk_vm": 37.980000000000004,
+   "residual_confirmed": 1,
+   "new_findings": 11,
+   "changed": 20,
+   "major_bumps": 5,
+   "added": 8,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.4.4"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.10.11"
+    ],
+    "astroid": [
+     "2.15.5",
+     "3.2.4"
+    ],
+    "brotli": [
+     "1.0.9",
+     "1.2.1"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "dill": [
+     null,
+     "0.4.0"
+    ],
+    "h11": [
+     null,
+     "0.16.0"
+    ],
+    "idna": [
+     "3.4",
+     "3.15"
+    ],
+    "propcache": [
+     null,
+     "0.2.0"
+    ],
+    "pycryptodomex": [
+     "3.18.0",
+     "3.24.2"
+    ],
+    "pylint": [
+     "2.17.4",
+     "3.2.7"
+    ],
+    "python-engineio": [
+     "4.4.1",
+     "4.15.1"
+    ],
+    "python-socketio": [
+     "5.8.0",
+     "5.18.1"
+    ],
+    "requests": [
+     null,
+     "2.32.4"
+    ],
+    "simple-websocket": [
+     null,
+     "1.1.0"
+    ],
+    "urllib3": [
+     null,
+     "2.2.3"
+    ],
+    "websockets": [
+     "11.0.3",
+     "13.1"
+    ],
+    "wsproto": [
+     null,
+     "1.2.0"
+    ],
+    "yarl": [
+     "1.9.2",
+     "1.15.2"
+    ],
+    "yt-dlp": [
+     "2023.3.4",
+     "2024.10.22"
+    ]
+   },
+   "planned_changes": 9,
+   "unplanned_changes": 11,
+   "unplanned_major": 2,
+   "unplanned_added": 8,
+   "new_findings_from_unplanned": 9,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 13,
+    "details": [
+     {
+      "package": "python-socketio",
+      "version": "5.18.1",
+      "missing": [
+       "socketio.asyncio_server.AsyncServer"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "upgrade_all": {
+   "planned": null,
+   "ok": true,
+   "error": "",
+   "seconds": 1.7,
+   "residual_findings": 57,
+   "residual_risk_evident": 19.5225241051132,
+   "residual_risk_vm": 37.980000000000004,
+   "residual_confirmed": 1,
+   "new_findings": 11,
+   "changed": 33,
+   "major_bumps": 8,
+   "added": 8,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.4.4"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.10.11"
+    ],
+    "astroid": [
+     "2.15.5",
+     "3.2.4"
+    ],
+    "async-timeout": [
+     "4.0.2",
+     "5.0.1"
+    ],
+    "attrs": [
+     "23.1.0",
+     "25.3.0"
+    ],
+    "bidict": [
+     "0.22.1",
+     "0.23.1"
+    ],
+    "brotli": [
+     "1.0.9",
+     "1.2.1"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "charset-normalizer": [
+     "3.1.0",
+     "3.5.2"
+    ],
+    "dill": [
+     null,
+     "0.4.0"
+    ],
+    "frozenlist": [
+     "1.3.3",
+     "1.5.0"
+    ],
+    "h11": [
+     null,
+     "0.16.0"
+    ],
+    "idna": [
+     "3.4",
+     "3.15"
+    ],
+    "isort": [
+     "5.12.0",
+     "5.13.2"
+    ],
+    "lazy-object-proxy": [
+     "1.9.0",
+     "1.10.0"
+    ],
+    "multidict": [
+     "6.0.4",
+     "6.1.0"
+    ],
+    "mutagen": [
+     "1.46.0",
+     "1.47.0"
+    ],
+    "platformdirs": [
+     "3.5.1",
+     "4.3.6"
+    ],
+    "propcache": [
+     null,
+     "0.2.0"
+    ],
+    "pycryptodomex": [
+     "3.18.0",
+     "3.24.2"
+    ],
+    "pylint": [
+     "2.17.4",
+     "3.2.7"
+    ],
+    "python-engineio": [
+     "4.4.1",
+     "4.15.1"
+    ],
+    "python-socketio": [
+     "5.8.0",
+     "5.18.1"
+    ],
+    "requests": [
+     null,
+     "2.32.4"
+    ],
+    "simple-websocket": [
+     null,
+     "1.1.0"
+    ],
+    "tomli": [
+     "2.0.1",
+     "2.5.0"
+    ],
+    "tomlkit": [
+     "0.11.8",
+     "0.13.3"
+    ],
+    "typing-extensions": [
+     "4.6.2",
+     "4.13.2"
+    ],
+    "urllib3": [
+     null,
+     "2.2.3"
+    ],
+    "websockets": [
+     "11.0.3",
+     "13.1"
+    ],
+    "wsproto": [
+     null,
+     "1.2.0"
+    ],
+    "yarl": [
+     "1.9.2",
+     "1.15.2"
+    ],
+    "yt-dlp": [
+     "2023.3.4",
+     "2024.10.22"
+    ]
+   },
+   "failure": "none",
+   "compat": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 13,
+    "details": [
+     {
+      "package": "python-socketio",
+      "version": "5.18.1",
+      "missing": [
+       "socketio.asyncio_server.AsyncServer"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "uv_fix": {
+   "planned": {
+    "brotli": "1.2.1",
+    "certifi": "2026.10.18",
+    "idna": "3.15",
+    "pycryptodomex": "3.19.1",
+    "python-engineio": "4.13.2",
+    "python-socketio": "5.16.2"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 0.1,
+   "residual_findings": 61,
+   "residual_risk_evident": 21.165382152019195,
+   "residual_risk_vm": 40.139999999999986,
+   "residual_confirmed": 1,
+   "new_findings": 0,
+   "changed": 11,
+   "major_bumps": 1,
+   "added": 5,
+   "removed": 0,
+   "realised_changes": {
+    "brotli": [
+     "1.0.9",
+     "1.2.1"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "dill": [
+     null,
+     "0.4.0"
+    ],
+    "h11": [
+     null,
+     "0.16.0"
+    ],
+    "idna": [
+     "3.4",
+     "3.15"
+    ],
+    "pycryptodomex": [
+     "3.18.0",
+     "3.24.2"
+    ],
+    "python-engineio": [
+     "4.4.1",
+     "4.15.1"
+    ],
+    "python-socketio": [
+     "5.8.0",
+     "5.18.1"
+    ],
+    "simple-websocket": [
+     null,
+     "1.1.0"
+    ],
+    "wrapt": [
+     null,
+     "1.17.3"
+    ],
+    "wsproto": [
+     null,
+     "1.2.0"
+    ]
+   },
+   "failure": "none",
+   "compat": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 2,
+    "details": [
+     {
+      "package": "python-socketio",
+      "version": "5.18.1",
+      "missing": [
+       "socketio.asyncio_server.AsyncServer"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "vm_opt": {
+   "planned": {
+    "aiohttp": "3.10.11",
+    "brotli": "1.2.1",
+    "certifi": "2026.10.23",
+    "idna": "3.15",
+    "pycryptodomex": "3.24.2",
+    "python-engineio": "4.15.1",
+    "python-socketio": "5.16.2",
+    "websockets": "13.1",
+    "yarl": "1.15.2",
+    "yt-dlp": "2024.10.22"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 11.1,
+   "model_residual": 31.229999999999997,
+   "model_cost": 22.4,
+   "scope": 12,
+   "candidates": 37,
+   "residual_findings": 57,
+   "residual_risk_evident": 19.5225241051132,
+   "residual_risk_vm": 37.980000000000004,
+   "residual_confirmed": 1,
+   "new_findings": 11,
+   "changed": 19,
+   "major_bumps": 3,
+   "added": 9,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.4.4"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.10.11"
+    ],
+    "brotli": [
+     "1.0.9",
+     "1.2.1"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "dill": [
+     null,
+     "0.4.0"
+    ],
+    "h11": [
+     null,
+     "0.16.0"
+    ],
+    "idna": [
+     "3.4",
+     "3.15"
+    ],
+    "propcache": [
+     null,
+     "0.2.0"
+    ],
+    "pycryptodomex": [
+     "3.18.0",
+     "3.24.2"
+    ],
+    "python-engineio": [
+     "4.4.1",
+     "4.15.1"
+    ],
+    "python-socketio": [
+     "5.8.0",
+     "5.16.2"
+    ],
+    "requests": [
+     null,
+     "2.32.4"
+    ],
+    "simple-websocket": [
+     null,
+     "1.1.0"
+    ],
+    "urllib3": [
+     null,
+     "2.2.3"
+    ],
+    "websockets": [
+     "11.0.3",
+     "13.1"
+    ],
+    "wrapt": [
+     null,
+     "1.17.3"
+    ],
+    "wsproto": [
+     null,
+     "1.2.0"
+    ],
+    "yarl": [
+     "1.9.2",
+     "1.15.2"
+    ],
+    "yt-dlp": [
+     "2023.3.4",
+     "2024.10.22"
+    ]
+   },
+   "planned_changes": 10,
+   "unplanned_changes": 9,
+   "unplanned_major": 0,
+   "unplanned_added": 9,
+   "new_findings_from_unplanned": 9,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 13,
+    "details": [
+     {
+      "package": "python-socketio",
+      "version": "5.16.2",
+      "missing": [
+       "socketio.asyncio_server.AsyncServer"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "coral_opt": {
+   "planned": {
+    "aiohttp": "3.10.11",
+    "brotli": "1.2.1",
+    "certifi": "2026.10.23",
+    "idna": "3.15",
+    "pycryptodomex": "3.24.2",
+    "python-engineio": "4.15.1",
+    "python-socketio": "5.16.2",
+    "websockets": "13.1",
+    "yarl": "1.15.2",
+    "yt-dlp": "2024.10.22"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.1,
+   "model_residual": 16.11242448135589,
+   "model_cost": 22.4,
+   "scope": 12,
+   "candidates": 37,
+   "residual_findings": 57,
+   "residual_risk_evident": 19.5225241051132,
+   "residual_risk_vm": 37.980000000000004,
+   "residual_confirmed": 1,
+   "new_findings": 11,
+   "changed": 19,
+   "major_bumps": 3,
+   "added": 9,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.4.4"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.10.11"
+    ],
+    "brotli": [
+     "1.0.9",
+     "1.2.1"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "dill": [
+     null,
+     "0.4.0"
+    ],
+    "h11": [
+     null,
+     "0.16.0"
+    ],
+    "idna": [
+     "3.4",
+     "3.15"
+    ],
+    "propcache": [
+     null,
+     "0.2.0"
+    ],
+    "pycryptodomex": [
+     "3.18.0",
+     "3.24.2"
+    ],
+    "python-engineio": [
+     "4.4.1",
+     "4.15.1"
+    ],
+    "python-socketio": [
+     "5.8.0",
+     "5.16.2"
+    ],
+    "requests": [
+     null,
+     "2.32.4"
+    ],
+    "simple-websocket": [
+     null,
+     "1.1.0"
+    ],
+    "urllib3": [
+     null,
+     "2.2.3"
+    ],
+    "websockets": [
+     "11.0.3",
+     "13.1"
+    ],
+    "wrapt": [
+     null,
+     "1.17.3"
+    ],
+    "wsproto": [
+     null,
+     "1.2.0"
+    ],
+    "yarl": [
+     "1.9.2",
+     "1.15.2"
+    ],
+    "yt-dlp": [
+     "2023.3.4",
+     "2024.10.22"
+    ]
+   },
+   "planned_changes": 10,
+   "unplanned_changes": 9,
+   "unplanned_major": 0,
+   "unplanned_added": 9,
+   "new_findings_from_unplanned": 9,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 13,
+    "details": [
+     {
+      "package": "python-socketio",
+      "version": "5.16.2",
+      "missing": [
+       "socketio.asyncio_server.AsyncServer"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "cape_opt": {
+   "planned": {
+    "aiohttp": "3.10.11",
+    "brotli": "1.2.1",
+    "certifi": "2026.10.23",
+    "idna": "3.15",
+    "pycryptodomex": "3.24.2",
+    "python-engineio": "4.15.1",
+    "python-socketio": "5.16.2",
+    "websockets": "13.1",
+    "yarl": "1.15.2",
+    "yt-dlp": "2024.10.22"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.2,
+   "model_residual": 26.279424481355896,
+   "model_cost": 22.4,
+   "scope": 12,
+   "candidates": 37,
+   "residual_findings": 57,
+   "residual_risk_evident": 19.5225241051132,
+   "residual_risk_vm": 37.980000000000004,
+   "residual_confirmed": 1,
+   "new_findings": 11,
+   "changed": 19,
+   "major_bumps": 3,
+   "added": 9,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.4.4"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.10.11"
+    ],
+    "brotli": [
+     "1.0.9",
+     "1.2.1"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "dill": [
+     null,
+     "0.4.0"
+    ],
+    "h11": [
+     null,
+     "0.16.0"
+    ],
+    "idna": [
+     "3.4",
+     "3.15"
+    ],
+    "propcache": [
+     null,
+     "0.2.0"
+    ],
+    "pycryptodomex": [
+     "3.18.0",
+     "3.24.2"
+    ],
+    "python-engineio": [
+     "4.4.1",
+     "4.15.1"
+    ],
+    "python-socketio": [
+     "5.8.0",
+     "5.16.2"
+    ],
+    "requests": [
+     null,
+     "2.32.4"
+    ],
+    "simple-websocket": [
+     null,
+     "1.1.0"
+    ],
+    "urllib3": [
+     null,
+     "2.2.3"
+    ],
+    "websockets": [
+     "11.0.3",
+     "13.1"
+    ],
+    "wrapt": [
+     null,
+     "1.17.3"
+    ],
+    "wsproto": [
+     null,
+     "1.2.0"
+    ],
+    "yarl": [
+     "1.9.2",
+     "1.15.2"
+    ],
+    "yt-dlp": [
+     "2023.3.4",
+     "2024.10.22"
+    ]
+   },
+   "planned_changes": 10,
+   "unplanned_changes": 9,
+   "unplanned_major": 0,
+   "unplanned_added": 9,
+   "new_findings_from_unplanned": 9,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 13,
+    "details": [
+     {
+      "package": "python-socketio",
+      "version": "5.16.2",
+      "missing": [
+       "socketio.asyncio_server.AsyncServer"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "evident": {
+   "planned": {
+    "aiohttp": "3.10.11",
+    "brotli": "1.2.1",
+    "certifi": "2026.10.23",
+    "idna": "3.15",
+    "pycryptodomex": "3.24.2",
+    "python-engineio": "4.15.1",
+    "python-socketio": "5.16.2",
+    "websockets": "13.1",
+    "yarl": "1.15.2",
+    "yt-dlp": "2024.10.22"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.1,
+   "model_residual": 16.862607240505124,
+   "model_cost": 22.4,
+   "scope": 12,
+   "candidates": 37,
+   "residual_findings": 57,
+   "residual_risk_evident": 19.5225241051132,
+   "residual_risk_vm": 37.980000000000004,
+   "residual_confirmed": 1,
+   "new_findings": 11,
+   "changed": 19,
+   "major_bumps": 3,
+   "added": 9,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.4.4"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.10.11"
+    ],
+    "brotli": [
+     "1.0.9",
+     "1.2.1"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "dill": [
+     null,
+     "0.4.0"
+    ],
+    "h11": [
+     null,
+     "0.16.0"
+    ],
+    "idna": [
+     "3.4",
+     "3.15"
+    ],
+    "propcache": [
+     null,
+     "0.2.0"
+    ],
+    "pycryptodomex": [
+     "3.18.0",
+     "3.24.2"
+    ],
+    "python-engineio": [
+     "4.4.1",
+     "4.15.1"
+    ],
+    "python-socketio": [
+     "5.8.0",
+     "5.16.2"
+    ],
+    "requests": [
+     null,
+     "2.32.4"
+    ],
+    "simple-websocket": [
+     null,
+     "1.1.0"
+    ],
+    "urllib3": [
+     null,
+     "2.2.3"
+    ],
+    "websockets": [
+     "11.0.3",
+     "13.1"
+    ],
+    "wrapt": [
+     null,
+     "1.17.3"
+    ],
+    "wsproto": [
+     null,
+     "1.2.0"
+    ],
+    "yarl": [
+     "1.9.2",
+     "1.15.2"
+    ],
+    "yt-dlp": [
+     "2023.3.4",
+     "2024.10.22"
+    ]
+   },
+   "planned_changes": 10,
+   "unplanned_changes": 9,
+   "unplanned_major": 0,
+   "unplanned_added": 9,
+   "new_findings_from_unplanned": 9,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 13,
+    "details": [
+     {
+      "package": "python-socketio",
+      "version": "5.16.2",
+      "missing": [
+       "socketio.asyncio_server.AsyncServer"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   },
+   "objective_gap": 2.659916864608075
+  },
+  "evident_wide": {
+   "planned": {
+    "aiohttp": "3.10.11",
+    "brotli": "1.2.1",
+    "certifi": "2026.10.23",
+    "idna": "3.15",
+    "pycryptodomex": "3.24.2",
+    "python-engineio": "4.15.1",
+    "python-socketio": "5.16.2",
+    "websockets": "13.1",
+    "yarl": "1.15.2",
+    "yt-dlp": "2024.10.22"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.1,
+   "model_residual": 16.862607240505124,
+   "model_cost": 22.4,
+   "candidates": 37,
+   "residual_findings": 57,
+   "residual_risk_evident": 19.5225241051132,
+   "residual_risk_vm": 37.980000000000004,
+   "residual_confirmed": 1,
+   "new_findings": 11,
+   "changed": 19,
+   "major_bumps": 3,
+   "added": 9,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.4.4"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.10.11"
+    ],
+    "brotli": [
+     "1.0.9",
+     "1.2.1"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "dill": [
+     null,
+     "0.4.0"
+    ],
+    "h11": [
+     null,
+     "0.16.0"
+    ],
+    "idna": [
+     "3.4",
+     "3.15"
+    ],
+    "propcache": [
+     null,
+     "0.2.0"
+    ],
+    "pycryptodomex": [
+     "3.18.0",
+     "3.24.2"
+    ],
+    "python-engineio": [
+     "4.4.1",
+     "4.15.1"
+    ],
+    "python-socketio": [
+     "5.8.0",
+     "5.16.2"
+    ],
+    "requests": [
+     null,
+     "2.32.4"
+    ],
+    "simple-websocket": [
+     null,
+     "1.1.0"
+    ],
+    "urllib3": [
+     null,
+     "2.2.3"
+    ],
+    "websockets": [
+     "11.0.3",
+     "13.1"
+    ],
+    "wrapt": [
+     null,
+     "1.17.3"
+    ],
+    "wsproto": [
+     null,
+     "1.2.0"
+    ],
+    "yarl": [
+     "1.9.2",
+     "1.15.2"
+    ],
+    "yt-dlp": [
+     "2023.3.4",
+     "2024.10.22"
+    ]
+   },
+   "planned_changes": 10,
+   "unplanned_changes": 9,
+   "unplanned_major": 0,
+   "unplanned_added": 9,
+   "new_findings_from_unplanned": 9,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 13,
+    "details": [
+     {
+      "package": "python-socketio",
+      "version": "5.16.2",
+      "missing": [
+       "socketio.asyncio_server.AsyncServer"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  }
+ },
+ "original": {
+  "residual_findings": 73,
+  "residual_risk_evident": 27.594726887798636,
+  "residual_risk_vm": 50.29999999999998,
+  "residual_confirmed": 1,
+  "new_findings": 0,
+  "changed": 0,
+  "major_bumps": 0,
+  "added": 0,
+  "removed": 0,
+  "realised_changes": {}
+ },
+ "decision": {
+  "uncertain": 72,
+  "critical": 4,
+  "evpi_total": 0.12896242883878622,
+  "top": [
+   {
+    "package": "pycryptodomex",
+    "advisory": "CVE-2023-52323",
+    "p": 0.6559895848026134,
+    "critical": true,
+    "evpi": 0.05848177058355509
+   },
+   {
+    "package": "yt-dlp",
+    "advisory": "CVE-2023-40581",
+    "p": 0.5744984270811252,
+    "critical": true,
+    "evpi": 0.027567719157784647
+   },
+   {
+    "package": "yt-dlp",
+    "advisory": "CVE-2024-22423",
+    "p": 0.5744984270811252,
+    "critical": true,
+    "evpi": 0.027567719157784647
+   },
+   {
+    "package": "yt-dlp",
+    "advisory": "CVE-2024-38519",
+    "p": 0.5744984270811252,
+    "critical": true,
+    "evpi": 0.015345219939661842
+   },
+   {
+    "package": "aiohttp",
+    "advisory": "CVE-2026-54279",
+    "p": 0.5744984270811252,
+    "critical": false,
+    "evpi": 0.0
+   }
+  ]
+ },
+ "remediation_seconds": 126.6,
+ "status": "ok"
+}

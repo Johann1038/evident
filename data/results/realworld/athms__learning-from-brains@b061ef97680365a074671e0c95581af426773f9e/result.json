@@ -1,0 +1,2368 @@
+{
+ "id": "athms__learning-from-brains@b061ef97680365a074671e0c95581af426773f9e",
+ "meta": {
+  "id": "athms__learning-from-brains@b061ef97680365a074671e0c95581af426773f9e",
+  "repo": "athms/learning-from-brains",
+  "tag": "b061ef97680365a074671e0c95581af426773f9e",
+  "published_at": "2023-01-13T22:25:08Z",
+  "stars": 112,
+  "lock_kind": "poetry",
+  "lock_file": "poetry.lock",
+  "lock_path": "poetry.lock",
+  "subdir": "",
+  "manifest": "pyproject.toml",
+  "requires_python": "3.9.0",
+  "description": "Self-supervised learning techniques for neuroimaging data inspired by prominent learning frameworks in natural language processing + One of the broadest neuroimaging datasets used for pre-training to ",
+  "topics": [
+   "neuroimaging",
+   "research-project",
+   "transfer-learning"
+  ]
+ },
+ "python": "3.9",
+ "summary": {
+  "locked": 73,
+  "installed": 71,
+  "direct": 17,
+  "transitive": 54,
+  "edges": 137,
+  "edges_from_lock": true
+ },
+ "stats": {
+  "app_modules": 0,
+  "pkgs_analysed": 0,
+  "pkgs_no_source": 0,
+  "seconds": 0.0
+ },
+ "scan_seconds": 1.6,
+ "sdist_only": [
+  "docopt",
+  "pathtools",
+  "promise",
+  "termcolor"
+ ],
+ "baseline_resolution": {
+  "ok": true,
+  "seconds": 3.2,
+  "error": ""
+ },
+ "baseline_drift": 14,
+ "strategies": {
+  "audit_fix": {
+   "planned": {
+    "certifi": "2026.10.18",
+    "fonttools": "4.43.0",
+    "gitpython": "3.2.1",
+    "idna": "3.15",
+    "joblib": "1.2.0",
+    "numpy": "1.22.0",
+    "protobuf": "5.29.6",
+    "scikit-learn": "1.5.0",
+    "scipy": "1.10.0",
+    "sentry-sdk": "1.45.1",
+    "tqdm": "4.66.3"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 2.7,
+   "residual_findings": 119,
+   "residual_risk_evident": 49.06819263312994,
+   "residual_risk_vm": 85.85999999999997,
+   "residual_confirmed": 0,
+   "new_findings": 5,
+   "changed": 20,
+   "major_bumps": 5,
+   "added": 3,
+   "removed": 0,
+   "realised_changes": {
+    "certifi": [
+     "2021.10.8",
+     "2026.10.18"
+    ],
+    "fonttools": [
+     "4.31.2",
+     "4.43.0"
+    ],
+    "gitpython": [
+     "3.1.27",
+     "3.2.1"
+    ],
+    "idna": [
+     "3.3",
+     "3.15"
+    ],
+    "joblib": [
+     "1.1.0",
+     "1.2.0"
+    ],
+    "num2words": [
+     "0.5.10",
+     "0.5.6"
+    ],
+    "numpy": [
+     "1.19.5",
+     "1.22.0"
+    ],
+    "platformdirs": [
+     null,
+     "4.4.0"
+    ],
+    "protobuf": [
+     "3.19.4",
+     "5.29.6"
+    ],
+    "requests": [
+     "2.27.1",
+     "2.32.5"
+    ],
+    "scikit-learn": [
+     "1.0.2",
+     "1.5.0"
+    ],
+    "scipy": [
+     "1.6.1",
+     "1.10.0"
+    ],
+    "sentry-sdk": [
+     "1.5.6",
+     "1.45.1"
+    ],
+    "setproctitle": [
+     null,
+     "1.3.7"
+    ],
+    "setuptools": [
+     null,
+     "82.0.1"
+    ],
+    "termcolor": [
+     "1.1.0",
+     "3.1.0"
+    ],
+    "tqdm": [
+     "4.62.3",
+     "4.66.3"
+    ],
+    "urllib3": [
+     "1.26.8",
+     "2.6.3"
+    ],
+    "wandb": [
+     "0.12.10",
+     "0.18.3"
+    ],
+    "yaspin": [
+     "2.1.0",
+     "3.3.0"
+    ]
+   },
+   "planned_changes": 11,
+   "unplanned_changes": 9,
+   "unplanned_major": 3,
+   "unplanned_added": 3,
+   "new_findings_from_unplanned": 4,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 0,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "latest": {
+   "planned": {
+    "tqdm": "4.70.1",
+    "transformers": "4.57.6",
+    "joblib": "1.5.3",
+    "requests": "2.32.5",
+    "certifi": "2026.10.23",
+    "torch": "2.6.0",
+    "fonttools": "4.60.2",
+    "gitpython": "3.2.1",
+    "numpy": "2.0.2",
+    "protobuf": "6.33.6",
+    "scipy": "1.13.1",
+    "pytest": "8.4.2",
+    "scikit-learn": "1.6.1",
+    "filelock": "3.19.1",
+    "urllib3": "2.6.3",
+    "pillow": "11.3.0",
+    "idna": "3.20",
+    "sentry-sdk": "2.74.0"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 2.5,
+   "residual_findings": 103,
+   "residual_risk_evident": 42.0809489828604,
+   "residual_risk_vm": 73.93999999999997,
+   "residual_confirmed": 0,
+   "new_findings": 26,
+   "changed": 57,
+   "major_bumps": 10,
+   "added": 31,
+   "removed": 0,
+   "realised_changes": {
+    "annotated-types": [
+     null,
+     "0.7.0"
+    ],
+    "certifi": [
+     "2021.10.8",
+     "2026.10.23"
+    ],
+    "eval-type-backport": [
+     null,
+     "0.4.0"
+    ],
+    "exceptiongroup": [
+     null,
+     "1.3.1"
+    ],
+    "filelock": [
+     "3.6.0",
+     "3.19.1"
+    ],
+    "fonttools": [
+     "4.31.2",
+     "4.60.2"
+    ],
+    "fsspec": [
+     null,
+     "2025.10.0"
+    ],
+    "gitpython": [
+     "3.1.27",
+     "3.2.1"
+    ],
+    "hf-xet": [
+     null,
+     "1.8.0"
+    ],
+    "huggingface-hub": [
+     "0.4.0",
+     "0.36.2"
+    ],
+    "idna": [
+     "3.3",
+     "3.20"
+    ],
+    "jinja2": [
+     null,
+     "3.1.6"
+    ],
+    "joblib": [
+     "1.1.0",
+     "1.5.3"
+    ],
+    "markupsafe": [
+     null,
+     "3.0.4"
+    ],
+    "mpmath": [
+     null,
+     "1.3.0"
+    ],
+    "networkx": [
+     null,
+     "3.2.1"
+    ],
+    "num2words": [
+     "0.5.10",
+     "0.5.6"
+    ],
+    "numpy": [
+     "1.19.5",
+     "2.0.2"
+    ],
+    "nvidia-cublas-cu12": [
+     null,
+     "12.4.5.8"
+    ],
+    "nvidia-cuda-cupti-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "nvidia-cuda-nvrtc-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "nvidia-cuda-runtime-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "nvidia-cudnn-cu12": [
+     null,
+     "9.1.0.70"
+    ],
+    "nvidia-cufft-cu12": [
+     null,
+     "11.2.1.3"
+    ],
+    "nvidia-curand-cu12": [
+     null,
+     "10.3.5.147"
+    ],
+    "nvidia-cusolver-cu12": [
+     null,
+     "11.6.1.9"
+    ],
+    "nvidia-cusparse-cu12": [
+     null,
+     "12.3.1.170"
+    ],
+    "nvidia-cusparselt-cu12": [
+     null,
+     "0.6.2"
+    ],
+    "nvidia-nccl-cu12": [
+     null,
+     "2.21.5"
+    ],
+    "nvidia-nvjitlink-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "nvidia-nvtx-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "pillow": [
+     "9.0.1",
+     "11.3.0"
+    ],
+    "platformdirs": [
+     null,
+     "4.4.0"
+    ],
+    "pluggy": [
+     "1.0.0",
+     "1.6.0"
+    ],
+    "protobuf": [
+     "3.19.4",
+     "6.33.6"
+    ],
+    "pydantic": [
+     null,
+     "2.13.5"
+    ],
+    "pydantic-core": [
+     null,
+     "2.46.5"
+    ],
+    "pygments": [
+     null,
+     "2.21.0"
+    ],
+    "pytest": [
+     "7.0.1",
+     "8.4.2"
+    ],
+    "requests": [
+     "2.27.1",
+     "2.32.5"
+    ],
+    "safetensors": [
+     null,
+     "0.7.0"
+    ],
+    "scikit-learn": [
+     "1.0.2",
+     "1.6.1"
+    ],
+    "scipy": [
+     "1.6.1",
+     "1.13.1"
+    ],
+    "sentry-sdk": [
+     "1.5.6",
+     "2.74.0"
+    ],
+    "setuptools": [
+     null,
+     "82.0.1"
+    ],
+    "sympy": [
+     null,
+     "1.13.1"
+    ],
+    "termcolor": [
+     "1.1.0",
+     "3.1.0"
+    ],
+    "tokenizers": [
+     "0.11.5",
+     "0.22.2"
+    ],
+    "torch": [
+     "1.11.0",
+     "2.6.0"
+    ],
+    "tqdm": [
+     "4.62.3",
+     "4.70.1"
+    ],
+    "transformers": [
+     "4.16.2",
+     "4.57.6"
+    ],
+    "triton": [
+     null,
+     "3.2.0"
+    ],
+    "typing-extensions": [
+     "4.1.1",
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.2"
+    ],
+    "urllib3": [
+     "1.26.8",
+     "2.6.3"
+    ],
+    "wandb": [
+     "0.12.10",
+     "0.26.1"
+    ],
+    "yaspin": [
+     "2.1.0",
+     "3.3.0"
+    ]
+   },
+   "planned_changes": 18,
+   "unplanned_changes": 39,
+   "unplanned_major": 2,
+   "unplanned_added": 31,
+   "new_findings_from_unplanned": 3,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 0,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "upgrade_all": {
+   "planned": null,
+   "ok": true,
+   "error": "",
+   "seconds": 8.8,
+   "residual_findings": 118,
+   "residual_risk_evident": 47.81482280137194,
+   "residual_risk_vm": 84.44999999999996,
+   "residual_confirmed": 0,
+   "new_findings": 23,
+   "changed": 116,
+   "major_bumps": 25,
+   "added": 53,
+   "removed": 0,
+   "realised_changes": {
+    "acres": [
+     null,
+     "0.5.0"
+    ],
+    "annotated-doc": [
+     null,
+     "0.0.5"
+    ],
+    "annotated-types": [
+     null,
+     "0.7.0"
+    ],
+    "anyio": [
+     null,
+     "4.12.1"
+    ],
+    "attrs": [
+     "21.4.0",
+     "26.1.0"
+    ],
+    "bids-validator": [
+     "1.9.2",
+     "1.14.7.post0"
+    ],
+    "bidsschematools": [
+     null,
+     "1.2.1"
+    ],
+    "certifi": [
+     "2021.10.8",
+     "2026.10.23"
+    ],
+    "charset-normalizer": [
+     "2.0.12",
+     "3.5.2"
+    ],
+    "click": [
+     "8.0.4",
+     "8.1.8"
+    ],
+    "contourpy": [
+     null,
+     "1.3.0"
+    ],
+    "cycler": [
+     "0.11.0",
+     "0.12.1"
+    ],
+    "einops": [
+     "0.4.0",
+     "0.8.2"
+    ],
+    "eval-type-backport": [
+     null,
+     "0.4.0"
+    ],
+    "exceptiongroup": [
+     null,
+     "1.3.1"
+    ],
+    "filelock": [
+     "3.6.0",
+     "3.19.1"
+    ],
+    "fonttools": [
+     "4.31.2",
+     "4.60.2"
+    ],
+    "formulaic": [
+     "0.2.4",
+     "0.5.2"
+    ],
+    "fsspec": [
+     null,
+     "2025.10.0"
+    ],
+    "gitdb": [
+     "4.0.9",
+     "4.0.12"
+    ],
+    "gitpython": [
+     "3.1.27",
+     "3.2.1"
+    ],
+    "graphviz": [
+     "0.19.1",
+     "0.21"
+    ],
+    "greenlet": [
+     null,
+     "3.2.5"
+    ],
+    "h11": [
+     null,
+     "0.16.0"
+    ],
+    "hf-xet": [
+     null,
+     "1.8.0"
+    ],
+    "httpcore": [
+     null,
+     "1.0.9"
+    ],
+    "httpx": [
+     null,
+     "0.28.1"
+    ],
+    "huggingface-hub": [
+     "0.4.0",
+     "1.8.0"
+    ],
+    "idna": [
+     "3.3",
+     "3.20"
+    ],
+    "importlib-metadata": [
+     null,
+     "8.7.1"
+    ],
+    "importlib-resources": [
+     null,
+     "6.5.2"
+    ],
+    "iniconfig": [
+     "1.1.1",
+     "2.1.0"
+    ],
+    "interface-meta": [
+     "1.2.4",
+     "1.3.0"
+    ],
+    "jinja2": [
+     null,
+     "3.1.6"
+    ],
+    "joblib": [
+     "1.1.0",
+     "1.5.3"
+    ],
+    "kiwisolver": [
+     "1.4.2",
+     "1.4.7"
+    ],
+    "lxml": [
+     null,
+     "6.1.3"
+    ],
+    "markdown-it-py": [
+     null,
+     "3.0.0"
+    ],
+    "markupsafe": [
+     null,
+     "3.0.4"
+    ],
+    "matplotlib": [
+     "3.5.1",
+     "3.9.4"
+    ],
+    "mdurl": [
+     null,
+     "0.1.2"
+    ],
+    "mpmath": [
+     null,
+     "1.3.0"
+    ],
+    "networkx": [
+     null,
+     "3.2.1"
+    ],
+    "nibabel": [
+     "3.2.2",
+     "5.3.3"
+    ],
+    "nilearn": [
+     "0.9.0",
+     "0.12.1"
+    ],
+    "num2words": [
+     "0.5.10",
+     "0.5.6"
+    ],
+    "numpy": [
+     "1.19.5",
+     "2.0.2"
+    ],
+    "nvidia-cublas-cu12": [
+     null,
+     "12.8.4.1"
+    ],
+    "nvidia-cuda-cupti-cu12": [
+     null,
+     "12.8.90"
+    ],
+    "nvidia-cuda-nvrtc-cu12": [
+     null,
+     "12.8.93"
+    ],
+    "nvidia-cuda-runtime-cu12": [
+     null,
+     "12.8.90"
+    ],
+    "nvidia-cudnn-cu12": [
+     null,
+     "9.10.2.21"
+    ],
+    "nvidia-cufft-cu12": [
+     null,
+     "11.3.3.83"
+    ],
+    "nvidia-cufile-cu12": [
+     null,
+     "1.13.1.3"
+    ],
+    "nvidia-curand-cu12": [
+     null,
+     "10.3.9.90"
+    ],
+    "nvidia-cusolver-cu12": [
+     null,
+     "11.7.3.90"
+    ],
+    "nvidia-cusparse-cu12": [
+     null,
+     "12.5.8.93"
+    ],
+    "nvidia-cusparselt-cu12": [
+     null,
+     "0.7.1"
+    ],
+    "nvidia-nccl-cu12": [
+     null,
+     "2.27.3"
+    ],
+    "nvidia-nvjitlink-cu12": [
+     null,
+     "12.8.93"
+    ],
+    "nvidia-nvtx-cu12": [
+     null,
+     "12.8.90"
+    ],
+    "packaging": [
+     "21.3",
+     "26.3"
+    ],
+    "pandas": [
+     "1.1.5",
+     "2.3.3"
+    ],
+    "pathlib-abc": [
+     null,
+     "0.5.2"
+    ],
+    "pillow": [
+     "9.0.1",
+     "11.3.0"
+    ],
+    "platformdirs": [
+     null,
+     "4.4.0"
+    ],
+    "pluggy": [
+     "1.0.0",
+     "1.6.0"
+    ],
+    "protobuf": [
+     "3.19.4",
+     "6.33.6"
+    ],
+    "psutil": [
+     "5.9.0",
+     "7.2.2"
+    ],
+    "pybids": [
+     "0.14.0",
+     "0.18.1"
+    ],
+    "pydantic": [
+     null,
+     "2.13.5"
+    ],
+    "pydantic-core": [
+     null,
+     "2.46.5"
+    ],
+    "pygments": [
+     null,
+     "2.21.0"
+    ],
+    "pyparsing": [
+     "3.0.7",
+     "3.3.3"
+    ],
+    "pytest": [
+     "7.0.1",
+     "8.4.2"
+    ],
+    "python-dateutil": [
+     "2.8.2",
+     "3.0.0"
+    ],
+    "pytz": [
+     "2021.3",
+     "2026.6"
+    ],
+    "pyyaml": [
+     "6.0",
+     "6.0.3"
+    ],
+    "regex": [
+     "2022.1.18",
+     "2026.1.15"
+    ],
+    "requests": [
+     "2.27.1",
+     "2.32.5"
+    ],
+    "rich": [
+     null,
+     "15.0.0"
+    ],
+    "sacremoses": [
+     "0.0.47",
+     "0.2.0"
+    ],
+    "scikit-learn": [
+     "1.0.2",
+     "1.6.1"
+    ],
+    "scipy": [
+     "1.6.1",
+     "1.13.1"
+    ],
+    "seaborn": [
+     "0.11.2",
+     "0.13.2"
+    ],
+    "sentry-sdk": [
+     "1.5.6",
+     "2.75.0"
+    ],
+    "setuptools": [
+     null,
+     "82.0.1"
+    ],
+    "setuptools-scm": [
+     "6.4.2",
+     "10.3.4"
+    ],
+    "shellingham": [
+     null,
+     "1.5.4"
+    ],
+    "shortuuid": [
+     "1.0.8",
+     "1.0.13"
+    ],
+    "six": [
+     "1.16.0",
+     "1.17.0"
+    ],
+    "smmap": [
+     "5.0.0",
+     "5.0.3"
+    ],
+    "sqlalchemy": [
+     "1.3.24",
+     "2.0.57"
+    ],
+    "sympy": [
+     null,
+     "1.14.0"
+    ],
+    "templateflow": [
+     "0.7.2",
+     "25.1.2"
+    ],
+    "termcolor": [
+     "1.1.0",
+     "3.1.0"
+    ],
+    "threadpoolctl": [
+     "3.1.0",
+     "3.7.0"
+    ],
+    "tokenizers": [
+     "0.11.5",
+     "0.10.3"
+    ],
+    "tomli": [
+     "2.0.1",
+     "2.5.0"
+    ],
+    "torch": [
+     "1.11.0",
+     "2.8.0"
+    ],
+    "torchviz": [
+     "0.0.2",
+     "0.0.3"
+    ],
+    "tqdm": [
+     "4.62.3",
+     "4.70.1"
+    ],
+    "transformers": [
+     "4.16.2",
+     "4.12.2"
+    ],
+    "triton": [
+     null,
+     "3.4.0"
+    ],
+    "typer": [
+     null,
+     "0.23.2"
+    ],
+    "typing-extensions": [
+     "4.1.1",
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.2"
+    ],
+    "tzdata": [
+     null,
+     "2026.6"
+    ],
+    "universal-pathlib": [
+     null,
+     "0.3.10"
+    ],
+    "urllib3": [
+     "1.26.8",
+     "2.6.3"
+    ],
+    "vcs-versioning": [
+     null,
+     "2.6.0"
+    ],
+    "wandb": [
+     "0.12.10",
+     "0.26.1"
+    ],
+    "webdataset": [
+     "0.1.103",
+     "0.2.100"
+    ],
+    "wrapt": [
+     "1.13.3",
+     "2.5.2"
+    ],
+    "yaspin": [
+     "2.1.0",
+     "3.3.0"
+    ],
+    "zipp": [
+     null,
+     "3.23.1"
+    ]
+   },
+   "failure": "none",
+   "compat": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 0,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "uv_fix": {
+   "planned": {
+    "certifi": "2026.10.18",
+    "fonttools": "4.43.0",
+    "gitpython": "3.2.1",
+    "idna": "3.15",
+    "joblib": "1.2.0",
+    "numpy": "1.22.0",
+    "protobuf": "5.29.6",
+    "scikit-learn": "1.5.0",
+    "scipy": "1.10.0",
+    "sentry-sdk": "1.45.1",
+    "tqdm": "4.66.3"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 1.1,
+   "residual_findings": 123,
+   "residual_risk_evident": 50.609482352825175,
+   "residual_risk_vm": 88.54999999999998,
+   "residual_confirmed": 0,
+   "new_findings": 2,
+   "changed": 24,
+   "major_bumps": 6,
+   "added": 7,
+   "removed": 0,
+   "realised_changes": {
+    "annotated-types": [
+     null,
+     "0.7.0"
+    ],
+    "certifi": [
+     "2021.10.8",
+     "2026.10.23"
+    ],
+    "eval-type-backport": [
+     null,
+     "0.4.0"
+    ],
+    "fonttools": [
+     "4.31.2",
+     "4.60.2"
+    ],
+    "gitpython": [
+     "3.1.27",
+     "3.2.1"
+    ],
+    "idna": [
+     "3.3",
+     "3.20"
+    ],
+    "joblib": [
+     "1.1.0",
+     "1.5.3"
+    ],
+    "num2words": [
+     "0.5.10",
+     "0.5.6"
+    ],
+    "numpy": [
+     "1.19.5",
+     "2.0.2"
+    ],
+    "platformdirs": [
+     null,
+     "4.4.0"
+    ],
+    "protobuf": [
+     "3.19.4",
+     "6.33.6"
+    ],
+    "pydantic": [
+     null,
+     "2.13.5"
+    ],
+    "pydantic-core": [
+     null,
+     "2.46.5"
+    ],
+    "scikit-learn": [
+     "1.0.2",
+     "1.6.1"
+    ],
+    "scipy": [
+     "1.6.1",
+     "1.13.1"
+    ],
+    "sentry-sdk": [
+     "1.5.6",
+     "2.75.0"
+    ],
+    "setuptools": [
+     null,
+     "82.0.1"
+    ],
+    "termcolor": [
+     "1.1.0",
+     "3.1.0"
+    ],
+    "tqdm": [
+     "4.62.3",
+     "4.70.1"
+    ],
+    "typing-extensions": [
+     "4.1.1",
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.2"
+    ],
+    "urllib3": [
+     "1.26.8",
+     "1.26.20"
+    ],
+    "wandb": [
+     "0.12.10",
+     "0.26.1"
+    ],
+    "yaspin": [
+     "2.1.0",
+     "3.3.0"
+    ]
+   },
+   "failure": "none",
+   "compat": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 0,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "vm_opt": {
+   "planned": {
+    "certifi": "2026.10.23",
+    "fonttools": "4.60.2",
+    "gitpython": "3.2.1",
+    "huggingface-hub": "0.36.2",
+    "idna": "3.20",
+    "joblib": "1.5.3",
+    "numpy": "1.26.4",
+    "protobuf": "5.29.6",
+    "requests": "2.32.5",
+    "scikit-learn": "1.5.0",
+    "scipy": "1.10.0",
+    "sentry-sdk": "1.45.1",
+    "tokenizers": "0.22.2",
+    "torch": "2.6.0",
+    "tqdm": "4.70.1",
+    "transformers": "4.57.6",
+    "typing-extensions": "4.16.0",
+    "urllib3": "2.6.3"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 1.6,
+   "model_residual": 65.96999999999998,
+   "model_cost": 37.8,
+   "scope": 22,
+   "candidates": 70,
+   "residual_findings": 93,
+   "residual_risk_evident": 38.42539938744938,
+   "residual_risk_vm": 67.55999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 10,
+   "changed": 47,
+   "major_bumps": 6,
+   "added": 25,
+   "removed": 0,
+   "realised_changes": {
+    "certifi": [
+     "2021.10.8",
+     "2026.10.23"
+    ],
+    "fonttools": [
+     "4.31.2",
+     "4.60.2"
+    ],
+    "fsspec": [
+     null,
+     "2025.10.0"
+    ],
+    "gitpython": [
+     "3.1.27",
+     "3.2.1"
+    ],
+    "hf-xet": [
+     null,
+     "1.8.0"
+    ],
+    "huggingface-hub": [
+     "0.4.0",
+     "0.36.2"
+    ],
+    "idna": [
+     "3.3",
+     "3.20"
+    ],
+    "jinja2": [
+     null,
+     "3.1.6"
+    ],
+    "joblib": [
+     "1.1.0",
+     "1.5.3"
+    ],
+    "markupsafe": [
+     null,
+     "3.0.4"
+    ],
+    "mpmath": [
+     null,
+     "1.3.0"
+    ],
+    "networkx": [
+     null,
+     "3.2.1"
+    ],
+    "num2words": [
+     "0.5.10",
+     "0.5.6"
+    ],
+    "numpy": [
+     "1.19.5",
+     "1.26.4"
+    ],
+    "nvidia-cublas-cu12": [
+     null,
+     "12.4.5.8"
+    ],
+    "nvidia-cuda-cupti-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "nvidia-cuda-nvrtc-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "nvidia-cuda-runtime-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "nvidia-cudnn-cu12": [
+     null,
+     "9.1.0.70"
+    ],
+    "nvidia-cufft-cu12": [
+     null,
+     "11.2.1.3"
+    ],
+    "nvidia-curand-cu12": [
+     null,
+     "10.3.5.147"
+    ],
+    "nvidia-cusolver-cu12": [
+     null,
+     "11.6.1.9"
+    ],
+    "nvidia-cusparse-cu12": [
+     null,
+     "12.3.1.170"
+    ],
+    "nvidia-cusparselt-cu12": [
+     null,
+     "0.6.2"
+    ],
+    "nvidia-nccl-cu12": [
+     null,
+     "2.21.5"
+    ],
+    "nvidia-nvjitlink-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "nvidia-nvtx-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "platformdirs": [
+     null,
+     "4.4.0"
+    ],
+    "protobuf": [
+     "3.19.4",
+     "5.29.6"
+    ],
+    "requests": [
+     "2.27.1",
+     "2.32.5"
+    ],
+    "safetensors": [
+     null,
+     "0.7.0"
+    ],
+    "scikit-learn": [
+     "1.0.2",
+     "1.5.0"
+    ],
+    "scipy": [
+     "1.6.1",
+     "1.10.0"
+    ],
+    "sentry-sdk": [
+     "1.5.6",
+     "1.45.1"
+    ],
+    "setproctitle": [
+     null,
+     "1.3.7"
+    ],
+    "setuptools": [
+     null,
+     "82.0.1"
+    ],
+    "sympy": [
+     null,
+     "1.13.1"
+    ],
+    "termcolor": [
+     "1.1.0",
+     "3.1.0"
+    ],
+    "tokenizers": [
+     "0.11.5",
+     "0.22.2"
+    ],
+    "torch": [
+     "1.11.0",
+     "2.6.0"
+    ],
+    "tqdm": [
+     "4.62.3",
+     "4.70.1"
+    ],
+    "transformers": [
+     "4.16.2",
+     "4.57.6"
+    ],
+    "triton": [
+     null,
+     "3.2.0"
+    ],
+    "typing-extensions": [
+     "4.1.1",
+     "4.16.0"
+    ],
+    "urllib3": [
+     "1.26.8",
+     "2.6.3"
+    ],
+    "wandb": [
+     "0.12.10",
+     "0.18.3"
+    ],
+    "yaspin": [
+     "2.1.0",
+     "3.3.0"
+    ]
+   },
+   "planned_changes": 18,
+   "unplanned_changes": 29,
+   "unplanned_major": 2,
+   "unplanned_added": 25,
+   "new_findings_from_unplanned": 3,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 0,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "coral_opt": {
+   "planned": {
+    "certifi": "2026.10.23",
+    "fonttools": "4.60.2",
+    "gitpython": "3.2.1",
+    "huggingface-hub": "0.36.2",
+    "idna": "3.20",
+    "joblib": "1.5.3",
+    "numpy": "1.26.4",
+    "protobuf": "5.29.6",
+    "requests": "2.32.5",
+    "scikit-learn": "1.5.0",
+    "scipy": "1.10.0",
+    "sentry-sdk": "1.45.1",
+    "tokenizers": "0.22.2",
+    "torch": "2.6.0",
+    "transformers": "4.57.6",
+    "typing-extensions": "4.16.0",
+    "urllib3": "2.6.3"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.5,
+   "model_residual": 33.50690629897201,
+   "model_cost": 35.599999999999994,
+   "scope": 22,
+   "candidates": 70,
+   "residual_findings": 94,
+   "residual_risk_evident": 38.648857748297395,
+   "residual_risk_vm": 67.94999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 10,
+   "changed": 46,
+   "major_bumps": 6,
+   "added": 25,
+   "removed": 0,
+   "realised_changes": {
+    "certifi": [
+     "2021.10.8",
+     "2026.10.23"
+    ],
+    "fonttools": [
+     "4.31.2",
+     "4.60.2"
+    ],
+    "fsspec": [
+     null,
+     "2025.10.0"
+    ],
+    "gitpython": [
+     "3.1.27",
+     "3.2.1"
+    ],
+    "hf-xet": [
+     null,
+     "1.8.0"
+    ],
+    "huggingface-hub": [
+     "0.4.0",
+     "0.36.2"
+    ],
+    "idna": [
+     "3.3",
+     "3.20"
+    ],
+    "jinja2": [
+     null,
+     "3.1.6"
+    ],
+    "joblib": [
+     "1.1.0",
+     "1.5.3"
+    ],
+    "markupsafe": [
+     null,
+     "3.0.4"
+    ],
+    "mpmath": [
+     null,
+     "1.3.0"
+    ],
+    "networkx": [
+     null,
+     "3.2.1"
+    ],
+    "num2words": [
+     "0.5.10",
+     "0.5.6"
+    ],
+    "numpy": [
+     "1.19.5",
+     "1.26.4"
+    ],
+    "nvidia-cublas-cu12": [
+     null,
+     "12.4.5.8"
+    ],
+    "nvidia-cuda-cupti-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "nvidia-cuda-nvrtc-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "nvidia-cuda-runtime-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "nvidia-cudnn-cu12": [
+     null,
+     "9.1.0.70"
+    ],
+    "nvidia-cufft-cu12": [
+     null,
+     "11.2.1.3"
+    ],
+    "nvidia-curand-cu12": [
+     null,
+     "10.3.5.147"
+    ],
+    "nvidia-cusolver-cu12": [
+     null,
+     "11.6.1.9"
+    ],
+    "nvidia-cusparse-cu12": [
+     null,
+     "12.3.1.170"
+    ],
+    "nvidia-cusparselt-cu12": [
+     null,
+     "0.6.2"
+    ],
+    "nvidia-nccl-cu12": [
+     null,
+     "2.21.5"
+    ],
+    "nvidia-nvjitlink-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "nvidia-nvtx-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "platformdirs": [
+     null,
+     "4.4.0"
+    ],
+    "protobuf": [
+     "3.19.4",
+     "5.29.6"
+    ],
+    "requests": [
+     "2.27.1",
+     "2.32.5"
+    ],
+    "safetensors": [
+     null,
+     "0.7.0"
+    ],
+    "scikit-learn": [
+     "1.0.2",
+     "1.5.0"
+    ],
+    "scipy": [
+     "1.6.1",
+     "1.10.0"
+    ],
+    "sentry-sdk": [
+     "1.5.6",
+     "1.45.1"
+    ],
+    "setproctitle": [
+     null,
+     "1.3.7"
+    ],
+    "setuptools": [
+     null,
+     "82.0.1"
+    ],
+    "sympy": [
+     null,
+     "1.13.1"
+    ],
+    "termcolor": [
+     "1.1.0",
+     "3.1.0"
+    ],
+    "tokenizers": [
+     "0.11.5",
+     "0.22.2"
+    ],
+    "torch": [
+     "1.11.0",
+     "2.6.0"
+    ],
+    "transformers": [
+     "4.16.2",
+     "4.57.6"
+    ],
+    "triton": [
+     null,
+     "3.2.0"
+    ],
+    "typing-extensions": [
+     "4.1.1",
+     "4.16.0"
+    ],
+    "urllib3": [
+     "1.26.8",
+     "2.6.3"
+    ],
+    "wandb": [
+     "0.12.10",
+     "0.18.3"
+    ],
+    "yaspin": [
+     "2.1.0",
+     "3.3.0"
+    ]
+   },
+   "planned_changes": 17,
+   "unplanned_changes": 29,
+   "unplanned_major": 2,
+   "unplanned_added": 25,
+   "new_findings_from_unplanned": 3,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 0,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "cape_opt": {
+   "planned": {
+    "certifi": "2026.10.23",
+    "fonttools": "4.60.2",
+    "gitpython": "3.2.1",
+    "huggingface-hub": "0.36.2",
+    "idna": "3.20",
+    "joblib": "1.5.3",
+    "numpy": "1.26.4",
+    "protobuf": "5.29.6",
+    "requests": "2.32.5",
+    "scikit-learn": "1.5.0",
+    "scipy": "1.10.0",
+    "sentry-sdk": "1.45.1",
+    "tokenizers": "0.22.2",
+    "torch": "2.6.0",
+    "tqdm": "4.70.1",
+    "transformers": "4.57.6",
+    "typing-extensions": "4.16.0",
+    "urllib3": "2.6.3"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.4,
+   "model_residual": 64.05690629897201,
+   "model_cost": 37.8,
+   "scope": 22,
+   "candidates": 70,
+   "residual_findings": 93,
+   "residual_risk_evident": 38.42539938744938,
+   "residual_risk_vm": 67.55999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 10,
+   "changed": 47,
+   "major_bumps": 6,
+   "added": 25,
+   "removed": 0,
+   "realised_changes": {
+    "certifi": [
+     "2021.10.8",
+     "2026.10.23"
+    ],
+    "fonttools": [
+     "4.31.2",
+     "4.60.2"
+    ],
+    "fsspec": [
+     null,
+     "2025.10.0"
+    ],
+    "gitpython": [
+     "3.1.27",
+     "3.2.1"
+    ],
+    "hf-xet": [
+     null,
+     "1.8.0"
+    ],
+    "huggingface-hub": [
+     "0.4.0",
+     "0.36.2"
+    ],
+    "idna": [
+     "3.3",
+     "3.20"
+    ],
+    "jinja2": [
+     null,
+     "3.1.6"
+    ],
+    "joblib": [
+     "1.1.0",
+     "1.5.3"
+    ],
+    "markupsafe": [
+     null,
+     "3.0.4"
+    ],
+    "mpmath": [
+     null,
+     "1.3.0"
+    ],
+    "networkx": [
+     null,
+     "3.2.1"
+    ],
+    "num2words": [
+     "0.5.10",
+     "0.5.6"
+    ],
+    "numpy": [
+     "1.19.5",
+     "1.26.4"
+    ],
+    "nvidia-cublas-cu12": [
+     null,
+     "12.4.5.8"
+    ],
+    "nvidia-cuda-cupti-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "nvidia-cuda-nvrtc-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "nvidia-cuda-runtime-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "nvidia-cudnn-cu12": [
+     null,
+     "9.1.0.70"
+    ],
+    "nvidia-cufft-cu12": [
+     null,
+     "11.2.1.3"
+    ],
+    "nvidia-curand-cu12": [
+     null,
+     "10.3.5.147"
+    ],
+    "nvidia-cusolver-cu12": [
+     null,
+     "11.6.1.9"
+    ],
+    "nvidia-cusparse-cu12": [
+     null,
+     "12.3.1.170"
+    ],
+    "nvidia-cusparselt-cu12": [
+     null,
+     "0.6.2"
+    ],
+    "nvidia-nccl-cu12": [
+     null,
+     "2.21.5"
+    ],
+    "nvidia-nvjitlink-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "nvidia-nvtx-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "platformdirs": [
+     null,
+     "4.4.0"
+    ],
+    "protobuf": [
+     "3.19.4",
+     "5.29.6"
+    ],
+    "requests": [
+     "2.27.1",
+     "2.32.5"
+    ],
+    "safetensors": [
+     null,
+     "0.7.0"
+    ],
+    "scikit-learn": [
+     "1.0.2",
+     "1.5.0"
+    ],
+    "scipy": [
+     "1.6.1",
+     "1.10.0"
+    ],
+    "sentry-sdk": [
+     "1.5.6",
+     "1.45.1"
+    ],
+    "setproctitle": [
+     null,
+     "1.3.7"
+    ],
+    "setuptools": [
+     null,
+     "82.0.1"
+    ],
+    "sympy": [
+     null,
+     "1.13.1"
+    ],
+    "termcolor": [
+     "1.1.0",
+     "3.1.0"
+    ],
+    "tokenizers": [
+     "0.11.5",
+     "0.22.2"
+    ],
+    "torch": [
+     "1.11.0",
+     "2.6.0"
+    ],
+    "tqdm": [
+     "4.62.3",
+     "4.70.1"
+    ],
+    "transformers": [
+     "4.16.2",
+     "4.57.6"
+    ],
+    "triton": [
+     null,
+     "3.2.0"
+    ],
+    "typing-extensions": [
+     "4.1.1",
+     "4.16.0"
+    ],
+    "urllib3": [
+     "1.26.8",
+     "2.6.3"
+    ],
+    "wandb": [
+     "0.12.10",
+     "0.18.3"
+    ],
+    "yaspin": [
+     "2.1.0",
+     "3.3.0"
+    ]
+   },
+   "planned_changes": 18,
+   "unplanned_changes": 29,
+   "unplanned_major": 2,
+   "unplanned_added": 25,
+   "new_findings_from_unplanned": 3,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 0,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "evident": {
+   "planned": {
+    "certifi": "2026.10.23",
+    "fonttools": "4.60.2",
+    "gitpython": "3.2.1",
+    "huggingface-hub": "0.36.2",
+    "idna": "3.20",
+    "joblib": "1.5.3",
+    "numpy": "1.26.4",
+    "protobuf": "5.29.6",
+    "requests": "2.32.5",
+    "scikit-learn": "1.5.0",
+    "scipy": "1.10.0",
+    "sentry-sdk": "1.45.1",
+    "tokenizers": "0.22.2",
+    "torch": "2.6.0",
+    "tqdm": "4.70.1",
+    "transformers": "4.57.6",
+    "typing-extensions": "4.16.0",
+    "urllib3": "2.6.3"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.4,
+   "model_residual": 37.79884119267502,
+   "model_cost": 37.8,
+   "scope": 22,
+   "candidates": 70,
+   "residual_findings": 93,
+   "residual_risk_evident": 38.42539938744938,
+   "residual_risk_vm": 67.55999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 10,
+   "changed": 47,
+   "major_bumps": 6,
+   "added": 25,
+   "removed": 0,
+   "realised_changes": {
+    "certifi": [
+     "2021.10.8",
+     "2026.10.23"
+    ],
+    "fonttools": [
+     "4.31.2",
+     "4.60.2"
+    ],
+    "fsspec": [
+     null,
+     "2025.10.0"
+    ],
+    "gitpython": [
+     "3.1.27",
+     "3.2.1"
+    ],
+    "hf-xet": [
+     null,
+     "1.8.0"
+    ],
+    "huggingface-hub": [
+     "0.4.0",
+     "0.36.2"
+    ],
+    "idna": [
+     "3.3",
+     "3.20"
+    ],
+    "jinja2": [
+     null,
+     "3.1.6"
+    ],
+    "joblib": [
+     "1.1.0",
+     "1.5.3"
+    ],
+    "markupsafe": [
+     null,
+     "3.0.4"
+    ],
+    "mpmath": [
+     null,
+     "1.3.0"
+    ],
+    "networkx": [
+     null,
+     "3.2.1"
+    ],
+    "num2words": [
+     "0.5.10",
+     "0.5.6"
+    ],
+    "numpy": [
+     "1.19.5",
+     "1.26.4"
+    ],
+    "nvidia-cublas-cu12": [
+     null,
+     "12.4.5.8"
+    ],
+    "nvidia-cuda-cupti-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "nvidia-cuda-nvrtc-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "nvidia-cuda-runtime-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "nvidia-cudnn-cu12": [
+     null,
+     "9.1.0.70"
+    ],
+    "nvidia-cufft-cu12": [
+     null,
+     "11.2.1.3"
+    ],
+    "nvidia-curand-cu12": [
+     null,
+     "10.3.5.147"
+    ],
+    "nvidia-cusolver-cu12": [
+     null,
+     "11.6.1.9"
+    ],
+    "nvidia-cusparse-cu12": [
+     null,
+     "12.3.1.170"
+    ],
+    "nvidia-cusparselt-cu12": [
+     null,
+     "0.6.2"
+    ],
+    "nvidia-nccl-cu12": [
+     null,
+     "2.21.5"
+    ],
+    "nvidia-nvjitlink-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "nvidia-nvtx-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "platformdirs": [
+     null,
+     "4.4.0"
+    ],
+    "protobuf": [
+     "3.19.4",
+     "5.29.6"
+    ],
+    "requests": [
+     "2.27.1",
+     "2.32.5"
+    ],
+    "safetensors": [
+     null,
+     "0.7.0"
+    ],
+    "scikit-learn": [
+     "1.0.2",
+     "1.5.0"
+    ],
+    "scipy": [
+     "1.6.1",
+     "1.10.0"
+    ],
+    "sentry-sdk": [
+     "1.5.6",
+     "1.45.1"
+    ],
+    "setproctitle": [
+     null,
+     "1.3.7"
+    ],
+    "setuptools": [
+     null,
+     "82.0.1"
+    ],
+    "sympy": [
+     null,
+     "1.13.1"
+    ],
+    "termcolor": [
+     "1.1.0",
+     "3.1.0"
+    ],
+    "tokenizers": [
+     "0.11.5",
+     "0.22.2"
+    ],
+    "torch": [
+     "1.11.0",
+     "2.6.0"
+    ],
+    "tqdm": [
+     "4.62.3",
+     "4.70.1"
+    ],
+    "transformers": [
+     "4.16.2",
+     "4.57.6"
+    ],
+    "triton": [
+     null,
+     "3.2.0"
+    ],
+    "typing-extensions": [
+     "4.1.1",
+     "4.16.0"
+    ],
+    "urllib3": [
+     "1.26.8",
+     "2.6.3"
+    ],
+    "wandb": [
+     "0.12.10",
+     "0.18.3"
+    ],
+    "yaspin": [
+     "2.1.0",
+     "3.3.0"
+    ]
+   },
+   "planned_changes": 18,
+   "unplanned_changes": 29,
+   "unplanned_major": 2,
+   "unplanned_added": 25,
+   "new_findings_from_unplanned": 3,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 0,
+    "details": [],
+    "api_compatible": true
+   },
+   "objective_gap": 0.6265581947743613
+  },
+  "evident_wide": {
+   "planned": {
+    "certifi": "2026.10.23",
+    "fonttools": "4.60.2",
+    "gitpython": "3.2.1",
+    "huggingface-hub": "0.36.2",
+    "idna": "3.20",
+    "joblib": "1.5.3",
+    "numpy": "1.26.4",
+    "protobuf": "5.29.6",
+    "requests": "2.32.5",
+    "scikit-learn": "1.5.0",
+    "scipy": "1.10.0",
+    "sentry-sdk": "1.45.1",
+    "tokenizers": "0.22.2",
+    "torch": "2.6.0",
+    "tqdm": "4.70.1",
+    "transformers": "4.57.6",
+    "typing-extensions": "4.16.0",
+    "urllib3": "2.6.3"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.4,
+   "model_residual": 37.79884119267502,
+   "model_cost": 37.8,
+   "candidates": 70,
+   "residual_findings": 93,
+   "residual_risk_evident": 38.42539938744938,
+   "residual_risk_vm": 67.55999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 10,
+   "changed": 47,
+   "major_bumps": 6,
+   "added": 25,
+   "removed": 0,
+   "realised_changes": {
+    "certifi": [
+     "2021.10.8",
+     "2026.10.23"
+    ],
+    "fonttools": [
+     "4.31.2",
+     "4.60.2"
+    ],
+    "fsspec": [
+     null,
+     "2025.10.0"
+    ],
+    "gitpython": [
+     "3.1.27",
+     "3.2.1"
+    ],
+    "hf-xet": [
+     null,
+     "1.8.0"
+    ],
+    "huggingface-hub": [
+     "0.4.0",
+     "0.36.2"
+    ],
+    "idna": [
+     "3.3",
+     "3.20"
+    ],
+    "jinja2": [
+     null,
+     "3.1.6"
+    ],
+    "joblib": [
+     "1.1.0",
+     "1.5.3"
+    ],
+    "markupsafe": [
+     null,
+     "3.0.4"
+    ],
+    "mpmath": [
+     null,
+     "1.3.0"
+    ],
+    "networkx": [
+     null,
+     "3.2.1"
+    ],
+    "num2words": [
+     "0.5.10",
+     "0.5.6"
+    ],
+    "numpy": [
+     "1.19.5",
+     "1.26.4"
+    ],
+    "nvidia-cublas-cu12": [
+     null,
+     "12.4.5.8"
+    ],
+    "nvidia-cuda-cupti-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "nvidia-cuda-nvrtc-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "nvidia-cuda-runtime-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "nvidia-cudnn-cu12": [
+     null,
+     "9.1.0.70"
+    ],
+    "nvidia-cufft-cu12": [
+     null,
+     "11.2.1.3"
+    ],
+    "nvidia-curand-cu12": [
+     null,
+     "10.3.5.147"
+    ],
+    "nvidia-cusolver-cu12": [
+     null,
+     "11.6.1.9"
+    ],
+    "nvidia-cusparse-cu12": [
+     null,
+     "12.3.1.170"
+    ],
+    "nvidia-cusparselt-cu12": [
+     null,
+     "0.6.2"
+    ],
+    "nvidia-nccl-cu12": [
+     null,
+     "2.21.5"
+    ],
+    "nvidia-nvjitlink-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "nvidia-nvtx-cu12": [
+     null,
+     "12.4.127"
+    ],
+    "platformdirs": [
+     null,
+     "4.4.0"
+    ],
+    "protobuf": [
+     "3.19.4",
+     "5.29.6"
+    ],
+    "requests": [
+     "2.27.1",
+     "2.32.5"
+    ],
+    "safetensors": [
+     null,
+     "0.7.0"
+    ],
+    "scikit-learn": [
+     "1.0.2",
+     "1.5.0"
+    ],
+    "scipy": [
+     "1.6.1",
+     "1.10.0"
+    ],
+    "sentry-sdk": [
+     "1.5.6",
+     "1.45.1"
+    ],
+    "setproctitle": [
+     null,
+     "1.3.7"
+    ],
+    "setuptools": [
+     null,
+     "82.0.1"
+    ],
+    "sympy": [
+     null,
+     "1.13.1"
+    ],
+    "termcolor": [
+     "1.1.0",
+     "3.1.0"
+    ],
+    "tokenizers": [
+     "0.11.5",
+     "0.22.2"
+    ],
+    "torch": [
+     "1.11.0",
+     "2.6.0"
+    ],
+    "tqdm": [
+     "4.62.3",
+     "4.70.1"
+    ],
+    "transformers": [
+     "4.16.2",
+     "4.57.6"
+    ],
+    "triton": [
+     null,
+     "3.2.0"
+    ],
+    "typing-extensions": [
+     "4.1.1",
+     "4.16.0"
+    ],
+    "urllib3": [
+     "1.26.8",
+     "2.6.3"
+    ],
+    "wandb": [
+     "0.12.10",
+     "0.18.3"
+    ],
+    "yaspin": [
+     "2.1.0",
+     "3.3.0"
+    ]
+   },
+   "planned_changes": 18,
+   "unplanned_changes": 29,
+   "unplanned_major": 2,
+   "unplanned_added": 25,
+   "new_findings_from_unplanned": 3,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 0,
+    "details": [],
+    "api_compatible": true
+   }
+  }
+ },
+ "original": {
+  "residual_findings": 183,
+  "residual_risk_evident": 76.80664941455338,
+  "residual_risk_vm": 134.04999999999995,
+  "residual_confirmed": 0,
+  "new_findings": 0,
+  "changed": 0,
+  "major_bumps": 0,
+  "added": 0,
+  "removed": 0,
+  "realised_changes": {}
+ },
+ "decision": {
+  "uncertain": 183,
+  "critical": 5,
+  "evpi_total": 0.2660751551203592,
+  "top": [
+   {
+    "package": "tqdm",
+    "advisory": "CVE-2024-34062",
+    "p": 0.5729701560205399,
+    "critical": true,
+    "evpi": 0.09394656567548074
+   },
+   {
+    "package": "fonttools",
+    "advisory": "CVE-2023-45139",
+    "p": 0.5729701560205399,
+    "critical": true,
+    "evpi": 0.07259507347650894
+   },
+   {
+    "package": "scikit-learn",
+    "advisory": "CVE-2024-5206",
+    "p": 0.5729701560205399,
+    "critical": true,
+    "evpi": 0.07259507347650894
+   },
+   {
+    "package": "joblib",
+    "advisory": "CVE-2022-21797",
+    "p": 0.5729701560205399,
+    "critical": true,
+    "evpi": 0.015512208097936703
+   },
+   {
+    "package": "sentry-sdk",
+    "advisory": "CVE-2023-28117",
+    "p": 0.5729701560205399,
+    "critical": true,
+    "evpi": 0.011426234393923823
+   }
+  ]
+ },
+ "remediation_seconds": 36.1,
+ "status": "ok"
+}

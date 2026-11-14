@@ -79,12 +79,13 @@
       "aiohttp.cookiejar.CookieJar.save"
      ],
      "witness": [
-      "__app__.metagpt.roles.engineer.Engineer._act_sp",
+      "__app__.metagpt.actions.action.<module>",
       "aiohttp.client.ClientSession.__init__",
       "aiohttp.client_reqrep.ClientRequest.update_cookies",
       "aiohttp.cookiejar.CookieJar.load"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -188,11 +189,12 @@
       "aiohttp.web_ws.WebSocketResponse.close"
      ],
      "witness": [
-      "__app__.metagpt.roles.engineer.Engineer._act_sp",
+      "__app__.metagpt.actions.action.<module>",
       "aiohttp.client.ClientSession.__init__",
       "aiohttp.client_ws.ClientWebSocketResponse.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -284,13 +286,14 @@
       "aiohttp.formdata.FormData.add_field"
      ],
      "witness": [
-      "__app__.metagpt.roles.engineer.Engineer._act_sp",
+      "__app__.metagpt.actions.action.<module>",
       "aiohttp.client.ClientSession.__init__",
       "aiohttp.formdata.FormData.__init__",
       "aiohttp.formdata.FormData.add_fields",
       "aiohttp.formdata.FormData.add_field"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -387,7 +390,8 @@
       "langchain.utilities.powerbi.PowerBIDataset.run",
       "aiohttp.web_request.BaseRequest.post"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -482,7 +486,8 @@
       "__app__.metagpt.tools.search_engine_serpapi.<module>",
       "aiohttp.<module>"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -573,12 +578,13 @@
       "aiohttp.cookiejar.CookieJar.filter_cookies"
      ],
      "witness": [
-      "__app__.metagpt.tools.search_engine_serpapi.SerpAPIWrapper.results",
+      "__app__.metagpt.tools.search_engine_serpapi.SerpAPIWrapper._process_response",
       "aiohttp.client.ClientSession.get",
       "aiohttp.client.ClientSession._request",
       "aiohttp.cookiejar.CookieJar.filter_cookies"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -684,7 +690,8 @@
       "aiohttp.streams.StreamReader.feed_data",
       "aiohttp.base_protocol.BaseProtocol.pause_reading"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -873,7 +880,8 @@
       "aiohttp.web_urldispatcher.StaticResource.__init__",
       "aiohttp.web_urldispatcher.StaticResource.resolve"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -909,7 +917,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -959,14 +967,20 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.web_urldispatcher.StaticResource._handle",
       "aiohttp.web_urldispatcher.StaticResource.url_for"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -1069,13 +1083,14 @@
       "aiohttp.multipart.MultipartWriter.write"
      ],
      "witness": [
-      "__app__.metagpt.roles.engineer.Engineer._act_sp",
+      "__app__.metagpt.actions.action.<module>",
       "aiohttp.client.ClientSession.__init__",
       "aiohttp.formdata.FormData.__init__",
       "aiohttp.formdata.FormData.add_fields",
       "aiohttp.formdata.FormData.add_field"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -1167,11 +1182,12 @@
       "aiohttp.web_protocol.RequestHandler.connection_made"
      ],
      "witness": [
-      "__app__.metagpt.roles.engineer.Engineer._act_sp",
+      "__app__.metagpt.actions.action.<module>",
       "aiohttp.client.ClientSession.__init__",
       "aiohttp.web_protocol.RequestHandler.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -1272,7 +1288,8 @@
       "aiohttp.multipart.MultipartReader._read_headers",
       "aiohttp.http_parser.HeadersParser.parse_headers"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -1396,7 +1413,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -1446,7 +1463,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.http_parser.HttpParser.parse_headers",
@@ -1454,7 +1471,13 @@
       "aiohttp.http_parser._is_supported_upgrade"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -1546,11 +1569,12 @@
       "aiohttp.cookiejar.CookieJar.update_cookies"
      ],
      "witness": [
-      "__app__.metagpt.tools.search_engine_serpapi.SerpAPIWrapper.results",
+      "__app__.metagpt.tools.search_engine_serpapi.SerpAPIWrapper._process_response",
       "aiohttp.client.ClientSession.get",
       "aiohttp.client.ClientSession._request"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -1647,7 +1671,8 @@
       "langchain.utilities.powerbi.PowerBIDataset.run",
       "aiohttp.web_request.BaseRequest.post"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -1749,11 +1774,12 @@
       "aiohttp.web_request.BaseRequest.post"
      ],
      "witness": [
-      "__app__.metagpt.roles.engineer.Engineer._act_sp",
+      "__app__.metagpt.actions.action.<module>",
       "aiohttp.client.ClientSession.__init__",
       "aiohttp.http_parser.DeflateBuffer.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -1789,7 +1815,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -1839,13 +1865,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.web_urldispatcher.StaticResource._directory_as_html"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -1942,7 +1974,8 @@
       "aiohttp.web_ws.WebSocketResponse.close",
       "aiohttp.http_parser.HttpPayloadParser.feed_data"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -2047,7 +2080,8 @@
       "aiohttp.multipart.MultipartReader._read_headers",
       "aiohttp.http_parser.HeadersParser.parse_headers"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -2154,7 +2188,8 @@
       "aiohttp.multipart.MultipartReader._read_headers",
       "aiohttp.http_parser.HeadersParser.parse_headers"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -2246,11 +2281,12 @@
       "aiohttp.client.ClientSession._request"
      ],
      "witness": [
-      "__app__.metagpt.tools.search_engine_serpapi.SerpAPIWrapper.results",
+      "__app__.metagpt.tools.search_engine_serpapi.SerpAPIWrapper._process_response",
       "aiohttp.client.ClientSession.get",
       "aiohttp.client.ClientSession._request"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -2343,13 +2379,14 @@
      ],
      "witness": [
       "__app__.metagpt.document_store.document.read_data",
-      "langchain.document_loaders.datadog_logs.DatadogLogsLoader.load",
+      "langchain.document_loaders.url_playwright.PlaywrightURLLoader.load",
       "langchain.utilities.zapier.ZapierNLAWrapper.run",
       "aiohttp.client_reqrep.ClientRequest.send",
       "aiohttp.client_reqrep.ClientRequest.write_bytes",
       "aiohttp.web_response.Response.write_eof"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -2446,7 +2483,8 @@
       "langchain.utilities.powerbi.PowerBIDataset.run",
       "aiohttp.web_request.BaseRequest.post"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -2548,7 +2586,8 @@
       "aiohttp.multipart.MultipartReader._read_headers",
       "aiohttp.http_parser.HeadersParser.parse_headers"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -2728,11 +2767,12 @@
       "aiohttp.web_request.BaseRequest.__init__"
      ],
      "witness": [
-      "__app__.metagpt.roles.engineer.Engineer._act_sp",
+      "__app__.metagpt.actions.action.<module>",
       "aiohttp.client.ClientSession.__init__",
       "aiohttp.web_request.BaseRequest.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -2912,13 +2952,14 @@
       "aiohttp.streams.StreamReader._read_nowait"
      ],
      "witness": [
-      "__app__.metagpt.document_store.faiss_store.FaissStore._load",
-      "langchain.utilities.serpapi.HiddenPrints.__exit__",
-      "aiohttp.web_ws.WebSocketResponse.close",
+      "__app__.metagpt.actions.action.<module>",
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.payload.StringIOPayload.__init__",
       "aiohttp.streams.StreamReader.read",
       "aiohttp.streams.StreamReader._read_nowait"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3014,11 +3055,12 @@
       "aiohttp.streams.StreamReader.readchunk"
      ],
      "witness": [
-      "__app__.metagpt.roles.engineer.Engineer._act_sp",
+      "__app__.metagpt.actions.action.<module>",
       "aiohttp.client.ClientSession.__init__",
       "aiohttp.streams.StreamReader.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3124,7 +3166,8 @@
       "aiohttp.multipart.MultipartReader._read_headers",
       "aiohttp.http_parser.HeadersParser.parse_headers"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3226,7 +3269,8 @@
       "aiohttp.client.ClientSession.__init__",
       "aiohttp.cookiejar.CookieJar.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3326,7 +3370,8 @@
       "aiohttp.client.ClientSession.__init__",
       "aiohttp.connector.TCPConnector.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3418,11 +3463,12 @@
       "aiohttp.client.ClientSession._request"
      ],
      "witness": [
-      "__app__.metagpt.tools.search_engine_serpapi.SerpAPIWrapper.results",
+      "__app__.metagpt.tools.search_engine_serpapi.SerpAPIWrapper._process_response",
       "aiohttp.client.ClientSession.get",
       "aiohttp.client.ClientSession._request"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3603,12 +3649,13 @@
       "aiohttp.cookiejar.CookieJar.save"
      ],
      "witness": [
-      "__app__.metagpt.roles.engineer.Engineer._act_sp",
+      "__app__.metagpt.actions.action.<module>",
       "aiohttp.client.ClientSession.__init__",
       "aiohttp.client_reqrep.ClientRequest.update_cookies",
       "aiohttp.cookiejar.CookieJar.load"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3708,7 +3755,8 @@
       "aiohttp.multipart.BodyPartReader.read_chunk",
       "aiohttp.multipart.BodyPartReader._read_chunk_from_stream"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3814,7 +3862,8 @@
       "aiohttp.web_request.BaseRequest.multipart",
       "aiohttp.multipart.MultipartReader.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3850,7 +3899,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -3900,13 +3949,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.payload.Payload._binary_headers"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -3999,11 +4054,12 @@
       "aiohttp.http_parser.HttpParser.feed_data"
      ],
      "witness": [
-      "__app__.metagpt.roles.engineer.Engineer._act_sp",
+      "__app__.metagpt.actions.action.<module>",
       "aiohttp.client.ClientSession.__init__",
       "aiohttp.http_parser.HttpParser.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -4039,7 +4095,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -4089,13 +4145,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.client.ClientSession._ws_connect"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -4131,7 +4193,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -4181,13 +4243,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.web_request.BaseRequest.http_range"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -4281,11 +4349,12 @@
       "aiohttp.web_response.StreamResponse._set_status"
      ],
      "witness": [
-      "__app__.metagpt.roles.engineer.Engineer._act_sp",
+      "__app__.metagpt.actions.action.<module>",
       "aiohttp.client.ClientSession.__init__",
       "aiohttp.http_writer._py_serialize_headers"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -4321,7 +4390,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -4371,13 +4440,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.web_urldispatcher.StaticResource._handle"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -4410,7 +4485,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -4460,13 +4535,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.http_parser.HttpParser.parse_headers"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -4562,7 +4643,8 @@
       "aiohttp.web_ws.WebSocketResponse.close",
       "aiohttp.http_parser.HttpParser.feed_data"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -4655,11 +4737,12 @@
      ],
      "witness": [
       "__app__.metagpt.document_store.document.read_data",
-      "langchain.document_loaders.datadog_logs.DatadogLogsLoader.load",
+      "langchain.document_loaders.url_playwright.PlaywrightURLLoader.load",
       "langchain.utilities.zapier.ZapierNLAWrapper.run",
       "aiohttp.client_reqrep.ClientRequest.send"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -4751,11 +4834,12 @@
       "aiohttp.client_reqrep.ClientRequest.__init__"
      ],
      "witness": [
-      "__app__.metagpt.roles.engineer.Engineer._act_sp",
+      "__app__.metagpt.actions.action.<module>",
       "aiohttp.client.ClientSession.__init__",
       "aiohttp.client_reqrep.ClientRequest.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -4861,7 +4945,8 @@
       "__app__.metagpt.tools.search_engine_serpapi.SerpAPIWrapper.results",
       "aiohttp.client.ClientSession.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -5046,11 +5131,12 @@
      ],
      "witness": [
       "__app__.metagpt.document_store.document.read_data",
-      "langchain.document_loaders.datadog_logs.DatadogLogsLoader.load",
+      "langchain.document_loaders.url_playwright.PlaywrightURLLoader.load",
       "langchain.agents.load_tools._get_pal_colored_objects",
       "langchain.chains.pal.base.PALChain.from_colored_object_prompt"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -5411,11 +5497,12 @@
      ],
      "witness": [
       "__app__.metagpt.document_store.document.read_data",
-      "langchain.document_loaders.datadog_logs.DatadogLogsLoader.load",
+      "langchain.document_loaders.url_playwright.PlaywrightURLLoader.load",
       "langchain.agents.load_tools._get_pal_colored_objects",
       "langchain.chains.pal.base.PALChain.from_colored_object_prompt"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -5451,7 +5538,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -5501,13 +5588,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "langchain.document_loaders.recursive_url_loader.RecursiveUrlLoader.__init__"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -5778,10 +5871,11 @@
      ],
      "witness": [
       "__app__.metagpt.document_store.document.read_data",
-      "langchain.document_loaders.datadog_logs.DatadogLogsLoader.load",
+      "langchain.document_loaders.url_playwright.PlaywrightURLLoader.load",
       "langchain.prompts.base.jinja2_formatter"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -6055,11 +6149,12 @@
      ],
      "witness": [
       "__app__.metagpt.document_store.document.read_data",
-      "langchain.document_loaders.datadog_logs.DatadogLogsLoader.load",
+      "langchain.document_loaders.url_playwright.PlaywrightURLLoader.load",
       "langchain.agents.load_tools._get_pal_colored_objects",
       "langchain.chains.pal.base.PALChain.from_colored_object_prompt"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -6420,11 +6515,12 @@
      ],
      "witness": [
       "__app__.metagpt.document_store.document.read_data",
-      "langchain.document_loaders.datadog_logs.DatadogLogsLoader.load",
+      "langchain.document_loaders.url_playwright.PlaywrightURLLoader.load",
       "langchain.agents.load_tools._get_pal_colored_objects",
       "langchain.chains.pal.base.PALChain.from_colored_object_prompt"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -6714,10 +6810,11 @@
      ],
      "witness": [
       "__app__.metagpt.document_store.document.read_data",
-      "langchain.document_loaders.datadog_logs.DatadogLogsLoader.load",
+      "langchain.document_loaders.url_playwright.PlaywrightURLLoader.load",
       "langchain.agents.load_tools._get_python_repl"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -6986,13 +7083,14 @@
       "pydantic.networks.validate_email"
      ],
      "witness": [
-      "__app__.metagpt.environment.<module>",
+      "__app__.metagpt.actions.action.<module>",
       "pydantic.main.BaseModel.__init__",
       "pydantic.dataclasses._dataclass_validate_assignment_setattr",
       "pydantic.networks.EmailStr.validate",
       "pydantic.networks.validate_email"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7084,14 +7182,15 @@
       "_pytest.tmpdir.TempPathFactory.getbasetemp"
      ],
      "witness": [
-      "__app__.metagpt.document_store.document.read_data",
-      "pandas.core.frame.DataFrame.__repr__",
+      "__app__.metagpt.actions.action.<module>",
+      "pandas.core.frame.DataFrame.__init__",
       "_pytest._py.path.LocalPath.__init__",
       "_pytest.pytester.Pytester.__init__",
       "_pytest.tmpdir.TempPathFactory.mktemp",
       "_pytest.tmpdir.TempPathFactory.getbasetemp"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7183,7 +7282,8 @@
       "setuptools.package_index.PackageIndex._resolve_download_filename"
      ],
      "witness": [],
-     "missing": true
+     "missing": true,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7293,7 +7393,8 @@
       "setuptools._vendor.packaging.specifiers.<module>",
       "setuptools._vendor.packaging.utils.<module>"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7399,7 +7500,8 @@
       "setuptools._vendor.packaging.specifiers.<module>",
       "setuptools._vendor.packaging.utils.<module>"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7432,7 +7534,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -7482,13 +7584,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "setuptools.wheel.Wheel._fix_namespace_packages"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -7524,7 +7632,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -7574,13 +7682,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "tqdm.cli.cast"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },

@@ -1,0 +1,62 @@
+{
+ "id": "HaoZhang95__Python24@7cbc04568a320f0bf048f5473fa72918fda712e4",
+ "meta": {
+  "id": "HaoZhang95__Python24@7cbc04568a320f0bf048f5473fa72918fda712e4",
+  "repo": "HaoZhang95/Python24",
+  "tag": "7cbc04568a320f0bf048f5473fa72918fda712e4",
+  "published_at": "2023-04-27T02:14:08Z",
+  "stars": 1555,
+  "lock_kind": "requirements",
+  "lock_file": "requirements.txt",
+  "lock_path": "requirements.txt",
+  "subdir": "",
+  "manifest": null,
+  "requires_python": null,
+  "description": "\u4ed3\u5e93\u4e3b\u8981\u4e3a\u4e86\u5b66\u4e60Python\u548c\u673a\u5668\u5b66\u4e60\u57fa\u7840\uff0c\u6bcf\u4e00\u7ae0\u7684\u5177\u4f53\u77e5\u8bc6\u70b9\u53ef\u4ee5\u5728\u4e0b\u9762\u7684\u76ee\u5f55\u4e2d\u8be6\u7ec6\u67e5\u770b\u8bfe\u7a0b\u5927\u7eb2\uff0c\u5177\u4f53\u7684\u8bb2\u4e49\u6587\u6863\uff0c\u63d0\u4f9b\u5728\u7ebf\u9605\u8bfb\u548c\u4e0b\u8f7d\uff0c\u5927\u90e8\u5206\u7684\u7ae0\u8282\u8bb2\u4e49\u4f7f\u7528\u4e86Gitbook\u8fdb\u884c\u6574\u7ae0\u7684\u9605\u8bfb\uff0c\u540c\u6837\u7684\uff0c\u5728\u5b66\u4e60\u7684\u8fc7\u7a0b\u4e2d\uff0c\u6211\u5728\u4ee3\u7801\u4e2d\u90fd\u6bcf\u884c\u8fdb\u884c\u4e86\u6ce8\u91ca\uff0c\u57fa\u672c\u4e0a\u4e0d\u7528\u770b\u6587\u6863\u4e5f\u80fd\u7406\u89e3\uff0c\u65b9\u4fbf\u8fdb\u884c\u9605\u8bfb\u548c\u7406\u89e3\uff0c**\u671b\u5927\u5bb6\u591a\u591a\u652f\u6301,\u559c\u6b22\u672c\u4ed3\u5e93\u7684\u8bdd\uff0c\u8bb0\u5f97Star\u54e6\uff0c\u5e0c\u671b\u80fd\u591f\u5e2e\u52a9\u5927\u5bb6\u3002**",
+  "topics": [
+   "django",
+   "flask",
+   "itcast",
+   "python",
+   "python24",
+   "web"
+  ]
+ },
+ "python": "3.10",
+ "summary": {
+  "locked": 69,
+  "installed": 67,
+  "direct": 25,
+  "transitive": 42,
+  "edges": 104,
+  "edges_from_lock": false
+ },
+ "stats": {
+  "app_modules": 0,
+  "pkgs_analysed": 31,
+  "pkgs_no_source": 2,
+  "seconds": 235.45,
+  "funcs": 58917,
+  "roots": 0,
+  "app_refs": {},
+  "reflection_kinds": {}
+ },
+ "scan_seconds": 239.1,
+ "sdist_only": [
+  "autopep8",
+  "billiard",
+  "dnspython3",
+  "future",
+  "mysql-connector-python",
+  "pycparser",
+  "pydispatcher",
+  "pytesseract",
+  "wrapt"
+ ],
+ "baseline_resolution": {
+  "ok": false,
+  "seconds": 1.5,
+  "error": ": Wheels are required for `pypiwin32` because building from source is disabled for all packages (i.e., with `--no-build`)\n\nhint: You require CPython 3.10 (`cp310`), but we only found wheels for `pywin32` (v301) with the following Python ABI tags: `cp35m`, `cp36m`, `cp37m`, `cp38`, `cp39`\n\nhint: Wheels are available for `pywin32` (v312) on the following platforms: `win32`, `win_amd64`, `win_arm64`\n"
+ },
+ "status": "baseline_unresolvable"
+}

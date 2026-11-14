@@ -1,10 +1,10 @@
 {
  "bomFormat": "CycloneDX",
  "specVersion": "1.6",
- "serialNumber": "urn:uuid:8ac78a8f-26b5-42e7-98a0-599412c6201a",
+ "serialNumber": "urn:uuid:16ac3f20-decf-4fe8-b407-a9637827f13a",
  "version": 1,
  "metadata": {
-  "timestamp": "2026-11-12T10:29:34+00:00",
+  "timestamp": "2026-11-13T16:53:28+00:00",
   "tools": {
    "components": [
     {
@@ -682,31 +682,31 @@
   {
    "ref": "app",
    "dependsOn": [
-    "pkg:pypi/redis@3.5.3",
-    "pkg:pypi/sentry-sdk@1.39.1",
-    "pkg:pypi/django-prometheus@2.3.1",
-    "pkg:pypi/markdown@3.5",
-    "pkg:pypi/pendulum@2.1.2",
-    "pkg:pypi/django-countries@7.5.1",
     "pkg:pypi/django-cors-headers@4.2.0",
-    "pkg:pypi/ipicn@2021.5.5",
-    "pkg:pypi/tomd@0.1.3",
-    "pkg:pypi/python-alipay-sdk@3.3.0",
-    "pkg:pypi/python-slugify@6.1.2",
-    "pkg:pypi/djangorestframework@3.14.0",
-    "pkg:pypi/black@23.12.1",
-    "pkg:pypi/uwsgi@2.0.22",
-    "pkg:pypi/django-simpleui@2023.8.28",
-    "pkg:pypi/autoflake@2.2.1",
-    "pkg:pypi/short-url@1.2.2",
-    "pkg:pypi/django-debug-toolbar@4.2.0",
-    "pkg:pypi/django@4.2.6",
-    "pkg:pypi/celery@5.3.4",
-    "pkg:pypi/ipython@8.19.0",
-    "pkg:pypi/django-telegram-login@0.2.3",
+    "pkg:pypi/pendulum@2.1.2",
+    "pkg:pypi/redis@3.5.3",
     "pkg:pypi/django-anymail@8.6",
+    "pkg:pypi/django-countries@7.5.1",
+    "pkg:pypi/django-telegram-login@0.2.3",
+    "pkg:pypi/sentry-sdk@1.39.1",
+    "pkg:pypi/python-slugify@6.1.2",
+    "pkg:pypi/ipython@8.19.0",
+    "pkg:pypi/ipicn@2021.5.5",
+    "pkg:pypi/markdown@3.5",
+    "pkg:pypi/django-simpleui@2023.8.28",
+    "pkg:pypi/isort@5.12.0",
+    "pkg:pypi/django-debug-toolbar@4.2.0",
+    "pkg:pypi/djangorestframework@3.14.0",
+    "pkg:pypi/django-prometheus@2.3.1",
     "pkg:pypi/pymysql@1.1.0",
-    "pkg:pypi/isort@5.12.0"
+    "pkg:pypi/uwsgi@2.0.22",
+    "pkg:pypi/short-url@1.2.2",
+    "pkg:pypi/black@23.12.1",
+    "pkg:pypi/django@4.2.6",
+    "pkg:pypi/python-alipay-sdk@3.3.0",
+    "pkg:pypi/autoflake@2.2.1",
+    "pkg:pypi/tomd@0.1.3",
+    "pkg:pypi/celery@5.3.4"
    ]
   },
   {
@@ -1322,7 +1322,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -1562,7 +1562,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -1802,7 +1802,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -1898,7 +1898,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -1994,7 +1994,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2282,7 +2282,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2954,7 +2954,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -3050,7 +3050,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -3098,7 +3098,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -3194,7 +3194,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -3482,7 +3482,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.008 class=DEV_ONLY"
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
    },
    "properties": [
     {
@@ -3578,7 +3578,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.008 class=DEV_ONLY"
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
    },
    "properties": [
     {
@@ -3866,7 +3866,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -4005,7 +4005,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -4197,7 +4197,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -4821,7 +4821,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -5157,7 +5157,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -5397,7 +5397,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -5685,7 +5685,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -5877,7 +5877,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -6165,7 +6165,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -6453,7 +6453,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -6501,7 +6501,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -6597,7 +6597,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -6645,7 +6645,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -6693,7 +6693,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -6741,7 +6741,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -7077,7 +7077,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -7125,7 +7125,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -7317,7 +7317,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -7461,7 +7461,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {

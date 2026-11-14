@@ -1,0 +1,2084 @@
+{
+ "id": "Rongronggg9__RSS-to-Telegram-Bot@v2.3.0",
+ "meta": {
+  "id": "Rongronggg9__RSS-to-Telegram-Bot@v2.3.0",
+  "repo": "Rongronggg9/RSS-to-Telegram-Bot",
+  "tag": "v2.3.0",
+  "published_at": "2023-11-09T17:12:55Z",
+  "stars": 2177,
+  "lock_kind": "requirements",
+  "lock_file": "requirements.txt",
+  "lock_path": "requirements.txt",
+  "subdir": "",
+  "manifest": "pyproject.toml",
+  "requires_python": null,
+  "description": "A Telegram RSS bot that cares about your reading experience (calling for new maintainers: https://github.com/Rongronggg9/RSS-to-Telegram-Bot/issues/747)",
+  "topics": [
+   "atom",
+   "bot",
+   "cross-platform",
+   "docker",
+   "feed",
+   "feed-reader",
+   "multimedia",
+   "multiuser",
+   "opml",
+   "postgres",
+   "python",
+   "rich-text",
+   "rss",
+   "rss-reader",
+   "rssbot",
+   "self-hosted",
+   "sqlite",
+   "telegram",
+   "telegram-bot",
+   "telegram-rss"
+  ]
+ },
+ "python": "3.10",
+ "summary": {
+  "locked": 31,
+  "installed": 30,
+  "direct": 21,
+  "transitive": 9,
+  "edges": 38,
+  "edges_from_lock": false
+ },
+ "stats": {
+  "app_modules": 45,
+  "pkgs_analysed": 14,
+  "pkgs_no_source": 0,
+  "seconds": 10.65,
+  "funcs": 7040,
+  "roots": 407,
+  "app_refs": {
+   "beautifulsoup4": [
+    "bs4",
+    "bs4.BeautifulSoup",
+    "bs4.element",
+    "bs4.element.SoupStrainer",
+    "bs4.element.Tag",
+    "bs4.element.Tag.decompose",
+    "bs4.element.Tag.find",
+    "bs4.element.Tag.find_all",
+    "bs4.element.Tag.prettify"
+   ],
+   "listparser": [
+    "listparser"
+   ],
+   "aiohttp": [
+    "aiohttp",
+    "aiohttp.client.ClientSession",
+    "aiohttp.client.ClientTimeout",
+    "aiohttp.connector.TCPConnector",
+    "aiohttp.helpers",
+    "aiohttp.helpers.BasicAuth.decode",
+    "aiohttp.web",
+    "aiohttp.web.run_app",
+    "aiohttp.web_app.Application",
+    "aiohttp.web_exceptions.HTTPFound",
+    "aiohttp.web_routedef.route",
+    "aiohttp.web_runner.AppRunner",
+    "aiohttp.web_runner.BaseRunner.setup",
+    "aiohttp.web_runner.TCPSite",
+    "aiohttp.web_runner.TCPSite.start"
+   ],
+   "tortoise-orm": [
+    "tortoise",
+    "tortoise.Tortoise.close_connections",
+    "tortoise.fields",
+    "tortoise.fields.data.BigIntField",
+    "tortoise.fields.data.CharField",
+    "tortoise.fields.data.DatetimeField",
+    "tortoise.fields.data.IntField",
+    "tortoise.fields.data.JSONField",
+    "tortoise.fields.data.SmallIntField",
+    "tortoise.fields.data.TextField",
+    "tortoise.fields.relational.ForeignKeyField",
+    "tortoise.models",
+    "tortoise.models.Model.filter",
+    "tortoise.models.Model.get_or_none"
+   ],
+   "aerich": [
+    "aerich",
+    "aerich.Command",
+    "aerich.Command.init",
+    "aerich.Command.upgrade",
+    "aerich.models"
+   ],
+   "python-dotenv": [
+    "dotenv",
+    "dotenv.main.load_dotenv"
+   ],
+   "uvloop": [
+    "uvloop",
+    "uvloop.install"
+   ],
+   "aiographfix": [
+    "aiographfix",
+    "aiographfix.api.Telegraph.create_account",
+    "aiographfix.api.Telegraph.get_account_info",
+    "aiographfix.utils",
+    "aiographfix.utils.exceptions",
+    "aiographfix.utils.exceptions.TelegraphError"
+   ],
+   "pillow": [
+    "PIL",
+    "PIL.Image",
+    "PIL.Image.open",
+    "PIL.ImageFile"
+   ],
+   "aiohttp-socks": [
+    "aiohttp_socks",
+    "aiohttp_socks.connector.ProxyConnector",
+    "aiohttp_socks.connector.ProxyConnector.from_url"
+   ],
+   "aiohttp-retry": [
+    "aiohttp_retry",
+    "aiohttp_retry.client.RetryClient"
+   ],
+   "dnspython": [
+    "dns",
+    "dns.asyncresolver",
+    "dns.asyncresolver.resolve",
+    "dns.exception"
+   ]
+  },
+  "reflection_kinds": {
+   "dnspython": [
+    "import_module"
+   ],
+   "aiohttp": [
+    "import_module"
+   ],
+   "pillow": [
+    "__import__",
+    "namespace",
+    "setattr"
+   ],
+   "beautifulsoup4": [
+    "setattr"
+   ],
+   "aiographfix": [
+    "namespace"
+   ],
+   "aerich": [
+    "import_module"
+   ],
+   "tortoise-orm": [
+    "dyn_class",
+    "import_module",
+    "setattr"
+   ],
+   "asyncpg": [
+    "namespace",
+    "setattr"
+   ],
+   "__app__": [
+    "monkeypatch"
+   ]
+  }
+ },
+ "scan_seconds": 11.7,
+ "sdist_only": [
+  "telethon"
+ ],
+ "baseline_resolution": {
+  "ok": true,
+  "seconds": 0.9,
+  "error": ""
+ },
+ "baseline_drift": 35,
+ "strategies": {
+  "audit_fix": {
+   "planned": {
+    "lxml": "6.1.0",
+    "aiohttp": "3.14.4",
+    "python-dotenv": "1.2.2"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 0.1,
+   "residual_findings": 55,
+   "residual_risk_evident": 25.428776203835717,
+   "residual_risk_vm": 43.41999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 38,
+   "major_bumps": 2,
+   "added": 34,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.6",
+     "3.14.4"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "aiosqlite": [
+     null,
+     "0.17.0"
+    ],
+    "annotated-types": [
+     null,
+     "0.8.0"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "attrs": [
+     null,
+     "26.1.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "contourpy": [
+     null,
+     "1.3.2"
+    ],
+    "cycler": [
+     null,
+     "0.12.1"
+    ],
+    "dictdiffer": [
+     null,
+     "0.10.0"
+    ],
+    "feedparser": [
+     "6.0.10",
+     "6.0.14"
+    ],
+    "feedparser-sgmllib": [
+     null,
+     "2.1.0"
+    ],
+    "fonttools": [
+     null,
+     "4.65.0"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "iso8601": [
+     null,
+     "1.1.0"
+    ],
+    "kiwisolver": [
+     null,
+     "1.5.1"
+    ],
+    "lxml": [
+     "4.9.3",
+     "6.1.0"
+    ],
+    "numpy": [
+     null,
+     "2.2.6"
+    ],
+    "packaging": [
+     null,
+     "26.3"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pydantic": [
+     null,
+     "2.14.3"
+    ],
+    "pydantic-core": [
+     null,
+     "2.50.4"
+    ],
+    "pyparsing": [
+     null,
+     "3.0.9"
+    ],
+    "pypika-tortoise": [
+     null,
+     "0.1.6"
+    ],
+    "python-dateutil": [
+     null,
+     "3.0.0"
+    ],
+    "python-dotenv": [
+     "0.21.0",
+     "1.2.2"
+    ],
+    "pytz": [
+     null,
+     "2026.6"
+    ],
+    "six": [
+     null,
+     "1.17.0"
+    ],
+    "soupsieve": [
+     null,
+     "2.10"
+    ],
+    "tomlkit": [
+     null,
+     "0.15.2"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.5"
+    ],
+    "tzdata": [
+     null,
+     "2026.6"
+    ],
+    "tzlocal": [
+     null,
+     "5.4.5"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ]
+   },
+   "planned_changes": 3,
+   "unplanned_changes": 35,
+   "unplanned_major": 0,
+   "unplanned_added": 34,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 17,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "latest": {
+   "planned": {
+    "python-dotenv": "1.2.4",
+    "dnspython": "2.8.0",
+    "lxml": "6.1.3",
+    "aiohttp": "3.14.5",
+    "pillow": "12.2.0"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 0.1,
+   "residual_findings": 55,
+   "residual_risk_evident": 25.898097910942344,
+   "residual_risk_vm": 43.25999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 8,
+   "changed": 40,
+   "major_bumps": 3,
+   "added": 34,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.6",
+     "3.14.5"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "aiosqlite": [
+     null,
+     "0.17.0"
+    ],
+    "annotated-types": [
+     null,
+     "0.8.0"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "attrs": [
+     null,
+     "26.1.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "contourpy": [
+     null,
+     "1.3.2"
+    ],
+    "cycler": [
+     null,
+     "0.12.1"
+    ],
+    "dictdiffer": [
+     null,
+     "0.10.0"
+    ],
+    "dnspython": [
+     "2.3.0",
+     "2.8.0"
+    ],
+    "feedparser": [
+     "6.0.10",
+     "6.0.14"
+    ],
+    "feedparser-sgmllib": [
+     null,
+     "2.1.0"
+    ],
+    "fonttools": [
+     null,
+     "4.65.0"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "iso8601": [
+     null,
+     "1.1.0"
+    ],
+    "kiwisolver": [
+     null,
+     "1.5.1"
+    ],
+    "lxml": [
+     "4.9.3",
+     "6.1.3"
+    ],
+    "numpy": [
+     null,
+     "2.2.6"
+    ],
+    "packaging": [
+     null,
+     "26.3"
+    ],
+    "pillow": [
+     "9.5.0",
+     "12.2.0"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pydantic": [
+     null,
+     "2.14.3"
+    ],
+    "pydantic-core": [
+     null,
+     "2.50.4"
+    ],
+    "pyparsing": [
+     null,
+     "3.0.9"
+    ],
+    "pypika-tortoise": [
+     null,
+     "0.1.6"
+    ],
+    "python-dateutil": [
+     null,
+     "3.0.0"
+    ],
+    "python-dotenv": [
+     "0.21.0",
+     "1.2.4"
+    ],
+    "pytz": [
+     null,
+     "2026.6"
+    ],
+    "six": [
+     null,
+     "1.17.0"
+    ],
+    "soupsieve": [
+     null,
+     "2.10"
+    ],
+    "tomlkit": [
+     null,
+     "0.15.2"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.5"
+    ],
+    "tzdata": [
+     null,
+     "2026.6"
+    ],
+    "tzlocal": [
+     null,
+     "5.4.5"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ]
+   },
+   "planned_changes": 5,
+   "unplanned_changes": 35,
+   "unplanned_major": 0,
+   "unplanned_added": 34,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 25,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "upgrade_all": {
+   "planned": null,
+   "ok": true,
+   "error": "",
+   "seconds": 1.5,
+   "residual_findings": 42,
+   "residual_risk_evident": 20.2726010330231,
+   "residual_risk_vm": 33.64000000000001,
+   "residual_confirmed": 0,
+   "new_findings": 7,
+   "changed": 58,
+   "major_bumps": 8,
+   "added": 31,
+   "removed": 0,
+   "realised_changes": {
+    "aerich": [
+     "0.6.3",
+     "0.10.1"
+    ],
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.6",
+     "3.14.5"
+    ],
+    "aiohttp-retry": [
+     "2.8.3",
+     "2.9.1"
+    ],
+    "aiohttp-socks": [
+     "0.8.1",
+     "0.12.0"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "aiosqlite": [
+     null,
+     "0.22.1"
+    ],
+    "anyio": [
+     null,
+     "4.16.0"
+    ],
+    "apscheduler": [
+     "3.10.4",
+     "3.11.3"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "asyncclick": [
+     null,
+     "8.3.0.3"
+    ],
+    "asyncpg": [
+     "0.28.0",
+     "0.32.0"
+    ],
+    "asyncstdlib": [
+     "3.10.9",
+     "3.14.0"
+    ],
+    "attrs": [
+     null,
+     "26.1.0"
+    ],
+    "beautifulsoup4": [
+     "4.12.2",
+     "4.15.0"
+    ],
+    "cachetools": [
+     "5.3.1",
+     "7.3.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "colorlog": [
+     "6.7.0",
+     "6.12.0"
+    ],
+    "contourpy": [
+     null,
+     "1.3.2"
+    ],
+    "cryptg": [
+     "0.4.0",
+     "0.5.2"
+    ],
+    "cycler": [
+     null,
+     "0.12.1"
+    ],
+    "dictdiffer": [
+     null,
+     "0.10.0"
+    ],
+    "dnspython": [
+     "2.3.0",
+     "2.8.0"
+    ],
+    "emoji": [
+     "2.8.0",
+     "2.16.0"
+    ],
+    "exceptiongroup": [
+     null,
+     "1.3.1"
+    ],
+    "feedparser": [
+     "6.0.10",
+     "6.0.14"
+    ],
+    "feedparser-sgmllib": [
+     null,
+     "2.1.0"
+    ],
+    "fonttools": [
+     null,
+     "4.65.0"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "iso8601": [
+     null,
+     "2.1.0"
+    ],
+    "kiwisolver": [
+     null,
+     "1.5.1"
+    ],
+    "listparser": [
+     "0.19",
+     "0.20"
+    ],
+    "lxml": [
+     "4.9.3",
+     "6.1.3"
+    ],
+    "matplotlib": [
+     "3.7.2",
+     "3.10.9"
+    ],
+    "minify-html": [
+     "0.10.8",
+     "0.18.1"
+    ],
+    "minify-html-onepass": [
+     "0.10.8",
+     "0.18.1"
+    ],
+    "multidict": [
+     "6.0.4",
+     "7.1.0"
+    ],
+    "numpy": [
+     null,
+     "2.2.6"
+    ],
+    "packaging": [
+     null,
+     "26.3"
+    ],
+    "pillow": [
+     "9.5.0",
+     "12.3.0"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pyparsing": [
+     null,
+     "3.3.3"
+    ],
+    "pypika-tortoise": [
+     null,
+     "0.6.5"
+    ],
+    "python-dateutil": [
+     null,
+     "3.0.0"
+    ],
+    "python-dotenv": [
+     "0.21.0",
+     "1.2.4"
+    ],
+    "python-socks": [
+     "2.3.0",
+     "3.2.1"
+    ],
+    "rapidfuzz": [
+     "3.2.0",
+     "3.14.5"
+    ],
+    "six": [
+     null,
+     "1.17.0"
+    ],
+    "soupsieve": [
+     null,
+     "2.10"
+    ],
+    "tomlkit": [
+     null,
+     "0.15.2"
+    ],
+    "tortoise-orm": [
+     "0.19.3",
+     "1.1.9"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "tzdata": [
+     null,
+     "2026.6"
+    ],
+    "tzlocal": [
+     null,
+     "5.4.5"
+    ],
+    "url-normalize": [
+     "1.4.3",
+     "3.0.1"
+    ],
+    "uvloop": [
+     "0.17.0",
+     "0.23.0"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ]
+   },
+   "failure": "none",
+   "compat": {
+    "used_changed": 11,
+    "checked": 11,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 61,
+    "details": [
+     {
+      "package": "uvloop",
+      "version": "0.23.0",
+      "missing": [
+       "uvloop.install"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "uv_fix": {
+   "planned": {
+    "lxml": "6.1.0",
+    "aiohttp": "3.14.4",
+    "python-dotenv": "1.2.2"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 0.1,
+   "residual_findings": 55,
+   "residual_risk_evident": 25.428776203835717,
+   "residual_risk_vm": 43.41999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 38,
+   "major_bumps": 2,
+   "added": 34,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.6",
+     "3.14.5"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "aiosqlite": [
+     null,
+     "0.17.0"
+    ],
+    "annotated-types": [
+     null,
+     "0.8.0"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "attrs": [
+     null,
+     "26.1.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "contourpy": [
+     null,
+     "1.3.2"
+    ],
+    "cycler": [
+     null,
+     "0.12.1"
+    ],
+    "dictdiffer": [
+     null,
+     "0.10.0"
+    ],
+    "feedparser": [
+     "6.0.10",
+     "6.0.14"
+    ],
+    "feedparser-sgmllib": [
+     null,
+     "2.1.0"
+    ],
+    "fonttools": [
+     null,
+     "4.65.0"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "iso8601": [
+     null,
+     "1.1.0"
+    ],
+    "kiwisolver": [
+     null,
+     "1.5.1"
+    ],
+    "lxml": [
+     "4.9.3",
+     "6.1.3"
+    ],
+    "numpy": [
+     null,
+     "2.2.6"
+    ],
+    "packaging": [
+     null,
+     "26.3"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pydantic": [
+     null,
+     "2.14.3"
+    ],
+    "pydantic-core": [
+     null,
+     "2.50.4"
+    ],
+    "pyparsing": [
+     null,
+     "3.0.9"
+    ],
+    "pypika-tortoise": [
+     null,
+     "0.1.6"
+    ],
+    "python-dateutil": [
+     null,
+     "3.0.0"
+    ],
+    "python-dotenv": [
+     "0.21.0",
+     "1.2.4"
+    ],
+    "pytz": [
+     null,
+     "2026.6"
+    ],
+    "six": [
+     null,
+     "1.17.0"
+    ],
+    "soupsieve": [
+     null,
+     "2.10"
+    ],
+    "tomlkit": [
+     null,
+     "0.15.2"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.5"
+    ],
+    "tzdata": [
+     null,
+     "2026.6"
+    ],
+    "tzlocal": [
+     null,
+     "5.4.5"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ]
+   },
+   "failure": "none",
+   "compat": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 17,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "vm_opt": {
+   "planned": {
+    "aiohttp": "3.14.4",
+    "dnspython": "2.8.0",
+    "lxml": "6.1.0",
+    "python-dotenv": "1.2.2"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.2,
+   "model_residual": 42.82999999999999,
+   "model_cost": 10.4,
+   "scope": 5,
+   "candidates": 15,
+   "residual_findings": 54,
+   "residual_risk_evident": 25.089822131857854,
+   "residual_risk_vm": 42.829999999999984,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 39,
+   "major_bumps": 2,
+   "added": 34,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.6",
+     "3.14.4"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "aiosqlite": [
+     null,
+     "0.17.0"
+    ],
+    "annotated-types": [
+     null,
+     "0.8.0"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "attrs": [
+     null,
+     "26.1.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "contourpy": [
+     null,
+     "1.3.2"
+    ],
+    "cycler": [
+     null,
+     "0.12.1"
+    ],
+    "dictdiffer": [
+     null,
+     "0.10.0"
+    ],
+    "dnspython": [
+     "2.3.0",
+     "2.8.0"
+    ],
+    "feedparser": [
+     "6.0.10",
+     "6.0.14"
+    ],
+    "feedparser-sgmllib": [
+     null,
+     "2.1.0"
+    ],
+    "fonttools": [
+     null,
+     "4.65.0"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "iso8601": [
+     null,
+     "1.1.0"
+    ],
+    "kiwisolver": [
+     null,
+     "1.5.1"
+    ],
+    "lxml": [
+     "4.9.3",
+     "6.1.0"
+    ],
+    "numpy": [
+     null,
+     "2.2.6"
+    ],
+    "packaging": [
+     null,
+     "26.3"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pydantic": [
+     null,
+     "2.14.3"
+    ],
+    "pydantic-core": [
+     null,
+     "2.50.4"
+    ],
+    "pyparsing": [
+     null,
+     "3.0.9"
+    ],
+    "pypika-tortoise": [
+     null,
+     "0.1.6"
+    ],
+    "python-dateutil": [
+     null,
+     "3.0.0"
+    ],
+    "python-dotenv": [
+     "0.21.0",
+     "1.2.2"
+    ],
+    "pytz": [
+     null,
+     "2026.6"
+    ],
+    "six": [
+     null,
+     "1.17.0"
+    ],
+    "soupsieve": [
+     null,
+     "2.10"
+    ],
+    "tomlkit": [
+     null,
+     "0.15.2"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.5"
+    ],
+    "tzdata": [
+     null,
+     "2026.6"
+    ],
+    "tzlocal": [
+     null,
+     "5.4.5"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ]
+   },
+   "planned_changes": 4,
+   "unplanned_changes": 35,
+   "unplanned_major": 0,
+   "unplanned_added": 34,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 21,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "coral_opt": {
+   "planned": {
+    "aiohttp": "3.14.4",
+    "dnspython": "2.8.0",
+    "lxml": "6.1.0"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.1,
+   "model_residual": 21.744999999999994,
+   "model_cost": 6.9,
+   "scope": 5,
+   "candidates": 15,
+   "residual_findings": 55,
+   "residual_risk_evident": 25.23146487394349,
+   "residual_risk_vm": 43.48999999999998,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 38,
+   "major_bumps": 1,
+   "added": 34,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.6",
+     "3.14.4"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "aiosqlite": [
+     null,
+     "0.17.0"
+    ],
+    "annotated-types": [
+     null,
+     "0.8.0"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "attrs": [
+     null,
+     "26.1.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "contourpy": [
+     null,
+     "1.3.2"
+    ],
+    "cycler": [
+     null,
+     "0.12.1"
+    ],
+    "dictdiffer": [
+     null,
+     "0.10.0"
+    ],
+    "dnspython": [
+     "2.3.0",
+     "2.8.0"
+    ],
+    "feedparser": [
+     "6.0.10",
+     "6.0.14"
+    ],
+    "feedparser-sgmllib": [
+     null,
+     "2.1.0"
+    ],
+    "fonttools": [
+     null,
+     "4.65.0"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "iso8601": [
+     null,
+     "1.1.0"
+    ],
+    "kiwisolver": [
+     null,
+     "1.5.1"
+    ],
+    "lxml": [
+     "4.9.3",
+     "6.1.0"
+    ],
+    "numpy": [
+     null,
+     "2.2.6"
+    ],
+    "packaging": [
+     null,
+     "26.3"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pydantic": [
+     null,
+     "2.14.3"
+    ],
+    "pydantic-core": [
+     null,
+     "2.50.4"
+    ],
+    "pyparsing": [
+     null,
+     "3.0.9"
+    ],
+    "pypika-tortoise": [
+     null,
+     "0.1.6"
+    ],
+    "python-dateutil": [
+     null,
+     "3.0.0"
+    ],
+    "pytz": [
+     null,
+     "2026.6"
+    ],
+    "six": [
+     null,
+     "1.17.0"
+    ],
+    "soupsieve": [
+     null,
+     "2.10"
+    ],
+    "tomlkit": [
+     null,
+     "0.15.2"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.5"
+    ],
+    "tzdata": [
+     null,
+     "2026.6"
+    ],
+    "tzlocal": [
+     null,
+     "5.4.5"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ]
+   },
+   "planned_changes": 3,
+   "unplanned_changes": 35,
+   "unplanned_major": 0,
+   "unplanned_added": 34,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 19,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "cape_opt": {
+   "planned": {
+    "aiohttp": "3.14.4",
+    "dnspython": "2.8.0",
+    "lxml": "6.1.0",
+    "pillow": "12.2.0",
+    "python-dotenv": "1.2.2"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.1,
+   "model_residual": 36.25585417595253,
+   "model_cost": 13.9,
+   "scope": 5,
+   "candidates": 15,
+   "residual_findings": 55,
+   "residual_risk_evident": 25.898097910942344,
+   "residual_risk_vm": 43.25999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 8,
+   "changed": 40,
+   "major_bumps": 3,
+   "added": 34,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.6",
+     "3.14.4"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "aiosqlite": [
+     null,
+     "0.17.0"
+    ],
+    "annotated-types": [
+     null,
+     "0.8.0"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "attrs": [
+     null,
+     "26.1.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "contourpy": [
+     null,
+     "1.3.2"
+    ],
+    "cycler": [
+     null,
+     "0.12.1"
+    ],
+    "dictdiffer": [
+     null,
+     "0.10.0"
+    ],
+    "dnspython": [
+     "2.3.0",
+     "2.8.0"
+    ],
+    "feedparser": [
+     "6.0.10",
+     "6.0.14"
+    ],
+    "feedparser-sgmllib": [
+     null,
+     "2.1.0"
+    ],
+    "fonttools": [
+     null,
+     "4.65.0"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "iso8601": [
+     null,
+     "1.1.0"
+    ],
+    "kiwisolver": [
+     null,
+     "1.5.1"
+    ],
+    "lxml": [
+     "4.9.3",
+     "6.1.0"
+    ],
+    "numpy": [
+     null,
+     "2.2.6"
+    ],
+    "packaging": [
+     null,
+     "26.3"
+    ],
+    "pillow": [
+     "9.5.0",
+     "12.2.0"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pydantic": [
+     null,
+     "2.14.3"
+    ],
+    "pydantic-core": [
+     null,
+     "2.50.4"
+    ],
+    "pyparsing": [
+     null,
+     "3.0.9"
+    ],
+    "pypika-tortoise": [
+     null,
+     "0.1.6"
+    ],
+    "python-dateutil": [
+     null,
+     "3.0.0"
+    ],
+    "python-dotenv": [
+     "0.21.0",
+     "1.2.2"
+    ],
+    "pytz": [
+     null,
+     "2026.6"
+    ],
+    "six": [
+     null,
+     "1.17.0"
+    ],
+    "soupsieve": [
+     null,
+     "2.10"
+    ],
+    "tomlkit": [
+     null,
+     "0.15.2"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.5"
+    ],
+    "tzdata": [
+     null,
+     "2026.6"
+    ],
+    "tzlocal": [
+     null,
+     "5.4.5"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ]
+   },
+   "planned_changes": 5,
+   "unplanned_changes": 35,
+   "unplanned_major": 0,
+   "unplanned_added": 34,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 25,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "evident": {
+   "planned": {
+    "aiohttp": "3.14.4",
+    "dnspython": "2.8.0",
+    "lxml": "6.1.0"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.1,
+   "model_residual": 25.231464873943487,
+   "model_cost": 6.9,
+   "scope": 5,
+   "candidates": 15,
+   "residual_findings": 55,
+   "residual_risk_evident": 25.23146487394349,
+   "residual_risk_vm": 43.48999999999998,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 38,
+   "major_bumps": 1,
+   "added": 34,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.6",
+     "3.14.4"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "aiosqlite": [
+     null,
+     "0.17.0"
+    ],
+    "annotated-types": [
+     null,
+     "0.8.0"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "attrs": [
+     null,
+     "26.1.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "contourpy": [
+     null,
+     "1.3.2"
+    ],
+    "cycler": [
+     null,
+     "0.12.1"
+    ],
+    "dictdiffer": [
+     null,
+     "0.10.0"
+    ],
+    "dnspython": [
+     "2.3.0",
+     "2.8.0"
+    ],
+    "feedparser": [
+     "6.0.10",
+     "6.0.14"
+    ],
+    "feedparser-sgmllib": [
+     null,
+     "2.1.0"
+    ],
+    "fonttools": [
+     null,
+     "4.65.0"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "iso8601": [
+     null,
+     "1.1.0"
+    ],
+    "kiwisolver": [
+     null,
+     "1.5.1"
+    ],
+    "lxml": [
+     "4.9.3",
+     "6.1.0"
+    ],
+    "numpy": [
+     null,
+     "2.2.6"
+    ],
+    "packaging": [
+     null,
+     "26.3"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pydantic": [
+     null,
+     "2.14.3"
+    ],
+    "pydantic-core": [
+     null,
+     "2.50.4"
+    ],
+    "pyparsing": [
+     null,
+     "3.0.9"
+    ],
+    "pypika-tortoise": [
+     null,
+     "0.1.6"
+    ],
+    "python-dateutil": [
+     null,
+     "3.0.0"
+    ],
+    "pytz": [
+     null,
+     "2026.6"
+    ],
+    "six": [
+     null,
+     "1.17.0"
+    ],
+    "soupsieve": [
+     null,
+     "2.10"
+    ],
+    "tomlkit": [
+     null,
+     "0.15.2"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.5"
+    ],
+    "tzdata": [
+     null,
+     "2026.6"
+    ],
+    "tzlocal": [
+     null,
+     "5.4.5"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ]
+   },
+   "planned_changes": 3,
+   "unplanned_changes": 35,
+   "unplanned_major": 0,
+   "unplanned_added": 34,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 19,
+    "details": [],
+    "api_compatible": true
+   },
+   "objective_gap": 3.552713678800501e-15
+  },
+  "evident_wide": {
+   "planned": {
+    "aiohttp": "3.14.4",
+    "dnspython": "2.8.0",
+    "lxml": "6.1.0"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.1,
+   "model_residual": 25.231464873943487,
+   "model_cost": 6.9,
+   "candidates": 15,
+   "residual_findings": 55,
+   "residual_risk_evident": 25.23146487394349,
+   "residual_risk_vm": 43.48999999999998,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 38,
+   "major_bumps": 1,
+   "added": 34,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.6",
+     "3.14.4"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "aiosqlite": [
+     null,
+     "0.17.0"
+    ],
+    "annotated-types": [
+     null,
+     "0.8.0"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "attrs": [
+     null,
+     "26.1.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "contourpy": [
+     null,
+     "1.3.2"
+    ],
+    "cycler": [
+     null,
+     "0.12.1"
+    ],
+    "dictdiffer": [
+     null,
+     "0.10.0"
+    ],
+    "dnspython": [
+     "2.3.0",
+     "2.8.0"
+    ],
+    "feedparser": [
+     "6.0.10",
+     "6.0.14"
+    ],
+    "feedparser-sgmllib": [
+     null,
+     "2.1.0"
+    ],
+    "fonttools": [
+     null,
+     "4.65.0"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "iso8601": [
+     null,
+     "1.1.0"
+    ],
+    "kiwisolver": [
+     null,
+     "1.5.1"
+    ],
+    "lxml": [
+     "4.9.3",
+     "6.1.0"
+    ],
+    "numpy": [
+     null,
+     "2.2.6"
+    ],
+    "packaging": [
+     null,
+     "26.3"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pydantic": [
+     null,
+     "2.14.3"
+    ],
+    "pydantic-core": [
+     null,
+     "2.50.4"
+    ],
+    "pyparsing": [
+     null,
+     "3.0.9"
+    ],
+    "pypika-tortoise": [
+     null,
+     "0.1.6"
+    ],
+    "python-dateutil": [
+     null,
+     "3.0.0"
+    ],
+    "pytz": [
+     null,
+     "2026.6"
+    ],
+    "six": [
+     null,
+     "1.17.0"
+    ],
+    "soupsieve": [
+     null,
+     "2.10"
+    ],
+    "tomlkit": [
+     null,
+     "0.15.2"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.5"
+    ],
+    "tzdata": [
+     null,
+     "2026.6"
+    ],
+    "tzlocal": [
+     null,
+     "5.4.5"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ]
+   },
+   "planned_changes": 3,
+   "unplanned_changes": 35,
+   "unplanned_major": 0,
+   "unplanned_added": 34,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 19,
+    "details": [],
+    "api_compatible": true
+   }
+  }
+ },
+ "original": {
+  "residual_findings": 105,
+  "residual_risk_evident": 43.0493166639394,
+  "residual_risk_vm": 75.77999999999997,
+  "residual_confirmed": 3,
+  "new_findings": 0,
+  "changed": 0,
+  "major_bumps": 0,
+  "added": 0,
+  "removed": 0,
+  "realised_changes": {}
+ },
+ "decision": {
+  "uncertain": 105,
+  "critical": 3,
+  "evpi_total": 0.26334263733856234,
+  "top": [
+   {
+    "package": "lxml",
+    "advisory": "CVE-2026-41066",
+    "p": 0.6559895848026134,
+    "critical": true,
+    "evpi": 0.10320312455921624
+   },
+   {
+    "package": "dnspython",
+    "advisory": "CVE-2023-29483",
+    "p": 0.5744984270811252,
+    "critical": true,
+    "evpi": 0.09361034604215349
+   },
+   {
+    "package": "python-dotenv",
+    "advisory": "CVE-2026-28684",
+    "p": 0.21461021528126487,
+    "critical": true,
+    "evpi": 0.0665291667371926
+   },
+   {
+    "package": "pillow",
+    "advisory": "CVE-2026-112390",
+    "p": 0.5744984270811252,
+    "critical": false,
+    "evpi": 0.0
+   },
+   {
+    "package": "pillow",
+    "advisory": "CVE-2026-96638",
+    "p": 0.5744984270811252,
+    "critical": false,
+    "evpi": 0.0
+   }
+  ]
+ },
+ "remediation_seconds": 111.1,
+ "status": "ok"
+}

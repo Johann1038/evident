@@ -1,0 +1,23 @@
+{
+ "advisory": "GHSA-23j4-mw76-5v7h",
+ "package": "scrapy",
+ "commits": [
+  {
+   "repo": "scrapy/scrapy",
+   "sha": "36287cb665ab4b0c65fd53181c9a0ef04990ada6",
+   "parent": "f138d5d1450ef38ee077c2472c136c70d8d673e8",
+   "py_files": 1
+  }
+ ],
+ "files": [
+  {
+   "path": "scrapy/downloadermiddlewares/redirect.py",
+   "functions": [
+    "MetaRefreshMiddleware.process_response",
+    "RedirectMiddleware.process_response"
+   ],
+   "module_level": false
+  }
+ ],
+ "status": "functions"
+}

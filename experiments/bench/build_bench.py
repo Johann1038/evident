@@ -178,18 +178,19 @@ def static_row(pkg, a, aid, pat, syms, gran, trig, safe, prod, test, site, tops,
     prog.build()
     an = reach.Analysis(prog)
     l3b = an.import_evidence(dist)
+    scopes = None
     if l3b == "REFUTED":
         l4, reason, wit = "REFUTED", "package not imported", []
     else:
         rr = an.symbol_evidence(dist, syms)
-        l4, reason, wit = rr.verdict, rr.reason, rr.witness
+        l4, reason, wit, scopes = rr.verdict, rr.reason, rr.witness, rr.scopes
     return {
         "dist": dist, "version": ver, "advisory": aid, "cves": a.cves, "cvss": a.cvss,
         "epss": intel.epss_of(a), "kev": intel.in_kev(a), "pattern": pat, "label": label,
         "label_imported": int(any(e.split(".")[0] in tops for e in prod["executed"])),
         "L3b": l3b, "L4": l4, "L4_reason": reason, "L5": l5, "granularity": gran,
         "n_symbols": len(syms), "trigger_probe": trig[0], "safe_probe": safe[0] if safe else None,
-        "prod_error": prod.get("error"), "witness": wit[:8],
+        "prod_error": prod.get("error"), "witness": wit[:8], "scopes": scopes,
     }
 
 

@@ -1,10 +1,10 @@
 {
  "bomFormat": "CycloneDX",
  "specVersion": "1.6",
- "serialNumber": "urn:uuid:6d5cc66c-b743-4d8a-899a-813671bb4c84",
+ "serialNumber": "urn:uuid:884ec4f7-3d3e-4741-8c23-66b81b7e021f",
  "version": 1,
  "metadata": {
-  "timestamp": "2026-11-12T10:25:12+00:00",
+  "timestamp": "2026-11-13T16:18:51+00:00",
   "tools": {
    "components": [
     {
@@ -507,30 +507,30 @@
    "ref": "app",
    "dependsOn": [
     "pkg:pypi/asyncpg@0.25.0",
-    "pkg:pypi/uvloop@0.16.0",
-    "pkg:pypi/python-dotenv@0.20.0",
-    "pkg:pypi/pytest-cov@3.0.0",
-    "pkg:pypi/flake8@4.0.1",
-    "pkg:pypi/httpx@0.22.0",
-    "pkg:pypi/python-jose@3.3.0",
     "pkg:pypi/aiosqlite@0.17.0",
-    "pkg:pypi/pytest@7.1.1",
-    "pkg:pypi/pytest-asyncio@0.18.3",
-    "pkg:pypi/alembic@1.7.7",
     "pkg:pypi/black@22.3.0",
-    "pkg:pypi/mypy@0.942",
-    "pkg:pypi/pydantic@1.9.0",
-    "pkg:pypi/passlib@1.7.4",
-    "pkg:pypi/pyhumps@3.5.3",
-    "pkg:pypi/python-multipart@0.0.5",
-    "pkg:pypi/bcrypt@3.2.0",
     "pkg:pypi/sqlalchemy@1.4.35",
-    "pkg:pypi/arq@0.22",
-    "pkg:pypi/fastapi@0.75.1",
-    "pkg:pypi/factory-boy@3.2.1",
+    "pkg:pypi/pydantic@1.9.0",
+    "pkg:pypi/pyhumps@3.5.3",
+    "pkg:pypi/httpx@0.22.0",
+    "pkg:pypi/pytest-asyncio@0.18.3",
+    "pkg:pypi/pytest@7.1.1",
+    "pkg:pypi/uvloop@0.16.0",
     "pkg:pypi/uvicorn@0.17.6",
+    "pkg:pypi/alembic@1.7.7",
+    "pkg:pypi/flake8@4.0.1",
+    "pkg:pypi/factory-boy@3.2.1",
+    "pkg:pypi/mypy@0.942",
+    "pkg:pypi/passlib@1.7.4",
+    "pkg:pypi/python-dotenv@0.20.0",
+    "pkg:pypi/asgi-lifespan@1.0.1",
+    "pkg:pypi/arq@0.22",
+    "pkg:pypi/python-jose@3.3.0",
+    "pkg:pypi/bcrypt@3.2.0",
+    "pkg:pypi/python-multipart@0.0.5",
     "pkg:pypi/isort@5.10.1",
-    "pkg:pypi/asgi-lifespan@1.0.1"
+    "pkg:pypi/fastapi@0.75.1",
+    "pkg:pypi/pytest-cov@3.0.0"
    ]
   },
   {
@@ -947,7 +947,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -1543,7 +1543,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -1927,7 +1927,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2551,7 +2551,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2599,7 +2599,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2743,7 +2743,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2839,7 +2839,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2887,7 +2887,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2983,7 +2983,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -3079,7 +3079,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {

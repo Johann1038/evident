@@ -1,0 +1,1628 @@
+{
+ "id": "OWASP__Nettacker@0.3.1",
+ "meta": {
+  "id": "OWASP__Nettacker@0.3.1",
+  "repo": "OWASP/Nettacker",
+  "tag": "0.3.1",
+  "published_at": "2023-07-05T01:28:16Z",
+  "stars": 5726,
+  "lock_kind": "requirements",
+  "lock_file": "requirements.txt",
+  "lock_path": "requirements.txt",
+  "subdir": "",
+  "manifest": null,
+  "requires_python": null,
+  "description": "Automated Penetration Testing Framework - Open-Source Vulnerability Scanner - Vulnerability Management",
+  "topics": [
+   "automation",
+   "bruteforce",
+   "cve",
+   "hacking-tools",
+   "information-gathering",
+   "network-security",
+   "owasp",
+   "penetration-testing",
+   "penetration-testing-framework",
+   "pentesting",
+   "pentesting-tools",
+   "portscanner",
+   "python",
+   "recon",
+   "scanner",
+   "security",
+   "security-tools",
+   "vulnerability-management",
+   "vulnerability-scanner",
+   "vulnerability-scanners"
+  ]
+ },
+ "python": "3.10",
+ "summary": {
+  "locked": 15,
+  "installed": 15,
+  "direct": 14,
+  "transitive": 1,
+  "edges": 15,
+  "edges_from_lock": false
+ },
+ "stats": {
+  "app_modules": 46,
+  "pkgs_analysed": 5,
+  "pkgs_no_source": 0,
+  "seconds": 5.32,
+  "funcs": 3235,
+  "roots": 215,
+  "app_refs": {
+   "flask": [
+    "flask",
+    "flask.app.Flask",
+    "flask.helpers.abort",
+    "flask.helpers.make_response",
+    "flask.json.jsonify",
+    "flask.templating.render_template",
+    "flask.wrappers.Response"
+   ],
+   "requests": [
+    "requests",
+    "requests.api.get"
+   ],
+   "aiohttp": [
+    "aiohttp",
+    "aiohttp.client.ClientSession"
+   ],
+   "paramiko": [
+    "paramiko",
+    "paramiko.client.AutoAddPolicy",
+    "paramiko.client.SSHClient",
+    "paramiko.client.SSHClient.close",
+    "paramiko.client.SSHClient.connect",
+    "paramiko.client.SSHClient.set_missing_host_key_policy",
+    "paramiko.transport"
+   ]
+  },
+  "reflection_kinds": {
+   "flask": [
+    "__import__",
+    "eval",
+    "exec",
+    "import_module",
+    "plugin"
+   ],
+   "requests": [
+    "__import__",
+    "namespace",
+    "setattr"
+   ],
+   "aiohttp": [
+    "import_module"
+   ],
+   "paramiko": [
+    "namespace",
+    "setattr"
+   ],
+   "__app__": [
+    "__import__",
+    "eval",
+    "exec",
+    "namespace"
+   ]
+  }
+ },
+ "scan_seconds": 7.6,
+ "sdist_only": [
+  "ipaddr",
+  "py3dns",
+  "terminable-thread"
+ ],
+ "baseline_resolution": {
+  "ok": true,
+  "seconds": 0.5,
+  "error": ""
+ },
+ "baseline_drift": 23,
+ "strategies": {
+  "audit_fix": {
+   "planned": {
+    "requests": "2.33.0",
+    "aiohttp": "3.14.4",
+    "paramiko": "5.0.0",
+    "pyopenssl": "26.0.0",
+    "flask": "3.1.3"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 0.1,
+   "residual_findings": 4,
+   "residual_risk_evident": 1.2334133016627076,
+   "residual_risk_vm": 3.1299999999999994,
+   "residual_confirmed": 0,
+   "new_findings": 4,
+   "changed": 30,
+   "major_bumps": 3,
+   "added": 25,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.14.4"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "attrs": [
+     null,
+     "26.1.0"
+    ],
+    "bcrypt": [
+     null,
+     "5.0.0"
+    ],
+    "blinker": [
+     null,
+     "1.9.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.1.1"
+    ],
+    "charset-normalizer": [
+     null,
+     "3.5.2"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "cryptography": [
+     null,
+     "46.0.7"
+    ],
+    "flask": [
+     "2.3.2",
+     "3.1.3"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "invoke": [
+     null,
+     "3.0.3"
+    ],
+    "itsdangerous": [
+     null,
+     "2.2.0"
+    ],
+    "jinja2": [
+     null,
+     "3.1.6"
+    ],
+    "markupsafe": [
+     null,
+     "3.0.4"
+    ],
+    "multidict": [
+     null,
+     "6.9.1"
+    ],
+    "paramiko": [
+     "3.2.0",
+     "5.0.0"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pycparser": [
+     null,
+     "3.11"
+    ],
+    "pynacl": [
+     null,
+     "1.6.2"
+    ],
+    "pyopenssl": [
+     "23.2.0",
+     "26.0.0"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.33.0"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "urllib3": [
+     null,
+     "2.8.0"
+    ],
+    "werkzeug": [
+     null,
+     "3.1.9"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ]
+   },
+   "planned_changes": 5,
+   "unplanned_changes": 25,
+   "unplanned_major": 0,
+   "unplanned_added": 25,
+   "new_findings_from_unplanned": 4,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 18,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "latest": {
+   "planned": {
+    "pyopenssl": "26.4.0",
+    "flask": "3.1.3",
+    "requests": "2.34.2",
+    "aiohttp": "3.14.5",
+    "paramiko": "5.1.0"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 0.1,
+   "residual_findings": 0,
+   "residual_risk_evident": 0.0,
+   "residual_risk_vm": 0.0,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 30,
+   "major_bumps": 3,
+   "added": 25,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.14.5"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "attrs": [
+     null,
+     "26.1.0"
+    ],
+    "bcrypt": [
+     null,
+     "5.0.0"
+    ],
+    "blinker": [
+     null,
+     "1.9.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.1.1"
+    ],
+    "charset-normalizer": [
+     null,
+     "3.5.2"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "cryptography": [
+     null,
+     "50.0.2"
+    ],
+    "flask": [
+     "2.3.2",
+     "3.1.3"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "invoke": [
+     null,
+     "3.0.3"
+    ],
+    "itsdangerous": [
+     null,
+     "2.2.0"
+    ],
+    "jinja2": [
+     null,
+     "3.1.6"
+    ],
+    "markupsafe": [
+     null,
+     "3.0.4"
+    ],
+    "multidict": [
+     null,
+     "7.1.0"
+    ],
+    "paramiko": [
+     "3.2.0",
+     "5.1.0"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pycparser": [
+     null,
+     "3.11"
+    ],
+    "pynacl": [
+     null,
+     "1.6.2"
+    ],
+    "pyopenssl": [
+     "23.2.0",
+     "26.4.0"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.34.2"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "urllib3": [
+     null,
+     "2.8.0"
+    ],
+    "werkzeug": [
+     null,
+     "3.1.9"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ]
+   },
+   "planned_changes": 5,
+   "unplanned_changes": 25,
+   "unplanned_major": 0,
+   "unplanned_added": 25,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 18,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "upgrade_all": {
+   "planned": null,
+   "ok": true,
+   "error": "",
+   "seconds": 2.8,
+   "residual_findings": 0,
+   "residual_risk_evident": 0.0,
+   "residual_risk_vm": 0.0,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 35,
+   "major_bumps": 6,
+   "added": 25,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.14.5"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "asyncio": [
+     "3.4.3",
+     "4.0.0"
+    ],
+    "attrs": [
+     null,
+     "26.1.0"
+    ],
+    "bcrypt": [
+     null,
+     "5.0.0"
+    ],
+    "blinker": [
+     null,
+     "1.9.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.1.1"
+    ],
+    "charset-normalizer": [
+     null,
+     "3.5.2"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "cryptography": [
+     null,
+     "50.0.2"
+    ],
+    "flask": [
+     "2.3.2",
+     "3.1.3"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "invoke": [
+     null,
+     "3.0.3"
+    ],
+    "itsdangerous": [
+     null,
+     "2.2.0"
+    ],
+    "jinja2": [
+     null,
+     "3.1.6"
+    ],
+    "markupsafe": [
+     null,
+     "3.0.4"
+    ],
+    "multidict": [
+     null,
+     "7.1.0"
+    ],
+    "netaddr": [
+     "0.8.0",
+     "1.3.0"
+    ],
+    "numpy": [
+     "1.24.3",
+     "2.2.6"
+    ],
+    "paramiko": [
+     "3.2.0",
+     "5.1.0"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pycparser": [
+     null,
+     "3.11"
+    ],
+    "pynacl": [
+     null,
+     "1.6.2"
+    ],
+    "pyopenssl": [
+     "23.2.0",
+     "26.4.0"
+    ],
+    "pyyaml": [
+     "6.0",
+     "6.0.3"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.34.2"
+    ],
+    "texttable": [
+     "1.6.7",
+     "1.7.2"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "urllib3": [
+     null,
+     "2.8.0"
+    ],
+    "werkzeug": [
+     null,
+     "3.1.9"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ]
+   },
+   "failure": "none",
+   "compat": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 18,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "uv_fix": {
+   "planned": {
+    "requests": "2.33.0",
+    "aiohttp": "3.14.4",
+    "paramiko": "5.0.0",
+    "pyopenssl": "26.0.0",
+    "flask": "3.1.3"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 0.1,
+   "residual_findings": 0,
+   "residual_risk_evident": 0.0,
+   "residual_risk_vm": 0.0,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 30,
+   "major_bumps": 3,
+   "added": 25,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.14.5"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "attrs": [
+     null,
+     "26.1.0"
+    ],
+    "bcrypt": [
+     null,
+     "5.0.0"
+    ],
+    "blinker": [
+     null,
+     "1.9.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.1.1"
+    ],
+    "charset-normalizer": [
+     null,
+     "3.5.2"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "cryptography": [
+     null,
+     "50.0.2"
+    ],
+    "flask": [
+     "2.3.2",
+     "3.1.3"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "invoke": [
+     null,
+     "3.0.3"
+    ],
+    "itsdangerous": [
+     null,
+     "2.2.0"
+    ],
+    "jinja2": [
+     null,
+     "3.1.6"
+    ],
+    "markupsafe": [
+     null,
+     "3.0.4"
+    ],
+    "multidict": [
+     null,
+     "7.1.0"
+    ],
+    "paramiko": [
+     "3.2.0",
+     "5.1.0"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pycparser": [
+     null,
+     "3.11"
+    ],
+    "pynacl": [
+     null,
+     "1.6.2"
+    ],
+    "pyopenssl": [
+     "23.2.0",
+     "26.4.0"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.34.2"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "urllib3": [
+     null,
+     "2.8.0"
+    ],
+    "werkzeug": [
+     null,
+     "3.1.9"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ]
+   },
+   "failure": "none",
+   "compat": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 18,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "vm_opt": {
+   "planned": {
+    "aiohttp": "3.14.4",
+    "flask": "3.1.3",
+    "paramiko": "5.0.0",
+    "pyopenssl": "26.0.0",
+    "requests": "2.33.0"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.4,
+   "model_residual": 0.0,
+   "model_cost": 14.899999999999999,
+   "scope": 5,
+   "candidates": 18,
+   "residual_findings": 4,
+   "residual_risk_evident": 1.2334133016627076,
+   "residual_risk_vm": 3.1299999999999994,
+   "residual_confirmed": 0,
+   "new_findings": 4,
+   "changed": 30,
+   "major_bumps": 3,
+   "added": 25,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.14.4"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "attrs": [
+     null,
+     "26.1.0"
+    ],
+    "bcrypt": [
+     null,
+     "5.0.0"
+    ],
+    "blinker": [
+     null,
+     "1.9.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.1.1"
+    ],
+    "charset-normalizer": [
+     null,
+     "3.5.2"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "cryptography": [
+     null,
+     "46.0.7"
+    ],
+    "flask": [
+     "2.3.2",
+     "3.1.3"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "invoke": [
+     null,
+     "3.0.3"
+    ],
+    "itsdangerous": [
+     null,
+     "2.2.0"
+    ],
+    "jinja2": [
+     null,
+     "3.1.6"
+    ],
+    "markupsafe": [
+     null,
+     "3.0.4"
+    ],
+    "multidict": [
+     null,
+     "6.9.1"
+    ],
+    "paramiko": [
+     "3.2.0",
+     "5.0.0"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pycparser": [
+     null,
+     "3.11"
+    ],
+    "pynacl": [
+     null,
+     "1.6.2"
+    ],
+    "pyopenssl": [
+     "23.2.0",
+     "26.0.0"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.33.0"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "urllib3": [
+     null,
+     "2.8.0"
+    ],
+    "werkzeug": [
+     null,
+     "3.1.9"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ]
+   },
+   "planned_changes": 5,
+   "unplanned_changes": 25,
+   "unplanned_major": 0,
+   "unplanned_added": 25,
+   "new_findings_from_unplanned": 4,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 18,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "coral_opt": {
+   "planned": {
+    "aiohttp": "3.14.4",
+    "flask": "3.1.3",
+    "paramiko": "5.0.0",
+    "pyopenssl": "26.0.0",
+    "requests": "2.33.0"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.1,
+   "model_residual": 0.0,
+   "model_cost": 14.899999999999999,
+   "scope": 5,
+   "candidates": 18,
+   "residual_findings": 4,
+   "residual_risk_evident": 1.2334133016627076,
+   "residual_risk_vm": 3.1299999999999994,
+   "residual_confirmed": 0,
+   "new_findings": 4,
+   "changed": 30,
+   "major_bumps": 3,
+   "added": 25,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.14.4"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "attrs": [
+     null,
+     "26.1.0"
+    ],
+    "bcrypt": [
+     null,
+     "5.0.0"
+    ],
+    "blinker": [
+     null,
+     "1.9.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.1.1"
+    ],
+    "charset-normalizer": [
+     null,
+     "3.5.2"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "cryptography": [
+     null,
+     "46.0.7"
+    ],
+    "flask": [
+     "2.3.2",
+     "3.1.3"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "invoke": [
+     null,
+     "3.0.3"
+    ],
+    "itsdangerous": [
+     null,
+     "2.2.0"
+    ],
+    "jinja2": [
+     null,
+     "3.1.6"
+    ],
+    "markupsafe": [
+     null,
+     "3.0.4"
+    ],
+    "multidict": [
+     null,
+     "6.9.1"
+    ],
+    "paramiko": [
+     "3.2.0",
+     "5.0.0"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pycparser": [
+     null,
+     "3.11"
+    ],
+    "pynacl": [
+     null,
+     "1.6.2"
+    ],
+    "pyopenssl": [
+     "23.2.0",
+     "26.0.0"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.33.0"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "urllib3": [
+     null,
+     "2.8.0"
+    ],
+    "werkzeug": [
+     null,
+     "3.1.9"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ]
+   },
+   "planned_changes": 5,
+   "unplanned_changes": 25,
+   "unplanned_major": 0,
+   "unplanned_added": 25,
+   "new_findings_from_unplanned": 4,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 18,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "cape_opt": {
+   "planned": {
+    "aiohttp": "3.14.4",
+    "flask": "3.1.3",
+    "paramiko": "5.0.0",
+    "pyopenssl": "26.0.0",
+    "requests": "2.33.0"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.1,
+   "model_residual": 0.0,
+   "model_cost": 14.899999999999999,
+   "scope": 5,
+   "candidates": 18,
+   "residual_findings": 4,
+   "residual_risk_evident": 1.2334133016627076,
+   "residual_risk_vm": 3.1299999999999994,
+   "residual_confirmed": 0,
+   "new_findings": 4,
+   "changed": 30,
+   "major_bumps": 3,
+   "added": 25,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.14.4"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "attrs": [
+     null,
+     "26.1.0"
+    ],
+    "bcrypt": [
+     null,
+     "5.0.0"
+    ],
+    "blinker": [
+     null,
+     "1.9.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.1.1"
+    ],
+    "charset-normalizer": [
+     null,
+     "3.5.2"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "cryptography": [
+     null,
+     "46.0.7"
+    ],
+    "flask": [
+     "2.3.2",
+     "3.1.3"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "invoke": [
+     null,
+     "3.0.3"
+    ],
+    "itsdangerous": [
+     null,
+     "2.2.0"
+    ],
+    "jinja2": [
+     null,
+     "3.1.6"
+    ],
+    "markupsafe": [
+     null,
+     "3.0.4"
+    ],
+    "multidict": [
+     null,
+     "6.9.1"
+    ],
+    "paramiko": [
+     "3.2.0",
+     "5.0.0"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pycparser": [
+     null,
+     "3.11"
+    ],
+    "pynacl": [
+     null,
+     "1.6.2"
+    ],
+    "pyopenssl": [
+     "23.2.0",
+     "26.0.0"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.33.0"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "urllib3": [
+     null,
+     "2.8.0"
+    ],
+    "werkzeug": [
+     null,
+     "3.1.9"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ]
+   },
+   "planned_changes": 5,
+   "unplanned_changes": 25,
+   "unplanned_major": 0,
+   "unplanned_added": 25,
+   "new_findings_from_unplanned": 4,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 18,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "evident": {
+   "planned": {
+    "aiohttp": "3.14.4",
+    "paramiko": "5.0.0",
+    "requests": "2.33.0"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.1,
+   "model_residual": 0.5418018193272983,
+   "model_cost": 7.9,
+   "scope": 5,
+   "candidates": 18,
+   "residual_findings": 12,
+   "residual_risk_evident": 3.0362127456930934,
+   "residual_risk_vm": 8.270000000000001,
+   "residual_confirmed": 1,
+   "new_findings": 9,
+   "changed": 28,
+   "major_bumps": 1,
+   "added": 25,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.14.4"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "attrs": [
+     null,
+     "26.1.0"
+    ],
+    "bcrypt": [
+     null,
+     "5.0.0"
+    ],
+    "blinker": [
+     null,
+     "1.9.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.1.1"
+    ],
+    "charset-normalizer": [
+     null,
+     "3.5.2"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "cryptography": [
+     null,
+     "41.0.7"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "invoke": [
+     null,
+     "3.0.3"
+    ],
+    "itsdangerous": [
+     null,
+     "2.2.0"
+    ],
+    "jinja2": [
+     null,
+     "3.1.6"
+    ],
+    "markupsafe": [
+     null,
+     "3.0.4"
+    ],
+    "multidict": [
+     null,
+     "6.9.1"
+    ],
+    "paramiko": [
+     "3.2.0",
+     "5.0.0"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pycparser": [
+     null,
+     "3.11"
+    ],
+    "pynacl": [
+     null,
+     "1.6.2"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.33.0"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "urllib3": [
+     null,
+     "2.8.0"
+    ],
+    "werkzeug": [
+     null,
+     "3.1.9"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ]
+   },
+   "planned_changes": 3,
+   "unplanned_changes": 25,
+   "unplanned_major": 0,
+   "unplanned_added": 25,
+   "new_findings_from_unplanned": 9,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 11,
+    "details": [],
+    "api_compatible": true
+   },
+   "objective_gap": 2.494410926365795
+  },
+  "evident_wide": {
+   "planned": {
+    "aiohttp": "3.14.4",
+    "paramiko": "5.0.0",
+    "requests": "2.33.0"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.1,
+   "model_residual": 0.5418018193272983,
+   "model_cost": 7.9,
+   "candidates": 18,
+   "residual_findings": 12,
+   "residual_risk_evident": 3.0362127456930934,
+   "residual_risk_vm": 8.270000000000001,
+   "residual_confirmed": 1,
+   "new_findings": 9,
+   "changed": 28,
+   "major_bumps": 1,
+   "added": 25,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.14.4"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "attrs": [
+     null,
+     "26.1.0"
+    ],
+    "bcrypt": [
+     null,
+     "5.0.0"
+    ],
+    "blinker": [
+     null,
+     "1.9.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.1.1"
+    ],
+    "charset-normalizer": [
+     null,
+     "3.5.2"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "cryptography": [
+     null,
+     "41.0.7"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "invoke": [
+     null,
+     "3.0.3"
+    ],
+    "itsdangerous": [
+     null,
+     "2.2.0"
+    ],
+    "jinja2": [
+     null,
+     "3.1.6"
+    ],
+    "markupsafe": [
+     null,
+     "3.0.4"
+    ],
+    "multidict": [
+     null,
+     "6.9.1"
+    ],
+    "paramiko": [
+     "3.2.0",
+     "5.0.0"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pycparser": [
+     null,
+     "3.11"
+    ],
+    "pynacl": [
+     null,
+     "1.6.2"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.33.0"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "urllib3": [
+     null,
+     "2.8.0"
+    ],
+    "werkzeug": [
+     null,
+     "3.1.9"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ]
+   },
+   "planned_changes": 3,
+   "unplanned_changes": 25,
+   "unplanned_major": 0,
+   "unplanned_added": 25,
+   "new_findings_from_unplanned": 9,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 11,
+    "details": [],
+    "api_compatible": true
+   }
+  }
+ },
+ "original": {
+  "residual_findings": 59,
+  "residual_risk_evident": 19.34360402344472,
+  "residual_risk_vm": 37.4,
+  "residual_confirmed": 5,
+  "new_findings": 0,
+  "changed": 0,
+  "major_bumps": 0,
+  "added": 0,
+  "removed": 0,
+  "realised_changes": {}
+ },
+ "decision": {
+  "uncertain": 59,
+  "critical": 5,
+  "evpi_total": 0.24513705206860328,
+  "top": [
+   {
+    "package": "pyopenssl",
+    "advisory": "CVE-2026-27459",
+    "p": 0.12891923990498813,
+    "critical": true,
+    "evpi": 0.09002781146151291
+   },
+   {
+    "package": "flask",
+    "advisory": "CVE-2026-27205",
+    "p": 0.8072878303971307,
+    "critical": true,
+    "evpi": 0.06458302643177069
+   },
+   {
+    "package": "pyopenssl",
+    "advisory": "CVE-2026-27448",
+    "p": 0.12891923990498813,
+    "critical": true,
+    "evpi": 0.03949323019222419
+   },
+   {
+    "package": "paramiko",
+    "advisory": "CVE-2023-48795",
+    "p": 0.6559895848026134,
+    "critical": true,
+    "evpi": 0.02598040193472249
+   },
+   {
+    "package": "paramiko",
+    "advisory": "CVE-2026-44405",
+    "p": 0.8072878303971307,
+    "critical": true,
+    "evpi": 0.02505258204837299
+   }
+  ]
+ },
+ "remediation_seconds": 20.9,
+ "status": "ok"
+}

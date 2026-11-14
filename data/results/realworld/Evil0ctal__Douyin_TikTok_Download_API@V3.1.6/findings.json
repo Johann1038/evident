@@ -83,7 +83,8 @@
       "aiohttp.client_reqrep.ClientResponse.start",
       "aiohttp.cookiejar.CookieJar.load"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -187,11 +188,12 @@
       "aiohttp.web_ws.WebSocketResponse.close"
      ],
      "witness": [
-      "__app__.web_api.download_douyin_discover",
-      "aiohttp.http_websocket.WebSocketError.__str__",
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "aiohttp.http_websocket.WSMessage.json",
       "aiohttp.client_ws.ClientWebSocketResponse.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -283,13 +285,14 @@
       "aiohttp.formdata.FormData.add_field"
      ],
      "witness": [
-      "__app__.web_api.download_douyin_discover",
-      "aiohttp.http_websocket.WebSocketError.__str__",
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "aiohttp.http_websocket.WSMessage.json",
       "aiohttp.formdata.FormData.__init__",
       "aiohttp.formdata.FormData.add_fields",
       "aiohttp.formdata.FormData.add_field"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -325,7 +328,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -375,13 +378,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (package: __import__,dyn_class,eval,exec,import_module,namespace,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.web_request.BaseRequest.post"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -473,10 +482,11 @@
       "aiohttp.<module>"
      ],
      "witness": [
-      "__app__.web_api.<module>",
+      "__app__.scraper.<module>",
       "aiohttp.<module>"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -572,7 +582,8 @@
       "aiohttp.client.ClientSession._request",
       "aiohttp.cookiejar.CookieJar.filter_cookies"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -674,10 +685,11 @@
      "witness": [
       "__app__.web_api.download_file_hybrid",
       "aiohttp.client_ws.ClientWebSocketResponse.close",
-      "aiohttp.streams.FlowControlDataQueue.feed_data",
+      "aiohttp.streams.StreamReader.feed_data",
       "aiohttp.base_protocol.BaseProtocol.pause_reading"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -858,7 +870,7 @@
       "aiohttp.web_urldispatcher.StaticResource.resolve"
      ],
      "witness": [
-      "__app__.web_api.<module>",
+      "__app__.scraper.<module>",
       "aiohttp.<module>",
       "aiohttp.payload.<module>",
       "aiohttp.web_routedef.StaticDef.register",
@@ -866,7 +878,8 @@
       "aiohttp.web_urldispatcher.StaticResource.__init__",
       "aiohttp.web_urldispatcher.StaticResource.resolve"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -902,7 +915,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -952,14 +965,20 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (package: __import__,dyn_class,eval,exec,import_module,namespace,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.web_urldispatcher.StaticResource._handle",
       "aiohttp.web_urldispatcher.StaticResource.url_for"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -1062,13 +1081,14 @@
       "aiohttp.multipart.MultipartWriter.write"
      ],
      "witness": [
-      "__app__.web_api.download_douyin_discover",
-      "aiohttp.http_websocket.WebSocketError.__str__",
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "aiohttp.http_websocket.WSMessage.json",
       "aiohttp.formdata.FormData.__init__",
       "aiohttp.formdata.FormData.add_fields",
       "aiohttp.formdata.FormData.add_field"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -1160,11 +1180,12 @@
       "aiohttp.web_protocol.RequestHandler.connection_made"
      ],
      "witness": [
-      "__app__.web_api.download_douyin_discover",
-      "aiohttp.http_websocket.WebSocketError.__str__",
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "aiohttp.http_websocket.WSMessage.json",
       "aiohttp.web_protocol.RequestHandler.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -1265,7 +1286,8 @@
       "aiohttp.multipart.MultipartReader._read_headers",
       "aiohttp.http_parser.HeadersParser.parse_headers"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -1389,7 +1411,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -1439,7 +1461,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (package: __import__,dyn_class,eval,exec,import_module,namespace,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.http_parser.HttpParser.parse_headers",
@@ -1447,7 +1469,13 @@
       "aiohttp.http_parser._is_supported_upgrade"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -1543,7 +1571,8 @@
       "aiohttp.client.ClientSession.get",
       "aiohttp.client.ClientSession._request"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -1579,7 +1608,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -1629,13 +1658,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (package: __import__,dyn_class,eval,exec,import_module,namespace,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.web_request.BaseRequest.post"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -1737,11 +1772,12 @@
       "aiohttp.web_request.BaseRequest.post"
      ],
      "witness": [
-      "__app__.web_api.download_douyin_discover",
-      "aiohttp.http_websocket.WebSocketError.__str__",
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "aiohttp.http_websocket.WSMessage.json",
       "aiohttp.http_parser.DeflateBuffer.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -1777,7 +1813,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -1827,13 +1863,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (package: __import__,dyn_class,eval,exec,import_module,namespace,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.web_urldispatcher.StaticResource._directory_as_html"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -1929,7 +1971,8 @@
       "aiohttp.client_ws.ClientWebSocketResponse.close",
       "aiohttp.http_parser.HttpPayloadParser.feed_data"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -2034,7 +2077,8 @@
       "aiohttp.multipart.MultipartReader._read_headers",
       "aiohttp.http_parser.HeadersParser.parse_headers"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -2141,7 +2185,8 @@
       "aiohttp.multipart.MultipartReader._read_headers",
       "aiohttp.http_parser.HeadersParser.parse_headers"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -2237,7 +2282,8 @@
       "aiohttp.client.ClientSession.get",
       "aiohttp.client.ClientSession._request"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -2335,7 +2381,8 @@
       "aiohttp.web_protocol.RequestHandler.finish_response",
       "aiohttp.web_response.Response.write_eof"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -2370,7 +2417,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -2420,14 +2467,20 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (package: __import__,dyn_class,eval,exec,import_module,namespace,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.web_request.BaseRequest._finish",
       "aiohttp.web_request.BaseRequest.post"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -2529,7 +2582,8 @@
       "aiohttp.multipart.MultipartReader._read_headers",
       "aiohttp.http_parser.HeadersParser.parse_headers"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -2709,11 +2763,12 @@
       "aiohttp.web_request.BaseRequest.__init__"
      ],
      "witness": [
-      "__app__.web_api.download_douyin_discover",
-      "aiohttp.http_websocket.WebSocketError.__str__",
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "aiohttp.http_websocket.WSMessage.json",
       "aiohttp.web_request.BaseRequest.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -2893,11 +2948,12 @@
       "aiohttp.streams.StreamReader._read_nowait"
      ],
      "witness": [
-      "__app__.web_api.download_file_hybrid",
+      "__app__.scraper.Scraper.generate_x_bogus_url",
       "aiohttp.streams.StreamReader.read",
       "aiohttp.streams.StreamReader._read_nowait"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -2993,11 +3049,12 @@
       "aiohttp.streams.StreamReader.readchunk"
      ],
      "witness": [
-      "__app__.web_api.download_douyin_discover",
-      "aiohttp.http_websocket.WebSocketError.__str__",
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "aiohttp.http_websocket.WSMessage.json",
       "aiohttp.streams.StreamReader.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3103,7 +3160,8 @@
       "aiohttp.multipart.MultipartReader._read_headers",
       "aiohttp.http_parser.HeadersParser.parse_headers"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3205,7 +3263,8 @@
       "aiohttp.client.ClientSession.__init__",
       "aiohttp.cookiejar.CookieJar.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3305,7 +3364,8 @@
       "aiohttp.client.ClientSession.__init__",
       "aiohttp.connector.TCPConnector.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3401,7 +3461,8 @@
       "aiohttp.client.ClientSession.get",
       "aiohttp.client.ClientSession._request"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3586,7 +3647,8 @@
       "aiohttp.client_reqrep.ClientResponse.start",
       "aiohttp.cookiejar.CookieJar.load"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3680,12 +3742,13 @@
       "aiohttp.web_request.BaseRequest.post"
      ],
      "witness": [
-      "__app__.web_api.api_logs",
-      "aiohttp.multipart.BodyPartReaderPayload.write",
+      "__app__.scraper.Scraper.generate_x_bogus_url",
+      "aiohttp.multipart.BodyPartReader.read",
       "aiohttp.multipart.BodyPartReader.read_chunk",
       "aiohttp.multipart.BodyPartReader._read_chunk_from_stream"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3792,7 +3855,8 @@
       "aiohttp.multipart.MultipartReader.fetch_next_part",
       "aiohttp.multipart.MultipartReader._get_part_reader"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3828,7 +3892,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -3878,13 +3942,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (package: __import__,dyn_class,eval,exec,import_module,namespace,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.payload.Payload._binary_headers"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -3977,11 +4047,12 @@
       "aiohttp.http_parser.HttpParser.feed_data"
      ],
      "witness": [
-      "__app__.web_api.download_douyin_discover",
-      "aiohttp.http_websocket.WebSocketError.__str__",
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "aiohttp.http_websocket.WSMessage.json",
       "aiohttp.http_parser.HttpParser.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -4017,7 +4088,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -4067,13 +4138,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (package: __import__,dyn_class,eval,exec,import_module,namespace,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.client.ClientSession._ws_connect"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -4109,7 +4186,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -4159,13 +4236,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (package: __import__,dyn_class,eval,exec,import_module,namespace,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.web_request.BaseRequest.http_range"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -4259,11 +4342,12 @@
       "aiohttp.web_response.StreamResponse._set_status"
      ],
      "witness": [
-      "__app__.web_api.download_douyin_discover",
-      "aiohttp.http_websocket.WebSocketError.__str__",
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "aiohttp.http_websocket.WSMessage.json",
       "aiohttp.http_writer._py_serialize_headers"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -4299,7 +4383,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -4349,13 +4433,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (package: __import__,dyn_class,eval,exec,import_module,namespace,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.web_urldispatcher.StaticResource._handle"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -4388,7 +4478,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -4438,13 +4528,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (package: __import__,dyn_class,eval,exec,import_module,namespace,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.http_parser.HttpParser.parse_headers"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -4539,7 +4635,8 @@
       "aiohttp.client_ws.ClientWebSocketResponse.close",
       "aiohttp.http_parser.HttpParser.feed_data"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -4636,7 +4733,8 @@
       "aiohttp.client.ClientSession._request",
       "aiohttp.client_reqrep.ClientRequest.send"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -4728,11 +4826,12 @@
       "aiohttp.client_reqrep.ClientRequest.__init__"
      ],
      "witness": [
-      "__app__.web_api.download_douyin_discover",
-      "aiohttp.http_websocket.WebSocketError.__str__",
+      "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
+      "aiohttp.http_websocket.WSMessage.json",
       "aiohttp.client_reqrep.ClientRequest.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -4838,7 +4937,8 @@
       "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
       "aiohttp.client.ClientSession.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -4962,7 +5062,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -5012,13 +5112,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (package: __import__,dyn_class,eval,exec,import_module,namespace,setattr)",
      "granularity": "function",
      "symbols": [
       "anyio.to_process.process_worker"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -5054,7 +5160,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -5104,14 +5210,20 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (package: __import__,dyn_class,eval,exec,import_module,namespace,setattr)",
      "granularity": "function",
      "symbols": [
       "anyio._core._sockets.getaddrinfo",
       "anyio.streams.tls.TLSStream.wrap"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -5469,12 +5581,13 @@
      "witness": [
       "__app__.web_api.<module>",
       "uvicorn.<module>",
-      "uvicorn.config.<module>",
-      "h11.<module>",
+      "uvicorn.main.<module>",
+      "h11._connection.<module>",
       "h11._util.<module>",
       "h11._readers.ChunkedReader.__call__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -5654,7 +5767,7 @@
       "idna.package_data.<module>"
      ],
      "witness": [
-      "__app__.web_api.<module>",
+      "__app__.scraper.<module>",
       "aiohttp.<module>",
       "aiohttp.tracing.<module>",
       "yarl.<module>",
@@ -5662,7 +5775,8 @@
       "idna.<module>",
       "idna.package_data.<module>"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -5933,13 +6047,14 @@
       "pydantic.networks.validate_email"
      ],
      "witness": [
-      "__app__.web_app.error_do",
+      "__app__.web_app.<module>",
       "pydantic.main.BaseModel.__init__",
-      "pydantic.dataclasses._dataclass_validate_assignment_setattr",
-      "pydantic.networks.EmailStr.validate",
+      "pydantic.main.validate_model",
+      "pydantic.networks.NameEmail.validate",
       "pydantic.networks.validate_email"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -6032,10 +6147,11 @@
       "starlette.datastructures.UploadFile.write"
      ],
      "witness": [
-      "__app__.web_api.api_logs",
+      "__app__.web_api.download_file_hybrid",
       "starlette.datastructures.UploadFile.write"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -6220,7 +6336,8 @@
       "starlette.routing.Router.__call__",
       "starlette.datastructures.URL.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -6256,7 +6373,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -6306,14 +6423,20 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,setattr)",
      "granularity": "function",
      "symbols": [
       "starlette.formparsers.MultiPartParser.on_part_data",
       "starlette.formparsers._user_safe_decode"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "REFUTED",
+      "reachable": "REFUTED"
+     }
     },
     "tool": "evident"
    },
@@ -6437,7 +6560,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -6487,13 +6610,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,setattr)",
      "granularity": "function",
      "symbols": [
       "starlette.staticfiles.StaticFiles.lookup_path"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "REFUTED",
+      "reachable": "REFUTED"
+     }
     },
     "tool": "evident"
    },
@@ -6529,7 +6658,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -6579,13 +6708,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,setattr)",
      "granularity": "function",
      "symbols": [
       "starlette.staticfiles.StaticFiles.lookup_path"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "REFUTED",
+      "reachable": "REFUTED"
+     }
     },
     "tool": "evident"
    },
@@ -6769,7 +6904,8 @@
       "tornado.httputil.HTTPServerRequest.__repr__",
       "tornado.httputil.HTTPServerRequest.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -6955,14 +7091,15 @@
       "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
       "tenacity.BaseRetrying.__repr__",
       "tornado.web.HTTPError.__str__",
-      "tornado.queues.Queue.get",
+      "tornado.test.web_test.DecodeArgHandler.get",
       "tornado.simple_httpclient._HTTPConnection.__init__",
       "tornado.simple_httpclient._HTTPConnection.run",
       "tornado.http1connection.HTTP1Connection.read_response",
       "tornado.http1connection.HTTP1Connection._read_message",
       "tornado.http1connection.HTTP1Connection._can_keep_alive"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7058,10 +7195,11 @@
       "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
       "tenacity.BaseRetrying.__repr__",
       "tornado.web.HTTPError.__str__",
-      "tornado.test.web_test.CookieTest.get_handlers.SetCookieMaxAgeHandler.get",
+      "tornado.test.web_test.CookieTest.get_handlers.SetCookieFalsyFlags.get",
       "tornado.web.RequestHandler.set_cookie"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7165,7 +7303,8 @@
       "tornado.httputil.HTTPServerRequest._parse_body",
       "tornado.httputil.parse_body_arguments"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7263,7 +7402,8 @@
       "tornado.httputil.parse_body_arguments",
       "tornado.httputil.parse_multipart_form_data"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7362,7 +7502,8 @@
       "tornado.httputil.parse_cookie",
       "tornado.httputil._unquote_cookie"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7460,10 +7601,11 @@
       "tenacity.BaseRetrying.__repr__",
       "tornado.web.HTTPError.__str__",
       "tornado.web.StaticFileHandler.get",
-      "tornado.web.StaticFileHandler.get_content_size",
+      "tornado.web.StaticFileHandler.get_modified_time",
       "tornado.web.StaticFileHandler._stat"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7564,7 +7706,8 @@
       "tornado.httputil._parse_header",
       "tornado.httputil._parseparam"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7663,14 +7806,15 @@
       "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
       "tenacity.BaseRetrying.__repr__",
       "tornado.web.HTTPError.__str__",
-      "tornado.test.auth_test.OAuth1ClientLoginCoroutineHandler.get",
-      "tornado.auth.OAuthMixin.get_authenticated_user",
+      "tornado.test.web_test.GetCurrentUserTest.get_handlers.WithoutUserHandler.get",
+      "tornado.simple_httpclient._HTTPConnection.finish",
       "tornado.httpclient.AsyncHTTPClient.fetch",
       "tornado.curl_httpclient.CurlAsyncHTTPClient.fetch_impl",
       "tornado.curl_httpclient.CurlAsyncHTTPClient._process_queue",
       "tornado.curl_httpclient.CurlAsyncHTTPClient._curl_setup_request"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7856,7 +8000,8 @@
       "tornado.web.StaticFileHandler.get",
       "tornado.web.StaticFileHandler.validate_absolute_path"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7957,7 +8102,8 @@
       "tornado.httputil._parse_header",
       "tornado.httputil._parseparam"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -8144,7 +8290,8 @@
       "tornado.httputil.HTTPServerRequest.__init__",
       "tornado.escape.parse_qs_bytes"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -8240,10 +8387,11 @@
       "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
       "tenacity.BaseRetrying.__repr__",
       "tornado.web.HTTPError.__str__",
-      "tornado.queues.Queue.get",
+      "tornado.test.web_test.DecodeArgHandler.get",
       "tornado.httputil.HTTPHeaders.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -8340,10 +8488,11 @@
       "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
       "tenacity.BaseRetrying.__repr__",
       "tornado.web.HTTPError.__str__",
-      "tornado.test.web_test.ErrorResponseTest.get_handlers.WriteErrorHandler.get",
+      "tornado.test.web_test.AuthRedirectRequestHandler.get",
       "tornado.web.RequestHandler.send_error"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -8529,7 +8678,8 @@
       "tornado.web.HTTPError.__str__",
       "tornado.web.RedirectHandler.get"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -8629,7 +8779,8 @@
       "tornado.httputil.HTTPServerRequest._parse_body",
       "tornado.httputil.parse_body_arguments"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -8726,14 +8877,15 @@
       "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
       "tenacity.BaseRetrying.__repr__",
       "tornado.web.HTTPError.__str__",
-      "tornado.queues.Queue.get",
+      "tornado.test.web_test.DecodeArgHandler.get",
       "tornado.simple_httpclient._HTTPConnection.__init__",
       "tornado.simple_httpclient._HTTPConnection.run",
       "tornado.http1connection.HTTP1Connection.read_response",
       "tornado.http1connection.HTTP1Connection._read_message",
       "tornado.http1connection.HTTP1Connection._read_body"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -8838,7 +8990,7 @@
       "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
       "tenacity.BaseRetrying.__repr__",
       "tornado.web.HTTPError.__str__",
-      "tornado.queues.Queue.get",
+      "tornado.test.web_test.DecodeArgHandler.get",
       "tornado.simple_httpclient._HTTPConnection.__init__",
       "tornado.simple_httpclient._HTTPConnection.run",
       "tornado.http1connection.HTTP1Connection.read_response",
@@ -8846,7 +8998,8 @@
       "tornado.http1connection.HTTP1Connection._read_body",
       "tornado.http1connection.HTTP1Connection._read_body_until_close"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -8941,14 +9094,15 @@
       "__app__.scraper.Scraper.get_tiktok_user_profile_videos",
       "tenacity.BaseRetrying.__repr__",
       "tornado.web.HTTPError.__str__",
-      "tornado.test.auth_test.OAuth1ClientLoginCoroutineHandler.get",
-      "tornado.auth.OAuthMixin.get_authenticated_user",
+      "tornado.test.web_test.GetCurrentUserTest.get_handlers.WithoutUserHandler.get",
+      "tornado.simple_httpclient._HTTPConnection.finish",
       "tornado.httpclient.AsyncHTTPClient.fetch",
       "tornado.curl_httpclient.CurlAsyncHTTPClient.fetch_impl",
       "tornado.curl_httpclient.CurlAsyncHTTPClient._process_queue",
       "tornado.curl_httpclient.CurlAsyncHTTPClient._curl_setup_request"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },

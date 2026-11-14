@@ -203,7 +203,25 @@ CORAL-style 0.181; CAPE-style 0.245.
 ### Real-world study
 
 <!-- REALWORLD-RESULTS -->
-*Filled in from `data/results/paper_tables.json` once `run_realworld.py` completes.*
+33 historical snapshots of open-source Python applications (lockfiles from mid-2023, scanned against the 2026-11-12 advisory snapshot); 24 re-resolve in metadata-only mode.
+
+- **3863 version-matched findings**, median 110 per application; 55% concern transitive dependencies.
+- **13.3%** are not installed for the target, development-only, not imported, or statically unreachable (each with a VEX justification); 132 have a confirmed static path.
+- The calibrated model expects **1829** of them to be exposed.
+
+| Strategy | Resolves | Packages changed | Major bumps | Expected exposure removed | Confirmed-reachable fixed |
+|---|---|---|---|---|---|
+| Minimal fix per package (pip-audit style) | 54% | 36.2 | 3.9 | 61% | 92% |
+| Latest release per package | 92% | 38.8 | 7.8 | 71% | 93% |
+| Upgrade everything (uv) | 96% | 72.3 | 22.3 | 74% | 92% |
+| Optimiser + version-match weights (KEVGraph-like) | 100% | 36.2 | 6.0 | 71% | 91% |
+| Optimiser + CORAL-style weights | 100% | 35.2 | 5.5 | 66% | 91% |
+| Optimiser + CAPE-style weights | 100% | 36.2 | 6.2 | 70% | 91% |
+| **EVIDENT** (optimiser + calibrated weights) | 100% | 34.0 | 4.9 | 66% | 91% |
+
+Scored with the same yardstick, calibrated and version-match weights give similar risk/change fronts (mean area difference -0.008, median +0.001; calibrated better on 11, worse on 3 of 24 projects): with mostly *possibly reachable* findings, weighting approaches counting. The main remediation gains come from constraint-aware, resolver-verified planning.
+
+Only 98 of 2332 uncertain findings (4.2%) would change the optimal plan if resolved: these are the ones EVIDENT asks you to triage.
 <!-- /REALWORLD-RESULTS -->
 
 ## Repository layout

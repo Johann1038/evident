@@ -1,10 +1,10 @@
 {
  "bomFormat": "CycloneDX",
  "specVersion": "1.6",
- "serialNumber": "urn:uuid:0d592675-aabf-466e-8761-5baaaa6d1ba9",
+ "serialNumber": "urn:uuid:e810acc1-dfb5-483b-8d30-f864e2eda589",
  "version": 1,
  "metadata": {
-  "timestamp": "2026-11-12T10:30:07+00:00",
+  "timestamp": "2026-11-13T16:58:46+00:00",
   "tools": {
    "components": [
     {
@@ -114,15 +114,15 @@
   {
    "ref": "app",
    "dependsOn": [
-    "pkg:pypi/aiohttp@3.8.4",
-    "pkg:pypi/python-decouple@3.8",
     "pkg:pypi/crispy-bootstrap5@0.7",
+    "pkg:pypi/python-decouple@3.8",
+    "pkg:pypi/pillow@9.5.0",
+    "pkg:pypi/aiofiles@23.1.0",
     "pkg:pypi/django-debug-toolbar@4.0.0",
     "pkg:pypi/django-sass-processor@1.2.2",
-    "pkg:pypi/pillow@9.5.0",
     "pkg:pypi/requests@2.29.0",
     "pkg:pypi/uwsgi@2.0.21",
-    "pkg:pypi/aiofiles@23.1.0"
+    "pkg:pypi/aiohttp@3.8.4"
    ]
   },
   {
@@ -341,7 +341,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -629,7 +629,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -869,7 +869,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -965,7 +965,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -1061,7 +1061,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -1349,7 +1349,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2069,7 +2069,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2165,7 +2165,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2213,7 +2213,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2309,7 +2309,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2352,7 +2352,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -3264,7 +3264,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -3600,7 +3600,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -3936,7 +3936,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -4224,7 +4224,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -4416,7 +4416,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -4752,7 +4752,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -5040,7 +5040,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -5328,7 +5328,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -5376,7 +5376,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -5664,7 +5664,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {

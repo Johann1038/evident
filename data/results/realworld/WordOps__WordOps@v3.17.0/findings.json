@@ -1,0 +1,187 @@
+[
+ {
+  "snapshot": "WordOps__WordOps@v3.17.0",
+  "package": "pymysql",
+  "version": "1.1.0",
+  "advisory": "CVE-2024-36039",
+  "ids": [
+   "GHSA-v9hf-5j83-6xpp",
+   "PYSEC-2026-502"
+  ],
+  "cves": [
+   "CVE-2024-36039"
+  ],
+  "cvss": 9.8,
+  "epss": 0.00691,
+  "kev": false,
+  "severity_w": 0.9800000000000001,
+  "published": "2024-05-21T18:31:23Z",
+  "fixed": [
+   "1.1.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "pymysql.converters.escape_dict"
+     ],
+     "witness": [
+      "__app__.wo.core.mysql.WOMysql.dbConnection",
+      "pymysql.connections.Connection.__init__",
+      "pymysql.converters.escape_dict"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "WordOps__WordOps@v3.17.0",
+  "package": "sh",
+  "version": "2.0.4",
+  "advisory": "CVE-2026-54552",
+  "ids": [
+   "GHSA-q38v-wp89-2w55",
+   "PYSEC-2026-3540"
+  ],
+  "cves": [
+   "CVE-2026-54552"
+  ],
+  "cvss": 7.9,
+  "epss": 0.00169,
+  "kev": false,
+  "severity_w": 0.79,
+  "published": "2026-07-17T18:41:38Z",
+  "fixed": [
+   "2.2.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ }
+]

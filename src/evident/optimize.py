@@ -137,7 +137,8 @@ class Plan:
 
 class Remediator:
     def __init__(self, pins: dict[str, str], direct: set[str], findings, tenv: TargetEnv, *,
-                 today: str, p_of, p_new_of, max_cands: int = 6, api_breaks=None):
+                 today: str, p_of, p_new_of, max_cands: int = 6, api_breaks=None, sev_fn=None,
+                 agg: str = "sum"):
         """
         pins       installed versions {pkg: version} in the target env
         findings   current findings (with .package, .advisory, .severity_w)
@@ -149,6 +150,8 @@ class Remediator:
         self.p_of, self.p_new_of = p_of, p_new_of
         self.max_cands = max_cands
         self.api_breaks = api_breaks
+        self.sev_fn = sev_fn or severity_weight
+        self.agg = agg
         self.cur_p: dict[tuple[str, str], float] = {}
         for f in findings:
             self.cur_p[(f.package, f.advisory)] = max(self.cur_p.get((f.package, f.advisory), 0.0), p_of(f))
@@ -214,13 +217,13 @@ class Remediator:
     def _risk(self, p: str, v: str) -> float:
         k = (p, v)
         if k not in self.risk:
-            r = 0.0
+            terms = []
             for a in advisories_for(p, v):
                 pa = self.cur_p.get((p, a.id))
                 if pa is None:
                     pa = self.p_new_of(p)
-                r += severity_weight(a) * pa
-            self.risk[k] = r
+                terms.append(self.sev_fn(a) * pa)
+            self.risk[k] = (max(terms) if terms else 0.0) if self.agg == "max" else sum(terms)
         return self.risk[k]
 
     def _cost(self, p: str, v: str) -> float:

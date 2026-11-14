@@ -468,7 +468,7 @@
       "flask.sessions.SecureCookieSessionInterface.save_session"
      ],
      "witness": [
-      "__app__.CTFd.utils.migrations.get_available_revisions",
+      "__app__.CTFd.utils.exports.import_ctf",
       "__app__.tests.helpers.CTFdTestClient.open",
       "flask.testing.FlaskClient.session_transaction",
       "flask.sessions.SecureCookieSessionInterface.save_session"
@@ -655,7 +655,7 @@
       "gevent.subprocess.check_output"
      ],
      "witness": [
-      "__app__.CTFd.utils.events.ServerSentEvent.__str__",
+      "__app__.CTFd.utils.events.RedisEventManager.listen._listen",
       "gevent._fileobjectcommon.FileObjectBase.__next__",
       "gevent.pywsgi.Input.readline",
       "gevent.pywsgi.Input._chunked_read",
@@ -785,7 +785,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -835,7 +835,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "gunicorn.http.message.Message.__init__",
@@ -1124,7 +1124,7 @@
       "jinja2.filters.do_attr"
      ],
      "witness": [
-      "__app__.CTFd.utils.uploads.uploaders.FilesystemUploader.store",
+      "__app__.CTFd.api.v1.challenges.Challenge.get",
       "jinja2.exceptions.TemplateError.__init__",
       "jinja2.filters.do_attr"
      ],
@@ -1220,7 +1220,7 @@
       "jinja2.filters.do_xmlattr"
      ],
      "witness": [
-      "__app__.CTFd.utils.uploads.uploaders.FilesystemUploader.store",
+      "__app__.CTFd.api.v1.challenges.Challenge.get",
       "jinja2.exceptions.TemplateError.__init__",
       "jinja2.filters.do_xmlattr"
      ],
@@ -1316,7 +1316,7 @@
       "jinja2.filters.do_xmlattr"
      ],
      "witness": [
-      "__app__.CTFd.utils.uploads.uploaders.FilesystemUploader.store",
+      "__app__.CTFd.api.v1.challenges.Challenge.get",
       "jinja2.exceptions.TemplateError.__init__",
       "jinja2.filters.do_xmlattr"
      ],
@@ -1416,7 +1416,7 @@
       "jinja2.sandbox.inspect_format_method"
      ],
      "witness": [
-      "__app__.CTFd.utils.uploads.uploaders.FilesystemUploader.store",
+      "__app__.CTFd.api.v1.challenges.Challenge.get",
       "jinja2.exceptions.TemplateError.__init__",
       "jinja2.ext._gettext_alias",
       "jinja2.sandbox.SandboxedEnvironment.call"
@@ -1457,7 +1457,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -1507,7 +1507,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "mako.lookup.TemplateLookup.get_template",
@@ -1550,7 +1550,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -1600,7 +1600,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "mako.template.Template.__init__"
@@ -1642,7 +1642,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -1692,7 +1692,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "mako.template.Template.__init__"
@@ -1734,7 +1734,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -1784,7 +1784,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "mako.lexer.Lexer.match_tag_start"
@@ -1884,7 +1884,7 @@
       "pydantic.networks.validate_email"
      ],
      "witness": [
-      "__app__.CTFd.utils.uploads.uploaders.FilesystemUploader.store",
+      "__app__.CTFd.api.v1.challenges.Challenge.get",
       "pydantic.main.BaseModel.__init__",
       "pydantic.main.validate_model",
       "pydantic.networks.NameEmail.validate",
@@ -1926,7 +1926,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -1976,7 +1976,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "pymysql.converters.escape_dict"
@@ -2018,7 +2018,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -2068,7 +2068,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "dotenv.cli.set_value",
@@ -2170,7 +2170,7 @@
       "requests.utils.get_netrc_auth"
      ],
      "witness": [
-      "__app__.CTFd.auth.login",
+      "__app__.CTFd.auth.oauth_redirect",
       "requests.sessions.Session.get",
       "requests.sessions.Session.request",
       "requests.sessions.Session.prepare_request",
@@ -2269,7 +2269,7 @@
       "requests.adapters.HTTPAdapter.send"
      ],
      "witness": [
-      "__app__.CTFd.auth.login",
+      "__app__.CTFd.auth.oauth_redirect",
       "requests.sessions.Session.get",
       "requests.sessions.Session.request",
       "requests.sessions.Session.send",
@@ -2368,7 +2368,7 @@
       "requests.utils.extract_zipped_paths"
      ],
      "witness": [
-      "__app__.CTFd.auth.login",
+      "__app__.CTFd.auth.oauth_redirect",
       "requests.sessions.Session.get",
       "requests.sessions.Session.request",
       "requests.sessions.Session.send",
@@ -2468,7 +2468,7 @@
       "requests.sessions.SessionRedirectMixin.rebuild_proxies"
      ],
      "witness": [
-      "__app__.CTFd.auth.login",
+      "__app__.CTFd.auth.oauth_redirect",
       "requests.sessions.Session.get",
       "requests.sessions.Session.request",
       "requests.sessions.Session.send",
@@ -2578,11 +2578,11 @@
       "urllib3.response.MultiDecoder.decompress"
      ],
      "witness": [
-      "__app__.CTFd.auth.confirm",
-      "requests.adapters.HTTPAdapter.close",
-      "urllib3.response.HTTPResponse.__iter__",
-      "urllib3.response.HTTPResponse.stream",
-      "urllib3.response.HTTPResponse.read_chunked",
+      "__app__.CTFd.utils.email.providers.mailgun.<module>",
+      "requests.<module>",
+      "urllib3.<module>",
+      "urllib3.response.HTTPResponse.__init__",
+      "urllib3.response.HTTPResponse.read",
       "urllib3.response.HTTPResponse._init_decoder",
       "urllib3.response._get_decoder",
       "urllib3.response.DeflateDecoder.__init__"
@@ -2777,12 +2777,12 @@
       "urllib3.response.HTTPResponse.drain_conn"
      ],
      "witness": [
-      "__app__.CTFd.auth.login",
+      "__app__.CTFd.auth.oauth_redirect",
       "requests.sessions.Session.get",
       "requests.sessions.Session.request",
       "requests.sessions.Session.send",
       "requests.adapters.HTTPAdapter.send",
-      "urllib3.connectionpool.HTTPConnectionPool.urlopen",
+      "urllib3.poolmanager.PoolManager.urlopen",
       "urllib3.response.HTTPResponse.drain_conn"
      ],
      "missing": false
@@ -2879,7 +2879,7 @@
       "urllib3.poolmanager.PoolManager.urlopen"
      ],
      "witness": [
-      "__app__.CTFd.auth.login",
+      "__app__.CTFd.auth.oauth_redirect",
       "requests.sessions.Session.get",
       "requests.sessions.Session.request",
       "requests.sessions.Session.send",
@@ -2978,11 +2978,11 @@
       "urllib3.response.MultiDecoder.__init__"
      ],
      "witness": [
-      "__app__.CTFd.auth.confirm",
-      "requests.adapters.HTTPAdapter.close",
-      "urllib3.response.HTTPResponse.__iter__",
-      "urllib3.response.HTTPResponse.stream",
-      "urllib3.response.HTTPResponse.read_chunked",
+      "__app__.CTFd.utils.email.providers.mailgun.<module>",
+      "requests.<module>",
+      "urllib3.<module>",
+      "urllib3.response.HTTPResponse.__init__",
+      "urllib3.response.HTTPResponse.read",
       "urllib3.response.HTTPResponse._init_decoder",
       "urllib3.response._get_decoder",
       "urllib3.response.MultiDecoder.__init__"
@@ -3080,7 +3080,7 @@
       "urllib3.poolmanager.PoolManager.urlopen"
      ],
      "witness": [
-      "__app__.CTFd.utils.email.providers.mailgun.MailgunEmailProvider.sendmail",
+      "__app__.CTFd.auth.oauth_redirect",
       "requests.api.post",
       "requests.api.request",
       "requests.sessions.Session.__init__",
@@ -3474,7 +3474,7 @@
       "urllib3.response.HTTPResponse.read_chunked"
      ],
      "witness": [
-      "__app__.CTFd.auth.confirm",
+      "__app__.CTFd.auth.register",
       "requests.adapters.HTTPAdapter.close",
       "urllib3.response.HTTPResponse.__iter__",
       "urllib3.response.HTTPResponse.stream",
@@ -3517,7 +3517,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -3567,7 +3567,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "werkzeug.security.safe_join"
@@ -3673,7 +3673,7 @@
       "werkzeug.serving.run_simple"
      ],
      "witness": [
-      "__app__.CTFd.utils.uploads.uploaders.<module>",
+      "__app__.CTFd.errors.<module>",
       "werkzeug.<module>",
       "werkzeug.serving.<module>",
       "werkzeug.serving.main",
@@ -3716,7 +3716,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -3766,7 +3766,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "werkzeug.security.safe_join"
@@ -3808,7 +3808,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -3858,7 +3858,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "werkzeug.security.safe_join"
@@ -3900,7 +3900,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -3950,7 +3950,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "werkzeug.security.safe_join"
@@ -3992,7 +3992,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -4042,7 +4042,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "werkzeug.security.safe_join"
@@ -4153,10 +4153,10 @@
       "werkzeug.test.stream_encode_multipart.write"
      ],
      "witness": [
-      "__app__.CTFd.utils.uploads.uploaders.<module>",
-      "werkzeug.utils.<module>",
-      "werkzeug.routing.Rule.compile",
-      "werkzeug.routing.Rule._compile_builder",
+      "__app__.CTFd.views.<module>",
+      "flask.helpers.<module>",
+      "werkzeug.routing.<module>",
+      "werkzeug.routing._prefix_names",
       "werkzeug.formparser.MultiPartParser.parse",
       "werkzeug.formparser.MultiPartParser.parse_parts",
       "werkzeug.formparser.MultiPartParser.parse_lines",
@@ -4198,7 +4198,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -4248,7 +4248,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "werkzeug._internal._cookie_parse_impl"
@@ -4350,7 +4350,7 @@
       "werkzeug.wrappers.request.Request.make_form_data_parser"
      ],
      "witness": [
-      "__app__.CTFd.utils.uploads.uploaders.FilesystemUploader.store",
+      "__app__.CTFd.api.v1.challenges.Challenge.get",
       "werkzeug.exceptions.HTTPException.__call__",
       "werkzeug.formparser.FormDataParser.__init__"
      ],

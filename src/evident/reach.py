@@ -27,6 +27,11 @@ from pathlib import Path
 
 TEST_RX = re.compile(r"(^|/)(tests?|testing|test_utils|docs?|examples?|benchmarks?)(/|$)|(^|/)(test_[^/]*|[^/]*_test|conftest)\.py$")
 BUILTINS = set(dir(builtins))
+# constructs after which "unreachable" cannot be claimed for code they could load or redirect
+BLOCKING_REFLECTION = {"import_module", "__import__", "exec", "eval", "namespace", "setattr", "dyn_class",
+                       "plugin", "monkeypatch"}
+PLUGIN_CALLS = {"iter_entry_points", "entry_points", "load_entry_point", "iter_modules", "walk_packages",
+                "load_module", "exec_module", "spec_from_file_location"}
 _ITER = ("__iter__", "__next__")
 PROTOCOL_BUILTINS = {
     "str": ("__str__", "__repr__"), "repr": ("__repr__",), "format": ("__format__", "__str__"),
@@ -77,6 +82,7 @@ class Program:
         self.app_suffix: dict[str, list[str]] = defaultdict(list)
         self.referenced: set[str] = set()
         self.decorated: set[str] = set()
+        self.sigs: dict[str, dict] = {}
 
     # ------------------------------------------------------------------ loading
     def add_tree(self, root: Path, pkg: str, *, app: bool = False, only_tops: set[str] | None = None) -> int:
@@ -298,13 +304,34 @@ class Program:
                     dq.append(v)
         pk = {self.mods[q].pkg for q in seen if q in self.mods}
         refl = set()
+        self.reflection_kinds: dict[str, set[str]] = defaultdict(set)
+        self.reflective_nodes: list[tuple[str, frozenset, str, str]] = []   # (node, kinds, package, module)
         for node, kinds in self.reflect.items():
-            if kinds & {"import_module", "__import__", "exec", "eval"}:
+            k = kinds & BLOCKING_REFLECTION
+            if k:
                 p = self.pkg_of(node)
                 mq = node[:-9] if node.endswith(".<module>") else self.funcs.get(node)
                 if p and mq in seen:
                     refl.add(p)
+                    self.reflection_kinds[p] |= k
+                    self.reflective_nodes.append((node, frozenset(k), p, mq))
         return pk, refl
+
+    def importers_of(self, dist: str) -> set[str]:
+        """Modules that (transitively) import a module of `dist`, plus dist's own modules."""
+        rev: dict[str, set[str]] = defaultdict(set)
+        for a, bs in self.imports.items():
+            for b in bs:
+                rev[b].add(a)
+        start = {q for q, m in self.mods.items() if m.pkg == dist}
+        seen, dq = set(start), deque(start)
+        while dq:
+            u = dq.popleft()
+            for v in rev.get(u, ()):
+                if v not in seen:
+                    seen.add(v)
+                    dq.append(v)
+        return seen
 
 
 def _common(a: str, b: str) -> int:
@@ -363,6 +390,12 @@ class _Collector(ast.NodeVisitor):
         q = self._q(node.name)
         self.p.funcs[q] = self.m.qual
         self.p.func_pkg[q] = self.m.pkg
+        a = node.args
+        pos = [x.arg for x in a.posonlyargs + a.args]
+        self.p.sigs[q] = {"pos": pos, "required": len(pos) - len(a.defaults),
+                          "kwonly": [x.arg for x in a.kwonlyargs],
+                          "kwonly_required": [x.arg for x, d in zip(a.kwonlyargs, a.kw_defaults) if d is None],
+                          "vararg": a.vararg is not None, "kwarg": a.kwarg is not None}
         if node.decorator_list:
             self.p.decorated.add(q)
         if self.stack and ".".join([self.m.qual] + self.stack) in self.p.classes:
@@ -564,6 +597,14 @@ class _Linker(ast.NodeVisitor):
                     if q:
                         self.local[-1][t.id] = q
             else:
+                if isinstance(t, ast.Attribute):
+                    # monkey patching: assigning to an attribute of another package's module or class
+                    base = _dotted(t.value)
+                    bq = self.p.resolve(self._qualify(base) or "") if base else None
+                    if bq and (bq in self.p.mods or bq in self.p.classes):
+                        owner = self.p.mods[bq].pkg if bq in self.p.mods else self.p.pkg_of(bq)
+                        if owner and owner != self.m.pkg:
+                            self.p.reflect[self.cur].add("monkeypatch")
                 self.visit(t)
 
     # -- references and calls
@@ -598,8 +639,17 @@ class _Linker(ast.NodeVisitor):
                     for t in targets:
                         self.p.weak[self.cur].add(t)
             handled = True
-        elif isinstance(f, ast.Name) and f.id in ("eval", "exec"):
-            self.p.reflect[self.cur].add(f.id)
+        elif isinstance(f, ast.Name) and f.id in ("eval", "exec", "compile"):
+            self.p.reflect[self.cur].add("exec" if f.id == "compile" else f.id)
+        elif isinstance(f, ast.Name) and f.id in ("globals", "locals", "vars"):
+            self.p.reflect[self.cur].add("namespace")
+        elif isinstance(f, ast.Name) and f.id == "setattr" and len(node.args) >= 2 and not (
+                isinstance(node.args[1], ast.Constant)):
+            self.p.reflect[self.cur].add("setattr")
+        elif isinstance(f, ast.Name) and f.id == "type" and len(node.args) == 3:
+            self.p.reflect[self.cur].add("dyn_class")
+        elif fd and fd.rsplit(".", 1)[-1] in PLUGIN_CALLS:
+            self.p.reflect[self.cur].add("plugin")
         elif fd in ("importlib.import_module", "import_module", "__import__"):
             a0 = node.args[0] if node.args else None
             if isinstance(a0, ast.Constant) and isinstance(a0.value, str):
@@ -787,6 +837,7 @@ class ReachResult:
     verdict: str            # CONFIRMED | POSSIBLE | REFUTED | UNKNOWN
     witness: list[str]
     reason: str
+    scopes: dict | None = None   # verdict per reflection-blocking scope when no path exists
 
 
 def path_to(par: dict, node: str) -> list[str]:
@@ -834,9 +885,45 @@ class Analysis:
         for n in nodes:
             if n in self.weak:
                 return ReachResult("POSSIBLE", path_to(self.weak, n), "path requires over-approximated edges")
-        if self.reflective & ({"__app__", dist} | self.imported):
-            return ReachResult("UNKNOWN", [], "reflection in reachable region")
-        return ReachResult("REFUTED", [], "no path even with over-approximation")
+        scopes = self.refutation_scopes(dist)
+        blockers = self.reflective & ({"__app__", dist} | self.imported)
+        if blockers:
+            kinds = sorted({k for b in blockers for k in self.p.reflection_kinds.get(b, ())})
+            where = "app" if "__app__" in blockers else ("package" if dist in blockers else "importer")
+            r = ReachResult("UNKNOWN", [], f"reflection in reachable region ({where}: {','.join(kinds)})")
+        else:
+            r = ReachResult("REFUTED", [], "no path even with over-approximation")
+        r.scopes = scopes
+        return r
+
+    LOADERS = frozenset({"import_module", "__import__", "exec", "eval", "plugin"})
+
+    def refutation_scopes(self, dist: str) -> dict[str, str]:
+        """Verdict for an unreachable symbol under four nested scopes of reflection blocking.
+
+        global          any blocking reflection in the imported region (the default, most conservative)
+        package         reflection in the application, the vulnerable package, or a package importing it
+        module          reflection in a module that (transitively) imports the vulnerable package, or a
+                        code-loading construct anywhere in the application
+        reachable       as `module`, restricted to reflective code that is itself reachable from the roots
+        """
+        if not hasattr(self, "_imp_cache"):
+            self._imp_cache = {}
+        if dist not in self._imp_cache:
+            self._imp_cache[dist] = self.p.importers_of(dist)
+        imods = self._imp_cache[dist]
+        ipk = {self.p.mods[m].pkg for m in imods if m in self.p.mods}
+        nodes = getattr(self.p, "reflective_nodes", [])
+
+        def blocked(pred) -> bool:
+            return any(pred(n, k, p, m) for n, k, p, m in nodes)
+        g = blocked(lambda n, k, p, m: True)
+        pkg = blocked(lambda n, k, p, m: p in ({"__app__", dist} | ipk))
+        mod = blocked(lambda n, k, p, m: m in imods or (p == "__app__" and bool(k & self.LOADERS)))
+        rch = blocked(lambda n, k, p, m: (m in imods or (p == "__app__" and bool(k & self.LOADERS)))
+                      and (n in self.weak or (n.endswith(".<module>") and n in self.weak)))
+        return {s: ("UNKNOWN" if b else "REFUTED") for s, b in
+                (("global", g), ("package", pkg), ("module", mod), ("reachable", rch))}
 
 
 def analyse(app_dir: Path, pkg_dirs: dict[str, Path]) -> Analysis:

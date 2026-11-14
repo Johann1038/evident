@@ -1,0 +1,1552 @@
+{
+ "id": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+ "meta": {
+  "id": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "repo": "amisadmin/fastapi-scheduler",
+  "tag": "ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "published_at": "2023-02-19T04:10:09Z",
+  "stars": 110,
+  "lock_kind": "pdm",
+  "lock_file": "pdm.lock",
+  "lock_path": "pdm.lock",
+  "subdir": "",
+  "manifest": "pyproject.toml",
+  "requires_python": ">=3.7",
+  "description": "FastAPI-Scheduler is a simple scheduled task management FastAPI extension based on APScheduler.",
+  "topics": [
+   "apscheduler",
+   "fastapi",
+   "fastapi-amis-admin",
+   "fastapi-scheduler"
+  ]
+ },
+ "python": "3.10",
+ "summary": {
+  "locked": 55,
+  "installed": 45,
+  "direct": 6,
+  "transitive": 39,
+  "edges": 74,
+  "edges_from_lock": true
+ },
+ "stats": {
+  "app_modules": 2,
+  "pkgs_analysed": 16,
+  "pkgs_no_source": 0,
+  "seconds": 1314.33,
+  "funcs": 10353,
+  "roots": 7,
+  "app_refs": {
+   "fastapi-amis-admin": [
+    "fastapi_amis_admin",
+    "fastapi_amis_admin.admin",
+    "fastapi_amis_admin.amis",
+    "fastapi_amis_admin.amis.components.Dialog",
+    "fastapi_amis_admin.amis.components.Form",
+    "fastapi_amis_admin.amis.components.InputDatetime",
+    "fastapi_amis_admin.amis.components.PageSchema",
+    "fastapi_amis_admin.amis.components.TableCRUD",
+    "fastapi_amis_admin.crud",
+    "fastapi_amis_admin.crud.schema",
+    "fastapi_amis_admin.crud.schema.BaseApiOut",
+    "fastapi_amis_admin.crud.schema.ItemListSchema",
+    "fastapi_amis_admin.crud.schema.Paginator",
+    "fastapi_amis_admin.crud.utils",
+    "fastapi_amis_admin.crud.utils.schema_create_by_schema",
+    "fastapi_amis_admin.models",
+    "fastapi_amis_admin.models.fields",
+    "fastapi_amis_admin.models.fields.Field",
+    "fastapi_amis_admin.utils",
+    "fastapi_amis_admin.utils.translation"
+   ],
+   "pydantic": [
+    "pydantic",
+    "pydantic.class_validators.validator",
+    "pydantic.fields"
+   ],
+   "starlette": [
+    "starlette",
+    "starlette.requests"
+   ],
+   "apscheduler": [
+    "apscheduler",
+    "apscheduler.job",
+    "apscheduler.jobstores",
+    "apscheduler.jobstores.memory",
+    "apscheduler.jobstores.memory.MemoryJobStore",
+    "apscheduler.schedulers",
+    "apscheduler.schedulers.asyncio",
+    "apscheduler.schedulers.asyncio.AsyncIOScheduler",
+    "apscheduler.schedulers.base"
+   ],
+   "fastapi": [
+    "fastapi",
+    "fastapi.param_functions.Body",
+    "fastapi.param_functions.Depends"
+   ]
+  },
+  "reflection_kinds": {
+   "fastapi": [
+    "namespace"
+   ],
+   "pydantic": [
+    "dyn_class",
+    "eval",
+    "import_module",
+    "setattr"
+   ],
+   "setuptools": [
+    "__import__",
+    "exec",
+    "import_module",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "anyio": [
+    "import_module",
+    "namespace"
+   ],
+   "fastapi-amis-admin": [
+    "dyn_class",
+    "setattr"
+   ],
+   "apscheduler": [
+    "__import__",
+    "plugin",
+    "setattr"
+   ],
+   "sqlmodel": [
+    "setattr"
+   ]
+  }
+ },
+ "scan_seconds": 1319.6,
+ "sdist_only": [
+  "python-multipart"
+ ],
+ "baseline_resolution": {
+  "ok": true,
+  "seconds": 4.8,
+  "error": ""
+ },
+ "baseline_drift": 1,
+ "strategies": {
+  "audit_fix": {
+   "planned": {
+    "anyio": "4.14.2",
+    "black": "26.10.1",
+    "fastapi": "0.109.1",
+    "idna": "3.15",
+    "pydantic": "1.10.13",
+    "pytest": "9.0.3",
+    "python-multipart": "0.0.31",
+    "setuptools": "84.1.0",
+    "starlette": "1.3.1",
+    "virtualenv": "21.14.9"
+   },
+   "ok": false,
+   "error": "en resolving dependencies\n  cause: Because fastapi==0.109.1 depends on starlette>=0.35.0,<0.36.0 and you require fastapi==0.109.1, we can conclude that you require starlette>=0.35.0,<0.36.0.\n         And because you require starlette==1.3.1, we can conclude that your requirements are unsatisfiable.\n",
+   "seconds": 0.4,
+   "failure": "dependency conflict"
+  },
+  "latest": {
+   "planned": {
+    "starlette": "1.7.0",
+    "filelock": "4.1.0",
+    "black": "26.10.1",
+    "pydantic": "2.14.3",
+    "pytest": "9.2.0",
+    "setuptools": "84.2.1",
+    "virtualenv": "21.15.6",
+    "python-multipart": "0.0.32",
+    "anyio": "4.16.0",
+    "fastapi": "0.162.5",
+    "idna": "3.20"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 2.0,
+   "residual_findings": 17,
+   "residual_risk_evident": 0.1586012767220903,
+   "residual_risk_vm": 8.459999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 16,
+   "changed": 29,
+   "major_bumps": 13,
+   "added": 9,
+   "removed": 0,
+   "realised_changes": {
+    "annotated-doc": [
+     null,
+     "0.0.6"
+    ],
+    "annotated-types": [
+     null,
+     "0.8.0"
+    ],
+    "anyio": [
+     "3.6.1",
+     "4.16.0"
+    ],
+    "black": [
+     "22.8.0",
+     "26.10.1"
+    ],
+    "distlib": [
+     "0.3.6",
+     "0.4.4"
+    ],
+    "exceptiongroup": [
+     null,
+     "1.3.1"
+    ],
+    "fastapi": [
+     "0.85.0",
+     "0.162.5"
+    ],
+    "filelock": [
+     "3.8.0",
+     "4.1.0"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "iniconfig": [
+     "1.1.1",
+     "2.3.1"
+    ],
+    "opentelemetry-api": [
+     null,
+     "1.45.2"
+    ],
+    "packaging": [
+     "21.3",
+     "26.3"
+    ],
+    "pathspec": [
+     "0.10.1",
+     "1.1.1"
+    ],
+    "platformdirs": [
+     "2.5.2",
+     "4.12.4"
+    ],
+    "pluggy": [
+     "1.0.0",
+     "1.7.0"
+    ],
+    "pydantic": [
+     "1.10.2",
+     "2.14.3"
+    ],
+    "pydantic-core": [
+     null,
+     "2.50.4"
+    ],
+    "pygments": [
+     null,
+     "2.21.0"
+    ],
+    "pytest": [
+     "6.2.5",
+     "9.2.0"
+    ],
+    "python-discovery": [
+     null,
+     "1.9.5"
+    ],
+    "python-multipart": [
+     "0.0.5",
+     "0.0.32"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "setuptools": [
+     "65.3.0",
+     "84.2.1"
+    ],
+    "sqlalchemy": [
+     "1.4.41",
+     "2.0.57"
+    ],
+    "sqlmodel": [
+     "0.0.8",
+     "0.0.49"
+    ],
+    "starlette": [
+     "0.20.4",
+     "1.7.0"
+    ],
+    "typing-extensions": [
+     "4.3.0",
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.5"
+    ],
+    "virtualenv": [
+     "20.16.2",
+     "21.15.6"
+    ]
+   },
+   "planned_changes": 11,
+   "unplanned_changes": 18,
+   "unplanned_major": 5,
+   "unplanned_added": 9,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 8,
+    "details": [
+     {
+      "package": "pydantic",
+      "version": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "upgrade_all": {
+   "planned": null,
+   "ok": true,
+   "error": "",
+   "seconds": 14.1,
+   "residual_findings": 17,
+   "residual_risk_evident": 0.1586012767220903,
+   "residual_risk_vm": 8.459999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 16,
+   "changed": 51,
+   "major_bumps": 22,
+   "added": 9,
+   "removed": 0,
+   "realised_changes": {
+    "aiofiles": [
+     "22.1.0",
+     "25.1.0"
+    ],
+    "annotated-doc": [
+     null,
+     "0.0.6"
+    ],
+    "annotated-types": [
+     null,
+     "0.8.0"
+    ],
+    "anyio": [
+     "3.6.1",
+     "4.16.0"
+    ],
+    "apscheduler": [
+     "3.9.1",
+     "3.11.3"
+    ],
+    "attrs": [
+     "22.1.0",
+     "26.1.0"
+    ],
+    "black": [
+     "22.8.0",
+     "26.10.1"
+    ],
+    "cfgv": [
+     "3.3.1",
+     "3.5.0"
+    ],
+    "click": [
+     "8.1.3",
+     "8.5.1"
+    ],
+    "distlib": [
+     "0.3.6",
+     "0.4.4"
+    ],
+    "exceptiongroup": [
+     null,
+     "1.3.1"
+    ],
+    "fastapi": [
+     "0.85.0",
+     "0.162.5"
+    ],
+    "fastapi-amis-admin": [
+     "0.2.2",
+     "0.7.3"
+    ],
+    "filelock": [
+     "3.8.0",
+     "4.1.0"
+    ],
+    "greenlet": [
+     "1.1.3",
+     "3.5.6"
+    ],
+    "identify": [
+     "2.5.5",
+     "2.6.20"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "iniconfig": [
+     "1.1.1",
+     "2.3.1"
+    ],
+    "isort": [
+     "5.10.1",
+     "9.0.2"
+    ],
+    "mypy-extensions": [
+     "0.4.3",
+     "1.2.0"
+    ],
+    "nodeenv": [
+     "1.7.0",
+     "1.12.0"
+    ],
+    "opentelemetry-api": [
+     null,
+     "1.45.2"
+    ],
+    "packaging": [
+     "21.3",
+     "26.3"
+    ],
+    "pathspec": [
+     "0.10.1",
+     "1.1.1"
+    ],
+    "platformdirs": [
+     "2.5.2",
+     "4.12.4"
+    ],
+    "pluggy": [
+     "1.0.0",
+     "1.7.0"
+    ],
+    "pre-commit": [
+     "2.20.0",
+     "4.6.2"
+    ],
+    "pydantic": [
+     "1.10.2",
+     "2.14.3"
+    ],
+    "pydantic-core": [
+     null,
+     "2.50.4"
+    ],
+    "pygments": [
+     null,
+     "2.21.0"
+    ],
+    "pyparsing": [
+     "3.0.9",
+     "3.3.3"
+    ],
+    "pytest": [
+     "6.2.5",
+     "9.2.0"
+    ],
+    "python-discovery": [
+     null,
+     "1.9.5"
+    ],
+    "python-multipart": [
+     "0.0.5",
+     "0.0.32"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "pytz": [
+     "2022.2.1",
+     "2026.6"
+    ],
+    "pyyaml": [
+     "6.0",
+     "6.0.3"
+    ],
+    "setuptools": [
+     "65.3.0",
+     "84.2.1"
+    ],
+    "six": [
+     "1.16.0",
+     "1.17.0"
+    ],
+    "sniffio": [
+     "1.3.0",
+     "1.3.1"
+    ],
+    "sqlalchemy": [
+     "1.4.41",
+     "2.0.57"
+    ],
+    "sqlalchemy-database": [
+     "0.0.7",
+     "0.1.2"
+    ],
+    "sqlalchemy2-stubs": [
+     "0.0.2a27",
+     "0.0.2a38"
+    ],
+    "sqlmodel": [
+     "0.0.8",
+     "0.0.49"
+    ],
+    "starlette": [
+     "0.20.4",
+     "1.7.0"
+    ],
+    "tomli": [
+     "2.0.1",
+     "2.5.0"
+    ],
+    "typing-extensions": [
+     "4.3.0",
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.5"
+    ],
+    "tzdata": [
+     "2022.2",
+     "2026.6"
+    ],
+    "tzlocal": [
+     "4.2",
+     "5.4.5"
+    ],
+    "virtualenv": [
+     "20.16.2",
+     "21.15.6"
+    ]
+   },
+   "failure": "none",
+   "compat": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "packages_with_missing": 2,
+    "missing_symbols": 2,
+    "refs_checked": 37,
+    "details": [
+     {
+      "package": "fastapi-amis-admin",
+      "version": "0.7.3",
+      "missing": [
+       "fastapi_amis_admin.crud.utils.schema_create_by_schema"
+      ],
+      "n_missing": 1
+     },
+     {
+      "package": "pydantic",
+      "version": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "uv_fix": {
+   "planned": {
+    "anyio": "4.14.2",
+    "black": "26.10.1",
+    "fastapi": "0.109.1",
+    "idna": "3.15",
+    "pydantic": "1.10.13",
+    "pytest": "9.0.3",
+    "python-multipart": "0.0.31",
+    "setuptools": "84.1.0",
+    "starlette": "1.3.1",
+    "virtualenv": "21.14.9"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 2.2,
+   "residual_findings": 17,
+   "residual_risk_evident": 0.1586012767220903,
+   "residual_risk_vm": 8.459999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 16,
+   "changed": 29,
+   "major_bumps": 13,
+   "added": 9,
+   "removed": 0,
+   "realised_changes": {
+    "annotated-doc": [
+     null,
+     "0.0.6"
+    ],
+    "annotated-types": [
+     null,
+     "0.8.0"
+    ],
+    "anyio": [
+     "3.6.1",
+     "4.16.0"
+    ],
+    "black": [
+     "22.8.0",
+     "26.10.1"
+    ],
+    "distlib": [
+     "0.3.6",
+     "0.4.4"
+    ],
+    "exceptiongroup": [
+     null,
+     "1.3.1"
+    ],
+    "fastapi": [
+     "0.85.0",
+     "0.162.5"
+    ],
+    "filelock": [
+     "3.8.0",
+     "4.1.0"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "iniconfig": [
+     "1.1.1",
+     "2.3.1"
+    ],
+    "opentelemetry-api": [
+     null,
+     "1.45.2"
+    ],
+    "packaging": [
+     "21.3",
+     "26.3"
+    ],
+    "pathspec": [
+     "0.10.1",
+     "1.1.1"
+    ],
+    "platformdirs": [
+     "2.5.2",
+     "4.12.4"
+    ],
+    "pluggy": [
+     "1.0.0",
+     "1.7.0"
+    ],
+    "pydantic": [
+     "1.10.2",
+     "2.14.3"
+    ],
+    "pydantic-core": [
+     null,
+     "2.50.4"
+    ],
+    "pygments": [
+     null,
+     "2.21.0"
+    ],
+    "pytest": [
+     "6.2.5",
+     "9.2.0"
+    ],
+    "python-discovery": [
+     null,
+     "1.9.5"
+    ],
+    "python-multipart": [
+     "0.0.5",
+     "0.0.32"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "setuptools": [
+     "65.3.0",
+     "84.2.1"
+    ],
+    "sqlalchemy": [
+     "1.4.41",
+     "2.0.57"
+    ],
+    "sqlmodel": [
+     "0.0.8",
+     "0.0.49"
+    ],
+    "starlette": [
+     "0.20.4",
+     "1.7.0"
+    ],
+    "typing-extensions": [
+     "4.3.0",
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.5"
+    ],
+    "virtualenv": [
+     "20.16.2",
+     "21.15.6"
+    ]
+   },
+   "failure": "none",
+   "compat": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 8,
+    "details": [
+     {
+      "package": "pydantic",
+      "version": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "vm_opt": {
+   "planned": {
+    "anyio": "4.16.0",
+    "black": "26.10.1",
+    "distlib": "0.4.4",
+    "fastapi": "0.162.5",
+    "filelock": "3.32.7",
+    "idna": "3.20",
+    "packaging": "26.3",
+    "pathspec": "1.1.1",
+    "platformdirs": "4.12.4",
+    "pluggy": "1.7.0",
+    "pydantic": "2.14.3",
+    "pytest": "9.0.3",
+    "python-multipart": "0.0.31",
+    "setuptools": "84.1.0",
+    "sqlalchemy": "2.0.57",
+    "sqlmodel": "0.0.49",
+    "starlette": "1.3.1",
+    "typing-extensions": "4.16.0",
+    "virtualenv": "21.15.6"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 9.4,
+   "model_residual": 6.5200000000000005,
+   "model_cost": 46.6,
+   "scope": 20,
+   "candidates": 76,
+   "residual_findings": 13,
+   "residual_risk_evident": 0.1203772862232779,
+   "residual_risk_vm": 6.5200000000000005,
+   "residual_confirmed": 0,
+   "new_findings": 12,
+   "changed": 28,
+   "major_bumps": 11,
+   "added": 9,
+   "removed": 0,
+   "realised_changes": {
+    "annotated-doc": [
+     null,
+     "0.0.6"
+    ],
+    "annotated-types": [
+     null,
+     "0.8.0"
+    ],
+    "anyio": [
+     "3.6.1",
+     "4.16.0"
+    ],
+    "black": [
+     "22.8.0",
+     "26.10.1"
+    ],
+    "distlib": [
+     "0.3.6",
+     "0.4.4"
+    ],
+    "exceptiongroup": [
+     null,
+     "1.3.1"
+    ],
+    "fastapi": [
+     "0.85.0",
+     "0.162.5"
+    ],
+    "filelock": [
+     "3.8.0",
+     "3.32.7"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "opentelemetry-api": [
+     null,
+     "1.45.2"
+    ],
+    "packaging": [
+     "21.3",
+     "26.3"
+    ],
+    "pathspec": [
+     "0.10.1",
+     "1.1.1"
+    ],
+    "platformdirs": [
+     "2.5.2",
+     "4.12.4"
+    ],
+    "pluggy": [
+     "1.0.0",
+     "1.7.0"
+    ],
+    "pydantic": [
+     "1.10.2",
+     "2.14.3"
+    ],
+    "pydantic-core": [
+     null,
+     "2.50.4"
+    ],
+    "pygments": [
+     null,
+     "2.21.0"
+    ],
+    "pytest": [
+     "6.2.5",
+     "9.0.3"
+    ],
+    "python-discovery": [
+     null,
+     "1.9.5"
+    ],
+    "python-multipart": [
+     "0.0.5",
+     "0.0.31"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "setuptools": [
+     "65.3.0",
+     "84.1.0"
+    ],
+    "sqlalchemy": [
+     "1.4.41",
+     "2.0.57"
+    ],
+    "sqlmodel": [
+     "0.0.8",
+     "0.0.49"
+    ],
+    "starlette": [
+     "0.20.4",
+     "1.3.1"
+    ],
+    "typing-extensions": [
+     "4.3.0",
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.5"
+    ],
+    "virtualenv": [
+     "20.16.2",
+     "21.15.6"
+    ]
+   },
+   "planned_changes": 19,
+   "unplanned_changes": 9,
+   "unplanned_major": 0,
+   "unplanned_added": 9,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 8,
+    "details": [
+     {
+      "package": "pydantic",
+      "version": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "coral_opt": {
+   "planned": {
+    "anyio": "4.16.0",
+    "black": "26.10.1",
+    "distlib": "0.4.4",
+    "fastapi": "0.162.5",
+    "filelock": "3.32.7",
+    "idna": "3.20",
+    "packaging": "26.3",
+    "pathspec": "1.1.1",
+    "platformdirs": "4.12.4",
+    "pydantic": "2.14.3",
+    "python-multipart": "0.0.31",
+    "setuptools": "84.1.0",
+    "sqlalchemy": "2.0.57",
+    "sqlmodel": "0.0.49",
+    "starlette": "1.3.1",
+    "typing-extensions": "4.16.0",
+    "virtualenv": "21.15.6"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.2,
+   "model_residual": 0.7614452494061756,
+   "model_cost": 41.400000000000006,
+   "scope": 20,
+   "candidates": 76,
+   "residual_findings": 14,
+   "residual_risk_evident": 0.3550513547675602,
+   "residual_risk_vm": 7.2,
+   "residual_confirmed": 0,
+   "new_findings": 12,
+   "changed": 25,
+   "major_bumps": 10,
+   "added": 8,
+   "removed": 0,
+   "realised_changes": {
+    "annotated-doc": [
+     null,
+     "0.0.6"
+    ],
+    "annotated-types": [
+     null,
+     "0.8.0"
+    ],
+    "anyio": [
+     "3.6.1",
+     "4.16.0"
+    ],
+    "black": [
+     "22.8.0",
+     "26.10.1"
+    ],
+    "distlib": [
+     "0.3.6",
+     "0.4.4"
+    ],
+    "exceptiongroup": [
+     null,
+     "1.3.1"
+    ],
+    "fastapi": [
+     "0.85.0",
+     "0.162.5"
+    ],
+    "filelock": [
+     "3.8.0",
+     "3.32.7"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "opentelemetry-api": [
+     null,
+     "1.45.2"
+    ],
+    "packaging": [
+     "21.3",
+     "26.3"
+    ],
+    "pathspec": [
+     "0.10.1",
+     "1.1.1"
+    ],
+    "platformdirs": [
+     "2.5.2",
+     "4.12.4"
+    ],
+    "pydantic": [
+     "1.10.2",
+     "2.14.3"
+    ],
+    "pydantic-core": [
+     null,
+     "2.50.4"
+    ],
+    "python-discovery": [
+     null,
+     "1.9.5"
+    ],
+    "python-multipart": [
+     "0.0.5",
+     "0.0.31"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "setuptools": [
+     "65.3.0",
+     "84.1.0"
+    ],
+    "sqlalchemy": [
+     "1.4.41",
+     "2.0.57"
+    ],
+    "sqlmodel": [
+     "0.0.8",
+     "0.0.49"
+    ],
+    "starlette": [
+     "0.20.4",
+     "1.3.1"
+    ],
+    "typing-extensions": [
+     "4.3.0",
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.5"
+    ],
+    "virtualenv": [
+     "20.16.2",
+     "21.15.6"
+    ]
+   },
+   "planned_changes": 17,
+   "unplanned_changes": 8,
+   "unplanned_major": 0,
+   "unplanned_added": 8,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 8,
+    "details": [
+     {
+      "package": "pydantic",
+      "version": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "cape_opt": {
+   "planned": {
+    "anyio": "4.16.0",
+    "black": "26.10.1",
+    "distlib": "0.4.4",
+    "fastapi": "0.162.5",
+    "filelock": "3.32.7",
+    "idna": "3.20",
+    "packaging": "26.3",
+    "pathspec": "1.1.1",
+    "platformdirs": "4.12.4",
+    "pydantic": "2.14.3",
+    "python-multipart": "0.0.31",
+    "setuptools": "84.1.0",
+    "sqlalchemy": "2.0.57",
+    "sqlmodel": "0.0.49",
+    "starlette": "1.3.1",
+    "typing-extensions": "4.16.0",
+    "virtualenv": "21.15.6"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.2,
+   "model_residual": 0.9811119160728424,
+   "model_cost": 41.400000000000006,
+   "scope": 20,
+   "candidates": 76,
+   "residual_findings": 14,
+   "residual_risk_evident": 0.3550513547675602,
+   "residual_risk_vm": 7.2,
+   "residual_confirmed": 0,
+   "new_findings": 12,
+   "changed": 25,
+   "major_bumps": 10,
+   "added": 8,
+   "removed": 0,
+   "realised_changes": {
+    "annotated-doc": [
+     null,
+     "0.0.6"
+    ],
+    "annotated-types": [
+     null,
+     "0.8.0"
+    ],
+    "anyio": [
+     "3.6.1",
+     "4.16.0"
+    ],
+    "black": [
+     "22.8.0",
+     "26.10.1"
+    ],
+    "distlib": [
+     "0.3.6",
+     "0.4.4"
+    ],
+    "exceptiongroup": [
+     null,
+     "1.3.1"
+    ],
+    "fastapi": [
+     "0.85.0",
+     "0.162.5"
+    ],
+    "filelock": [
+     "3.8.0",
+     "3.32.7"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "opentelemetry-api": [
+     null,
+     "1.45.2"
+    ],
+    "packaging": [
+     "21.3",
+     "26.3"
+    ],
+    "pathspec": [
+     "0.10.1",
+     "1.1.1"
+    ],
+    "platformdirs": [
+     "2.5.2",
+     "4.12.4"
+    ],
+    "pydantic": [
+     "1.10.2",
+     "2.14.3"
+    ],
+    "pydantic-core": [
+     null,
+     "2.50.4"
+    ],
+    "python-discovery": [
+     null,
+     "1.9.5"
+    ],
+    "python-multipart": [
+     "0.0.5",
+     "0.0.31"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "setuptools": [
+     "65.3.0",
+     "84.1.0"
+    ],
+    "sqlalchemy": [
+     "1.4.41",
+     "2.0.57"
+    ],
+    "sqlmodel": [
+     "0.0.8",
+     "0.0.49"
+    ],
+    "starlette": [
+     "0.20.4",
+     "1.3.1"
+    ],
+    "typing-extensions": [
+     "4.3.0",
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.5"
+    ],
+    "virtualenv": [
+     "20.16.2",
+     "21.15.6"
+    ]
+   },
+   "planned_changes": 17,
+   "unplanned_changes": 8,
+   "unplanned_major": 0,
+   "unplanned_added": 8,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 8,
+    "details": [
+     {
+      "package": "pydantic",
+      "version": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "evident": {
+   "planned": {
+    "anyio": "4.16.0",
+    "fastapi": "0.162.5",
+    "idna": "3.20",
+    "pydantic": "2.14.3",
+    "python-multipart": "0.0.31",
+    "setuptools": "84.1.0",
+    "sqlalchemy": "2.0.57",
+    "sqlmodel": "0.0.49",
+    "starlette": "1.3.1",
+    "typing-extensions": "4.16.0"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.2,
+   "model_residual": 0.4300083915846623,
+   "model_cost": 22.5,
+   "scope": 20,
+   "candidates": 76,
+   "residual_findings": 28,
+   "residual_risk_evident": 0.43000839158466225,
+   "residual_risk_vm": 17.429999999999996,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 16,
+   "major_bumps": 5,
+   "added": 6,
+   "removed": 0,
+   "realised_changes": {
+    "annotated-doc": [
+     null,
+     "0.0.6"
+    ],
+    "annotated-types": [
+     null,
+     "0.8.0"
+    ],
+    "anyio": [
+     "3.6.1",
+     "4.16.0"
+    ],
+    "exceptiongroup": [
+     null,
+     "1.3.1"
+    ],
+    "fastapi": [
+     "0.85.0",
+     "0.162.5"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "opentelemetry-api": [
+     null,
+     "1.45.2"
+    ],
+    "pydantic": [
+     "1.10.2",
+     "2.14.3"
+    ],
+    "pydantic-core": [
+     null,
+     "2.50.4"
+    ],
+    "python-multipart": [
+     "0.0.5",
+     "0.0.31"
+    ],
+    "setuptools": [
+     "65.3.0",
+     "84.1.0"
+    ],
+    "sqlalchemy": [
+     "1.4.41",
+     "2.0.57"
+    ],
+    "sqlmodel": [
+     "0.0.8",
+     "0.0.49"
+    ],
+    "starlette": [
+     "0.20.4",
+     "1.3.1"
+    ],
+    "typing-extensions": [
+     "4.3.0",
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.5"
+    ]
+   },
+   "planned_changes": 10,
+   "unplanned_changes": 6,
+   "unplanned_major": 0,
+   "unplanned_added": 6,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 8,
+    "details": [
+     {
+      "package": "pydantic",
+      "version": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   },
+   "objective_gap": -5.551115123125783e-17
+  },
+  "evident_wide": {
+   "planned": {
+    "anyio": "4.16.0",
+    "fastapi": "0.162.5",
+    "idna": "3.20",
+    "pydantic": "2.14.3",
+    "python-multipart": "0.0.31",
+    "setuptools": "84.1.0",
+    "sqlalchemy": "2.0.57",
+    "sqlmodel": "0.0.49",
+    "starlette": "1.3.1",
+    "typing-extensions": "4.16.0"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.2,
+   "model_residual": 0.4300083915846623,
+   "model_cost": 22.5,
+   "candidates": 76,
+   "residual_findings": 28,
+   "residual_risk_evident": 0.43000839158466225,
+   "residual_risk_vm": 17.429999999999996,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 16,
+   "major_bumps": 5,
+   "added": 6,
+   "removed": 0,
+   "realised_changes": {
+    "annotated-doc": [
+     null,
+     "0.0.6"
+    ],
+    "annotated-types": [
+     null,
+     "0.8.0"
+    ],
+    "anyio": [
+     "3.6.1",
+     "4.16.0"
+    ],
+    "exceptiongroup": [
+     null,
+     "1.3.1"
+    ],
+    "fastapi": [
+     "0.85.0",
+     "0.162.5"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "opentelemetry-api": [
+     null,
+     "1.45.2"
+    ],
+    "pydantic": [
+     "1.10.2",
+     "2.14.3"
+    ],
+    "pydantic-core": [
+     null,
+     "2.50.4"
+    ],
+    "python-multipart": [
+     "0.0.5",
+     "0.0.31"
+    ],
+    "setuptools": [
+     "65.3.0",
+     "84.1.0"
+    ],
+    "sqlalchemy": [
+     "1.4.41",
+     "2.0.57"
+    ],
+    "sqlmodel": [
+     "0.0.8",
+     "0.0.49"
+    ],
+    "starlette": [
+     "0.20.4",
+     "1.3.1"
+    ],
+    "typing-extensions": [
+     "4.3.0",
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.5"
+    ]
+   },
+   "planned_changes": 10,
+   "unplanned_changes": 6,
+   "unplanned_major": 0,
+   "unplanned_added": 6,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 8,
+    "details": [
+     {
+      "package": "pydantic",
+      "version": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  }
+ },
+ "original": {
+  "residual_findings": 57,
+  "residual_risk_evident": 10.517675205582337,
+  "residual_risk_vm": 37.54,
+  "residual_confirmed": 0,
+  "new_findings": 0,
+  "changed": 0,
+  "major_bumps": 0,
+  "added": 0,
+  "removed": 0,
+  "realised_changes": {}
+ },
+ "decision": {
+  "uncertain": 30,
+  "critical": 1,
+  "evpi_total": 0.003110658635174421,
+  "top": [
+   {
+    "package": "idna",
+    "advisory": "CVE-2026-45409",
+    "p": 0.6559895848026134,
+    "critical": true,
+    "evpi": 0.003110658635174421
+   },
+   {
+    "package": "anyio",
+    "advisory": "CVE-2026-64847",
+    "p": 0.21461021528126487,
+    "critical": false,
+    "evpi": 0.0
+   },
+   {
+    "package": "anyio",
+    "advisory": "CVE-2026-63374",
+    "p": 0.21461021528126487,
+    "critical": false,
+    "evpi": 0.0
+   },
+   {
+    "package": "fastapi",
+    "advisory": "CVE-2024-24762",
+    "p": 0.6559895848026134,
+    "critical": false,
+    "evpi": 0.0
+   },
+   {
+    "package": "idna",
+    "advisory": "CVE-2024-3651",
+    "p": 0.21461021528126487,
+    "critical": false,
+    "evpi": 0.0
+   }
+  ]
+ },
+ "remediation_seconds": 49.5,
+ "status": "ok"
+}

@@ -1,0 +1,22 @@
+{
+ "advisory": "GHSA-jm3v-qxmh-hxwv",
+ "package": "scrapy",
+ "commits": [
+  {
+   "repo": "scrapy/scrapy",
+   "sha": "1d0502f25bbe55a22899af915623fda1aaeb9dd8",
+   "parent": "bb948af00babe545a7fb52700f4ba1424d206677",
+   "py_files": 1
+  }
+ ],
+ "files": [
+  {
+   "path": "scrapy/downloadermiddlewares/redirect.py",
+   "functions": [
+    "_build_redirect_request"
+   ],
+   "module_level": false
+  }
+ ],
+ "status": "functions"
+}

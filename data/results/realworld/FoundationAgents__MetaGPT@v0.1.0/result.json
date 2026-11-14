@@ -34,18 +34,129 @@
   "app_modules": 138,
   "pkgs_analysed": 10,
   "pkgs_no_source": 0,
-  "seconds": 255.19,
+  "seconds": 53.79,
   "funcs": 37886,
-  "roots": 320
+  "roots": 320,
+  "app_refs": {
+   "pydantic": [
+    "pydantic",
+    "pydantic.class_validators.root_validator",
+    "pydantic.class_validators.validator",
+    "pydantic.fields.Field",
+    "pydantic.main.BaseModel.json",
+    "pydantic.main.create_model"
+   ],
+   "langchain": [
+    "langchain",
+    "langchain.document_loaders",
+    "langchain.document_loaders.pdf.UnstructuredPDFLoader",
+    "langchain.document_loaders.text.TextLoader",
+    "langchain.document_loaders.word_document.UnstructuredWordDocumentLoader",
+    "langchain.embeddings",
+    "langchain.embeddings.openai.OpenAIEmbeddings",
+    "langchain.text_splitter",
+    "langchain.text_splitter.CharacterTextSplitter",
+    "langchain.text_splitter.TextSplitter.split_documents",
+    "langchain.vectorstores",
+    "langchain.vectorstores.faiss.FAISS.from_texts"
+   ],
+   "tqdm": [
+    "tqdm",
+    "tqdm.std.tqdm"
+   ],
+   "pandas": [
+    "pandas",
+    "pandas.io.excel._base.read_excel",
+    "pandas.io.json._json.read_json",
+    "pandas.io.parsers.readers.read_csv"
+   ],
+   "loguru": [
+    "loguru"
+   ],
+   "openai": [
+    "openai",
+    "openai.api_resources.chat_completion.ChatCompletion.acreate"
+   ],
+   "aiohttp": [
+    "aiohttp",
+    "aiohttp.client.ClientSession"
+   ],
+   "setuptools": [
+    "setuptools",
+    "setuptools.discovery._Finder.find",
+    "setuptools.setup"
+   ],
+   "pytest": [
+    "_pytest.fixtures.fixture",
+    "_pytest.python_api.raises",
+    "pytest"
+   ]
+  },
+  "reflection_kinds": {
+   "langchain": [
+    "eval",
+    "exec",
+    "import_module",
+    "monkeypatch",
+    "namespace"
+   ],
+   "tqdm": [
+    "eval",
+    "monkeypatch",
+    "setattr"
+   ],
+   "pytest": [
+    "__import__",
+    "dyn_class",
+    "eval",
+    "exec",
+    "import_module",
+    "plugin",
+    "setattr"
+   ],
+   "setuptools": [
+    "__import__",
+    "exec",
+    "import_module",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "aiohttp": [
+    "import_module"
+   ],
+   "pydantic": [
+    "dyn_class",
+    "eval",
+    "import_module",
+    "setattr"
+   ],
+   "openai": [
+    "setattr"
+   ],
+   "pandas": [
+    "__import__",
+    "dyn_class",
+    "eval",
+    "import_module",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "__app__": [
+    "exec",
+    "monkeypatch"
+   ]
+  }
  },
- "scan_seconds": 261.2,
+ "scan_seconds": 54.9,
  "sdist_only": [
   "fire",
   "python-docx"
  ],
  "baseline_resolution": {
   "ok": true,
-  "seconds": 4.2,
+  "seconds": 1.0,
   "error": ""
  },
  "baseline_drift": 38,
@@ -61,26 +172,350 @@
    },
    "ok": false,
    "error": "nd when resolving dependencies\n  cause: Because langchain==1.3.9 depends on pydantic>=2.7.4,<3.0.0 and you require langchain==1.3.9, we can conclude that you require pydantic>=2.7.4,<3.0.0.\n         And because you require pydantic==1.10.13, we can conclude that your requirements are unsatisfiable.\n",
-   "seconds": 0.8
+   "seconds": 0.6,
+   "failure": "dependency conflict"
   },
   "latest": {
    "planned": {
-    "langchain": "1.5.0",
+    "langchain": "1.4.10",
+    "tqdm": "4.70.1",
     "pytest": "9.2.0",
     "aiohttp": "3.14.5",
-    "pydantic": "2.14.3",
     "setuptools": "84.2.1",
-    "tqdm": "4.70.1"
+    "pydantic": "2.14.3"
    },
-   "ok": false,
-   "error": "re langchain==1.5.0, we can conclude that your requirements are unsatisfiable.\n\nhint: The `--python-version` value (>=3.10) includes Python versions that are not supported by your dependencies (e.g., langchain==1.5.0 only supports >=3.11.0, <4.0.0). Consider using a higher `--python-version` value.\n",
-   "seconds": 0.5
+   "ok": true,
+   "error": "",
+   "seconds": 0.9,
+   "residual_findings": 1,
+   "residual_risk_evident": 0.20491211401425177,
+   "residual_risk_vm": 0.52,
+   "residual_confirmed": 0,
+   "new_findings": 1,
+   "changed": 65,
+   "major_bumps": 4,
+   "added": 59,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.14.5"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "annotated-types": [
+     null,
+     "0.8.0"
+    ],
+    "anyio": [
+     null,
+     "4.16.0"
+    ],
+    "asgiref": [
+     null,
+     "3.12.1"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "attrs": [
+     null,
+     "26.1.0"
+    ],
+    "camel-converter": [
+     null,
+     "5.1.1"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "charset-normalizer": [
+     null,
+     "3.5.2"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "diskcache": [
+     null,
+     "5.6.3"
+    ],
+    "distro": [
+     null,
+     "1.9.0"
+    ],
+    "django": [
+     null,
+     "5.2.19"
+    ],
+    "exceptiongroup": [
+     null,
+     "1.3.1"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "h11": [
+     null,
+     "0.16.0"
+    ],
+    "httpcore": [
+     null,
+     "1.0.9"
+    ],
+    "httpcore2": [
+     null,
+     "2.14.0"
+    ],
+    "httpx": [
+     null,
+     "0.28.1"
+    ],
+    "httpx2": [
+     null,
+     "2.14.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "iniconfig": [
+     null,
+     "2.3.1"
+    ],
+    "jsonpatch": [
+     null,
+     "1.46"
+    ],
+    "jsonpointer": [
+     null,
+     "3.12"
+    ],
+    "langchain": [
+     "0.0.231",
+     "1.4.10"
+    ],
+    "langchain-core": [
+     null,
+     "1.7.7"
+    ],
+    "langchain-protocol": [
+     null,
+     "0.0.21"
+    ],
+    "langgraph": [
+     null,
+     "1.2.21"
+    ],
+    "langgraph-checkpoint": [
+     null,
+     "4.3.1"
+    ],
+    "langgraph-prebuilt": [
+     null,
+     "1.1.1"
+    ],
+    "langgraph-sdk": [
+     null,
+     "0.4.14"
+    ],
+    "langsmith": [
+     null,
+     "0.14.17"
+    ],
+    "multidict": [
+     null,
+     "7.1.0"
+    ],
+    "orjson": [
+     null,
+     "3.13.0"
+    ],
+    "ormsgpack": [
+     null,
+     "1.12.2"
+    ],
+    "packaging": [
+     null,
+     "26.3"
+    ],
+    "pluggy": [
+     null,
+     "1.7.0"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pydantic": [
+     "1.10.7",
+     "2.14.3"
+    ],
+    "pydantic-core": [
+     null,
+     "2.50.4"
+    ],
+    "pygments": [
+     null,
+     "2.21.0"
+    ],
+    "pytest": [
+     "7.2.2",
+     "9.2.0"
+    ],
+    "python-dateutil": [
+     null,
+     "3.0.0"
+    ],
+    "pytz": [
+     null,
+     "2026.6"
+    ],
+    "regex": [
+     null,
+     "2026.9.29"
+    ],
+    "requests": [
+     null,
+     "2.34.2"
+    ],
+    "requests-toolbelt": [
+     null,
+     "1.0.0"
+    ],
+    "setuptools": [
+     "65.6.3",
+     "84.2.1"
+    ],
+    "six": [
+     null,
+     "1.17.0"
+    ],
+    "sniffio": [
+     null,
+     "1.3.1"
+    ],
+    "sqlparse": [
+     null,
+     "0.6.1"
+    ],
+    "tomli": [
+     null,
+     "2.5.0"
+    ],
+    "tqdm": [
+     "4.64.0",
+     "4.70.1"
+    ],
+    "truststore": [
+     null,
+     "0.10.5"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.5"
+    ],
+    "tzdata": [
+     null,
+     "2026.6"
+    ],
+    "urllib3": [
+     null,
+     "2.8.0"
+    ],
+    "uuid-utils": [
+     null,
+     "0.19.0"
+    ],
+    "websockets": [
+     null,
+     "16.1.1"
+    ],
+    "xxhash": [
+     null,
+     "4.1.0"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ],
+    "zstandard": [
+     null,
+     "0.25.0"
+    ]
+   },
+   "planned_changes": 6,
+   "unplanned_changes": 59,
+   "unplanned_major": 0,
+   "unplanned_added": 59,
+   "new_findings_from_unplanned": 1,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 6,
+    "checked": 6,
+    "unknown": 0,
+    "packages_with_missing": 3,
+    "missing_symbols": 13,
+    "refs_checked": 28,
+    "details": [
+     {
+      "package": "langchain",
+      "version": "1.4.10",
+      "missing": [
+       "langchain.document_loaders",
+       "langchain.document_loaders.pdf.UnstructuredPDFLoader",
+       "langchain.document_loaders.text.TextLoader",
+       "langchain.document_loaders.word_document.UnstructuredWordDocumentLoader",
+       "langchain.embeddings.openai.OpenAIEmbeddings",
+       "langchain.text_splitter",
+       "langchain.text_splitter.CharacterTextSplitter",
+       "langchain.text_splitter.TextSplitter.split_documents",
+       "langchain.vectorstores",
+       "langchain.vectorstores.faiss.FAISS.from_texts"
+      ],
+      "n_missing": 10
+     },
+     {
+      "package": "pydantic",
+      "version": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.root_validator",
+       "pydantic.class_validators.validator"
+      ],
+      "n_missing": 2
+     },
+     {
+      "package": "pytest",
+      "version": "9.2.0",
+      "missing": [
+       "_pytest.python_api.raises"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
   },
   "upgrade_all": {
    "planned": null,
    "ok": true,
    "error": "",
-   "seconds": 6.2,
+   "seconds": 1.4,
    "residual_findings": 0,
    "residual_risk_evident": 0.0,
    "residual_risk_vm": 0.0,
@@ -89,7 +524,705 @@
    "changed": 78,
    "major_bumps": 9,
    "added": 61,
-   "removed": 0
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.14.5"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "annotated-types": [
+     null,
+     "0.8.0"
+    ],
+    "anyio": [
+     null,
+     "4.16.0"
+    ],
+    "asgiref": [
+     null,
+     "3.12.1"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "attrs": [
+     null,
+     "26.1.0"
+    ],
+    "camel-converter": [
+     null,
+     "5.1.1"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "channels": [
+     "4.0.0",
+     "4.3.2"
+    ],
+    "charset-normalizer": [
+     null,
+     "3.5.2"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "distro": [
+     null,
+     "1.9.0"
+    ],
+    "django": [
+     null,
+     "5.2.19"
+    ],
+    "duckduckgo-search": [
+     "2.9.4",
+     "8.1.1"
+    ],
+    "exceptiongroup": [
+     null,
+     "1.3.1"
+    ],
+    "faiss-cpu": [
+     "1.7.4",
+     "1.16.0"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "h11": [
+     null,
+     "0.16.0"
+    ],
+    "httpcore": [
+     null,
+     "1.0.9"
+    ],
+    "httpcore2": [
+     null,
+     "2.14.0"
+    ],
+    "httpx": [
+     null,
+     "0.28.1"
+    ],
+    "httpx2": [
+     null,
+     "2.14.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "iniconfig": [
+     null,
+     "2.3.1"
+    ],
+    "jiter": [
+     null,
+     "0.18.0"
+    ],
+    "jsonpatch": [
+     null,
+     "1.46"
+    ],
+    "jsonpointer": [
+     null,
+     "3.12"
+    ],
+    "langchain": [
+     "0.0.231",
+     "1.4.10"
+    ],
+    "langchain-core": [
+     null,
+     "1.7.7"
+    ],
+    "langchain-protocol": [
+     null,
+     "0.0.21"
+    ],
+    "langgraph": [
+     null,
+     "1.2.21"
+    ],
+    "langgraph-checkpoint": [
+     null,
+     "4.3.1"
+    ],
+    "langgraph-prebuilt": [
+     null,
+     "1.1.1"
+    ],
+    "langgraph-sdk": [
+     null,
+     "0.4.14"
+    ],
+    "langsmith": [
+     null,
+     "0.14.17"
+    ],
+    "loguru": [
+     "0.6.0",
+     "0.8.0"
+    ],
+    "lxml": [
+     null,
+     "6.1.3"
+    ],
+    "meilisearch": [
+     "0.21.0",
+     "0.43.0"
+    ],
+    "multidict": [
+     null,
+     "7.1.0"
+    ],
+    "numpy": [
+     "1.24.3",
+     "2.2.6"
+    ],
+    "openai": [
+     "0.27.8",
+     "3.49.0"
+    ],
+    "orjson": [
+     null,
+     "3.13.0"
+    ],
+    "ormsgpack": [
+     null,
+     "1.12.2"
+    ],
+    "packaging": [
+     null,
+     "26.3"
+    ],
+    "pandas": [
+     "1.4.1",
+     "2.3.3"
+    ],
+    "pluggy": [
+     null,
+     "1.7.0"
+    ],
+    "primp": [
+     null,
+     "2.0.1"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pydantic": [
+     "1.10.7",
+     "2.14.3"
+    ],
+    "pydantic-core": [
+     null,
+     "2.50.4"
+    ],
+    "pygments": [
+     null,
+     "2.21.0"
+    ],
+    "pytest": [
+     "7.2.2",
+     "9.2.0"
+    ],
+    "python-dateutil": [
+     null,
+     "3.0.0"
+    ],
+    "pytz": [
+     null,
+     "2026.6"
+    ],
+    "pyyaml": [
+     "6.0",
+     "6.0.3"
+    ],
+    "regex": [
+     null,
+     "2026.9.29"
+    ],
+    "requests": [
+     null,
+     "2.34.2"
+    ],
+    "requests-toolbelt": [
+     null,
+     "1.0.0"
+    ],
+    "setuptools": [
+     "65.6.3",
+     "84.2.1"
+    ],
+    "six": [
+     null,
+     "1.17.0"
+    ],
+    "sniffio": [
+     null,
+     "1.3.1"
+    ],
+    "sqlparse": [
+     null,
+     "0.6.1"
+    ],
+    "tenacity": [
+     "8.2.2",
+     "9.2.1"
+    ],
+    "tiktoken": [
+     "0.3.3",
+     "0.14.0"
+    ],
+    "tomli": [
+     null,
+     "2.5.0"
+    ],
+    "tqdm": [
+     "4.64.0",
+     "4.70.1"
+    ],
+    "truststore": [
+     null,
+     "0.10.5"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.5"
+    ],
+    "tzdata": [
+     null,
+     "2026.6"
+    ],
+    "urllib3": [
+     null,
+     "2.8.0"
+    ],
+    "uuid-utils": [
+     null,
+     "0.19.0"
+    ],
+    "websockets": [
+     null,
+     "16.1.1"
+    ],
+    "xxhash": [
+     null,
+     "4.1.0"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ],
+    "zstandard": [
+     null,
+     "0.25.0"
+    ]
+   },
+   "failure": "none",
+   "compat": {
+    "used_changed": 9,
+    "checked": 9,
+    "unknown": 0,
+    "packages_with_missing": 4,
+    "missing_symbols": 14,
+    "refs_checked": 35,
+    "details": [
+     {
+      "package": "langchain",
+      "version": "1.4.10",
+      "missing": [
+       "langchain.document_loaders",
+       "langchain.document_loaders.pdf.UnstructuredPDFLoader",
+       "langchain.document_loaders.text.TextLoader",
+       "langchain.document_loaders.word_document.UnstructuredWordDocumentLoader",
+       "langchain.embeddings.openai.OpenAIEmbeddings",
+       "langchain.text_splitter",
+       "langchain.text_splitter.CharacterTextSplitter",
+       "langchain.text_splitter.TextSplitter.split_documents",
+       "langchain.vectorstores",
+       "langchain.vectorstores.faiss.FAISS.from_texts"
+      ],
+      "n_missing": 10
+     },
+     {
+      "package": "openai",
+      "version": "3.49.0",
+      "missing": [
+       "openai.api_resources.chat_completion.ChatCompletion.acreate"
+      ],
+      "n_missing": 1
+     },
+     {
+      "package": "pydantic",
+      "version": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.root_validator",
+       "pydantic.class_validators.validator"
+      ],
+      "n_missing": 2
+     },
+     {
+      "package": "pytest",
+      "version": "9.2.0",
+      "missing": [
+       "_pytest.python_api.raises"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "uv_fix": {
+   "planned": {
+    "aiohttp": "3.14.4",
+    "langchain": "1.3.9",
+    "pydantic": "1.10.13",
+    "pytest": "9.0.3",
+    "setuptools": "84.1.0",
+    "tqdm": "4.66.3"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 0.1,
+   "residual_findings": 1,
+   "residual_risk_evident": 0.20491211401425177,
+   "residual_risk_vm": 0.52,
+   "residual_confirmed": 0,
+   "new_findings": 1,
+   "changed": 65,
+   "major_bumps": 4,
+   "added": 59,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.14.5"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "annotated-types": [
+     null,
+     "0.8.0"
+    ],
+    "anyio": [
+     null,
+     "4.16.0"
+    ],
+    "asgiref": [
+     null,
+     "3.12.1"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "attrs": [
+     null,
+     "26.1.0"
+    ],
+    "camel-converter": [
+     null,
+     "5.1.1"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "charset-normalizer": [
+     null,
+     "3.5.2"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "diskcache": [
+     null,
+     "5.6.3"
+    ],
+    "distro": [
+     null,
+     "1.9.0"
+    ],
+    "django": [
+     null,
+     "5.2.19"
+    ],
+    "exceptiongroup": [
+     null,
+     "1.3.1"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "h11": [
+     null,
+     "0.16.0"
+    ],
+    "httpcore": [
+     null,
+     "1.0.9"
+    ],
+    "httpcore2": [
+     null,
+     "2.14.0"
+    ],
+    "httpx": [
+     null,
+     "0.28.1"
+    ],
+    "httpx2": [
+     null,
+     "2.14.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "iniconfig": [
+     null,
+     "2.3.1"
+    ],
+    "jsonpatch": [
+     null,
+     "1.46"
+    ],
+    "jsonpointer": [
+     null,
+     "3.12"
+    ],
+    "langchain": [
+     "0.0.231",
+     "1.4.10"
+    ],
+    "langchain-core": [
+     null,
+     "1.7.7"
+    ],
+    "langchain-protocol": [
+     null,
+     "0.0.21"
+    ],
+    "langgraph": [
+     null,
+     "1.2.21"
+    ],
+    "langgraph-checkpoint": [
+     null,
+     "4.3.1"
+    ],
+    "langgraph-prebuilt": [
+     null,
+     "1.1.1"
+    ],
+    "langgraph-sdk": [
+     null,
+     "0.4.14"
+    ],
+    "langsmith": [
+     null,
+     "0.14.17"
+    ],
+    "multidict": [
+     null,
+     "7.1.0"
+    ],
+    "orjson": [
+     null,
+     "3.13.0"
+    ],
+    "ormsgpack": [
+     null,
+     "1.12.2"
+    ],
+    "packaging": [
+     null,
+     "26.3"
+    ],
+    "pluggy": [
+     null,
+     "1.7.0"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pydantic": [
+     "1.10.7",
+     "2.14.3"
+    ],
+    "pydantic-core": [
+     null,
+     "2.50.4"
+    ],
+    "pygments": [
+     null,
+     "2.21.0"
+    ],
+    "pytest": [
+     "7.2.2",
+     "9.2.0"
+    ],
+    "python-dateutil": [
+     null,
+     "3.0.0"
+    ],
+    "pytz": [
+     null,
+     "2026.6"
+    ],
+    "regex": [
+     null,
+     "2026.9.29"
+    ],
+    "requests": [
+     null,
+     "2.34.2"
+    ],
+    "requests-toolbelt": [
+     null,
+     "1.0.0"
+    ],
+    "setuptools": [
+     "65.6.3",
+     "84.2.1"
+    ],
+    "six": [
+     null,
+     "1.17.0"
+    ],
+    "sniffio": [
+     null,
+     "1.3.1"
+    ],
+    "sqlparse": [
+     null,
+     "0.6.1"
+    ],
+    "tomli": [
+     null,
+     "2.5.0"
+    ],
+    "tqdm": [
+     "4.64.0",
+     "4.70.1"
+    ],
+    "truststore": [
+     null,
+     "0.10.5"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.5"
+    ],
+    "tzdata": [
+     null,
+     "2026.6"
+    ],
+    "urllib3": [
+     null,
+     "2.8.0"
+    ],
+    "uuid-utils": [
+     null,
+     "0.19.0"
+    ],
+    "websockets": [
+     null,
+     "16.1.1"
+    ],
+    "xxhash": [
+     null,
+     "4.1.0"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ],
+    "zstandard": [
+     null,
+     "0.25.0"
+    ]
+   },
+   "failure": "none",
+   "compat": {
+    "used_changed": 6,
+    "checked": 6,
+    "unknown": 0,
+    "packages_with_missing": 3,
+    "missing_symbols": 13,
+    "refs_checked": 28,
+    "details": [
+     {
+      "package": "langchain",
+      "version": "1.4.10",
+      "missing": [
+       "langchain.document_loaders",
+       "langchain.document_loaders.pdf.UnstructuredPDFLoader",
+       "langchain.document_loaders.text.TextLoader",
+       "langchain.document_loaders.word_document.UnstructuredWordDocumentLoader",
+       "langchain.embeddings.openai.OpenAIEmbeddings",
+       "langchain.text_splitter",
+       "langchain.text_splitter.CharacterTextSplitter",
+       "langchain.text_splitter.TextSplitter.split_documents",
+       "langchain.vectorstores",
+       "langchain.vectorstores.faiss.FAISS.from_texts"
+      ],
+      "n_missing": 10
+     },
+     {
+      "package": "pydantic",
+      "version": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.root_validator",
+       "pydantic.class_validators.validator"
+      ],
+      "n_missing": 2
+     },
+     {
+      "package": "pytest",
+      "version": "9.2.0",
+      "missing": [
+       "_pytest.python_api.raises"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
   },
   "vm_opt": {
    "planned": {
@@ -103,10 +1236,11 @@
    "ok": true,
    "iterations": 1,
    "error": "",
-   "seconds": 4.5,
+   "seconds": 0.3,
    "model_residual": 0.0,
    "model_cost": 16.4,
    "scope": 6,
+   "candidates": 25,
    "residual_findings": 1,
    "residual_risk_evident": 0.20491211401425177,
    "residual_risk_vm": 0.52,
@@ -116,9 +1250,320 @@
    "major_bumps": 4,
    "added": 59,
    "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.14.5"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "annotated-types": [
+     null,
+     "0.8.0"
+    ],
+    "anyio": [
+     null,
+     "4.16.0"
+    ],
+    "asgiref": [
+     null,
+     "3.12.1"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "attrs": [
+     null,
+     "26.1.0"
+    ],
+    "camel-converter": [
+     null,
+     "5.1.1"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "charset-normalizer": [
+     null,
+     "3.5.2"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "diskcache": [
+     null,
+     "5.6.3"
+    ],
+    "distro": [
+     null,
+     "1.9.0"
+    ],
+    "django": [
+     null,
+     "5.2.19"
+    ],
+    "exceptiongroup": [
+     null,
+     "1.3.1"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "h11": [
+     null,
+     "0.16.0"
+    ],
+    "httpcore": [
+     null,
+     "1.0.9"
+    ],
+    "httpcore2": [
+     null,
+     "2.14.0"
+    ],
+    "httpx": [
+     null,
+     "0.28.1"
+    ],
+    "httpx2": [
+     null,
+     "2.14.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "iniconfig": [
+     null,
+     "2.3.1"
+    ],
+    "jsonpatch": [
+     null,
+     "1.46"
+    ],
+    "jsonpointer": [
+     null,
+     "3.12"
+    ],
+    "langchain": [
+     "0.0.231",
+     "1.3.9"
+    ],
+    "langchain-core": [
+     null,
+     "1.7.7"
+    ],
+    "langchain-protocol": [
+     null,
+     "0.0.21"
+    ],
+    "langgraph": [
+     null,
+     "1.2.21"
+    ],
+    "langgraph-checkpoint": [
+     null,
+     "4.3.1"
+    ],
+    "langgraph-prebuilt": [
+     null,
+     "1.1.1"
+    ],
+    "langgraph-sdk": [
+     null,
+     "0.4.14"
+    ],
+    "langsmith": [
+     null,
+     "0.14.17"
+    ],
+    "multidict": [
+     null,
+     "7.1.0"
+    ],
+    "orjson": [
+     null,
+     "3.13.0"
+    ],
+    "ormsgpack": [
+     null,
+     "1.12.2"
+    ],
+    "packaging": [
+     null,
+     "26.3"
+    ],
+    "pluggy": [
+     null,
+     "1.7.0"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pydantic": [
+     "1.10.7",
+     "2.14.3"
+    ],
+    "pydantic-core": [
+     null,
+     "2.50.4"
+    ],
+    "pygments": [
+     null,
+     "2.21.0"
+    ],
+    "pytest": [
+     "7.2.2",
+     "9.0.3"
+    ],
+    "python-dateutil": [
+     null,
+     "3.0.0"
+    ],
+    "pytz": [
+     null,
+     "2026.6"
+    ],
+    "regex": [
+     null,
+     "2026.9.29"
+    ],
+    "requests": [
+     null,
+     "2.34.2"
+    ],
+    "requests-toolbelt": [
+     null,
+     "1.0.0"
+    ],
+    "setuptools": [
+     "65.6.3",
+     "84.1.0"
+    ],
+    "six": [
+     null,
+     "1.17.0"
+    ],
+    "sniffio": [
+     null,
+     "1.3.1"
+    ],
+    "sqlparse": [
+     null,
+     "0.6.1"
+    ],
+    "tomli": [
+     null,
+     "2.5.0"
+    ],
+    "tqdm": [
+     "4.64.0",
+     "4.66.3"
+    ],
+    "truststore": [
+     null,
+     "0.10.5"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.5"
+    ],
+    "tzdata": [
+     null,
+     "2026.6"
+    ],
+    "urllib3": [
+     null,
+     "2.8.0"
+    ],
+    "uuid-utils": [
+     null,
+     "0.19.0"
+    ],
+    "websockets": [
+     null,
+     "16.1.1"
+    ],
+    "xxhash": [
+     null,
+     "4.1.0"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ],
+    "zstandard": [
+     null,
+     "0.25.0"
+    ]
+   },
    "planned_changes": 6,
    "unplanned_changes": 59,
-   "plan_not_realised": 0
+   "unplanned_major": 0,
+   "unplanned_added": 59,
+   "new_findings_from_unplanned": 1,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 6,
+    "checked": 6,
+    "unknown": 0,
+    "packages_with_missing": 3,
+    "missing_symbols": 13,
+    "refs_checked": 28,
+    "details": [
+     {
+      "package": "langchain",
+      "version": "1.3.9",
+      "missing": [
+       "langchain.document_loaders",
+       "langchain.document_loaders.pdf.UnstructuredPDFLoader",
+       "langchain.document_loaders.text.TextLoader",
+       "langchain.document_loaders.word_document.UnstructuredWordDocumentLoader",
+       "langchain.embeddings.openai.OpenAIEmbeddings",
+       "langchain.text_splitter",
+       "langchain.text_splitter.CharacterTextSplitter",
+       "langchain.text_splitter.TextSplitter.split_documents",
+       "langchain.vectorstores",
+       "langchain.vectorstores.faiss.FAISS.from_texts"
+      ],
+      "n_missing": 10
+     },
+     {
+      "package": "pydantic",
+      "version": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.root_validator",
+       "pydantic.class_validators.validator"
+      ],
+      "n_missing": 2
+     },
+     {
+      "package": "pytest",
+      "version": "9.0.3",
+      "missing": [
+       "_pytest.python_api.raises"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
   },
   "coral_opt": {
    "planned": {
@@ -132,10 +1577,11 @@
    "ok": true,
    "iterations": 1,
    "error": "",
-   "seconds": 0.9,
+   "seconds": 0.2,
    "model_residual": 0.0,
    "model_cost": 16.4,
    "scope": 6,
+   "candidates": 25,
    "residual_findings": 1,
    "residual_risk_evident": 0.20491211401425177,
    "residual_risk_vm": 0.52,
@@ -145,9 +1591,320 @@
    "major_bumps": 4,
    "added": 59,
    "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.14.5"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "annotated-types": [
+     null,
+     "0.8.0"
+    ],
+    "anyio": [
+     null,
+     "4.16.0"
+    ],
+    "asgiref": [
+     null,
+     "3.12.1"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "attrs": [
+     null,
+     "26.1.0"
+    ],
+    "camel-converter": [
+     null,
+     "5.1.1"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "charset-normalizer": [
+     null,
+     "3.5.2"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "diskcache": [
+     null,
+     "5.6.3"
+    ],
+    "distro": [
+     null,
+     "1.9.0"
+    ],
+    "django": [
+     null,
+     "5.2.19"
+    ],
+    "exceptiongroup": [
+     null,
+     "1.3.1"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "h11": [
+     null,
+     "0.16.0"
+    ],
+    "httpcore": [
+     null,
+     "1.0.9"
+    ],
+    "httpcore2": [
+     null,
+     "2.14.0"
+    ],
+    "httpx": [
+     null,
+     "0.28.1"
+    ],
+    "httpx2": [
+     null,
+     "2.14.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "iniconfig": [
+     null,
+     "2.3.1"
+    ],
+    "jsonpatch": [
+     null,
+     "1.46"
+    ],
+    "jsonpointer": [
+     null,
+     "3.12"
+    ],
+    "langchain": [
+     "0.0.231",
+     "1.3.9"
+    ],
+    "langchain-core": [
+     null,
+     "1.7.7"
+    ],
+    "langchain-protocol": [
+     null,
+     "0.0.21"
+    ],
+    "langgraph": [
+     null,
+     "1.2.21"
+    ],
+    "langgraph-checkpoint": [
+     null,
+     "4.3.1"
+    ],
+    "langgraph-prebuilt": [
+     null,
+     "1.1.1"
+    ],
+    "langgraph-sdk": [
+     null,
+     "0.4.14"
+    ],
+    "langsmith": [
+     null,
+     "0.14.17"
+    ],
+    "multidict": [
+     null,
+     "7.1.0"
+    ],
+    "orjson": [
+     null,
+     "3.13.0"
+    ],
+    "ormsgpack": [
+     null,
+     "1.12.2"
+    ],
+    "packaging": [
+     null,
+     "26.3"
+    ],
+    "pluggy": [
+     null,
+     "1.7.0"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pydantic": [
+     "1.10.7",
+     "2.14.3"
+    ],
+    "pydantic-core": [
+     null,
+     "2.50.4"
+    ],
+    "pygments": [
+     null,
+     "2.21.0"
+    ],
+    "pytest": [
+     "7.2.2",
+     "9.0.3"
+    ],
+    "python-dateutil": [
+     null,
+     "3.0.0"
+    ],
+    "pytz": [
+     null,
+     "2026.6"
+    ],
+    "regex": [
+     null,
+     "2026.9.29"
+    ],
+    "requests": [
+     null,
+     "2.34.2"
+    ],
+    "requests-toolbelt": [
+     null,
+     "1.0.0"
+    ],
+    "setuptools": [
+     "65.6.3",
+     "84.1.0"
+    ],
+    "six": [
+     null,
+     "1.17.0"
+    ],
+    "sniffio": [
+     null,
+     "1.3.1"
+    ],
+    "sqlparse": [
+     null,
+     "0.6.1"
+    ],
+    "tomli": [
+     null,
+     "2.5.0"
+    ],
+    "tqdm": [
+     "4.64.0",
+     "4.66.3"
+    ],
+    "truststore": [
+     null,
+     "0.10.5"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.5"
+    ],
+    "tzdata": [
+     null,
+     "2026.6"
+    ],
+    "urllib3": [
+     null,
+     "2.8.0"
+    ],
+    "uuid-utils": [
+     null,
+     "0.19.0"
+    ],
+    "websockets": [
+     null,
+     "16.1.1"
+    ],
+    "xxhash": [
+     null,
+     "4.1.0"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ],
+    "zstandard": [
+     null,
+     "0.25.0"
+    ]
+   },
    "planned_changes": 6,
    "unplanned_changes": 59,
-   "plan_not_realised": 0
+   "unplanned_major": 0,
+   "unplanned_added": 59,
+   "new_findings_from_unplanned": 1,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 6,
+    "checked": 6,
+    "unknown": 0,
+    "packages_with_missing": 3,
+    "missing_symbols": 13,
+    "refs_checked": 28,
+    "details": [
+     {
+      "package": "langchain",
+      "version": "1.3.9",
+      "missing": [
+       "langchain.document_loaders",
+       "langchain.document_loaders.pdf.UnstructuredPDFLoader",
+       "langchain.document_loaders.text.TextLoader",
+       "langchain.document_loaders.word_document.UnstructuredWordDocumentLoader",
+       "langchain.embeddings.openai.OpenAIEmbeddings",
+       "langchain.text_splitter",
+       "langchain.text_splitter.CharacterTextSplitter",
+       "langchain.text_splitter.TextSplitter.split_documents",
+       "langchain.vectorstores",
+       "langchain.vectorstores.faiss.FAISS.from_texts"
+      ],
+      "n_missing": 10
+     },
+     {
+      "package": "pydantic",
+      "version": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.root_validator",
+       "pydantic.class_validators.validator"
+      ],
+      "n_missing": 2
+     },
+     {
+      "package": "pytest",
+      "version": "9.0.3",
+      "missing": [
+       "_pytest.python_api.raises"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
   },
   "cape_opt": {
    "planned": {
@@ -161,10 +1918,11 @@
    "ok": true,
    "iterations": 1,
    "error": "",
-   "seconds": 0.5,
+   "seconds": 0.1,
    "model_residual": 0.0,
    "model_cost": 16.4,
    "scope": 6,
+   "candidates": 25,
    "residual_findings": 1,
    "residual_risk_evident": 0.20491211401425177,
    "residual_risk_vm": 0.52,
@@ -174,9 +1932,320 @@
    "major_bumps": 4,
    "added": 59,
    "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.14.5"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "annotated-types": [
+     null,
+     "0.8.0"
+    ],
+    "anyio": [
+     null,
+     "4.16.0"
+    ],
+    "asgiref": [
+     null,
+     "3.12.1"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "attrs": [
+     null,
+     "26.1.0"
+    ],
+    "camel-converter": [
+     null,
+     "5.1.1"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "charset-normalizer": [
+     null,
+     "3.5.2"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "diskcache": [
+     null,
+     "5.6.3"
+    ],
+    "distro": [
+     null,
+     "1.9.0"
+    ],
+    "django": [
+     null,
+     "5.2.19"
+    ],
+    "exceptiongroup": [
+     null,
+     "1.3.1"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "h11": [
+     null,
+     "0.16.0"
+    ],
+    "httpcore": [
+     null,
+     "1.0.9"
+    ],
+    "httpcore2": [
+     null,
+     "2.14.0"
+    ],
+    "httpx": [
+     null,
+     "0.28.1"
+    ],
+    "httpx2": [
+     null,
+     "2.14.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "iniconfig": [
+     null,
+     "2.3.1"
+    ],
+    "jsonpatch": [
+     null,
+     "1.46"
+    ],
+    "jsonpointer": [
+     null,
+     "3.12"
+    ],
+    "langchain": [
+     "0.0.231",
+     "1.3.9"
+    ],
+    "langchain-core": [
+     null,
+     "1.7.7"
+    ],
+    "langchain-protocol": [
+     null,
+     "0.0.21"
+    ],
+    "langgraph": [
+     null,
+     "1.2.21"
+    ],
+    "langgraph-checkpoint": [
+     null,
+     "4.3.1"
+    ],
+    "langgraph-prebuilt": [
+     null,
+     "1.1.1"
+    ],
+    "langgraph-sdk": [
+     null,
+     "0.4.14"
+    ],
+    "langsmith": [
+     null,
+     "0.14.17"
+    ],
+    "multidict": [
+     null,
+     "7.1.0"
+    ],
+    "orjson": [
+     null,
+     "3.13.0"
+    ],
+    "ormsgpack": [
+     null,
+     "1.12.2"
+    ],
+    "packaging": [
+     null,
+     "26.3"
+    ],
+    "pluggy": [
+     null,
+     "1.7.0"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pydantic": [
+     "1.10.7",
+     "2.14.3"
+    ],
+    "pydantic-core": [
+     null,
+     "2.50.4"
+    ],
+    "pygments": [
+     null,
+     "2.21.0"
+    ],
+    "pytest": [
+     "7.2.2",
+     "9.0.3"
+    ],
+    "python-dateutil": [
+     null,
+     "3.0.0"
+    ],
+    "pytz": [
+     null,
+     "2026.6"
+    ],
+    "regex": [
+     null,
+     "2026.9.29"
+    ],
+    "requests": [
+     null,
+     "2.34.2"
+    ],
+    "requests-toolbelt": [
+     null,
+     "1.0.0"
+    ],
+    "setuptools": [
+     "65.6.3",
+     "84.1.0"
+    ],
+    "six": [
+     null,
+     "1.17.0"
+    ],
+    "sniffio": [
+     null,
+     "1.3.1"
+    ],
+    "sqlparse": [
+     null,
+     "0.6.1"
+    ],
+    "tomli": [
+     null,
+     "2.5.0"
+    ],
+    "tqdm": [
+     "4.64.0",
+     "4.66.3"
+    ],
+    "truststore": [
+     null,
+     "0.10.5"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.5"
+    ],
+    "tzdata": [
+     null,
+     "2026.6"
+    ],
+    "urllib3": [
+     null,
+     "2.8.0"
+    ],
+    "uuid-utils": [
+     null,
+     "0.19.0"
+    ],
+    "websockets": [
+     null,
+     "16.1.1"
+    ],
+    "xxhash": [
+     null,
+     "4.1.0"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ],
+    "zstandard": [
+     null,
+     "0.25.0"
+    ]
+   },
    "planned_changes": 6,
    "unplanned_changes": 59,
-   "plan_not_realised": 0
+   "unplanned_major": 0,
+   "unplanned_added": 59,
+   "new_findings_from_unplanned": 1,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 6,
+    "checked": 6,
+    "unknown": 0,
+    "packages_with_missing": 3,
+    "missing_symbols": 13,
+    "refs_checked": 28,
+    "details": [
+     {
+      "package": "langchain",
+      "version": "1.3.9",
+      "missing": [
+       "langchain.document_loaders",
+       "langchain.document_loaders.pdf.UnstructuredPDFLoader",
+       "langchain.document_loaders.text.TextLoader",
+       "langchain.document_loaders.word_document.UnstructuredWordDocumentLoader",
+       "langchain.embeddings.openai.OpenAIEmbeddings",
+       "langchain.text_splitter",
+       "langchain.text_splitter.CharacterTextSplitter",
+       "langchain.text_splitter.TextSplitter.split_documents",
+       "langchain.vectorstores",
+       "langchain.vectorstores.faiss.FAISS.from_texts"
+      ],
+      "n_missing": 10
+     },
+     {
+      "package": "pydantic",
+      "version": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.root_validator",
+       "pydantic.class_validators.validator"
+      ],
+      "n_missing": 2
+     },
+     {
+      "package": "pytest",
+      "version": "9.0.3",
+      "missing": [
+       "_pytest.python_api.raises"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
   },
   "evident": {
    "planned": {
@@ -189,12 +2258,13 @@
    "ok": true,
    "iterations": 1,
    "error": "",
-   "seconds": 0.7,
-   "model_residual": 0.10043758075163196,
+   "seconds": 0.2,
+   "model_residual": 0.0836979839596933,
    "model_cost": 14.7,
    "scope": 6,
+   "candidates": 25,
    "residual_findings": 2,
-   "residual_risk_evident": 0.30534969476588375,
+   "residual_risk_evident": 0.2886100979739451,
    "residual_risk_vm": 0.91,
    "residual_confirmed": 0,
    "new_findings": 1,
@@ -202,164 +2272,684 @@
    "major_bumps": 4,
    "added": 59,
    "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.14.5"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "annotated-types": [
+     null,
+     "0.8.0"
+    ],
+    "anyio": [
+     null,
+     "4.16.0"
+    ],
+    "asgiref": [
+     null,
+     "3.12.1"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "attrs": [
+     null,
+     "26.1.0"
+    ],
+    "camel-converter": [
+     null,
+     "5.1.1"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "charset-normalizer": [
+     null,
+     "3.5.2"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "diskcache": [
+     null,
+     "5.6.3"
+    ],
+    "distro": [
+     null,
+     "1.9.0"
+    ],
+    "django": [
+     null,
+     "5.2.19"
+    ],
+    "exceptiongroup": [
+     null,
+     "1.3.1"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "h11": [
+     null,
+     "0.16.0"
+    ],
+    "httpcore": [
+     null,
+     "1.0.9"
+    ],
+    "httpcore2": [
+     null,
+     "2.14.0"
+    ],
+    "httpx": [
+     null,
+     "0.28.1"
+    ],
+    "httpx2": [
+     null,
+     "2.14.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "iniconfig": [
+     null,
+     "2.3.1"
+    ],
+    "jsonpatch": [
+     null,
+     "1.46"
+    ],
+    "jsonpointer": [
+     null,
+     "3.12"
+    ],
+    "langchain": [
+     "0.0.231",
+     "1.3.9"
+    ],
+    "langchain-core": [
+     null,
+     "1.7.7"
+    ],
+    "langchain-protocol": [
+     null,
+     "0.0.21"
+    ],
+    "langgraph": [
+     null,
+     "1.2.21"
+    ],
+    "langgraph-checkpoint": [
+     null,
+     "4.3.1"
+    ],
+    "langgraph-prebuilt": [
+     null,
+     "1.1.1"
+    ],
+    "langgraph-sdk": [
+     null,
+     "0.4.14"
+    ],
+    "langsmith": [
+     null,
+     "0.14.17"
+    ],
+    "multidict": [
+     null,
+     "7.1.0"
+    ],
+    "orjson": [
+     null,
+     "3.13.0"
+    ],
+    "ormsgpack": [
+     null,
+     "1.12.2"
+    ],
+    "packaging": [
+     null,
+     "26.3"
+    ],
+    "pluggy": [
+     null,
+     "1.7.0"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pydantic": [
+     "1.10.7",
+     "2.14.3"
+    ],
+    "pydantic-core": [
+     null,
+     "2.50.4"
+    ],
+    "pygments": [
+     null,
+     "2.21.0"
+    ],
+    "pytest": [
+     "7.2.2",
+     "9.0.3"
+    ],
+    "python-dateutil": [
+     null,
+     "3.0.0"
+    ],
+    "pytz": [
+     null,
+     "2026.6"
+    ],
+    "regex": [
+     null,
+     "2026.9.29"
+    ],
+    "requests": [
+     null,
+     "2.34.2"
+    ],
+    "requests-toolbelt": [
+     null,
+     "1.0.0"
+    ],
+    "setuptools": [
+     "65.6.3",
+     "84.1.0"
+    ],
+    "six": [
+     null,
+     "1.17.0"
+    ],
+    "sniffio": [
+     null,
+     "1.3.1"
+    ],
+    "sqlparse": [
+     null,
+     "0.6.1"
+    ],
+    "tomli": [
+     null,
+     "2.5.0"
+    ],
+    "truststore": [
+     null,
+     "0.10.5"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.5"
+    ],
+    "tzdata": [
+     null,
+     "2026.6"
+    ],
+    "urllib3": [
+     null,
+     "2.8.0"
+    ],
+    "uuid-utils": [
+     null,
+     "0.19.0"
+    ],
+    "websockets": [
+     null,
+     "16.1.1"
+    ],
+    "xxhash": [
+     null,
+     "4.1.0"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ],
+    "zstandard": [
+     null,
+     "0.25.0"
+    ]
+   },
    "planned_changes": 5,
    "unplanned_changes": 59,
-   "plan_not_realised": 0
+   "unplanned_major": 0,
+   "unplanned_added": 59,
+   "new_findings_from_unplanned": 1,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "packages_with_missing": 3,
+    "missing_symbols": 13,
+    "refs_checked": 26,
+    "details": [
+     {
+      "package": "langchain",
+      "version": "1.3.9",
+      "missing": [
+       "langchain.document_loaders",
+       "langchain.document_loaders.pdf.UnstructuredPDFLoader",
+       "langchain.document_loaders.text.TextLoader",
+       "langchain.document_loaders.word_document.UnstructuredWordDocumentLoader",
+       "langchain.embeddings.openai.OpenAIEmbeddings",
+       "langchain.text_splitter",
+       "langchain.text_splitter.CharacterTextSplitter",
+       "langchain.text_splitter.TextSplitter.split_documents",
+       "langchain.vectorstores",
+       "langchain.vectorstores.faiss.FAISS.from_texts"
+      ],
+      "n_missing": 10
+     },
+     {
+      "package": "pydantic",
+      "version": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.root_validator",
+       "pydantic.class_validators.validator"
+      ],
+      "n_missing": 2
+     },
+     {
+      "package": "pytest",
+      "version": "9.0.3",
+      "missing": [
+       "_pytest.python_api.raises"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   },
+   "objective_gap": 0.2049121140142518
+  },
+  "evident_wide": {
+   "planned": {
+    "aiohttp": "3.14.5",
+    "langchain": "1.3.9",
+    "pydantic": "2.14.3",
+    "pytest": "9.0.3",
+    "setuptools": "84.1.0"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.2,
+   "model_residual": 0.0836979839596933,
+   "model_cost": 14.7,
+   "candidates": 25,
+   "residual_findings": 2,
+   "residual_risk_evident": 0.2886100979739451,
+   "residual_risk_vm": 0.91,
+   "residual_confirmed": 0,
+   "new_findings": 1,
+   "changed": 64,
+   "major_bumps": 4,
+   "added": 59,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.14.5"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "annotated-types": [
+     null,
+     "0.8.0"
+    ],
+    "anyio": [
+     null,
+     "4.16.0"
+    ],
+    "asgiref": [
+     null,
+     "3.12.1"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "attrs": [
+     null,
+     "26.1.0"
+    ],
+    "camel-converter": [
+     null,
+     "5.1.1"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "charset-normalizer": [
+     null,
+     "3.5.2"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "diskcache": [
+     null,
+     "5.6.3"
+    ],
+    "distro": [
+     null,
+     "1.9.0"
+    ],
+    "django": [
+     null,
+     "5.2.19"
+    ],
+    "exceptiongroup": [
+     null,
+     "1.3.1"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "h11": [
+     null,
+     "0.16.0"
+    ],
+    "httpcore": [
+     null,
+     "1.0.9"
+    ],
+    "httpcore2": [
+     null,
+     "2.14.0"
+    ],
+    "httpx": [
+     null,
+     "0.28.1"
+    ],
+    "httpx2": [
+     null,
+     "2.14.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "iniconfig": [
+     null,
+     "2.3.1"
+    ],
+    "jsonpatch": [
+     null,
+     "1.46"
+    ],
+    "jsonpointer": [
+     null,
+     "3.12"
+    ],
+    "langchain": [
+     "0.0.231",
+     "1.3.9"
+    ],
+    "langchain-core": [
+     null,
+     "1.7.7"
+    ],
+    "langchain-protocol": [
+     null,
+     "0.0.21"
+    ],
+    "langgraph": [
+     null,
+     "1.2.21"
+    ],
+    "langgraph-checkpoint": [
+     null,
+     "4.3.1"
+    ],
+    "langgraph-prebuilt": [
+     null,
+     "1.1.1"
+    ],
+    "langgraph-sdk": [
+     null,
+     "0.4.14"
+    ],
+    "langsmith": [
+     null,
+     "0.14.17"
+    ],
+    "multidict": [
+     null,
+     "7.1.0"
+    ],
+    "orjson": [
+     null,
+     "3.13.0"
+    ],
+    "ormsgpack": [
+     null,
+     "1.12.2"
+    ],
+    "packaging": [
+     null,
+     "26.3"
+    ],
+    "pluggy": [
+     null,
+     "1.7.0"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pydantic": [
+     "1.10.7",
+     "2.14.3"
+    ],
+    "pydantic-core": [
+     null,
+     "2.50.4"
+    ],
+    "pygments": [
+     null,
+     "2.21.0"
+    ],
+    "pytest": [
+     "7.2.2",
+     "9.0.3"
+    ],
+    "python-dateutil": [
+     null,
+     "3.0.0"
+    ],
+    "pytz": [
+     null,
+     "2026.6"
+    ],
+    "regex": [
+     null,
+     "2026.9.29"
+    ],
+    "requests": [
+     null,
+     "2.34.2"
+    ],
+    "requests-toolbelt": [
+     null,
+     "1.0.0"
+    ],
+    "setuptools": [
+     "65.6.3",
+     "84.1.0"
+    ],
+    "six": [
+     null,
+     "1.17.0"
+    ],
+    "sniffio": [
+     null,
+     "1.3.1"
+    ],
+    "sqlparse": [
+     null,
+     "0.6.1"
+    ],
+    "tomli": [
+     null,
+     "2.5.0"
+    ],
+    "truststore": [
+     null,
+     "0.10.5"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.5"
+    ],
+    "tzdata": [
+     null,
+     "2026.6"
+    ],
+    "urllib3": [
+     null,
+     "2.8.0"
+    ],
+    "uuid-utils": [
+     null,
+     "0.19.0"
+    ],
+    "websockets": [
+     null,
+     "16.1.1"
+    ],
+    "xxhash": [
+     null,
+     "4.1.0"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ],
+    "zstandard": [
+     null,
+     "0.25.0"
+    ]
+   },
+   "planned_changes": 5,
+   "unplanned_changes": 59,
+   "unplanned_major": 0,
+   "unplanned_added": 59,
+   "new_findings_from_unplanned": 1,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "packages_with_missing": 3,
+    "missing_symbols": 13,
+    "refs_checked": 26,
+    "details": [
+     {
+      "package": "langchain",
+      "version": "1.3.9",
+      "missing": [
+       "langchain.document_loaders",
+       "langchain.document_loaders.pdf.UnstructuredPDFLoader",
+       "langchain.document_loaders.text.TextLoader",
+       "langchain.document_loaders.word_document.UnstructuredWordDocumentLoader",
+       "langchain.embeddings.openai.OpenAIEmbeddings",
+       "langchain.text_splitter",
+       "langchain.text_splitter.CharacterTextSplitter",
+       "langchain.text_splitter.TextSplitter.split_documents",
+       "langchain.vectorstores",
+       "langchain.vectorstores.faiss.FAISS.from_texts"
+      ],
+      "n_missing": 10
+     },
+     {
+      "package": "pydantic",
+      "version": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.root_validator",
+       "pydantic.class_validators.validator"
+      ],
+      "n_missing": 2
+     },
+     {
+      "package": "pytest",
+      "version": "9.0.3",
+      "missing": [
+       "_pytest.python_api.raises"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
   }
  },
  "original": {
   "residual_findings": 79,
-  "residual_risk_evident": 30.61451675433959,
+  "residual_risk_evident": 30.35569683471038,
   "residual_risk_vm": 53.83999999999997,
   "residual_confirmed": 3,
   "new_findings": 0,
   "changed": 0,
   "major_bumps": 0,
   "added": 0,
-  "removed": 0
+  "removed": 0,
+  "realised_changes": {}
  },
- "pareto_evident": [
-  {
-   "lambda": 0.0,
-   "risk": 0.0,
-   "cost": 16.4,
-   "changes": 6
-  },
-  {
-   "lambda": 0.02,
-   "risk": 0.0,
-   "cost": 16.4,
-   "changes": 6
-  },
-  {
-   "lambda": 0.05,
-   "risk": 0.0,
-   "cost": 16.4,
-   "changes": 6
-  },
-  {
-   "lambda": 0.1,
-   "risk": 0.10043758075163196,
-   "cost": 14.7,
-   "changes": 5
-  },
-  {
-   "lambda": 0.2,
-   "risk": 0.49109651116679703,
-   "cost": 11.7,
-   "changes": 4
-  },
-  {
-   "lambda": 0.5,
-   "risk": 2.310917499619163,
-   "cost": 6.9,
-   "changes": 3
-  },
-  {
-   "lambda": 1.0,
-   "risk": 4.827756993141703,
-   "cost": 3.4,
-   "changes": 2
-  },
-  {
-   "lambda": 2.0,
-   "risk": 4.827756993141703,
-   "cost": 3.4,
-   "changes": 2
-  },
-  {
-   "lambda": 5.0,
-   "risk": 12.493011661643914,
-   "cost": 1.7,
-   "changes": 1
-  },
-  {
-   "lambda": 100.0,
-   "risk": 30.614516754339576,
-   "cost": 0.0,
-   "changes": 0
-  }
- ],
- "pareto_vm": [
-  {
-   "lambda": 0.0,
-   "risk": 0.0,
-   "cost": 16.4,
-   "changes": 6
-  },
-  {
-   "lambda": 0.02,
-   "risk": 0.0,
-   "cost": 16.4,
-   "changes": 6
-  },
-  {
-   "lambda": 0.05,
-   "risk": 0.0,
-   "cost": 16.4,
-   "changes": 6
-  },
-  {
-   "lambda": 0.1,
-   "risk": 0.0,
-   "cost": 16.4,
-   "changes": 6
-  },
-  {
-   "lambda": 0.2,
-   "risk": 0.0,
-   "cost": 16.4,
-   "changes": 6
-  },
-  {
-   "lambda": 0.5,
-   "risk": 1.62,
-   "cost": 10.4,
-   "changes": 4
-  },
-  {
-   "lambda": 1.0,
-   "risk": 4.09,
-   "cost": 6.9,
-   "changes": 3
-  },
-  {
-   "lambda": 2.0,
-   "risk": 7.999999999999999,
-   "cost": 3.4,
-   "changes": 2
-  },
-  {
-   "lambda": 5.0,
-   "risk": 7.999999999999999,
-   "cost": 3.4,
-   "changes": 2
-  },
-  {
-   "lambda": 100.0,
-   "risk": 53.839999999999996,
-   "cost": 0.0,
-   "changes": 0
-  }
- ],
  "decision": {
   "uncertain": 79,
   "critical": 3,
-  "evpi_total": 0.22902892268557656,
+  "evpi_total": 0.21958607321320103,
   "top": [
    {
     "package": "pytest",
     "advisory": "CVE-2025-71176",
     "p": 0.5744984270811252,
     "critical": true,
-    "evpi": 0.12765047187566245
+    "evpi": 0.12765047187566256
    },
    {
     "package": "tqdm",
     "advisory": "CVE-2024-34062",
-    "p": 0.25753225833751786,
+    "p": 0.21461021528126487,
     "critical": true,
-    "evpi": 0.05665709683425392
+    "evpi": 0.047214247361878264
    },
    {
     "package": "langchain",
@@ -384,6 +2974,6 @@
    }
   ]
  },
- "remediation_seconds": 29.3,
+ "remediation_seconds": 455.7,
  "status": "ok"
 }

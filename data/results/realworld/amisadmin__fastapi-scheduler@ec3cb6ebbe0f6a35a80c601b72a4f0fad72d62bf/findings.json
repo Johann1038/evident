@@ -1,0 +1,5503 @@
+[
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "anyio",
+  "version": "3.6.1",
+  "advisory": "CVE-2026-64847",
+  "ids": [
+   "GHSA-5p39-cfhj-2xmp",
+   "PYSEC-2026-4024"
+  ],
+  "cves": [
+   "CVE-2026-64847"
+  ],
+  "cvss": 6.8,
+  "epss": 0.00157,
+  "kev": false,
+  "severity_w": 0.6799999999999999,
+  "published": "2026-09-18T17:17:10Z",
+  "fixed": [
+   "4.14.2"
+  ],
+  "depth": 4,
+  "direct": false,
+  "p_exposed": 0.21461021528126487,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 4
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (package: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "anyio.to_process.process_worker"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "anyio",
+  "version": "3.6.1",
+  "advisory": "CVE-2026-63374",
+  "ids": [
+   "GHSA-82r6-8w77-94w6",
+   "PYSEC-2026-4025"
+  ],
+  "cves": [
+   "CVE-2026-63374"
+  ],
+  "cvss": 9.3,
+  "epss": 0.00289,
+  "kev": false,
+  "severity_w": 0.93,
+  "published": "2026-09-18T17:17:18Z",
+  "fixed": [
+   "4.14.2"
+  ],
+  "depth": 4,
+  "direct": false,
+  "p_exposed": 0.21461021528126487,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 4
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (package: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "anyio._core._sockets.getaddrinfo",
+      "anyio.streams.tls.TLSStream.wrap"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "black",
+  "version": "22.8.0",
+  "advisory": "CVE-2026-32274",
+  "ids": [
+   "GHSA-3936-cmfr-pm3m",
+   "PYSEC-2026-2121"
+  ],
+  "cves": [
+   "CVE-2026-32274"
+  ],
+  "cvss": 8.7,
+  "epss": 0.00691,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2026-03-12T18:33:10Z",
+  "fixed": [
+   "26.3.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.006445961995249406,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "black.cache.Cache.read",
+      "black.handle_ipynb_magics.create_token",
+      "black.handle_ipynb_magics.get_token",
+      "black.handle_ipynb_magics.replace_magics",
+      "black.handle_ipynb_magics.unmask_cell",
+      "black.mode.Mode.get_cache_key"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "REFUTED",
+      "module": "REFUTED",
+      "reachable": "REFUTED"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "black",
+  "version": "22.8.0",
+  "advisory": "CVE-2026-114134",
+  "ids": [
+   "GHSA-cg8m-r9f2-5wm2"
+  ],
+  "cves": [
+   "CVE-2026-114134"
+  ],
+  "cvss": 8.7,
+  "epss": 0.00404,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2026-10-22T16:18:57Z",
+  "fixed": [
+   "26.10.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.019703087885985748,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "black",
+  "version": "22.8.0",
+  "advisory": "CVE-2024-21503",
+  "ids": [
+   "GHSA-fj7x-q9j7-g6q6",
+   "PYSEC-2024-48"
+  ],
+  "cves": [
+   "CVE-2024-21503"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00979,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2024-03-19T05:15:00Z",
+  "fixed": [
+   "24.3.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.006445961995249406,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "black.strings.lines_with_leading_tabs_expanded"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "REFUTED",
+      "module": "REFUTED",
+      "reachable": "REFUTED"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "black",
+  "version": "22.8.0",
+  "advisory": "CVE-2026-31900",
+  "ids": [
+   "PYSEC-2026-2120"
+  ],
+  "cves": [
+   "CVE-2026-31900"
+  ],
+  "cvss": 9.8,
+  "epss": 0.00522,
+  "kev": false,
+  "severity_w": 0.9800000000000001,
+  "published": "2026-03-11T20:16:15.960Z",
+  "fixed": [
+   "26.3.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.019703087885985748,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (module_only)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "fastapi",
+  "version": "0.85.0",
+  "advisory": "CVE-2024-24762",
+  "ids": [
+   "PYSEC-2024-38"
+  ],
+  "cves": [
+   "CVE-2024-24762"
+  ],
+  "cvss": 7.5,
+  "epss": 0.01523,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2024-02-05T15:15:00Z",
+  "fixed": [
+   "0.109.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "filelock",
+  "version": "3.8.0",
+  "advisory": "CVE-2026-112909",
+  "ids": [
+   "GHSA-69hj-f68j-2879"
+  ],
+  "cves": [
+   "CVE-2026-112909"
+  ],
+  "cvss": 6.1,
+  "epss": 0.0022,
+  "kev": false,
+  "severity_w": 0.61,
+  "published": "2026-10-28T21:08:35Z",
+  "fixed": [
+   "4.2.1"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.006445961995249406,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "filelock._api.BaseFileLock.__init__",
+      "filelock._soft.SoftFileLock._windows_unlink_if_ours",
+      "filelock._soft._read_lock_file",
+      "filelock._util._break_by_rename",
+      "filelock._util.raise_on_not_writable_file"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "REFUTED",
+      "module": "REFUTED",
+      "reachable": "REFUTED"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "filelock",
+  "version": "3.8.0",
+  "advisory": "CVE-2026-22701",
+  "ids": [
+   "GHSA-qmgc-5h2g-mvrw",
+   "PYSEC-2026-1374"
+  ],
+  "cves": [
+   "CVE-2026-22701"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00127,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-01-13T18:44:55Z",
+  "fixed": [
+   "3.20.3"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.006445961995249406,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "filelock._soft.SoftFileLock._acquire"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "REFUTED",
+      "module": "REFUTED",
+      "reachable": "REFUTED"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "filelock",
+  "version": "3.8.0",
+  "advisory": "CVE-2025-68146",
+  "ids": [
+   "GHSA-w853-jp5j-5j7f",
+   "PYSEC-2026-1375"
+  ],
+  "cves": [
+   "CVE-2025-68146"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00198,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2025-12-16T20:52:55Z",
+  "fixed": [
+   "3.20.1"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.006445961995249406,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "module",
+     "symbols": [
+      "filelock._unix.<module>",
+      "filelock._windows.<module>"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "REFUTED",
+      "module": "REFUTED",
+      "reachable": "REFUTED"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "idna",
+  "version": "3.4",
+  "advisory": "CVE-2026-45409",
+  "ids": [
+   "GHSA-65pc-fj4g-8rjx",
+   "PYSEC-2026-215"
+  ],
+  "cves": [
+   "CVE-2026-45409"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00408,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2026-05-19T14:34:32Z",
+  "fixed": [
+   "3.15"
+  ],
+  "depth": 5,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 5
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "idna",
+  "version": "3.4",
+  "advisory": "CVE-2024-3651",
+  "ids": [
+   "GHSA-jjg7-2v4v-x38h",
+   "PYSEC-2024-60"
+  ],
+  "cves": [
+   "CVE-2024-3651"
+  ],
+  "cvss": 7.5,
+  "epss": 0.01386,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2024-04-11T21:32:40Z",
+  "fixed": [
+   "3.7"
+  ],
+  "depth": 5,
+  "direct": false,
+  "p_exposed": 0.21461021528126487,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 5
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "module",
+     "symbols": [
+      "idna.package_data.<module>"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "pydantic",
+  "version": "1.10.2",
+  "advisory": "CVE-2024-3772",
+  "ids": [
+   "GHSA-mr82-8j83-vxmv",
+   "PYSEC-2026-1812"
+  ],
+  "cves": [
+   "CVE-2024-3772"
+  ],
+  "cvss": 5.9,
+  "epss": 0.00957,
+  "kev": false,
+  "severity_w": 0.5900000000000001,
+  "published": "2024-04-15T03:31:00Z",
+  "fixed": [
+   "1.10.13",
+   "2.4.0"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "pydantic.networks._build_pretty_email_regex",
+      "pydantic.networks.validate_email"
+     ],
+     "witness": [
+      "__app__.fastapi_scheduler.admin.<module>",
+      "pydantic.fields.<module>",
+      "pydantic.dataclasses._dataclass_validate_assignment_setattr",
+      "pydantic.networks.EmailStr.validate",
+      "pydantic.networks.validate_email"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "pytest",
+  "version": "6.2.5",
+  "advisory": "CVE-2025-71176",
+  "ids": [
+   "GHSA-6w46-j5rx-g56g",
+   "PYSEC-2026-1845"
+  ],
+  "cves": [
+   "CVE-2025-71176"
+  ],
+  "cvss": 6.8,
+  "epss": 0.00154,
+  "kev": false,
+  "severity_w": 0.6799999999999999,
+  "published": "2026-01-22T06:30:29Z",
+  "fixed": [
+   "9.0.3"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.3451089243298269,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "_pytest.tmpdir.TempPathFactory.getbasetemp"
+     ],
+     "witness": [
+      "__app__.fastapi_scheduler.admin.<module>",
+      "starlette.requests.<module>",
+      "anyio.<module>",
+      "anyio.to_thread.<module>",
+      "_pytest.fixtures.fixture",
+      "_pytest.fixtures.FixtureFunctionMarker.__call__",
+      "_pytest.fixtures.wrap_function_to_error_out_if_called_directly",
+      "_pytest.pytester.Pytester.__init__",
+      "_pytest.tmpdir.TempPathFactory.mktemp",
+      "_pytest.tmpdir.TempPathFactory.getbasetemp"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "python-multipart",
+  "version": "0.0.5",
+  "advisory": "CVE-2024-24762",
+  "ids": [
+   "GHSA-2jv5-9r88-3w3p",
+   "PYSEC-2026-1850"
+  ],
+  "cves": [
+   "CVE-2024-24762"
+  ],
+  "cvss": 7.5,
+  "epss": 0.01523,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2024-02-12T17:28:12Z",
+  "fixed": [
+   "0.0.7"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "multipart.multipart.parse_options_header"
+     ],
+     "witness": [
+      "__app__.fastapi_scheduler.admin.SchedulerAdmin.JobModel.trigger_valid",
+      "starlette.datastructures.QueryParams.__str__",
+      "multipart.multipart.parse_options_header"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "python-multipart",
+  "version": "0.0.5",
+  "advisory": "CVE-2024-53981",
+  "ids": [
+   "GHSA-59g5-xgcq-4qw3",
+   "PYSEC-2026-1851"
+  ],
+  "cves": [
+   "CVE-2024-53981"
+  ],
+  "cvss": 8.7,
+  "epss": 0.00635,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2024-12-02T21:37:04Z",
+  "fixed": [
+   "0.0.18"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "python-multipart",
+  "version": "0.0.5",
+  "advisory": "CVE-2026-53539",
+  "ids": [
+   "GHSA-5rvq-cxj2-64vf",
+   "PYSEC-2026-3036"
+  ],
+  "cves": [
+   "CVE-2026-53539"
+  ],
+  "cvss": 7.5,
+  "epss": 0.0046,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:24:09Z",
+  "fixed": [
+   "0.0.30"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "python-multipart",
+  "version": "0.0.5",
+  "advisory": "CVE-2026-53538",
+  "ids": [
+   "GHSA-6jv3-5f52-599m",
+   "PYSEC-2026-3037"
+  ],
+  "cves": [
+   "CVE-2026-53538"
+  ],
+  "cvss": 3.7,
+  "epss": 0.00256,
+  "kev": false,
+  "severity_w": 0.37,
+  "published": "2026-06-15T20:22:25Z",
+  "fixed": [
+   "0.0.30"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "python-multipart",
+  "version": "0.0.5",
+  "advisory": "CVE-2026-40347",
+  "ids": [
+   "GHSA-mj87-hwqh-73pj",
+   "PYSEC-2026-3038"
+  ],
+  "cves": [
+   "CVE-2026-40347"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00351,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-04-15T19:45:44Z",
+  "fixed": [
+   "0.0.26"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "python-multipart",
+  "version": "0.0.5",
+  "advisory": "CVE-2026-42561",
+  "ids": [
+   "GHSA-pp6c-gr5w-3c5g",
+   "PYSEC-2026-3039"
+  ],
+  "cves": [
+   "CVE-2026-42561"
+  ],
+  "cvss": 7.5,
+  "epss": 0.0074,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-05-06T21:56:14Z",
+  "fixed": [
+   "0.0.27"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "python-multipart",
+  "version": "0.0.5",
+  "advisory": "CVE-2026-53540",
+  "ids": [
+   "GHSA-v9pg-7xvm-68hf",
+   "PYSEC-2026-3040"
+  ],
+  "cves": [
+   "CVE-2026-53540"
+  ],
+  "cvss": 3.7,
+  "epss": 0.00342,
+  "kev": false,
+  "severity_w": 0.37,
+  "published": "2026-06-15T20:23:45Z",
+  "fixed": [
+   "0.0.31"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "python-multipart",
+  "version": "0.0.5",
+  "advisory": "CVE-2026-53537",
+  "ids": [
+   "GHSA-vffw-93wf-4j4q",
+   "PYSEC-2026-3041"
+  ],
+  "cves": [
+   "CVE-2026-53537"
+  ],
+  "cvss": 3.7,
+  "epss": 0.00291,
+  "kev": false,
+  "severity_w": 0.37,
+  "published": "2026-06-15T20:20:51Z",
+  "fixed": [
+   "0.0.30"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "python-multipart",
+  "version": "0.0.5",
+  "advisory": "CVE-2026-24486",
+  "ids": [
+   "GHSA-wp53-j4wj-2cfg",
+   "PYSEC-2026-1852"
+  ],
+  "cves": [
+   "CVE-2026-24486"
+  ],
+  "cvss": 8.6,
+  "epss": 0.02206,
+  "kev": false,
+  "severity_w": 0.86,
+  "published": "2026-01-26T23:28:05Z",
+  "fixed": [
+   "0.0.22"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "setuptools",
+  "version": "65.3.0",
+  "advisory": "CVE-2025-47273",
+  "ids": [
+   "GHSA-5rjg-fvgr-3xxf",
+   "PYSEC-2025-49"
+  ],
+  "cves": [
+   "CVE-2025-47273"
+  ],
+  "cvss": 8.8,
+  "epss": 0.01592,
+  "kev": false,
+  "severity_w": 0.8800000000000001,
+  "published": "2025-05-17T16:15:19Z",
+  "fixed": [
+   "78.1.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "vulnerable symbols not found in installed source",
+     "granularity": "function",
+     "symbols": [
+      "setuptools.package_index.PackageIndex._resolve_download_filename"
+     ],
+     "witness": [],
+     "missing": true,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "setuptools",
+  "version": "65.3.0",
+  "advisory": "CVE-2024-6345",
+  "ids": [
+   "GHSA-cx63-2mw6-8hw5",
+   "PYSEC-2026-1918"
+  ],
+  "cves": [
+   "CVE-2024-6345"
+  ],
+  "cvss": 8.8,
+  "epss": 0.01939,
+  "kev": false,
+  "severity_w": 0.8800000000000001,
+  "published": "2024-07-15T03:30:57Z",
+  "fixed": [
+   "70.0.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "setuptools.package_index.PackageIndex._download_git",
+      "setuptools.package_index.PackageIndex._download_hg",
+      "setuptools.package_index.PackageIndex._download_svn",
+      "setuptools.package_index.PackageIndex._download_url",
+      "setuptools.package_index.PackageIndex._vcs_split_rev_from_url",
+      "setuptools.package_index.PackageIndex.download"
+     ],
+     "witness": [
+      "__app__.fastapi_scheduler.admin.<module>",
+      "apscheduler.<module>",
+      "setuptools._vendor.typing_extensions._ConcatenateGenericAlias.__repr__",
+      "setuptools._install_setup_requires",
+      "setuptools.dist.Distribution.parse_config_files",
+      "setuptools.config.pyprojecttoml.apply_configuration",
+      "setuptools.config.pyprojecttoml.read_configuration",
+      "setuptools.config.pyprojecttoml.validate",
+      "setuptools.config._validate_pyproject.<module>",
+      "setuptools.config._validate_pyproject.formats.<module>",
+      "setuptools._vendor.packaging.requirements.<module>",
+      "setuptools._vendor.packaging.specifiers.<module>"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "setuptools",
+  "version": "65.3.0",
+  "advisory": "CVE-2026-59890",
+  "ids": [
+   "GHSA-h35f-9h28-mq5c",
+   "PYSEC-2026-3447"
+  ],
+  "cves": [
+   "CVE-2026-59890"
+  ],
+  "cvss": 6.1,
+  "epss": 0.0053,
+  "kev": false,
+  "severity_w": 0.61,
+  "published": "2026-07-08T17:17:27.020Z",
+  "fixed": [
+   "83.0.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "setuptools.command.egg_info.translate_pattern",
+      "setuptools.unicode_utils.filesys_decode"
+     ],
+     "witness": [
+      "__app__.fastapi_scheduler.admin.<module>",
+      "apscheduler.<module>",
+      "setuptools._vendor.typing_extensions._ConcatenateGenericAlias.__repr__",
+      "setuptools._install_setup_requires",
+      "setuptools.dist.Distribution.parse_config_files",
+      "setuptools.config.pyprojecttoml.apply_configuration",
+      "setuptools.config.pyprojecttoml.read_configuration",
+      "setuptools.config.pyprojecttoml.validate",
+      "setuptools.config._validate_pyproject.<module>",
+      "setuptools.config._validate_pyproject.formats.<module>",
+      "setuptools._vendor.packaging.requirements.<module>",
+      "setuptools._vendor.packaging.specifiers.<module>"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "setuptools",
+  "version": "65.3.0",
+  "advisory": "CVE-2022-40897",
+  "ids": [
+   "GHSA-r9hx-vwmv-q579",
+   "PYSEC-2022-43012"
+  ],
+  "cves": [
+   "CVE-2022-40897"
+  ],
+  "cvss": 8.7,
+  "epss": 0.02632,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2022-12-23T00:15:00Z",
+  "fixed": [
+   "65.5.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "module",
+     "symbols": [
+      "setuptools.package_index.<module>"
+     ],
+     "witness": [
+      "__app__.fastapi_scheduler.admin.<module>",
+      "apscheduler.<module>",
+      "setuptools._vendor.typing_extensions._ConcatenateGenericAlias.__repr__",
+      "setuptools._install_setup_requires",
+      "setuptools.dist.Distribution.parse_config_files",
+      "setuptools.config.pyprojecttoml.apply_configuration",
+      "setuptools.config.pyprojecttoml.read_configuration",
+      "setuptools.config.pyprojecttoml.validate",
+      "setuptools.config._validate_pyproject.<module>",
+      "setuptools.config._validate_pyproject.formats.<module>",
+      "setuptools._vendor.packaging.requirements.<module>",
+      "setuptools._vendor.packaging.specifiers.<module>"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "setuptools",
+  "version": "65.3.0",
+  "advisory": "GHSA-xmj3-9gf7-h52w",
+  "ids": [
+   "GHSA-xmj3-9gf7-h52w"
+  ],
+  "cves": [],
+  "cvss": 1.0,
+  "epss": 0.0,
+  "kev": false,
+  "severity_w": 0.1,
+  "published": "2026-10-23T21:44:11Z",
+  "fixed": [
+   "84.1.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.21461021528126487,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (package: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "setuptools.wheel.Wheel._fix_namespace_packages"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "starlette",
+  "version": "0.20.4",
+  "advisory": "CVE-2025-54121",
+  "ids": [
+   "GHSA-2c2j-9gv5-cj73",
+   "PYSEC-2026-1941"
+  ],
+  "cves": [
+   "CVE-2025-54121"
+  ],
+  "cvss": 5.3,
+  "epss": 0.0066,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2025-07-21T19:34:23Z",
+  "fixed": [
+   "0.47.2"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.21461021528126487,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "starlette.datastructures.UploadFile.content_type",
+      "starlette.datastructures.UploadFile.write"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "REFUTED"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "starlette",
+  "version": "0.20.4",
+  "advisory": "CVE-2023-30798",
+  "ids": [
+   "GHSA-74m5-2c7w-9w3x",
+   "PYSEC-2023-48"
+  ],
+  "cves": [
+   "CVE-2023-30798"
+  ],
+  "cvss": 8.7,
+  "epss": 0.01299,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2023-02-14T21:31:28Z",
+  "fixed": [
+   "0.25.0"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.21461021528126487,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "starlette.formparsers.MultiPartParser.__init__",
+      "starlette.formparsers.MultiPartParser.on_end",
+      "starlette.formparsers.MultiPartParser.on_header_end",
+      "starlette.formparsers.MultiPartParser.on_header_field",
+      "starlette.formparsers.MultiPartParser.on_header_value",
+      "starlette.formparsers.MultiPartParser.on_headers_finished",
+      "starlette.formparsers.MultiPartParser.on_part_begin",
+      "starlette.formparsers.MultiPartParser.on_part_data",
+      "starlette.formparsers.MultiPartParser.on_part_end",
+      "starlette.formparsers.MultiPartParser.parse",
+      "starlette.requests.Request._get_form",
+      "starlette.requests.Request.form"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "REFUTED"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "starlette",
+  "version": "0.20.4",
+  "advisory": "CVE-2026-54283",
+  "ids": [
+   "GHSA-82w8-qh3p-5jfq",
+   "PYSEC-2026-249"
+  ],
+  "cves": [
+   "CVE-2026-54283"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00481,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:39:53Z",
+  "fixed": [
+   "1.3.1"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "starlette",
+  "version": "0.20.4",
+  "advisory": "CVE-2026-48710",
+  "ids": [
+   "GHSA-86qp-5c8j-p5mr",
+   "PYSEC-2026-161"
+  ],
+  "cves": [
+   "CVE-2026-48710"
+  ],
+  "cvss": 6.5,
+  "epss": 0.70288,
+  "kev": true,
+  "severity_w": 1.3,
+  "published": "2026-05-22T13:10:03Z",
+  "fixed": [
+   "1.0.1"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "starlette.datastructures.URL.__init__"
+     ],
+     "witness": [
+      "__app__.fastapi_scheduler.admin.<module>",
+      "fastapi_amis_admin.crud.schema.<module>",
+      "starlette.routing.Router.__call__",
+      "starlette.datastructures.URL.__init__"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "starlette",
+  "version": "0.20.4",
+  "advisory": "CVE-2024-47874",
+  "ids": [
+   "GHSA-f96h-pmfr-66vw",
+   "PYSEC-2026-1943"
+  ],
+  "cves": [
+   "CVE-2024-47874"
+  ],
+  "cvss": 8.7,
+  "epss": 0.00653,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2024-10-15T18:12:57Z",
+  "fixed": [
+   "0.40.0"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.21461021528126487,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "starlette.formparsers.MultiPartParser.on_part_data",
+      "starlette.formparsers._user_safe_decode"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "REFUTED"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "starlette",
+  "version": "0.20.4",
+  "advisory": "CVE-2026-54282",
+  "ids": [
+   "GHSA-jp82-jpqv-5vv3",
+   "PYSEC-2026-248"
+  ],
+  "cves": [
+   "CVE-2026-54282"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00273,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-06-15T20:38:08Z",
+  "fixed": [
+   "1.3.0"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "starlette",
+  "version": "0.20.4",
+  "advisory": "CVE-2023-29159",
+  "ids": [
+   "GHSA-v5gw-mw7f-84px",
+   "PYSEC-2023-83"
+  ],
+  "cves": [
+   "CVE-2023-29159"
+  ],
+  "cvss": 6.3,
+  "epss": 0.02593,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2023-05-17T03:49:14Z",
+  "fixed": [
+   "0.27.0"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.21461021528126487,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "starlette.staticfiles.StaticFiles.lookup_path"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "REFUTED"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "starlette",
+  "version": "0.20.4",
+  "advisory": "CVE-2026-48818",
+  "ids": [
+   "GHSA-wqp7-x3pw-xc5r",
+   "PYSEC-2026-2281"
+  ],
+  "cves": [
+   "CVE-2026-48818"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00368,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:16:30Z",
+  "fixed": [
+   "1.1.0"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.21461021528126487,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "starlette.staticfiles.StaticFiles.lookup_path"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "REFUTED"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "starlette",
+  "version": "0.20.4",
+  "advisory": "CVE-2026-48817",
+  "ids": [
+   "GHSA-x746-7m8f-x49c",
+   "PYSEC-2026-2280"
+  ],
+  "cves": [
+   "CVE-2026-48817"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00213,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-06-15T20:16:05Z",
+  "fixed": [
+   "1.1.0"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "virtualenv",
+  "version": "20.16.2",
+  "advisory": "CVE-2026-113718",
+  "ids": [
+   "GHSA-394h-qwmc-48pf"
+  ],
+  "cves": [
+   "CVE-2026-113718"
+  ],
+  "cvss": 7.1,
+  "epss": 0.00242,
+  "kev": false,
+  "severity_w": 0.71,
+  "published": "2026-10-23T22:24:43Z",
+  "fixed": [
+   "21.14.9"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.019703087885985748,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "virtualenv",
+  "version": "20.16.2",
+  "advisory": "CVE-2026-113724",
+  "ids": [
+   "GHSA-43mp-35q3-x3fq"
+  ],
+  "cves": [
+   "CVE-2026-113724"
+  ],
+  "cvss": 4.5,
+  "epss": 0.00203,
+  "kev": false,
+  "severity_w": 0.45,
+  "published": "2026-10-21T21:31:34Z",
+  "fixed": [
+   "21.14.9"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.006445961995249406,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "virtualenv.util.path._sync.safe_delete.onerror",
+      "virtualenv.util.path._win.get_short_path_name"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "REFUTED",
+      "module": "REFUTED",
+      "reachable": "REFUTED"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "virtualenv",
+  "version": "20.16.2",
+  "advisory": "CVE-2026-113714",
+  "ids": [
+   "GHSA-494p-63j8-28p3"
+  ],
+  "cves": [
+   "CVE-2026-113714"
+  ],
+  "cvss": 2.3,
+  "epss": 0.00249,
+  "kev": false,
+  "severity_w": 0.22999999999999998,
+  "published": "2026-10-23T22:25:22Z",
+  "fixed": [
+   "21.14.9"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.006445961995249406,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "virtualenv.seed.embed.pip_invoke.PipInvoke.get_pip_install_cmd",
+      "virtualenv.seed.wheels.acquire._find_downloaded_wheel",
+      "virtualenv.seed.wheels.acquire.download_wheel"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "REFUTED",
+      "module": "REFUTED",
+      "reachable": "REFUTED"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "virtualenv",
+  "version": "20.16.2",
+  "advisory": "CVE-2026-113721",
+  "ids": [
+   "GHSA-558c-9hv2-4prj"
+  ],
+  "cves": [
+   "CVE-2026-113721"
+  ],
+  "cvss": 4.5,
+  "epss": 0.00144,
+  "kev": false,
+  "severity_w": 0.45,
+  "published": "2026-10-22T17:03:12Z",
+  "fixed": [
+   "21.14.9"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.006445961995249406,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "virtualenv.activation.via_template.ViaTemplateActivator._generate",
+      "virtualenv.create.creator.Creator.add_cachedir_tag",
+      "virtualenv.create.creator.Creator.setup_ignore_vcs",
+      "virtualenv.create.pyenv_cfg.PyEnvCfg.write",
+      "virtualenv.create.via_global_ref.api.ViaGlobalRefApi.install_patch",
+      "virtualenv.create.via_global_ref.venv.Venv.create",
+      "virtualenv.seed.embed.via_app_data.pip_install.base.ScriptMakerCustom._write_script",
+      "virtualenv.util.path._sync.ensure_safe_to_do"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "REFUTED",
+      "module": "REFUTED",
+      "reachable": "REFUTED"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "virtualenv",
+  "version": "20.16.2",
+  "advisory": "CVE-2026-22702",
+  "ids": [
+   "GHSA-597g-3phw-6986",
+   "PYSEC-2026-2009"
+  ],
+  "cves": [
+   "CVE-2026-22702"
+  ],
+  "cvss": 4.5,
+  "epss": 0.001,
+  "kev": false,
+  "severity_w": 0.45,
+  "published": "2026-01-13T18:45:57Z",
+  "fixed": [
+   "20.36.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.006445961995249406,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "virtualenv.app_data.make_app_data",
+      "virtualenv.util.lock.ReentrantFileLock._lock_file",
+      "virtualenv.util.lock._CountedFileLock.__init__"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "REFUTED",
+      "module": "REFUTED",
+      "reachable": "REFUTED"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "virtualenv",
+  "version": "20.16.2",
+  "advisory": "CVE-2026-113726",
+  "ids": [
+   "GHSA-5vjq-rrrf-7h2q"
+  ],
+  "cves": [
+   "CVE-2026-113726"
+  ],
+  "cvss": 7.8,
+  "epss": 0.00345,
+  "kev": false,
+  "severity_w": 0.78,
+  "published": "2026-10-21T16:46:23Z",
+  "fixed": [
+   "21.14.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.019703087885985748,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "virtualenv",
+  "version": "20.16.2",
+  "advisory": "CVE-2026-113723",
+  "ids": [
+   "GHSA-6w3r-xr62-4xcp"
+  ],
+  "cves": [
+   "CVE-2026-113723"
+  ],
+  "cvss": 7.1,
+  "epss": 0.00242,
+  "kev": false,
+  "severity_w": 0.71,
+  "published": "2026-10-23T22:21:57Z",
+  "fixed": [
+   "21.14.9"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.019703087885985748,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "virtualenv",
+  "version": "20.16.2",
+  "advisory": "CVE-2026-102930",
+  "ids": [
+   "GHSA-94p9-xgh2-xp45",
+   "PYSEC-2026-4011"
+  ],
+  "cves": [
+   "CVE-2026-102930"
+  ],
+  "cvss": 7.7,
+  "epss": 0.00197,
+  "kev": false,
+  "severity_w": 0.77,
+  "published": "2026-09-18T01:41:45Z",
+  "fixed": [
+   "21.7.12"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.006445961995249406,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "virtualenv.seed.wheels.acquire.download_wheel"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "REFUTED",
+      "module": "REFUTED",
+      "reachable": "REFUTED"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "virtualenv",
+  "version": "20.16.2",
+  "advisory": "CVE-2026-102938",
+  "ids": [
+   "GHSA-9h9j-4vrj-gf7g",
+   "PYSEC-2026-4012"
+  ],
+  "cves": [
+   "CVE-2026-102938"
+  ],
+  "cvss": 5.8,
+  "epss": 0.00146,
+  "kev": false,
+  "severity_w": 0.58,
+  "published": "2026-09-17T16:42:47Z",
+  "fixed": [
+   "21.7.11"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.006445961995249406,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "virtualenv.create.pyenv_cfg.PyEnvCfg.write"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "REFUTED",
+      "module": "REFUTED",
+      "reachable": "REFUTED"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "virtualenv",
+  "version": "20.16.2",
+  "advisory": "CVE-2026-113732",
+  "ids": [
+   "GHSA-c947-3pg5-gm8q"
+  ],
+  "cves": [
+   "CVE-2026-113732"
+  ],
+  "cvss": 7.8,
+  "epss": 0.00236,
+  "kev": false,
+  "severity_w": 0.78,
+  "published": "2026-10-21T16:39:58Z",
+  "fixed": [
+   "21.14.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.006445961995249406,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "virtualenv.activation.fish.FishActivator.replacements"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "REFUTED",
+      "module": "REFUTED",
+      "reachable": "REFUTED"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "virtualenv",
+  "version": "20.16.2",
+  "advisory": "CVE-2026-113722",
+  "ids": [
+   "GHSA-c978-59m8-c77v"
+  ],
+  "cves": [
+   "CVE-2026-113722"
+  ],
+  "cvss": 7.8,
+  "epss": 0.00285,
+  "kev": false,
+  "severity_w": 0.78,
+  "published": "2026-10-21T21:30:12Z",
+  "fixed": [
+   "21.14.9"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.006445961995249406,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "virtualenv.seed.embed.pip_invoke.PipInvoke.run",
+      "virtualenv.seed.embed.via_app_data.pip_install.base.ScriptMakerCustom.__init__"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "REFUTED",
+      "module": "REFUTED",
+      "reachable": "REFUTED"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "virtualenv",
+  "version": "20.16.2",
+  "advisory": "CVE-2026-113716",
+  "ids": [
+   "GHSA-cw65-gx24-rc82"
+  ],
+  "cves": [
+   "CVE-2026-113716"
+  ],
+  "cvss": 4.5,
+  "epss": 0.00144,
+  "kev": false,
+  "severity_w": 0.45,
+  "published": "2026-10-21T21:35:56Z",
+  "fixed": [
+   "21.14.9"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.006445961995249406,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "virtualenv.create.via_global_ref.builtin.via_global_self_do.ViaGlobalRefVirtualenvBuiltin.create",
+      "virtualenv.create.via_global_ref.venv.Venv.create"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "REFUTED",
+      "module": "REFUTED",
+      "reachable": "REFUTED"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "virtualenv",
+  "version": "20.16.2",
+  "advisory": "CVE-2026-113717",
+  "ids": [
+   "GHSA-cx28-75q4-x26q"
+  ],
+  "cves": [
+   "CVE-2026-113717"
+  ],
+  "cvss": 2.3,
+  "epss": 0.00293,
+  "kev": false,
+  "severity_w": 0.22999999999999998,
+  "published": "2026-10-23T22:26:04Z",
+  "fixed": [
+   "21.14.9"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.006445961995249406,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "virtualenv.seed.embed.pip_invoke.PipInvoke.get_pip_install_cmd",
+      "virtualenv.seed.wheels.acquire._find_downloaded_wheel",
+      "virtualenv.seed.wheels.acquire.download_wheel"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "REFUTED",
+      "module": "REFUTED",
+      "reachable": "REFUTED"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "virtualenv",
+  "version": "20.16.2",
+  "advisory": "CVE-2026-113720",
+  "ids": [
+   "GHSA-fc2g-4w5p-6whm"
+  ],
+  "cves": [
+   "CVE-2026-113720"
+  ],
+  "cvss": 4.4,
+  "epss": 0.00134,
+  "kev": false,
+  "severity_w": 0.44000000000000006,
+  "published": "2026-10-23T22:23:11Z",
+  "fixed": [
+   "21.14.9"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.006445961995249406,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "virtualenv.util.path._sync.copy",
+      "virtualenv.util.path._sync.copytree"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "REFUTED",
+      "module": "REFUTED",
+      "reachable": "REFUTED"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "virtualenv",
+  "version": "20.16.2",
+  "advisory": "CVE-2026-113719",
+  "ids": [
+   "GHSA-hhxq-47xx-j5xx"
+  ],
+  "cves": [
+   "CVE-2026-113719"
+  ],
+  "cvss": 4.5,
+  "epss": 0.00203,
+  "kev": false,
+  "severity_w": 0.45,
+  "published": "2026-10-23T22:19:15Z",
+  "fixed": [
+   "21.14.9"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.006445961995249406,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "virtualenv.seed.embed.via_app_data.pip_install.base.PipInstall._uninstall_dist",
+      "virtualenv.seed.embed.via_app_data.pip_install.base.PipInstall._uninstall_previous_version"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "REFUTED",
+      "module": "REFUTED",
+      "reachable": "REFUTED"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "virtualenv",
+  "version": "20.16.2",
+  "advisory": "CVE-2026-102925",
+  "ids": [
+   "GHSA-p58f-9548-mpm2",
+   "PYSEC-2026-4013"
+  ],
+  "cves": [
+   "CVE-2026-102925"
+  ],
+  "cvss": 7.8,
+  "epss": 0.00164,
+  "kev": false,
+  "severity_w": 0.78,
+  "published": "2026-09-18T04:37:14Z",
+  "fixed": [
+   "21.7.13"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.019703087885985748,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "virtualenv",
+  "version": "20.16.2",
+  "advisory": "CVE-2026-113715",
+  "ids": [
+   "GHSA-qmx5-4p3x-wvqf"
+  ],
+  "cves": [
+   "CVE-2026-113715"
+  ],
+  "cvss": 2.0,
+  "epss": 0.00242,
+  "kev": false,
+  "severity_w": 0.2,
+  "published": "2026-10-23T22:20:43Z",
+  "fixed": [
+   "21.14.9"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.006445961995249406,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "virtualenv.create.via_global_ref.venv.Venv.create_inline",
+      "virtualenv.create.via_global_ref.venv.Venv.set_pyenv_cfg"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "REFUTED",
+      "module": "REFUTED",
+      "reachable": "REFUTED"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "virtualenv",
+  "version": "20.16.2",
+  "advisory": "CVE-2024-53899",
+  "ids": [
+   "GHSA-rqc4-2hc7-8c8v",
+   "PYSEC-2024-187"
+  ],
+  "cves": [
+   "CVE-2024-53899"
+  ],
+  "cvss": 9.8,
+  "epss": 0.01572,
+  "kev": false,
+  "severity_w": 0.9800000000000001,
+  "published": "2024-11-24T16:15:06Z",
+  "fixed": [
+   "20.26.6"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.019703087885985748,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "virtualenv",
+  "version": "20.16.2",
+  "advisory": "CVE-2026-113725",
+  "ids": [
+   "GHSA-vxj4-q4g9-crj7"
+  ],
+  "cves": [
+   "CVE-2026-113725"
+  ],
+  "cvss": 7.8,
+  "epss": 0.00263,
+  "kev": false,
+  "severity_w": 0.78,
+  "published": "2026-10-21T16:49:01Z",
+  "fixed": [
+   "21.14.7"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.019703087885985748,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "virtualenv",
+  "version": "20.16.2",
+  "advisory": "CVE-2026-102937",
+  "ids": [
+   "GHSA-x78j-v8h9-3j2q",
+   "PYSEC-2026-4014"
+  ],
+  "cves": [
+   "CVE-2026-102937"
+  ],
+  "cvss": 7.3,
+  "epss": 0.00208,
+  "kev": false,
+  "severity_w": 0.73,
+  "published": "2026-09-18T01:41:45Z",
+  "fixed": [
+   "21.7.12"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.006445961995249406,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,eval,exec,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "virtualenv.activation.batch.BatchActivator.quote",
+      "virtualenv.create.pyenv_cfg.PyEnvCfg.write",
+      "virtualenv.create.pyenv_cfg._one_line"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "REFUTED",
+      "module": "REFUTED",
+      "reachable": "REFUTED"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf",
+  "package": "zipp",
+  "version": "3.8.1",
+  "advisory": "CVE-2024-5569",
+  "ids": [
+   "GHSA-jfmj-5v4g-7637",
+   "PYSEC-2026-2074"
+  ],
+  "cves": [
+   "CVE-2024-5569"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00236,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2024-07-09T00:31:40Z",
+  "fixed": [
+   "3.19.1"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.0,
+  "exposure_class": "NOT_INSTALLED",
+  "vex": {
+   "state": "not_affected",
+   "justification": "component_not_present"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "REFUTED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pdm"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "REFUTED",
+    "detail": {
+     "reason": "marker/target-environment excludes package",
+     "scope": "none"
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ }
+]

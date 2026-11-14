@@ -1,0 +1,2269 @@
+{
+ "id": "Gerapy__Gerapy@v0.9.13",
+ "meta": {
+  "id": "Gerapy__Gerapy@v0.9.13",
+  "repo": "Gerapy/Gerapy",
+  "tag": "v0.9.13",
+  "published_at": "2023-07-19T18:55:56Z",
+  "stars": 3516,
+  "lock_kind": "poetry",
+  "lock_file": "poetry.lock",
+  "lock_path": "poetry.lock",
+  "subdir": "",
+  "manifest": "pyproject.toml",
+  "requires_python": "^3.7",
+  "description": "Distributed Crawler Management Framework Based on Scrapy, Scrapyd, Django and Vue.js",
+  "topics": [
+   "dashboard",
+   "distributed",
+   "django",
+   "docker",
+   "gerapy",
+   "scrapy",
+   "scrapyd",
+   "spider",
+   "vue",
+   "vuejs",
+   "webspider"
+  ]
+ },
+ "python": "3.10",
+ "summary": {
+  "locked": 94,
+  "installed": 92,
+  "direct": 21,
+  "transitive": 71,
+  "edges": 168,
+  "edges_from_lock": true
+ },
+ "stats": {
+  "app_modules": 49,
+  "pkgs_analysed": 52,
+  "pkgs_no_source": 0,
+  "seconds": 137.07,
+  "funcs": 61034,
+  "roots": 170,
+  "app_refs": {
+   "setuptools": [
+    "setuptools"
+   ],
+   "django": [
+    "django",
+    "django.apps",
+    "django.conf",
+    "django.conf.urls",
+    "django.conf.urls.url",
+    "django.contrib",
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.auth.context_processors",
+    "django.contrib.auth.middleware",
+    "django.contrib.auth.models",
+    "django.contrib.auth.password_validation",
+    "django.contrib.contenttypes",
+    "django.contrib.messages",
+    "django.contrib.messages.context_processors",
+    "django.contrib.messages.middleware",
+    "django.contrib.sessions",
+    "django.contrib.sessions.middleware",
+    "django.contrib.staticfiles",
+    "django.core",
+    "django.core.files",
+    "django.core.files.storage",
+    "django.core.files.storage.FileSystemStorage",
+    "django.core.files.storage.Storage.save",
+    "django.core.management",
+    "django.core.management.execute_from_command_line",
+    "django.core.serializers",
+    "django.core.serializers.serialize",
+    "django.core.wsgi",
+    "django.core.wsgi.get_wsgi_application",
+    "django.db",
+    "django.db.backends",
+    "django.db.backends.sqlite3",
+    "django.db.models",
+    "django.db.models.fields.BooleanField",
+    "django.db.models.fields.CharField",
+    "django.db.models.fields.DateTimeField",
+    "django.db.models.fields.IntegerField",
+    "django.db.models.fields.TextField",
+    "django.db.models.fields.related.ForeignKey",
+    "django.db.models.fields.related.ManyToManyField",
+    "django.forms",
+    "django.forms.models",
+    "django.forms.models.model_to_dict",
+    "django.http",
+    "django.http.response.HttpResponse",
+    "django.middleware",
+    "django.middleware.common",
+    "django.middleware.security",
+    "django.setup",
+    "django.shortcuts",
+    "django.shortcuts.render",
+    "django.template",
+    "django.template.backends",
+    "django.template.backends.django",
+    "django.template.context_processors",
+    "django.test",
+    "django.urls.conf.include",
+    "django.utils",
+    "django.utils.deprecation",
+    "django.utils.duration",
+    "django.utils.duration.duration_iso_string",
+    "django.utils.functional",
+    "django.utils.six",
+    "django.utils.timezone",
+    "django.utils.timezone.is_aware",
+    "django.utils.timezone.localtime",
+    "django.utils.timezone.now"
+   ],
+   "requests": [
+    "requests",
+    "requests.api.get",
+    "requests.exceptions"
+   ],
+   "scrapy": [
+    "scrapy",
+    "scrapy.crawler",
+    "scrapy.crawler.CrawlerRunner",
+    "scrapy.crawler.CrawlerRunner.crawl",
+    "scrapy.downloadermiddlewares",
+    "scrapy.downloadermiddlewares.httpcompression",
+    "scrapy.http",
+    "scrapy.http.request.Request",
+    "scrapy.http.response.html.HtmlResponse",
+    "scrapy.item",
+    "scrapy.link",
+    "scrapy.link.Link",
+    "scrapy.signals",
+    "scrapy.spiders",
+    "scrapy.spiders.crawl",
+    "scrapy.spiders.crawl.CrawlSpider._build_request",
+    "scrapy.utils",
+    "scrapy.utils.project",
+    "scrapy.utils.project.get_project_settings",
+    "scrapy.utils.python",
+    "scrapy.utils.python.unique",
+    "scrapy.utils.spider",
+    "scrapy.utils.spider.iterate_spider_output"
+   ],
+   "pyppeteer": [
+    "pyppeteer",
+    "pyppeteer.launcher.launch"
+   ],
+   "twisted": [
+    "twisted",
+    "twisted.internet",
+    "twisted.internet.reactor",
+    "twisted.internet.threads",
+    "twisted.internet.threads.deferToThread"
+   ],
+   "pymongo": [
+    "pymongo",
+    "pymongo.mongo_client.MongoClient",
+    "pymongo.mongo_client.MongoClient.list_database_names"
+   ],
+   "pymysql": [
+    "pymysql",
+    "pymysql.connections.Connection"
+   ],
+   "websocket": [
+    "setup"
+   ],
+   "django-apscheduler": [
+    "django_apscheduler",
+    "django_apscheduler.jobstores",
+    "django_apscheduler.jobstores.DjangoJobStore",
+    "django_apscheduler.jobstores.register_events",
+    "django_apscheduler.models"
+   ],
+   "apscheduler": [
+    "apscheduler",
+    "apscheduler.schedulers",
+    "apscheduler.schedulers.background",
+    "apscheduler.schedulers.background.BackgroundScheduler"
+   ],
+   "djangorestframework": [
+    "rest_framework",
+    "rest_framework.authentication",
+    "rest_framework.authtoken",
+    "rest_framework.authtoken.views",
+    "rest_framework.decorators",
+    "rest_framework.decorators.api_view",
+    "rest_framework.decorators.permission_classes",
+    "rest_framework.permissions"
+   ],
+   "beautifulsoup4": [
+    "bs4",
+    "bs4.BeautifulSoup",
+    "bs4.element.Tag.find"
+   ],
+   "jinja2": [
+    "jinja2",
+    "jinja2.environment.Template",
+    "jinja2.environment.Template.render"
+   ],
+   "python-scrapyd-api": [
+    "scrapyd_api",
+    "scrapyd_api.wrapper.ScrapydAPI"
+   ],
+   "django-cors-headers": [
+    "corsheaders",
+    "corsheaders.middleware"
+   ]
+  },
+  "reflection_kinds": {
+   "cryptography": [
+    "setattr"
+   ],
+   "scrapy": [
+    "eval",
+    "import_module",
+    "monkeypatch",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "pyasn1": [
+    "setattr"
+   ],
+   "tqdm": [
+    "eval",
+    "setattr"
+   ],
+   "djangorestframework": [
+    "dyn_class",
+    "import_module",
+    "monkeypatch",
+    "namespace",
+    "setattr"
+   ],
+   "django": [
+    "__import__",
+    "dyn_class",
+    "exec",
+    "import_module",
+    "monkeypatch",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "dnspython": [
+    "import_module"
+   ],
+   "pymongo": [
+    "setattr"
+   ],
+   "requests": [
+    "__import__",
+    "namespace",
+    "setattr"
+   ],
+   "twisted": [
+    "__import__",
+    "dyn_class",
+    "exec",
+    "namespace",
+    "setattr"
+   ],
+   "lxml": [
+    "dyn_class"
+   ],
+   "jinja2": [
+    "__import__",
+    "dyn_class",
+    "exec",
+    "import_module",
+    "namespace",
+    "setattr"
+   ],
+   "zipp": [
+    "eval"
+   ],
+   "urllib3": [
+    "__import__",
+    "exec",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "soupsieve": [
+    "exec"
+   ],
+   "setuptools": [
+    "__import__",
+    "exec",
+    "import_module",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "beautifulsoup4": [
+    "setattr"
+   ],
+   "apscheduler": [
+    "__import__",
+    "plugin",
+    "setattr"
+   ],
+   "importlib-metadata": [
+    "import_module",
+    "namespace",
+    "setattr"
+   ],
+   "zope-interface": [
+    "namespace",
+    "setattr"
+   ],
+   "attrs": [
+    "eval",
+    "exec",
+    "setattr"
+   ]
+  }
+ },
+ "scan_seconds": 138.2,
+ "sdist_only": [
+  "websocket"
+ ],
+ "baseline_resolution": {
+  "ok": true,
+  "seconds": 1.0,
+  "error": ""
+ },
+ "baseline_drift": 0,
+ "strategies": {
+  "audit_fix": {
+   "planned": {
+    "certifi": "2026.10.18",
+    "cryptography": "49.0.0",
+    "django": "5.2.17",
+    "djangorestframework": "3.18.2",
+    "gevent": "23.9.1",
+    "idna": "3.15",
+    "jinja2": "3.1.6",
+    "lxml": "6.1.0",
+    "protego": "0.6.2",
+    "pyasn1": "0.6.5",
+    "pymongo": "4.18.3",
+    "pymysql": "1.1.1",
+    "pyopenssl": "26.0.0",
+    "pytest": "9.0.3",
+    "requests": "2.33.0",
+    "setuptools": "84.1.0",
+    "soupsieve": "2.9",
+    "sqlparse": "0.6.0",
+    "tqdm": "4.66.3",
+    "twisted": "26.10.0",
+    "urllib3": "2.8.0",
+    "virtualenv": "21.14.9",
+    "zipp": "3.19.1"
+   },
+   "ok": false,
+   "error": "s\n  cause: Because pyopenssl==26.0.0 depends on cryptography>=46.0.0,<47 and you require cryptography==49.0.0, we can conclude that your requirements and pyopenssl==26.0.0 are incompatible.\n         And because you require pyopenssl==26.0.0, we can conclude that your requirements are unsatisfiable.\n",
+   "seconds": 0.1,
+   "failure": "dependency conflict"
+  },
+  "latest": {
+   "planned": {
+    "cryptography": "50.0.2",
+    "pyasn1": "0.6.5",
+    "pyopenssl": "26.4.0",
+    "tqdm": "4.70.1",
+    "pytest": "9.2.0",
+    "sqlparse": "0.6.1",
+    "filelock": "4.1.0",
+    "dnspython": "2.8.0",
+    "requests": "2.34.2",
+    "djangorestframework": "3.18.3",
+    "django": "5.2.19",
+    "idna": "3.20",
+    "twisted": "26.10.0",
+    "lxml": "6.1.3",
+    "virtualenv": "21.15.6",
+    "certifi": "2026.10.23",
+    "jinja2": "3.1.6",
+    "zipp": "4.1.2",
+    "scrapy": "2.19.0",
+    "pymongo": "4.18.3",
+    "urllib3": "2.8.0",
+    "soupsieve": "2.10",
+    "protego": "0.7.0",
+    "gevent": "25.9.1",
+    "pymysql": "1.2.4",
+    "setuptools": "84.2.1"
+   },
+   "ok": false,
+   "error": "yppeteer<=0.0.25 depends on urllib3>=1.25.8,<2.0.0.\n         And because you require pyppeteer and urllib3==2.8.0, we can conclude that your requirements are unsatisfiable.\n\nhint: Wheels are required for `pyppeteer` because building from source is disabled for all packages (i.e., with `--no-build`)\n",
+   "seconds": 0.4,
+   "failure": "dependency conflict"
+  },
+  "upgrade_all": {
+   "planned": null,
+   "ok": true,
+   "error": "",
+   "seconds": 2.4,
+   "residual_findings": 26,
+   "residual_risk_evident": 9.827245191179498,
+   "residual_risk_vm": 15.63,
+   "residual_confirmed": 1,
+   "new_findings": 15,
+   "changed": 98,
+   "major_bumps": 40,
+   "added": 14,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     null,
+     "3.14.5"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "apscheduler": [
+     "3.7.0",
+     "3.11.3"
+    ],
+    "asgiref": [
+     null,
+     "3.12.1"
+    ],
+    "async-timeout": [
+     "4.0.2",
+     "5.0.1"
+    ],
+    "attrs": [
+     "23.1.0",
+     "26.1.0"
+    ],
+    "automat": [
+     "22.10.0",
+     "25.4.16"
+    ],
+    "backports-zstd": [
+     null,
+     "1.8.0"
+    ],
+    "beautifulsoup4": [
+     "4.12.2",
+     "4.15.0"
+    ],
+    "brotli": [
+     null,
+     "1.2.1"
+    ],
+    "cachetools": [
+     "5.3.1",
+     "7.3.0"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "cffi": [
+     "1.15.1",
+     "2.1.1"
+    ],
+    "chardet": [
+     "5.1.0",
+     "7.7.0"
+    ],
+    "charset-normalizer": [
+     "3.2.0",
+     "3.5.2"
+    ],
+    "constantly": [
+     "15.1.0",
+     "23.10.4"
+    ],
+    "coverage": [
+     "7.2.7",
+     "7.16.2"
+    ],
+    "cryptography": [
+     "41.0.2",
+     "50.0.2"
+    ],
+    "cssselect": [
+     "1.2.0",
+     "1.5.0"
+    ],
+    "defusedxml": [
+     null,
+     "0.7.1"
+    ],
+    "distlib": [
+     "0.3.7",
+     "0.4.4"
+    ],
+    "django": [
+     "2.2.28",
+     "5.2.19"
+    ],
+    "django-apscheduler": [
+     "0.6.0",
+     "0.7.0"
+    ],
+    "django-cors-headers": [
+     "3.7.0",
+     "4.9.0"
+    ],
+    "djangorestframework": [
+     "3.13.1",
+     "3.18.3"
+    ],
+    "dnspython": [
+     "2.3.0",
+     "2.8.0"
+    ],
+    "exceptiongroup": [
+     "1.1.2",
+     "1.3.1"
+    ],
+    "filelock": [
+     "3.12.2",
+     "4.1.0"
+    ],
+    "flake8": [
+     "3.9.2",
+     "7.4.1"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "furl": [
+     "2.1.3",
+     "2.1.4"
+    ],
+    "gevent": [
+     "22.10.2",
+     "26.9.0"
+    ],
+    "greenlet": [
+     "2.0.2",
+     "3.5.6"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "importlib-metadata": [
+     "6.7.0",
+     "9.0.1"
+    ],
+    "incremental": [
+     "22.10.0",
+     "24.11.0"
+    ],
+    "iniconfig": [
+     "2.0.0",
+     "2.3.1"
+    ],
+    "itemadapter": [
+     "0.8.0",
+     "0.13.1"
+    ],
+    "itemloaders": [
+     "1.1.0",
+     "1.5.0"
+    ],
+    "jinja2": [
+     "3.1.2",
+     "3.1.6"
+    ],
+    "jmespath": [
+     "1.0.1",
+     "1.1.0"
+    ],
+    "lxml": [
+     "4.9.3",
+     "6.1.3"
+    ],
+    "markupsafe": [
+     "2.1.3",
+     "3.0.4"
+    ],
+    "mccabe": [
+     "0.6.1",
+     "0.7.0"
+    ],
+    "mock": [
+     "5.1.0",
+     "5.2.0"
+    ],
+    "multidict": [
+     null,
+     "7.1.0"
+    ],
+    "orderedmultidict": [
+     "1.0.1",
+     "1.0.2"
+    ],
+    "packaging": [
+     "23.1",
+     "26.3"
+    ],
+    "parsel": [
+     "1.8.1",
+     "1.12.1"
+    ],
+    "platformdirs": [
+     "3.9.1",
+     "4.12.4"
+    ],
+    "pluggy": [
+     "1.2.0",
+     "1.7.0"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "protego": [
+     "0.2.1",
+     "0.7.0"
+    ],
+    "pyasn1": [
+     "0.5.0",
+     "0.6.5"
+    ],
+    "pyasn1-modules": [
+     "0.3.0",
+     "0.4.2"
+    ],
+    "pycodestyle": [
+     "2.7.0",
+     "2.15.0"
+    ],
+    "pycparser": [
+     "2.21",
+     "3.11"
+    ],
+    "pyee": [
+     "8.2.2",
+     "11.1.1"
+    ],
+    "pyflakes": [
+     "2.3.1",
+     "4.0.3"
+    ],
+    "pygments": [
+     null,
+     "2.21.0"
+    ],
+    "pymongo": [
+     "4.4.1",
+     "4.18.3"
+    ],
+    "pymysql": [
+     "1.1.0",
+     "1.2.4"
+    ],
+    "pyopenssl": [
+     "23.2.0",
+     "26.4.0"
+    ],
+    "pyppeteer": [
+     "1.0.2",
+     "2.0.0"
+    ],
+    "pyproject-api": [
+     "1.5.3",
+     "1.11.4"
+    ],
+    "pyquery": [
+     "2.0.0",
+     "2.1.0"
+    ],
+    "pytest": [
+     "7.4.0",
+     "9.2.0"
+    ],
+    "pytest-cov": [
+     "4.1.0",
+     "7.1.0"
+    ],
+    "python-discovery": [
+     null,
+     "1.9.5"
+    ],
+    "pytz": [
+     "2023.3",
+     "2026.6"
+    ],
+    "queuelib": [
+     "1.6.2",
+     "1.10.0"
+    ],
+    "redis": [
+     "4.6.0",
+     "8.1.0"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.34.2"
+    ],
+    "requests-file": [
+     "1.5.1",
+     "3.0.1"
+    ],
+    "scrapy": [
+     "2.9.0",
+     "2.19.0"
+    ],
+    "scrapy-redis": [
+     "0.7.3",
+     "0.9.1"
+    ],
+    "scrapy-splash": [
+     "0.9.0",
+     "0.11.1"
+    ],
+    "service-identity": [
+     "21.1.0",
+     "26.1.0"
+    ],
+    "setuptools": [
+     "68.0.0",
+     "84.2.1"
+    ],
+    "six": [
+     "1.16.0",
+     "1.17.0"
+    ],
+    "soupsieve": [
+     "2.4.1",
+     "2.10"
+    ],
+    "sqlparse": [
+     "0.4.4",
+     "0.6.1"
+    ],
+    "tldextract": [
+     "3.4.4",
+     "5.4.0"
+    ],
+    "tomli": [
+     "2.0.1",
+     "2.5.0"
+    ],
+    "tomli-w": [
+     null,
+     "1.2.0"
+    ],
+    "tox": [
+     "4.6.4",
+     "4.65.0"
+    ],
+    "tqdm": [
+     "4.65.0",
+     "4.70.1"
+    ],
+    "twisted": [
+     "22.4.0",
+     "26.10.0"
+    ],
+    "typing-extensions": [
+     "4.7.1",
+     "4.16.0"
+    ],
+    "tzlocal": [
+     "2.1",
+     "5.4.5"
+    ],
+    "urllib3": [
+     "1.26.16",
+     "1.26.20"
+    ],
+    "virtualenv": [
+     "20.24.0",
+     "21.15.6"
+    ],
+    "w3lib": [
+     "2.1.1",
+     "2.5.0"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ],
+    "zipp": [
+     "3.15.0",
+     "4.1.2"
+    ],
+    "zope-event": [
+     "5.0",
+     "6.2"
+    ],
+    "zope-interface": [
+     "6.0",
+     "8.6"
+    ]
+   },
+   "failure": "none",
+   "compat": {
+    "used_changed": 14,
+    "checked": 14,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 2,
+    "refs_checked": 132,
+    "details": [
+     {
+      "package": "django",
+      "version": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.utils.six"
+      ],
+      "n_missing": 2
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "uv_fix": {
+   "planned": {
+    "certifi": "2026.10.18",
+    "cryptography": "49.0.0",
+    "django": "5.2.17",
+    "djangorestframework": "3.18.2",
+    "gevent": "23.9.1",
+    "idna": "3.15",
+    "jinja2": "3.1.6",
+    "lxml": "6.1.0",
+    "protego": "0.6.2",
+    "pyasn1": "0.6.5",
+    "pymongo": "4.18.3",
+    "pymysql": "1.1.1",
+    "pyopenssl": "26.0.0",
+    "pytest": "9.0.3",
+    "requests": "2.33.0",
+    "setuptools": "84.1.0",
+    "soupsieve": "2.9",
+    "sqlparse": "0.6.0",
+    "tqdm": "4.66.3",
+    "twisted": "26.10.0",
+    "urllib3": "2.8.0",
+    "virtualenv": "21.14.9",
+    "zipp": "3.19.1"
+   },
+   "ok": false,
+   "error": "yppeteer<=0.0.25 depends on urllib3>=1.25.8,<2.0.0.\n         And because you require pyppeteer and urllib3>=2.8.0, we can conclude that your requirements are unsatisfiable.\n\nhint: Wheels are required for `pyppeteer` because building from source is disabled for all packages (i.e., with `--no-build`)\n",
+   "seconds": 13.0,
+   "failure": "dependency conflict"
+  },
+  "vm_opt": {
+   "planned": {
+    "automat": "25.4.16",
+    "certifi": "2026.10.23",
+    "cffi": "2.1.1",
+    "charset-normalizer": "3.5.2",
+    "cryptography": "50.0.2",
+    "distlib": "0.4.4",
+    "django": "5.2.19",
+    "djangorestframework": "3.18.2",
+    "dnspython": "2.8.0",
+    "filelock": "3.32.7",
+    "gevent": "23.9.1",
+    "idna": "3.20",
+    "incremental": "24.11.0",
+    "jinja2": "3.1.6",
+    "lxml": "6.1.3",
+    "packaging": "26.3",
+    "platformdirs": "4.12.4",
+    "pluggy": "1.7.0",
+    "protego": "0.7.0",
+    "pyasn1": "0.6.5",
+    "pyasn1-modules": "0.4.0",
+    "pymongo": "4.18.3",
+    "pymysql": "1.1.1",
+    "pyopenssl": "26.4.0",
+    "pytest": "9.0.3",
+    "requests": "2.33.0",
+    "scrapy": "2.19.0",
+    "service-identity": "26.1.0",
+    "setuptools": "84.2.1",
+    "soupsieve": "2.9",
+    "sqlparse": "0.6.1",
+    "tqdm": "4.70.1",
+    "twisted": "26.10.0",
+    "typing-extensions": "4.16.0",
+    "urllib3": "1.26.20",
+    "virtualenv": "21.15.6",
+    "zipp": "3.19.1",
+    "zope-interface": "8.6"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 1.7,
+   "model_residual": 13.69,
+   "model_cost": 89.20000000000003,
+   "scope": 41,
+   "candidates": 136,
+   "residual_findings": 22,
+   "residual_risk_evident": 8.554625396662429,
+   "residual_risk_vm": 13.690000000000001,
+   "residual_confirmed": 1,
+   "new_findings": 11,
+   "changed": 51,
+   "major_bumps": 17,
+   "added": 13,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     null,
+     "3.14.5"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "asgiref": [
+     null,
+     "3.12.1"
+    ],
+    "automat": [
+     "22.10.0",
+     "25.4.16"
+    ],
+    "backports-zstd": [
+     null,
+     "1.8.0"
+    ],
+    "brotli": [
+     null,
+     "1.2.1"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "cffi": [
+     "1.15.1",
+     "2.1.1"
+    ],
+    "charset-normalizer": [
+     "3.2.0",
+     "3.5.2"
+    ],
+    "cryptography": [
+     "41.0.2",
+     "50.0.2"
+    ],
+    "defusedxml": [
+     null,
+     "0.7.1"
+    ],
+    "distlib": [
+     "0.3.7",
+     "0.4.4"
+    ],
+    "django": [
+     "2.2.28",
+     "5.2.19"
+    ],
+    "djangorestframework": [
+     "3.13.1",
+     "3.18.2"
+    ],
+    "dnspython": [
+     "2.3.0",
+     "2.8.0"
+    ],
+    "filelock": [
+     "3.12.2",
+     "3.32.7"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "gevent": [
+     "22.10.2",
+     "23.9.1"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "incremental": [
+     "22.10.0",
+     "24.11.0"
+    ],
+    "jinja2": [
+     "3.1.2",
+     "3.1.6"
+    ],
+    "lxml": [
+     "4.9.3",
+     "6.1.3"
+    ],
+    "multidict": [
+     null,
+     "7.1.0"
+    ],
+    "packaging": [
+     "23.1",
+     "26.3"
+    ],
+    "platformdirs": [
+     "3.9.1",
+     "4.12.4"
+    ],
+    "pluggy": [
+     "1.2.0",
+     "1.7.0"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "protego": [
+     "0.2.1",
+     "0.7.0"
+    ],
+    "pyasn1": [
+     "0.5.0",
+     "0.6.5"
+    ],
+    "pyasn1-modules": [
+     "0.3.0",
+     "0.4.0"
+    ],
+    "pygments": [
+     null,
+     "2.21.0"
+    ],
+    "pymongo": [
+     "4.4.1",
+     "4.18.3"
+    ],
+    "pymysql": [
+     "1.1.0",
+     "1.1.1"
+    ],
+    "pyopenssl": [
+     "23.2.0",
+     "26.4.0"
+    ],
+    "pytest": [
+     "7.4.0",
+     "9.0.3"
+    ],
+    "python-discovery": [
+     null,
+     "1.9.5"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.33.0"
+    ],
+    "scrapy": [
+     "2.9.0",
+     "2.19.0"
+    ],
+    "service-identity": [
+     "21.1.0",
+     "26.1.0"
+    ],
+    "setuptools": [
+     "68.0.0",
+     "84.2.1"
+    ],
+    "soupsieve": [
+     "2.4.1",
+     "2.9"
+    ],
+    "sqlparse": [
+     "0.4.4",
+     "0.6.1"
+    ],
+    "tqdm": [
+     "4.65.0",
+     "4.70.1"
+    ],
+    "twisted": [
+     "22.4.0",
+     "26.10.0"
+    ],
+    "typing-extensions": [
+     "4.7.1",
+     "4.16.0"
+    ],
+    "urllib3": [
+     "1.26.16",
+     "1.26.20"
+    ],
+    "virtualenv": [
+     "20.24.0",
+     "21.15.6"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ],
+    "zipp": [
+     "3.15.0",
+     "3.19.1"
+    ],
+    "zope-interface": [
+     "6.0",
+     "8.6"
+    ]
+   },
+   "planned_changes": 38,
+   "unplanned_changes": 13,
+   "unplanned_major": 0,
+   "unplanned_added": 13,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 9,
+    "checked": 9,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 2,
+    "refs_checked": 116,
+    "details": [
+     {
+      "package": "django",
+      "version": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.utils.six"
+      ],
+      "n_missing": 2
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "coral_opt": {
+   "planned": {
+    "automat": "25.4.16",
+    "certifi": "2026.10.23",
+    "cffi": "2.1.1",
+    "charset-normalizer": "3.5.2",
+    "cryptography": "50.0.2",
+    "distlib": "0.4.4",
+    "django": "5.2.19",
+    "djangorestframework": "3.18.2",
+    "dnspython": "2.8.0",
+    "filelock": "3.32.7",
+    "gevent": "23.9.1",
+    "idna": "3.20",
+    "incremental": "24.11.0",
+    "jinja2": "3.1.6",
+    "lxml": "6.1.3",
+    "packaging": "26.3",
+    "platformdirs": "4.12.4",
+    "protego": "0.7.0",
+    "pyasn1": "0.6.5",
+    "pyasn1-modules": "0.4.0",
+    "pymongo": "4.18.3",
+    "pymysql": "1.1.1",
+    "pyopenssl": "26.4.0",
+    "requests": "2.33.0",
+    "scrapy": "2.19.0",
+    "service-identity": "26.1.0",
+    "setuptools": "84.2.1",
+    "soupsieve": "2.9",
+    "sqlparse": "0.6.1",
+    "tqdm": "4.70.1",
+    "twisted": "26.10.0",
+    "typing-extensions": "4.16.0",
+    "urllib3": "1.26.20",
+    "virtualenv": "21.15.6",
+    "zipp": "3.19.1",
+    "zope-interface": "8.6"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.3,
+   "model_residual": 8.28922396623806,
+   "model_cost": 84.50000000000003,
+   "scope": 41,
+   "candidates": 136,
+   "residual_findings": 23,
+   "residual_risk_evident": 8.789299465206712,
+   "residual_risk_vm": 14.370000000000001,
+   "residual_confirmed": 1,
+   "new_findings": 11,
+   "changed": 48,
+   "major_bumps": 16,
+   "added": 12,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     null,
+     "3.14.5"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "asgiref": [
+     null,
+     "3.12.1"
+    ],
+    "automat": [
+     "22.10.0",
+     "25.4.16"
+    ],
+    "backports-zstd": [
+     null,
+     "1.8.0"
+    ],
+    "brotli": [
+     null,
+     "1.2.1"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "cffi": [
+     "1.15.1",
+     "2.1.1"
+    ],
+    "charset-normalizer": [
+     "3.2.0",
+     "3.5.2"
+    ],
+    "cryptography": [
+     "41.0.2",
+     "50.0.2"
+    ],
+    "defusedxml": [
+     null,
+     "0.7.1"
+    ],
+    "distlib": [
+     "0.3.7",
+     "0.4.4"
+    ],
+    "django": [
+     "2.2.28",
+     "5.2.19"
+    ],
+    "djangorestframework": [
+     "3.13.1",
+     "3.18.2"
+    ],
+    "dnspython": [
+     "2.3.0",
+     "2.8.0"
+    ],
+    "filelock": [
+     "3.12.2",
+     "3.32.7"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "gevent": [
+     "22.10.2",
+     "23.9.1"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "incremental": [
+     "22.10.0",
+     "24.11.0"
+    ],
+    "jinja2": [
+     "3.1.2",
+     "3.1.6"
+    ],
+    "lxml": [
+     "4.9.3",
+     "6.1.3"
+    ],
+    "multidict": [
+     null,
+     "7.1.0"
+    ],
+    "packaging": [
+     "23.1",
+     "26.3"
+    ],
+    "platformdirs": [
+     "3.9.1",
+     "4.12.4"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "protego": [
+     "0.2.1",
+     "0.7.0"
+    ],
+    "pyasn1": [
+     "0.5.0",
+     "0.6.5"
+    ],
+    "pyasn1-modules": [
+     "0.3.0",
+     "0.4.0"
+    ],
+    "pymongo": [
+     "4.4.1",
+     "4.18.3"
+    ],
+    "pymysql": [
+     "1.1.0",
+     "1.1.1"
+    ],
+    "pyopenssl": [
+     "23.2.0",
+     "26.4.0"
+    ],
+    "python-discovery": [
+     null,
+     "1.9.5"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.33.0"
+    ],
+    "scrapy": [
+     "2.9.0",
+     "2.19.0"
+    ],
+    "service-identity": [
+     "21.1.0",
+     "26.1.0"
+    ],
+    "setuptools": [
+     "68.0.0",
+     "84.2.1"
+    ],
+    "soupsieve": [
+     "2.4.1",
+     "2.9"
+    ],
+    "sqlparse": [
+     "0.4.4",
+     "0.6.1"
+    ],
+    "tqdm": [
+     "4.65.0",
+     "4.70.1"
+    ],
+    "twisted": [
+     "22.4.0",
+     "26.10.0"
+    ],
+    "typing-extensions": [
+     "4.7.1",
+     "4.16.0"
+    ],
+    "urllib3": [
+     "1.26.16",
+     "1.26.20"
+    ],
+    "virtualenv": [
+     "20.24.0",
+     "21.15.6"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ],
+    "zipp": [
+     "3.15.0",
+     "3.19.1"
+    ],
+    "zope-interface": [
+     "6.0",
+     "8.6"
+    ]
+   },
+   "planned_changes": 36,
+   "unplanned_changes": 12,
+   "unplanned_major": 0,
+   "unplanned_added": 12,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 9,
+    "checked": 9,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 2,
+    "refs_checked": 116,
+    "details": [
+     {
+      "package": "django",
+      "version": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.utils.six"
+      ],
+      "n_missing": 2
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "cape_opt": {
+   "planned": {
+    "automat": "25.4.16",
+    "certifi": "2026.10.23",
+    "cffi": "2.1.1",
+    "charset-normalizer": "3.5.2",
+    "cryptography": "50.0.2",
+    "distlib": "0.4.4",
+    "django": "5.2.19",
+    "djangorestframework": "3.18.2",
+    "dnspython": "2.8.0",
+    "filelock": "3.32.7",
+    "gevent": "23.9.1",
+    "idna": "3.20",
+    "incremental": "24.11.0",
+    "jinja2": "3.1.6",
+    "lxml": "6.1.3",
+    "packaging": "26.3",
+    "platformdirs": "4.12.4",
+    "pluggy": "1.7.0",
+    "protego": "0.7.0",
+    "pyasn1": "0.6.5",
+    "pyasn1-modules": "0.4.0",
+    "pymongo": "4.18.3",
+    "pymysql": "1.1.1",
+    "pyopenssl": "26.4.0",
+    "pytest": "9.0.3",
+    "requests": "2.33.0",
+    "scrapy": "2.19.0",
+    "service-identity": "26.1.0",
+    "setuptools": "84.2.1",
+    "soupsieve": "2.9",
+    "sqlparse": "0.6.1",
+    "tqdm": "4.70.1",
+    "twisted": "26.10.0",
+    "typing-extensions": "4.16.0",
+    "urllib3": "1.26.20",
+    "virtualenv": "21.15.6",
+    "zipp": "3.19.1",
+    "zope-interface": "8.6"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.2,
+   "model_residual": 10.597223966238062,
+   "model_cost": 89.20000000000003,
+   "scope": 41,
+   "candidates": 136,
+   "residual_findings": 22,
+   "residual_risk_evident": 8.554625396662429,
+   "residual_risk_vm": 13.690000000000001,
+   "residual_confirmed": 1,
+   "new_findings": 11,
+   "changed": 51,
+   "major_bumps": 17,
+   "added": 13,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     null,
+     "3.14.5"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "asgiref": [
+     null,
+     "3.12.1"
+    ],
+    "automat": [
+     "22.10.0",
+     "25.4.16"
+    ],
+    "backports-zstd": [
+     null,
+     "1.8.0"
+    ],
+    "brotli": [
+     null,
+     "1.2.1"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "cffi": [
+     "1.15.1",
+     "2.1.1"
+    ],
+    "charset-normalizer": [
+     "3.2.0",
+     "3.5.2"
+    ],
+    "cryptography": [
+     "41.0.2",
+     "50.0.2"
+    ],
+    "defusedxml": [
+     null,
+     "0.7.1"
+    ],
+    "distlib": [
+     "0.3.7",
+     "0.4.4"
+    ],
+    "django": [
+     "2.2.28",
+     "5.2.19"
+    ],
+    "djangorestframework": [
+     "3.13.1",
+     "3.18.2"
+    ],
+    "dnspython": [
+     "2.3.0",
+     "2.8.0"
+    ],
+    "filelock": [
+     "3.12.2",
+     "3.32.7"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "gevent": [
+     "22.10.2",
+     "23.9.1"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "incremental": [
+     "22.10.0",
+     "24.11.0"
+    ],
+    "jinja2": [
+     "3.1.2",
+     "3.1.6"
+    ],
+    "lxml": [
+     "4.9.3",
+     "6.1.3"
+    ],
+    "multidict": [
+     null,
+     "7.1.0"
+    ],
+    "packaging": [
+     "23.1",
+     "26.3"
+    ],
+    "platformdirs": [
+     "3.9.1",
+     "4.12.4"
+    ],
+    "pluggy": [
+     "1.2.0",
+     "1.7.0"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "protego": [
+     "0.2.1",
+     "0.7.0"
+    ],
+    "pyasn1": [
+     "0.5.0",
+     "0.6.5"
+    ],
+    "pyasn1-modules": [
+     "0.3.0",
+     "0.4.0"
+    ],
+    "pygments": [
+     null,
+     "2.21.0"
+    ],
+    "pymongo": [
+     "4.4.1",
+     "4.18.3"
+    ],
+    "pymysql": [
+     "1.1.0",
+     "1.1.1"
+    ],
+    "pyopenssl": [
+     "23.2.0",
+     "26.4.0"
+    ],
+    "pytest": [
+     "7.4.0",
+     "9.0.3"
+    ],
+    "python-discovery": [
+     null,
+     "1.9.5"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.33.0"
+    ],
+    "scrapy": [
+     "2.9.0",
+     "2.19.0"
+    ],
+    "service-identity": [
+     "21.1.0",
+     "26.1.0"
+    ],
+    "setuptools": [
+     "68.0.0",
+     "84.2.1"
+    ],
+    "soupsieve": [
+     "2.4.1",
+     "2.9"
+    ],
+    "sqlparse": [
+     "0.4.4",
+     "0.6.1"
+    ],
+    "tqdm": [
+     "4.65.0",
+     "4.70.1"
+    ],
+    "twisted": [
+     "22.4.0",
+     "26.10.0"
+    ],
+    "typing-extensions": [
+     "4.7.1",
+     "4.16.0"
+    ],
+    "urllib3": [
+     "1.26.16",
+     "1.26.20"
+    ],
+    "virtualenv": [
+     "20.24.0",
+     "21.15.6"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ],
+    "zipp": [
+     "3.15.0",
+     "3.19.1"
+    ],
+    "zope-interface": [
+     "6.0",
+     "8.6"
+    ]
+   },
+   "planned_changes": 38,
+   "unplanned_changes": 13,
+   "unplanned_major": 0,
+   "unplanned_added": 13,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 9,
+    "checked": 9,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 2,
+    "refs_checked": 116,
+    "details": [
+     {
+      "package": "django",
+      "version": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.utils.six"
+      ],
+      "n_missing": 2
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "evident": {
+   "planned": {
+    "automat": "25.4.16",
+    "certifi": "2026.10.23",
+    "cffi": "2.1.1",
+    "charset-normalizer": "3.5.2",
+    "cryptography": "50.0.2",
+    "django": "5.2.19",
+    "djangorestframework": "3.18.2",
+    "dnspython": "2.8.0",
+    "gevent": "23.9.1",
+    "idna": "3.20",
+    "incremental": "24.11.0",
+    "jinja2": "3.1.6",
+    "lxml": "6.1.3",
+    "protego": "0.7.0",
+    "pyasn1": "0.6.5",
+    "pyasn1-modules": "0.4.0",
+    "pymongo": "4.18.3",
+    "pymysql": "1.1.1",
+    "pyopenssl": "26.4.0",
+    "requests": "2.33.0",
+    "scrapy": "2.19.0",
+    "service-identity": "26.1.0",
+    "setuptools": "84.2.1",
+    "soupsieve": "2.9",
+    "sqlparse": "0.6.1",
+    "twisted": "26.10.0",
+    "typing-extensions": "4.16.0",
+    "urllib3": "1.26.20",
+    "zipp": "3.19.1",
+    "zope-interface": "8.6"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.3,
+   "model_residual": 9.427265100184215,
+   "model_cost": 70.40000000000003,
+   "scope": 41,
+   "candidates": 136,
+   "residual_findings": 35,
+   "residual_risk_evident": 9.427265100184213,
+   "residual_risk_vm": 22.27,
+   "residual_confirmed": 1,
+   "new_findings": 0,
+   "changed": 41,
+   "major_bumps": 13,
+   "added": 11,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     null,
+     "3.14.5"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "asgiref": [
+     null,
+     "3.12.1"
+    ],
+    "automat": [
+     "22.10.0",
+     "25.4.16"
+    ],
+    "backports-zstd": [
+     null,
+     "1.8.0"
+    ],
+    "brotli": [
+     null,
+     "1.2.1"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "cffi": [
+     "1.15.1",
+     "2.1.1"
+    ],
+    "charset-normalizer": [
+     "3.2.0",
+     "3.5.2"
+    ],
+    "cryptography": [
+     "41.0.2",
+     "50.0.2"
+    ],
+    "defusedxml": [
+     null,
+     "0.7.1"
+    ],
+    "django": [
+     "2.2.28",
+     "5.2.19"
+    ],
+    "djangorestframework": [
+     "3.13.1",
+     "3.18.2"
+    ],
+    "dnspython": [
+     "2.3.0",
+     "2.8.0"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "gevent": [
+     "22.10.2",
+     "23.9.1"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "incremental": [
+     "22.10.0",
+     "24.11.0"
+    ],
+    "jinja2": [
+     "3.1.2",
+     "3.1.6"
+    ],
+    "lxml": [
+     "4.9.3",
+     "6.1.3"
+    ],
+    "multidict": [
+     null,
+     "7.1.0"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "protego": [
+     "0.2.1",
+     "0.7.0"
+    ],
+    "pyasn1": [
+     "0.5.0",
+     "0.6.5"
+    ],
+    "pyasn1-modules": [
+     "0.3.0",
+     "0.4.0"
+    ],
+    "pymongo": [
+     "4.4.1",
+     "4.18.3"
+    ],
+    "pymysql": [
+     "1.1.0",
+     "1.1.1"
+    ],
+    "pyopenssl": [
+     "23.2.0",
+     "26.4.0"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.33.0"
+    ],
+    "scrapy": [
+     "2.9.0",
+     "2.19.0"
+    ],
+    "service-identity": [
+     "21.1.0",
+     "26.1.0"
+    ],
+    "setuptools": [
+     "68.0.0",
+     "84.2.1"
+    ],
+    "soupsieve": [
+     "2.4.1",
+     "2.9"
+    ],
+    "sqlparse": [
+     "0.4.4",
+     "0.6.1"
+    ],
+    "twisted": [
+     "22.4.0",
+     "26.10.0"
+    ],
+    "typing-extensions": [
+     "4.7.1",
+     "4.16.0"
+    ],
+    "urllib3": [
+     "1.26.16",
+     "1.26.20"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ],
+    "zipp": [
+     "3.15.0",
+     "3.19.1"
+    ],
+    "zope-interface": [
+     "6.0",
+     "8.6"
+    ]
+   },
+   "planned_changes": 30,
+   "unplanned_changes": 11,
+   "unplanned_major": 0,
+   "unplanned_added": 11,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 9,
+    "checked": 9,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 2,
+    "refs_checked": 116,
+    "details": [
+     {
+      "package": "django",
+      "version": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.utils.six"
+      ],
+      "n_missing": 2
+     }
+    ],
+    "api_compatible": false
+   },
+   "objective_gap": -1.7763568394002505e-15
+  },
+  "evident_wide": {
+   "planned": {
+    "automat": "25.4.16",
+    "certifi": "2026.10.23",
+    "cffi": "2.1.1",
+    "charset-normalizer": "3.5.2",
+    "cryptography": "50.0.2",
+    "django": "5.2.19",
+    "djangorestframework": "3.18.2",
+    "dnspython": "2.8.0",
+    "gevent": "23.9.1",
+    "idna": "3.20",
+    "incremental": "24.11.0",
+    "jinja2": "3.1.6",
+    "lxml": "6.1.3",
+    "protego": "0.7.0",
+    "pyasn1": "0.6.5",
+    "pyasn1-modules": "0.4.0",
+    "pymongo": "4.18.3",
+    "pymysql": "1.1.1",
+    "pyopenssl": "26.4.0",
+    "requests": "2.33.0",
+    "scrapy": "2.19.0",
+    "service-identity": "26.1.0",
+    "setuptools": "84.2.1",
+    "soupsieve": "2.9",
+    "sqlparse": "0.6.1",
+    "twisted": "26.10.0",
+    "typing-extensions": "4.16.0",
+    "urllib3": "1.26.20",
+    "zipp": "3.19.1",
+    "zope-interface": "8.6"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.2,
+   "model_residual": 9.427265100184215,
+   "model_cost": 70.40000000000003,
+   "candidates": 136,
+   "residual_findings": 35,
+   "residual_risk_evident": 9.427265100184213,
+   "residual_risk_vm": 22.27,
+   "residual_confirmed": 1,
+   "new_findings": 0,
+   "changed": 41,
+   "major_bumps": 13,
+   "added": 11,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     null,
+     "3.14.5"
+    ],
+    "aiosignal": [
+     null,
+     "1.4.0"
+    ],
+    "asgiref": [
+     null,
+     "3.12.1"
+    ],
+    "automat": [
+     "22.10.0",
+     "25.4.16"
+    ],
+    "backports-zstd": [
+     null,
+     "1.8.0"
+    ],
+    "brotli": [
+     null,
+     "1.2.1"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "cffi": [
+     "1.15.1",
+     "2.1.1"
+    ],
+    "charset-normalizer": [
+     "3.2.0",
+     "3.5.2"
+    ],
+    "cryptography": [
+     "41.0.2",
+     "50.0.2"
+    ],
+    "defusedxml": [
+     null,
+     "0.7.1"
+    ],
+    "django": [
+     "2.2.28",
+     "5.2.19"
+    ],
+    "djangorestframework": [
+     "3.13.1",
+     "3.18.2"
+    ],
+    "dnspython": [
+     "2.3.0",
+     "2.8.0"
+    ],
+    "frozenlist": [
+     null,
+     "1.8.0"
+    ],
+    "gevent": [
+     "22.10.2",
+     "23.9.1"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "incremental": [
+     "22.10.0",
+     "24.11.0"
+    ],
+    "jinja2": [
+     "3.1.2",
+     "3.1.6"
+    ],
+    "lxml": [
+     "4.9.3",
+     "6.1.3"
+    ],
+    "multidict": [
+     null,
+     "7.1.0"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "protego": [
+     "0.2.1",
+     "0.7.0"
+    ],
+    "pyasn1": [
+     "0.5.0",
+     "0.6.5"
+    ],
+    "pyasn1-modules": [
+     "0.3.0",
+     "0.4.0"
+    ],
+    "pymongo": [
+     "4.4.1",
+     "4.18.3"
+    ],
+    "pymysql": [
+     "1.1.0",
+     "1.1.1"
+    ],
+    "pyopenssl": [
+     "23.2.0",
+     "26.4.0"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.33.0"
+    ],
+    "scrapy": [
+     "2.9.0",
+     "2.19.0"
+    ],
+    "service-identity": [
+     "21.1.0",
+     "26.1.0"
+    ],
+    "setuptools": [
+     "68.0.0",
+     "84.2.1"
+    ],
+    "soupsieve": [
+     "2.4.1",
+     "2.9"
+    ],
+    "sqlparse": [
+     "0.4.4",
+     "0.6.1"
+    ],
+    "twisted": [
+     "22.4.0",
+     "26.10.0"
+    ],
+    "typing-extensions": [
+     "4.7.1",
+     "4.16.0"
+    ],
+    "urllib3": [
+     "1.26.16",
+     "1.26.20"
+    ],
+    "yarl": [
+     null,
+     "1.25.1"
+    ],
+    "zipp": [
+     "3.15.0",
+     "3.19.1"
+    ],
+    "zope-interface": [
+     "6.0",
+     "8.6"
+    ]
+   },
+   "planned_changes": 30,
+   "unplanned_changes": 11,
+   "unplanned_major": 0,
+   "unplanned_added": 11,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 9,
+    "checked": 9,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 2,
+    "refs_checked": 116,
+    "details": [
+     {
+      "package": "django",
+      "version": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.utils.six"
+      ],
+      "n_missing": 2
+     }
+    ],
+    "api_compatible": false
+   }
+  }
+ },
+ "original": {
+  "residual_findings": 142,
+  "residual_risk_evident": 46.20020209441161,
+  "residual_risk_vm": 94.83000000000004,
+  "residual_confirmed": 3,
+  "new_findings": 0,
+  "changed": 0,
+  "major_bumps": 0,
+  "added": 0,
+  "removed": 0,
+  "realised_changes": {}
+ },
+ "decision": {
+  "uncertain": 142,
+  "critical": 7,
+  "evpi_total": 0.6225098741073805,
+  "top": [
+   {
+    "package": "gevent",
+    "advisory": "CVE-2023-41419",
+    "p": 0.3451089243298269,
+    "critical": true,
+    "evpi": 0.1964673227010524
+   },
+   {
+    "package": "lxml",
+    "advisory": "CVE-2026-41066",
+    "p": 0.6559895848026134,
+    "critical": true,
+    "evpi": 0.10320312455921624
+   },
+   {
+    "package": "pytest",
+    "advisory": "CVE-2025-71176",
+    "p": 0.3451089243298269,
+    "critical": true,
+    "evpi": 0.07247287410926272
+   },
+   {
+    "package": "pymysql",
+    "advisory": "CVE-2024-36039",
+    "p": 0.5744984270811252,
+    "critical": true,
+    "evpi": 0.07233526739620794
+   },
+   {
+    "package": "zipp",
+    "advisory": "CVE-2024-5569",
+    "p": 0.5744984270811252,
+    "critical": true,
+    "evpi": 0.07233526739620794
+   }
+  ]
+ },
+ "remediation_seconds": 89.2,
+ "status": "ok"
+}

@@ -6,9 +6,9 @@
   "flask"
  ],
  "probe_errors": {
-  "client": "ImportError: cannot import name 'url_quote' from 'werkzeug.urls' (C:\\Users\\Johann Shoni\\Documents\\Karunya\\CH\\bench\\envs\\flask-2.2.2\\Lib\\site-packages\\werkzeug\\urls.py)",
-  "session": "ImportError: cannot import name 'url_quote' from 'werkzeug.urls' (C:\\Users\\Johann Shoni\\Documents\\Karunya\\CH\\bench\\envs\\flask-2.2.2\\Lib\\site-packages\\werkzeug\\urls.py)",
-  "jsonify": "ImportError: cannot import name 'url_quote' from 'werkzeug.urls' (C:\\Users\\Johann Shoni\\Documents\\Karunya\\CH\\bench\\envs\\flask-2.2.2\\Lib\\site-packages\\werkzeug\\urls.py)"
+  "client": "ImportError: cannot import name 'url_quote' from 'werkzeug.urls' (<repo>\\bench\\envs\\flask-2.2.2\\Lib\\site-packages\\werkzeug\\urls.py)",
+  "session": "ImportError: cannot import name 'url_quote' from 'werkzeug.urls' (<repo>\\bench\\envs\\flask-2.2.2\\Lib\\site-packages\\werkzeug\\urls.py)",
+  "jsonify": "ImportError: cannot import name 'url_quote' from 'werkzeug.urls' (<repo>\\bench\\envs\\flask-2.2.2\\Lib\\site-packages\\werkzeug\\urls.py)"
  },
  "advisory_symbols": {
   "CVE-2026-27205": {

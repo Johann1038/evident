@@ -1,7 +1,7 @@
-"""Build the conference paper (DOCX) from the template and the experiment results.
+"""Build the conference paper (DOCX, <= 10 pages incl. references) from the experiment results.
 
-All numbers are read from data/results/*.json; run experiments/make_figures.py first.
-Usage: python paper/build_paper.py
+Every number is read from data/results/*.json. Order: analyze_bench.py, compare_callgraphs.py, validate_symbols.py,
+run_realworld.py, posthoc_realworld.py, make_figures.py, then this script.
 """
 from __future__ import annotations
 
@@ -13,564 +13,545 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 sys.path.insert(0, str(HERE))
 from docxkit import Paper, mfrac, mnary, mr, msub  # noqa: E402
+from references import REFS  # noqa: E402
 
 RES = ROOT / "data" / "results"
 FIG = HERE / "figures"
-EV = json.loads((RES / "bench_eval.json").read_text("utf8"))
-T = json.loads((RES / "paper_tables.json").read_text("utf8"))
-M = EV["methods"]
+REPO = "https://github.com/Johann1038/evident"
+
+
+def J(name, default=None):
+    p = RES / name
+    return json.loads(p.read_text("utf8")) if p.exists() else default
+
+
+EV, T = J("bench_eval.json"), J("paper_tables.json")
+CG, SV, PH = J("callgraph_summary.json", {}), J("symbol_validation.json", {}), J("posthoc_realworld.json", {})
+MS, MR = EV["methods"]["static"], EV["methods"]["runtime"]
+RW, RN, REM, CLS = T["realworld_scan"], T["realworld_n"], T["remediation"], T.get("exposure_classes", {})
 
 
 def f3(x):
-    return f"{x:.3f}"
+    return "n/a" if x is None or x != x else f"{x:.3f}"
 
 
-def pct(x, d=1):
-    return f"{100 * x:.{d}f}%"
+def f2(x):
+    return "n/a" if x is None or x != x else f"{x:.2f}"
 
 
-# ------------------------------------------------------------------ derived real-world numbers
-RW = T["realworld_scan"]
-RN = T["realworld_n"]
-REM = T["remediation"]
-DEC = T["decision"]
-CLS = T.get("exposure_classes", {})
-n_snap = RN["snapshots"]
-n_ok = RN["resolvable"]
-n_find = int(RW["findings"]["sum"])
-n_live = int(RW["live"]["sum"])
-exp_exposed = RW["expected_exposed"]["sum"]
-tot_cls = sum(CLS.values()) or 1
-not_inst = CLS.get("NOT_INSTALLED", 0)
-dev_only = CLS.get("DEV_ONLY", 0)
-not_imp = CLS.get("NOT_IMPORTED", 0)
-unreach = CLS.get("STATICALLY_UNREACHABLE", 0)
-reach_conf = CLS.get("STATICALLY_REACHABLE", 0)
-refuted_share = (not_inst + not_imp + unreach) / tot_cls
-dismissable_share = (not_inst + dev_only + not_imp + unreach) / tot_cls
+def pct(x, d=0):
+    return "n/a" if x is None or x != x else f"{100 * x:.{d}f}%"
 
 
-def strat(name, key, stat="mean"):
+def frac(k, n):
+    return f"{k}/{n}"
+
+
+def ci(m, k="brier", s=MS):
+    lo, hi = s[m]["ci"][k]
+    return f"[{lo:.3f}, {hi:.3f}]"
+
+
+def S(name, key, stat="mean"):
     return REM.get(name, {}).get(key, {}).get(stat, float("nan"))
 
 
-S_ORDER = ["audit_fix", "latest", "upgrade_all", "vm_opt", "coral_opt", "cape_opt", "evident"]
-S_NAME = {"audit_fix": "Minimal fix (pip-audit style)", "latest": "Latest release", "upgrade_all": "Upgrade all (uv)",
-          "vm_opt": "Optimiser, version-match weights", "coral_opt": "Optimiser, CORAL-style weights",
-          "cape_opt": "Optimiser, CAPE-style weights", "evident": "**EVIDENT** (calibrated weights)"}
+def Sn(name, key="ok"):
+    return REM.get(name, {}).get(key, {}).get("n", 0)
 
+
+def test(other, key):
+    return T.get("remediation_tests", {}).get(f"evident_vs_{other}_{key}", {})
+
+
+n_snap, n_ok = RN["snapshots"], RN["resolvable"]
+n_find = int(RW["findings"]["sum"])
+tot = sum(CLS.values()) or 1
+C = lambda k: CLS.get(k, 0)  # noqa: E731
+dismiss = C("NOT_INSTALLED") + C("DEV_ONLY") + C("NOT_IMPORTED") + C("STATICALLY_UNREACHABLE")
+COMPAT = PH.get("compat", {})
+
+
+def cl(name, lvl):
+    c = COMPAT.get(name, {})
+    return frac(c.get(lvl, 0), c.get("plans", 0)) if c else "n/a"
+
+
+ev_ok_k = int(round(S("evident", "ok") * Sn("evident"))) if Sn("evident") else 0
 TITLE = ("Not Every Vulnerable Dependency Needs an Upgrade: Calibrated Exposure Evidence and "
-         "Resolver-Verified Remediation for Python Projects")
-
-ev_rr = strat("evident", "risk_reduction_evident")
-vm_rr = strat("vm_opt", "risk_reduction_evident")
-ev_ch = strat("evident", "changed")
-vm_ch = strat("vm_opt", "changed")
-up_ch = strat("upgrade_all", "changed")
-ev_ok = strat("evident", "ok")
-au_ok = strat("audit_fix", "ok")
-
+         "Metadata-Verified Remediation for Python Projects")
 ABSTRACT = (
-    "Software composition analysis reports every dependency whose version falls inside an advisory's range, "
-    "yet most such findings in Python projects are never executed, and upgrading all of them is costly and "
-    "may break the application. We present EVIDENT, which (i) grades each finding with three-valued, "
-    "provenance-carrying evidence from target-environment resolution, cross-package static reachability to "
-    "vulnerable functions mined from fix commits, and optional runtime traces; (ii) converts this evidence into "
-    "calibrated exposure probabilities with a staged model that treats missing evidence as neutral; and "
-    "(iii) selects remediation plans with a constraint solver whose residual-risk term is weighted by those "
-    "probabilities, verifying every plan with a metadata-only resolver in a counter-example-guided loop. On "
-    f"EVIDENT-Bench, {EV['n_rows']} runtime-labelled application/vulnerability pairs over {EV['n_advisories']} "
-    f"advisories, the model reaches a Brier score of {f3(M['evident']['brier'])} (version matching: "
-    f"{f3(M['version_match']['brier'])}; CORAL-style coefficients: {f3(M['coral_style']['brier'])}) and keeps its "
-    f"calibration error at or below {f3(max(v['evident']['ece'] for v in EV['missingness'].values()))} when up to "
-    f"all static and runtime evidence is missing. On {n_snap} historical snapshots of open-source Python "
-    f"applications, {pct(dismissable_share)} of {n_find} version-matched findings are not installed, development-only, "
-    f"not imported or statically unreachable; resolver-verified plans remove {pct(ev_rr)} of expected exposure "
-    f"with {ev_ch:.1f} package changes per project on average, compared with {up_ch:.1f} for upgrading everything, "
-    f"whereas independent per-package fixes resolve in only {pct(au_ok, 0)} of projects. We also find that, when most "
-    "findings are only possibly reachable, calibrated weights yield plans similar to unweighted ones, which bounds "
-    "what exposure evidence can contribute to remediation.")
-
-KEYWORDS = ("software supply chain security, software composition analysis, vulnerability reachability, "
-            "calibration, dependency remediation, constraint optimisation, Python")
-
-REFS = [
-    "S.E. Ponta, H. Plate and A. Sabetta, Beyond metadata: Code-centric and usage-based analysis of known vulnerabilities in open-source software, in: *Proc. IEEE ICSME*, 2018, pp. 449–460.",
-    "S.E. Ponta, H. Plate and A. Sabetta, Detection, assessment and mitigation of vulnerabilities in open source dependencies, *Empirical Software Engineering* **25**(5) (2020), 3175–3215.",
-    "L. Zhang, C. Liu, Z. Xu, S. Chen, L. Fan, L. Zhao, J. Wu and Y. Liu, Compatible remediation on vulnerabilities from third-party libraries for Java projects, in: *Proc. IEEE/ACM ICSE*, 2023, pp. 2540–2552.",
-    "L. Zhang, H. Ye, F. Sarro, Y. Sun and Y. Liu, Agent-based automated remediation for vulnerabilities in Maven projects, *Proc. ACM Program. Lang.* (OOPSLA), 2026.",
-    "S. Podder, V. Koscinski and B. Ray, CAPE – Context-aware prioritization engine for vulnerability scoring and management, arXiv:2610.13071, 2026.",
-    "D.O. Omondi, KEVGraph: Exploitation-aware dependency vulnerability remediation, arXiv:2609.24164, 2026.",
-    "D. Pinckney, F. Cassano, A. Guha, J. Bell, M. Culpo and T. Gamblin, Flexible and optimal dependency management via Max-SMT, in: *Proc. IEEE/ACM ICSE*, 2023, pp. 1418–1429.",
-    "C. Tucker, D. Shuffelton, R. Jhala and S. Lerner, OPIUM: Optimal package install/uninstall manager, in: *Proc. ICSE*, 2007, pp. 178–188.",
-    "I. Pashchenko, H. Plate, S.E. Ponta, A. Sabetta and F. Massacci, Vulnerable open source dependencies: Counting those that matter, in: *Proc. ACM/IEEE ESEM*, 2018, pp. 42:1–42:10.",
-    "A.M. Mir, M. Keshani and S. Proksch, On the effect of transitivity and granularity on vulnerability propagation in the Maven ecosystem, in: *Proc. IEEE SANER*, 2023, pp. 201–211.",
-    "Y. Wu, Z. Yu, M. Wen, Q. Li, D. Zou and H. Jin, Understanding the threats of upstream vulnerabilities to downstream projects in the Maven ecosystem, in: *Proc. IEEE/ACM ICSE*, 2023, pp. 1046–1058.",
-    "V. Salis, T. Sotiropoulos, P. Louridas, D. Spinellis and D. Mitropoulos, PyCG: Practical call graph generation in Python, in: *Proc. IEEE/ACM ICSE*, 2021, pp. 1646–1657.",
-    "K. Huang et al., Jarvis: Scalable and precise application-centered call graph construction for Python, arXiv:2305.05949, 2023.",
-    "J. Hejderup and G. Gousios, Can we trust tests to automate dependency updates? A case study of Java projects, *Journal of Systems and Software* **183** (2022), 111097.",
-    "N. Imtiaz, S. Thorn and L. Williams, A comparative study of vulnerability reporting by software composition analysis tools, in: *Proc. ACM/IEEE ESEM*, 2021, pp. 5:1–5:11.",
-    "A. Zięba-Kozarzewski, No edges, no verdict: A large-scale empirical study of declared dependency graphs in 78K SBOMs in the wild, arXiv:2607.22140, 2026.",
-    "H. He, B. Vasilescu and C. Kästner, Pinning is futile: You need more than local dependency versioning to defend against supply chain attacks, *Proc. ACM Softw. Eng.* **2**(FSE) (2025).",
-    "M. Alfadel, D.E. Costa and E. Shihab, Empirical analysis of security vulnerabilities in Python packages, *Empirical Software Engineering* **28**(3) (2023).",
-    "H.J. Kang, T.G. Nguyen, B. Le, C.S. Păsăreanu and D. Lo, Test mimicry to assess the exploitability of library vulnerabilities, in: *Proc. ACM ISSTA*, 2022, pp. 276–288.",
-    "J. Jacobs, S. Romanosky, B. Edwards, I. Adjerid and M. Roytman, Exploit prediction scoring system (EPSS), *Digital Threats: Research and Practice* **2**(3) (2021), 1–17.",
-    "Cybersecurity and Infrastructure Security Agency, Known Exploited Vulnerabilities Catalog, https://www.cisa.gov/known-exploited-vulnerabilities-catalog, accessed 2026-11-12.",
-    "OpenSSF, OSV: Open Source Vulnerabilities schema and database, https://osv.dev, accessed 2026-11-12.",
-    "Cybersecurity and Infrastructure Security Agency, Minimum requirements for Vulnerability Exploitability eXchange (VEX), 2023.",
-    "OWASP Foundation, CycloneDX Bill of Materials Standard, version 1.6, 2024.",
-    "H. Ye, W. Chen, W. Dou, G. Wu and J. Wei, Knowledge-based environment dependency inference for Python programs, in: *Proc. IEEE/ACM ICSE*, 2022, pp. 1245–1256.",
-    "G.W. Brier, Verification of forecasts expressed in terms of probability, *Monthly Weather Review* **78**(1) (1950), 1–3.",
-    "M.P. Naeini, G. Cooper and M. Hauskrecht, Obtaining well calibrated probabilities using Bayesian binning, in: *Proc. AAAI*, 2015, pp. 2901–2907.",
-    "L. Perron and F. Didier, CP-SAT, Google OR-Tools, https://developers.google.com/optimization, 2024.",
-    "C. Liu, S. Chen, L. Fan, B. Chen, Y. Liu and X. Peng, Demystifying the vulnerability propagation and its evolution via dependency trees in the NPM ecosystem, in: *Proc. IEEE/ACM ICSE*, 2022, pp. 672–684.",
-    "L. Zhang, C. Liu, S. Chen, Z. Xu, L. Fan, L. Zhao, Y. Zhang and Y. Liu, Mitigating persistence of open-source vulnerabilities in Maven ecosystem, in: *Proc. IEEE/ACM ASE*, 2023, pp. 191–203.",
-]
+    "Software composition analysis reports every dependency whose version is in an advisory's range, although much "
+    "vulnerable code is never executed. We present EVIDENT, which grades Python findings with formally defined "
+    "three-valued evidence (installation for the target environment, imports, cross-package static reachability of "
+    "vulnerable functions mined from fix commits, optional runtime traces), turns it into exposure probabilities with "
+    "a staged conditional model that treats missing evidence as neutral, and plans remediation with a constraint "
+    "solver verified by a metadata-only resolver. On "
+    f"{EV['n_rows']} execution-labelled pairs ({EV['n_advisories']} advisories, {EV['n_packages']} packages) the model "
+    f"is calibrated without runtime evidence (Brier {f3(MS['evident']['brier'])}, 95% CI {ci('evident')}; ECE "
+    f"{f3(MS['evident']['ece'])}), statistically tied with logistic regression but better calibrated when evidence is "
+    "missing in correlated patterns. "
+    + (f"The reachability analysis produced no false refutation, whereas PyCG and Jarvis missed "
+       f"{CG.get('PyCG', {}).get('missed_exposed')} and {CG.get('Jarvis', {}).get('missed_exposed')} exposed applications. "
+       if CG and EV["analysis_confusion"]["L4_refuted"]["exposed"] == 0 else "")
+    + f"In {n_snap} historical application snapshots, {pct(dismiss / tot, 1)} of {n_find} findings are dismissed with a "
+    + (f"justification, yet at the default reflection scope static analysis refutes none, because the applications "
+       f"themselves use reflection." if not C('STATICALLY_UNREACHABLE') else
+       f"justification, yet static analysis refutes only {C('STATICALLY_UNREACHABLE')} because the applications "
+       f"themselves use reflection.") + f" On {n_ok} resolvable snapshots, verified plans resolve in {frac(ev_ok_k, Sn('evident'))}"
+    + (" and change fewer packages than resolver-native fixing"
+       if test("uv_fix", "changed").get("p", 1) < 0.05 and test("uv_fix", "changed").get("evident", 0)
+       < test("uv_fix", "changed").get("other", 0) else "")
+    + ", but calibrated weights rarely change the plan. Evidence helps triage more than it changes remediation.")
+KEYWORDS = ("software supply chain security, vulnerability reachability, calibration, dependency remediation, "
+            "constraint optimisation, Python")
 
 
 def build():
     P = Paper(HERE / "template.docx")
     P.set_front(TITLE, ABSTRACT, KEYWORDS)
 
-    # ---------------------------------------------------------------- 1 Introduction
+    # ---------------------------------------------------------------- 1
     P.h1("Introduction")
-    P.para("Modern Python applications install hundreds of third-party distributions, most of them transitively. "
-           "Software composition analysis (SCA) tools match the resolved versions against advisory databases such as "
-           "OSV [22] and report every package whose version lies in an affected range. Such *version matching* is "
-           "known to over-approximate exposure: empirical studies of Maven and npm show that only a small fraction "
-           "of vulnerable dependencies are reachable from client code [9–11], and SCA tools disagree substantially "
-           "with each other [15]. The consequence for developers is a long list of findings and a default action, "
-           "“upgrade everything”, that is costly and can break the build [14].")
-    P.para("Two lines of work address parts of this problem. Reachability-aware tools grade findings by whether "
-           "vulnerable code can be reached [1, 2, 5], and remediation optimisers choose versions that remove "
-           "vulnerabilities under compatibility constraints [3, 4, 6, 7]. The closest systems, CORAL [3] and its "
-           "agent-based successor [4], weight residual risk by fixed reachability coefficients for Java/Maven; CAPE [5] "
-           "grades Python and JavaScript findings with weighted evidence regimes but is not calibrated and does not "
-           "remediate; KEVGraph [6] plans PyPI remediation from exploitation signals without reachability. Three gaps "
-           "remain. First, the weights that turn evidence into risk are chosen by hand, so their output cannot be "
-           "read as a probability and cannot be validated. Second, real projects routinely lack some evidence "
-           "(no source, no vulnerable-function data, no tests), and treating missing evidence as negative is unsafe "
-           "[16]. Third, for Python no approach verifies that a recommended plan actually resolves and measures what "
-           "the resolver changes beyond the plan.")
-    P.para("This paper presents EVIDENT, a PyPI-native framework that closes these gaps. Its contributions are:")
-    P.bullets([
-        "**A graded, three-valued evidence model** for Python findings that separates inventory, version, "
-        "target-environment installation (markers, extras, development scope), import, static reachability and "
-        "runtime evidence, distinguishes *inconclusive* from *missing* evidence, and maps to VEX [23, 24].",
-        "**A cross-package static reachability analysis** for Python that classifies paths as confirmed or possible "
-        "(over-approximated), never reports “unreachable” when reflection is present, and targets vulnerable "
-        "functions recovered from fix commits, because PyPI advisories almost never name them.",
-        "**A staged, calibrated exposure model** whose verdict-conditional probabilities are learned from runtime "
-        "ground truth; it is the first, to our knowledge, to report calibration of exposure estimates and their "
-        "robustness to missing evidence.",
-        "**Evidence-weighted, resolver-verified remediation**: a CP-SAT model whose residual risk is weighted by the "
-        "calibrated probabilities, a counter-example-guided loop with a metadata-only resolver, a risk/cost Pareto "
-        "front, and a value-of-information analysis that tells developers which uncertain findings would change "
-        "the plan.",
-        f"**EVIDENT-Bench and an empirical study**: {EV['n_rows']} runtime-labelled pairs and {n_snap} historical "
-        "snapshots of open-source applications, released with all scripts so that every number in this paper can be "
-        "regenerated.",
-    ])
+    P.para("Software composition analysis (SCA) matches the resolved versions of an application's dependencies against "
+           "advisory databases such as OSV [21] and reports every package in an affected range. This *version "
+           "matching* over-approximates exposure: in Maven and npm only a fraction of vulnerable dependencies is "
+           "reachable [9–11, 26], tools disagree [15], and the default response, upgrading everything, is costly and "
+           "can break applications [14]. Reachability-aware tools grade findings [1, 2, 5] and remediation optimisers "
+           "choose versions under constraints [3, 4, 6, 7], but their evidence weights are hand-chosen, missing "
+           "evidence is often read as negative [16], and it is unknown *when* evidence actually changes a decision.")
+    P.para("Our thesis is that a finding should become an upgrade only in proportion to reliable evidence of exposure, "
+           "and that the value of evidence depends on its reliability, availability and power to discriminate. EVIDENT "
+           "contributes (1) **evidence reliability**: formally defined three-valued evidence with explicit soundness "
+           "assumptions and scoped reflection handling; (2) **vulnerable-code reachability** for Python across package "
+           "boundaries, compared with PyCG [12] and Jarvis [13]; (3) **statistically reliable exposure estimation**: a "
+           "staged conditional model calibrated on execution ground truth and evaluated for leakage, unseen packages, "
+           "unseen patterns, prevalence shift and correlated missingness; (4) **decision-aware remediation**: a CP-SAT "
+           "planner verified by a resolver, with compatibility levels and a measurement of when calibrated weights "
+           "change plans. All data and scripts are released [Data Availability].")
 
-    # ---------------------------------------------------------------- 2 Related work
+    # ---------------------------------------------------------------- 2
     P.h1("Related Work and Positioning")
-    P.para("**Over-estimation of vulnerable dependencies.** Pashchenko et al. [9] showed that counting all vulnerable "
-           "dependencies inflates the problem; call-graph studies of Maven [10, 11] and npm [29] confirm that most "
-           "vulnerable functions are not reached downstream. For PyPI, Alfadel et al. [18] characterised advisories "
-           "but not their reachability in applications.")
-    P.para("**Reachability evidence.** Eclipse Steady [1, 2] combines static and dynamic reachability for Java and "
-           "reports update metrics as decision support. Python call-graph generators such as PyCG [12] and Jarvis [13] "
-           "resolve many calls but, as our pilot confirmed, miss computed `getattr` dispatch and library-to-library "
-           "paths, and are not designed to report uncertainty. CAPE [5] introduced evidence regimes with weight "
-           "redistribution for missing dimensions. Test-generation approaches [19] provide stronger exploitability "
-           "evidence for Java and are complementary.")
-    P.para("**Remediation optimisation.** Package installation as optimisation dates back to OPIUM [8]; MaxNPM [7] "
-           "adds vulnerability objectives for npm; Ranger [30] restores secure version ranges in Maven; CORAL [3] "
-           "minimises reachability-weighted CVSS subject to compatibility constraints and validates by compilation "
-           "and tests; Remedius [4] gathers evidence with LLM agents and encodes it as SMT constraints; KEVGraph [6] "
-           "solves an exploitation-ordered set cover. He et al. [17] simulate counterfactual resolutions at ecosystem "
-           "level. Table 1 summarises the differences.")
-    yes, part, no = "✓", "◐", "–"
-    P.table(["Approach", "Eco-system", "Reach-ability", "Graded", "Calib-rated", "Missing evidence",
-             "Optim. plan", "Resolver check", "Re-scan"],
-            [["pip-audit, OSV-Scanner", "PyPI+", no, no, no, no, part, no, no],
-             ["Eclipse Steady [1, 2]", "Java", yes, part, no, no, part, no, no],
-             ["CORAL [3]", "Maven", yes, part, no, part, yes, yes, no],
-             ["Remedius [4]", "Maven", yes, part, no, part, yes, yes, no],
-             ["MaxNPM [7]", "npm", no, no, no, no, yes, yes, no],
-             ["KEVGraph [6]", "multi", no, no, no, no, yes, no, part],
-             ["CAPE [5]", "Py/JS", yes, yes, no, yes, no, no, no],
-             ["**EVIDENT**", "PyPI", yes, yes, yes, yes, yes, yes, yes]],
-            "Positioning of EVIDENT (✓ supported, ◐ partially, – not supported). EVIDENT is the only "
-            "approach that calibrates exposure probabilities and propagates them into resolver-verified remediation.",
-            widths=[1500, 600, 650, 650, 650, 650, 700, 700, 600], font_pt=7)
+    P.para("**Reachability.** Eclipse Steady [1, 2] combines static and dynamic reachability for Java and offers update "
+           "metrics as decision support without quantifying risk. Python call-graph generators [12, 13] output graphs, "
+           "not verdicts; reading a missing edge as unreachability is unsafe for security negatives. Exploit-test "
+           "generation [18] gives stronger, Java-specific evidence. **Prioritisation.** CVSS, EPSS [19] and KEV [20] "
+           "rank vulnerabilities, not application exposure; CAPE [5] grades Python/JS findings into evidence regimes "
+           "with weight redistribution, but its scores are not validated probabilities, so they cannot be traded "
+           "against change cost. **Remediation.** Installation as optimisation goes back to OPIUM [8]; MaxNPM [7] adds "
+           "vulnerability objectives for npm, Ranger [27] restores safe ranges in Maven, CORAL [3] minimises "
+           "reachability-weighted CVSS under compatibility constraints, Remedius [4] encodes agent-gathered evidence as "
+           "SMT constraints, and KEVGraph [6] solves an exploitation-ordered set cover. None estimates calibrated "
+           "probabilities or measures when evidence changes the plan (Table 1).")
+    y, p_, n = "✓", "◐", "–"
+    P.table(["Approach", "Eco-system", "Reach. evidence", "Missing ≠ negative", "Calibrated, validated",
+             "Optim. plan", "Plan verification", "Compat. check"],
+            [["pip-audit / OSV-Scanner", "PyPI", n, n, n, p_, n, n],
+             ["Eclipse Steady [1, 2]", "Java", "static+dyn.", n, n, p_, n, "metrics"],
+             ["CORAL [3]", "Maven", "static", p_, n, y, "build+tests", "API"],
+             ["Remedius [4]", "Maven", "agents", p_, n, y, "build+tests", "API"],
+             ["MaxNPM [7]", "npm", n, n, n, y, "solver", n],
+             ["KEVGraph [6]", "multi", n, n, n, y, n, n],
+             ["CAPE [5]", "Py/JS", "static", y, n, n, n, n],
+             ["**EVIDENT**", "PyPI", "static (+dyn.)", y, y, y, "resolver+re-scan", "symbols+signat."]],
+            "Positioning by each system's own functionality (✓ yes, ◐ partial, – no).",
+            widths=[1450, 700, 900, 720, 780, 600, 1000, 850], font_pt=7)
 
-    # ---------------------------------------------------------------- 3 Approach
+    # ---------------------------------------------------------------- 3
     P.h1("The EVIDENT Approach")
-    P.para("Figure 1 shows the pipeline. EVIDENT takes a lockfile (uv, Poetry, PDM, Pipenv or pinned requirements) "
-           "and the application source, resolves the environment for a target interpreter and platform, matches "
-           "advisories, collects code evidence, estimates exposure probabilities and computes a verified remediation "
-           "plan. All intelligence (OSV, CVSS vectors, EPSS [20], CISA KEV [21]) is read from dated snapshots; every "
-           "result is keyed by snapshot date and tool version.")
-    P.figure(FIG / "architecture.png", "EVIDENT pipeline. Shaded components are the core research contributions.",
-             width_cm=12.3)
-    P.h2("Graded evidence")
-    P.para("Each finding (application, package, advisory) carries one evidence record per level (Table 2). A record "
-           "has a state, a provenance (tool, version, inputs) and a detail. Three properties matter. *First*, states "
-           "are three-valued: CONFIRMED, REFUTED, or UNKNOWN, with the static level adding POSSIBLE for paths that "
-           "exist only under over-approximation. *Second*, UNKNOWN is split into *inconclusive* (the analysis ran but "
-           "was defeated, e.g. by reflection) and *missing* (it could not run, e.g. no vulnerable-function data); only "
-           "the former is informative. *Third*, runtime NOT_OBSERVED is a separate state from REFUTED, so absence of "
-           "evidence is never read as evidence of absence. Findings map to VEX statements, e.g. a refuted import "
-           "yields `not_affected` with justification `vulnerable_code_not_present`.")
-    P.table(["Level", "Question", "Source", "States"],
-            [["L1 Inventory", "Is the package in the lock/SBOM?", "lockfile parser", "C"],
-             ["L2 Version", "Is the locked version in an affected range?", "OSV ranges (PEP 440)", "C"],
-             ["L3 Installation", "Installed for the target interpreter/platform? Production or dev-only?",
-              "marker evaluation, root reachability", "C / R / U"],
-             ["L3b Import", "Is a module of the package loaded by non-test code?", "transitive import graph", "C / R / U"],
-             ["L4 Static", "Is a vulnerable function reachable from application roots?", "cross-package analysis",
-              "C / P / R / U"],
-             ["L5 Runtime", "Did an observed run execute it?", "tracing of tests", "O / N / U"]],
-            "Evidence levels (C confirmed, P possible, R refuted, U unknown, O observed, N not observed).",
-            widths=[1100, 2900, 1900, 1100])
-
+    P.para("EVIDENT takes a lockfile (uv, Poetry, PDM, Pipenv, pinned requirements) and the application source, resolves "
+           "the environment for a target (CPython 3.10, Linux x86-64), matches advisories from dated OSV/CVSS/EPSS/KEV "
+           "snapshots, collects evidence, estimates exposure and plans remediation (Figure 1). Source, lockfiles and "
+           "wheels are parsed, never executed.")
+    P.figure(FIG / "architecture.png", "EVIDENT pipeline; shaded components are the core contributions.", width_cm=9.8)
+    P.h2("Evidence semantics")
+    P.para("A finding f = (application, package p, advisory a) carries one record per level with state, provenance and "
+           "detail (Table 2). *Exposure* means that a vulnerable symbol of a executes when the deployed application "
+           "runs.")
+    P.table(["Level / state", "Emitted when (assumption)"],
+            [["L3 C / R", "p is (not) installed for the target after PEP 508 markers and reachability from the roots; "
+              "*dev* scope if reachable only from development roots"],
+             ["L3b C / R / U", "C: a module of p is in the import closure of non-test application modules (literal "
+              "imports, dotted strings); R: not in the closure and no loader reflection (A1); U: inconclusive or missing"],
+             ["L4 C / P", "a vulnerable symbol is reachable from the roots through strong edges only (C) or only with "
+              "weak, over-approximating edges (P)"],
+             ["L4 R / U", "R: unreachable with weak edges and no blocking reflection within the chosen scope (A1), "
+              "symbols valid (A2); U: blocked (inconclusive) or no symbols/source (missing)"],
+             ["L5 O / N", "a vulnerable symbol was (not) executed in an observed run; N is never read as R"]],
+            "Evidence states (C confirmed, P possible, R refuted, U unknown, O observed, N not observed).",
+            widths=[1250, 5750], align=["left", "left"], font_pt=7.5)
+    P.para("Refutation rests on two assumptions. (A1) *Closed world over a supported subset*: code is reached only "
+           "through modelled constructs; reflection that could load or redirect code blocks refutation: `eval`, "
+           "`exec`, `compile`, computed imports and entry-point/`pkgutil` plugin loading (*loaders*), and "
+           "`globals()`/`locals()`/`vars()`, computed `setattr`, three-argument `type()` and assignments to another "
+           "package's attributes (*redirectors*). Metaclasses, descriptors and C callbacks are outside the subset. "
+           "Blocking is applied in one of four nested **scopes**: *global* (any blocking construct in the imported "
+           "region; default), *package* (in the application, the vulnerable package or a package importing it), "
+           "*module* (in a module that transitively imports the vulnerable package, or a loader in the application), "
+           "*reachable* (as module, but only reflective code that is itself reachable). (A2) *Symbol validity*: mined "
+           "symbols contain the vulnerable operation. VEX `not_affected` is emitted only for R, with A1–A2 stated. "
+           "Conflicts follow precedence L3 R > L5 O > L4 > L3b; a test-only L5 O with L3b R yields low exposure "
+           "because stages multiply.")
     P.h2("Cross-package static reachability")
-    P.para("The analysis builds one program graph over the application and every installed distribution on a "
-           "dependency path to a vulnerable package. Nodes are functions, methods and module bodies; module bodies "
-           "of non-test application modules, decorated or referenced functions and conventional entry points are "
-           "roots. *Strong* edges are resolved calls: import-qualified calls (following re-exports and star imports), "
-           "constructor calls, `self` calls through the class hierarchy, calls on locals of inferred class type and "
-           "calls through literal dispatch containers. *Weak* edges over-approximate: method-name matching restricted "
-           "to packages imported by the calling module, escaped function references reached by unresolved dynamic "
-           "calls, computed `getattr` over a module's exports or a class hierarchy, string-encoded symbols, and "
-           "implicit protocol calls (`str()`, iteration, f-strings, `with`, subscripts). A vulnerable symbol reachable "
-           "through strong edges is CONFIRMED, through weak edges POSSIBLE; it is REFUTED only if unreachable with weak "
-           "edges and no `eval`, `exec` or computed import occurs in the reachable region of the application, the "
-           "package or its importers; otherwise UNKNOWN. Test directories are excluded from roots, so test-only usage "
-           "does not count as production exposure.")
+    P.para("One graph spans the application and every installed distribution on a dependency path to a vulnerable "
+           "package; roots are non-test module bodies, decorated or referenced functions and entry points. *Strong* "
+           "edges: import-qualified calls (re-exports, star imports), constructor and `self` calls through the class "
+           "hierarchy, calls on locals of inferred class type, literal dispatch containers, constant `getattr`. *Weak* "
+           "edges: method-name matching restricted to imported packages, escaped function references reached by "
+           "unresolved calls, computed `getattr` over module exports or class hierarchies, dotted strings, implicit "
+           "protocol calls (`str()`, iteration, f-strings, `with`, subscripts, `in`).")
     P.h2("Vulnerable-symbol mining")
-    P.para(f"Of {14236:,} non-withdrawn, non-malicious PyPI records in OSV (snapshot 2026-11-12) only two name affected "
-           "functions, and none of 6,846 reviewed GitHub advisories for pip carries `vulnerable_functions`; however, "
-           "62.3% of the 7,086 advisory clusters reference a fix commit. EVIDENT therefore downloads each fix commit "
-           "(at most four per advisory), keeps changed non-test Python files, maps the *pre-fix* changed lines to the "
-           "innermost enclosing function, and maps repository paths to installed modules by suffix matching. "
-           "Advisories whose fixes only touch module-level code yield module-granularity symbols, for which a "
-           "confirmed path is downgraded to POSSIBLE.")
-    P.h2("Staged, calibrated exposure model")
-    P.para("Exposure Y means that vulnerable code executes in the deployed application. EVIDENT decomposes it into "
-           "deployment D, installation I, import M and call C, each informed by the corresponding evidence:")
-    P.equation([mr("P"), mr("("), mr("Y=1"), mr("|"), mr("E"), mr(")"), mr("="),
-                mr("P"), mr("("), mr("D|"), msub(mr("E"), mr("L3")), mr(")"), mr("·"),
-                mr("P"), mr("("), mr("I|"), msub(mr("E"), mr("L3")), mr(")"), mr("·"),
-                mr("P"), mr("("), mr("M|"), msub(mr("E"), mr("L3b")), mr(")"), mr("·"),
-                mr("P"), mr("("), mr("C|"), msub(mr("E"), mr("L4")), mr(","), msub(mr("E"), mr("L5")), mr(","),
-                mr("g"), mr(")")])
-    P.para("where g is the symbol granularity. Verdict-conditional probabilities are estimated from labelled pairs "
-           "with Beta smoothing and hierarchical back-off: the joint estimate for an (L4, L5, g) cell is shrunk towards "
-           "the L4 marginal, which is shrunk towards the stage prior. For a cell with y exposed out of n pairs,")
-    P.equation([msub(mr("p"), mr("k")), mr("="),
-                mfrac([mr("y+2α"), msub(mr("p"), mr("parent(k)"))], [mr("n+2α")])])
-    P.para("A runtime observation sets P(C)=1. Missing evidence on a level is marginalised: the estimate backs off to "
-           "the marginal over that level, so absent analyses neither raise nor lower the probability. Development-only "
-           "packages receive a small deployment probability (0.05), refuted installation sets P(I)=0. The model has "
-           "a handful of interpretable parameters, which makes it auditable: every probability decomposes into stage "
-           "probabilities that can be shown to a developer.")
-    P.h2("Evidence-weighted, resolver-verified remediation")
-    P.para("For every package p in the remediation scope (vulnerable packages and the parents or children whose "
-           "version constraints interact with them) EVIDENT selects one candidate version v (current version, first "
-           "version fixing the current findings, first clean version, latest in the same minor and major series, "
-           "latest; only versions that publish wheels, because the resolver never executes build scripts). With "
-           "Boolean variables x, the CP-SAT [28] model is")
-    P.equation([mr("min"), mr(" "), mnary("∑", [mr("p,v")], None,
+    st = SV.get("status", {})
+    P.para(f"Only 2 of 14,236 OSV PyPI records name functions [21]. EVIDENT maps the *pre-fix* changed lines of non-test "
+           "Python files in up to four fix commits per advisory to the innermost enclosing function and maps paths to "
+           f"installed modules by suffix. Of {SV.get('advisories_mined')} advisories, {st.get('functions', 0)} yield "
+           f"functions (median {SV.get('functions_per_advisory', {}).get('median')}), {st.get('module_only', 0)} only "
+           f"module-level changes, {st.get('no_commit', 0)} have no fix commit, {st.get('no_python_change', 0)} change no "
+           f"Python file and {st.get('too_broad', 0)} commits exceed 25 files. Fix commits of one advisory agree with "
+           f"Jaccard {f2((SV.get('multi_commit') or {}).get('mean_jaccard'))}, a consistency, not a correctness, "
+           f"measure; {pct((SV.get('path_mapping') or {}).get('rate'))} of changed files map to an installed module.")
+    P.h2("Staged conditional exposure model")
+    P.para("Let D (deployed), I (installed), M (imported) and C (called) be the stages, Y = D∧I∧M∧C, and "
+           "E = (e3, e3b, e4, e5, g) the evidence with symbol granularity g. By the chain rule")
+    P.equation([mr("P(Y=1|E)=P(D|E)·P(I|D,E)·P(M|D,I,E)·P(C|D,I,M,E)")])
+    P.para("EVIDENT approximates each factor by conditioning only on its own level's evidence, i.e. it assumes "
+           "C ⊥ (e3, e3b) | M, e4, e5, g and M ⊥ (e4, e5) | I, e3b: P(D|e3) is 1 for production and "
+           "δ for development scope, P(I|e3) is 1, 0 or 0.8 for C, R, U, and")
+    P.equation([mr("P(M|e3b)="), mfrac([mr("∑"), msub(mr("m"), mr("i")), mr("+α")], [msub(mr("n"), mr("e3b")),
+                mr("+2α")]), mr(",   "), mr("P(C|e4,e5,g)="),
+                mfrac([mr("∑"), msub(mr("y"), mr("i")), mr("+2α"), msub(mr("p"), mr("e4"))],
+                      [msub(mr("n"), mr("e4,e5,g")), mr("+2α")])])
+    P.para("Training subsets: the M-cell for state e uses findings that are installed in production with L3b = e and "
+           "known import label m (runtime import trace); the C-cell uses only findings whose package was imported "
+           "(m = 1). Cells back off to the L4 marginal p_e4, then to the stage prior; missing evidence uses the "
+           "marginal of its level, inconclusive evidence its own cell; L5 O sets P(C) = 1. With α = 1 and "
+           f"δ = 0.05 (a heuristic; sensitivity in §5.4) the model has {EV['n_parameters']['evident']} rates "
+           "(supplement S13). Because the product of calibrated factors need not be calibrated, all reported "
+           "calibration is measured on the final product. Probabilities can be re-targeted to a known deployment "
+           "prevalence by prior correction [28], which assumes label shift (P(E|Y) unchanged); under covariate or "
+           "concept shift, e.g. a different application architecture, it can fail.")
+    P.h2("Remediation with a resolver in the loop")
+    P.para("For each package in the scope (vulnerable packages and constraint-interacting parents/children) EVIDENT "
+           "selects one of at most k candidates (current, first version fixing the current findings, first version "
+           "with no known advisory, latest in the same minor and major series, latest), restricted to versions with a "
+           "wheel installable on the target. The CP-SAT [25] model is")
+    P.equation([mr("min "), mnary("∑", [mr("p,v")], None,
                 [msub(mr("x"), mr("p,v")), mr("("), mnary("∑", [mr("a∈A(p,v)")], None,
-                 [msub(mr("w"), mr("a")), msub(mr("P"), mr("a"))]), mr("+"), mr("λ"), mr("·"),
-                 mr("Cost"), mr("(p,v)"), mr(")")])])
-    P.para("subject to exactly one version per package and, for every candidate u of a package q, the PyPI "
-           "`requires_dist` constraints of q@u on the other packages (evaluated for the target environment). A(p,v) "
-           "are advisories affecting p@v, including ones that a candidate would newly introduce (weighted by the "
-           "package's stage prior); w is the CVSS score divided by 10, doubled for KEV entries; P is the calibrated "
-           "exposure probability; Cost combines a change penalty, semantic-version distance and a penalty for direct "
-           "dependencies. The solution is passed to the uv resolver in metadata-only mode, with the original pins as "
-           "preferences and the plan as constraints; if resolution fails, the assignment is excluded by a no-good cut "
-           "and the model is re-solved. Sweeping λ yields the risk/cost Pareto front. The re-resolved pins are "
-           "scanned again, so EVIDENT reports the *realised* residual risk and the changes the resolver made beyond "
-           "the plan.")
-    P.h2("Which uncertain findings matter?")
-    P.para("For each finding with 0.05 < P < 0.95 EVIDENT re-solves the model with P set to 0 and to 1. The finding "
-           "is *decision-critical* if either changes the optimal plan, and its expected value of perfect information is")
-    P.equation([mr("EVPI="), mr("P·"), mr("["), msub(mr("J"), mr("1")), mr("("), msup_star(), mr(")"),
-                mr("−"), msub(mr("J"), mr("1")), mr("("), msub(mr("x"), mr("1")), mr(")]"), mr("+"),
-                mr("(1−P)·"), mr("["), msub(mr("J"), mr("0")), mr("("), msup_star(), mr(")"), mr("−"),
-                msub(mr("J"), mr("0")), mr("("), msub(mr("x"), mr("0")), mr(")]")])
-    P.para("where J_s is the objective when the finding's exposure is s, x* the current plan and x_s the plan that is "
-           "optimal under s. Ranking by EVPI tells developers which few findings to triage manually.")
+                 [msub(mr("w"), mr("a")), msub(mr("P"), mr("a"))]), mr("+λ·"), mr("c(p,v)"), mr(")")])])
+    P.para("subject to one version per package and the target-evaluated `requires_dist` constraints of every "
+           "candidate. w_a = CVSS/10 (0.5 if absent) × 2 for KEV entries; advisories add up; newly introduced "
+           "advisories use the package's stage prior; c(p,v) = 0 for the current version, else 1 + s + 0.5·[direct], "
+           "s = 2/0.7/0.2 for a major/minor/patch change; λ = 0.1, k = 6. The loop (1) solves, (2) resolves with uv "
+           "(`--no-build`, original pins preferred, same target), (3) on failure adds a no-good cut excluding exactly "
+           "the failed assignment and repeats (at most 6 times), (4) re-scans the realised pins. Results are optimal "
+           "only within the candidate set and model; because a cut removes one assignment while a failure is usually "
+           "caused by a subset of it, the loop can exhaust its iterations before finding a resolvable plan. Plans are "
+           "checked at three levels: L1 resolution, L2 every symbol the application references in a changed package "
+           "still resolves, L2b its signature stays compatible (no new required or removed parameters); L3, running the "
+           "application's tests, is not evaluated.")
 
-    # ---------------------------------------------------------------- 4 Evaluation design
+    # ---------------------------------------------------------------- 4
     P.h1("Evaluation Design")
-    P.para("We answer five research questions. **RQ1**: how much do version-matched findings overstate exposure in "
-           "real Python applications? **RQ2**: are EVIDENT's exposure probabilities accurate and calibrated, also when "
-           "evidence is missing? **RQ3**: does evidence-weighted optimisation reduce exposure with fewer changes than "
-           "conventional strategies? **RQ4**: do plans survive resolution, and how far does the realised environment "
-           "drift from the plan? **RQ5**: which evidence levels contribute most?")
-    P.para(f"**EVIDENT-Bench.** Ground truth requires execution. For {EV['n_packages']} widely used pure-Python "
-           "packages at vulnerable versions (e.g. Werkzeug 2.2.2, pypdf 3.9.0, Tornado 6.3.2, sqlparse 0.4.3, Django "
-           "4.1.3) we installed the exact version in an isolated virtual environment, mined vulnerable symbols, and "
-           "traced benign offline API probes; a probe *triggers* an advisory if it executes one of its symbols. For each "
-           f"of the {EV['n_advisories']} triggerable advisories we generated 16 applications: nine exposure patterns "
-           "(direct call, wrapper module, import alias, dictionary dispatch, computed getattr, method, callback, "
-           "decorator registry, transitive through a helper library) and seven non-exposure patterns (dead code, safe "
-           "API, import only, not imported, never-taken guarded branch, test-only use, transitive safe API). The label "
-           "is whether the production entry point executes a vulnerable symbol; L5 comes from running the "
-           "application's test file, which covers the entry point for a seeded 50% of applications. This yields "
-           f"{EV['n_rows']} pairs ({pct(EV['label_rate'])} exposed). We evaluate with leave-one-package-out "
-           "cross-validation and, separately, a time split (training on advisories published up to 2024, testing on "
-           "2025–2026 advisories).")
-    P.para(f"**Real-world corpus.** We collected {n_snap} snapshots of open-source Python applications (GitHub "
-           "repositories with web-application topics or well-known self-hosted applications, created before 2023, "
-           "with a committed lockfile), taking the release closest to June 2023 or the default branch at that date. "
-           "Only data were downloaded: lockfiles, manifests, source archives and wheel files, none of which were "
-           "executed. Advisories are from the 2026-11-12 OSV snapshot, i.e. we ask how a scan today would judge the "
-           "historical environment.")
-    P.para("**Baselines.** For RQ2: version matching (SCA behaviour), CORAL-style fixed coefficients (reachable 1.0, "
-           "unknown 0.5, unreachable 0.1) [3], a CAPE-style weighted evidence score with redistribution of missing "
-           "weights [5], logistic regression on one-hot evidence (with and without isotonic calibration), and CVSS- or "
-           "EPSS-only ranking. For RQ3: minimal fixing version per package (pip-audit style), latest release, "
-           "upgrade-all with uv, and the same optimiser with version-match (KEVGraph-like [6]), CORAL-style and "
-           "CAPE-style weights; all plans are verified by the same resolver. CORAL, CAPE and KEVGraph target other "
-           "ecosystems or are not available as tools, so we re-implement their weighting schemes inside EVIDENT; the "
-           "comparison therefore isolates the weighting, not their full systems.")
-    P.para("**Metrics.** Brier score [26], expected calibration error (ECE, 10 bins) [27], log-loss and AUC for "
-           "probabilities; P@K, NDCG@K and average precision for per-package rankings by risk P·w; resolution "
-           "success, packages changed, major-version bumps, residual expected risk (under EVIDENT's probabilities and "
-           "under version matching), residual statically-confirmed findings and unplanned changes for remediation.")
-    P.para("**Setup.** All experiments ran on a laptop (Intel Core i7-13650HX, 14 cores, 16 GB RAM, NVMe SSD, "
-           "Windows 11, Python 3.11, uv 0.13, OR-Tools CP-SAT with 8 workers). I/O-bound work (PyPI, OSV, GitHub) "
-           "used thread pools; analyses ran in isolated processes with two concurrent workers to stay within memory.")
+    sf, la = EV["sample_flow"], EV["leakage_audit"]
+    P.para("**RQ1** How much do version-matched findings overstate exposure in real applications? **RQ2** How does the "
+           "reachability analysis compare with call-graph tools? **RQ3** Are exposure probabilities calibrated and "
+           "robust? **RQ4** Do verified plans resolve, stay compatible, and does calibration change them? Table 3 maps "
+           "experiments to data.")
+    pcN = (T.get("pareto_common") or {}).get("projects", 0)
+    candN = (PH.get("candidates") or {}).get("6", {}).get("n", 0)
+    P.table(["Experiment", "Data", "Units"],
+            [["RQ1 exposure classes", "real-world corpus", f"{n_snap} applications, {n_find} findings"],
+             ["RQ2 reachability", "EVIDENT-Bench, 1 advisory per package × 16 patterns",
+              f"{CG.get('PyCG', {}).get('analysed', 0) + CG.get('PyCG', {}).get('failed', 0)} applications"],
+             ["RQ2 refutation safety", "EVIDENT-Bench", f"{EV['n_rows']} pairs"],
+             ["RQ3 calibration", "EVIDENT-Bench", f"{EV['n_rows']} pairs, {EV['n_advisories']} advisories, "
+              f"{EV['n_packages']} packages"],
+             ["RQ4 remediation", "resolvable real-world snapshots", f"{n_ok} applications"],
+             ["RQ4 fronts / sensitivity", "resolvable snapshots with findings / first 25",
+              f"{pcN} / {candN} applications"]],
+            "Experiment-to-dataset mapping (findings of one application are not independent; the unit for statistics "
+            "on real data is the application).", widths=[1900, 2900, 2200], align=["left", "left", "left"], font_pt=7.5)
+    P.para(f"**EVIDENT-Bench.** For {EV['n_packages']} pure-Python packages at vulnerable versions we installed the exact "
+           "version in an isolated environment and traced benign offline API probes; a probe *triggers* an advisory if "
+           f"it executes a mined symbol. Each of the {sf['triggerable_advisories']} triggerable advisories yields 16 "
+           f"applications (9 exposure, 7 non-exposure patterns); {sf['skipped_no_safe_probe']} were not generated because "
+           f"{sf['advisories_without_safe_probe']} advisories lack a non-triggering probe, leaving {sf['final']} pairs "
+           f"({pct(EV['label_rate'], 1)} exposed). The label is whether the production entry point executes a vulnerable "
+           "symbol; L5 comes from a separate run of a test file that calls the entry point for a seeded half of the "
+           f"applications. L5 agrees with the label in only {pct(la['l5_agrees_with_label'])} of pairs, but to exclude "
+           "leakage the primary *static* setting omits L5. Validation is leave-one-package-out (all advisories of a "
+           "package held out together), leave-one-pattern-out and a time split; 95% CIs use 1,000 package-grouped "
+           "bootstrap resamples. ECE uses 10 equal-width bins, adaptive ECE 10 equal-mass bins.")
+    P.para(f"**Real-world corpus.** {RN.get('collected', n_snap)} open-source Python applications were collected "
+           "(web-application topics or well-known self-hosted applications, created before 2023, committed lockfile), "
+           "each at the release closest to June 2023. Applications were processed in a fixed lexicographic order of "
+           "repository identifier, which is independent of outcome; within the compute budget of this revision (one laptop; "
+           f"resolver verification dominates cost) the full pipeline completed on {n_snap}, "
+           f"{RN.get('timeouts', 0)} exceeded the 40-minute per-application budget and {RN.get('not_run', 0)} were not "
+           f"processed. All real-world statistics are over the {n_snap} completed applications. The study is "
+           "retrospective: 2023 environments judged with the 2026-11-12 advisory snapshot.")
+    P.para("**Baselines.** Probabilities: version match, CORAL-style coefficients (1/0.5/0.1) [3], CAPE-style weighted "
+           "score [5], naive Bayes, logistic regression and gradient boosting (isotonic). Reachability: PyCG [12] and "
+           "Jarvis [13] (published versions, Python 3.11 with the pilot's documented compatibility shims). Remediation: "
+           "minimal fix and latest per package, upgrade-all, *uv-fix* (minimum fixed versions as constraints, resolver "
+           "chooses the rest), and our optimiser with version-match, CORAL-style or calibrated weights. Weighting "
+           "schemes of CORAL, CAPE and KEVGraph are re-implemented, isolating weighting.")
 
-    # ---------------------------------------------------------------- 5 Results
+    # ---------------------------------------------------------------- 5
     P.h1("Results")
-    P.h2("RQ1: How much does version matching overstate exposure?")
-    P.para(f"Across the {n_snap} snapshots EVIDENT resolved a median of {RW['installed']['median']:.0f} installed "
-           f"packages per application ({RW['direct']['median']:.0f} direct, {RW['transitive']['median']:.0f} "
-           f"transitive) and reported {n_find} version-matched findings (median {RW['findings']['median']:.0f} per "
-           f"application); {pct(RW['transitive_findings_share']['mean'])} of the findings concern transitive "
-           f"dependencies. Figure 2 shows how the evidence classifies them: {not_inst} findings "
-           f"({pct(not_inst / tot_cls)}) concern packages that the target environment does not install, {dev_only} "
-           f"({pct(dev_only / tot_cls)}) development-only packages, {not_imp} ({pct(not_imp / tot_cls)}) packages that "
-           f"no production module imports, and {unreach} ({pct(unreach / tot_cls)}) vulnerable functions that are "
-           f"statically unreachable. In total {pct(dismissable_share)} of version-matched findings can be dismissed or "
-           f"deprioritised with explicit justification, while {reach_conf} ({pct(reach_conf / tot_cls)}) have a "
-           f"confirmed static path. The calibrated model expects {exp_exposed:.0f} of the {n_find} findings "
-           f"({pct(exp_exposed / max(n_find, 1))}) to be exposed.")
-    P.figure(FIG / "exposure_classes.png", "Exposure classes of all version-matched findings in the real-world corpus.",
-             width_cm=11.5)
-
-    P.h2("RQ2: Accuracy and calibration of exposure probabilities")
+    P.h2("RQ1: Over-estimation in real applications")
+    lb, ar = T.get("l4_breakdown", {}).get("states", {}), T.get("app_reflection", {})
+    P.para(f"The {n_snap} applications install a median of {RW['installed']['median']:.0f} packages and have {n_find} "
+           f"version-matched findings (median {RW['findings']['median']:.0f} per application; "
+           f"{pct(RW['transitive_findings_share']['mean'])} in transitive dependencies). All findings fall into one class: "
+           f"not installed for the target {C('NOT_INSTALLED')}, development-only {C('DEV_ONLY')}, not imported "
+           f"{C('NOT_IMPORTED')}, statically unreachable {C('STATICALLY_UNREACHABLE')}, import unknown "
+           f"{C('INSTALLED_UNKNOWN')}, imported with reachability unknown {C('IMPORTED_REACH_UNKNOWN')}, possibly "
+           f"reachable {C('POSSIBLY_REACHABLE')}, statically reachable {C('STATICALLY_REACHABLE')}. Thus "
+           f"{pct(dismiss / tot, 1)} are dismissed with a justification, mostly by installation and import evidence. In "
+           f"{ar.get('app_has_blocking_reflection', 0)} of {ar.get('projects', 0)} applications the application code "
+           "itself contains loader or redirector reflection, which under global scope blocks every refutation (Table 4).")
+    scb = EV.get("reflection_scopes", {})
+    scr = PH.get("scopes", {})
     rows = []
-    for m, lab in (("version_match", "Version match (SCA)"), ("coral_style", "CORAL-style coefficients"),
-                   ("cape_style", "CAPE-style weighted score"), ("logistic", "Logistic regression"),
-                   ("logistic_iso", "Logistic + isotonic"), ("evident", "**EVIDENT staged model**")):
-        d = M[m]
-        rows.append([lab, f3(d["brier"]), f3(d["ece"]), f3(d["logloss"]), f3(d["auc"]), f3(d["NDCG@5"]), f3(d["AP"])])
-    for m, lab in (("cvss_only", "CVSS-only ranking"), ("epss_only", "EPSS-only ranking")):
-        d = M[m]
-        rows.append([lab, "–", "–", "–", "–", f3(d["NDCG@5"]), f3(d["AP"])])
-    P.table(["Method", "Brier ↓", "ECE ↓", "Log-loss ↓", "AUC ↑", "NDCG@5 ↑", "AP ↑"], rows,
-            f"Exposure assessment on EVIDENT-Bench ({EV['n_rows']} pairs, leave-one-package-out). Ranking metrics are "
-            "averaged over packages; risk = probability × severity.", widths=[2300, 700, 700, 800, 700, 800, 700])
-    P.para(f"Table 3 shows that version matching is, by construction, uninformative (Brier "
-           f"{f3(M['version_match']['brier'])}). Fixed CORAL-style coefficients and the CAPE-style score improve "
-           f"ranking (AP {f3(M['coral_style']['AP'])} and {f3(M['cape_style']['AP'])}) but are poorly calibrated (ECE "
-           f"{f3(M['coral_style']['ece'])} and {f3(M['cape_style']['ece'])}). EVIDENT's staged model reaches Brier "
-           f"{f3(M['evident']['brier'])}, ECE {f3(M['evident']['ece'])} and AP {f3(M['evident']['AP'])}, on par with "
-           f"an unconstrained logistic model ({f3(M['logistic']['brier'])}) while exposing interpretable stage "
-           f"probabilities. Ranking by CVSS or EPSS alone performs close to random within an application (AP "
-           f"{f3(M['cvss_only']['AP'])} and {f3(M['epss_only']['AP'])}): severity does not tell which findings are "
-           "exposed. Figure 3 shows the reliability diagram.")
-    ts = EV["time_split"]
-    P.para(f"**Time split.** Trained on the {ts['train_advisories']} advisories published up to 2024 and tested on "
-           f"the {ts['test_advisories']} advisories of 2025–2026, EVIDENT obtains Brier "
-           f"{f3(ts['methods']['evident']['brier'])} and ECE {f3(ts['methods']['evident']['ece'])} (CORAL-style "
-           f"{f3(ts['methods']['coral_style']['brier'])}, CAPE-style {f3(ts['methods']['cape_style']['brier'])}), so "
-           "the learned verdict probabilities transfer to advisories that did not exist at training time.")
+    for s in ("global", "package", "module", "reachable"):
+        b = scb.get(s, {})
+        rows.append([s, str(b.get("refuted", "n/a")), str(b.get("false_refutations", "n/a")),
+                     str(scr.get(f"{s}_REFUTED", 0)), str(scr.get(f"{s}_UNKNOWN", 0))])
+    P.table(["Reflection scope", "Bench: refuted", "Bench: false refutations", "Real: refuted", "Real: blocked"], rows,
+            f"Refutations under nested reflection scopes (bench: {scb.get('candidates', 'n/a')} pairs without a static "
+            "path; real: findings in imported packages without a static path).",
+            widths=[1600, 1300, 1600, 1250, 1250], font_pt=7.5)
+    P.para(scopes_text(scb, scr))
+
+    P.h2("RQ2: Reachability compared with PyCG and Jarvis")
+    P.para("*Procedure.* For each tool we take its call graph and predict *exposed* iff a mined vulnerable symbol is "
+           "reachable from the application's entry module; a missing edge therefore counts as *not exposed*, which is "
+           "how a call graph must be read when used for refutation. Crashes, time-outs (180 s) and memory overruns (3 GB) are reported "
+           "separately and excluded from precision and recall; tools were installed once (no installation failures). "
+           "EVIDENT is evaluated with strong edges only and with weak edges.")
+    P.table(["Analysis", "Analysed", "Failures", "Precision", "Recall", "Exposed missed"],
+            [cg_row("PyCG"), cg_row("Jarvis"), cg_row("EVIDENT strong"), cg_row("EVIDENT strong+weak")],
+            "Reachability of mined symbols on EVIDENT-Bench applications (execution ground truth); per-pattern results "
+            "in supplement S9.", widths=[1900, 900, 900, 1000, 900, 1400], font_pt=7.5)
+    P.para(cg_text())
+
+    P.h2("RQ3: Calibration and robustness of exposure probabilities")
+    rows = []
+    for m, lab in (("version_match", "Version match"), ("coral_style", "CORAL-style"), ("cape_style", "CAPE-style"),
+                   ("naive_bayes", "Naive Bayes"), ("logistic_iso", "Logistic + iso."),
+                   ("hgb_iso", "Grad. boosting + iso."), ("evident", "**EVIDENT**")):
+        d = MS[m]
+        rows.append([lab, f"{f3(d['brier'])} {ci(m)}", f3(d["ece"]), f3(d["ace"]), f2(d["slope"]), f3(d["auc"]),
+                     f3(d.get("AP")), f3(MR[m]["brier"])])
+    P.table(["Method", "Brier [95% CI]", "ECE", "Ad. ECE", "Slope", "AUC", "AP", "Brier +L5"], rows,
+            "Exposure probabilities on EVIDENT-Bench, static setting, leave-one-package-out; last column adds L5.",
+            widths=[1650, 1550, 600, 650, 550, 600, 600, 800], font_pt=7)
+    pdl = MS["paired"]["evident-logistic_iso"]["brier"]
+    pdc = MS["paired"]["evident-coral_style"]["brier"]
+    lpo, ts, ps = EV["leave_pattern_out"], EV["time_split"], EV["prevalence_shift"]
     mi = EV["missingness"]
-    P.para(f"**Missing evidence.** In practice L4 and L5 are often unavailable. Masking each of them independently "
-           f"with probability q at test time (Figure 4), EVIDENT's ECE stays between "
-           f"{f3(min(v['evident']['ece'] for v in mi.values()))} and {f3(max(v['evident']['ece'] for v in mi.values()))}, "
-           f"while logistic regression with isotonic calibration rises to {f3(max(v['logistic_iso']['ece'] for v in mi.values()))} "
-           f"and the CAPE-style score to {f3(max(v['cape_style']['ece'] for v in mi.values()))}; at q = 0.5 EVIDENT's "
-           f"Brier score is {f3(mi['0.5']['evident']['brier'])} versus {f3(mi['0.5']['logistic_iso']['brier'])}. "
-           "An earlier version of our model that did not separate missing from inconclusive evidence degraded to "
-           "Brier 0.340 at q = 1, which motivated the distinction.")
-    P.figure(FIG / "reliability.png", "Reliability diagram on EVIDENT-Bench (5 bins).", width_cm=7.5)
-    P.figure(FIG / "missingness.png", "Calibration error when static and runtime evidence is missing.", width_cm=7.5)
-    cf = EV["analysis_confusion"]
-    P.para(f"**Analyses in isolation.** Import evidence never missed an exposed pair (recall "
-           f"{f3(cf['L3b']['recall'])}, precision {f3(cf['L3b']['precision'])}). Confirmed static paths have precision "
-           f"{f3(cf['L4']['precision'])} and recall {f3(cf['L4']['recall'])}; admitting POSSIBLE raises recall to "
-           f"{f3(cf['L4p']['recall'])}. No exposed pair was ever statically REFUTED "
-           f"(false-negative rate {f3(cf['L4_refuted_false_negative_rate'])}), so REFUTED verdicts are safe to emit as "
-           f"VEX `not_affected` on this benchmark. Runtime evidence from tests has precision {f3(cf['L5']['precision'])} "
-           f"but recall {f3(cf['L5']['recall'])}: tests miss half of the exposed paths and, through test-only usage, "
-           "also report paths that production never executes. Two analysis gaps found during development, implicit "
-           "protocol calls (`str()` invoking `__str__`) and computed `getattr` on `self`, had produced 15% false "
-           "REFUTED verdicts before they were modelled.")
+    rp = mi.get("realworld_profile", {})
+    P.para(f"EVIDENT's final probabilities are calibrated (ECE {f3(MS['evident']['ece'])}, slope "
+           f"{f2(MS['evident']['slope'])}) and statistically tied with logistic regression (ΔBrier "
+           f"{pdl['mean']:+.3f}, CI [{pdl['ci'][0]:+.3f}, {pdl['ci'][1]:+.3f}]); they beat CORAL-style coefficients "
+           f"(Δ {pdc['mean']:+.3f}, CI [{pdc['ci'][0]:+.3f}, {pdc['ci'][1]:+.3f}]). Discrimination is moderate "
+           f"(AUC {f3(MS['evident']['auc'])}) because static evidence cannot separate guarded or dead code from live "
+           "code; we claim interpretability and missing-evidence handling, not superior accuracy. Adaptive ECE is "
+           f"higher than ECE ({f3(MS['evident']['ace'])}) because equal-mass bins split the dense middle range. "
+           f"Leave-one-pattern-out gives Brier {f3(lpo['evident']['brier'])} (logistic {f3(lpo['logistic_iso']['brier'])}), "
+           f"the time split (train ≤ 2024, test 2025–2026) {f3(ts['methods']['evident']['brier'])}. Under "
+           f"advisory-correlated missingness of L4 (50%) ECE is {f3(mi['advisory']['0.5']['evident']['ece'])} vs "
+           f"{f3(mi['advisory']['0.5']['logistic_iso']['ece'])} for logistic regression, under the real-world "
+           f"missingness profile {f3(rp.get('evident', {}).get('ece'))} vs {f3(rp.get('logistic_iso', {}).get('ece'))} "
+           f"(Figure 2b). At 10% prevalence ECE rises to {f3(ps['0.1']['evident_raw']['ece'])} and prior correction "
+           f"restores {f3(ps['0.1']['evident_prior_corrected']['ece'])}. In the factorial ablation import evidence "
+           f"matters most (Brier without L3b {f3(EV['factorial'].get('L4+L5', {}).get('brier'))}, all levels "
+           f"{f3(EV['factorial'].get('L3b+L4+L5', {}).get('brier'))}).")
+    P.figure(FIG / "calibration.png", "(a) Reliability (static setting, 10 bins, 95% bootstrap intervals for EVIDENT); "
+             "(b) calibration when L4 is missing in different patterns.", width_cm=12.3)
 
-    P.h2("RQ3: Evidence-weighted remediation")
+    P.h2("RQ4: Verified remediation")
     rows = []
-    for s in S_ORDER:
+    for s, lab in (("audit_fix", "Minimal fix (pip-audit)"), ("latest", "Latest"), ("upgrade_all", "Upgrade all"),
+                   ("uv_fix", "uv-fix (resolver)"), ("vm_opt", "Optimiser, version-match w."),
+                   ("coral_opt", "Optimiser, CORAL-style w."), ("evident", "**EVIDENT** (calibrated w.)")):
         if s not in REM:
             continue
-        rows.append([S_NAME[s], pct(strat(s, "ok"), 0), f"{strat(s, 'changed'):.1f}", f"{strat(s, 'major_bumps'):.1f}",
-                     pct(strat(s, "risk_reduction_evident"), 0), pct(strat(s, "risk_reduction_vm"), 0),
-                     pct(strat(s, "confirmed_fixed"), 0), f"{strat(s, 'new_findings'):.1f}"])
-    P.table(["Strategy", "Resolves", "Changed pkgs", "Major bumps", "Exposure removed", "Findings risk removed",
-             "Confirmed fixed", "New findings"], rows,
-            f"Remediation on the {n_ok} resolvable snapshots (means per project; λ = 0.1). Exposure removed uses "
-            "EVIDENT's probabilities, findings risk uses version matching (every finding counts).",
-            widths=[2300, 750, 750, 700, 800, 800, 800, 700], font_pt=7)
+        k = int(round(S(s, "ok") * Sn(s)))
+        rows.append([lab, frac(k, Sn(s)), f"{S(s, 'changed'):.1f}", f"{S(s, 'major_bumps'):.1f}",
+                     pct(S(s, "findings_removed")), pct(S(s, "confirmed_fixed")), cl(s, "level2_ok"), cl(s, "level2b_ok")])
+    P.table(["Strategy", "L1 resolves", "Changed", "Major", "Findings removed", "Confirmed fixed", "L2 symbols",
+             "L2b signat."], rows,
+            f"Remediation on {n_ok} resolvable applications. Changed/major/removed: means over resolved plans; L2/L2b: "
+            "resolved plans with every referenced symbol (and signature) intact. Per-project results in supplement S11.",
+            widths=[1900, 750, 650, 550, 850, 850, 750, 700], font_pt=7)
     P.para(remediation_text())
-    P.figure(FIG / "pareto.png", "Risk/cost trade-off: mean packages changed versus residual risk for a sweep of "
-             "λ, with calibrated and with version-match weights.", width_cm=7.5)
+    P.para(sensitivity_text())
+    cs = case_study_text()
+    if cs:
+        P.para(cs)
 
-    P.h2("RQ4: Do plans hold after resolution?")
-    P.para(closed_loop_text())
-
-    P.h2("RQ5: Which evidence matters?")
-    P.table(["Variant", "Brier", "ECE", "AUC", "AP"],
-            [["EVIDENT (all evidence)", f3(M["evident"]["brier"]), f3(M["evident"]["ece"]), f3(M["evident"]["auc"]),
-              f3(M["evident"]["AP"])],
-             ["without L5 runtime", f3(M["evident_noL5"]["brier"]), f3(M["evident_noL5"]["ece"]),
-              f3(M["evident_noL5"]["auc"]), f3(M["evident_noL5"]["AP"])],
-             ["without L4 static", f3(M["evident_noL4"]["brier"]), f3(M["evident_noL4"]["ece"]),
-              f3(M["evident_noL4"]["auc"]), f3(M["evident_noL4"]["AP"])],
-             ["without L3b import", f3(M["evident_noL3b"]["brier"]), f3(M["evident_noL3b"]["ece"]),
-              f3(M["evident_noL3b"]["auc"]), f3(M["evident_noL3b"]["AP"])],
-             ["fixed coefficients in staged structure", f3(M["evident_L4only_fixed"]["brier"]),
-              f3(M["evident_L4only_fixed"]["ece"]), f3(M["evident_L4only_fixed"]["auc"]),
-              f3(M["evident_L4only_fixed"]["AP"])]],
-            "Ablation on EVIDENT-Bench (leave-one-package-out).", widths=[3000, 900, 900, 900, 900])
-    P.para(f"Removing import evidence hurts most (AUC {f3(M['evident_noL3b']['auc'])} vs "
-           f"{f3(M['evident']['auc'])}): it is the cheapest analysis and has perfect recall. Runtime evidence adds "
-           f"discrimination (AUC {f3(M['evident_noL5']['auc'])} without it) and static evidence improves AP from "
-           f"{f3(M['evident_noL4']['AP'])} to {f3(M['evident']['AP'])}. Keeping the staged structure but replacing "
-           f"learned probabilities with fixed coefficients raises Brier to {f3(M['evident_L4only_fixed']['brier'])}: "
-           "calibration, not structure alone, produces reliable probabilities. For remediation, Table 4 and Figure 5 "
-           "show the effect of replacing calibrated weights by version-match, CORAL-style or CAPE-style weights.")
-
-    # ---------------------------------------------------------------- 6 Discussion
-    P.h1("Discussion and Threats to Validity")
-    P.para("**Implications.** For Python projects, the cheapest evidence (target-environment installation and "
-           "imports) already removes a large share of findings with an auditable justification, and calibrated "
-           "probabilities let a solver trade residual risk against change cost in units a developer can check. The "
-           "EVPI ranking turns the remaining uncertainty into a short triage list instead of a long report.")
-    P.para("**Construct validity.** Exposure is defined as execution of a function changed by the fix; a function may "
-           "execute without the vulnerable condition being met, so labels upper-bound exploitability. Mined symbols "
-           "can include refactored but harmless functions, and vulnerabilities in C extensions are invisible to Python "
-           "tracing; we therefore excluded such advisories from the benchmark and report their L4 as missing in the "
-           "real-world study.")
-    P.para("**Internal validity.** Benchmark applications are generated from 16 patterns over real vulnerable "
-           "libraries; real applications contain other idioms (framework dispatch, plugins). The pattern mix sets the "
-           "class prior, so absolute probabilities transfer only to the extent that the verdict-conditional rates "
-           "transfer; the time split and the missing-evidence experiment probe this, but a labelled sample of real "
-           "applications remains future work. Baselines re-implement weighting schemes of CORAL, CAPE and KEVGraph "
-           "rather than running those systems.")
-    P.para("**External validity.** The corpus contains popular open-source applications with committed lockfiles; "
-           "closed-source or library projects may differ. Resolution used a Linux x86-64 target and never built "
-           "source distributions, so packages without wheels were kept at their pinned version. Build and test "
-           "execution of the remediated applications, which can reveal semantic breakage, is supported by the "
-           "framework but was not part of this study; tests are known to be weak oracles for dependency updates [14].")
-
-    # ---------------------------------------------------------------- 7 Conclusion
+    # ---------------------------------------------------------------- 6/7
+    P.h1("Threats to Validity")
+    P.para("*Construct.* Exposure means execution of a function changed by the fix (A2); it upper-bounds "
+           "exploitability. Manual validation of mined symbols is pending (protocol and 40-advisory sample in the "
+           "artifact). *Internal.* Benchmark applications follow 16 patterns that fix the prevalence; L5 is a simulated "
+           "test run; baselines re-implement weighting schemes; PyCG and Jarvis ran with compatibility shims on "
+           "Python 3.11. *External.* Popular open-source applications with lockfiles; the real-world results cover "
+           f"{n_snap} of {RN.get('collected', n_snap)} collected applications (an outcome-independent lexicographic "
+           "prefix), so per-application rates carry wide intervals; one target platform; source "
+           "distributions are never built. Compatibility is shown at Levels 1, 2 and 2b only; symbol resolution is not "
+           "behavioural compatibility, and tests were not run because that executes third-party code [14].")
     P.h1("Conclusion")
-    P.para("EVIDENT treats a vulnerability finding as a hypothesis that needs evidence before it becomes an upgrade. "
-           "Graded three-valued evidence and a staged model calibrated on runtime ground truth produce exposure "
-           "probabilities that remain calibrated when evidence is missing, and a resolver-verified optimiser turns "
-           "them into plans that resolve where independent upgrades fail and change far fewer packages than upgrading "
-           "everything. On real projects, the remaining limit is the discriminative power of static evidence: when "
-           "most findings are only possibly reachable, weighting barely changes the plan. Future work therefore "
-           "targets stronger evidence, namely framework-aware entry points, exploit-oriented test generation as an L5 "
-           "signal, and a labelled corpus of real applications.")
+    P.para("EVIDENT makes exposure evidence explicit, conditional and auditable. On execution-labelled data its "
+           "probabilities are calibrated and robust to correlated missing evidence, and its analysis refuted no "
+           "exposed code. On real applications conservative analysis rarely refutes reachability because applications "
+           "are reflective, so evidence mainly justifies dismissing findings and calibrated weights seldom change "
+           "plans; verified plans nevertheless resolve on every resolvable application, which per-package fixes do not. Scoped reflection and "
+           "framework-aware or exploit-oriented evidence are the most promising ways to let calibration change "
+           "decisions.")
     P.h_unnumbered("Data Availability")
     P._first = True
-    P.para("The implementation, EVIDENT-Bench (generator, probes, traces and labels), mined vulnerable symbols, the "
-           "real-world snapshot list and all scripts used to produce the tables and figures are available in the "
-           "accompanying repository.")
+    P.para(f"Code, EVIDENT-Bench, mined symbols, snapshot list, intelligence snapshot dates, scripts and the online "
+           f"supplement: {REPO}.")
     P.references(REFS)
     out = HERE / "EVIDENT_paper.docx"
     P.save(out)
     print("wrote", out)
 
 
-def msup_star():
-    from docxkit import msup
-    return msup(mr("x"), mr("*"))
+def cg_row(name):
+    d = CG.get(name, {})
+    return [name, str(d.get("analysed", "n/a")), str(d.get("failed", "n/a")), f3(d.get("precision")),
+            f3(d.get("recall")), f"{d.get('missed_exposed', 'n/a')}/{d.get('exposed', 'n/a')}"]
+
+
+def cg_text() -> str:
+    pyc, jar = CG.get("PyCG", {}), CG.get("Jarvis", {})
+    evs, evw = CG.get("EVIDENT strong", {}), CG.get("EVIDENT strong+weak", {})
+    cf = EV["analysis_confusion"]["L4_refuted"]
+    return (f"PyCG misses {pyc.get('missed_exposed')} of {pyc.get('exposed')} exposed applications it analysed and "
+            f"Jarvis {jar.get('missed_exposed')} of {jar.get('exposed')}; both lose paths through re-exported classes, "
+            "computed `getattr` and dynamic dispatch inside the library (supplement S9). EVIDENT's strong edges have "
+            f"precision {f3(evs.get('precision'))} and recall {f3(evs.get('recall'))}; weak edges raise recall to "
+            f"{f3(evw.get('recall'))} at precision {f3(evw.get('precision'))}. The graph tools are more precise on "
+            "non-exposed patterns, but used for refutation they would wrongly dismiss exposed code. On the whole "
+            f"benchmark {cf['exposed']} of {cf['n']} REFUTED verdicts were exposed: no false refutation on the "
+            "supported subset, which is evidence, not proof, of soundness.")
+
+
+def scopes_text(scb, scr) -> str:
+    g, r = scb.get("global", {}), scb.get("reachable", {})
+    bench = (f"leaves benchmark refutations unchanged at {g.get('refuted')}" if g.get('refuted') == r.get('refuted')
+             else f"increases benchmark refutations from {g.get('refuted')} to {r.get('refuted')}")
+    return (f"Narrowing the scope from global to reachable-module {bench} ({r.get('false_refutations')} false), "
+            f"and raises real-world refutations from {scr.get('global_REFUTED', 0)} to "
+            f"{scr.get('reachable_REFUTED', 0)}. Narrower scopes rest "
+            "on a stronger assumption (reflection affects only code it can import or reach), so EVIDENT reports the scope "
+            "with every refutation and uses the global scope by default.")
 
 
 def remediation_text() -> str:
-    ev, vm, up, au, la = "evident", "vm_opt", "upgrade_all", "audit_fix", "latest"
-    s = (f"Table 4 compares the strategies. Upgrading everything removes "
-         f"{pct(strat(up, 'risk_reduction_evident'), 0)} of expected exposure but changes {strat(up, 'changed'):.1f} "
-         f"packages per project, {strat(up, 'major_bumps'):.1f} of them across major versions, and introduces "
-         f"{strat(up, 'new_findings'):.1f} new findings. Upgrading each vulnerable package independently resolves "
-         f"in only {pct(strat(au, 'ok'), 0)} (minimal fix) and {pct(strat(la, 'ok'), 0)} (latest) of projects, "
-         "because independent upgrades violate the constraints of other installed packages. The optimiser, which "
-         "encodes these constraints and is verified by the resolver, produced a resolvable plan in "
-         f"{pct(strat(ev, 'ok'), 0)} of projects; with calibrated weights it changes {strat(ev, 'changed'):.1f} "
-         f"packages ({strat(ev, 'major_bumps'):.1f} major bumps), removes {pct(strat(ev, 'risk_reduction_evident'), 0)} "
-         f"of expected exposure and fixes {pct(strat(ev, 'confirmed_fixed'), 0)} of the findings with a confirmed "
-         f"static path. With version-match weights the same optimiser changes {strat(vm, 'changed'):.1f} packages and "
-         f"removes {pct(strat(vm, 'risk_reduction_evident'), 0)}. ")
+    ev = "evident"
+    fl = {k: v for k, v in T.get("failures", {}).get(ev, {}).items() if k != "none"}
+    t_uv, t_vm, t_fr = test("uv_fix", "changed"), test("vm_opt", "changed"), test("vm_opt", "findings_removed")
+    rc = T.get("remediation_ci", {})
+    s = (f"Independent per-package upgrades resolve in {frac(int(round(S('audit_fix', 'ok') * Sn('audit_fix'))), Sn('audit_fix'))} "
+         f"(minimal fix) and {frac(int(round(S('latest', 'ok') * Sn('latest'))), Sn('latest'))} (latest) applications; "
+         f"upgrade-all always resolves but changes {S('upgrade_all', 'changed'):.1f} packages and keeps the referenced "
+         f"API in only {cl('upgrade_all', 'level2_ok')}. EVIDENT plans resolve in {frac(ev_ok_k, Sn(ev))}")
+    if fl:
+        s += " (failures: " + ", ".join(f"{k} {v}" for k, v in sorted(fl.items(), key=lambda kv: -kv[1])) + ")"
+    s += f" after {S(ev, 'iterations'):.1f} iterations on average"
+    if rc.get("evident_changed"):
+        s += f"; they change {S(ev, 'changed'):.1f} packages (95% CI {rc['evident_changed']})"
+    s += (f". The resolver adds {S(ev, 'unplanned_changes'):.1f} unplanned changes ({S(ev, 'unplanned_major'):.1f} "
+          f"major, {S(ev, 'new_findings_from_unplanned'):.1f} new findings), close to the drift of re-resolving the "
+          f"untouched environment ({T['baseline_drift']['mean']:.1f}); the realised estimated risk differs from the "
+          f"plan's by {S(ev, 'objective_gap'):+.2f}. ")
+    if t_uv:
+        s += (f"uv-fix changes a median of {t_uv['other']:.0f} packages vs {t_uv['evident']:.0f} for EVIDENT "
+              f"(Wilcoxon p = {t_uv['p']:.3f}, n = {t_uv['n']}). ")
+    if t_vm and t_fr:
+        s += (f"Against the same optimiser with version-match weights, calibrated weights change {t_vm['evident']:.0f} "
+              f"vs {t_vm['other']:.0f} packages (median; p = {t_vm['p']:.3f}) and remove {pct(t_fr['evident'])} vs "
+              f"{pct(t_fr['other'])} of findings (p = {t_fr['p']:.3f}). ")
     pc = T.get("pareto_common") or {}
-    pd = T.get("pareto_vs_discrimination") or {}
     if pc:
-        gain = pc["mean_auc_gain"]
-        if abs(gain) < 0.01:
-            verdict = ("the two fronts are practically indistinguishable (mean difference in area under the front "
-                       f"{gain:+.3f}; calibrated weights better on {pc['better']} and worse on {pc['worse']} of "
-                       f"{pc['projects']} projects)")
-        elif gain > 0:
-            verdict = (f"calibrated weights lower the front by {gain:.3f} on average (better on {pc['better']}, worse "
-                       f"on {pc['worse']} of {pc['projects']} projects)")
-        else:
-            verdict = (f"calibrated weights raise the front by {-gain:.3f} on average (better on {pc['better']}, worse "
-                       f"on {pc['worse']} of {pc['projects']} projects)")
-        s += ("To compare weightings fairly, Figure 5 scores the plans of both weightings for a sweep of λ with the "
-              f"same yardstick, the calibrated expected exposure validated in RQ2: {verdict}. ")
-        s += (f"The median per-project difference is {pc['median_auc_gain']:+.3f}, so the mean is driven by a few "
-              "projects. ") if abs(pc["median_auc_gain"] - pc["mean_auc_gain"]) > 0.01 else ""
-        if pd:
-            stats_txt = (f"Spearman ρ = {pd['spearman_rho']:.2f}, p = {pd['p']:.2f}, n = {pd['n']}; mean difference "
-                         f"{pd['gain_high_disc']:+.3f} above and {pd['gain_low_disc']:+.3f} below the median share")
-            if pd["p"] < 0.05 and pd["spearman_rho"] > 0:
-                s += ("The benefit grows with how discriminative the evidence is, measured as the share of findings the "
-                      f"evidence classifies decisively ({stats_txt}). ")
-            else:
-                s += ("We hypothesised that the benefit would grow with the share of findings that the evidence classifies "
-                      f"decisively, but the data do not support this ({stats_txt}). ")
-        s += ("In the current corpus most findings are only *possibly* reachable, so calibrated probabilities are "
-              "similar across findings and weighting by them approaches counting. The practical benefit of evidence in "
-              "remediation is therefore less in the choice of plan than in what accompanies it: every finding that is "
-              "left unfixed carries a probability and, where decisive, a VEX justification.")
+        s += (f"Scored with one yardstick over a λ sweep, both weightings trace nearly the same front (mean area "
+              f"difference {pc['mean_auc_gain']:+.3f}, median {pc['median_auc_gain']:+.3f}; calibrated better in "
+              f"{pc['better']}, worse in {pc['worse']} of {pc['projects']} applications). ")
+    pdisc = T.get("pareto_vs_discrimination") or {}
+    if pdisc:
+        s += (f"We hypothesised that calibration helps more when evidence is decisive; the data "
+              f"{'support' if pdisc['p'] < 0.05 and pdisc['spearman_rho'] > 0 else 'do not support'} this "
+              f"(Spearman ρ = {pdisc['spearman_rho']:.2f}, p = {pdisc['p']:.2f}, n = {pdisc['n']}). ")
+    s += "Calibration changes plans only when probabilities differ across findings, which they rarely do today."
     return s
 
 
-def closed_loop_text() -> str:
-    BD = T["baseline_drift"]
-    ev = "evident"
-    return (f"Re-resolving the unchanged environments with the original pins as preferences already changed a median "
-            f"of {BD['median']:.0f} packages (mean {BD['mean']:.1f}) because pins were yanked, lacked wheels for the "
-            f"target or conflicted with newer metadata. Of the {n_snap} snapshots, {n_ok} resolved in metadata-only "
-            f"mode. EVIDENT plans were verified in {pct(strat(ev, 'ok'), 0)} of them, after {strat(ev, 'iterations'):.1f} "
-            f"solver/resolver iterations on average (counter-example cuts), taking {strat(ev, 'seconds'):.0f} s per "
-            f"project. On average the resolver made {strat(ev, 'unplanned_changes'):.1f} changes beyond the plan "
-            f"(compared with {BD['mean']:.1f} when re-resolving without any plan), and "
-            f"{strat(ev, 'plan_not_realised'):.1f} planned versions were not realised; the realised environment, not "
-            f"the plan, is therefore what EVIDENT re-scans and reports. Of {DEC['uncertain_total']} uncertain findings in the "
-            f"resolvable projects, only {DEC['critical_total']} ({pct(DEC['critical_total'] / max(DEC['uncertain_total'], 1))}) "
-            f"would change the optimal plan if resolved (median {DEC['median_critical']:.0f} per project); these are "
-            "the findings worth manual triage.")
+def sensitivity_text() -> str:
+    dp, wt, cd = PH.get("devprior", {}), PH.get("weights", {}), PH.get("candidates", {})
+    dec = T.get("decision", {})
+    parts = []
+    if dp:
+        lo, hi = dp.get("0.0", {}), dp.get("0.25", {})
+        parts.append(f"Varying δ from 0 to 0.25 changes the expected number of exposed findings from "
+                     f"{lo.get('expected_exposed', 0):.0f} to {hi.get('expected_exposed', 0):.0f} and leaves plans "
+                     f"{pct(hi.get('mean_plan_jaccard_vs_default'))} identical (Jaccard)")
+    if wt:
+        parts.append(f"KEV multipliers 1 and 3 give plans identical to the default in "
+                     f"{wt.get('kev1_sum', {}).get('identical_plans')} and {wt.get('kev3_sum', {}).get('identical_plans')} "
+                     f"of {wt.get('kev2_sum', {}).get('projects')} applications, max-aggregation in "
+                     f"{wt.get('kev2_max', {}).get('identical_plans')}")
+    if cd:
+        parts.append("candidate limits 6/8/12/20 resolve " + "/".join(pct(cd.get(k, {}).get("ok")) for k in
+                                                                     ("6", "8", "12", "20"))
+                     + f" of {cd.get('6', {}).get('n')} applications"
+                     + (" with identical plans (mean "
+                        f"{cd.get('6', {}).get('changes', 0):.1f} changes), so six versions per package already cover "
+                        "the useful candidates"
+                        if len({round(cd.get(k, {}).get('changes') or -1, 6) for k in ("6", "8", "12", "20")}) == 1
+                        else " with mean changes " + "/".join(f"{cd.get(k, {}).get('changes', 0):.1f}"
+                                                               for k in ("6", "8", "12", "20"))))
+    s = ("**Sensitivity.** " + "; ".join(parts) + ".") if parts else ""
+    if dec:
+        s += (f" **Decision sensitivity.** Setting each uncertain finding's probability to 0 or 1 changes the optimal "
+              f"plan for only {dec.get('critical_total')} of {dec.get('uncertain_total')} findings (median "
+              f"{dec.get('median_critical', 0):.0f} per application): the short list worth manual triage.")
+    return s
+
+
+def case_study_text() -> str:
+    best = None
+    for d in sorted((RES / "realworld").glob("*/result.json")):
+        r = json.loads(d.read_text("utf8"))
+        ev = (r.get("strategies") or {}).get("evident", {})
+        if not ev.get("ok"):
+            continue
+        for f in json.loads((d.parent / "findings.json").read_text("utf8")):
+            e4 = f["evidence"].get("L4", {})
+            wit = (e4.get("detail") or {}).get("witness") or []
+            if e4.get("state") == "CONFIRMED" and len(wit) >= 3 and f["package"] in ev.get("planned", {}):
+                sc = (f.get("cvss") or 0) + 0.1 * len(wit)
+                if best is None or sc > best[0]:
+                    best = (sc, r, f, ev)
+    if not best:
+        return ""
+    _, r, f, ev = best
+    det = f["evidence"]["L4"]["detail"]
+    wit = det["witness"]
+    path = " → ".join([wit[0].replace("__app__.", ""), "…", wit[-1]] if len(wit) > 3 else wit)
+    comp = (PH.get("compat_per_project", {}).get(r["id"], {}) or {}).get("evident", {})
+    return (f"**Case study.** In {r['meta']['repo']} ({r['meta']['tag'][:12]}), {f['package']} {f['version']} is "
+            f"affected by {f['advisory']} (CVSS {f.get('cvss')}); it is installed for production and imported, and "
+            f"the fix commit yields {len(det.get('symbols', []))} vulnerable function{'s' if len(det.get('symbols', [])) != 1 else ''} reached through strong edges "
+            f"({path}), so P = {f3(f.get('p_exposed'))}. The verified plan upgrades it to {ev['planned'][f['package']]} "
+            f"with {len(ev['planned']) - 1} other package{'s' if len(ev['planned']) - 1 != 1 else ''}; the resolver changes {ev.get('unplanned_changes')} more; the "
+            f"re-scan leaves {ev.get('residual_findings')} of {r['original']['residual_findings']} findings; L2/L2b checks "
+            f"{'pass' if comp.get('level2b_ok') else 'flag ' + str(comp.get('missing_pkgs', 0) + comp.get('signature_pkgs', 0)) + ' package(s)'} "
+            "(supplement S12).")
 
 
 if __name__ == "__main__":

@@ -21,7 +21,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.007735154394299288,
+  "p_exposed": 0.006445961995249406,
   "exposure_class": "DEV_ONLY",
   "vex": {
    "state": "in_triage"
@@ -71,7 +71,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "black.cache.Cache.read",
@@ -82,7 +82,13 @@
       "black.mode.Mode.get_cache_key"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -205,7 +211,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.007735154394299288,
+  "p_exposed": 0.006445961995249406,
   "exposure_class": "DEV_ONLY",
   "vex": {
    "state": "in_triage"
@@ -255,13 +261,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "black.strings.lines_with_leading_tabs_expanded"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -790,7 +802,8 @@
       "telegram.utils.request.<module>",
       "certifi.<module>"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -972,7 +985,8 @@
       "telegram.utils.request.<module>",
       "certifi.<module>"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -1266,7 +1280,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.012876612916875894,
+  "p_exposed": 0.010730510764063244,
   "exposure_class": "DEV_ONLY",
   "vex": {
    "state": "in_triage"
@@ -1316,13 +1330,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "cryptography.hazmat.backends.openssl.backend.Backend.serialize_key_and_certificates_to_pkcs12"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -1531,7 +1551,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.012876612916875894,
+  "p_exposed": 0.010730510764063244,
   "exposure_class": "DEV_ONLY",
   "vex": {
    "state": "in_triage"
@@ -1581,13 +1601,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "cryptography.hazmat.backends.openssl.backend.Backend._load_pkcs7_certificates"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -1676,12 +1702,13 @@
       "cryptography.__about__.<module>"
      ],
      "witness": [
-      "__app__.flexget.components.sites.sites.wordpress.<module>",
+      "__app__.flexget.components.notify.notifiers.gotify.<module>",
       "requests.<module>",
       "cryptography.<module>",
       "cryptography.__about__.<module>"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -1981,7 +2008,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.012876612916875894,
+  "p_exposed": 0.010730510764063244,
   "exposure_class": "DEV_ONLY",
   "vex": {
    "state": "in_triage"
@@ -2031,13 +2058,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "cryptography.hazmat.primitives.asymmetric.ec.get_curve_for_oid"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -2126,12 +2159,13 @@
       "cryptography.__about__.<module>"
      ],
      "witness": [
-      "__app__.flexget.components.sites.sites.wordpress.<module>",
+      "__app__.flexget.components.notify.notifiers.gotify.<module>",
       "requests.<module>",
       "cryptography.<module>",
       "cryptography.__about__.<module>"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -2223,13 +2257,14 @@
       "cryptography.hazmat.backends.openssl.ciphers._CipherContext.update_into"
      ],
      "witness": [
-      "__app__.flexget.components.estimate_release.estimators.est_series_tvmaze.EstimatesSeriesTVMaze.estimate",
-      "paramiko.ed25519key.Ed25519Key.__init__",
-      "paramiko.ed25519key.Ed25519Key._parse_signing_key_data",
+      "__app__.flexget.components.seen.api.SeenSearchAPI.get",
+      "flask.app.Flask.__init__",
+      "flask.cli.shell_command",
       "cryptography.hazmat.backends.openssl.ciphers._CipherContext.update",
       "cryptography.hazmat.backends.openssl.ciphers._CipherContext.update_into"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -2352,7 +2387,7 @@
   ],
   "depth": 3,
   "direct": false,
-  "p_exposed": 0.007735154394299288,
+  "p_exposed": 0.006445961995249406,
   "exposure_class": "DEV_ONLY",
   "vex": {
    "state": "in_triage"
@@ -2402,7 +2437,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "filelock._api.BaseFileLock.__init__",
@@ -2412,7 +2447,13 @@
       "filelock._util.raise_on_not_writable_file"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -2448,7 +2489,7 @@
   ],
   "depth": 3,
   "direct": false,
-  "p_exposed": 0.007735154394299288,
+  "p_exposed": 0.006445961995249406,
   "exposure_class": "DEV_ONLY",
   "vex": {
    "state": "in_triage"
@@ -2498,13 +2539,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "filelock._soft.SoftFileLock._acquire"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -2540,7 +2587,7 @@
   ],
   "depth": 3,
   "direct": false,
-  "p_exposed": 0.007735154394299288,
+  "p_exposed": 0.006445961995249406,
   "exposure_class": "DEV_ONLY",
   "vex": {
    "state": "in_triage"
@@ -2590,14 +2637,20 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "module",
      "symbols": [
       "filelock._unix.<module>",
       "filelock._windows.<module>"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -2705,7 +2758,8 @@
       "flask.app.Flask.finalize_request",
       "flask.app.Flask.process_response"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -2741,7 +2795,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -2791,7 +2845,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "flask_cors.core.get_allow_headers",
@@ -2801,7 +2855,13 @@
       "flask_cors.extension.make_after_request_function.cors_after_request"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -2837,7 +2897,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -2887,13 +2947,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "flask_cors.core.parse_resources"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -3017,7 +3083,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -3067,13 +3133,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "flask_cors.extension.make_after_request_function.cors_after_request"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -3109,7 +3181,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -3159,13 +3231,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "flask_cors.core.get_cors_headers"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -3265,7 +3343,8 @@
       "__app__.update_changelog.<module>",
       "git.repo.base.Repo.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3361,7 +3440,8 @@
       "git.objects.submodule.base.Submodule.update",
       "git.refs.head.Head.checkout"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3541,7 +3621,8 @@
       "git.cmd.Git.check_unsafe_options"
      ],
      "witness": [],
-     "missing": true
+     "missing": true,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3643,7 +3724,8 @@
       "git.util.is_cygwin_git",
       "git.util.py_where"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3741,7 +3823,8 @@
       "git.objects.submodule.base.Submodule.update",
       "git.index.base.IndexFile.checkout"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3833,7 +3916,8 @@
       "git.config.GitConfigParser._assure_config_name_safe"
      ],
      "witness": [],
-     "missing": true
+     "missing": true,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3935,7 +4019,8 @@
       "git.objects.commit.Commit.replace",
       "git.diff.Diffable.diff"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -4035,7 +4120,8 @@
       "git.index.base.IndexFile.reset",
       "git.index.base.IndexFile.from_tree"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -4129,10 +4215,11 @@
      "witness": [
       "__app__.update_changelog.<module>",
       "git.<module>",
-      "git.exc.<module>",
+      "git.config.<module>",
       "git.repo.base.<module>"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -4228,7 +4315,8 @@
       "git.objects.submodule.base.Submodule.exists",
       "git.objects.submodule.base.Submodule._write_git_file_and_module_config"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -4410,10 +4498,11 @@
      "witness": [
       "__app__.update_changelog.<module>",
       "git.<module>",
-      "git.exc.<module>",
+      "git.config.<module>",
       "git.repo.base.<module>"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -4598,7 +4687,8 @@
       "git.objects.submodule.base.Submodule.exists",
       "git.objects.submodule.base.Submodule._config_parser"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -4702,7 +4792,8 @@
       "git.objects.submodule.base.Submodule.add",
       "git.objects.submodule.base.Submodule._clone_repo"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -4799,7 +4890,8 @@
       "git.objects.submodule.base.Submodule.add",
       "git.objects.submodule.base.Submodule._clone_repo"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -4901,7 +4993,8 @@
       "git.util.cygpath",
       "git.util._cygexpath"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -5012,7 +5105,8 @@
       "git.cmd.Git._get_persistent_cmd",
       "git.cmd.Git.__getstate__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -5048,7 +5142,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.012876612916875894,
+  "p_exposed": 0.010730510764063244,
   "exposure_class": "DEV_ONLY",
   "vex": {
    "state": "in_triage"
@@ -5098,13 +5192,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "git.repo.base.Repo.init"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -5197,7 +5297,7 @@
       "git.refs.symbolic.SymbolicReference._get_ref_info_helper"
      ],
      "witness": [
-      "__app__.update_changelog.<module>",
+      "__app__.update_changelog.MDChangeSet.__init__",
       "git.objects.tree.Tree.__getitem__",
       "git.repo.fun.rev_parse",
       "git.repo.fun.name_to_object",
@@ -5205,7 +5305,8 @@
       "git.refs.symbolic.SymbolicReference._get_ref_info",
       "git.refs.symbolic.SymbolicReference._get_ref_info_helper"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -5302,7 +5403,8 @@
       "git.objects.commit.Commit.replace",
       "git.diff.Diffable.diff"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -5398,7 +5500,8 @@
       "git.repo.base.Repo.__init__",
       "git.repo.fun.find_submodule_git_dir"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -5490,12 +5593,13 @@
       "git.util.Actor._from_string"
      ],
      "witness": [
-      "__app__.update_changelog.<module>",
+      "__app__.update_changelog.MDChangeSet.__init__",
       "git.objects.tree.Tree.__getitem__",
       "git.refs.log.RefLogEntry.from_line",
       "git.util.Actor._from_string"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -5589,10 +5693,11 @@
      "witness": [
       "__app__.update_changelog.<module>",
       "git.repo.base.Repo.__init__",
-      "git.util.expand_path",
+      "git.objects.submodule.base.Submodule.exists",
       "git.objects.base.IndexObject.abspath"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -5693,7 +5798,8 @@
       "git.repo.base.Repo._clone",
       "git.repo.base.Repo.clone"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -5796,7 +5902,8 @@
       "git.cmd.Git._get_persistent_cmd",
       "git.cmd.Git.__getstate__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -5899,7 +6006,8 @@
       "git.objects.submodule.base.Submodule.exists",
       "git.objects.submodule.base.Submodule._module_abspath"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -5991,7 +6099,8 @@
       "git.config.GitConfigParser._assure_config_name_safe"
      ],
      "witness": [],
-     "missing": true
+     "missing": true,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -6087,7 +6196,8 @@
       "git.diff.<module>",
       "git.objects.util.<module>"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -6271,7 +6381,8 @@
       "git.objects.commit.Commit.replace",
       "git.objects.commit.Commit.count"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -6370,7 +6481,8 @@
       "git.repo.base.Repo.clone_from",
       "git.repo.base.Repo._clone"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -6462,7 +6574,8 @@
       "git.cmd.Git._option_candidates"
      ],
      "witness": [],
-     "missing": true
+     "missing": true,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -6562,7 +6675,8 @@
       "git.util.cygpath",
       "git.util._cygexpath"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -6748,7 +6862,8 @@
       "git.objects.submodule.root.RootModule.update",
       "git.index.base.IndexFile.move"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -6849,7 +6964,8 @@
       "git.cmd.Git._get_persistent_cmd",
       "git.cmd.Git.custom_environment"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -6941,7 +7057,8 @@
       "git.cmd.Git._option_candidates"
      ],
      "witness": [],
-     "missing": true
+     "missing": true,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7215,7 +7332,8 @@
       "idna.<module>",
       "idna.package_data.<module>"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7307,11 +7425,12 @@
       "jinja2.filters.do_attr"
      ],
      "witness": [
-      "__app__.flexget.components.sites.sites.rss.SearchRSS.search",
-      "jinja2.runtime.make_logging_undefined.LoggingUndefined.__iter__",
+      "__app__.flexget.utils.template.list_templates",
+      "jinja2.environment.Environment.list_templates",
       "jinja2.filters.do_attr"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7347,7 +7466,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -7397,13 +7516,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "jinja2.compiler.CodeGenerator.visit_FromImport"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -7495,11 +7620,12 @@
       "jinja2.filters.do_xmlattr"
      ],
      "witness": [
-      "__app__.flexget.components.sites.sites.rss.SearchRSS.search",
-      "jinja2.runtime.make_logging_undefined.LoggingUndefined.__iter__",
+      "__app__.flexget.utils.template.list_templates",
+      "jinja2.environment.Environment.list_templates",
       "jinja2.filters.do_xmlattr"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7591,11 +7717,12 @@
       "jinja2.filters.do_xmlattr"
      ],
      "witness": [
-      "__app__.flexget.components.sites.sites.rss.SearchRSS.search",
-      "jinja2.runtime.make_logging_undefined.LoggingUndefined.__iter__",
+      "__app__.flexget.utils.template.list_templates",
+      "jinja2.environment.Environment.list_templates",
       "jinja2.filters.do_xmlattr"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7691,12 +7818,13 @@
       "jinja2.sandbox.inspect_format_method"
      ],
      "witness": [
-      "__app__.flexget.components.sites.sites.rss.SearchRSS.search",
-      "jinja2.runtime.make_logging_undefined.LoggingUndefined.__iter__",
+      "__app__.flexget.utils.template.list_templates",
+      "jinja2.environment.Environment.list_templates",
       "jinja2.ext._gettext_alias",
       "jinja2.sandbox.SandboxedEnvironment.call"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7887,7 +8015,8 @@
       "__app__.flexget.plugins.operate.free_space.get_free_space",
       "paramiko.client.SSHClient.connect"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7924,7 +8053,7 @@
   ],
   "depth": 5,
   "direct": false,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -7974,14 +8103,20 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "pydantic.networks._build_pretty_email_regex",
       "pydantic.networks.validate_email"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -8079,7 +8214,8 @@
       "pygments.lexers._mapping.<module>",
       "pygments.lexers.archetype.<module>"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -8179,7 +8315,8 @@
       "pygments.lexers.guess_lexer_for_filename",
       "pygments.lexers.templates.SqlJinjaLexer.analyse_text"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -8359,13 +8496,14 @@
       "_pytest.tmpdir.TempPathFactory.getbasetemp"
      ],
      "witness": [
-      "__app__.flexget.api.core.server.LogParser.evaluate_quotes",
+      "__app__.flexget.api.core.server.ServerDumpThreads.get",
       "cherrypy.test.test_wsgi_ns.WSGI_Namespace_Test.setup_server.ChangeCase.__call__.CaseResults.__next__",
       "cherrypy.test.test_logging.access_log_file",
       "_pytest.tmpdir.TempPathFactory.mktemp",
       "_pytest.tmpdir.TempPathFactory.getbasetemp"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -8457,12 +8595,13 @@
       "requests.utils.get_netrc_auth"
      ],
      "witness": [
-      "__app__.flexget.utils.requests.Session.request",
+      "__app__.flexget.plugins.clients.qbittorrent.OutputQBitTorrent._request",
       "requests.sessions.Session.request",
       "requests.sessions.Session.prepare_request",
       "requests.utils.get_netrc_auth"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -8555,11 +8694,12 @@
       "requests.adapters.HTTPAdapter.send"
      ],
      "witness": [
-      "__app__.flexget.components.bittorrent.torrent_alive.get_udp_seeds",
+      "__app__.flexget.plugins.clients.rtorrent.SCGITransport.single_request",
       "requests.adapters.HTTPAdapter.send",
       "requests.adapters.HTTPAdapter.get_connection"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -8651,12 +8791,13 @@
       "requests.utils.extract_zipped_paths"
      ],
      "witness": [
-      "__app__.flexget.components.bittorrent.torrent_alive.get_udp_seeds",
+      "__app__.flexget.plugins.clients.rtorrent.SCGITransport.single_request",
       "requests.adapters.HTTPAdapter.send",
       "requests.adapters.HTTPAdapter.cert_verify",
       "requests.utils.extract_zipped_paths"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -8757,7 +8898,8 @@
       "rpyc.core.netref.class_factory",
       "rpyc.core.netref._make_method"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -8849,7 +8991,8 @@
       "setuptools.package_index.PackageIndex._resolve_download_filename"
      ],
      "witness": [],
-     "missing": true
+     "missing": true,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -8946,8 +9089,8 @@
       "setuptools.package_index.PackageIndex.download"
      ],
      "witness": [
-      "__app__.flexget.plugin.PluginInfo.build_phase_handlers",
-      "setuptools._vendor.typing_extensions.AnnotatedMeta.__getitem__",
+      "__app__.flexget.plugin.get_plugins",
+      "pkg_resources._vendor.more_itertools.more.time_limited.__next__",
       "setuptools._install_setup_requires",
       "setuptools.dist.Distribution.parse_config_files",
       "setuptools.config.pyprojecttoml.apply_configuration",
@@ -8959,7 +9102,8 @@
       "setuptools._vendor.packaging.specifiers.<module>",
       "setuptools._vendor.packaging.utils.<module>"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -9052,8 +9196,8 @@
       "setuptools.unicode_utils.filesys_decode"
      ],
      "witness": [
-      "__app__.flexget.plugin.PluginInfo.build_phase_handlers",
-      "setuptools._vendor.typing_extensions.AnnotatedMeta.__getitem__",
+      "__app__.flexget.plugin.get_plugins",
+      "pkg_resources._vendor.more_itertools.more.time_limited.__next__",
       "setuptools._install_setup_requires",
       "setuptools.dist.Distribution.parse_config_files",
       "setuptools.config.pyprojecttoml.apply_configuration",
@@ -9065,7 +9209,8 @@
       "setuptools._vendor.packaging.specifiers.<module>",
       "setuptools._vendor.packaging.utils.<module>"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -9098,7 +9243,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -9148,13 +9293,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "setuptools.wheel.Wheel._fix_namespace_packages"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -9422,13 +9573,14 @@
       "soupsieve.css_parser.<module>"
      ],
      "witness": [
-      "__app__.flexget.utils.tools.strip_html",
+      "__app__.flexget.utils.soup.<module>",
       "bs4.<module>",
       "bs4.element.<module>",
       "soupsieve.<module>",
       "soupsieve.css_parser.<module>"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -9520,7 +9672,7 @@
       "soupsieve.css_parser.CSSParser.selector_iter"
      ],
      "witness": [
-      "__app__.flexget.utils.tools.strip_html",
+      "__app__.flexget.utils.soup.<module>",
       "bs4.<module>",
       "bs4.element.<module>",
       "soupsieve.<module>",
@@ -9528,7 +9680,8 @@
       "soupsieve.css_parser.CSSParser.process_selectors",
       "soupsieve.css_parser.CSSParser.selector_iter"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -9624,7 +9777,8 @@
       "tornado.platform.asyncio.BaseAsyncIOLoop.start",
       "tornado.httputil.HTTPServerRequest.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -9816,7 +9970,8 @@
       "tornado.http1connection.HTTP1Connection._read_message",
       "tornado.http1connection.HTTP1Connection._can_keep_alive"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -9909,13 +10064,14 @@
       "tornado.web.RequestHandler.set_cookie"
      ],
      "witness": [
-      "__app__.flexget.components.estimate_release.estimators.est_series_tvmaze.EstimatesSeriesTVMaze.estimate",
+      "__app__.flexget.components.seen.api.SeenSearchAPI.get",
       "vcr.stubs.VCRConnection.__init__",
       "vcr.patch.ConnectionRemover.__exit__",
-      "tornado.test.web_test.CookieTest.get_handlers.SetCookieOverwriteHandler.get",
+      "tornado.test.web_test.CookieTest.get_handlers.SetCookieDomainHandler.get",
       "tornado.web.RequestHandler.set_cookie"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -10013,15 +10169,16 @@
       "tornado.web.removeslash"
      ],
      "witness": [
-      "__app__.flexget.components.estimate_release.estimators.est_series_tvmaze.EstimatesSeriesTVMaze.estimate",
+      "__app__.flexget.components.seen.api.SeenSearchAPI.get",
       "vcr.stubs.VCRConnection.__init__",
       "vcr.patch.ConnectionRemover.__exit__",
-      "tornado.test.process_test.ProcessTest.get_app.ProcessHandler.get",
+      "tornado.test.web_test.GetCurrentUserTest.get_handlers.WithoutUserHandler.get",
       "tornado.httputil.HTTPServerRequest.__repr__",
       "tornado.httputil.HTTPServerRequest._parse_body",
       "tornado.httputil.parse_body_arguments"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -10112,16 +10269,17 @@
       "tornado.httputil.parse_multipart_form_data"
      ],
      "witness": [
-      "__app__.flexget.components.estimate_release.estimators.est_series_tvmaze.EstimatesSeriesTVMaze.estimate",
+      "__app__.flexget.components.seen.api.SeenSearchAPI.get",
       "vcr.stubs.VCRConnection.__init__",
       "vcr.patch.ConnectionRemover.__exit__",
-      "tornado.test.process_test.ProcessTest.get_app.ProcessHandler.get",
+      "tornado.test.web_test.GetCurrentUserTest.get_handlers.WithoutUserHandler.get",
       "tornado.httputil.HTTPServerRequest.__repr__",
       "tornado.httputil.HTTPServerRequest._parse_body",
       "tornado.httputil.parse_body_arguments",
       "tornado.httputil.parse_multipart_form_data"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -10213,16 +10371,17 @@
       "tornado.httputil._unquote_cookie"
      ],
      "witness": [
-      "__app__.flexget.components.estimate_release.estimators.est_series_tvmaze.EstimatesSeriesTVMaze.estimate",
+      "__app__.flexget.components.seen.api.SeenSearchAPI.get",
       "vcr.stubs.VCRConnection.__init__",
       "vcr.patch.ConnectionRemover.__exit__",
-      "tornado.test.process_test.ProcessTest.get_app.ProcessHandler.get",
+      "tornado.test.web_test.GetCurrentUserTest.get_handlers.WithoutUserHandler.get",
       "tornado.httputil.HTTPServerRequest.__repr__",
       "tornado.httputil.HTTPServerRequest.cookies",
       "tornado.httputil.parse_cookie",
       "tornado.httputil._unquote_cookie"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -10316,14 +10475,15 @@
       "tornado.web.StaticFileHandler.validate_absolute_path"
      ],
      "witness": [
-      "__app__.flexget.components.estimate_release.estimators.est_series_tvmaze.EstimatesSeriesTVMaze.estimate",
+      "__app__.flexget.components.seen.api.SeenSearchAPI.get",
       "vcr.stubs.VCRConnection.__init__",
       "vcr.patch.ConnectionRemover.__exit__",
       "tornado.web.StaticFileHandler.get",
-      "tornado.web.StaticFileHandler.get_modified_time",
+      "tornado.web.StaticFileHandler.get_content_size",
       "tornado.web.StaticFileHandler._stat"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -10415,7 +10575,7 @@
       "tornado.httputil._parseparam"
      ],
      "witness": [
-      "__app__.flexget.components.estimate_release.estimators.est_series_tvmaze.EstimatesSeriesTVMaze.estimate",
+      "__app__.flexget.components.seen.api.SeenSearchAPI.get",
       "vcr.stubs.VCRConnection.__init__",
       "vcr.patch.ConnectionRemover.__exit__",
       "tornado.websocket.WebSocketHandler.get",
@@ -10425,7 +10585,8 @@
       "tornado.httputil._parse_header",
       "tornado.httputil._parseparam"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -10521,14 +10682,15 @@
       "tornado.curl_httpclient._CurlStreamingBuffer.write"
      ],
      "witness": [
-      "__app__.flexget.components.estimate_release.estimators.est_series_tvmaze.EstimatesSeriesTVMaze.estimate",
+      "__app__.flexget.components.seen.api.SeenSearchAPI.get",
       "vcr.stubs.VCRConnection.__init__",
-      "vcr.<module>",
+      "vcr.patch.<module>",
       "tornado.curl_httpclient.CurlAsyncHTTPClient.fetch_impl",
       "tornado.curl_httpclient.CurlAsyncHTTPClient._process_queue",
       "tornado.curl_httpclient.CurlAsyncHTTPClient._curl_setup_request"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -10708,13 +10870,14 @@
       "tornado.web.StaticFileHandler.validate_absolute_path"
      ],
      "witness": [
-      "__app__.flexget.components.estimate_release.estimators.est_series_tvmaze.EstimatesSeriesTVMaze.estimate",
+      "__app__.flexget.components.seen.api.SeenSearchAPI.get",
       "vcr.stubs.VCRConnection.__init__",
       "vcr.patch.ConnectionRemover.__exit__",
       "tornado.web.StaticFileHandler.get",
       "tornado.web.StaticFileHandler.validate_absolute_path"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -10806,7 +10969,7 @@
       "tornado.httputil._parseparam"
      ],
      "witness": [
-      "__app__.flexget.components.estimate_release.estimators.est_series_tvmaze.EstimatesSeriesTVMaze.estimate",
+      "__app__.flexget.components.seen.api.SeenSearchAPI.get",
       "vcr.stubs.VCRConnection.__init__",
       "vcr.patch.ConnectionRemover.__exit__",
       "tornado.websocket.WebSocketHandler.get",
@@ -10816,7 +10979,8 @@
       "tornado.httputil._parse_header",
       "tornado.httputil._parseparam"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -11003,7 +11167,8 @@
       "tornado.httputil.HTTPServerRequest.__init__",
       "tornado.escape.parse_qs_bytes"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -11101,7 +11266,8 @@
       "tornado.platform.asyncio.BaseAsyncIOLoop.start",
       "tornado.httputil.HTTPHeaders.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -11195,13 +11361,14 @@
       "tornado.web.RequestHandler.write_error"
      ],
      "witness": [
-      "__app__.flexget.components.estimate_release.estimators.est_series_tvmaze.EstimatesSeriesTVMaze.estimate",
+      "__app__.flexget.components.seen.api.SeenSearchAPI.get",
       "vcr.stubs.VCRConnection.__init__",
       "vcr.patch.ConnectionRemover.__exit__",
       "tornado.test.web_test.ErrorResponseTest.get_handlers.WriteErrorHandler.get",
       "tornado.web.RequestHandler.send_error"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -11382,12 +11549,13 @@
       "tornado.web.is_absolute"
      ],
      "witness": [
-      "__app__.flexget.components.estimate_release.estimators.est_series_tvmaze.EstimatesSeriesTVMaze.estimate",
+      "__app__.flexget.components.seen.api.SeenSearchAPI.get",
       "vcr.stubs.VCRConnection.__init__",
       "vcr.patch.ConnectionRemover.__exit__",
       "tornado.web.RedirectHandler.get"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -11481,15 +11649,16 @@
       "tornado.httputil.parse_multipart_form_data"
      ],
      "witness": [
-      "__app__.flexget.components.estimate_release.estimators.est_series_tvmaze.EstimatesSeriesTVMaze.estimate",
+      "__app__.flexget.components.seen.api.SeenSearchAPI.get",
       "vcr.stubs.VCRConnection.__init__",
       "vcr.patch.ConnectionRemover.__exit__",
-      "tornado.test.process_test.ProcessTest.get_app.ProcessHandler.get",
+      "tornado.test.web_test.GetCurrentUserTest.get_handlers.WithoutUserHandler.get",
       "tornado.httputil.HTTPServerRequest.__repr__",
       "tornado.httputil.HTTPServerRequest._parse_body",
       "tornado.httputil.parse_body_arguments"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -11592,7 +11761,8 @@
       "tornado.http1connection.HTTP1Connection._read_message",
       "tornado.http1connection.HTTP1Connection._read_body"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -11704,7 +11874,8 @@
       "tornado.http1connection.HTTP1Connection._read_body",
       "tornado.http1connection.HTTP1Connection._read_body_until_close"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -11796,14 +11967,15 @@
       "tornado.http1connection.HTTP1Connection.write_headers"
      ],
      "witness": [
-      "__app__.flexget.components.estimate_release.estimators.est_series_tvmaze.EstimatesSeriesTVMaze.estimate",
+      "__app__.flexget.components.seen.api.SeenSearchAPI.get",
       "vcr.stubs.VCRConnection.__init__",
-      "vcr.<module>",
+      "vcr.patch.<module>",
       "tornado.curl_httpclient.CurlAsyncHTTPClient.fetch_impl",
       "tornado.curl_httpclient.CurlAsyncHTTPClient._process_queue",
       "tornado.curl_httpclient.CurlAsyncHTTPClient._curl_setup_request"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -11914,7 +12086,8 @@
       "urllib3.response._get_decoder",
       "urllib3.response.DeflateDecoder.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -12007,12 +12180,13 @@
       "urllib3.util.retry.<module>"
      ],
      "witness": [
-      "__app__.flexget.components.sites.sites.wordpress.<module>",
+      "__app__.flexget.components.notify.notifiers.gotify.<module>",
       "requests.<module>",
       "urllib3.<module>",
       "urllib3.util.retry.<module>"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -12104,12 +12278,13 @@
       "urllib3.response.HTTPResponse.drain_conn"
      ],
      "witness": [
-      "__app__.flexget.components.bittorrent.torrent_alive.get_udp_seeds",
+      "__app__.flexget.plugins.clients.rtorrent.SCGITransport.single_request",
       "requests.adapters.HTTPAdapter.send",
-      "urllib3.connectionpool.HTTPConnectionPool.urlopen",
+      "urllib3.poolmanager.PoolManager.urlopen",
       "urllib3.response.HTTPResponse.drain_conn"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -12203,12 +12378,13 @@
       "urllib3.poolmanager.ProxyManager.__init__"
      ],
      "witness": [
-      "__app__.flexget.components.sites.sites.wordpress.<module>",
+      "__app__.flexget.components.notify.notifiers.gotify.<module>",
       "requests.<module>",
       "urllib3.<module>",
       "urllib3.poolmanager.ProxyManager.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -12302,11 +12478,12 @@
       "urllib3.poolmanager.PoolManager.urlopen"
      ],
      "witness": [
-      "__app__.flexget.components.bittorrent.torrent_alive.get_udp_seeds",
+      "__app__.flexget.plugins.clients.rtorrent.SCGITransport.single_request",
       "requests.adapters.HTTPAdapter.send",
       "urllib3.connectionpool.HTTPConnectionPool.urlopen"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -12406,7 +12583,8 @@
       "urllib3.response._get_decoder",
       "urllib3.response.MultiDecoder.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -12505,7 +12683,8 @@
       "requests.adapters.HTTPAdapter.init_poolmanager",
       "urllib3.poolmanager.PoolManager.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -12686,12 +12865,13 @@
       "urllib3.util.retry.<module>"
      ],
      "witness": [
-      "__app__.flexget.components.sites.sites.wordpress.<module>",
+      "__app__.flexget.components.notify.notifiers.gotify.<module>",
       "requests.<module>",
       "urllib3.<module>",
       "urllib3.util.retry.<module>"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -12784,14 +12964,15 @@
       "urllib3.response.HTTPResponse.read_chunked"
      ],
      "witness": [
-      "__app__.flexget.components.sites.sites.wordpress.<module>",
-      "requests.utils.<module>",
+      "__app__.dev_tools.get_changelog",
+      "requests.models.Response.iter_lines",
       "urllib3.response.HTTPResponse.__iter__",
       "urllib3.response.HTTPResponse.stream",
       "urllib3.response.HTTPResponse.read_chunked",
       "urllib3.response.HTTPResponse._update_chunk_length"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -12998,7 +13179,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.007735154394299288,
+  "p_exposed": 0.006445961995249406,
   "exposure_class": "DEV_ONLY",
   "vex": {
    "state": "in_triage"
@@ -13048,14 +13229,20 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "virtualenv.util.path._sync.safe_delete.onerror",
       "virtualenv.util.path._win.get_short_path_name"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -13090,7 +13277,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.007735154394299288,
+  "p_exposed": 0.006445961995249406,
   "exposure_class": "DEV_ONLY",
   "vex": {
    "state": "in_triage"
@@ -13140,7 +13327,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "virtualenv.seed.embed.pip_invoke.PipInvoke.get_pip_install_cmd",
@@ -13148,7 +13335,13 @@
       "virtualenv.seed.wheels.acquire.download_wheel"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -13183,7 +13376,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.007735154394299288,
+  "p_exposed": 0.006445961995249406,
   "exposure_class": "DEV_ONLY",
   "vex": {
    "state": "in_triage"
@@ -13233,7 +13426,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "virtualenv.activation.via_template.ViaTemplateActivator._generate",
@@ -13246,7 +13439,13 @@
       "virtualenv.util.path._sync.ensure_safe_to_do"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -13282,7 +13481,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.007735154394299288,
+  "p_exposed": 0.006445961995249406,
   "exposure_class": "DEV_ONLY",
   "vex": {
    "state": "in_triage"
@@ -13332,7 +13531,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "virtualenv.app_data.make_app_data",
@@ -13340,7 +13539,13 @@
       "virtualenv.util.lock._CountedFileLock.__init__"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -13550,7 +13755,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.007735154394299288,
+  "p_exposed": 0.006445961995249406,
   "exposure_class": "DEV_ONLY",
   "vex": {
    "state": "in_triage"
@@ -13600,13 +13805,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "virtualenv.seed.wheels.acquire.download_wheel"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -13642,7 +13853,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.007735154394299288,
+  "p_exposed": 0.006445961995249406,
   "exposure_class": "DEV_ONLY",
   "vex": {
    "state": "in_triage"
@@ -13692,13 +13903,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "virtualenv.create.pyenv_cfg.PyEnvCfg.write"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -13733,7 +13950,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.007735154394299288,
+  "p_exposed": 0.006445961995249406,
   "exposure_class": "DEV_ONLY",
   "vex": {
    "state": "in_triage"
@@ -13783,13 +14000,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "virtualenv.activation.fish.FishActivator.replacements"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -13824,7 +14047,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.007735154394299288,
+  "p_exposed": 0.006445961995249406,
   "exposure_class": "DEV_ONLY",
   "vex": {
    "state": "in_triage"
@@ -13874,14 +14097,20 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "virtualenv.seed.embed.pip_invoke.PipInvoke.run",
       "virtualenv.seed.embed.via_app_data.pip_install.base.ScriptMakerCustom.__init__"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -13916,7 +14145,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.007735154394299288,
+  "p_exposed": 0.006445961995249406,
   "exposure_class": "DEV_ONLY",
   "vex": {
    "state": "in_triage"
@@ -13966,14 +14195,20 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "virtualenv.create.via_global_ref.builtin.via_global_self_do.ViaGlobalRefVirtualenvBuiltin.create",
       "virtualenv.create.via_global_ref.venv.Venv.create"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -14008,7 +14243,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.007735154394299288,
+  "p_exposed": 0.006445961995249406,
   "exposure_class": "DEV_ONLY",
   "vex": {
    "state": "in_triage"
@@ -14058,7 +14293,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "virtualenv.seed.embed.pip_invoke.PipInvoke.get_pip_install_cmd",
@@ -14066,7 +14301,13 @@
       "virtualenv.seed.wheels.acquire.download_wheel"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -14101,7 +14342,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.007735154394299288,
+  "p_exposed": 0.006445961995249406,
   "exposure_class": "DEV_ONLY",
   "vex": {
    "state": "in_triage"
@@ -14151,14 +14392,20 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "virtualenv.util.path._sync.copy",
       "virtualenv.util.path._sync.copytree"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -14193,7 +14440,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.007735154394299288,
+  "p_exposed": 0.006445961995249406,
   "exposure_class": "DEV_ONLY",
   "vex": {
    "state": "in_triage"
@@ -14243,14 +14490,20 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "virtualenv.seed.embed.via_app_data.pip_install.base.PipInstall._uninstall_dist",
       "virtualenv.seed.embed.via_app_data.pip_install.base.PipInstall._uninstall_previous_version"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -14373,7 +14626,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.007735154394299288,
+  "p_exposed": 0.006445961995249406,
   "exposure_class": "DEV_ONLY",
   "vex": {
    "state": "in_triage"
@@ -14423,14 +14676,20 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "virtualenv.create.via_global_ref.venv.Venv.create_inline",
       "virtualenv.create.via_global_ref.venv.Venv.set_pyenv_cfg"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -14641,7 +14900,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.007735154394299288,
+  "p_exposed": 0.006445961995249406,
   "exposure_class": "DEV_ONLY",
   "vex": {
    "state": "in_triage"
@@ -14691,7 +14950,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "virtualenv.activation.batch.BatchActivator.quote",
@@ -14699,7 +14958,13 @@
       "virtualenv.create.pyenv_cfg._one_line"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -14796,7 +15061,8 @@
       "werkzeug.utils.send_from_directory",
       "werkzeug.security.safe_join"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -14906,7 +15172,8 @@
       "werkzeug.sansio.utils.get_host",
       "werkzeug.sansio.utils.host_is_trusted"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -15003,7 +15270,8 @@
       "werkzeug.utils.send_from_directory",
       "werkzeug.security.safe_join"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -15100,7 +15368,8 @@
       "werkzeug.utils.send_from_directory",
       "werkzeug.security.safe_join"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -15197,7 +15466,8 @@
       "werkzeug.utils.send_from_directory",
       "werkzeug.security.safe_join"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -15294,7 +15564,8 @@
       "werkzeug.utils.send_from_directory",
       "werkzeug.security.safe_join"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -15400,13 +15671,14 @@
       "werkzeug.test.stream_encode_multipart.write"
      ],
      "witness": [
-      "__app__.flexget.components.trakt.api.TraktSeriesWithTitleSearchApi.get",
+      "__app__.flexget.components.trakt.api.TraktMovieWithTitleSearchApi.get",
       "flask.helpers.redirect",
       "werkzeug.utils.redirect",
       "werkzeug.urls.iri_to_uri",
       "werkzeug._internal._to_str"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -15511,13 +15783,14 @@
       "werkzeug.test.stream_encode_multipart.write"
      ],
      "witness": [
-      "__app__.flexget.components.trakt.api.TraktSeriesWithTitleSearchApi.get",
+      "__app__.flexget.components.trakt.api.TraktMovieWithTitleSearchApi.get",
       "flask.helpers.redirect",
       "werkzeug.utils.redirect",
       "werkzeug.urls.iri_to_uri",
       "werkzeug._internal._to_str"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -15613,7 +15886,8 @@
       "importlib_metadata.<module>",
       "zipp.<module>"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },

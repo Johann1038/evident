@@ -58,7 +58,8 @@ class Resolution:
 
 def compile_env(requirements: list[str], *, constraints: dict[str, str] | None = None,
                 prefer: dict[str, str] | None = None, python: str = "3.10",
-                exclude_newer: str | None = None, upgrade: bool = False, timeout: int = 600) -> Resolution:
+                exclude_newer: str | None = None, upgrade: bool = False, timeout: int = 600,
+                specs: list[str] | None = None) -> Resolution:
     import time
     t0 = time.time()
     with tempfile.TemporaryDirectory(prefix="evident-uv-") as td:
@@ -70,8 +71,9 @@ def compile_env(requirements: list[str], *, constraints: dict[str, str] | None =
         cmd = [UV, "pip", "compile", str(td / "req.in"), "-o", str(out), "--python-version", python,
                "--python-platform", "x86_64-unknown-linux-gnu", "--no-build", "--quiet", "--no-header",
                "--no-annotate", "--no-strip-markers"]
-        if constraints:
-            (td / "c.txt").write_text("\n".join(f"{k}=={v}" for k, v in sorted(constraints.items())) + "\n", "utf8")
+        lines = [f"{k}=={v}" for k, v in sorted((constraints or {}).items())] + list(specs or [])
+        if lines:
+            (td / "c.txt").write_text("\n".join(lines) + "\n", "utf8")
             cmd += ["-c", str(td / "c.txt")]
         if exclude_newer:
             cmd += ["--exclude-newer", exclude_newer]

@@ -78,7 +78,7 @@
       "asteval.asteval.Interpreter.on_formattedvalue"
      ],
      "witness": [
-      "__app__.dojo.templatetags.display_tags.system_setting_enabled",
+      "__app__.dojo.utils.calculate_grade",
       "asteval.asteval.Interpreter.__init__",
       "asteval.asteval.Interpreter.on_attribute"
      ],
@@ -383,7 +383,7 @@
       "asteval.asteval.Interpreter.on_formattedvalue"
      ],
      "witness": [
-      "__app__.dojo.templatetags.display_tags.system_setting_enabled",
+      "__app__.dojo.utils.calculate_grade",
       "asteval.asteval.Interpreter.__init__",
       "asteval.asteval.Interpreter.on_attribute"
      ],
@@ -650,7 +650,7 @@
       "django.middleware.cache.UpdateCacheMiddleware.process_response"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.utils.deprecation.MiddlewareMixin.__call__",
       "django.middleware.cache.UpdateCacheMiddleware.process_response"
      ],
@@ -748,7 +748,7 @@
       "django.db.models.sql.query.Query.add_filtered_relation"
      ],
      "witness": [
-      "__app__.dojo.product_type.queries.get_authorized_product_types",
+      "__app__.dojo.engagement.views.prefetch_for_view_tests",
       "django.db.models.query.QuerySet.annotate",
       "django.db.models.query.QuerySet._annotate",
       "django.db.models.sql.query.Query.add_filtered_relation"
@@ -1037,7 +1037,7 @@
       "django.middleware.cache.UpdateCacheMiddleware.process_response"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.utils.deprecation.MiddlewareMixin.__call__",
       "django.middleware.cache.UpdateCacheMiddleware.process_response"
      ],
@@ -1227,7 +1227,7 @@
       "django.utils.cache.has_vary_header"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.utils.deprecation.MiddlewareMixin.__call__",
       "django.middleware.cache.UpdateCacheMiddleware.process_response",
       "django.utils.cache.has_vary_header"
@@ -1325,8 +1325,8 @@
       "django.contrib.gis.gdal.raster.source.GDALRaster.__init__"
      ],
      "witness": [
-      "__app__.dojo.forms.JIRAProjectForm.__init__",
-      "django.test.testcases.SimpleTestCase.debug",
+      "__app__.dojo.utils.do_false_positive_history",
+      "django.db.backends.ddl_references.Columns.__str__",
       "django.contrib.gis.gdal.raster.source.GDALRaster.__init__"
      ],
      "missing": false
@@ -1423,7 +1423,7 @@
       "django.db.models.query_utils.Q.__init__"
      ],
      "witness": [
-      "__app__.dojo.product_type.queries.get_authorized_product_types",
+      "__app__.dojo.engagement.views.prefetch_for_view_tests",
       "django.db.models.query_utils.Q.__init__"
      ],
      "missing": false
@@ -1521,8 +1521,8 @@
       "django.http.response.HttpResponseBase.set_signed_cookie"
      ],
      "witness": [
-      "__app__.dojo.forms.JIRAProjectForm.__init__",
-      "django.test.testcases.SimpleTestCase.debug",
+      "__app__.dojo.utils.do_false_positive_history",
+      "django.db.backends.ddl_references.Columns.__str__",
       "django.contrib.messages.storage.cookie.CookieStorage.__init__",
       "django.core.signing.get_cookie_signer"
      ],
@@ -1839,7 +1839,7 @@
       "django.contrib.gis.geos.prototypes.io._WKBReader.limit_hex"
      ],
      "witness": [
-      "__app__.dojo.components.sql_group_concat.Sql_GroupConcat.as_mysql",
+      "__app__.dojo.components.sql_group_concat.Sql_GroupConcat.as_sql",
       "django.contrib.gis.db.models.aggregates.GeoAggregate.as_sql",
       "django.contrib.gis.db.backends.spatialite.operations.SpatiaLiteOperations.spatial_aggregate_name",
       "django.contrib.gis.db.backends.spatialite.operations.SpatiaLiteOperations.get_geometry_converter"
@@ -1938,7 +1938,7 @@
       "django.contrib.auth.forms.UsernameField.to_python"
      ],
      "witness": [
-      "__app__.dojo.api_v2.permissions.UserHasFindingPermission.has_object_permission",
+      "__app__.dojo.search.views.vulnerability_id_fix",
       "django.urls.resolvers.RoutePattern.match",
       "django.contrib.auth.forms.UsernameField.to_python"
      ],
@@ -2036,7 +2036,7 @@
       "django.http.response.HttpResponseRedirectBase.__init__"
      ],
      "witness": [
-      "__app__.dojo.endpoint.views.endpoint_bulk_update_all",
+      "__app__.dojo.endpoint.views.add_product_endpoint",
       "django.http.response.HttpResponseRedirectBase.__init__"
      ],
      "missing": false
@@ -2232,7 +2232,7 @@
       "django.contrib.gis.gdal.raster.source.GDALRaster._flush"
      ],
      "witness": [
-      "__app__.dojo.api_v2.serializers.UserSerializer.create",
+      "__app__.dojo.tools.api_sonarqube.updater_from_source.SonarQubeApiUpdaterFromSource.update_finding_status",
       "django.db.models.fields.related_descriptors.create_forward_many_to_many_manager.ManyRelatedManager.set",
       "django.contrib.gis.db.models.fields.BaseSpatialField.get_prep_value"
      ],
@@ -2272,7 +2272,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -2322,7 +2322,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "rest_framework.request.Request._parse"
@@ -2425,7 +2425,7 @@
       "rest_framework.utils.mediatypes.order_by_precedence"
      ],
      "witness": [
-      "__app__.dojo.api_v2.serializers.ReImportScanSerializer.save",
+      "__app__.dojo.api_v2.serializers.RiskAcceptanceSerializer.get_path",
       "drf_spectacular.views.SpectacularAPIView.get",
       "drf_spectacular.views.SpectacularAPIView._get_schema_response",
       "drf_spectacular.views.SpectacularAPIView._get_filename",
@@ -2621,8 +2621,8 @@
       "rest_framework.renderers.AdminRenderer.render"
      ],
      "witness": [
-      "__app__.dojo.user.views.api_v2_key",
-      "rest_framework.test.APIRequestFactory.delete",
+      "__app__.unittests.dojo_test_case.DojoAPITestCase.put_finding_api",
+      "rest_framework.test.APIRequestFactory.put",
       "rest_framework.test.APIRequestFactory._encode_data",
       "rest_framework.renderers.AdminRenderer.render"
      ],
@@ -2662,7 +2662,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -2712,7 +2712,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "rest_framework.templatetags.rest_framework.break_long_headers"
@@ -2753,7 +2753,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -2803,7 +2803,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "rest_framework.authtoken.admin.TokenAdmin.delete_model",
@@ -2934,7 +2934,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -2984,7 +2984,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "gunicorn.http.message.Message.__init__",
@@ -3262,9 +3262,9 @@
       "PIL.TiffImagePlugin.TiffImageFile._seek"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.forms.fields.MultiValueField.__init__",
-      "PIL.TiffImagePlugin.ImageFileDirectory_v1.__getitem__",
+      "PIL.TiffImagePlugin.ImageFileDirectory_v2.__getitem__",
       "PIL.TiffImagePlugin.TiffImageFile.__init__"
      ],
      "missing": false
@@ -3358,9 +3358,9 @@
       "PIL.BmpImagePlugin.BmpRleDecoder.decode"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.forms.fields.MultiValueField.__init__",
-      "PIL.TiffImagePlugin.ImageFileDirectory_v1.__getitem__",
+      "PIL.TiffImagePlugin.ImageFileDirectory_v2.__getitem__",
       "PIL.ImageCms.ImageCmsProfile.__init__",
       "PIL.BmpImagePlugin.BmpRleDecoder.decode"
      ],
@@ -3456,9 +3456,9 @@
       "PIL.PdfParser.PdfParser.read_indirect"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.forms.fields.MultiValueField.__init__",
-      "PIL.TiffImagePlugin.ImageFileDirectory_v1.__getitem__",
+      "PIL.TiffImagePlugin.ImageFileDirectory_v2.__getitem__",
       "PIL.PdfImagePlugin._save",
       "PIL.PdfParser.PdfParser.__init__",
       "PIL.PdfParser.PdfParser.read_pdf_info",
@@ -3676,7 +3676,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -3726,7 +3726,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "PIL.ImageMath.eval"
@@ -3768,7 +3768,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -3818,7 +3818,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "PIL.TarIO.TarIO.__init__"
@@ -4005,11 +4005,11 @@
       "PIL.Image.SupportsArrayInterface.__len__"
      ],
      "witness": [
-      "__app__.dojo.forms.JIRAProjectForm.__init__",
+      "__app__.dojo.utils.do_false_positive_history",
       "django.core.validators.ProhibitNullCharactersValidator.__eq__",
       "PIL.ImageMath._Operand.__eq__",
       "PIL.ImageMath._Operand.apply",
-      "PIL.GbrImagePlugin.GbrImageFile.load",
+      "PIL.WalImageFile.WalImageFile.load",
       "PIL.Image.Image.frombytes"
      ],
      "missing": false
@@ -4106,8 +4106,8 @@
       "PIL.PcfFontFile.PcfFontFile._load_metrics.append"
      ],
      "witness": [
-      "__app__.dojo.forms.JIRAProjectForm.__init__",
-      "django.test.testcases.SimpleTestCase.debug",
+      "__app__.dojo.utils.do_false_positive_history",
+      "django.db.backends.ddl_references.Columns.__str__",
       "django.forms.fields.FilePathField.__init__",
       "PIL.FontFile.FontFile.compile"
      ],
@@ -4322,7 +4322,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -4372,7 +4372,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "PIL.ImageShow.MacViewer.show_file",
@@ -4650,8 +4650,8 @@
       "PIL.PcfFontFile.PcfFontFile._load_metrics.append"
      ],
      "witness": [
-      "__app__.dojo.forms.JIRAProjectForm.__init__",
-      "django.test.testcases.SimpleTestCase.debug",
+      "__app__.dojo.utils.do_false_positive_history",
+      "django.db.backends.ddl_references.Columns.__str__",
       "django.forms.fields.FilePathField.__init__",
       "PIL.FontFile.FontFile.compile"
      ],
@@ -4748,9 +4748,9 @@
       "PIL.MpoImagePlugin.MpoImageFile.seek"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.forms.fields.MultiValueField.__init__",
-      "PIL.ImageSequence.Iterator.__next__",
+      "PIL.ImageSequence.Iterator.__getitem__",
       "PIL.DcxImagePlugin.DcxImageFile.seek"
      ],
      "missing": false
@@ -4932,9 +4932,9 @@
       "PIL.GifImagePlugin.GifImageFile._seek"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.forms.fields.MultiValueField.__init__",
-      "PIL.ImageSequence.Iterator.__next__",
+      "PIL.ImageSequence.Iterator.__getitem__",
       "PIL.GifImagePlugin.GifImageFile.seek",
       "PIL.GifImagePlugin.GifImageFile._seek"
      ],
@@ -5118,9 +5118,9 @@
       "PIL.GifImagePlugin._get_global_header"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.forms.fields.MultiValueField.__init__",
-      "PIL.ImageSequence.Iterator.__next__",
+      "PIL.ImageSequence.Iterator.__getitem__",
       "PIL.GifImagePlugin.GifImageFile.seek",
       "PIL.GifImagePlugin.GifImageFile._seek"
      ],
@@ -5397,7 +5397,7 @@
       "PIL.ImageFont.TransposedFont.getlength"
      ],
      "witness": [
-      "__app__.dojo.api_v2.permissions.UserHasFindingPermission.has_object_permission",
+      "__app__.dojo.search.views.vulnerability_id_fix",
       "django.urls.resolvers.RoutePattern.match",
       "django.forms.fields.BooleanField.to_python",
       "PIL.ImageMath._Operand.__bool__",
@@ -5497,8 +5497,8 @@
       "PIL.PcfFontFile.PcfFontFile._load_metrics.append"
      ],
      "witness": [
-      "__app__.dojo.forms.JIRAProjectForm.__init__",
-      "django.test.testcases.SimpleTestCase.debug",
+      "__app__.dojo.utils.do_false_positive_history",
+      "django.db.backends.ddl_references.Columns.__str__",
       "django.forms.fields.FilePathField.__init__",
       "PIL.FontFile.FontFile.compile"
      ],
@@ -5595,7 +5595,7 @@
       "PIL.ImageCms.ImageCmsTransform.apply_in_place"
      ],
      "witness": [
-      "__app__.dojo.forms.JIRAProjectForm.__init__",
+      "__app__.dojo.utils.do_false_positive_history",
       "django.core.validators.ProhibitNullCharactersValidator.__eq__",
       "PIL.ImageMath._Operand.__eq__",
       "PIL.ImageMath._Operand.apply",
@@ -5695,9 +5695,9 @@
       "PIL.WmfImagePlugin.WmfStubImageFile.load"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.forms.fields.MultiValueField.__init__",
-      "PIL.TiffImagePlugin.ImageFileDirectory_v1.__getitem__",
+      "PIL.TiffImagePlugin.ImageFileDirectory_v2.__getitem__",
       "PIL.ImageFile.ImageFile.__init__",
       "PIL.WmfImagePlugin.WmfStubImageFile._open"
      ],
@@ -5879,9 +5879,9 @@
       "PIL.PdfParser.PdfParser.rewrite_pages"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.forms.fields.MultiValueField.__init__",
-      "PIL.TiffImagePlugin.ImageFileDirectory_v1.__getitem__",
+      "PIL.TiffImagePlugin.ImageFileDirectory_v2.__getitem__",
       "PIL.PdfImagePlugin._save",
       "PIL.PdfParser.PdfParser.write_catalog",
       "PIL.PdfParser.PdfParser.rewrite_pages"
@@ -5978,9 +5978,9 @@
       "PIL.GifImagePlugin._get_global_header"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.forms.fields.MultiValueField.__init__",
-      "PIL.ImageSequence.Iterator.__next__",
+      "PIL.ImageSequence.Iterator.__getitem__",
       "PIL.GifImagePlugin.GifImageFile.seek",
       "PIL.GifImagePlugin.GifImageFile._seek"
      ],
@@ -6076,9 +6076,9 @@
       "PIL.TgaImagePlugin._save"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.forms.fields.MultiValueField.__init__",
-      "PIL.TiffImagePlugin.ImageFileDirectory_v1.__getitem__",
+      "PIL.TiffImagePlugin.ImageFileDirectory_v2.__getitem__",
       "PIL.TgaImagePlugin._save"
      ],
      "missing": false
@@ -6172,9 +6172,9 @@
       "PIL.JpegImagePlugin._save"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.forms.fields.MultiValueField.__init__",
-      "PIL.TiffImagePlugin.ImageFileDirectory_v1.__getitem__",
+      "PIL.TiffImagePlugin.ImageFileDirectory_v2.__getitem__",
       "PIL.JpegImagePlugin._save"
      ],
      "missing": false
@@ -6269,9 +6269,9 @@
       "PIL.SpiderImagePlugin.SpiderImageFile.seek"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.forms.fields.MultiValueField.__init__",
-      "PIL.ImageSequence.Iterator.__next__",
+      "PIL.ImageSequence.Iterator.__getitem__",
       "PIL.SpiderImagePlugin.SpiderImageFile.seek"
      ],
      "missing": false
@@ -6365,9 +6365,9 @@
       "PIL.MspImagePlugin.MspDecoder.decode"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.forms.fields.MultiValueField.__init__",
-      "PIL.TiffImagePlugin.ImageFileDirectory_v1.__getitem__",
+      "PIL.TiffImagePlugin.ImageFileDirectory_v2.__getitem__",
       "PIL.ImageCms.ImageCmsProfile.__init__",
       "PIL.MspImagePlugin.MspDecoder.decode"
      ],
@@ -6553,9 +6553,9 @@
       "PIL.PdfParser.XrefTable.__setitem__"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.forms.fields.MultiValueField.__init__",
-      "PIL.TiffImagePlugin.ImageFileDirectory_v1.__getitem__",
+      "PIL.TiffImagePlugin.ImageFileDirectory_v2.__getitem__",
       "PIL.PdfImagePlugin._save",
       "PIL.PdfParser.PdfParser.next_object_id"
      ],
@@ -6651,9 +6651,9 @@
       "PIL.PdfParser.PdfStream.decode"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.forms.fields.MultiValueField.__init__",
-      "PIL.TiffImagePlugin.ImageFileDirectory_v1.__getitem__",
+      "PIL.TiffImagePlugin.ImageFileDirectory_v2.__getitem__",
       "PIL.ImageCms.ImageCmsProfile.__init__",
       "PIL.PdfParser.PdfStream.decode"
      ],
@@ -6749,9 +6749,9 @@
       "PIL.PdfParser.PdfParser.read_pdf_info"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.forms.fields.MultiValueField.__init__",
-      "PIL.TiffImagePlugin.ImageFileDirectory_v1.__getitem__",
+      "PIL.TiffImagePlugin.ImageFileDirectory_v2.__getitem__",
       "PIL.PdfImagePlugin._save",
       "PIL.PdfParser.PdfParser.__init__",
       "PIL.PdfParser.PdfParser.read_pdf_info",
@@ -6848,9 +6848,9 @@
       "PIL.PdfParser.PdfParser.linearize_page_tree"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.forms.fields.MultiValueField.__init__",
-      "PIL.TiffImagePlugin.ImageFileDirectory_v1.__getitem__",
+      "PIL.TiffImagePlugin.ImageFileDirectory_v2.__getitem__",
       "PIL.PdfImagePlugin._save",
       "PIL.PdfParser.PdfParser.__init__",
       "PIL.PdfParser.PdfParser.read_pdf_info",
@@ -6950,9 +6950,9 @@
       "PIL.MpoImagePlugin.MpoImageFile.seek"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.forms.fields.MultiValueField.__init__",
-      "PIL.ImageSequence.Iterator.__next__",
+      "PIL.ImageSequence.Iterator.__getitem__",
       "PIL.DcxImagePlugin.DcxImageFile.seek"
      ],
      "missing": false
@@ -7047,9 +7047,9 @@
       "PIL.TiffImagePlugin._save"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.forms.fields.MultiValueField.__init__",
-      "PIL.TiffImagePlugin.ImageFileDirectory_v1.__getitem__",
+      "PIL.TiffImagePlugin.ImageFileDirectory_v2.__getitem__",
       "PIL.TiffImagePlugin._save"
      ],
      "missing": false
@@ -7144,9 +7144,9 @@
       "PIL.GdImageFile.GdImageFile._open"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.forms.fields.MultiValueField.__init__",
-      "PIL.TiffImagePlugin.ImageFileDirectory_v1.__getitem__",
+      "PIL.TiffImagePlugin.ImageFileDirectory_v2.__getitem__",
       "PIL.ImageFile.ImageFile.__init__",
       "PIL.GdImageFile.GdImageFile._open"
      ],
@@ -7329,9 +7329,9 @@
       "PIL.PdfParser.PdfParser.read_prev_trailer"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.forms.fields.MultiValueField.__init__",
-      "PIL.TiffImagePlugin.ImageFileDirectory_v1.__getitem__",
+      "PIL.TiffImagePlugin.ImageFileDirectory_v2.__getitem__",
       "PIL.PdfImagePlugin._save",
       "PIL.PdfParser.PdfParser.__init__",
       "PIL.PdfParser.PdfParser.read_pdf_info",
@@ -7604,7 +7604,7 @@
       "PIL.EpsImagePlugin.Ghostscript"
      ],
      "witness": [
-      "__app__.dojo.forms.JIRAProjectForm.__init__",
+      "__app__.dojo.utils.do_false_positive_history",
       "django.core.validators.ProhibitNullCharactersValidator.__eq__",
       "PIL.ImageMath._Operand.__eq__",
       "PIL.ImageMath._Operand.apply",
@@ -7702,7 +7702,7 @@
       "PIL.EpsImagePlugin.Ghostscript"
      ],
      "witness": [
-      "__app__.dojo.forms.JIRAProjectForm.__init__",
+      "__app__.dojo.utils.do_false_positive_history",
       "django.core.validators.ProhibitNullCharactersValidator.__eq__",
       "PIL.ImageMath._Operand.__eq__",
       "PIL.ImageMath._Operand.apply",
@@ -7890,9 +7890,9 @@
       "PIL.XbmImagePlugin._accept"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.forms.fields.MultiValueField.__init__",
-      "PIL.TiffImagePlugin.ImageFileDirectory_v1.__getitem__",
+      "PIL.TiffImagePlugin.ImageFileDirectory_v2.__getitem__",
       "PIL.ImageFile.ImageFile.__init__",
       "PIL.XbmImagePlugin.XbmImageFile._open"
      ],
@@ -7988,9 +7988,9 @@
       "PIL.ImageFilter.RankFilter.__init__"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.forms.fields.MultiValueField.__init__",
-      "PIL.TiffImagePlugin.ImageFileDirectory_v1.__getitem__",
+      "PIL.TiffImagePlugin.ImageFileDirectory_v2.__getitem__",
       "PIL.ImageFilter.RankFilter.__init__"
      ],
      "missing": false
@@ -8085,9 +8085,9 @@
       "PIL.TiffImagePlugin._save"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "django.forms.fields.MultiValueField.__init__",
-      "PIL.TiffImagePlugin.ImageFileDirectory_v1.__getitem__",
+      "PIL.TiffImagePlugin.ImageFileDirectory_v2.__getitem__",
       "PIL.TiffImagePlugin._save"
      ],
      "missing": false
@@ -8384,7 +8384,7 @@
   ],
   "depth": 3,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -8434,7 +8434,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "cryptography.hazmat.backends.openssl.backend.Backend.serialize_key_and_certificates_to_pkcs12"
@@ -8752,7 +8752,7 @@
   ],
   "depth": 3,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -8802,7 +8802,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "cryptography.hazmat.backends.openssl.backend.Backend._load_pkcs7_certificates"
@@ -9201,7 +9201,7 @@
   ],
   "depth": 3,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -9251,7 +9251,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "cryptography.hazmat.primitives.asymmetric.ec.get_curve_for_oid"
@@ -9442,7 +9442,7 @@
       "requests.utils.get_netrc_auth"
      ],
      "witness": [
-      "__app__.dojo.tools.api_sonarqube.api_client.SonarQubeAPI.test_connection",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "requests.sessions.Session.get",
       "requests.sessions.Session.request",
       "requests.sessions.Session.prepare_request",
@@ -9541,7 +9541,7 @@
       "requests.adapters.HTTPAdapter.send"
      ],
      "witness": [
-      "__app__.dojo.tools.api_sonarqube.api_client.SonarQubeAPI.test_connection",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "requests.sessions.Session.get",
       "requests.sessions.Session.request",
       "requests.sessions.Session.send",
@@ -9640,7 +9640,7 @@
       "requests.utils.extract_zipped_paths"
      ],
      "witness": [
-      "__app__.dojo.tools.api_sonarqube.api_client.SonarQubeAPI.test_connection",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "requests.sessions.Session.get",
       "requests.sessions.Session.request",
       "requests.sessions.Session.send",
@@ -9751,7 +9751,7 @@
       "urllib3.response.MultiDecoder.decompress"
      ],
      "witness": [
-      "__app__.dojo.tools.api_edgescan.api_client.<module>",
+      "__app__.dojo.jira_link.helper.<module>",
       "requests.<module>",
       "urllib3.<module>",
       "urllib3.response.HTTPResponse.__init__",
@@ -9853,9 +9853,9 @@
       "urllib3.util.retry.<module>"
      ],
      "witness": [
-      "__app__.dojo.okta.<module>",
-      "social_core.utils.<module>",
-      "requests.adapters.<module>",
+      "__app__.dojo.jira_link.helper.<module>",
+      "requests.<module>",
+      "urllib3.<module>",
       "urllib3.util.retry.<module>"
      ],
      "missing": false
@@ -9950,7 +9950,7 @@
       "urllib3.response.HTTPResponse.drain_conn"
      ],
      "witness": [
-      "__app__.dojo.tools.api_sonarqube.api_client.SonarQubeAPI.test_connection",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "requests.sessions.Session.get",
       "requests.sessions.Session.request",
       "requests.sessions.Session.send",
@@ -10052,7 +10052,7 @@
       "urllib3.poolmanager.ProxyManager.__init__"
      ],
      "witness": [
-      "__app__.dojo.tools.api_edgescan.api_client.<module>",
+      "__app__.dojo.jira_link.helper.<module>",
       "requests.<module>",
       "urllib3.<module>",
       "urllib3.poolmanager.ProxyManager.__init__"
@@ -10151,7 +10151,7 @@
       "urllib3.poolmanager.PoolManager.urlopen"
      ],
      "witness": [
-      "__app__.dojo.tools.api_sonarqube.api_client.SonarQubeAPI.test_connection",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "requests.sessions.Session.get",
       "requests.sessions.Session.request",
       "requests.sessions.Session.send",
@@ -10250,7 +10250,7 @@
       "urllib3.response.MultiDecoder.__init__"
      ],
      "witness": [
-      "__app__.dojo.tools.api_edgescan.api_client.<module>",
+      "__app__.dojo.jira_link.helper.<module>",
       "requests.<module>",
       "urllib3.<module>",
       "urllib3.response.HTTPResponse.__init__",
@@ -10539,9 +10539,9 @@
       "urllib3.util.retry.<module>"
      ],
      "witness": [
-      "__app__.dojo.okta.<module>",
-      "social_core.utils.<module>",
-      "requests.adapters.<module>",
+      "__app__.dojo.jira_link.helper.<module>",
+      "requests.<module>",
+      "urllib3.<module>",
       "urllib3.util.retry.<module>"
      ],
      "missing": false
@@ -10637,9 +10637,9 @@
       "urllib3.response.HTTPResponse.read_chunked"
      ],
      "witness": [
-      "__app__.dojo.tools.api_edgescan.api_client.<module>",
-      "requests.<module>",
-      "requests.models.Request.__init__",
+      "__app__.dojo.jira_link.helper.<module>",
+      "requests.auth.<module>",
+      "requests.utils.<module>",
       "urllib3.response.HTTPResponse.__iter__",
       "urllib3.response.HTTPResponse.stream",
       "urllib3.response.HTTPResponse.read_chunked",
@@ -10769,7 +10769,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -10819,7 +10819,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "social_django.models.AbstractUserSocialAuth.get_social_auth"
@@ -10861,7 +10861,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -10911,7 +10911,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "social_django.storage.DjangoUserMixin.create_user"
@@ -10953,7 +10953,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -11003,7 +11003,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "social_core.backends.vk.VKAppOAuth2.auth_complete"
@@ -11044,7 +11044,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -11094,7 +11094,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "social_core.backends.line.LineOAuth2.auth_complete"
@@ -11294,7 +11294,7 @@
       "social_core.backends.open_id_connect.OpenIdConnectAuth.validate_claims"
      ],
      "witness": [
-      "__app__.dojo.notes.urls.<module>",
+      "__app__.dojo.notifications.helper.send_slack_notification",
       "social_core.backends.open_id_connect.OpenIdConnectAuth.__init__"
      ],
      "missing": false
@@ -11539,7 +11539,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -11589,7 +11589,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "social_core.backends.loginradius.LoginRadiusAuth.auth_html"
@@ -12050,7 +12050,7 @@
       "git.refs.head.Head.checkout"
      ],
      "witness": [
-      "__app__.dojo.templatetags.display_tags.remove_string",
+      "__app__.dojo.templatetags.display_tags.jiraencode_component",
       "git.objects.commit.Commit.replace",
       "git.objects.submodule.base.Submodule.update",
       "git.refs.head.Head.checkout"
@@ -12235,9 +12235,9 @@
       "git.cmd.Git.check_unsafe_options"
      ],
      "witness": [
-      "__app__.dojo.templatetags.display_tags.remove_string",
+      "__app__.dojo.templatetags.display_tags.jiraencode_component",
       "git.objects.commit.Commit.replace",
-      "git.objects.submodule.base.Submodule.update",
+      "git.objects.submodule.root.RootModule.update",
       "git.remote.Remote.fetch",
       "git.cmd.Git.check_unsafe_options"
      ],
@@ -12436,7 +12436,7 @@
       "git.refs.tag.TagReference.create"
      ],
      "witness": [
-      "__app__.dojo.templatetags.display_tags.remove_string",
+      "__app__.dojo.templatetags.display_tags.jiraencode_component",
       "git.objects.commit.Commit.replace",
       "git.objects.submodule.base.Submodule.update",
       "git.index.base.IndexFile.checkout"
@@ -12631,9 +12631,9 @@
       "git.repo.base.Repo.blame_incremental"
      ],
      "witness": [
-      "__app__.dojo.templatetags.display_tags.remove_string",
+      "__app__.dojo.templatetags.display_tags.jiraencode_component",
       "git.objects.commit.Commit.replace",
-      "git.objects.submodule.base.Submodule.update",
+      "git.objects.submodule.root.RootModule.update",
       "git.remote.Remote.fetch",
       "git.cmd.Git.check_unsafe_options"
      ],
@@ -12731,7 +12731,7 @@
       "git.index.base.IndexFile.reset"
      ],
      "witness": [
-      "__app__.dojo.templatetags.display_tags.remove_string",
+      "__app__.dojo.templatetags.display_tags.jiraencode_component",
       "git.objects.commit.Commit.replace",
       "git.objects.submodule.base.Submodule.update",
       "git.index.base.IndexFile.reset",
@@ -12831,7 +12831,7 @@
      "witness": [
       "__app__.dojo.templatetags.display_tags.<module>",
       "git.<module>",
-      "git.config.<module>",
+      "git.exc.<module>",
       "git.repo.base.<module>"
      ],
      "missing": false
@@ -13112,7 +13112,7 @@
      "witness": [
       "__app__.dojo.templatetags.display_tags.<module>",
       "git.<module>",
-      "git.config.<module>",
+      "git.exc.<module>",
       "git.repo.base.<module>"
      ],
      "missing": false
@@ -13399,9 +13399,9 @@
       "git.objects.submodule.base.Submodule.rename"
      ],
      "witness": [
-      "__app__.dojo.templatetags.display_tags.remove_string",
-      "git.objects.commit.Commit.replace",
-      "git.objects.submodule.base.Submodule.update",
+      "__app__.dojo.templatetags.display_tags.dojo_current_hash",
+      "git.repo.base.Repo.__init__",
+      "git.objects.submodule.base.Submodule.exists",
       "git.objects.submodule.base.Submodule._clone_repo"
      ],
      "missing": false
@@ -13496,9 +13496,9 @@
       "git.objects.submodule.base.Submodule._clone_repo"
      ],
      "witness": [
-      "__app__.dojo.templatetags.display_tags.remove_string",
-      "git.objects.commit.Commit.replace",
-      "git.objects.submodule.base.Submodule.update",
+      "__app__.dojo.templatetags.display_tags.dojo_current_hash",
+      "git.repo.base.Repo.__init__",
+      "git.objects.submodule.base.Submodule.exists",
       "git.objects.submodule.base.Submodule._clone_repo"
      ],
      "missing": false
@@ -13706,11 +13706,11 @@
       "git.repo.base.Repo.iter_commits"
      ],
      "witness": [
-      "__app__.dojo.templatetags.display_tags.remove_string",
+      "__app__.dojo.templatetags.display_tags.jiraencode_component",
       "git.objects.commit.Commit.replace",
-      "git.objects.base.Object.new_from_sha",
-      "git.db.GitCmdObjectDB.info",
-      "git.cmd.Git.get_object_header",
+      "git.objects.base.Object.stream_data",
+      "git.db.GitCmdObjectDB.stream",
+      "git.cmd.Git.stream_object_data",
       "git.cmd.Git._get_persistent_cmd",
       "git.cmd.Git.__getstate__"
      ],
@@ -13750,7 +13750,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -13800,7 +13800,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "git.repo.base.Repo.init"
@@ -13899,11 +13899,11 @@
       "git.refs.symbolic.SymbolicReference._get_ref_info_helper"
      ],
      "witness": [
-      "__app__.dojo.templatetags.display_tags.remove_string",
-      "git.objects.commit.Commit.replace",
-      "git.objects.submodule.base.Submodule.update",
-      "git.refs.symbolic.SymbolicReference.set_object",
-      "git.refs.symbolic.SymbolicReference._get_reference",
+      "__app__.dojo.templatetags.display_tags.dojo_current_hash",
+      "git.objects.tree.Tree.__getitem__",
+      "git.repo.fun.rev_parse",
+      "git.repo.fun.name_to_object",
+      "git.refs.symbolic.SymbolicReference.dereference_recursive",
       "git.refs.symbolic.SymbolicReference._get_ref_info",
       "git.refs.symbolic.SymbolicReference._get_ref_info_helper"
      ],
@@ -13942,7 +13942,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -13992,7 +13992,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,eval,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "git.remote.Remote.pull"
@@ -14091,7 +14091,7 @@
       "git.index.base.IndexFile.diff"
      ],
      "witness": [
-      "__app__.dojo.templatetags.display_tags.remove_string",
+      "__app__.dojo.templatetags.display_tags.jiraencode_component",
       "git.objects.commit.Commit.replace",
       "git.diff.Diffable.diff"
      ],
@@ -14283,7 +14283,7 @@
       "git.util.Actor._from_string"
      ],
      "witness": [
-      "__app__.dojo.templatetags.display_tags.dojo_body_class",
+      "__app__.dojo.templatetags.display_tags.dojo_current_hash",
       "git.objects.tree.Tree.__getitem__",
       "git.refs.log.RefLogEntry.from_line",
       "git.util.Actor._from_string"
@@ -14382,7 +14382,7 @@
      "witness": [
       "__app__.dojo.templatetags.display_tags.dojo_current_hash",
       "git.repo.base.Repo.__init__",
-      "git.objects.submodule.base.Submodule.exists",
+      "git.util.expand_path",
       "git.objects.base.IndexObject.abspath"
      ],
      "missing": false
@@ -14480,11 +14480,11 @@
       "git.refs.head.Head.checkout"
      ],
      "witness": [
-      "__app__.dojo.templatetags.display_tags.remove_string",
+      "__app__.dojo.templatetags.display_tags.jiraencode_component",
       "git.objects.commit.Commit.replace",
-      "git.objects.base.Object.new_from_sha",
-      "git.db.GitCmdObjectDB.info",
-      "git.cmd.Git.get_object_header",
+      "git.objects.base.Object.stream_data",
+      "git.db.GitCmdObjectDB.stream",
+      "git.cmd.Git.stream_object_data",
       "git.cmd.Git._get_persistent_cmd",
       "git.cmd.Git.__getstate__"
      ],
@@ -14959,7 +14959,7 @@
       "git.objects.commit.Commit.count"
      ],
      "witness": [
-      "__app__.dojo.templatetags.display_tags.remove_string",
+      "__app__.dojo.templatetags.display_tags.jiraencode_component",
       "git.objects.commit.Commit.replace",
       "git.objects.commit.Commit.count"
      ],
@@ -15055,9 +15055,9 @@
       "git.repo.base.Repo._clone"
      ],
      "witness": [
-      "__app__.dojo.templatetags.display_tags.remove_string",
-      "git.objects.commit.Commit.replace",
-      "git.objects.submodule.base.Submodule.update",
+      "__app__.dojo.templatetags.display_tags.dojo_current_hash",
+      "git.repo.base.Repo.__init__",
+      "git.objects.submodule.base.Submodule.exists",
       "git.objects.submodule.base.Submodule._clone_repo",
       "git.repo.base.Repo.clone_from",
       "git.repo.base.Repo._clone"
@@ -15523,7 +15523,7 @@
       "git.repo.base.Repo.merge_base"
      ],
      "witness": [
-      "__app__.dojo.templatetags.display_tags.remove_string",
+      "__app__.dojo.templatetags.display_tags.jiraencode_component",
       "git.objects.commit.Commit.replace",
       "git.objects.submodule.root.RootModule.update",
       "git.index.base.IndexFile.move"
@@ -15621,11 +15621,11 @@
       "git.cmd.Git.execute"
      ],
      "witness": [
-      "__app__.dojo.templatetags.display_tags.remove_string",
+      "__app__.dojo.templatetags.display_tags.jiraencode_component",
       "git.objects.commit.Commit.replace",
-      "git.objects.base.Object.new_from_sha",
-      "git.db.GitCmdObjectDB.info",
-      "git.cmd.Git.get_object_header",
+      "git.objects.base.Object.stream_data",
+      "git.db.GitCmdObjectDB.stream",
+      "git.cmd.Git.stream_object_data",
       "git.cmd.Git._get_persistent_cmd",
       "git.cmd.Git.custom_environment"
      ],
@@ -15991,8 +15991,8 @@
      "witness": [
       "__app__.dojo.pipeline.<module>",
       "social_core.pipeline.<module>",
-      "social_core.pipeline.social_auth.load_extra_data",
-      "social_core.backends.exacttarget.ExactTargetOAuth2.extra_data",
+      "social_core.pipeline.social_auth.social_uid",
+      "social_core.backends.keycloak.KeycloakOAuth2.get_user_id",
       "jwt.jwk_set_cache.JWKSetCache.get",
       "jwt.jwks_client.PyJWKClient.get_jwk_set",
       "jwt.jwks_client.PyJWKClient.fetch_data"
@@ -16367,8 +16367,8 @@
      "witness": [
       "__app__.dojo.pipeline.<module>",
       "social_core.pipeline.<module>",
-      "social_core.pipeline.social_auth.load_extra_data",
-      "social_core.backends.exacttarget.ExactTargetOAuth2.extra_data",
+      "social_core.pipeline.social_auth.social_uid",
+      "social_core.backends.keycloak.KeycloakOAuth2.get_user_id",
       "jwt.jwk_set_cache.JWKSetCache.get",
       "jwt.jwks_client.PyJWKClient.get_jwk_set",
       "jwt.jwks_client.PyJWKClient.fetch_data"
@@ -16957,8 +16957,8 @@
      "witness": [
       "__app__.dojo.pipeline.<module>",
       "social_core.pipeline.<module>",
-      "social_core.pipeline.social_auth.load_extra_data",
-      "social_core.backends.exacttarget.ExactTargetOAuth2.extra_data",
+      "social_core.pipeline.social_auth.social_uid",
+      "social_core.backends.keycloak.KeycloakOAuth2.get_user_id",
       "jwt.jwk_set_cache.JWKSetCache.get",
       "jwt.jwks_client.PyJWKClient.get_jwk_set",
       "jwt.api_jwk.PyJWKSet.from_dict",
@@ -17061,7 +17061,7 @@
       "__app__.dojo.pipeline.<module>",
       "social_core.backends.azuread_tenant.<module>",
       "jwt.<module>",
-      "jwt.api_jwt.<module>",
+      "jwt.api_jwk.<module>",
       "jwt.algorithms.<module>"
      ],
      "missing": false

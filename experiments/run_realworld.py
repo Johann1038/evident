@@ -49,11 +49,34 @@ def evaluate(pins_new, pins_old, fidx, p_new_of, planned: dict | None):
            "residual_confirmed": carried_conf, "new_findings": new_f, "changed": len(changed),
            "major_bumps": majors, "added": len(set(pins_new) - set(pins_old)),
            "removed": len(set(pins_old) - set(pins_new))}
+    out["realised_changes"] = {p: [pins_old.get(p), pins_new.get(p)] for p in sorted(changed)}
     if planned is not None:
+        unpl = changed - set(planned)
         out["planned_changes"] = len(planned)
-        out["unplanned_changes"] = len(changed - set(planned))
+        out["unplanned_changes"] = len(unpl)
+        out["unplanned_major"] = sum(1 for p in unpl if p in pins_new and p in pins_old
+                                     and semver_cost(pins_old[p], pins_new[p]) >= 2)
+        out["unplanned_added"] = len(unpl & (set(pins_new) - set(pins_old)))
+        out["new_findings_from_unplanned"] = sum(1 for p, a in res_f if p in unpl and (p, a.id) not in fidx)
         out["plan_not_realised"] = sum(1 for p, v in planned.items() if pins_new.get(p) != v)
     return out
+
+
+def failure_category(err: str) -> str:
+    e = (err or "").lower()
+    if not e:
+        return "none"
+    if "model infeasible" in e:
+        return "no feasible plan in candidate set"
+    if "only supports" in e or "requires-python" in e or "python-version" in e:
+        return "requires newer python"
+    if "no usable wheels" in e or "no wheel" in e or "publishes no wheel" in e:
+        return "no compatible wheel"
+    if "timeout" in e:
+        return "resolver timeout"
+    if "unsatisfiable" in e or "conflict" in e or "no solution" in e:
+        return "dependency conflict"
+    return "other"
 
 
 def one(snap: str, model_json: str) -> dict:
@@ -134,6 +157,12 @@ def one(snap: str, model_json: str) -> dict:
     up = _with_carried(compile_env(reqs, python=r["python"], exclude_newer=TODAY, upgrade=True))
     strategies["upgrade_all"] = {"planned": None, "ok": up.ok, "error": up.error[-300:], "seconds": round(up.seconds, 1),
                                  **(evaluate(up.pins, pins, fidx, p_new_of, None) if up.ok else {})}
+    # resolver-native fix: require at least the first fixing version, let the resolver choose everything else
+    mins = plan_audit_fix(pins, live, TODAY, r["python"])
+    uvf = _with_carried(compile_env(reqs, prefer=prefer, python=r["python"], exclude_newer=TODAY,
+                                    specs=[f"{p}>={v}" for p, v in sorted(mins.items()) if p not in sdist_only]))
+    strategies["uv_fix"] = {"planned": mins, "ok": uvf.ok, "error": uvf.error[-300:], "seconds": round(uvf.seconds, 1),
+                            **(evaluate(uvf.pins, pins, fidx, p_new_of, None) if uvf.ok else {})}
     # optimisation strategies (same optimiser, different exposure weights)
     weights = {"vm_opt": lambda f: 1.0, "coral_opt": p_coral_style, "cape_opt": p_cape_style,
                "evident": lambda f: f.p_exposed}
@@ -146,16 +175,38 @@ def one(snap: str, model_json: str) -> dict:
         strategies[name] = {"planned": pl.changes, "ok": bool(pl.verified), "iterations": pl.iterations,
                             "error": pl.error[-300:], "seconds": round(time.time() - ts, 1),
                             "model_residual": pl.residual_model, "model_cost": pl.cost_model,
-                            "scope": len(rem.scope()),
+                            "scope": len(rem.scope()), "candidates": sum(len(rem.candidates(p)) for p in rem.scope()),
                             **(evaluate(pl.realised, pins, fidx, p_new_of, pl.changes) if pl.verified else {})}
         rem_by[name] = rem
+    # candidate-set sensitivity: same objective with a wider candidate set
+    ts = time.time()
+    remw = Remediator(pins, direct, live, tenv, today=TODAY, p_of=lambda f: f.p_exposed, p_new_of=p_new_of, max_cands=12)
+    plw = remw.plan_verified(LAMBDA, verify, name="evident_wide")
+    strategies["evident_wide"] = {"planned": plw.changes, "ok": bool(plw.verified), "iterations": plw.iterations,
+                                  "error": plw.error[-300:], "seconds": round(time.time() - ts, 1),
+                                  "model_residual": plw.residual_model, "model_cost": plw.cost_model,
+                                  "candidates": sum(len(remw.candidates(p)) for p in remw.scope()),
+                                  **(evaluate(plw.realised, pins, fidx, p_new_of, plw.changes) if plw.verified else {})}
+    # failure taxonomy and execution-free API compatibility of every realised environment
+    from evident.compat import plan_compatibility
+    app_refs = (r["stats"] or {}).get("app_refs", {})
+    for name, s in strategies.items():
+        s["failure"] = "none" if s["ok"] else failure_category(s.get("error", ""))
+        if s["ok"] and s.get("realised_changes") is not None:
+            ch = {p: nv for p, (ov, nv) in s["realised_changes"].items() if nv}
+            try:
+                s["compat"] = plan_compatibility(ch, app_refs)
+            except Exception as e:  # compatibility is an extra measurement
+                s["compat"] = {"error": repr(e)}
+    ev = strategies["evident"]
+    if ev["ok"]:
+        ev["objective_gap"] = ev["residual_risk_evident"] - ev["model_residual"]
     rec["strategies"] = strategies
     rec["original"] = evaluate(pins, pins, fidx, p_new_of, None)
     # Pareto front and decision sensitivity for EVIDENT
     try:
-        rec["pareto_evident"] = rem_by["evident"].pareto()
-        rec["pareto_vm"] = rem_by["vm_opt"].pareto()
-        crit = rem_by["evident"].decision_critical(live, LAMBDA, lambda f: f.p_exposed)
+        # (risk/cost fronts are computed post hoc under a common yardstick: experiments/pareto_posthoc.py)
+        crit =rem_by["evident"].decision_critical(live, LAMBDA, lambda f: f.p_exposed)
         rec["decision"] = {"uncertain": len(crit), "critical": sum(1 for c in crit if c["critical"]),
                            "evpi_total": sum(c["evpi"] for c in crit),
                            "top": sorted(crit, key=lambda c: -c["evpi"])[:5]}
@@ -204,7 +255,9 @@ def main():
     if a.only:
         snaps = [s for s in snaps if s in a.only.split(",")]
     if not a.force:
-        snaps = [s for s in snaps if not (OUT / s / "result.json").exists()]
+        snaps = [s for s in snaps if not (OUT / s / "result.json").exists()
+                 and not ((OUT / s / "error.txt").exists()
+                          and (OUT / s / "error.txt").read_text("utf8").startswith("timeout after"))]
     if a.limit:
         snaps = snaps[: a.limit]
     print(f"{len(snaps)} snapshots to process", flush=True)

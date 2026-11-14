@@ -1,0 +1,1261 @@
+{
+ "id": "autopkg__autopkg@v2.7.2",
+ "meta": {
+  "id": "autopkg__autopkg@v2.7.2",
+  "repo": "autopkg/autopkg",
+  "tag": "v2.7.2",
+  "published_at": "2022-12-07T16:45:29Z",
+  "stars": 1489,
+  "lock_kind": "requirements",
+  "lock_file": "requirements.txt",
+  "lock_path": "requirements.txt",
+  "subdir": "",
+  "manifest": null,
+  "requires_python": null,
+  "description": "Automating packaging and software distribution on macOS.",
+  "topics": [
+   "apple",
+   "automation",
+   "autopkg",
+   "hacktoberfest",
+   "macadmin",
+   "macos",
+   "packaging",
+   "python"
+  ]
+ },
+ "python": "3.10",
+ "summary": {
+  "locked": 141,
+  "installed": 25,
+  "direct": 8,
+  "transitive": 17,
+  "edges": 400,
+  "edges_from_lock": false
+ },
+ "stats": {
+  "app_modules": 87,
+  "pkgs_analysed": 6,
+  "pkgs_no_source": 0,
+  "seconds": 336.4,
+  "funcs": 2218,
+  "roots": 893,
+  "app_refs": {
+   "certifi": [
+    "certifi",
+    "certifi.core.where"
+   ]
+  },
+  "reflection_kinds": {
+   "__app__": [
+    "__import__",
+    "namespace"
+   ]
+  }
+ },
+ "scan_seconds": 344.3,
+ "sdist_only": [
+  "nodeenv",
+  "pycparser"
+ ],
+ "baseline_resolution": {
+  "ok": true,
+  "seconds": 5.7,
+  "error": ""
+ },
+ "baseline_drift": 11,
+ "strategies": {
+  "audit_fix": {
+   "planned": {
+    "black": "26.10.1",
+    "certifi": "2026.10.18",
+    "virtualenv": "21.14.9"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 2.2,
+   "residual_findings": 19,
+   "residual_risk_evident": 3.786933491686461,
+   "residual_risk_vm": 9.61,
+   "residual_confirmed": 0,
+   "new_findings": 19,
+   "changed": 20,
+   "major_bumps": 8,
+   "added": 10,
+   "removed": 0,
+   "realised_changes": {
+    "black": [
+     "19.10b0",
+     "26.10.1"
+    ],
+    "certifi": [
+     "2019.9.11",
+     "2026.10.18"
+    ],
+    "cffi": [
+     "1.13.1",
+     "2.1.1"
+    ],
+    "click": [
+     "7.0",
+     "8.5.1"
+    ],
+    "distlib": [
+     null,
+     "0.4.4"
+    ],
+    "filelock": [
+     null,
+     "4.1.0"
+    ],
+    "mypy-extensions": [
+     null,
+     "1.2.0"
+    ],
+    "nodeenv": [
+     "1.3.3",
+     "1.12.0"
+    ],
+    "packaging": [
+     null,
+     "26.3"
+    ],
+    "pathspec": [
+     null,
+     "1.1.1"
+    ],
+    "platformdirs": [
+     null,
+     "4.12.4"
+    ],
+    "pre-commit": [
+     "2.5",
+     "2.5.0"
+    ],
+    "pycparser": [
+     "2.19",
+     "3.11"
+    ],
+    "python-discovery": [
+     null,
+     "1.9.5"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "pyyaml": [
+     "5.4",
+     "6.0.3"
+    ],
+    "tomli": [
+     null,
+     "2.5.0"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "virtualenv": [
+     "20.0.8",
+     "21.14.9"
+    ],
+    "xattr": [
+     "0.9.6",
+     "1.3.1"
+    ]
+   },
+   "planned_changes": 3,
+   "unplanned_changes": 17,
+   "unplanned_major": 5,
+   "unplanned_added": 10,
+   "new_findings_from_unplanned": 17,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 2,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "latest": {
+   "planned": {
+    "certifi": "2026.10.23",
+    "black": "26.10.1",
+    "virtualenv": "21.15.6"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 0.1,
+   "residual_findings": 17,
+   "residual_risk_evident": 3.333762470308789,
+   "residual_risk_vm": 8.459999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 17,
+   "changed": 20,
+   "major_bumps": 8,
+   "added": 10,
+   "removed": 0,
+   "realised_changes": {
+    "black": [
+     "19.10b0",
+     "26.10.1"
+    ],
+    "certifi": [
+     "2019.9.11",
+     "2026.10.23"
+    ],
+    "cffi": [
+     "1.13.1",
+     "2.1.1"
+    ],
+    "click": [
+     "7.0",
+     "8.5.1"
+    ],
+    "distlib": [
+     null,
+     "0.4.4"
+    ],
+    "filelock": [
+     null,
+     "4.1.0"
+    ],
+    "mypy-extensions": [
+     null,
+     "1.2.0"
+    ],
+    "nodeenv": [
+     "1.3.3",
+     "1.12.0"
+    ],
+    "packaging": [
+     null,
+     "26.3"
+    ],
+    "pathspec": [
+     null,
+     "1.1.1"
+    ],
+    "platformdirs": [
+     null,
+     "4.12.4"
+    ],
+    "pre-commit": [
+     "2.5",
+     "2.5.0"
+    ],
+    "pycparser": [
+     "2.19",
+     "3.11"
+    ],
+    "python-discovery": [
+     null,
+     "1.9.5"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "pyyaml": [
+     "5.4",
+     "6.0.3"
+    ],
+    "tomli": [
+     null,
+     "2.5.0"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "virtualenv": [
+     "20.0.8",
+     "21.15.6"
+    ],
+    "xattr": [
+     "0.9.6",
+     "1.3.1"
+    ]
+   },
+   "planned_changes": 3,
+   "unplanned_changes": 17,
+   "unplanned_major": 5,
+   "unplanned_added": 10,
+   "new_findings_from_unplanned": 17,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 2,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "upgrade_all": {
+   "planned": null,
+   "ok": true,
+   "error": "",
+   "seconds": 8.6,
+   "residual_findings": 17,
+   "residual_risk_evident": 3.333762470308789,
+   "residual_risk_vm": 8.459999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 17,
+   "changed": 35,
+   "major_bumps": 17,
+   "added": 10,
+   "removed": 0,
+   "realised_changes": {
+    "appdirs": [
+     "1.4.3",
+     "1.4.4"
+    ],
+    "aspy-yaml": [
+     "1.2.0",
+     "1.3.0"
+    ],
+    "attrs": [
+     "19.1.0",
+     "26.1.0"
+    ],
+    "black": [
+     "19.10b0",
+     "26.10.1"
+    ],
+    "certifi": [
+     "2019.9.11",
+     "2026.10.23"
+    ],
+    "cffi": [
+     "1.13.1",
+     "2.1.1"
+    ],
+    "cfgv": [
+     "2.0.0",
+     "3.5.0"
+    ],
+    "click": [
+     "7.0",
+     "8.5.1"
+    ],
+    "distlib": [
+     null,
+     "0.4.4"
+    ],
+    "entrypoints": [
+     "0.3",
+     "0.4.2"
+    ],
+    "filelock": [
+     null,
+     "4.1.0"
+    ],
+    "flake8": [
+     "3.8.3",
+     "7.4.1"
+    ],
+    "flake8-bugbear": [
+     "19.3.0",
+     "26.10.27"
+    ],
+    "identify": [
+     "1.4.3",
+     "2.6.20"
+    ],
+    "isort": [
+     "5.0.4",
+     "9.0.2"
+    ],
+    "mccabe": [
+     "0.6.1",
+     "0.7.0"
+    ],
+    "mypy-extensions": [
+     null,
+     "1.2.0"
+    ],
+    "nodeenv": [
+     "1.3.3",
+     "1.12.0"
+    ],
+    "packaging": [
+     null,
+     "26.3"
+    ],
+    "pathspec": [
+     null,
+     "1.1.1"
+    ],
+    "platformdirs": [
+     null,
+     "4.12.4"
+    ],
+    "pre-commit": [
+     "2.5",
+     "4.6.2"
+    ],
+    "pycodestyle": [
+     "2.6.0",
+     "2.15.0"
+    ],
+    "pycparser": [
+     "2.19",
+     "3.11"
+    ],
+    "pyflakes": [
+     "2.2.0",
+     "4.0.3"
+    ],
+    "python-discovery": [
+     null,
+     "1.9.5"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "pyyaml": [
+     "5.4",
+     "6.0.3"
+    ],
+    "six": [
+     "1.12.0",
+     "1.17.0"
+    ],
+    "tokenize-rt": [
+     "3.2.0",
+     "6.2.0"
+    ],
+    "toml": [
+     "0.10.0",
+     "0.10.2"
+    ],
+    "tomli": [
+     null,
+     "2.5.0"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "virtualenv": [
+     "20.0.8",
+     "21.15.6"
+    ],
+    "xattr": [
+     "0.9.6",
+     "1.3.1"
+    ]
+   },
+   "failure": "none",
+   "compat": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 2,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "uv_fix": {
+   "planned": {
+    "black": "26.10.1",
+    "certifi": "2026.10.18",
+    "virtualenv": "21.14.9"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 0.1,
+   "residual_findings": 17,
+   "residual_risk_evident": 3.333762470308789,
+   "residual_risk_vm": 8.459999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 17,
+   "changed": 20,
+   "major_bumps": 8,
+   "added": 10,
+   "removed": 0,
+   "realised_changes": {
+    "black": [
+     "19.10b0",
+     "26.10.1"
+    ],
+    "certifi": [
+     "2019.9.11",
+     "2026.10.23"
+    ],
+    "cffi": [
+     "1.13.1",
+     "2.1.1"
+    ],
+    "click": [
+     "7.0",
+     "8.5.1"
+    ],
+    "distlib": [
+     null,
+     "0.4.4"
+    ],
+    "filelock": [
+     null,
+     "4.1.0"
+    ],
+    "mypy-extensions": [
+     null,
+     "1.2.0"
+    ],
+    "nodeenv": [
+     "1.3.3",
+     "1.12.0"
+    ],
+    "packaging": [
+     null,
+     "26.3"
+    ],
+    "pathspec": [
+     null,
+     "1.1.1"
+    ],
+    "platformdirs": [
+     null,
+     "4.12.4"
+    ],
+    "pre-commit": [
+     "2.5",
+     "2.5.0"
+    ],
+    "pycparser": [
+     "2.19",
+     "3.11"
+    ],
+    "python-discovery": [
+     null,
+     "1.9.5"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "pyyaml": [
+     "5.4",
+     "6.0.3"
+    ],
+    "tomli": [
+     null,
+     "2.5.0"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "virtualenv": [
+     "20.0.8",
+     "21.15.6"
+    ],
+    "xattr": [
+     "0.9.6",
+     "1.3.1"
+    ]
+   },
+   "failure": "none",
+   "compat": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 2,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "vm_opt": {
+   "planned": {
+    "black": "26.10.1",
+    "certifi": "2026.10.18",
+    "click": "8.5.1",
+    "virtualenv": "21.14.13"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 3.3,
+   "model_residual": 0.0,
+   "model_cost": 13.0,
+   "scope": 4,
+   "candidates": 16,
+   "residual_findings": 17,
+   "residual_risk_evident": 3.333762470308789,
+   "residual_risk_vm": 8.459999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 17,
+   "changed": 20,
+   "major_bumps": 8,
+   "added": 10,
+   "removed": 0,
+   "realised_changes": {
+    "black": [
+     "19.10b0",
+     "26.10.1"
+    ],
+    "certifi": [
+     "2019.9.11",
+     "2026.10.18"
+    ],
+    "cffi": [
+     "1.13.1",
+     "2.1.1"
+    ],
+    "click": [
+     "7.0",
+     "8.5.1"
+    ],
+    "distlib": [
+     null,
+     "0.4.4"
+    ],
+    "filelock": [
+     null,
+     "4.1.0"
+    ],
+    "mypy-extensions": [
+     null,
+     "1.2.0"
+    ],
+    "nodeenv": [
+     "1.3.3",
+     "1.12.0"
+    ],
+    "packaging": [
+     null,
+     "26.3"
+    ],
+    "pathspec": [
+     null,
+     "1.1.1"
+    ],
+    "platformdirs": [
+     null,
+     "4.12.4"
+    ],
+    "pre-commit": [
+     "2.5",
+     "2.5.0"
+    ],
+    "pycparser": [
+     "2.19",
+     "3.11"
+    ],
+    "python-discovery": [
+     null,
+     "1.9.5"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "pyyaml": [
+     "5.4",
+     "6.0.3"
+    ],
+    "tomli": [
+     null,
+     "2.5.0"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "virtualenv": [
+     "20.0.8",
+     "21.14.13"
+    ],
+    "xattr": [
+     "0.9.6",
+     "1.3.1"
+    ]
+   },
+   "planned_changes": 4,
+   "unplanned_changes": 16,
+   "unplanned_major": 4,
+   "unplanned_added": 10,
+   "new_findings_from_unplanned": 17,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 2,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "coral_opt": {
+   "planned": {
+    "black": "26.10.1",
+    "certifi": "2026.10.18",
+    "click": "8.5.1",
+    "virtualenv": "21.14.13"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.1,
+   "model_residual": 0.0,
+   "model_cost": 13.0,
+   "scope": 4,
+   "candidates": 16,
+   "residual_findings": 17,
+   "residual_risk_evident": 3.333762470308789,
+   "residual_risk_vm": 8.459999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 17,
+   "changed": 20,
+   "major_bumps": 8,
+   "added": 10,
+   "removed": 0,
+   "realised_changes": {
+    "black": [
+     "19.10b0",
+     "26.10.1"
+    ],
+    "certifi": [
+     "2019.9.11",
+     "2026.10.18"
+    ],
+    "cffi": [
+     "1.13.1",
+     "2.1.1"
+    ],
+    "click": [
+     "7.0",
+     "8.5.1"
+    ],
+    "distlib": [
+     null,
+     "0.4.4"
+    ],
+    "filelock": [
+     null,
+     "4.1.0"
+    ],
+    "mypy-extensions": [
+     null,
+     "1.2.0"
+    ],
+    "nodeenv": [
+     "1.3.3",
+     "1.12.0"
+    ],
+    "packaging": [
+     null,
+     "26.3"
+    ],
+    "pathspec": [
+     null,
+     "1.1.1"
+    ],
+    "platformdirs": [
+     null,
+     "4.12.4"
+    ],
+    "pre-commit": [
+     "2.5",
+     "2.5.0"
+    ],
+    "pycparser": [
+     "2.19",
+     "3.11"
+    ],
+    "python-discovery": [
+     null,
+     "1.9.5"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "pyyaml": [
+     "5.4",
+     "6.0.3"
+    ],
+    "tomli": [
+     null,
+     "2.5.0"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "virtualenv": [
+     "20.0.8",
+     "21.14.13"
+    ],
+    "xattr": [
+     "0.9.6",
+     "1.3.1"
+    ]
+   },
+   "planned_changes": 4,
+   "unplanned_changes": 16,
+   "unplanned_major": 4,
+   "unplanned_added": 10,
+   "new_findings_from_unplanned": 17,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 2,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "cape_opt": {
+   "planned": {
+    "black": "26.10.1",
+    "certifi": "2026.10.18",
+    "click": "8.5.1",
+    "virtualenv": "21.14.13"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.1,
+   "model_residual": 0.0,
+   "model_cost": 13.0,
+   "scope": 4,
+   "candidates": 16,
+   "residual_findings": 17,
+   "residual_risk_evident": 3.333762470308789,
+   "residual_risk_vm": 8.459999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 17,
+   "changed": 20,
+   "major_bumps": 8,
+   "added": 10,
+   "removed": 0,
+   "realised_changes": {
+    "black": [
+     "19.10b0",
+     "26.10.1"
+    ],
+    "certifi": [
+     "2019.9.11",
+     "2026.10.18"
+    ],
+    "cffi": [
+     "1.13.1",
+     "2.1.1"
+    ],
+    "click": [
+     "7.0",
+     "8.5.1"
+    ],
+    "distlib": [
+     null,
+     "0.4.4"
+    ],
+    "filelock": [
+     null,
+     "4.1.0"
+    ],
+    "mypy-extensions": [
+     null,
+     "1.2.0"
+    ],
+    "nodeenv": [
+     "1.3.3",
+     "1.12.0"
+    ],
+    "packaging": [
+     null,
+     "26.3"
+    ],
+    "pathspec": [
+     null,
+     "1.1.1"
+    ],
+    "platformdirs": [
+     null,
+     "4.12.4"
+    ],
+    "pre-commit": [
+     "2.5",
+     "2.5.0"
+    ],
+    "pycparser": [
+     "2.19",
+     "3.11"
+    ],
+    "python-discovery": [
+     null,
+     "1.9.5"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "pyyaml": [
+     "5.4",
+     "6.0.3"
+    ],
+    "tomli": [
+     null,
+     "2.5.0"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "virtualenv": [
+     "20.0.8",
+     "21.14.13"
+    ],
+    "xattr": [
+     "0.9.6",
+     "1.3.1"
+    ]
+   },
+   "planned_changes": 4,
+   "unplanned_changes": 16,
+   "unplanned_major": 4,
+   "unplanned_added": 10,
+   "new_findings_from_unplanned": 17,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 2,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "evident": {
+   "planned": {
+    "black": "26.10.1",
+    "certifi": "2026.10.18",
+    "click": "8.5.1",
+    "virtualenv": "21.14.13"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.1,
+   "model_residual": 0.0,
+   "model_cost": 13.0,
+   "scope": 4,
+   "candidates": 16,
+   "residual_findings": 17,
+   "residual_risk_evident": 3.333762470308789,
+   "residual_risk_vm": 8.459999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 17,
+   "changed": 20,
+   "major_bumps": 8,
+   "added": 10,
+   "removed": 0,
+   "realised_changes": {
+    "black": [
+     "19.10b0",
+     "26.10.1"
+    ],
+    "certifi": [
+     "2019.9.11",
+     "2026.10.18"
+    ],
+    "cffi": [
+     "1.13.1",
+     "2.1.1"
+    ],
+    "click": [
+     "7.0",
+     "8.5.1"
+    ],
+    "distlib": [
+     null,
+     "0.4.4"
+    ],
+    "filelock": [
+     null,
+     "4.1.0"
+    ],
+    "mypy-extensions": [
+     null,
+     "1.2.0"
+    ],
+    "nodeenv": [
+     "1.3.3",
+     "1.12.0"
+    ],
+    "packaging": [
+     null,
+     "26.3"
+    ],
+    "pathspec": [
+     null,
+     "1.1.1"
+    ],
+    "platformdirs": [
+     null,
+     "4.12.4"
+    ],
+    "pre-commit": [
+     "2.5",
+     "2.5.0"
+    ],
+    "pycparser": [
+     "2.19",
+     "3.11"
+    ],
+    "python-discovery": [
+     null,
+     "1.9.5"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "pyyaml": [
+     "5.4",
+     "6.0.3"
+    ],
+    "tomli": [
+     null,
+     "2.5.0"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "virtualenv": [
+     "20.0.8",
+     "21.14.13"
+    ],
+    "xattr": [
+     "0.9.6",
+     "1.3.1"
+    ]
+   },
+   "planned_changes": 4,
+   "unplanned_changes": 16,
+   "unplanned_major": 4,
+   "unplanned_added": 10,
+   "new_findings_from_unplanned": 17,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 2,
+    "details": [],
+    "api_compatible": true
+   },
+   "objective_gap": 3.333762470308789
+  },
+  "evident_wide": {
+   "planned": {
+    "black": "26.10.1",
+    "certifi": "2026.10.18",
+    "click": "8.5.1",
+    "virtualenv": "21.14.13"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.1,
+   "model_residual": 0.0,
+   "model_cost": 13.0,
+   "candidates": 16,
+   "residual_findings": 17,
+   "residual_risk_evident": 3.333762470308789,
+   "residual_risk_vm": 8.459999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 17,
+   "changed": 20,
+   "major_bumps": 8,
+   "added": 10,
+   "removed": 0,
+   "realised_changes": {
+    "black": [
+     "19.10b0",
+     "26.10.1"
+    ],
+    "certifi": [
+     "2019.9.11",
+     "2026.10.18"
+    ],
+    "cffi": [
+     "1.13.1",
+     "2.1.1"
+    ],
+    "click": [
+     "7.0",
+     "8.5.1"
+    ],
+    "distlib": [
+     null,
+     "0.4.4"
+    ],
+    "filelock": [
+     null,
+     "4.1.0"
+    ],
+    "mypy-extensions": [
+     null,
+     "1.2.0"
+    ],
+    "nodeenv": [
+     "1.3.3",
+     "1.12.0"
+    ],
+    "packaging": [
+     null,
+     "26.3"
+    ],
+    "pathspec": [
+     null,
+     "1.1.1"
+    ],
+    "platformdirs": [
+     null,
+     "4.12.4"
+    ],
+    "pre-commit": [
+     "2.5",
+     "2.5.0"
+    ],
+    "pycparser": [
+     "2.19",
+     "3.11"
+    ],
+    "python-discovery": [
+     null,
+     "1.9.5"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "pyyaml": [
+     "5.4",
+     "6.0.3"
+    ],
+    "tomli": [
+     null,
+     "2.5.0"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "virtualenv": [
+     "20.0.8",
+     "21.14.13"
+    ],
+    "xattr": [
+     "0.9.6",
+     "1.3.1"
+    ]
+   },
+   "planned_changes": 4,
+   "unplanned_changes": 16,
+   "unplanned_major": 4,
+   "unplanned_added": 10,
+   "new_findings_from_unplanned": 17,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 2,
+    "details": [],
+    "api_compatible": true
+   }
+  }
+ },
+ "original": {
+  "residual_findings": 27,
+  "residual_risk_evident": 6.138992774084033,
+  "residual_risk_vm": 17.319999999999997,
+  "residual_confirmed": 0,
+  "new_findings": 0,
+  "changed": 0,
+  "major_bumps": 0,
+  "added": 0,
+  "removed": 0,
+  "realised_changes": {}
+ },
+ "decision": {
+  "uncertain": 27,
+  "critical": 0,
+  "evpi_total": 0.0,
+  "top": [
+   {
+    "package": "black",
+    "advisory": "CVE-2026-32274",
+    "p": 0.3940617577197149,
+    "critical": false,
+    "evpi": 0.0
+   },
+   {
+    "package": "black",
+    "advisory": "CVE-2026-114134",
+    "p": 0.3940617577197149,
+    "critical": false,
+    "evpi": 0.0
+   },
+   {
+    "package": "black",
+    "advisory": "CVE-2024-21503",
+    "p": 0.3940617577197149,
+    "critical": false,
+    "evpi": 0.0
+   },
+   {
+    "package": "black",
+    "advisory": "CVE-2026-31900",
+    "p": 0.3940617577197149,
+    "critical": false,
+    "evpi": 0.0
+   },
+   {
+    "package": "certifi",
+    "advisory": "CVE-2022-23491",
+    "p": 0.5744984270811252,
+    "critical": false,
+    "evpi": 0.0
+   }
+  ]
+ },
+ "remediation_seconds": 28.5,
+ "status": "ok"
+}

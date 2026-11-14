@@ -1,10 +1,10 @@
 {
  "bomFormat": "CycloneDX",
  "specVersion": "1.6",
- "serialNumber": "urn:uuid:beec2870-9a53-4bde-b5aa-832d90fdb109",
+ "serialNumber": "urn:uuid:ab1ef7c5-7e91-4aba-87ed-9285350231aa",
  "version": 1,
  "metadata": {
-  "timestamp": "2026-11-12T10:28:14+00:00",
+  "timestamp": "2026-11-13T16:21:50+00:00",
   "tools": {
    "components": [
     {
@@ -186,22 +186,22 @@
   {
    "ref": "app",
    "dependsOn": [
-    "pkg:pypi/django-phonenumber-field@7.1.0",
-    "pkg:pypi/arrow@1.2.3",
     "pkg:pypi/django-cors-headers@4.0.0",
-    "pkg:pypi/django-extensions@3.2.1",
-    "pkg:pypi/psycopg2-binary@2.9.6",
-    "pkg:pypi/sentry-sdk@1.24.0",
-    "pkg:pypi/django-ses@3.5.0",
-    "pkg:pypi/django-crum@0.7.9",
-    "pkg:pypi/django-storages@1.13.2",
     "pkg:pypi/drf-rw-serializers@1.0.5",
     "pkg:pypi/djangorestframework-simplejwt@5.2.2",
-    "pkg:pypi/python-dotenv@1.0.0",
-    "pkg:pypi/whitenoise@6.4.0",
-    "pkg:pypi/wagtail@5.0.1",
+    "pkg:pypi/django-ses@3.5.0",
+    "pkg:pypi/sentry-sdk@1.24.0",
+    "pkg:pypi/django-crum@0.7.9",
+    "pkg:pypi/psycopg2-binary@2.9.6",
+    "pkg:pypi/arrow@1.2.3",
     "pkg:pypi/celery@5.2.7",
-    "pkg:pypi/drf-spectacular@0.26.2"
+    "pkg:pypi/whitenoise@6.4.0",
+    "pkg:pypi/django-phonenumber-field@7.1.0",
+    "pkg:pypi/django-extensions@3.2.1",
+    "pkg:pypi/python-dotenv@1.0.0",
+    "pkg:pypi/drf-spectacular@0.26.2",
+    "pkg:pypi/django-storages@1.13.2",
+    "pkg:pypi/wagtail@5.0.1"
    ]
   },
   {
@@ -1291,7 +1291,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -1627,7 +1627,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -1915,7 +1915,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2395,7 +2395,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2731,7 +2731,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2779,7 +2779,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2875,7 +2875,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -2971,7 +2971,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -3110,7 +3110,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -3590,7 +3590,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -3830,7 +3830,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {

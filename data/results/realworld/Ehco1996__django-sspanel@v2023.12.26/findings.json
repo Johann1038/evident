@@ -80,12 +80,13 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
+      "sentry_sdk._queue.Queue.get",
       "aiohttp.client.ClientSession.__init__",
       "aiohttp.client_reqrep.ClientRequest.update_cookies",
       "aiohttp.cookiejar.CookieJar.load"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -190,11 +191,12 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
-      "aiohttp.web_app.Application.__init__",
+      "sentry_sdk._queue.Queue.get",
+      "aiohttp.client.ClientSession.__init__",
       "aiohttp.client_ws.ClientWebSocketResponse.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -287,13 +289,14 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
-      "aiohttp.web_app.Application.__init__",
+      "sentry_sdk._queue.Queue.get",
+      "aiohttp.client.ClientSession.__init__",
       "aiohttp.formdata.FormData.__init__",
       "aiohttp.formdata.FormData.add_fields",
       "aiohttp.formdata.FormData.add_field"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -329,7 +332,7 @@
   ],
   "depth": 3,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -379,13 +382,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.web_request.BaseRequest.post"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -477,13 +486,14 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
+      "sentry_sdk._queue.Queue.get",
       "aiohttp.web_app.Application._handle",
       "aiohttp.client.ClientSession.get",
       "aiohttp.client.ClientSession._request",
       "aiohttp.cookiejar.CookieJar.filter_cookies"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -585,12 +595,13 @@
      "witness": [
       "__app__.apps.api.views.OrderView.post",
       "ipicn.is_in_china",
-      "geoip2.webservice.AsyncClient.close",
-      "aiohttp.web_ws.WebSocketResponse.close",
-      "aiohttp.streams.StreamReader.feed_data",
+      "geoip2.webservice.Client.close",
+      "aiohttp.client_ws.ClientWebSocketResponse.close",
+      "aiohttp.streams.FlowControlDataQueue.feed_data",
       "aiohttp.base_protocol.BaseProtocol.pause_reading"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -772,11 +783,12 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
-      "aiohttp.web_app.Application._handle",
+      "sentry_sdk._queue.Queue.get",
+      "aiohttp.web_urldispatcher.UrlDispatcher.resolve",
       "aiohttp.web_urldispatcher.StaticResource.resolve"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -812,7 +824,7 @@
   ],
   "depth": 3,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -862,14 +874,20 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.web_urldispatcher.StaticResource._handle",
       "aiohttp.web_urldispatcher.StaticResource.url_for"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -973,13 +991,14 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
-      "aiohttp.web_app.Application.__init__",
+      "sentry_sdk._queue.Queue.get",
+      "aiohttp.client.ClientSession.__init__",
       "aiohttp.formdata.FormData.__init__",
       "aiohttp.formdata.FormData.add_fields",
       "aiohttp.formdata.FormData.add_field"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -1072,11 +1091,12 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
-      "aiohttp.web_app.Application.__init__",
+      "sentry_sdk._queue.Queue.get",
+      "aiohttp.client.ClientSession.__init__",
       "aiohttp.web_protocol.RequestHandler.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -1169,7 +1189,7 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
+      "sentry_sdk._queue.Queue.get",
       "aiohttp.web_app.Application._handle",
       "aiohttp.client.ClientSession.get",
       "aiohttp.client.ClientSession._request",
@@ -1179,7 +1199,8 @@
       "aiohttp.multipart.MultipartReader._read_headers",
       "aiohttp.http_parser.HeadersParser.parse_headers"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -1303,7 +1324,7 @@
   ],
   "depth": 3,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -1353,7 +1374,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.http_parser.HttpParser.parse_headers",
@@ -1361,7 +1382,13 @@
       "aiohttp.http_parser._is_supported_upgrade"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -1454,12 +1481,13 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
+      "sentry_sdk._queue.Queue.get",
       "aiohttp.web_app.Application._handle",
       "aiohttp.client.ClientSession.get",
       "aiohttp.client.ClientSession._request"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -1495,7 +1523,7 @@
   ],
   "depth": 3,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -1545,13 +1573,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.web_request.BaseRequest.post"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -1654,11 +1688,12 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
-      "aiohttp.web_app.Application.__init__",
+      "sentry_sdk._queue.Queue.get",
+      "aiohttp.client.ClientSession.__init__",
       "aiohttp.http_parser.DeflateBuffer.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -1694,7 +1729,7 @@
   ],
   "depth": 3,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -1744,13 +1779,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.web_urldispatcher.StaticResource._directory_as_html"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -1844,11 +1885,12 @@
      "witness": [
       "__app__.apps.api.views.OrderView.post",
       "ipicn.is_in_china",
-      "geoip2.webservice.AsyncClient.close",
-      "aiohttp.web_ws.WebSocketResponse.close",
+      "geoip2.webservice.Client.close",
+      "aiohttp.client_ws.ClientWebSocketResponse.close",
       "aiohttp.http_parser.HttpPayloadParser.feed_data"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -1945,7 +1987,7 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
+      "sentry_sdk._queue.Queue.get",
       "aiohttp.web_app.Application._handle",
       "aiohttp.client.ClientSession.get",
       "aiohttp.client.ClientSession._request",
@@ -1955,7 +1997,8 @@
       "aiohttp.multipart.MultipartReader._read_headers",
       "aiohttp.http_parser.HeadersParser.parse_headers"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -2054,7 +2097,7 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
+      "sentry_sdk._queue.Queue.get",
       "aiohttp.web_app.Application._handle",
       "aiohttp.client.ClientSession.get",
       "aiohttp.client.ClientSession._request",
@@ -2064,7 +2107,8 @@
       "aiohttp.multipart.MultipartReader._read_headers",
       "aiohttp.http_parser.HeadersParser.parse_headers"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -2157,12 +2201,13 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
+      "sentry_sdk._queue.Queue.get",
       "aiohttp.web_app.Application._handle",
       "aiohttp.client.ClientSession.get",
       "aiohttp.client.ClientSession._request"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -2254,16 +2299,17 @@
       "aiohttp.web_response.Response.write_eof"
      ],
      "witness": [
-      "__app__.apps.api.views.OrderView.post",
-      "ipicn.is_in_china",
-      "geoip2.webservice.AsyncClient.close",
-      "aiohttp.test_utils.BaseTestServer.close",
-      "aiohttp.web_app.Application.cleanup",
+      "__app__.configs.default.sentry.<module>",
+      "sentry_sdk._queue.Queue.get",
+      "aiohttp.web_app.Application._handle",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request",
       "aiohttp.client_reqrep.ClientRequest.send",
       "aiohttp.client_reqrep.ClientRequest.write_bytes",
       "aiohttp.web_response.Response.write_eof"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -2298,7 +2344,7 @@
   ],
   "depth": 3,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -2348,14 +2394,20 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.web_request.BaseRequest._finish",
       "aiohttp.web_request.BaseRequest.post"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -2449,7 +2501,7 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
+      "sentry_sdk._queue.Queue.get",
       "aiohttp.web_app.Application._handle",
       "aiohttp.client.ClientSession.get",
       "aiohttp.client.ClientSession._request",
@@ -2459,7 +2511,8 @@
       "aiohttp.multipart.MultipartReader._read_headers",
       "aiohttp.http_parser.HeadersParser.parse_headers"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -2640,11 +2693,12 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
-      "aiohttp.web_app.Application.__init__",
+      "sentry_sdk._queue.Queue.get",
+      "aiohttp.client.ClientSession.__init__",
       "aiohttp.web_request.BaseRequest.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -2824,14 +2878,15 @@
       "aiohttp.streams.StreamReader._read_nowait"
      ],
      "witness": [
-      "__app__.apps.api.views.OrderView.post",
-      "ipicn.is_in_china",
-      "geoip2.webservice.AsyncClient.close",
-      "aiohttp.web_ws.WebSocketResponse.close",
+      "__app__.configs.default.sentry.<module>",
+      "sentry_sdk._queue.Queue.get",
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.payload.StringIOPayload.__init__",
       "aiohttp.streams.StreamReader.read",
       "aiohttp.streams.StreamReader._read_nowait"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -2928,11 +2983,12 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
-      "aiohttp.web_app.Application.__init__",
+      "sentry_sdk._queue.Queue.get",
+      "aiohttp.client.ClientSession.__init__",
       "aiohttp.streams.StreamReader.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3031,11 +3087,12 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
+      "sentry_sdk._queue.Queue.get",
       "aiohttp.client.ClientSession.__init__",
       "aiohttp.cookiejar.CookieJar.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3132,11 +3189,12 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
+      "sentry_sdk._queue.Queue.get",
       "aiohttp.client.ClientSession.__init__",
       "aiohttp.connector.TCPConnector.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3229,12 +3287,13 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
+      "sentry_sdk._queue.Queue.get",
       "aiohttp.web_app.Application._handle",
       "aiohttp.client.ClientSession.get",
       "aiohttp.client.ClientSession._request"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3416,12 +3475,13 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
+      "sentry_sdk._queue.Queue.get",
       "aiohttp.client.ClientSession.__init__",
       "aiohttp.client_reqrep.ClientRequest.update_cookies",
       "aiohttp.cookiejar.CookieJar.load"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3515,15 +3575,16 @@
       "aiohttp.web_request.BaseRequest.post"
      ],
      "witness": [
-      "__app__.apps.api.views.OrderView.post",
-      "ipicn.is_in_china",
-      "geoip2.webservice.AsyncClient.close",
-      "aiohttp.web_ws.WebSocketResponse.close",
+      "__app__.configs.default.sentry.<module>",
+      "sentry_sdk._queue.Queue.get",
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.payload.StringIOPayload.__init__",
       "aiohttp.multipart.BodyPartReader.read",
       "aiohttp.multipart.BodyPartReader.read_chunk",
       "aiohttp.multipart.BodyPartReader._read_chunk_from_stream"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3623,7 +3684,7 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
+      "sentry_sdk._queue.Queue.get",
       "aiohttp.web_app.Application._handle",
       "aiohttp.client.ClientSession.get",
       "aiohttp.client.ClientSession._request",
@@ -3632,7 +3693,8 @@
       "aiohttp.multipart.MultipartReader.fetch_next_part",
       "aiohttp.multipart.MultipartReader._get_part_reader"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3668,7 +3730,7 @@
   ],
   "depth": 3,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -3718,13 +3780,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.payload.Payload._binary_headers"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -3818,11 +3886,12 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
-      "aiohttp.web_app.Application.__init__",
+      "sentry_sdk._queue.Queue.get",
+      "aiohttp.client.ClientSession.__init__",
       "aiohttp.http_parser.HttpParser.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -3858,7 +3927,7 @@
   ],
   "depth": 3,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -3908,13 +3977,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.client.ClientSession._ws_connect"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -3950,7 +4025,7 @@
   ],
   "depth": 3,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -4000,13 +4075,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.web_request.BaseRequest.http_range"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -4101,11 +4182,12 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
-      "aiohttp.web_app.Application.__init__",
+      "sentry_sdk._queue.Queue.get",
+      "aiohttp.client.ClientSession.__init__",
       "aiohttp.http_writer._py_serialize_headers"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -4141,7 +4223,7 @@
   ],
   "depth": 3,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -4191,13 +4273,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "aiohttp.web_urldispatcher.StaticResource._handle"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -4290,11 +4378,12 @@
      "witness": [
       "__app__.apps.api.views.OrderView.post",
       "ipicn.is_in_china",
-      "geoip2.webservice.AsyncClient.close",
-      "aiohttp.web_ws.WebSocketResponse.close",
+      "geoip2.webservice.Client.close",
+      "aiohttp.client_ws.ClientWebSocketResponse.close",
       "aiohttp.http_parser.HttpParser.feed_data"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -4386,14 +4475,15 @@
       "aiohttp.client_reqrep.ClientRequest.send"
      ],
      "witness": [
-      "__app__.apps.api.views.OrderView.post",
-      "ipicn.is_in_china",
-      "geoip2.webservice.AsyncClient.close",
-      "aiohttp.test_utils.BaseTestServer.close",
-      "aiohttp.web_app.Application.cleanup",
+      "__app__.configs.default.sentry.<module>",
+      "sentry_sdk._queue.Queue.get",
+      "aiohttp.web_app.Application._handle",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request",
       "aiohttp.client_reqrep.ClientRequest.send"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -4486,11 +4576,12 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
-      "aiohttp.web_app.Application.__init__",
+      "sentry_sdk._queue.Queue.get",
+      "aiohttp.client.ClientSession.__init__",
       "aiohttp.client_reqrep.ClientRequest.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -4594,10 +4685,11 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
+      "sentry_sdk._queue.Queue.get",
       "aiohttp.client.ClientSession.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -4721,7 +4813,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.007735154394299288,
+  "p_exposed": 0.006445961995249406,
   "exposure_class": "DEV_ONLY",
   "vex": {
    "state": "in_triage"
@@ -4771,7 +4863,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "black.cache.Cache.read",
@@ -4782,7 +4874,13 @@
       "black.mode.Mode.get_cache_key"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "REFUTED",
+      "reachable": "REFUTED"
+     }
     },
     "tool": "evident"
    },
@@ -4905,7 +5003,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.007735154394299288,
+  "p_exposed": 0.006445961995249406,
   "exposure_class": "DEV_ONLY",
   "vex": {
    "state": "in_triage"
@@ -4955,13 +5053,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "black.strings.lines_with_leading_tabs_expanded"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "REFUTED",
+      "reachable": "REFUTED"
+     }
     },
     "tool": "evident"
    },
@@ -5145,7 +5249,8 @@
       "sentry_sdk.transport.<module>",
       "certifi.<module>"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -5440,7 +5545,7 @@
   ],
   "depth": 3,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -5490,13 +5595,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "cryptography.hazmat.backends.openssl.backend.Backend.serialize_key_and_certificates_to_pkcs12"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -5705,7 +5816,7 @@
   ],
   "depth": 3,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -5755,13 +5866,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "cryptography.hazmat.backends.openssl.backend.Backend._load_pkcs7_certificates"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -6061,7 +6178,7 @@
   ],
   "depth": 3,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -6111,13 +6228,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "cryptography.hazmat.primitives.asymmetric.ec.get_curve_for_oid"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -6301,11 +6424,12 @@
       "django.core.handlers.asgi.ASGIRequest.__init__"
      ],
      "witness": [
-      "__app__.apps.proxy.models.RelayRule.remark",
+      "__app__.apps.proxy.models.ProxyNode.duplicate",
       "django.db.models.base.Model.__init__",
       "django.core.handlers.asgi.ASGIRequest.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -6402,7 +6526,8 @@
       "django.utils.deprecation.MiddlewareMixin.__call__",
       "django.middleware.cache.UpdateCacheMiddleware.process_response"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -6496,7 +6621,8 @@
       "django.utils.text.TruncateHTMLParser.handle_endtag"
      ],
      "witness": [],
-     "missing": true
+     "missing": true,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -6597,7 +6723,8 @@
       "django.utils.html.Urlizer.handle_word",
       "django.utils.html.Urlizer.trim_punctuation"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -6788,7 +6915,8 @@
       "django.db.models.sql.compiler.SQLCompiler.get_order_by",
       "django.db.models.sql.compiler.SQLCompiler._order_by_pairs"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -6882,12 +7010,13 @@
       "django.db.models.sql.query.Query.add_filtered_relation"
      ],
      "witness": [
-      "__app__.apps.sspanel.models.PurchaseHistory.get_all_purchase_user",
+      "__app__.apps.sspanel.models.Donate.get_most_donated_user_by_count",
       "django.db.models.query.QuerySet.annotate",
       "django.db.models.query.QuerySet._annotate",
       "django.db.models.sql.query.Query.add_filtered_relation"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -6987,7 +7116,8 @@
       "django.utils.html.Urlizer.handle_word",
       "django.utils.html.Urlizer.trim_punctuation"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7264,7 +7394,8 @@
       "django.utils.deprecation.MiddlewareMixin.__call__",
       "django.middleware.cache.UpdateCacheMiddleware.process_response"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7302,7 +7433,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -7352,13 +7483,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "django.utils.html.strip_tags"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -7541,7 +7678,8 @@
       "django.core.validators.DomainNameValidator.__init__"
      ],
      "witness": [],
-     "missing": true
+     "missing": true,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7639,7 +7777,8 @@
       "django.middleware.cache.UpdateCacheMiddleware.process_response",
       "django.utils.cache.has_vary_header"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7823,10 +7962,11 @@
       "django.core.files.utils.validate_file_name"
      ],
      "witness": [
-      "__app__.apps.sspanel.models.Announcement.save",
+      "__app__.apps.proxy.models.ProxyNode.duplicate",
       "django.core.files.storage.base.Storage.save"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7919,11 +8059,12 @@
       "django.contrib.gis.gdal.raster.source.GDALRaster.__init__"
      ],
      "witness": [
-      "__app__.apps.proxy.models.RelayRule.remark",
+      "__app__.apps.proxy.models.ProxyNode.duplicate",
       "django.db.models.base.Model.__init__",
       "django.contrib.gis.gdal.raster.source.GDALRaster.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -7960,7 +8101,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -8010,14 +8151,20 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "django.utils.translation.trans_real.get_supported_language_variant",
       "django.utils.translation.trans_real.parse_accept_lang_header"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -8111,12 +8258,13 @@
       "django.db.models.query_utils.Q.__init__"
      ],
      "witness": [
-      "__app__.apps.openapi.models.<module>",
+      "__app__.apps.mixin.<module>",
       "django.db.models.<module>",
       "django.db.models.query_utils.<module>",
       "django.db.models.query_utils.Q.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -8210,12 +8358,13 @@
       "django.db.models.sql.query.Query.check_alias"
      ],
      "witness": [
-      "__app__.apps.proxy.models.UserTrafficLog._calc_traffic_by_datetime",
+      "__app__.apps.sspanel.models.UserRefLog.calc_user_total_ref_count",
       "django.db.models.query.QuerySet.aggregate",
       "django.db.models.sql.query.Query.get_aggregation",
       "django.db.models.sql.query.Query.check_alias"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -8310,12 +8459,13 @@
       "django.http.response.HttpResponseBase.set_signed_cookie"
      ],
      "witness": [
-      "__app__.apps.proxy.models.RelayRule.remark",
+      "__app__.apps.proxy.models.ProxyNode.duplicate",
       "django.db.models.base.Model.__init__",
       "django.contrib.messages.storage.cookie.CookieStorage.__init__",
       "django.core.signing.get_cookie_signer"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -8409,12 +8559,13 @@
       "django.db.models.sql.query.Query.check_alias"
      ],
      "witness": [
-      "__app__.apps.proxy.models.UserTrafficLog._calc_traffic_by_datetime",
+      "__app__.apps.sspanel.models.UserRefLog.calc_user_total_ref_count",
       "django.db.models.query.QuerySet.aggregate",
       "django.db.models.sql.query.Query.get_aggregation",
       "django.db.models.sql.query.Query.check_alias"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -8451,7 +8602,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -8501,13 +8652,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "django.template.defaultfilters.floatformat"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -8966,7 +9123,8 @@
       "django.contrib.gis.db.backends.postgis.operations.PostGISOperator.as_sql",
       "django.contrib.gis.db.backends.postgis.operations.PostGISOperator.check_raster"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -9004,7 +9162,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -9054,14 +9212,20 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "django.utils.text.wrap",
       "django.utils.text.wrap._generator"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -9154,12 +9318,13 @@
       "django.db.models.sql.query.Query.set_values"
      ],
      "witness": [
-      "__app__.apps.sspanel.models.PurchaseHistory.get_all_purchase_user",
+      "__app__.apps.sspanel.models.Donate.get_most_donated_user_by_count",
       "django.db.models.query.QuerySet.values",
       "django.db.models.query.QuerySet._values",
       "django.db.models.sql.query.Query.set_values"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -9368,7 +9533,8 @@
       "django.contrib.gis.db.backends.spatialite.operations.SpatiaLiteOperations.spatial_aggregate_name",
       "django.contrib.gis.db.backends.spatialite.operations.SpatiaLiteOperations.get_geometry_converter"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -9406,7 +9572,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -9456,13 +9622,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "django.utils.archive.BaseArchive.target_filename"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -9561,14 +9733,15 @@
       "django.utils.ipv6.is_valid_ipv6_address"
      ],
      "witness": [
-      "__app__.apps.openapi.models.<module>",
-      "django.db.models.<module>",
-      "django.db.models.fields.<module>",
+      "__app__.apps.sspanel.forms.<module>",
+      "django.forms.<module>",
+      "django.forms.fields.<module>",
       "django.core.validators.URLValidator.__call__",
       "django.core.validators.validate_ipv6_address",
       "django.utils.ipv6.is_valid_ipv6_address"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -9668,7 +9841,8 @@
       "django.utils.html.Urlizer.handle_word",
       "django.utils.html.Urlizer.trim_punctuation"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -9766,7 +9940,8 @@
       "django.urls.resolvers.RoutePattern.match",
       "django.contrib.auth.forms.UsernameField.to_python"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -9863,7 +10038,8 @@
       "__app__.apps.sspanel.views.ChargeView.post",
       "django.http.response.HttpResponseRedirectBase.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -9964,7 +10140,8 @@
       "django.utils.html.Urlizer.__call__",
       "django.utils.html.Urlizer.handle_word"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -10002,7 +10179,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -10052,13 +10229,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "module",
      "symbols": [
       "django.db.backends.postgresql.operations.<module>"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -10152,11 +10335,12 @@
       "django.contrib.auth.forms.PasswordResetForm.send_mail"
      ],
      "witness": [
-      "__app__.apps.sspanel.models.Announcement.save",
+      "__app__.apps.proxy.models.ProxyNode.duplicate",
       "django.contrib.auth.forms.PasswordResetForm.save",
       "django.contrib.auth.forms.PasswordResetForm.send_mail"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -10250,11 +10434,12 @@
       "django.utils.text.<module>"
      ],
      "witness": [
-      "__app__.apps.custom_views.<module>",
+      "__app__.apps.sspanel.forms.<module>",
       "django.contrib.auth.forms.<module>",
       "django.utils.text.<module>"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -10349,10 +10534,11 @@
       "django.core.serializers.xml_serializer.getInnerText"
      ],
      "witness": [
-      "__app__.apps.proxy.admin.ProxyNodeAdmin.clear_traffic_logs",
+      "__app__.apps.sspanel.models.UserOrder.make_up_lost_orders",
       "django.core.serializers.xml_serializer.Deserializer.__next__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -10448,12 +10634,13 @@
       "django.contrib.gis.gdal.raster.source.GDALRaster._flush"
      ],
      "witness": [
-      "__app__.apps.proxy.models.RelayRule.remark",
-      "django.db.models.base.Model.__init__",
-      "django.contrib.postgres.fields.array.ArrayRHSMixin.__init__",
+      "__app__.apps.proxy.models.ProxyNode.duplicate",
+      "django.core.serializers.base.DeserializedObject.save",
+      "django.db.models.fields.related_descriptors.create_forward_many_to_many_manager.ManyRelatedManager.set",
       "django.contrib.gis.db.models.fields.BaseSpatialField.get_prep_value"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -10547,13 +10734,14 @@
       "django.contrib.auth.hashers.verify_password"
      ],
      "witness": [
-      "__app__.apps.proxy.models.RelayRule.remark",
+      "__app__.apps.proxy.models.ProxyNode.duplicate",
       "django.contrib.auth.base_user.AbstractBaseUser.__str__",
       "django.contrib.auth.base_user.AbstractBaseUser.get_username",
       "django.contrib.auth.base_user.AbstractBaseUser.check_password",
       "django.contrib.auth.hashers.check_password"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -10591,7 +10779,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -10641,13 +10829,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "django.contrib.humanize.templatetags.humanize.intcomma"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -10683,7 +10877,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -10733,13 +10927,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "rest_framework.request.Request._parse"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -10837,13 +11037,14 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
+      "sentry_sdk._queue.Queue.get",
       "rest_framework.views.APIView.initial",
       "rest_framework.views.APIView.perform_content_negotiation",
       "rest_framework.negotiation.DefaultContentNegotiation.select_renderer",
       "rest_framework.negotiation.DefaultContentNegotiation.get_accept_list"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -10878,7 +11079,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -10928,7 +11129,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "rest_framework.parsers.FormParser.parse",
@@ -10936,7 +11137,13 @@
       "rest_framework.parsers.MultiPartParser.parse"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -10972,7 +11179,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -11022,13 +11229,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "rest_framework.renderers.AdminRenderer.render"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -11064,7 +11277,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -11114,13 +11327,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "rest_framework.templatetags.rest_framework.break_long_headers"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -11155,7 +11374,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -11205,14 +11424,20 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "rest_framework.authtoken.admin.TokenAdmin.delete_model",
       "rest_framework.authtoken.models.TokenProxy.pk"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -11395,13 +11620,14 @@
       "__app__.configs.default.sentry.<module>",
       "sentry_sdk.integrations.<module>",
       "sentry_sdk.integrations.aiohttp.<module>",
-      "aiohttp.web_urldispatcher.<module>",
+      "aiohttp.web_request.<module>",
       "yarl.<module>",
       "yarl._url.<module>",
       "idna.<module>",
       "idna.package_data.<module>"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -11669,14 +11895,15 @@
       "pygments.lexers.archetype.<module>"
      ],
      "witness": [
-      "__app__.configs.default.common.<module>",
-      "rest_framework.pagination.<module>",
+      "__app__.apps.openapi.serializer.<module>",
+      "rest_framework.serializers.<module>",
       "rest_framework.compat.<module>",
       "pygments.lexers.<module>",
       "pygments.lexers._mapping.<module>",
       "pygments.lexers.archetype.<module>"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -11773,7 +12000,8 @@
       "pymysql.connections.Connection.__init__",
       "pymysql.converters.escape_dict"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -11809,7 +12037,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -11859,14 +12087,20 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "OpenSSL.SSL._CookieGenerateCallbackHelper.__init__",
       "OpenSSL.SSL._CookieGenerateCallbackHelper.__init__.wrapper"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -11902,7 +12136,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -11952,13 +12186,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "OpenSSL.SSL.Context.set_tlsext_servername_callback.wrapper"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -12050,16 +12290,17 @@
       "requests.utils.get_netrc_auth"
      ],
      "witness": [
-      "__app__.apps.openapi.urls.<module>",
-      "rest_framework.routers.<module>",
-      "requests.sessions.Session.__init__",
-      "requests.api.patch",
+      "__app__.apps.api.views.OrderView.post",
+      "ipicn.<module>",
+      "ipicn.updater.Updater.download_mmdb",
+      "requests.api.get",
       "requests.api.request",
       "requests.sessions.Session.request",
       "requests.sessions.Session.prepare_request",
       "requests.utils.get_netrc_auth"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -12152,17 +12393,18 @@
       "requests.adapters.HTTPAdapter.send"
      ],
      "witness": [
-      "__app__.apps.openapi.urls.<module>",
-      "rest_framework.routers.<module>",
-      "requests.sessions.Session.__init__",
-      "requests.api.patch",
+      "__app__.apps.api.views.OrderView.post",
+      "ipicn.<module>",
+      "ipicn.updater.Updater.download_mmdb",
+      "requests.api.get",
       "requests.api.request",
       "requests.sessions.Session.request",
       "requests.sessions.Session.send",
       "requests.adapters.HTTPAdapter.send",
       "requests.adapters.HTTPAdapter.get_connection"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -12254,10 +12496,10 @@
       "requests.utils.extract_zipped_paths"
      ],
      "witness": [
-      "__app__.apps.openapi.urls.<module>",
-      "rest_framework.routers.<module>",
-      "requests.sessions.Session.__init__",
-      "requests.api.patch",
+      "__app__.apps.api.views.OrderView.post",
+      "ipicn.<module>",
+      "ipicn.updater.Updater.download_mmdb",
+      "requests.api.get",
       "requests.api.request",
       "requests.sessions.Session.request",
       "requests.sessions.Session.send",
@@ -12265,7 +12507,8 @@
       "requests.adapters.HTTPAdapter.cert_verify",
       "requests.utils.extract_zipped_paths"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -12302,7 +12545,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -12352,13 +12595,19 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "sentry_sdk.integrations.stdlib._install_subprocess.sentry_patched_popen_init"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -12448,15 +12697,16 @@
       "sqlparse.engine.grouping._group_matching"
      ],
      "witness": [
-      "__app__.apps.proxy.models.RelayRule.remark",
+      "__app__.apps.proxy.models.ProxyNode.duplicate",
       "django.db.models.base.Model.__init__",
       "django.test.runner._run_subsuite",
       "sqlparse.engine.filter_stack.FilterStack.run",
       "sqlparse.engine.grouping.group",
-      "sqlparse.engine.grouping.group_assignment",
+      "sqlparse.engine.grouping.group_arrays",
       "sqlparse.engine.grouping._group"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -12548,13 +12798,14 @@
       "sqlparse.sql.TokenList.flatten"
      ],
      "witness": [
-      "__app__.apps.proxy.models.RelayRule.remark",
+      "__app__.apps.proxy.models.ProxyNode.duplicate",
       "django.db.models.base.Model.__init__",
-      "sqlparse.sql.TokenList.__init__",
+      "django.test.runner._class_shuffle_key",
       "sqlparse.sql.TokenList.__str__",
       "sqlparse.sql.TokenList.flatten"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -12590,7 +12841,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -12640,14 +12891,20 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "sqlparse.filters.output.OutputPHPFilter._process",
       "sqlparse.filters.output.OutputPythonFilter._process"
      ],
      "witness": [],
-     "missing": false
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
     },
     "tool": "evident"
    },
@@ -12740,7 +12997,7 @@
       "sqlparse.filters.reindent.ReindentFilter._get_offset"
      ],
      "witness": [
-      "__app__.apps.proxy.models.RelayRule.remark",
+      "__app__.apps.proxy.models.ProxyNode.duplicate",
       "django.db.models.base.Model.__init__",
       "django.test.runner._run_subsuite",
       "sqlparse.engine.filter_stack.FilterStack.run",
@@ -12748,7 +13005,8 @@
       "sqlparse.filters.reindent.ReindentFilter._process",
       "sqlparse.filters.reindent.ReindentFilter._flatten_up_to_token"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -12840,14 +13098,15 @@
       "sqlparse.engine.grouping.group_comments"
      ],
      "witness": [
-      "__app__.apps.proxy.models.RelayRule.remark",
+      "__app__.apps.proxy.models.ProxyNode.duplicate",
       "django.db.models.base.Model.__init__",
       "django.test.runner._run_subsuite",
       "sqlparse.engine.filter_stack.FilterStack.run",
       "sqlparse.engine.grouping.group",
       "sqlparse.engine.grouping.group_comments"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -12940,14 +13199,15 @@
       "sqlparse.utils.offset"
      ],
      "witness": [
-      "__app__.apps.proxy.models.RelayRule.remark",
+      "__app__.apps.proxy.models.ProxyNode.duplicate",
       "django.db.models.base.Model.__init__",
       "django.test.runner._run_subsuite",
       "sqlparse.engine.filter_stack.FilterStack.run",
       "sqlparse.lexer.tokenize",
       "sqlparse.lexer.Lexer.get_tokens"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -13040,11 +13300,12 @@
       "sqlparse.sql.TokenList.group_tokens"
      ],
      "witness": [
-      "__app__.apps.proxy.models.RelayRule.remark",
+      "__app__.apps.proxy.models.ProxyNode.duplicate",
       "django.db.models.base.Model.__init__",
       "sqlparse.sql.TokenList.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -13148,14 +13409,15 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
+      "sentry_sdk.integrations.django.<module>",
       "sentry_sdk.integrations.logging.<module>",
       "urllib3.response.HTTPResponse.__iter__",
       "urllib3.response.HTTPResponse.stream",
       "urllib3.response.HTTPResponse.read_chunked",
       "urllib3.response.BaseHTTPResponse._decode"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -13249,12 +13511,13 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.django.<module>",
+      "sentry_sdk.integrations.celery.<module>",
       "sentry_sdk.integrations.logging.<module>",
-      "urllib3.<module>",
+      "urllib3.connectionpool.<module>",
       "urllib3.util.retry.<module>"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -13346,10 +13609,10 @@
       "urllib3.response.HTTPResponse.drain_conn"
      ],
      "witness": [
-      "__app__.apps.openapi.urls.<module>",
-      "rest_framework.routers.<module>",
-      "requests.sessions.Session.__init__",
-      "requests.api.patch",
+      "__app__.apps.api.views.OrderView.post",
+      "ipicn.<module>",
+      "ipicn.updater.Updater.download_mmdb",
+      "requests.api.get",
       "requests.api.request",
       "requests.sessions.Session.request",
       "requests.sessions.Session.send",
@@ -13357,7 +13620,8 @@
       "urllib3.poolmanager.PoolManager.urlopen",
       "urllib3.response.HTTPResponse.drain_conn"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -13452,12 +13716,13 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
+      "sentry_sdk._queue.Queue.get",
       "sentry_sdk.transport.HttpTransport.__init__",
       "sentry_sdk.transport.HttpTransport._make_pool",
       "urllib3.poolmanager.ProxyManager.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -13551,17 +13816,18 @@
       "urllib3.poolmanager.PoolManager.urlopen"
      ],
      "witness": [
-      "__app__.apps.openapi.urls.<module>",
-      "rest_framework.routers.<module>",
-      "requests.sessions.Session.__init__",
-      "requests.api.patch",
+      "__app__.apps.api.views.OrderView.post",
+      "ipicn.<module>",
+      "ipicn.updater.Updater.download_mmdb",
+      "requests.api.get",
       "requests.api.request",
       "requests.sessions.Session.request",
       "requests.sessions.Session.send",
       "requests.adapters.HTTPAdapter.send",
       "urllib3.connectionpool.HTTPConnectionPool.urlopen"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -13654,7 +13920,7 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
+      "sentry_sdk.integrations.django.<module>",
       "sentry_sdk.integrations.logging.<module>",
       "urllib3.response.HTTPResponse.__iter__",
       "urllib3.response.HTTPResponse.stream",
@@ -13663,7 +13929,8 @@
       "urllib3.response._get_decoder",
       "urllib3.response.MultiDecoder.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -13757,12 +14024,13 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.django.<module>",
+      "sentry_sdk.integrations.celery.<module>",
       "sentry_sdk.integrations.logging.<module>",
       "urllib3.<module>",
       "urllib3.poolmanager.PoolManager.__init__"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },
@@ -13944,14 +14212,15 @@
      ],
      "witness": [
       "__app__.configs.default.sentry.<module>",
-      "sentry_sdk.integrations.<module>",
+      "sentry_sdk.integrations.django.<module>",
       "sentry_sdk.integrations.logging.<module>",
       "urllib3.response.HTTPResponse.__iter__",
       "urllib3.response.HTTPResponse.stream",
       "urllib3.response.HTTPResponse.read_chunked",
       "urllib3.response.HTTPResponse._update_chunk_length"
      ],
-     "missing": false
+     "missing": false,
+     "scopes": null
     },
     "tool": "evident"
    },

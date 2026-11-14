@@ -1,0 +1,3426 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.6",
+ "serialNumber": "urn:uuid:29b41395-ef44-43c5-9b3a-4e245afab0b8",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-11-13T18:56:40+00:00",
+  "tools": {
+   "components": [
+    {
+     "type": "application",
+     "name": "evident",
+     "version": "0.1.0"
+    }
+   ]
+  },
+  "component": {
+   "type": "application",
+   "bom-ref": "app",
+   "name": "amisadmin/fastapi-scheduler"
+  }
+ },
+ "components": [
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/aiofiles@22.1.0",
+   "name": "aiofiles",
+   "version": "22.1.0",
+   "purl": "pkg:pypi/aiofiles@22.1.0",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/anyio@3.6.1",
+   "name": "anyio",
+   "version": "3.6.1",
+   "purl": "pkg:pypi/anyio@3.6.1",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/apscheduler@3.9.1",
+   "name": "apscheduler",
+   "version": "3.9.1",
+   "purl": "pkg:pypi/apscheduler@3.9.1",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/attrs@22.1.0",
+   "name": "attrs",
+   "version": "22.1.0",
+   "purl": "pkg:pypi/attrs@22.1.0",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/black@22.8.0",
+   "name": "black",
+   "version": "22.8.0",
+   "purl": "pkg:pypi/black@22.8.0",
+   "scope": "optional"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/cfgv@3.3.1",
+   "name": "cfgv",
+   "version": "3.3.1",
+   "purl": "pkg:pypi/cfgv@3.3.1",
+   "scope": "optional"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/click@8.1.3",
+   "name": "click",
+   "version": "8.1.3",
+   "purl": "pkg:pypi/click@8.1.3",
+   "scope": "optional"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/distlib@0.3.6",
+   "name": "distlib",
+   "version": "0.3.6",
+   "purl": "pkg:pypi/distlib@0.3.6",
+   "scope": "optional"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/fastapi@0.85.0",
+   "name": "fastapi",
+   "version": "0.85.0",
+   "purl": "pkg:pypi/fastapi@0.85.0",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/fastapi-amis-admin@0.2.2",
+   "name": "fastapi-amis-admin",
+   "version": "0.2.2",
+   "purl": "pkg:pypi/fastapi-amis-admin@0.2.2",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/filelock@3.8.0",
+   "name": "filelock",
+   "version": "3.8.0",
+   "purl": "pkg:pypi/filelock@3.8.0",
+   "scope": "optional"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/greenlet@1.1.3",
+   "name": "greenlet",
+   "version": "1.1.3",
+   "purl": "pkg:pypi/greenlet@1.1.3",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/identify@2.5.5",
+   "name": "identify",
+   "version": "2.5.5",
+   "purl": "pkg:pypi/identify@2.5.5",
+   "scope": "optional"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/idna@3.4",
+   "name": "idna",
+   "version": "3.4",
+   "purl": "pkg:pypi/idna@3.4",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/iniconfig@1.1.1",
+   "name": "iniconfig",
+   "version": "1.1.1",
+   "purl": "pkg:pypi/iniconfig@1.1.1",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/isort@5.10.1",
+   "name": "isort",
+   "version": "5.10.1",
+   "purl": "pkg:pypi/isort@5.10.1",
+   "scope": "optional"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/mypy-extensions@0.4.3",
+   "name": "mypy-extensions",
+   "version": "0.4.3",
+   "purl": "pkg:pypi/mypy-extensions@0.4.3",
+   "scope": "optional"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/nodeenv@1.7.0",
+   "name": "nodeenv",
+   "version": "1.7.0",
+   "purl": "pkg:pypi/nodeenv@1.7.0",
+   "scope": "optional"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/packaging@21.3",
+   "name": "packaging",
+   "version": "21.3",
+   "purl": "pkg:pypi/packaging@21.3",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/pathspec@0.10.1",
+   "name": "pathspec",
+   "version": "0.10.1",
+   "purl": "pkg:pypi/pathspec@0.10.1",
+   "scope": "optional"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/platformdirs@2.5.2",
+   "name": "platformdirs",
+   "version": "2.5.2",
+   "purl": "pkg:pypi/platformdirs@2.5.2",
+   "scope": "optional"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/pluggy@1.0.0",
+   "name": "pluggy",
+   "version": "1.0.0",
+   "purl": "pkg:pypi/pluggy@1.0.0",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/pre-commit@2.20.0",
+   "name": "pre-commit",
+   "version": "2.20.0",
+   "purl": "pkg:pypi/pre-commit@2.20.0",
+   "scope": "optional"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/py@1.11.0",
+   "name": "py",
+   "version": "1.11.0",
+   "purl": "pkg:pypi/py@1.11.0",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/pydantic@1.10.2",
+   "name": "pydantic",
+   "version": "1.10.2",
+   "purl": "pkg:pypi/pydantic@1.10.2",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/pyparsing@3.0.9",
+   "name": "pyparsing",
+   "version": "3.0.9",
+   "purl": "pkg:pypi/pyparsing@3.0.9",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/pytest@6.2.5",
+   "name": "pytest",
+   "version": "6.2.5",
+   "purl": "pkg:pypi/pytest@6.2.5",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/python-multipart@0.0.5",
+   "name": "python-multipart",
+   "version": "0.0.5",
+   "purl": "pkg:pypi/python-multipart@0.0.5",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/pytz@2022.2.1",
+   "name": "pytz",
+   "version": "2022.2.1",
+   "purl": "pkg:pypi/pytz@2022.2.1",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/pytz-deprecation-shim@0.1.0.post0",
+   "name": "pytz-deprecation-shim",
+   "version": "0.1.0.post0",
+   "purl": "pkg:pypi/pytz-deprecation-shim@0.1.0.post0",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/pyyaml@6.0",
+   "name": "pyyaml",
+   "version": "6.0",
+   "purl": "pkg:pypi/pyyaml@6.0",
+   "scope": "optional"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/setuptools@65.3.0",
+   "name": "setuptools",
+   "version": "65.3.0",
+   "purl": "pkg:pypi/setuptools@65.3.0",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/six@1.16.0",
+   "name": "six",
+   "version": "1.16.0",
+   "purl": "pkg:pypi/six@1.16.0",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/sniffio@1.3.0",
+   "name": "sniffio",
+   "version": "1.3.0",
+   "purl": "pkg:pypi/sniffio@1.3.0",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/sqlalchemy@1.4.41",
+   "name": "sqlalchemy",
+   "version": "1.4.41",
+   "purl": "pkg:pypi/sqlalchemy@1.4.41",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/sqlalchemy-database@0.0.7",
+   "name": "sqlalchemy-database",
+   "version": "0.0.7",
+   "purl": "pkg:pypi/sqlalchemy-database@0.0.7",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/sqlalchemy2-stubs@0.0.2a27",
+   "name": "sqlalchemy2-stubs",
+   "version": "0.0.2a27",
+   "purl": "pkg:pypi/sqlalchemy2-stubs@0.0.2a27",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/sqlmodel@0.0.8",
+   "name": "sqlmodel",
+   "version": "0.0.8",
+   "purl": "pkg:pypi/sqlmodel@0.0.8",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/starlette@0.20.4",
+   "name": "starlette",
+   "version": "0.20.4",
+   "purl": "pkg:pypi/starlette@0.20.4",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/toml@0.10.2",
+   "name": "toml",
+   "version": "0.10.2",
+   "purl": "pkg:pypi/toml@0.10.2",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/tomli@2.0.1",
+   "name": "tomli",
+   "version": "2.0.1",
+   "purl": "pkg:pypi/tomli@2.0.1",
+   "scope": "optional"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/typing-extensions@4.3.0",
+   "name": "typing-extensions",
+   "version": "4.3.0",
+   "purl": "pkg:pypi/typing-extensions@4.3.0",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/tzdata@2022.2",
+   "name": "tzdata",
+   "version": "2022.2",
+   "purl": "pkg:pypi/tzdata@2022.2",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/tzlocal@4.2",
+   "name": "tzlocal",
+   "version": "4.2",
+   "purl": "pkg:pypi/tzlocal@4.2",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/virtualenv@20.16.2",
+   "name": "virtualenv",
+   "version": "20.16.2",
+   "purl": "pkg:pypi/virtualenv@20.16.2",
+   "scope": "optional"
+  }
+ ],
+ "dependencies": [
+  {
+   "ref": "app",
+   "dependsOn": [
+    "pkg:pypi/fastapi-amis-admin@0.2.2",
+    "pkg:pypi/black@22.8.0",
+    "pkg:pypi/pytest@6.2.5",
+    "pkg:pypi/apscheduler@3.9.1",
+    "pkg:pypi/isort@5.10.1",
+    "pkg:pypi/pre-commit@2.20.0"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/aiofiles@22.1.0",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/anyio@3.6.1",
+   "dependsOn": [
+    "pkg:pypi/idna@3.4",
+    "pkg:pypi/sniffio@1.3.0",
+    "pkg:pypi/typing-extensions@4.3.0"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/apscheduler@3.9.1",
+   "dependsOn": [
+    "pkg:pypi/pytz@2022.2.1",
+    "pkg:pypi/setuptools@65.3.0",
+    "pkg:pypi/six@1.16.0",
+    "pkg:pypi/tzlocal@4.2"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/attrs@22.1.0",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/black@22.8.0",
+   "dependsOn": [
+    "pkg:pypi/click@8.1.3",
+    "pkg:pypi/mypy-extensions@0.4.3",
+    "pkg:pypi/pathspec@0.10.1",
+    "pkg:pypi/platformdirs@2.5.2",
+    "pkg:pypi/tomli@2.0.1",
+    "pkg:pypi/typing-extensions@4.3.0"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/cfgv@3.3.1",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/click@8.1.3",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/distlib@0.3.6",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/fastapi@0.85.0",
+   "dependsOn": [
+    "pkg:pypi/pydantic@1.10.2",
+    "pkg:pypi/starlette@0.20.4"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/fastapi-amis-admin@0.2.2",
+   "dependsOn": [
+    "pkg:pypi/aiofiles@22.1.0",
+    "pkg:pypi/fastapi@0.85.0",
+    "pkg:pypi/python-multipart@0.0.5",
+    "pkg:pypi/sqlalchemy-database@0.0.7",
+    "pkg:pypi/sqlmodel@0.0.8"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/filelock@3.8.0",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/greenlet@1.1.3",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/identify@2.5.5",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/idna@3.4",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/iniconfig@1.1.1",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/isort@5.10.1",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/mypy-extensions@0.4.3",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/nodeenv@1.7.0",
+   "dependsOn": [
+    "pkg:pypi/setuptools@65.3.0"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/packaging@21.3",
+   "dependsOn": [
+    "pkg:pypi/pyparsing@3.0.9"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/pathspec@0.10.1",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/platformdirs@2.5.2",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/pluggy@1.0.0",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/pre-commit@2.20.0",
+   "dependsOn": [
+    "pkg:pypi/cfgv@3.3.1",
+    "pkg:pypi/identify@2.5.5",
+    "pkg:pypi/nodeenv@1.7.0",
+    "pkg:pypi/pyyaml@6.0",
+    "pkg:pypi/toml@0.10.2",
+    "pkg:pypi/virtualenv@20.16.2"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/py@1.11.0",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/pydantic@1.10.2",
+   "dependsOn": [
+    "pkg:pypi/typing-extensions@4.3.0"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/pyparsing@3.0.9",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/pytest@6.2.5",
+   "dependsOn": [
+    "pkg:pypi/attrs@22.1.0",
+    "pkg:pypi/iniconfig@1.1.1",
+    "pkg:pypi/packaging@21.3",
+    "pkg:pypi/pluggy@1.0.0",
+    "pkg:pypi/py@1.11.0",
+    "pkg:pypi/toml@0.10.2"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/python-multipart@0.0.5",
+   "dependsOn": [
+    "pkg:pypi/six@1.16.0"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/pytz@2022.2.1",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/pytz-deprecation-shim@0.1.0.post0",
+   "dependsOn": [
+    "pkg:pypi/tzdata@2022.2"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/pyyaml@6.0",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/setuptools@65.3.0",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/six@1.16.0",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/sniffio@1.3.0",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/sqlalchemy@1.4.41",
+   "dependsOn": [
+    "pkg:pypi/greenlet@1.1.3"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/sqlalchemy-database@0.0.7",
+   "dependsOn": [
+    "pkg:pypi/sqlalchemy@1.4.41"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/sqlalchemy2-stubs@0.0.2a27",
+   "dependsOn": [
+    "pkg:pypi/typing-extensions@4.3.0"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/sqlmodel@0.0.8",
+   "dependsOn": [
+    "pkg:pypi/sqlalchemy@1.4.41",
+    "pkg:pypi/pydantic@1.10.2",
+    "pkg:pypi/sqlalchemy2-stubs@0.0.2a27"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/starlette@0.20.4",
+   "dependsOn": [
+    "pkg:pypi/anyio@3.6.1",
+    "pkg:pypi/typing-extensions@4.3.0"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/toml@0.10.2",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/tomli@2.0.1",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/typing-extensions@4.3.0",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/tzdata@2022.2",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/tzlocal@4.2",
+   "dependsOn": [
+    "pkg:pypi/pytz-deprecation-shim@0.1.0.post0",
+    "pkg:pypi/tzdata@2022.2"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/virtualenv@20.16.2",
+   "dependsOn": [
+    "pkg:pypi/distlib@0.3.6",
+    "pkg:pypi/filelock@3.8.0",
+    "pkg:pypi/platformdirs@2.5.2"
+   ]
+  }
+ ],
+ "vulnerabilities": [
+  {
+   "id": "CVE-2026-64847",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-5p39-cfhj-2xmp"
+   },
+   "ratings": [
+    {
+     "score": 6.8,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/anyio@3.6.1"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-63374",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-82r6-8w77-94w6"
+   },
+   "ratings": [
+    {
+     "score": 9.3,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/anyio@3.6.1"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-32274",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-3936-cmfr-pm3m"
+   },
+   "ratings": [
+    {
+     "score": 8.7,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/black@22.8.0"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-114134",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-cg8m-r9f2-5wm2"
+   },
+   "ratings": [
+    {
+     "score": 8.7,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/black@22.8.0"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.020 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2024-21503",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-fj7x-q9j7-g6q6"
+   },
+   "ratings": [
+    {
+     "score": 5.3,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/black@22.8.0"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-31900",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/PYSEC-2026-2120"
+   },
+   "ratings": [
+    {
+     "score": 9.8,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/black@22.8.0"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.020 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2024-24762",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/PYSEC-2024-38"
+   },
+   "ratings": [
+    {
+     "score": 7.5,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/fastapi@0.85.0"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.656 class=IMPORTED_REACH_UNKNOWN"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-112909",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-69hj-f68j-2879"
+   },
+   "ratings": [
+    {
+     "score": 6.1,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/filelock@3.8.0"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-22701",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-qmgc-5h2g-mvrw"
+   },
+   "ratings": [
+    {
+     "score": 5.3,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/filelock@3.8.0"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2025-68146",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-w853-jp5j-5j7f"
+   },
+   "ratings": [
+    {
+     "score": 6.3,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/filelock@3.8.0"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-45409",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-65pc-fj4g-8rjx"
+   },
+   "ratings": [
+    {
+     "score": 6.9,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/idna@3.4"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.656 class=IMPORTED_REACH_UNKNOWN"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2024-3651",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-jjg7-2v4v-x38h"
+   },
+   "ratings": [
+    {
+     "score": 7.5,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/idna@3.4"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2024-3772",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-mr82-8j83-vxmv"
+   },
+   "ratings": [
+    {
+     "score": 5.9,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/pydantic@1.10.2"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.574 class=POSSIBLY_REACHABLE"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "POSSIBLE"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2025-71176",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-6w46-j5rx-g56g"
+   },
+   "ratings": [
+    {
+     "score": 6.8,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/pytest@6.2.5"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.345 class=POSSIBLY_REACHABLE"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "POSSIBLE"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2024-24762",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-2jv5-9r88-3w3p"
+   },
+   "ratings": [
+    {
+     "score": 7.5,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/python-multipart@0.0.5"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.574 class=POSSIBLY_REACHABLE"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "POSSIBLE"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2024-53981",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-59g5-xgcq-4qw3"
+   },
+   "ratings": [
+    {
+     "score": 8.7,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/python-multipart@0.0.5"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.656 class=IMPORTED_REACH_UNKNOWN"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-53539",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-5rvq-cxj2-64vf"
+   },
+   "ratings": [
+    {
+     "score": 7.5,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/python-multipart@0.0.5"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.656 class=IMPORTED_REACH_UNKNOWN"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-53538",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-6jv3-5f52-599m"
+   },
+   "ratings": [
+    {
+     "score": 3.7,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/python-multipart@0.0.5"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.656 class=IMPORTED_REACH_UNKNOWN"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-40347",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-mj87-hwqh-73pj"
+   },
+   "ratings": [
+    {
+     "score": 5.3,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/python-multipart@0.0.5"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.656 class=IMPORTED_REACH_UNKNOWN"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-42561",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-pp6c-gr5w-3c5g"
+   },
+   "ratings": [
+    {
+     "score": 7.5,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/python-multipart@0.0.5"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.656 class=IMPORTED_REACH_UNKNOWN"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-53540",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-v9pg-7xvm-68hf"
+   },
+   "ratings": [
+    {
+     "score": 3.7,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/python-multipart@0.0.5"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.656 class=IMPORTED_REACH_UNKNOWN"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-53537",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-vffw-93wf-4j4q"
+   },
+   "ratings": [
+    {
+     "score": 3.7,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/python-multipart@0.0.5"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.656 class=IMPORTED_REACH_UNKNOWN"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-24486",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-wp53-j4wj-2cfg"
+   },
+   "ratings": [
+    {
+     "score": 8.6,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/python-multipart@0.0.5"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.656 class=IMPORTED_REACH_UNKNOWN"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2025-47273",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-5rjg-fvgr-3xxf"
+   },
+   "ratings": [
+    {
+     "score": 8.8,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/setuptools@65.3.0"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.656 class=IMPORTED_REACH_UNKNOWN"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2024-6345",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-cx63-2mw6-8hw5"
+   },
+   "ratings": [
+    {
+     "score": 8.8,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/setuptools@65.3.0"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.574 class=POSSIBLY_REACHABLE"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "POSSIBLE"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-59890",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-h35f-9h28-mq5c"
+   },
+   "ratings": [
+    {
+     "score": 6.1,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/setuptools@65.3.0"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.574 class=POSSIBLY_REACHABLE"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "POSSIBLE"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2022-40897",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-r9hx-vwmv-q579"
+   },
+   "ratings": [
+    {
+     "score": 8.7,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/setuptools@65.3.0"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.574 class=POSSIBLY_REACHABLE"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "POSSIBLE"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "GHSA-xmj3-9gf7-h52w",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-xmj3-9gf7-h52w"
+   },
+   "ratings": [
+    {
+     "score": 1.0,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/setuptools@65.3.0"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2025-54121",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-2c2j-9gv5-cj73"
+   },
+   "ratings": [
+    {
+     "score": 5.3,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/starlette@0.20.4"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2023-30798",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-74m5-2c7w-9w3x"
+   },
+   "ratings": [
+    {
+     "score": 8.7,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/starlette@0.20.4"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-54283",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-82w8-qh3p-5jfq"
+   },
+   "ratings": [
+    {
+     "score": 7.5,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/starlette@0.20.4"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.656 class=IMPORTED_REACH_UNKNOWN"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-48710",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-86qp-5c8j-p5mr"
+   },
+   "ratings": [
+    {
+     "score": 6.5,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/starlette@0.20.4"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.574 class=POSSIBLY_REACHABLE"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "POSSIBLE"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2024-47874",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-f96h-pmfr-66vw"
+   },
+   "ratings": [
+    {
+     "score": 8.7,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/starlette@0.20.4"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-54282",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-jp82-jpqv-5vv3"
+   },
+   "ratings": [
+    {
+     "score": 5.3,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/starlette@0.20.4"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.656 class=IMPORTED_REACH_UNKNOWN"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2023-29159",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-v5gw-mw7f-84px"
+   },
+   "ratings": [
+    {
+     "score": 6.3,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/starlette@0.20.4"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-48818",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-wqp7-x3pw-xc5r"
+   },
+   "ratings": [
+    {
+     "score": 7.5,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/starlette@0.20.4"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-48817",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-x746-7m8f-x49c"
+   },
+   "ratings": [
+    {
+     "score": 5.3,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/starlette@0.20.4"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.656 class=IMPORTED_REACH_UNKNOWN"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-113718",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-394h-qwmc-48pf"
+   },
+   "ratings": [
+    {
+     "score": 7.1,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/virtualenv@20.16.2"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.020 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-113724",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-43mp-35q3-x3fq"
+   },
+   "ratings": [
+    {
+     "score": 4.5,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/virtualenv@20.16.2"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-113714",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-494p-63j8-28p3"
+   },
+   "ratings": [
+    {
+     "score": 2.3,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/virtualenv@20.16.2"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-113721",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-558c-9hv2-4prj"
+   },
+   "ratings": [
+    {
+     "score": 4.5,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/virtualenv@20.16.2"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-22702",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-597g-3phw-6986"
+   },
+   "ratings": [
+    {
+     "score": 4.5,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/virtualenv@20.16.2"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-113726",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-5vjq-rrrf-7h2q"
+   },
+   "ratings": [
+    {
+     "score": 7.8,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/virtualenv@20.16.2"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.020 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-113723",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-6w3r-xr62-4xcp"
+   },
+   "ratings": [
+    {
+     "score": 7.1,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/virtualenv@20.16.2"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.020 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-102930",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-94p9-xgh2-xp45"
+   },
+   "ratings": [
+    {
+     "score": 7.7,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/virtualenv@20.16.2"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-102938",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-9h9j-4vrj-gf7g"
+   },
+   "ratings": [
+    {
+     "score": 5.8,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/virtualenv@20.16.2"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-113732",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-c947-3pg5-gm8q"
+   },
+   "ratings": [
+    {
+     "score": 7.8,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/virtualenv@20.16.2"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-113722",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-c978-59m8-c77v"
+   },
+   "ratings": [
+    {
+     "score": 7.8,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/virtualenv@20.16.2"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-113716",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-cw65-gx24-rc82"
+   },
+   "ratings": [
+    {
+     "score": 4.5,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/virtualenv@20.16.2"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-113717",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-cx28-75q4-x26q"
+   },
+   "ratings": [
+    {
+     "score": 2.3,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/virtualenv@20.16.2"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-113720",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-fc2g-4w5p-6whm"
+   },
+   "ratings": [
+    {
+     "score": 4.4,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/virtualenv@20.16.2"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-113719",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-hhxq-47xx-j5xx"
+   },
+   "ratings": [
+    {
+     "score": 4.5,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/virtualenv@20.16.2"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-102925",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-p58f-9548-mpm2"
+   },
+   "ratings": [
+    {
+     "score": 7.8,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/virtualenv@20.16.2"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.020 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-113715",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-qmx5-4p3x-wvqf"
+   },
+   "ratings": [
+    {
+     "score": 2.0,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/virtualenv@20.16.2"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2024-53899",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-rqc4-2hc7-8c8v"
+   },
+   "ratings": [
+    {
+     "score": 9.8,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/virtualenv@20.16.2"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.020 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-113725",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-vxj4-q4g9-crj7"
+   },
+   "ratings": [
+    {
+     "score": 7.8,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/virtualenv@20.16.2"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.020 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-102937",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-x78j-v8h9-3j2q"
+   },
+   "ratings": [
+    {
+     "score": 7.3,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/virtualenv@20.16.2"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2024-5569",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-jfmj-5v4g-7637"
+   },
+   "ratings": [
+    {
+     "score": 6.9,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/zipp@3.8.1"
+    }
+   ],
+   "analysis": {
+    "state": "not_affected",
+    "justification": "component_not_present",
+    "detail": "EVIDENT p_exposed=0.000 class=NOT_INSTALLED"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "REFUTED"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  }
+ ]
+}

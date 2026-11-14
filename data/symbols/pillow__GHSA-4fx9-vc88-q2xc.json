@@ -1,0 +1,22 @@
+{
+ "advisory": "GHSA-4fx9-vc88-q2xc",
+ "package": "pillow",
+ "commits": [
+  {
+   "repo": "python-pillow/Pillow",
+   "sha": "baae9ec4b67c68e3adaf1208cf54e8de5e38a6fd",
+   "parent": "525c840b0f8334118ae9a032cc7be2bffd4b8d46",
+   "py_files": 1
+  }
+ ],
+ "files": [
+  {
+   "path": "src/PIL/JpegImagePlugin.py",
+   "functions": [
+    "JpegImageFile.load_read"
+   ],
+   "module_level": false
+  }
+ ],
+ "status": "functions"
+}

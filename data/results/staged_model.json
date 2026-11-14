@@ -6,25 +6,14 @@
   "UNKNOWN": 0.6
  },
  "p_import_marg": 0.8724066390041494,
- "p_call": {
-  "CONFIRMED|NOT_OBSERVED|function": 0.6757629302357219,
-  "CONFIRMED|OBSERVED|function": 0.9978333078483966,
-  "POSSIBLE|OBSERVED|function": 0.9914178088999942,
-  "REFUTED|NOT_OBSERVED|function": 0.002565506235154394,
-  "POSSIBLE|NOT_OBSERVED|function": 0.4116615141545432,
-  "UNKNOWN|NOT_OBSERVED|function": 0.12901934170342721,
-  "UNKNOWN|OBSERVED|function": 0.7879538513742789
- },
+ "p_call": {},
  "p_call_l4": {
   "CONFIRMED": 0.8082477445830963,
   "POSSIBLE": 0.5751815405497116,
-  "REFUTED": 0.04104809976247031,
-  "UNKNOWN": 0.25783847980997626
+  "REFUTED": 0.054730799683293745,
+  "UNKNOWN": 0.21486539984164688
  },
- "p_call_l5": {
-  "NOT_OBSERVED": 0.48905051184495407,
-  "OBSERVED": 0.9975395669978461
- },
+ "p_call_l5": {},
  "prior_call": 0.6567695961995249,
  "counts": {
   "import": {
@@ -37,35 +26,6 @@
     122
    ]
   },
-  "call": {
-   "CONFIRMED|NOT_OBSERVED|function": [
-    168,
-    249
-   ],
-   "CONFIRMED|OBSERVED|function": [
-    175,
-    175
-   ],
-   "POSSIBLE|OBSERVED|function": [
-    97,
-    97
-   ],
-   "REFUTED|NOT_OBSERVED|function": [
-    0,
-    30
-   ],
-   "POSSIBLE|NOT_OBSERVED|function": [
-    103,
-    251
-   ],
-   "UNKNOWN|NOT_OBSERVED|function": [
-    4,
-    33
-   ],
-   "UNKNOWN|OBSERVED|function": [
-    5,
-    5
-   ]
-  }
+  "call": {}
  }
 }

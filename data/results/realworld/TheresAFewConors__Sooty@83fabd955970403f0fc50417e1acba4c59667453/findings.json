@@ -1,0 +1,3551 @@
+[
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "certifi",
+  "version": "2019.6.16",
+  "advisory": "CVE-2022-23491",
+  "ids": [
+   "GHSA-43fp-rhv2-5gv8",
+   "PYSEC-2022-42986"
+  ],
+  "cves": [
+   "CVE-2022-23491"
+  ],
+  "cvss": 6.8,
+  "epss": 0.0053,
+  "kev": false,
+  "severity_w": 0.6799999999999999,
+  "published": "2022-12-07T22:15:00Z",
+  "fixed": [
+   "2022.12.07",
+   "2022.12.7"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "module",
+     "symbols": [
+      "certifi.<module>"
+     ],
+     "witness": [
+      "__app__.Modules.phishtank.<module>",
+      "requests.<module>",
+      "requests.utils.<module>",
+      "requests.certs.<module>",
+      "certifi.<module>"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "certifi",
+  "version": "2019.6.16",
+  "advisory": "GHSA-6q48-6c7w-9gw2",
+  "ids": [
+   "GHSA-6q48-6c7w-9gw2",
+   "PYSEC-2026-4320"
+  ],
+  "cves": [],
+  "cvss": 9.1,
+  "epss": 0.0,
+  "kev": false,
+  "severity_w": 0.9099999999999999,
+  "published": "2026-10-20T19:35:05Z",
+  "fixed": [
+   "2026.10.18"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "certifi",
+  "version": "2019.6.16",
+  "advisory": "CVE-2023-37920",
+  "ids": [
+   "GHSA-xqr8-7jwr-rhp7",
+   "PYSEC-2023-135"
+  ],
+  "cves": [
+   "CVE-2023-37920"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00568,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2023-07-25T14:43:53Z",
+  "fixed": [
+   "2023.7.22"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "module",
+     "symbols": [
+      "certifi.<module>"
+     ],
+     "witness": [
+      "__app__.Modules.phishtank.<module>",
+      "requests.<module>",
+      "requests.utils.<module>",
+      "requests.certs.<module>",
+      "certifi.<module>"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "cryptography",
+  "version": "3.3.2",
+  "advisory": "CVE-2023-50782",
+  "ids": [
+   "GHSA-3ww4-gg4f-jr7f",
+   "PYSEC-2026-1283"
+  ],
+  "cves": [
+   "CVE-2023-50782"
+  ],
+  "cvss": 8.7,
+  "epss": 0.01118,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2024-02-05T21:30:31Z",
+  "fixed": [
+   "42.0.0"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "cryptography",
+  "version": "3.3.2",
+  "advisory": "GHSA-537c-gmf6-5ccf",
+  "ids": [
+   "GHSA-537c-gmf6-5ccf"
+  ],
+  "cves": [],
+  "cvss": 7.5,
+  "epss": 0.0,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:12:27Z",
+  "fixed": [
+   "48.0.1"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "cryptography",
+  "version": "3.3.2",
+  "advisory": "GHSA-5cpq-8wj7-hf2v",
+  "ids": [
+   "GHSA-5cpq-8wj7-hf2v"
+  ],
+  "cves": [],
+  "cvss": null,
+  "epss": 0.0,
+  "kev": false,
+  "severity_w": 0.5,
+  "published": "2023-06-02T17:13:10Z",
+  "fixed": [
+   "41.0.0"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "cryptography",
+  "version": "3.3.2",
+  "advisory": "CVE-2024-0727",
+  "ids": [
+   "GHSA-9v9h-cgj8-h64p",
+   "PYSEC-2026-1285"
+  ],
+  "cves": [
+   "CVE-2024-0727"
+  ],
+  "cvss": 5.5,
+  "epss": 0.03187,
+  "kev": false,
+  "severity_w": 0.55,
+  "published": "2024-01-26T09:30:23Z",
+  "fixed": [
+   "42.0.2"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "cryptography",
+  "version": "3.3.2",
+  "advisory": "CVE-2023-49083",
+  "ids": [
+   "GHSA-jfhm-5ghh-2f97",
+   "PYSEC-2023-254"
+  ],
+  "cves": [
+   "CVE-2023-49083"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00985,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2023-11-28T20:46:46Z",
+  "fixed": [
+   "41.0.6"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.21461021528126487,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (app: __import__,exec,import_module,namespace,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "cryptography.hazmat.backends.openssl.backend.Backend._load_pkcs7_certificates"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "cryptography",
+  "version": "3.3.2",
+  "advisory": "GHSA-jm77-qphf-c4w8",
+  "ids": [
+   "GHSA-jm77-qphf-c4w8"
+  ],
+  "cves": [],
+  "cvss": null,
+  "epss": 0.0,
+  "kev": false,
+  "severity_w": 0.5,
+  "published": "2023-08-01T22:34:41Z",
+  "fixed": [
+   "41.0.3"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "module",
+     "symbols": [
+      "cryptography.__about__.<module>"
+     ],
+     "witness": [
+      "__app__.Modules.phishtank.<module>",
+      "requests.<module>",
+      "cryptography.<module>",
+      "cryptography.__about__.<module>"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "cryptography",
+  "version": "3.3.2",
+  "advisory": "CVE-2026-69249",
+  "ids": [
+   "GHSA-jwv3-5hgf-82ww",
+   "PYSEC-2026-3553"
+  ],
+  "cves": [
+   "CVE-2026-69249"
+  ],
+  "cvss": 8.7,
+  "epss": 0.00262,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2026-08-03T21:26:50Z",
+  "fixed": [
+   "49.0.0"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "cryptography",
+  "version": "3.3.2",
+  "advisory": "CVE-2026-69248",
+  "ids": [
+   "GHSA-m2h6-j472-rp4c",
+   "PYSEC-2026-3554"
+  ],
+  "cves": [
+   "CVE-2026-69248"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00244,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2026-08-03T21:26:57Z",
+  "fixed": [
+   "49.0.0"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "cryptography",
+  "version": "3.3.2",
+  "advisory": "CVE-2026-34073",
+  "ids": [
+   "GHSA-m959-cc7f-wv43",
+   "PYSEC-2026-35"
+  ],
+  "cves": [
+   "CVE-2026-34073"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00227,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-03-27T19:56:21Z",
+  "fixed": [
+   "46.0.6"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "cryptography",
+  "version": "3.3.2",
+  "advisory": "CVE-2026-26007",
+  "ids": [
+   "GHSA-r6ph-v2qm-q3c2",
+   "PYSEC-2026-2141"
+  ],
+  "cves": [
+   "CVE-2026-26007"
+  ],
+  "cvss": 8.2,
+  "epss": 0.00384,
+  "kev": false,
+  "severity_w": 0.82,
+  "published": "2026-02-10T21:27:06Z",
+  "fixed": [
+   "46.0.5"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.21461021528126487,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (app: __import__,exec,import_module,namespace,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "cryptography.hazmat.primitives.asymmetric.ec.get_curve_for_oid"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "cryptography",
+  "version": "3.3.2",
+  "advisory": "GHSA-v8gr-m533-ghj9",
+  "ids": [
+   "GHSA-v8gr-m533-ghj9"
+  ],
+  "cves": [],
+  "cvss": null,
+  "epss": 0.0,
+  "kev": false,
+  "severity_w": 0.5,
+  "published": "2023-09-21T17:07:01Z",
+  "fixed": [
+   "41.0.4"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "module",
+     "symbols": [
+      "cryptography.__about__.<module>"
+     ],
+     "witness": [
+      "__app__.Modules.phishtank.<module>",
+      "requests.<module>",
+      "cryptography.<module>",
+      "cryptography.__about__.<module>"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "cryptography",
+  "version": "3.3.2",
+  "advisory": "CVE-2023-23931",
+  "ids": [
+   "GHSA-w7pp-m8wf-vj6r",
+   "PYSEC-2023-11"
+  ],
+  "cves": [
+   "CVE-2023-23931"
+  ],
+  "cvss": 6.9,
+  "epss": 0.01301,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2023-02-07T20:54:10Z",
+  "fixed": [
+   "39.0.1"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "cryptography.hazmat.backends.openssl.ciphers._CipherContext.update_into"
+     ],
+     "witness": [
+      "__app__.Modules.phishtank.<module>",
+      "requests.<module>",
+      "urllib3.contrib.pyopenssl.<module>",
+      "cryptography.hazmat.backends.openssl.backend.<module>",
+      "cryptography.hazmat.backends.openssl.backend.Backend.__init__",
+      "cryptography.hazmat.backends.openssl.backend.Backend._register_x509_ext_parsers",
+      "cryptography.hazmat.backends.openssl.ciphers._CipherContext.update",
+      "cryptography.hazmat.backends.openssl.ciphers._CipherContext.update_into"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "cryptography",
+  "version": "3.3.2",
+  "advisory": "CVE-2023-0286",
+  "ids": [
+   "GHSA-x4qr-2fvf-3mr5",
+   "PYSEC-2026-800"
+  ],
+  "cves": [
+   "CVE-2023-0286"
+  ],
+  "cvss": 7.4,
+  "epss": 0.68407,
+  "kev": false,
+  "severity_w": 0.74,
+  "published": "2023-02-08T22:17:06Z",
+  "fixed": [
+   "39.0.1"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "dfir-unfurl",
+  "version": "20200812",
+  "advisory": "CVE-2026-40036",
+  "ids": [
+   "GHSA-h5qv-qjv4-pc5m",
+   "PYSEC-2026-1294"
+  ],
+  "cves": [
+   "CVE-2026-40036"
+  ],
+  "cvss": 8.7,
+  "epss": 0.00517,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2026-01-29T15:31:30Z",
+  "fixed": [
+   "20260405"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.21461021528126487,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (app: __import__,exec,import_module,namespace,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "unfurl.parsers.parse_compressed.run"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "dfir-unfurl",
+  "version": "20200812",
+  "advisory": "CVE-2026-40035",
+  "ids": [
+   "GHSA-vg9h-jx4v-cwx2"
+  ],
+  "cves": [
+   "CVE-2026-40035"
+  ],
+  "cvss": 9.3,
+  "epss": 0.00566,
+  "kev": false,
+  "severity_w": 0.93,
+  "published": "2026-01-29T15:32:33Z",
+  "fixed": [],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "dnspython",
+  "version": "1.16.0",
+  "advisory": "CVE-2023-29483",
+  "ids": [
+   "GHSA-3rq5-2g8h-59hc",
+   "PYSEC-2026-1307"
+  ],
+  "cves": [
+   "CVE-2023-29483"
+  ],
+  "cvss": 5.9,
+  "epss": 0.01857,
+  "kev": false,
+  "severity_w": 0.5900000000000001,
+  "published": "2024-04-11T15:30:48Z",
+  "fixed": [
+   "2.6.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "dns.query.receive_udp"
+     ],
+     "witness": [
+      "__app__.Sooty.whoIsPrint",
+      "ipwhois.ipwhois.IPWhois.lookup_whois",
+      "ipwhois.asn.IPASN.lookup",
+      "ipwhois.net.Net.get_asn_dns",
+      "dns.resolver.Resolver.query",
+      "dns.query.udp",
+      "dns.query.receive_udp"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "dnspython",
+  "version": "1.16.0",
+  "advisory": "CVE-2026-114605",
+  "ids": [
+   "GHSA-45c3-73f7-pv4m"
+  ],
+  "cves": [
+   "CVE-2026-114605"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00466,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-10-27T15:37:37Z",
+  "fixed": [
+   "2.9.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "vulnerable symbols not found in installed source",
+     "granularity": "function",
+     "symbols": [
+      "dns.name.from_wire_parser"
+     ],
+     "witness": [],
+     "missing": true,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "idna",
+  "version": "2.8",
+  "advisory": "CVE-2026-45409",
+  "ids": [
+   "GHSA-65pc-fj4g-8rjx",
+   "PYSEC-2026-215"
+  ],
+  "cves": [
+   "CVE-2026-45409"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00408,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2026-05-19T14:34:32Z",
+  "fixed": [
+   "3.15"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "idna",
+  "version": "2.8",
+  "advisory": "CVE-2024-3651",
+  "ids": [
+   "GHSA-jjg7-2v4v-x38h",
+   "PYSEC-2024-60"
+  ],
+  "cves": [
+   "CVE-2024-3651"
+  ],
+  "cvss": 7.5,
+  "epss": 0.01386,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2024-04-11T21:32:40Z",
+  "fixed": [
+   "3.7"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "module",
+     "symbols": [
+      "idna.package_data.<module>"
+     ],
+     "witness": [
+      "__app__.Sooty.<module>",
+      "ipwhois.<module>",
+      "ipwhois.net.<module>",
+      "dns.resolver.<module>",
+      "dns.name.<module>",
+      "idna.<module>",
+      "idna.package_data.<module>"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "pyopenssl",
+  "version": "19.0.0",
+  "advisory": "CVE-2026-27448",
+  "ids": [
+   "GHSA-vp96-hxj8-p424",
+   "PYSEC-2026-2268"
+  ],
+  "cves": [
+   "CVE-2026-27448"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00256,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-03-16T15:15:43Z",
+  "fixed": [
+   "26.0.0"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.21461021528126487,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (app: __import__,exec,import_module,namespace,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "OpenSSL.SSL.Context.set_tlsext_servername_callback.wrapper"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "requests",
+  "version": "2.22.0",
+  "advisory": "CVE-2024-47081",
+  "ids": [
+   "GHSA-9hjg-9r4m-mvj7",
+   "PYSEC-2026-1872"
+  ],
+  "cves": [
+   "CVE-2024-47081"
+  ],
+  "cvss": 5.3,
+  "epss": 0.01022,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2025-06-09T19:06:08Z",
+  "fixed": [
+   "2.32.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "requests.utils.get_netrc_auth"
+     ],
+     "witness": [
+      "__app__.Modules.phishtank.urlcheck_online",
+      "requests.api.request",
+      "requests.sessions.Session.request",
+      "requests.sessions.Session.prepare_request",
+      "requests.utils.get_netrc_auth"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "requests",
+  "version": "2.22.0",
+  "advisory": "CVE-2024-35195",
+  "ids": [
+   "GHSA-9wx4-h78v-vm56",
+   "PYSEC-2026-1873"
+  ],
+  "cves": [
+   "CVE-2024-35195"
+  ],
+  "cvss": 5.6,
+  "epss": 0.0034,
+  "kev": false,
+  "severity_w": 0.5599999999999999,
+  "published": "2024-05-20T20:15:00Z",
+  "fixed": [
+   "2.32.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "requests.adapters.HTTPAdapter.get_connection",
+      "requests.adapters.HTTPAdapter.send"
+     ],
+     "witness": [
+      "__app__.Modules.phishtank.urlcheck_online",
+      "requests.api.request",
+      "requests.sessions.Session.request",
+      "requests.sessions.Session.send",
+      "requests.adapters.HTTPAdapter.send",
+      "requests.adapters.HTTPAdapter.get_connection"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "requests",
+  "version": "2.22.0",
+  "advisory": "CVE-2026-25645",
+  "ids": [
+   "GHSA-gc5v-m9x4-r6x2",
+   "PYSEC-2026-2275"
+  ],
+  "cves": [
+   "CVE-2026-25645"
+  ],
+  "cvss": 5.5,
+  "epss": 0.00194,
+  "kev": false,
+  "severity_w": 0.55,
+  "published": "2026-03-25T16:56:28Z",
+  "fixed": [
+   "2.33.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "requests.utils.extract_zipped_paths"
+     ],
+     "witness": [
+      "__app__.Modules.phishtank.urlcheck_online",
+      "requests.api.request",
+      "requests.sessions.Session.request",
+      "requests.sessions.Session.send",
+      "requests.adapters.HTTPAdapter.send",
+      "requests.adapters.HTTPAdapter.cert_verify",
+      "requests.utils.extract_zipped_paths"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "requests",
+  "version": "2.22.0",
+  "advisory": "CVE-2023-32681",
+  "ids": [
+   "GHSA-j8r2-6x86-q33q",
+   "PYSEC-2023-74"
+  ],
+  "cves": [
+   "CVE-2023-32681"
+  ],
+  "cvss": 6.1,
+  "epss": 0.02974,
+  "kev": false,
+  "severity_w": 0.61,
+  "published": "2023-05-22T20:36:32Z",
+  "fixed": [
+   "2.31.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "requests.sessions.SessionRedirectMixin.rebuild_proxies"
+     ],
+     "witness": [
+      "__app__.Modules.phishtank.urlcheck_online",
+      "requests.api.request",
+      "requests.sessions.Session.request",
+      "requests.sessions.Session.send",
+      "requests.sessions.SessionRedirectMixin.resolve_redirects",
+      "requests.sessions.SessionRedirectMixin.rebuild_proxies"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "urllib3",
+  "version": "1.25.9",
+  "advisory": "CVE-2025-66471",
+  "ids": [
+   "GHSA-2xpw-w6gg-jr37",
+   "PYSEC-2026-1994"
+  ],
+  "cves": [
+   "CVE-2025-66471"
+  ],
+  "cvss": 8.9,
+  "epss": 0.00731,
+  "kev": false,
+  "severity_w": 0.89,
+  "published": "2025-12-05T18:15:54Z",
+  "fixed": [
+   "2.6.0"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "urllib3.response.BaseHTTPResponse._decode",
+      "urllib3.response.BytesQueueBuffer.get",
+      "urllib3.response.ContentDecoder.decompress",
+      "urllib3.response.DeflateDecoder.__init__",
+      "urllib3.response.DeflateDecoder.decompress",
+      "urllib3.response.GzipDecoder.__init__",
+      "urllib3.response.GzipDecoder.decompress",
+      "urllib3.response.HTTPResponse.read",
+      "urllib3.response.HTTPResponse.read1",
+      "urllib3.response.HTTPResponse.read_chunked",
+      "urllib3.response.HTTPResponse.stream",
+      "urllib3.response.MultiDecoder.decompress"
+     ],
+     "witness": [
+      "__app__.Sooty.whoIsPrint",
+      "requests.adapters.HTTPAdapter.close",
+      "urllib3.response.HTTPResponse.__iter__",
+      "urllib3.response.HTTPResponse.stream",
+      "urllib3.response.HTTPResponse.read",
+      "urllib3.response.HTTPResponse._init_decoder",
+      "urllib3.response._get_decoder",
+      "urllib3.response.DeflateDecoder.__init__"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "urllib3",
+  "version": "1.25.9",
+  "advisory": "CVE-2024-37891",
+  "ids": [
+   "GHSA-34jh-p97f-mpxf",
+   "PYSEC-2026-1995"
+  ],
+  "cves": [
+   "CVE-2024-37891"
+  ],
+  "cvss": 4.4,
+  "epss": 0.01141,
+  "kev": false,
+  "severity_w": 0.44000000000000006,
+  "published": "2024-06-17T21:37:20Z",
+  "fixed": [
+   "1.26.19",
+   "2.2.2"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "module",
+     "symbols": [
+      "urllib3.util.retry.<module>"
+     ],
+     "witness": [
+      "__app__.Modules.phishtank.<module>",
+      "requests.<module>",
+      "urllib3.<module>",
+      "urllib3.util.retry.<module>"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "urllib3",
+  "version": "1.25.9",
+  "advisory": "CVE-2026-21441",
+  "ids": [
+   "GHSA-38jv-5279-wg99",
+   "PYSEC-2026-1996"
+  ],
+  "cves": [
+   "CVE-2026-21441"
+  ],
+  "cvss": 8.9,
+  "epss": 0.02922,
+  "kev": false,
+  "severity_w": 0.89,
+  "published": "2026-01-07T19:18:14Z",
+  "fixed": [
+   "2.6.3"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "urllib3.response.HTTPResponse.drain_conn"
+     ],
+     "witness": [
+      "__app__.Modules.phishtank.urlcheck_online",
+      "requests.api.request",
+      "requests.sessions.Session.request",
+      "requests.sessions.Session.send",
+      "requests.adapters.HTTPAdapter.send",
+      "urllib3.connectionpool.HTTPConnectionPool.urlopen",
+      "urllib3.response.HTTPResponse.drain_conn"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "urllib3",
+  "version": "1.25.9",
+  "advisory": "CVE-2023-45803",
+  "ids": [
+   "GHSA-g4mx-q9vg-27p4",
+   "PYSEC-2023-212"
+  ],
+  "cves": [
+   "CVE-2023-45803"
+  ],
+  "cvss": 5.7,
+  "epss": 0.00593,
+  "kev": false,
+  "severity_w": 0.5700000000000001,
+  "published": "2023-10-17T20:15:00Z",
+  "fixed": [
+   "1.26.18",
+   "2.0.7"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "urllib3.connectionpool.HTTPConnectionPool.urlopen",
+      "urllib3.poolmanager.PoolManager.urlopen"
+     ],
+     "witness": [
+      "__app__.Modules.phishtank.urlcheck_online",
+      "requests.api.request",
+      "requests.sessions.Session.request",
+      "requests.sessions.Session.send",
+      "requests.adapters.HTTPAdapter.send",
+      "urllib3.connectionpool.HTTPConnectionPool.urlopen"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "urllib3",
+  "version": "1.25.9",
+  "advisory": "CVE-2025-66418",
+  "ids": [
+   "GHSA-gm62-xv2j-4w53",
+   "PYSEC-2026-1998"
+  ],
+  "cves": [
+   "CVE-2025-66418"
+  ],
+  "cvss": 8.9,
+  "epss": 0.00731,
+  "kev": false,
+  "severity_w": 0.89,
+  "published": "2025-12-05T18:15:19Z",
+  "fixed": [
+   "2.6.0"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "urllib3.response.MultiDecoder.__init__"
+     ],
+     "witness": [
+      "__app__.Sooty.whoIsPrint",
+      "requests.adapters.HTTPAdapter.close",
+      "urllib3.response.HTTPResponse.__iter__",
+      "urllib3.response.HTTPResponse.stream",
+      "urllib3.response.HTTPResponse.read",
+      "urllib3.response.HTTPResponse._init_decoder",
+      "urllib3.response._get_decoder",
+      "urllib3.response.MultiDecoder.__init__"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "urllib3",
+  "version": "1.25.9",
+  "advisory": "CVE-2025-50181",
+  "ids": [
+   "GHSA-pq67-6m6q-mj2v",
+   "PYSEC-2026-1999"
+  ],
+  "cves": [
+   "CVE-2025-50181"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00474,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2025-06-18T17:50:00Z",
+  "fixed": [
+   "2.5.0"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.8072878303971307,
+  "exposure_class": "STATICALLY_REACHABLE",
+  "vex": {
+   "state": "exploitable"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "CONFIRMED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "function",
+     "symbols": [
+      "urllib3.poolmanager.PoolManager.__init__",
+      "urllib3.poolmanager.PoolManager.urlopen"
+     ],
+     "witness": [
+      "__app__.Modules.phishtank.urlcheck_online",
+      "requests.api.request",
+      "requests.sessions.Session.__init__",
+      "requests.adapters.HTTPAdapter.__init__",
+      "requests.adapters.HTTPAdapter.init_poolmanager",
+      "urllib3.poolmanager.PoolManager.__init__"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "urllib3",
+  "version": "1.25.9",
+  "advisory": "CVE-2021-33503",
+  "ids": [
+   "GHSA-q2q7-5pp4-w6pg",
+   "PYSEC-2021-108"
+  ],
+  "cves": [
+   "CVE-2021-33503"
+  ],
+  "cvss": 8.7,
+  "epss": 0.03273,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2021-06-01T21:19:32Z",
+  "fixed": [
+   "1.26.5"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "urllib3.connectionpool._normalize_host",
+      "urllib3.packages.six.add_metaclass.wrapper",
+      "urllib3.packages.six.python_2_unicode_compatible",
+      "urllib3.packages.six.with_metaclass",
+      "urllib3.packages.six.with_metaclass.metaclass.__new__",
+      "urllib3.util.ssl_.is_ipaddress",
+      "urllib3.util.url._encode_invalid_chars",
+      "urllib3.util.url.parse_url",
+      "urllib3.util.url.parse_url.idna_encode",
+      "urllib3.util.url.parse_url.to_input_type"
+     ],
+     "witness": [
+      "__app__.Modules.phishtank.<module>",
+      "requests.<module>",
+      "urllib3.<module>",
+      "urllib3.connectionpool.ConnectionPool.__init__",
+      "urllib3.connectionpool._normalize_host"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "urllib3",
+  "version": "1.25.9",
+  "advisory": "CVE-2026-44431",
+  "ids": [
+   "GHSA-qccp-gfcp-xxvc",
+   "PYSEC-2026-141"
+  ],
+  "cves": [
+   "CVE-2026-44431"
+  ],
+  "cvss": 8.2,
+  "epss": 0.00331,
+  "kev": false,
+  "severity_w": 0.82,
+  "published": "2026-05-11T14:51:20Z",
+  "fixed": [
+   "2.7.0"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "urllib3",
+  "version": "1.25.9",
+  "advisory": "CVE-2023-43804",
+  "ids": [
+   "GHSA-v845-jxx5-vc9f",
+   "PYSEC-2023-192"
+  ],
+  "cves": [
+   "CVE-2023-43804"
+  ],
+  "cvss": 8.1,
+  "epss": 0.0136,
+  "kev": false,
+  "severity_w": 0.8099999999999999,
+  "published": "2023-10-02T23:27:05Z",
+  "fixed": [
+   "1.26.17",
+   "2.0.6"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 3
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "module",
+     "symbols": [
+      "urllib3.util.retry.<module>"
+     ],
+     "witness": [
+      "__app__.Modules.phishtank.<module>",
+      "requests.<module>",
+      "urllib3.<module>",
+      "urllib3.util.retry.<module>"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453",
+  "package": "urllib3",
+  "version": "1.25.9",
+  "advisory": "CVE-2026-97689",
+  "ids": [
+   "GHSA-vxq7-64xx-v4gw",
+   "PYSEC-2026-4177"
+  ],
+  "cves": [
+   "CVE-2026-97689"
+  ],
+  "cvss": 8.9,
+  "epss": 0.00335,
+  "kev": false,
+  "severity_w": 0.89,
+  "published": "2026-09-30T14:46:18Z",
+  "fixed": [
+   "2.8.0"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "urllib3.response.HTTPResponse._update_chunk_length",
+      "urllib3.response.HTTPResponse.read_chunked"
+     ],
+     "witness": [
+      "__app__.Sooty.whoIsPrint",
+      "requests.adapters.HTTPAdapter.close",
+      "urllib3.response.HTTPResponse.__iter__",
+      "urllib3.response.HTTPResponse.stream",
+      "urllib3.response.HTTPResponse.read_chunked",
+      "urllib3.response.HTTPResponse._update_chunk_length"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ }
+]

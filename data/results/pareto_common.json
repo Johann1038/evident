@@ -1,0 +1,3122 @@
+{
+ "ActivityWatch__activitywatch@v0.12.2": {
+  "r0_exposure": 0.0024717135340842334,
+  "r0_vm": 5.6000000000000005,
+  "fronts": {
+   "evident": [
+    {
+     "lambda": 0.0,
+     "exposure": 0.000993099187801701,
+     "vm_risk": 2.25,
+     "changes": 5
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 0.0024717135340842334,
+     "vm_risk": 5.6000000000000005,
+     "changes": 0
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 0.0024717135340842334,
+     "vm_risk": 5.6000000000000005,
+     "changes": 0
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 0.0024717135340842334,
+     "vm_risk": 5.6000000000000005,
+     "changes": 0
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 0.0024717135340842334,
+     "vm_risk": 5.6000000000000005,
+     "changes": 0
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 0.0024717135340842334,
+     "vm_risk": 5.6000000000000005,
+     "changes": 0
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 0.0024717135340842334,
+     "vm_risk": 5.6000000000000005,
+     "changes": 0
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 0.0024717135340842334,
+     "vm_risk": 5.6000000000000005,
+     "changes": 0
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 0.0024717135340842334,
+     "vm_risk": 5.6000000000000005,
+     "changes": 0
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 0.0024717135340842334,
+     "vm_risk": 5.6000000000000005,
+     "changes": 0
+    }
+   ],
+   "vm": [
+    {
+     "lambda": 0.0,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 7
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 5
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 5
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 5
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 0.00030013664342451403,
+     "vm_risk": 0.6799999999999999,
+     "changes": 3
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 0.0013815113145863663,
+     "vm_risk": 3.13,
+     "changes": 1
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 0.0024717135340842334,
+     "vm_risk": 5.6000000000000005,
+     "changes": 0
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 0.0024717135340842334,
+     "vm_risk": 5.6000000000000005,
+     "changes": 0
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 0.0024717135340842334,
+     "vm_risk": 5.6000000000000005,
+     "changes": 0
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 0.0024717135340842334,
+     "vm_risk": 5.6000000000000005,
+     "changes": 0
+    }
+   ]
+  }
+ },
+ "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0": {
+  "r0_exposure": 27.594726887798647,
+  "r0_vm": 50.29999999999999,
+  "fronts": {
+   "evident": [
+    {
+     "lambda": 0.0,
+     "exposure": 16.862607240505124,
+     "vm_risk": 31.229999999999997,
+     "changes": 12
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 16.862607240505124,
+     "vm_risk": 31.229999999999997,
+     "changes": 10
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 16.862607240505124,
+     "vm_risk": 31.229999999999997,
+     "changes": 10
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 16.862607240505124,
+     "vm_risk": 31.229999999999997,
+     "changes": 10
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 17.924652175287225,
+     "vm_risk": 33.29,
+     "changes": 8
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 20.708774125223027,
+     "vm_risk": 37.8,
+     "changes": 5
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 25.816995112983566,
+     "vm_risk": 47.58999999999999,
+     "changes": 1
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 27.594726887798647,
+     "vm_risk": 50.29999999999999,
+     "changes": 0
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 27.594726887798647,
+     "vm_risk": 50.29999999999999,
+     "changes": 0
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 27.594726887798647,
+     "vm_risk": 50.29999999999999,
+     "changes": 0
+    }
+   ],
+   "vm": [
+    {
+     "lambda": 0.0,
+     "exposure": 16.862607240505124,
+     "vm_risk": 31.229999999999997,
+     "changes": 12
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 16.862607240505124,
+     "vm_risk": 31.229999999999997,
+     "changes": 10
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 16.862607240505124,
+     "vm_risk": 31.229999999999997,
+     "changes": 10
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 16.862607240505124,
+     "vm_risk": 31.229999999999997,
+     "changes": 10
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 16.862607240505124,
+     "vm_risk": 31.229999999999997,
+     "changes": 10
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 18.39040478049708,
+     "vm_risk": 34.0,
+     "changes": 7
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 22.576265136251596,
+     "vm_risk": 40.739999999999995,
+     "changes": 3
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 27.594726887798647,
+     "vm_risk": 50.29999999999999,
+     "changes": 0
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 27.594726887798647,
+     "vm_risk": 50.29999999999999,
+     "changes": 0
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 27.594726887798647,
+     "vm_risk": 50.29999999999999,
+     "changes": 0
+    }
+   ]
+  }
+ },
+ "allegro__ralph@20240213.1": {
+  "r0_exposure": 45.38708337395757,
+  "r0_vm": 84.03999999999998,
+  "fronts": {
+   "evident": [
+    {
+     "lambda": 0.0,
+     "exposure": 25.847787797190847,
+     "vm_risk": 42.50999999999999,
+     "changes": 8
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 25.847787797190847,
+     "vm_risk": 42.50999999999999,
+     "changes": 8
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 25.847787797190847,
+     "vm_risk": 42.50999999999999,
+     "changes": 8
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 25.847787797190847,
+     "vm_risk": 42.50999999999999,
+     "changes": 8
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 27.23974726408298,
+     "vm_risk": 44.73999999999999,
+     "changes": 5
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 27.23974726408298,
+     "vm_risk": 44.73999999999999,
+     "changes": 5
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 29.855086161121477,
+     "vm_risk": 49.91999999999999,
+     "changes": 3
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 36.98058754909738,
+     "vm_risk": 67.53,
+     "changes": 1
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 45.38708337395757,
+     "vm_risk": 84.03999999999998,
+     "changes": 0
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 45.38708337395757,
+     "vm_risk": 84.03999999999998,
+     "changes": 0
+    }
+   ],
+   "vm": [
+    {
+     "lambda": 0.0,
+     "exposure": 25.847787797190847,
+     "vm_risk": 42.50999999999999,
+     "changes": 8
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 25.847787797190847,
+     "vm_risk": 42.50999999999999,
+     "changes": 8
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 25.847787797190847,
+     "vm_risk": 42.50999999999999,
+     "changes": 8
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 25.847787797190847,
+     "vm_risk": 42.50999999999999,
+     "changes": 8
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 26.202022172984258,
+     "vm_risk": 43.04999999999999,
+     "changes": 7
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 27.23974726408298,
+     "vm_risk": 44.73999999999999,
+     "changes": 5
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 27.23974726408298,
+     "vm_risk": 44.73999999999999,
+     "changes": 5
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 29.855086161121477,
+     "vm_risk": 49.91999999999999,
+     "changes": 3
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 45.38708337395757,
+     "vm_risk": 84.03999999999998,
+     "changes": 0
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 45.38708337395757,
+     "vm_risk": 84.03999999999998,
+     "changes": 0
+    }
+   ]
+  }
+ },
+ "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf": {
+  "r0_exposure": 10.517675205582337,
+  "r0_vm": 37.540000000000006,
+  "fronts": {
+   "evident": [
+    {
+     "lambda": 0.0,
+     "exposure": 0.1203772862232779,
+     "vm_risk": 6.5200000000000005,
+     "changes": 20
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 0.19533432304038004,
+     "vm_risk": 16.75,
+     "changes": 13
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 0.4300083915846623,
+     "vm_risk": 17.43,
+     "changes": 10
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 0.4300083915846623,
+     "vm_risk": 17.43,
+     "changes": 10
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 0.4300083915846623,
+     "vm_risk": 17.43,
+     "changes": 10
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 4.937583963216884,
+     "vm_risk": 28.580000000000002,
+     "changes": 2
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 6.892132107282766,
+     "vm_risk": 31.92,
+     "changes": 1
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 6.892132107282766,
+     "vm_risk": 31.92,
+     "changes": 1
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 10.517675205582337,
+     "vm_risk": 37.540000000000006,
+     "changes": 0
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 10.517675205582337,
+     "vm_risk": 37.540000000000006,
+     "changes": 0
+    }
+   ],
+   "vm": [
+    {
+     "lambda": 0.0,
+     "exposure": 0.1203772862232779,
+     "vm_risk": 6.5200000000000005,
+     "changes": 20
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 0.1203772862232779,
+     "vm_risk": 6.5200000000000005,
+     "changes": 19
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 0.1203772862232779,
+     "vm_risk": 6.5200000000000005,
+     "changes": 19
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 0.1203772862232779,
+     "vm_risk": 6.5200000000000005,
+     "changes": 19
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 0.3550513547675602,
+     "vm_risk": 7.2,
+     "changes": 17
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 0.400526414149983,
+     "vm_risk": 10.45,
+     "changes": 15
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 4.937583963216884,
+     "vm_risk": 28.580000000000002,
+     "changes": 2
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 6.892132107282766,
+     "vm_risk": 31.92,
+     "changes": 1
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 10.517675205582337,
+     "vm_risk": 37.540000000000006,
+     "changes": 0
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 10.517675205582337,
+     "vm_risk": 37.540000000000006,
+     "changes": 0
+    }
+   ]
+  }
+ },
+ "apache__superset@3.0.3": {
+  "r0_exposure": 34.21858636621771,
+  "r0_vm": 59.86000000000001,
+  "fronts": {
+   "evident": [
+    {
+     "lambda": 0.0,
+     "exposure": 0.7588686127121506,
+     "vm_risk": 1.25,
+     "changes": 29
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 0.7588686127121506,
+     "vm_risk": 1.25,
+     "changes": 29
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 1.2476451218685516,
+     "vm_risk": 2.34,
+     "changes": 22
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 1.2476451218685516,
+     "vm_risk": 2.34,
+     "changes": 22
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 2.910453900531317,
+     "vm_risk": 5.88,
+     "changes": 17
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 5.713464241082039,
+     "vm_risk": 10.2,
+     "changes": 13
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 13.41945599272179,
+     "vm_risk": 24.009999999999994,
+     "changes": 7
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 29.53714672304017,
+     "vm_risk": 50.95,
+     "changes": 1
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 34.21858636621771,
+     "vm_risk": 59.86000000000001,
+     "changes": 0
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 34.21858636621771,
+     "vm_risk": 59.86000000000001,
+     "changes": 0
+    }
+   ],
+   "vm": [
+    {
+     "lambda": 0.0,
+     "exposure": 0.7588686127121506,
+     "vm_risk": 1.25,
+     "changes": 29
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 0.7588686127121506,
+     "vm_risk": 1.25,
+     "changes": 29
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 1.1060023797829168,
+     "vm_risk": 1.68,
+     "changes": 23
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 1.1060023797829168,
+     "vm_risk": 1.68,
+     "changes": 23
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 1.428917511941769,
+     "vm_risk": 2.08,
+     "changes": 22
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 5.133220829730103,
+     "vm_risk": 9.19,
+     "changes": 14
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 7.5809552521106065,
+     "vm_risk": 13.14,
+     "changes": 11
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 20.58994102607172,
+     "vm_risk": 35.120000000000005,
+     "changes": 4
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 29.53714672304017,
+     "vm_risk": 50.95,
+     "changes": 1
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 34.21858636621771,
+     "vm_risk": 59.86000000000001,
+     "changes": 0
+    }
+   ]
+  }
+ },
+ "arrobalytics__django-ledger@v0.5.3.2": {
+  "r0_exposure": 65.90257966540766,
+  "r0_vm": 155.98,
+  "fronts": {
+   "evident": [
+    {
+     "lambda": 0.0,
+     "exposure": 24.881518174967436,
+     "vm_risk": 58.50999999999999,
+     "changes": 28
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 25.018074000155416,
+     "vm_risk": 64.14999999999999,
+     "changes": 18
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 25.018074000155416,
+     "vm_risk": 64.14999999999999,
+     "changes": 18
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 25.17473945731074,
+     "vm_risk": 64.88,
+     "changes": 17
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 25.604701610456537,
+     "vm_risk": 65.82,
+     "changes": 15
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 30.84082405367415,
+     "vm_risk": 77.86999999999999,
+     "changes": 8
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 37.945397879788224,
+     "vm_risk": 96.32,
+     "changes": 5
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 44.1662440394092,
+     "vm_risk": 112.14999999999999,
+     "changes": 2
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 48.301891626357666,
+     "vm_risk": 126.31999999999998,
+     "changes": 1
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 65.90257966540766,
+     "vm_risk": 155.98,
+     "changes": 0
+    }
+   ],
+   "vm": [
+    {
+     "lambda": 0.0,
+     "exposure": 24.881518174967436,
+     "vm_risk": 58.50999999999999,
+     "changes": 28
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 24.881518174967436,
+     "vm_risk": 58.50999999999999,
+     "changes": 25
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 24.881518174967436,
+     "vm_risk": 58.50999999999999,
+     "changes": 25
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 24.95113456451613,
+     "vm_risk": 59.05,
+     "changes": 23
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 25.1407190454529,
+     "vm_risk": 59.379999999999995,
+     "changes": 22
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 26.053828894070374,
+     "vm_risk": 62.81999999999999,
+     "changes": 17
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 30.11307702279529,
+     "vm_risk": 75.30999999999999,
+     "changes": 9
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 33.665361062686095,
+     "vm_risk": 82.69999999999999,
+     "changes": 7
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 44.1662440394092,
+     "vm_risk": 112.14999999999999,
+     "changes": 2
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 65.90257966540766,
+     "vm_risk": 155.98,
+     "changes": 0
+    }
+   ]
+  }
+ },
+ "athms__learning-from-brains@b061ef97680365a074671e0c95581af426773f9e": {
+  "r0_exposure": 76.80664941455339,
+  "r0_vm": 134.04999999999998,
+  "fronts": {
+   "evident": [
+    {
+     "lambda": 0.0,
+     "exposure": 37.79884119267502,
+     "vm_risk": 65.96999999999998,
+     "changes": 19
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 37.79884119267502,
+     "vm_risk": 65.96999999999998,
+     "changes": 18
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 37.79884119267502,
+     "vm_risk": 65.96999999999998,
+     "changes": 18
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 37.79884119267502,
+     "vm_risk": 65.96999999999998,
+     "changes": 18
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 38.32597373621391,
+     "vm_risk": 66.88999999999999,
+     "changes": 16
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 45.012535456973616,
+     "vm_risk": 78.55999999999999,
+     "changes": 7
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 49.72807984102266,
+     "vm_risk": 86.78999999999999,
+     "changes": 4
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 58.654954871822675,
+     "vm_risk": 102.36999999999999,
+     "changes": 1
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 58.654954871822675,
+     "vm_risk": 102.36999999999999,
+     "changes": 1
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 76.80664941455339,
+     "vm_risk": 134.04999999999998,
+     "changes": 0
+    }
+   ],
+   "vm": [
+    {
+     "lambda": 0.0,
+     "exposure": 37.79884119267502,
+     "vm_risk": 65.96999999999998,
+     "changes": 19
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 37.79884119267502,
+     "vm_risk": 65.96999999999998,
+     "changes": 18
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 37.79884119267502,
+     "vm_risk": 65.96999999999998,
+     "changes": 18
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 37.79884119267502,
+     "vm_risk": 65.96999999999998,
+     "changes": 18
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 38.02229955352303,
+     "vm_risk": 66.35999999999999,
+     "changes": 17
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 38.75570135322932,
+     "vm_risk": 67.63999999999999,
+     "changes": 15
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 46.91479637496181,
+     "vm_risk": 81.88000000000001,
+     "changes": 6
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 49.72807984102266,
+     "vm_risk": 86.78999999999999,
+     "changes": 4
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 58.654954871822675,
+     "vm_risk": 102.36999999999999,
+     "changes": 1
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 76.80664941455339,
+     "vm_risk": 134.04999999999998,
+     "changes": 0
+    }
+   ]
+  }
+ },
+ "autopkg__autopkg@v2.7.2": {
+  "r0_exposure": 6.138992774084036,
+  "r0_vm": 17.32,
+  "fronts": {
+   "evident": [
+    {
+     "lambda": 0.0,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 4
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 4
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 4
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 4
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 1.2807007125890735,
+     "vm_risk": 3.2499999999999996,
+     "changes": 2
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 2.6991839854854605,
+     "vm_risk": 5.59,
+     "changes": 1
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 2.6991839854854605,
+     "vm_risk": 5.59,
+     "changes": 1
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 6.138992774084036,
+     "vm_risk": 17.32,
+     "changes": 0
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 6.138992774084036,
+     "vm_risk": 17.32,
+     "changes": 0
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 6.138992774084036,
+     "vm_risk": 17.32,
+     "changes": 0
+    }
+   ],
+   "vm": [
+    {
+     "lambda": 0.0,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 4
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 4
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 4
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 4
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 4
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 1.2807007125890735,
+     "vm_risk": 3.2499999999999996,
+     "changes": 2
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 2.6991839854854605,
+     "vm_risk": 5.59,
+     "changes": 1
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 2.6991839854854605,
+     "vm_risk": 5.59,
+     "changes": 1
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 6.138992774084036,
+     "vm_risk": 17.32,
+     "changes": 0
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 6.138992774084036,
+     "vm_risk": 17.32,
+     "changes": 0
+    }
+   ]
+  }
+ },
+ "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047": {
+  "r0_exposure": 17.87022932917175,
+  "r0_vm": 35.55,
+  "fronts": {
+   "evident": [
+    {
+     "lambda": 0.0,
+     "exposure": 8.014943220006202,
+     "vm_risk": 15.2,
+     "changes": 17
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 8.083270417155845,
+     "vm_risk": 15.73,
+     "changes": 14
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 8.083270417155845,
+     "vm_risk": 15.73,
+     "changes": 14
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 8.083270417155845,
+     "vm_risk": 15.73,
+     "changes": 14
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 9.841070468404334,
+     "vm_risk": 20.5,
+     "changes": 8
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 11.647353082859068,
+     "vm_risk": 24.65,
+     "changes": 6
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 13.532444475772834,
+     "vm_risk": 27.71,
+     "changes": 4
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 13.532444475772834,
+     "vm_risk": 27.71,
+     "changes": 4
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 17.189702773352277,
+     "vm_risk": 33.71,
+     "changes": 3
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 17.189702773352277,
+     "vm_risk": 33.71,
+     "changes": 3
+    }
+   ],
+   "vm": [
+    {
+     "lambda": 0.0,
+     "exposure": 8.014943220006202,
+     "vm_risk": 15.2,
+     "changes": 17
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 8.014943220006202,
+     "vm_risk": 15.2,
+     "changes": 16
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 8.014943220006202,
+     "vm_risk": 15.2,
+     "changes": 16
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 8.083270417155845,
+     "vm_risk": 15.73,
+     "changes": 14
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 8.083270417155845,
+     "vm_risk": 15.73,
+     "changes": 14
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 10.536419428295105,
+     "vm_risk": 21.56,
+     "changes": 7
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 12.42151082120887,
+     "vm_risk": 24.62,
+     "changes": 5
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 13.532444475772834,
+     "vm_risk": 27.71,
+     "changes": 4
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 17.189702773352277,
+     "vm_risk": 33.71,
+     "changes": 3
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 17.189702773352277,
+     "vm_risk": 33.71,
+     "changes": 3
+    }
+   ]
+  }
+ },
+ "Cog-Creators__Red-DiscordBot@3.5.2": {
+  "r0_exposure": 23.12288486345684,
+  "r0_vm": 40.13999999999999,
+  "fronts": {
+   "evident": [
+    {
+     "lambda": 0.0,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 9
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 9
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 9
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 9
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 0.4768336944773339,
+     "vm_risk": 0.83,
+     "changes": 7
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 0.968825883079294,
+     "vm_risk": 1.58,
+     "changes": 6
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 2.8494366858039135,
+     "vm_risk": 4.54,
+     "changes": 4
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 4.627168460618996,
+     "vm_risk": 7.25,
+     "changes": 3
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 23.12288486345684,
+     "vm_risk": 40.13999999999999,
+     "changes": 0
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 23.12288486345684,
+     "vm_risk": 40.13999999999999,
+     "changes": 0
+    }
+   ],
+   "vm": [
+    {
+     "lambda": 0.0,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 9
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 9
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 9
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 9
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 0.1895844809367713,
+     "vm_risk": 0.32999999999999996,
+     "changes": 8
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 0.968825883079294,
+     "vm_risk": 1.58,
+     "changes": 6
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 2.8494366858039135,
+     "vm_risk": 4.54,
+     "changes": 4
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 4.627168460618996,
+     "vm_risk": 7.25,
+     "changes": 3
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 4.627168460618996,
+     "vm_risk": 7.25,
+     "changes": 3
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 23.12288486345684,
+     "vm_risk": 40.13999999999999,
+     "changes": 0
+    }
+   ]
+  }
+ },
+ "Django-CRM__Django-CRM@0.10.0": {
+  "r0_exposure": 29.321450169591124,
+  "r0_vm": 49.900000000000006,
+  "fronts": {
+   "evident": [
+    {
+     "lambda": 0.0,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 7
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 7
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 0.053652553820316216,
+     "vm_risk": 0.25,
+     "changes": 6
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 0.19529529590595102,
+     "vm_risk": 0.9099999999999999,
+     "changes": 5
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 0.4825445094465136,
+     "vm_risk": 1.41,
+     "changes": 4
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 0.4825445094465136,
+     "vm_risk": 1.41,
+     "changes": 4
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 0.4825445094465136,
+     "vm_risk": 1.41,
+     "changes": 4
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 10.962723010665325,
+     "vm_risk": 20.240000000000002,
+     "changes": 1
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 10.962723010665325,
+     "vm_risk": 20.240000000000002,
+     "changes": 1
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 29.321450169591124,
+     "vm_risk": 49.900000000000006,
+     "changes": 0
+    }
+   ],
+   "vm": [
+    {
+     "lambda": 0.0,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 7
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 7
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 7
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 7
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 0.053652553820316216,
+     "vm_risk": 0.25,
+     "changes": 6
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 0.4825445094465136,
+     "vm_risk": 1.41,
+     "changes": 4
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 0.4825445094465136,
+     "vm_risk": 1.41,
+     "changes": 4
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 0.4825445094465136,
+     "vm_risk": 1.41,
+     "changes": 4
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 10.962723010665325,
+     "vm_risk": 20.240000000000002,
+     "changes": 1
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 29.321450169591124,
+     "vm_risk": 49.900000000000006,
+     "changes": 0
+    }
+   ]
+  }
+ },
+ "Ehco1996__django-sspanel@v2023.12.26": {
+  "r0_exposure": 51.10814335570505,
+  "r0_vm": 98.16,
+  "fronts": {
+   "evident": [
+    {
+     "lambda": 0.0,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 22
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 0.0454750593824228,
+     "vm_risk": 3.2499999999999996,
+     "changes": 20
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 0.09912761320273902,
+     "vm_risk": 3.4999999999999996,
+     "changes": 19
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 0.09912761320273902,
+     "vm_risk": 3.4999999999999996,
+     "changes": 19
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 0.2887120941395103,
+     "vm_risk": 3.8299999999999996,
+     "changes": 18
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 7.86933831623125,
+     "vm_risk": 20.330000000000002,
+     "changes": 9
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 12.519559379480885,
+     "vm_risk": 28.240000000000002,
+     "changes": 6
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 15.203390729195467,
+     "vm_risk": 33.300000000000004,
+     "changes": 5
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 35.10601327534712,
+     "vm_risk": 70.92999999999999,
+     "changes": 1
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 51.10814335570505,
+     "vm_risk": 98.16,
+     "changes": 0
+    }
+   ],
+   "vm": [
+    {
+     "lambda": 0.0,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 22
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 22
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 22
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 22
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 0.24323703475708752,
+     "vm_risk": 0.58,
+     "changes": 20
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 0.7807042827414703,
+     "vm_risk": 4.58,
+     "changes": 17
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 8.607441291397427,
+     "vm_risk": 19.6,
+     "changes": 8
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 12.519559379480885,
+     "vm_risk": 28.240000000000002,
+     "changes": 6
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 19.231241355186487,
+     "vm_risk": 39.980000000000004,
+     "changes": 4
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 51.10814335570505,
+     "vm_risk": 98.16,
+     "changes": 0
+    }
+   ]
+  }
+ },
+ "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6": {
+  "r0_exposure": 34.27307522185516,
+  "r0_vm": 63.089999999999996,
+  "fronts": {
+   "evident": [
+    {
+     "lambda": 0.0,
+     "exposure": 0.729613002393029,
+     "vm_risk": 1.27,
+     "changes": 13
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 0.729613002393029,
+     "vm_risk": 1.27,
+     "changes": 13
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 0.729613002393029,
+     "vm_risk": 1.27,
+     "changes": 13
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 0.729613002393029,
+     "vm_risk": 1.27,
+     "changes": 13
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 0.729613002393029,
+     "vm_risk": 1.27,
+     "changes": 13
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 5.453047756964356,
+     "vm_risk": 11.02,
+     "changes": 7
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 7.333658559688974,
+     "vm_risk": 13.979999999999999,
+     "changes": 5
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 9.111390334504057,
+     "vm_risk": 16.689999999999998,
+     "changes": 4
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 34.27307522185516,
+     "vm_risk": 63.089999999999996,
+     "changes": 0
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 34.27307522185516,
+     "vm_risk": 63.089999999999996,
+     "changes": 0
+    }
+   ],
+   "vm": [
+    {
+     "lambda": 0.0,
+     "exposure": 0.729613002393029,
+     "vm_risk": 1.27,
+     "changes": 13
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 0.729613002393029,
+     "vm_risk": 1.27,
+     "changes": 13
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 0.729613002393029,
+     "vm_risk": 1.27,
+     "changes": 13
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 0.729613002393029,
+     "vm_risk": 1.27,
+     "changes": 13
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 0.729613002393029,
+     "vm_risk": 1.27,
+     "changes": 13
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 0.729613002393029,
+     "vm_risk": 1.27,
+     "changes": 13
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 7.333658559688974,
+     "vm_risk": 13.979999999999999,
+     "changes": 5
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 9.111390334504057,
+     "vm_risk": 16.689999999999998,
+     "changes": 4
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 9.111390334504057,
+     "vm_risk": 16.689999999999998,
+     "changes": 4
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 34.27307522185516,
+     "vm_risk": 63.089999999999996,
+     "changes": 0
+    }
+   ]
+  }
+ },
+ "FoundationAgents__MetaGPT@v0.1.0": {
+  "r0_exposure": 30.355696834710372,
+  "r0_vm": 53.84,
+  "fronts": {
+   "evident": [
+    {
+     "lambda": 0.0,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 6
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 6
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 0.0836979839596933,
+     "vm_risk": 0.39,
+     "changes": 5
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 0.0836979839596933,
+     "vm_risk": 0.39,
+     "changes": 5
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 0.4743569143748584,
+     "vm_risk": 1.0699999999999998,
+     "changes": 4
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 2.2898856985215987,
+     "vm_risk": 4.09,
+     "changes": 3
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 4.80672519204414,
+     "vm_risk": 8.0,
+     "changes": 2
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 4.80672519204414,
+     "vm_risk": 8.0,
+     "changes": 2
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 12.434208462656844,
+     "vm_risk": 20.950000000000003,
+     "changes": 1
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 30.355696834710372,
+     "vm_risk": 53.84,
+     "changes": 0
+    }
+   ],
+   "vm": [
+    {
+     "lambda": 0.0,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 6
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 6
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 6
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 6
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 6
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 0.8351511860162958,
+     "vm_risk": 1.62,
+     "changes": 4
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 2.2898856985215987,
+     "vm_risk": 4.09,
+     "changes": 3
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 4.80672519204414,
+     "vm_risk": 8.0,
+     "changes": 2
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 4.80672519204414,
+     "vm_risk": 8.0,
+     "changes": 2
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 30.355696834710372,
+     "vm_risk": 53.84,
+     "changes": 0
+    }
+   ]
+  }
+ },
+ "FuzzyGrim__Yamtrack@v0.5": {
+  "r0_exposure": 64.25887061121956,
+  "r0_vm": 113.43999999999997,
+  "fronts": {
+   "evident": [
+    {
+     "lambda": 0.0,
+     "exposure": 24.954494629836795,
+     "vm_risk": 42.82999999999999,
+     "changes": 3
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 24.954494629836795,
+     "vm_risk": 42.82999999999999,
+     "changes": 3
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 24.954494629836795,
+     "vm_risk": 42.82999999999999,
+     "changes": 3
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 24.954494629836795,
+     "vm_risk": 42.82999999999999,
+     "changes": 3
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 24.954494629836795,
+     "vm_risk": 42.82999999999999,
+     "changes": 3
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 24.954494629836795,
+     "vm_risk": 42.82999999999999,
+     "changes": 3
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 26.247116090769325,
+     "vm_risk": 45.07999999999999,
+     "changes": 2
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 29.07165309978127,
+     "vm_risk": 49.90999999999999,
+     "changes": 2
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 29.07165309978127,
+     "vm_risk": 49.90999999999999,
+     "changes": 2
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 64.25887061121956,
+     "vm_risk": 113.43999999999997,
+     "changes": 0
+    }
+   ],
+   "vm": [
+    {
+     "lambda": 0.0,
+     "exposure": 24.954494629836795,
+     "vm_risk": 42.82999999999999,
+     "changes": 3
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 24.954494629836795,
+     "vm_risk": 42.82999999999999,
+     "changes": 3
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 24.954494629836795,
+     "vm_risk": 42.82999999999999,
+     "changes": 3
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 24.954494629836795,
+     "vm_risk": 42.82999999999999,
+     "changes": 3
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 24.954494629836795,
+     "vm_risk": 42.82999999999999,
+     "changes": 3
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 24.954494629836795,
+     "vm_risk": 42.82999999999999,
+     "changes": 3
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 24.954494629836795,
+     "vm_risk": 42.82999999999999,
+     "changes": 3
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 26.247116090769325,
+     "vm_risk": 45.07999999999999,
+     "changes": 2
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 29.07165309978127,
+     "vm_risk": 49.90999999999999,
+     "changes": 2
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 64.25887061121956,
+     "vm_risk": 113.43999999999997,
+     "changes": 0
+    }
+   ]
+  }
+ },
+ "Gerapy__Gerapy@v0.9.13": {
+  "r0_exposure": 46.20020209441161,
+  "r0_vm": 94.83000000000001,
+  "fronts": {
+   "evident": [
+    {
+     "lambda": 0.0,
+     "exposure": 8.55462539666243,
+     "vm_risk": 13.690000000000001,
+     "changes": 39
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 8.55462539666243,
+     "vm_risk": 13.690000000000001,
+     "changes": 38
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 9.427265100184215,
+     "vm_risk": 22.27,
+     "changes": 30
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 9.427265100184215,
+     "vm_risk": 22.27,
+     "changes": 30
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 10.257464034629407,
+     "vm_risk": 24.0,
+     "changes": 28
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 28.128782637797116,
+     "vm_risk": 62.02,
+     "changes": 10
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 37.31004616608829,
+     "vm_risk": 79.62,
+     "changes": 3
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 46.20020209441161,
+     "vm_risk": 94.83000000000001,
+     "changes": 0
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 46.20020209441161,
+     "vm_risk": 94.83000000000001,
+     "changes": 0
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 46.20020209441161,
+     "vm_risk": 94.83000000000001,
+     "changes": 0
+    }
+   ],
+   "vm": [
+    {
+     "lambda": 0.0,
+     "exposure": 8.55462539666243,
+     "vm_risk": 13.690000000000001,
+     "changes": 39
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 8.55462539666243,
+     "vm_risk": 13.690000000000001,
+     "changes": 38
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 8.55462539666243,
+     "vm_risk": 13.690000000000001,
+     "changes": 38
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 8.55462539666243,
+     "vm_risk": 13.690000000000001,
+     "changes": 38
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 8.789299465206714,
+     "vm_risk": 14.370000000000001,
+     "changes": 36
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 10.565352903507428,
+     "vm_risk": 17.89,
+     "changes": 31
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 27.462359565841815,
+     "vm_risk": 56.65,
+     "changes": 11
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 40.11715516382419,
+     "vm_risk": 80.56,
+     "changes": 2
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 46.20020209441161,
+     "vm_risk": 94.83000000000001,
+     "changes": 0
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 46.20020209441161,
+     "vm_risk": 94.83000000000001,
+     "changes": 0
+    }
+   ]
+  }
+ },
+ "Gozargah__Marzban@v0.3.0": {
+  "r0_exposure": 55.14484518863462,
+  "r0_vm": 98.30999999999999,
+  "fronts": {
+   "evident": [
+    {
+     "lambda": 0.0,
+     "exposure": 25.75445091816737,
+     "vm_risk": 43.74999999999999,
+     "changes": 23
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 25.75445091816737,
+     "vm_risk": 43.74999999999999,
+     "changes": 22
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 25.89609366025301,
+     "vm_risk": 44.40999999999999,
+     "changes": 21
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 25.89609366025301,
+     "vm_risk": 44.40999999999999,
+     "changes": 21
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 27.18199754182599,
+     "vm_risk": 48.07999999999999,
+     "changes": 18
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 33.64347062624199,
+     "vm_risk": 61.239999999999995,
+     "changes": 10
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 46.294390578313376,
+     "vm_risk": 83.41,
+     "changes": 3
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 47.86204379275559,
+     "vm_risk": 86.69,
+     "changes": 2
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 55.14484518863462,
+     "vm_risk": 98.30999999999999,
+     "changes": 0
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 55.14484518863462,
+     "vm_risk": 98.30999999999999,
+     "changes": 0
+    }
+   ],
+   "vm": [
+    {
+     "lambda": 0.0,
+     "exposure": 25.75445091816737,
+     "vm_risk": 43.74999999999999,
+     "changes": 23
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 25.75445091816737,
+     "vm_risk": 43.74999999999999,
+     "changes": 22
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 25.75445091816737,
+     "vm_risk": 43.74999999999999,
+     "changes": 22
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 25.75445091816737,
+     "vm_risk": 43.74999999999999,
+     "changes": 22
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 25.75445091816737,
+     "vm_risk": 43.74999999999999,
+     "changes": 22
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 26.886772482443565,
+     "vm_risk": 45.78999999999999,
+     "changes": 19
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 34.23175220068421,
+     "vm_risk": 60.38999999999999,
+     "changes": 10
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 46.294390578313376,
+     "vm_risk": 83.41,
+     "changes": 3
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 55.14484518863462,
+     "vm_risk": 98.30999999999999,
+     "changes": 0
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 55.14484518863462,
+     "vm_risk": 98.30999999999999,
+     "changes": 0
+    }
+   ]
+  }
+ },
+ "Kav-K__GPTDiscord@v11.7.0": {
+  "r0_exposure": 59.846351108738205,
+  "r0_vm": 99.62,
+  "fronts": {
+   "evident": [
+    {
+     "lambda": 0.0,
+     "exposure": 25.758160046980684,
+     "vm_risk": 43.65999999999998,
+     "changes": 9
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 25.758160046980684,
+     "vm_risk": 43.65999999999998,
+     "changes": 9
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 25.841858030940376,
+     "vm_risk": 44.04999999999998,
+     "changes": 8
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 25.983500773026012,
+     "vm_risk": 44.70999999999998,
+     "changes": 7
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 27.6205734199405,
+     "vm_risk": 47.75999999999999,
+     "changes": 5
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 28.481181323142515,
+     "vm_risk": 49.179999999999986,
+     "changes": 4
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 29.77380278407505,
+     "vm_risk": 51.429999999999986,
+     "changes": 3
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 29.77380278407505,
+     "vm_risk": 51.429999999999986,
+     "changes": 3
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 51.2674455344072,
+     "vm_risk": 85.69,
+     "changes": 1
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 59.846351108738205,
+     "vm_risk": 99.62,
+     "changes": 0
+    }
+   ],
+   "vm": [
+    {
+     "lambda": 0.0,
+     "exposure": 25.758160046980684,
+     "vm_risk": 43.65999999999998,
+     "changes": 9
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 25.758160046980684,
+     "vm_risk": 43.65999999999998,
+     "changes": 9
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 25.758160046980684,
+     "vm_risk": 43.65999999999998,
+     "changes": 9
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 25.758160046980684,
+     "vm_risk": 43.65999999999998,
+     "changes": 9
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 25.841858030940376,
+     "vm_risk": 44.04999999999998,
+     "changes": 8
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 27.981367691581937,
+     "vm_risk": 48.30999999999999,
+     "changes": 5
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 28.481181323142515,
+     "vm_risk": 49.179999999999986,
+     "changes": 4
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 29.77380278407505,
+     "vm_risk": 51.429999999999986,
+     "changes": 3
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 39.44766817643428,
+     "vm_risk": 66.78999999999999,
+     "changes": 2
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 59.846351108738205,
+     "vm_risk": 99.62,
+     "changes": 0
+    }
+   ]
+  }
+ },
+ "OWASP__Nettacker@0.3.1": {
+  "r0_exposure": 19.34360402344472,
+  "r0_vm": 37.39999999999999,
+  "fronts": {
+   "evident": [
+    {
+     "lambda": 0.0,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 5
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 5
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 5
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 0.5418018193272983,
+     "vm_risk": 1.9400000000000002,
+     "changes": 3
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 1.2033135366958645,
+     "vm_risk": 2.8700000000000006,
+     "changes": 2
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 2.14549095710891,
+     "vm_risk": 4.51,
+     "changes": 1
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 2.14549095710891,
+     "vm_risk": 4.51,
+     "changes": 1
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 2.14549095710891,
+     "vm_risk": 4.51,
+     "changes": 1
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 2.14549095710891,
+     "vm_risk": 4.51,
+     "changes": 1
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 19.34360402344472,
+     "vm_risk": 37.39999999999999,
+     "changes": 0
+    }
+   ],
+   "vm": [
+    {
+     "lambda": 0.0,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 5
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 5
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 5
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 5
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 0.3471337670707662,
+     "vm_risk": 0.43,
+     "changes": 4
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 1.2033135366958645,
+     "vm_risk": 2.8700000000000006,
+     "changes": 2
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 2.14549095710891,
+     "vm_risk": 4.51,
+     "changes": 1
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 2.14549095710891,
+     "vm_risk": 4.51,
+     "changes": 1
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 2.14549095710891,
+     "vm_risk": 4.51,
+     "changes": 1
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 19.34360402344472,
+     "vm_risk": 37.39999999999999,
+     "changes": 0
+    }
+   ]
+  }
+ },
+ "PostHog__posthog@8f02ac42af212990f6303c30bd7c7cba15294183": {
+  "r0_exposure": 87.60140715398035,
+  "r0_vm": 152.89,
+  "fronts": {
+   "evident": [
+    {
+     "lambda": 0.0,
+     "exposure": 27.789052566996197,
+     "vm_risk": 48.49999999999999,
+     "changes": 46
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 27.789052566996197,
+     "vm_risk": 48.49999999999999,
+     "changes": 38
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 28.23023958713201,
+     "vm_risk": 49.26999999999999,
+     "changes": 33
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 28.373482126137148,
+     "vm_risk": 49.51999999999999,
+     "changes": 32
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 30.722659765821362,
+     "vm_risk": 53.61999999999999,
+     "changes": 26
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 40.875690930505314,
+     "vm_risk": 71.33999999999997,
+     "changes": 13
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 44.97815724761239,
+     "vm_risk": 78.49999999999999,
+     "changes": 10
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 60.425432653926144,
+     "vm_risk": 105.45999999999998,
+     "changes": 5
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 87.60140715398035,
+     "vm_risk": 152.89,
+     "changes": 0
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 87.60140715398035,
+     "vm_risk": 152.89,
+     "changes": 0
+    }
+   ],
+   "vm": [
+    {
+     "lambda": 0.0,
+     "exposure": 27.789052566996197,
+     "vm_risk": 48.49999999999999,
+     "changes": 46
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 27.789052566996197,
+     "vm_risk": 48.49999999999999,
+     "changes": 38
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 27.789052566996197,
+     "vm_risk": 48.49999999999999,
+     "changes": 38
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 28.23023958713201,
+     "vm_risk": 49.26999999999999,
+     "changes": 33
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 28.373482126137148,
+     "vm_risk": 49.51999999999999,
+     "changes": 32
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 35.70177042163984,
+     "vm_risk": 62.30999999999999,
+     "changes": 19
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 40.875690930505314,
+     "vm_risk": 71.33999999999997,
+     "changes": 13
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 44.97815724761239,
+     "vm_risk": 78.49999999999999,
+     "changes": 10
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 63.65125463232179,
+     "vm_risk": 111.08999999999997,
+     "changes": 4
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 87.60140715398035,
+     "vm_risk": 152.89,
+     "changes": 0
+    }
+   ]
+  }
+ },
+ "Rongronggg9__RSS-to-Telegram-Bot@v2.3.0": {
+  "r0_exposure": 43.049316663939386,
+  "r0_vm": 75.77999999999999,
+  "fronts": {
+   "evident": [
+    {
+     "lambda": 0.0,
+     "exposure": 25.08982213185785,
+     "vm_risk": 42.82999999999999,
+     "changes": 4
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 25.08982213185785,
+     "vm_risk": 42.82999999999999,
+     "changes": 4
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 25.231464873943487,
+     "vm_risk": 43.48999999999999,
+     "changes": 3
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 25.231464873943487,
+     "vm_risk": 43.48999999999999,
+     "changes": 3
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 26.06241113452331,
+     "vm_risk": 44.82999999999999,
+     "changes": 1
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 26.06241113452331,
+     "vm_risk": 44.82999999999999,
+     "changes": 1
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 26.06241113452331,
+     "vm_risk": 44.82999999999999,
+     "changes": 1
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 26.06241113452331,
+     "vm_risk": 44.82999999999999,
+     "changes": 1
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 26.06241113452331,
+     "vm_risk": 44.82999999999999,
+     "changes": 1
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 43.049316663939386,
+     "vm_risk": 75.77999999999999,
+     "changes": 0
+    }
+   ],
+   "vm": [
+    {
+     "lambda": 0.0,
+     "exposure": 25.08982213185785,
+     "vm_risk": 42.82999999999999,
+     "changes": 4
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 25.08982213185785,
+     "vm_risk": 42.82999999999999,
+     "changes": 4
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 25.08982213185785,
+     "vm_risk": 42.82999999999999,
+     "changes": 4
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 25.08982213185785,
+     "vm_risk": 42.82999999999999,
+     "changes": 4
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 25.231464873943487,
+     "vm_risk": 43.48999999999999,
+     "changes": 3
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 26.06241113452331,
+     "vm_risk": 44.82999999999999,
+     "changes": 1
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 26.06241113452331,
+     "vm_risk": 44.82999999999999,
+     "changes": 1
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 26.06241113452331,
+     "vm_risk": 44.82999999999999,
+     "changes": 1
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 26.06241113452331,
+     "vm_risk": 44.82999999999999,
+     "changes": 1
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 43.049316663939386,
+     "vm_risk": 75.77999999999999,
+     "changes": 0
+    }
+   ]
+  }
+ },
+ "SamR1__FitTrackee@v0.7.17": {
+  "r0_exposure": 60.25563586998956,
+  "r0_vm": 140.56,
+  "fronts": {
+   "evident": [
+    {
+     "lambda": 0.0,
+     "exposure": 24.658948311547007,
+     "vm_risk": 42.07999999999999,
+     "changes": 33
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 24.766896362218933,
+     "vm_risk": 47.66999999999999,
+     "changes": 19
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 24.766896362218933,
+     "vm_risk": 47.66999999999999,
+     "changes": 19
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 25.146517777745757,
+     "vm_risk": 53.139999999999986,
+     "changes": 17
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 25.33610225868253,
+     "vm_risk": 53.469999999999985,
+     "changes": 16
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 29.548049458006368,
+     "vm_risk": 87.32999999999997,
+     "changes": 12
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 43.238539664070586,
+     "vm_risk": 112.85999999999999,
+     "changes": 5
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 50.40081688275997,
+     "vm_risk": 124.16,
+     "changes": 2
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 60.25563586998956,
+     "vm_risk": 140.56,
+     "changes": 0
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 60.25563586998956,
+     "vm_risk": 140.56,
+     "changes": 0
+    }
+   ],
+   "vm": [
+    {
+     "lambda": 0.0,
+     "exposure": 24.658948311547007,
+     "vm_risk": 42.07999999999999,
+     "changes": 33
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 24.658948311547007,
+     "vm_risk": 42.07999999999999,
+     "changes": 28
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 24.670682014974222,
+     "vm_risk": 42.75999999999999,
+     "changes": 23
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 25.017815782044988,
+     "vm_risk": 43.18999999999999,
+     "changes": 21
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 25.20740026298176,
+     "vm_risk": 43.51999999999999,
+     "changes": 20
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 26.19508077122034,
+     "vm_risk": 45.83999999999999,
+     "changes": 18
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 31.04180105975,
+     "vm_risk": 57.95999999999998,
+     "changes": 11
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 47.26596149572104,
+     "vm_risk": 85.81,
+     "changes": 5
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 59.9237034174955,
+     "vm_risk": 108.11,
+     "changes": 1
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 60.25563586998956,
+     "vm_risk": 140.56,
+     "changes": 0
+    }
+   ]
+  }
+ },
+ "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453": {
+  "r0_exposure": 14.808254518572308,
+  "r0_vm": 26.06,
+  "fronts": {
+   "evident": [
+    {
+     "lambda": 0.0,
+     "exposure": 1.288773389763091,
+     "vm_risk": 2.55,
+     "changes": 9
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 1.288773389763091,
+     "vm_risk": 2.55,
+     "changes": 8
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 1.4025168038621614,
+     "vm_risk": 3.08,
+     "changes": 7
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 1.4025168038621614,
+     "vm_risk": 3.08,
+     "changes": 7
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 1.7414708758400252,
+     "vm_risk": 3.67,
+     "changes": 6
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 2.6249775096646726,
+     "vm_risk": 5.109999999999999,
+     "changes": 5
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 14.808254518572308,
+     "vm_risk": 26.06,
+     "changes": 0
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 14.808254518572308,
+     "vm_risk": 26.06,
+     "changes": 0
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 14.808254518572308,
+     "vm_risk": 26.06,
+     "changes": 0
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 14.808254518572308,
+     "vm_risk": 26.06,
+     "changes": 0
+    }
+   ],
+   "vm": [
+    {
+     "lambda": 0.0,
+     "exposure": 1.288773389763091,
+     "vm_risk": 2.55,
+     "changes": 9
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 1.288773389763091,
+     "vm_risk": 2.55,
+     "changes": 8
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 1.288773389763091,
+     "vm_risk": 2.55,
+     "changes": 8
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 1.288773389763091,
+     "vm_risk": 2.55,
+     "changes": 8
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 1.7414708758400252,
+     "vm_risk": 3.67,
+     "changes": 6
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 2.6249775096646726,
+     "vm_risk": 5.109999999999999,
+     "changes": 5
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 2.6249775096646726,
+     "vm_risk": 5.109999999999999,
+     "changes": 5
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 14.808254518572308,
+     "vm_risk": 26.06,
+     "changes": 0
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 14.808254518572308,
+     "vm_risk": 26.06,
+     "changes": 0
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 14.808254518572308,
+     "vm_risk": 26.06,
+     "changes": 0
+    }
+   ]
+  }
+ },
+ "WordOps__WordOps@v3.17.0": {
+  "r0_exposure": 1.0812402305335673,
+  "r0_vm": 1.77,
+  "fronts": {
+   "evident": [
+    {
+     "lambda": 0.0,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 2
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 2
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 2
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 2
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 2
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 1.0812402305335673,
+     "vm_risk": 1.77,
+     "changes": 0
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 1.0812402305335673,
+     "vm_risk": 1.77,
+     "changes": 0
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 1.0812402305335673,
+     "vm_risk": 1.77,
+     "changes": 0
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 1.0812402305335673,
+     "vm_risk": 1.77,
+     "changes": 0
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 1.0812402305335673,
+     "vm_risk": 1.77,
+     "changes": 0
+    }
+   ],
+   "vm": [
+    {
+     "lambda": 0.0,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 2
+    },
+    {
+     "lambda": 0.02,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 2
+    },
+    {
+     "lambda": 0.05,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 2
+    },
+    {
+     "lambda": 0.1,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 2
+    },
+    {
+     "lambda": 0.2,
+     "exposure": 0,
+     "vm_risk": 0,
+     "changes": 2
+    },
+    {
+     "lambda": 0.5,
+     "exposure": 0.5182317719940646,
+     "vm_risk": 0.79,
+     "changes": 1
+    },
+    {
+     "lambda": 1.0,
+     "exposure": 1.0812402305335673,
+     "vm_risk": 1.77,
+     "changes": 0
+    },
+    {
+     "lambda": 2.0,
+     "exposure": 1.0812402305335673,
+     "vm_risk": 1.77,
+     "changes": 0
+    },
+    {
+     "lambda": 5.0,
+     "exposure": 1.0812402305335673,
+     "vm_risk": 1.77,
+     "changes": 0
+    },
+    {
+     "lambda": 100.0,
+     "exposure": 1.0812402305335673,
+     "vm_risk": 1.77,
+     "changes": 0
+    }
+   ]
+  }
+ }
+}

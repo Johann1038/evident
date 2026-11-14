@@ -321,7 +321,7 @@
       "certifi.<module>"
      ],
      "witness": [
-      "__app__.archivebox.parsers.readwise_reader_api.<module>",
+      "__app__.archivebox.config.<module>",
       "requests.<module>",
       "requests.utils.<module>",
       "requests.certs.<module>",
@@ -506,7 +506,7 @@
       "django.middleware.cache.UpdateCacheMiddleware.process_response"
      ],
      "witness": [
-      "__app__.archivebox.index.json.parse_json_main_index",
+      "__app__.archivebox.index.schema.Link.bookmarked_date",
       "django.utils.deprecation.MiddlewareMixin.__call__",
       "django.middleware.cache.UpdateCacheMiddleware.process_response"
      ],
@@ -791,7 +791,7 @@
       "django.middleware.cache.UpdateCacheMiddleware.process_response"
      ],
      "witness": [
-      "__app__.archivebox.index.json.parse_json_main_index",
+      "__app__.archivebox.index.schema.Link.bookmarked_date",
       "django.utils.deprecation.MiddlewareMixin.__call__",
       "django.middleware.cache.UpdateCacheMiddleware.process_response"
      ],
@@ -925,7 +925,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -975,7 +975,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "django.http.response.FileResponse.set_headers"
@@ -1074,7 +1074,7 @@
       "django.utils.cache.has_vary_header"
      ],
      "witness": [
-      "__app__.archivebox.index.json.parse_json_main_index",
+      "__app__.archivebox.index.schema.Link.bookmarked_date",
       "django.utils.deprecation.MiddlewareMixin.__call__",
       "django.middleware.cache.UpdateCacheMiddleware.process_response",
       "django.utils.cache.has_vary_header"
@@ -1172,8 +1172,8 @@
       "django.contrib.gis.gdal.raster.source.GDALRaster.__init__"
      ],
      "witness": [
-      "__app__.archivebox.core.forms.<module>",
-      "django.forms.forms.BaseForm.__init__",
+      "__app__.archivebox.index.schema.Link.typecheck",
+      "django.utils.dateformat.Formatter.format",
       "django.contrib.gis.gdal.raster.source.GDALRaster.__init__"
      ],
      "missing": false
@@ -1270,7 +1270,7 @@
       "django.db.models.query_utils.Q.__init__"
      ],
      "witness": [
-      "__app__.archivebox.index.q_filter",
+      "__app__.archivebox.index.<module>",
       "django.db.models.query_utils.Q.__init__"
      ],
      "missing": false
@@ -1368,8 +1368,8 @@
       "django.http.response.HttpResponseBase.set_signed_cookie"
      ],
      "witness": [
-      "__app__.archivebox.core.forms.<module>",
-      "django.forms.forms.BaseForm.__init__",
+      "__app__.archivebox.index.schema.Link.typecheck",
+      "django.utils.dateformat.Formatter.format",
       "django.contrib.messages.storage.cookie.CookieStorage.__init__",
       "django.core.signing.get_cookie_signer"
      ],
@@ -1968,11 +1968,11 @@
       "idna.package_data.<module>"
      ],
      "witness": [
-      "__app__.archivebox.parsers.readwise_reader_api.ReadwiseReaderAPI.get_archive",
-      "requests.models.Response.raise_for_status",
-      "idna.codec.Codec.decode",
-      "idna.core.decode",
-      "idna.core.uts46_remap",
+      "__app__.archivebox.config.<module>",
+      "urllib3.<module>",
+      "urllib3.connectionpool.ConnectionPool.__init__",
+      "urllib3.util.url._normalize_host",
+      "urllib3.util.url._idna_encode",
       "idna.<module>",
       "idna.package_data.<module>"
      ],
@@ -2011,7 +2011,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -2061,7 +2061,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "pyasn1.codec.ber.decoder.BitStringPayloadDecoder.indefLenValueDecoder",
@@ -2104,7 +2104,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -2154,7 +2154,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "pyasn1.codec.ber.decoder.ObjectIdentifierPayloadDecoder.valueDecoder",
@@ -2198,7 +2198,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -2248,7 +2248,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "pyasn1.codec.ber.decoder.AnyPayloadDecoder.indefLenValueDecoder",
@@ -2291,7 +2291,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -2341,7 +2341,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "pyasn1.codec.ber.decoder.ConstructedPayloadDecoderBase._decodeComponentsSchemaless"
@@ -2383,7 +2383,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -2433,7 +2433,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "pyasn1.type.univ.Real.__float__",
@@ -2476,7 +2476,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -2526,7 +2526,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "pyasn1.codec.ber.decoder.SingleItemDecoder.__call__"
@@ -2568,7 +2568,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -2618,7 +2618,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "pyasn1.codec.ber.decoder.SingleItemDecoder.__call__",
@@ -2662,7 +2662,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -2712,7 +2712,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "pyasn1.codec.ber.decoder.RealPayloadDecoder.valueDecoder"
@@ -2842,7 +2842,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -2892,7 +2892,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "module",
      "symbols": [
       "pygments.lexers.archetype.<module>"
@@ -2934,7 +2934,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -2984,7 +2984,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "Lib.ldap.dn.escape_dn_chars",
@@ -3027,7 +3027,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -3077,7 +3077,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "Lib.ldap.filter.escape_filter_chars",
@@ -3176,7 +3176,7 @@
       "requests.utils.get_netrc_auth"
      ],
      "witness": [
-      "__app__.archivebox.config.setup_django",
+      "__app__.archivebox.parsers.readwise_reader_api.read_cursor",
       "requests.sessions.Session.get",
       "requests.sessions.Session.request",
       "requests.sessions.Session.prepare_request",
@@ -3275,7 +3275,7 @@
       "requests.adapters.HTTPAdapter.send"
      ],
      "witness": [
-      "__app__.archivebox.config.setup_django",
+      "__app__.archivebox.parsers.readwise_reader_api.read_cursor",
       "requests.sessions.Session.get",
       "requests.sessions.Session.request",
       "requests.sessions.Session.send",
@@ -3374,7 +3374,7 @@
       "requests.utils.extract_zipped_paths"
      ],
      "witness": [
-      "__app__.archivebox.config.setup_django",
+      "__app__.archivebox.parsers.readwise_reader_api.read_cursor",
       "requests.sessions.Session.get",
       "requests.sessions.Session.request",
       "requests.sessions.Session.send",
@@ -3415,7 +3415,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -3465,7 +3465,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "sqlparse.engine.grouping._group",
@@ -3564,8 +3564,8 @@
       "sqlparse.sql.TokenList.flatten"
      ],
      "witness": [
-      "__app__.archivebox.core.models.Snapshot.tags_str",
-      "django.core.cache.backends.db.DatabaseCache.set",
+      "__app__.archivebox.main.add",
+      "django.core.cache.backends.db.DatabaseCache.add",
       "django.core.cache.backends.db.DatabaseCache._base_set",
       "django.db.backends.base.operations.BaseDatabaseOperations.adapt_datetimefield_value",
       "sqlparse.sql.TokenList.__str__",
@@ -3607,7 +3607,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -3657,7 +3657,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "sqlparse.filters.output.OutputPHPFilter._process",
@@ -3700,7 +3700,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -3750,7 +3750,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "sqlparse.filters.reindent.ReindentFilter._flatten_up_to_token",
@@ -3793,7 +3793,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -3843,7 +3843,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "sqlparse.engine.grouping.group_comments"
@@ -3885,7 +3885,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -3935,7 +3935,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "sqlparse.lexer.Lexer.get_tokens",
@@ -3978,7 +3978,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -4028,7 +4028,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "sqlparse.sql.TokenList.__init__",
@@ -4333,12 +4333,12 @@
       "urllib3.response.HTTPResponse.drain_conn"
      ],
      "witness": [
-      "__app__.archivebox.config.setup_django",
+      "__app__.archivebox.parsers.readwise_reader_api.read_cursor",
       "requests.sessions.Session.get",
       "requests.sessions.Session.request",
       "requests.sessions.Session.send",
       "requests.adapters.HTTPAdapter.send",
-      "urllib3.connectionpool.HTTPConnectionPool.urlopen",
+      "urllib3.poolmanager.PoolManager.urlopen",
       "urllib3.response.HTTPResponse.drain_conn"
      ],
      "missing": false
@@ -4859,7 +4859,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -4909,7 +4909,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "yt_dlp.extractor.cybrary.CybraryIE._real_extract",
@@ -4957,7 +4957,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -5007,7 +5007,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "yt_dlp.extractor.douyutv.DouyuBaseIE._download_cryptojs_md5",
@@ -5047,7 +5047,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -5097,7 +5097,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "yt_dlp.YoutubeDL.YoutubeDL.__init__",
@@ -5145,7 +5145,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -5195,7 +5195,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "yt_dlp.YoutubeDL.YoutubeDL.prepare_outtmpl",
@@ -5242,7 +5242,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -5292,7 +5292,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "yt_dlp.YoutubeDL.YoutubeDL._prepare_filename",
@@ -5339,7 +5339,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -5389,7 +5389,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "yt_dlp.YoutubeDL.YoutubeDL.process_info._write_link_file",
@@ -5433,7 +5433,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -5483,7 +5483,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "yt_dlp.downloader.external.Aria2cFD._make_cmd",
@@ -5529,7 +5529,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -5579,7 +5579,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "yt_dlp.extractor.common.InfoExtractor._get_netrc_login_info",
@@ -5622,7 +5622,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -5672,7 +5672,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "yt_dlp.YoutubeDL.YoutubeDL.prepare_outtmpl.create_key",
@@ -5719,7 +5719,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -5769,7 +5769,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (app: __import__,dyn_class,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "yt_dlp.downloader.external.Aria2cFD._call_downloader",

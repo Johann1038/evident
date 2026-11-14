@@ -92,15 +92,18 @@ def app_source(repo: str, tag: str, sid: str) -> Path | None:
     marker = dest / ".done"
     if marker.exists():
         return dest if marker.read_text() != "none" else None
-    blob = None
+    blob, net_err = None, None
     for ref in (f"refs/tags/{tag}", tag):
         try:
             blob = http_get(f"https://codeload.github.com/{repo}/zip/{ref}", kind="apps", binary=True,
                             timeout=300)
-        except RuntimeError:
-            blob = None
+        except RuntimeError as e:
+            blob, net_err = None, e
         if blob:
             break
+    if not blob and net_err is not None:
+        # network failure, not a missing tag: do not record "no source"; let the caller retry later
+        raise RuntimeError(f"application source unavailable (network): {net_err}")
     if not blob:
         dest.mkdir(parents=True, exist_ok=True)
         marker.write_text("none")

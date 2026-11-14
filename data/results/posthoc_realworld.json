@@ -1,0 +1,5249 @@
+{
+ "compat": {
+  "audit_fix": {
+   "plans": 13,
+   "level2_ok": 9,
+   "level2b_ok": 6,
+   "no_used_package_changed": 1
+  },
+  "latest": {
+   "plans": 22,
+   "level2_ok": 10,
+   "level2b_ok": 8,
+   "no_used_package_changed": 2
+  },
+  "upgrade_all": {
+   "plans": 23,
+   "level2_ok": 7,
+   "level2b_ok": 5,
+   "no_used_package_changed": 2
+  },
+  "uv_fix": {
+   "plans": 23,
+   "level2_ok": 11,
+   "level2b_ok": 8,
+   "no_used_package_changed": 2
+  },
+  "vm_opt": {
+   "plans": 24,
+   "level2_ok": 14,
+   "level2b_ok": 10,
+   "no_used_package_changed": 2
+  },
+  "coral_opt": {
+   "plans": 24,
+   "level2_ok": 15,
+   "level2b_ok": 12,
+   "no_used_package_changed": 3
+  },
+  "cape_opt": {
+   "plans": 24,
+   "level2_ok": 15,
+   "level2b_ok": 11,
+   "no_used_package_changed": 3
+  },
+  "evident": {
+   "plans": 24,
+   "level2_ok": 15,
+   "level2b_ok": 12,
+   "no_used_package_changed": 3
+  },
+  "evident_wide": {
+   "plans": 24,
+   "level2_ok": 15,
+   "level2b_ok": 12,
+   "no_used_package_changed": 3
+  }
+ },
+ "compat_per_project": {
+  "ActivityWatch__activitywatch@v0.12.2": {
+   "audit_fix": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 1,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "pytest",
+      "old": "7.2.0",
+      "new": "9.0.3",
+      "missing": [
+       "_pytest.outcomes.fail"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "latest": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 1,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "pytest",
+      "old": "7.2.0",
+      "new": "9.2.0",
+      "missing": [
+       "_pytest.outcomes.fail"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "upgrade_all": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 1,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "pytest",
+      "old": "7.2.0",
+      "new": "9.2.0",
+      "missing": [
+       "_pytest.outcomes.fail"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "uv_fix": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 1,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "pytest",
+      "old": "7.2.0",
+      "new": "9.2.0",
+      "missing": [
+       "_pytest.outcomes.fail"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "vm_opt": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 1,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "pytest",
+      "old": "7.2.0",
+      "new": "9.0.3",
+      "missing": [
+       "_pytest.outcomes.fail"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "coral_opt": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "cape_opt": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "evident": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "evident_wide": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   }
+  },
+  "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0": {
+   "audit_fix": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 1,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "python-socketio",
+      "old": "5.8.0",
+      "new": "5.16.2",
+      "missing": [
+       "socketio.asyncio_server.AsyncServer"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "latest": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 1,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "python-socketio",
+      "old": "5.8.0",
+      "new": "5.18.1",
+      "missing": [
+       "socketio.asyncio_server.AsyncServer"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "upgrade_all": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 1,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "python-socketio",
+      "old": "5.8.0",
+      "new": "5.18.1",
+      "missing": [
+       "socketio.asyncio_server.AsyncServer"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "uv_fix": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 1,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "python-socketio",
+      "old": "5.8.0",
+      "new": "5.18.1",
+      "missing": [
+       "socketio.asyncio_server.AsyncServer"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "vm_opt": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 1,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "python-socketio",
+      "old": "5.8.0",
+      "new": "5.16.2",
+      "missing": [
+       "socketio.asyncio_server.AsyncServer"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "coral_opt": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 1,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "python-socketio",
+      "old": "5.8.0",
+      "new": "5.16.2",
+      "missing": [
+       "socketio.asyncio_server.AsyncServer"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "cape_opt": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 1,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "python-socketio",
+      "old": "5.8.0",
+      "new": "5.16.2",
+      "missing": [
+       "socketio.asyncio_server.AsyncServer"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "evident": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 1,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "python-socketio",
+      "old": "5.8.0",
+      "new": "5.16.2",
+      "missing": [
+       "socketio.asyncio_server.AsyncServer"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "evident_wide": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 1,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "python-socketio",
+      "old": "5.8.0",
+      "new": "5.16.2",
+      "missing": [
+       "socketio.asyncio_server.AsyncServer"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   }
+  },
+  "allegro__ralph@20240213.1": {
+   "audit_fix": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 2,
+    "missing_symbols": 24,
+    "signature_breaks": 31,
+    "examples": [
+     {
+      "package": "django",
+      "old": "1.8.19",
+      "new": "5.2.17",
+      "missing": [
+       "django.conf.urls.url",
+       "django.contrib.admin.templatetags.admin_static",
+       "django.contrib.admin.templatetags.admin_static.static",
+       "django.contrib.contenttypes.generic"
+      ],
+      "signature": [
+       "django.conf.urls.include",
+       "django.contrib.admin.decorators.register",
+       "django.contrib.auth.management._get_all_permissions",
+       "django.contrib.contenttypes.fields.create_generic_related_manager"
+      ]
+     },
+     {
+      "package": "djangorestframework",
+      "old": "3.2.2",
+      "new": "3.18.2",
+      "missing": [
+       "rest_framework.compat.get_model_name"
+      ],
+      "signature": [
+       "rest_framework.fields.ListField"
+      ]
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "latest": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 2,
+    "missing_symbols": 24,
+    "signature_breaks": 31,
+    "examples": [
+     {
+      "package": "django",
+      "old": "1.8.19",
+      "new": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.contrib.admin.templatetags.admin_static",
+       "django.contrib.admin.templatetags.admin_static.static",
+       "django.contrib.contenttypes.generic"
+      ],
+      "signature": [
+       "django.conf.urls.include",
+       "django.contrib.admin.decorators.register",
+       "django.contrib.auth.management._get_all_permissions",
+       "django.contrib.contenttypes.fields.create_generic_related_manager"
+      ]
+     },
+     {
+      "package": "djangorestframework",
+      "old": "3.2.2",
+      "new": "3.18.3",
+      "missing": [
+       "rest_framework.compat.get_model_name"
+      ],
+      "signature": [
+       "rest_framework.fields.ListField"
+      ]
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "upgrade_all": {
+    "used_changed": 6,
+    "checked": 6,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 2,
+    "missing_symbols": 24,
+    "signature_breaks": 31,
+    "examples": [
+     {
+      "package": "django",
+      "old": "1.8.19",
+      "new": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.contrib.admin.templatetags.admin_static",
+       "django.contrib.admin.templatetags.admin_static.static",
+       "django.contrib.contenttypes.generic"
+      ],
+      "signature": [
+       "django.conf.urls.include",
+       "django.contrib.admin.decorators.register",
+       "django.contrib.auth.management._get_all_permissions",
+       "django.contrib.contenttypes.fields.create_generic_related_manager"
+      ]
+     },
+     {
+      "package": "djangorestframework",
+      "old": "3.2.2",
+      "new": "3.18.3",
+      "missing": [
+       "rest_framework.compat.get_model_name"
+      ],
+      "signature": [
+       "rest_framework.fields.ListField"
+      ]
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "uv_fix": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 2,
+    "missing_symbols": 24,
+    "signature_breaks": 31,
+    "examples": [
+     {
+      "package": "django",
+      "old": "1.8.19",
+      "new": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.contrib.admin.templatetags.admin_static",
+       "django.contrib.admin.templatetags.admin_static.static",
+       "django.contrib.contenttypes.generic"
+      ],
+      "signature": [
+       "django.conf.urls.include",
+       "django.contrib.admin.decorators.register",
+       "django.contrib.auth.management._get_all_permissions",
+       "django.contrib.contenttypes.fields.create_generic_related_manager"
+      ]
+     },
+     {
+      "package": "djangorestframework",
+      "old": "3.2.2",
+      "new": "3.18.3",
+      "missing": [
+       "rest_framework.compat.get_model_name"
+      ],
+      "signature": [
+       "rest_framework.fields.ListField"
+      ]
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "vm_opt": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 2,
+    "missing_symbols": 24,
+    "signature_breaks": 31,
+    "examples": [
+     {
+      "package": "django",
+      "old": "1.8.19",
+      "new": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.contrib.admin.templatetags.admin_static",
+       "django.contrib.admin.templatetags.admin_static.static",
+       "django.contrib.contenttypes.generic"
+      ],
+      "signature": [
+       "django.conf.urls.include",
+       "django.contrib.admin.decorators.register",
+       "django.contrib.auth.management._get_all_permissions",
+       "django.contrib.contenttypes.fields.create_generic_related_manager"
+      ]
+     },
+     {
+      "package": "djangorestframework",
+      "old": "3.2.2",
+      "new": "3.18.2",
+      "missing": [
+       "rest_framework.compat.get_model_name"
+      ],
+      "signature": [
+       "rest_framework.fields.ListField"
+      ]
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "coral_opt": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 2,
+    "missing_symbols": 24,
+    "signature_breaks": 31,
+    "examples": [
+     {
+      "package": "django",
+      "old": "1.8.19",
+      "new": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.contrib.admin.templatetags.admin_static",
+       "django.contrib.admin.templatetags.admin_static.static",
+       "django.contrib.contenttypes.generic"
+      ],
+      "signature": [
+       "django.conf.urls.include",
+       "django.contrib.admin.decorators.register",
+       "django.contrib.auth.management._get_all_permissions",
+       "django.contrib.contenttypes.fields.create_generic_related_manager"
+      ]
+     },
+     {
+      "package": "djangorestframework",
+      "old": "3.2.2",
+      "new": "3.18.2",
+      "missing": [
+       "rest_framework.compat.get_model_name"
+      ],
+      "signature": [
+       "rest_framework.fields.ListField"
+      ]
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "cape_opt": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 2,
+    "missing_symbols": 24,
+    "signature_breaks": 31,
+    "examples": [
+     {
+      "package": "django",
+      "old": "1.8.19",
+      "new": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.contrib.admin.templatetags.admin_static",
+       "django.contrib.admin.templatetags.admin_static.static",
+       "django.contrib.contenttypes.generic"
+      ],
+      "signature": [
+       "django.conf.urls.include",
+       "django.contrib.admin.decorators.register",
+       "django.contrib.auth.management._get_all_permissions",
+       "django.contrib.contenttypes.fields.create_generic_related_manager"
+      ]
+     },
+     {
+      "package": "djangorestframework",
+      "old": "3.2.2",
+      "new": "3.18.2",
+      "missing": [
+       "rest_framework.compat.get_model_name"
+      ],
+      "signature": [
+       "rest_framework.fields.ListField"
+      ]
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "evident": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 2,
+    "missing_symbols": 24,
+    "signature_breaks": 31,
+    "examples": [
+     {
+      "package": "django",
+      "old": "1.8.19",
+      "new": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.contrib.admin.templatetags.admin_static",
+       "django.contrib.admin.templatetags.admin_static.static",
+       "django.contrib.contenttypes.generic"
+      ],
+      "signature": [
+       "django.conf.urls.include",
+       "django.contrib.admin.decorators.register",
+       "django.contrib.auth.management._get_all_permissions",
+       "django.contrib.contenttypes.fields.create_generic_related_manager"
+      ]
+     },
+     {
+      "package": "djangorestframework",
+      "old": "3.2.2",
+      "new": "3.18.2",
+      "missing": [
+       "rest_framework.compat.get_model_name"
+      ],
+      "signature": [
+       "rest_framework.fields.ListField"
+      ]
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "evident_wide": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 2,
+    "missing_symbols": 24,
+    "signature_breaks": 31,
+    "examples": [
+     {
+      "package": "django",
+      "old": "1.8.19",
+      "new": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.contrib.admin.templatetags.admin_static",
+       "django.contrib.admin.templatetags.admin_static.static",
+       "django.contrib.contenttypes.generic"
+      ],
+      "signature": [
+       "django.conf.urls.include",
+       "django.contrib.admin.decorators.register",
+       "django.contrib.auth.management._get_all_permissions",
+       "django.contrib.contenttypes.fields.create_generic_related_manager"
+      ]
+     },
+     {
+      "package": "djangorestframework",
+      "old": "3.2.2",
+      "new": "3.18.2",
+      "missing": [
+       "rest_framework.compat.get_model_name"
+      ],
+      "signature": [
+       "rest_framework.fields.ListField"
+      ]
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   }
+  },
+  "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf": {
+   "latest": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 1,
+    "missing_symbols": 1,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "fastapi",
+      "old": "0.85.0",
+      "new": "0.162.5",
+      "missing": [],
+      "signature": [
+       "fastapi.param_functions.Body"
+      ]
+     },
+     {
+      "package": "pydantic",
+      "old": "1.10.2",
+      "new": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "upgrade_all": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 2,
+    "missing_symbols": 2,
+    "signature_breaks": 2,
+    "examples": [
+     {
+      "package": "fastapi",
+      "old": "0.85.0",
+      "new": "0.162.5",
+      "missing": [],
+      "signature": [
+       "fastapi.param_functions.Body"
+      ]
+     },
+     {
+      "package": "fastapi-amis-admin",
+      "old": "0.2.2",
+      "new": "0.7.3",
+      "missing": [
+       "fastapi_amis_admin.crud.utils.schema_create_by_schema"
+      ],
+      "signature": [
+       "fastapi_amis_admin.crud.schema.Paginator"
+      ]
+     },
+     {
+      "package": "pydantic",
+      "old": "1.10.2",
+      "new": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "uv_fix": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 1,
+    "missing_symbols": 1,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "fastapi",
+      "old": "0.85.0",
+      "new": "0.162.5",
+      "missing": [],
+      "signature": [
+       "fastapi.param_functions.Body"
+      ]
+     },
+     {
+      "package": "pydantic",
+      "old": "1.10.2",
+      "new": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "vm_opt": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 1,
+    "missing_symbols": 1,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "fastapi",
+      "old": "0.85.0",
+      "new": "0.162.5",
+      "missing": [],
+      "signature": [
+       "fastapi.param_functions.Body"
+      ]
+     },
+     {
+      "package": "pydantic",
+      "old": "1.10.2",
+      "new": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "coral_opt": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 1,
+    "missing_symbols": 1,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "fastapi",
+      "old": "0.85.0",
+      "new": "0.162.5",
+      "missing": [],
+      "signature": [
+       "fastapi.param_functions.Body"
+      ]
+     },
+     {
+      "package": "pydantic",
+      "old": "1.10.2",
+      "new": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "cape_opt": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 1,
+    "missing_symbols": 1,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "fastapi",
+      "old": "0.85.0",
+      "new": "0.162.5",
+      "missing": [],
+      "signature": [
+       "fastapi.param_functions.Body"
+      ]
+     },
+     {
+      "package": "pydantic",
+      "old": "1.10.2",
+      "new": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "evident": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 1,
+    "missing_symbols": 1,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "fastapi",
+      "old": "0.85.0",
+      "new": "0.162.5",
+      "missing": [],
+      "signature": [
+       "fastapi.param_functions.Body"
+      ]
+     },
+     {
+      "package": "pydantic",
+      "old": "1.10.2",
+      "new": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "evident_wide": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 1,
+    "missing_symbols": 1,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "fastapi",
+      "old": "0.85.0",
+      "new": "0.162.5",
+      "missing": [],
+      "signature": [
+       "fastapi.param_functions.Body"
+      ]
+     },
+     {
+      "package": "pydantic",
+      "old": "1.10.2",
+      "new": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   }
+  },
+  "apache__superset@3.0.3": {
+   "latest": {
+    "used_changed": 17,
+    "checked": 17,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 4,
+    "missing_symbols": 4,
+    "signature_breaks": 9,
+    "examples": [
+     {
+      "package": "cryptography",
+      "old": "39.0.1",
+      "new": "50.0.2",
+      "missing": [
+       "cryptography.hazmat.primitives.serialization.base.load_pem_private_key",
+       "cryptography.x509.base.load_pem_x509_certificate"
+      ],
+      "signature": []
+     },
+     {
+      "package": "flask-appbuilder",
+      "old": "4.3.10",
+      "new": "5.3.0",
+      "missing": [
+       "flask_appbuilder.models.sqla.SQLA",
+       "flask_appbuilder.security.sqla.manager.SecurityManager.get_session"
+      ],
+      "signature": []
+     },
+     {
+      "package": "marshmallow",
+      "old": "3.19.0",
+      "new": "4.3.1",
+      "missing": [],
+      "signature": [
+       "marshmallow.decorators.post_dump",
+       "marshmallow.decorators.pre_load",
+       "marshmallow.decorators.validates",
+       "marshmallow.fields.Tuple"
+      ]
+     },
+     {
+      "package": "selenium",
+      "old": "3.141.0",
+      "new": "4.52.0",
+      "missing": [],
+      "signature": [
+       "selenium.webdriver.chrome.webdriver.WebDriver",
+       "selenium.webdriver.support.expected_conditions.invisibility_of_element"
+      ]
+     },
+     {
+      "package": "urllib3",
+      "old": "1.26.6",
+      "new": "2.8.0",
+      "missing": [],
+      "signature": [
+       "urllib3.connection.HTTPConnection",
+       "urllib3.exceptions.NewConnectionError"
+      ]
+     },
+     {
+      "package": "werkzeug",
+      "old": "2.3.3",
+      "new": "3.1.9",
+      "missing": [],
+      "signature": [
+       "werkzeug.http.parse_cookie"
+      ]
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "upgrade_all": {
+    "used_changed": 32,
+    "checked": 32,
+    "unknown": 0,
+    "missing_pkgs": 3,
+    "signature_pkgs": 7,
+    "missing_symbols": 8,
+    "signature_breaks": 12,
+    "examples": [
+     {
+      "package": "cryptography",
+      "old": "39.0.1",
+      "new": "50.0.2",
+      "missing": [
+       "cryptography.hazmat.primitives.serialization.base.load_pem_private_key",
+       "cryptography.x509.base.load_pem_x509_certificate"
+      ],
+      "signature": []
+     },
+     {
+      "package": "flask-appbuilder",
+      "old": "4.3.10",
+      "new": "5.3.0",
+      "missing": [
+       "flask_appbuilder.models.sqla.SQLA",
+       "flask_appbuilder.security.sqla.manager.SecurityManager.get_session"
+      ],
+      "signature": []
+     },
+     {
+      "package": "marshmallow",
+      "old": "3.19.0",
+      "new": "4.3.1",
+      "missing": [],
+      "signature": [
+       "marshmallow.decorators.post_dump",
+       "marshmallow.decorators.pre_load",
+       "marshmallow.decorators.validates",
+       "marshmallow.fields.Tuple"
+      ]
+     },
+     {
+      "package": "pyarrow",
+      "old": "14.0.1",
+      "new": "25.0.1",
+      "missing": [],
+      "signature": [
+       "pyarrow.ipc.new_stream"
+      ]
+     },
+     {
+      "package": "redis",
+      "old": "4.5.4",
+      "new": "8.1.0",
+      "missing": [],
+      "signature": [
+       "redis.client.Redis"
+      ]
+     },
+     {
+      "package": "selenium",
+      "old": "3.141.0",
+      "new": "4.52.0",
+      "missing": [],
+      "signature": [
+       "selenium.webdriver.chrome.webdriver.WebDriver",
+       "selenium.webdriver.support.expected_conditions.invisibility_of_element"
+      ]
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "uv_fix": {
+    "used_changed": 17,
+    "checked": 17,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 5,
+    "missing_symbols": 4,
+    "signature_breaks": 10,
+    "examples": [
+     {
+      "package": "cryptography",
+      "old": "39.0.1",
+      "new": "50.0.2",
+      "missing": [
+       "cryptography.hazmat.primitives.serialization.base.load_pem_private_key",
+       "cryptography.x509.base.load_pem_x509_certificate"
+      ],
+      "signature": []
+     },
+     {
+      "package": "flask-appbuilder",
+      "old": "4.3.10",
+      "new": "5.3.0",
+      "missing": [
+       "flask_appbuilder.models.sqla.SQLA",
+       "flask_appbuilder.security.sqla.manager.SecurityManager.get_session"
+      ],
+      "signature": []
+     },
+     {
+      "package": "marshmallow",
+      "old": "3.19.0",
+      "new": "4.3.1",
+      "missing": [],
+      "signature": [
+       "marshmallow.decorators.post_dump",
+       "marshmallow.decorators.pre_load",
+       "marshmallow.decorators.validates",
+       "marshmallow.fields.Tuple"
+      ]
+     },
+     {
+      "package": "pyarrow",
+      "old": "14.0.1",
+      "new": "25.0.1",
+      "missing": [],
+      "signature": [
+       "pyarrow.ipc.new_stream"
+      ]
+     },
+     {
+      "package": "selenium",
+      "old": "3.141.0",
+      "new": "4.52.0",
+      "missing": [],
+      "signature": [
+       "selenium.webdriver.chrome.webdriver.WebDriver",
+       "selenium.webdriver.support.expected_conditions.invisibility_of_element"
+      ]
+     },
+     {
+      "package": "urllib3",
+      "old": "1.26.6",
+      "new": "2.8.0",
+      "missing": [],
+      "signature": [
+       "urllib3.connection.HTTPConnection",
+       "urllib3.exceptions.NewConnectionError"
+      ]
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "vm_opt": {
+    "used_changed": 13,
+    "checked": 13,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 4,
+    "missing_symbols": 2,
+    "signature_breaks": 6,
+    "examples": [
+     {
+      "package": "cryptography",
+      "old": "39.0.1",
+      "new": "50.0.2",
+      "missing": [
+       "cryptography.hazmat.primitives.serialization.base.load_pem_private_key",
+       "cryptography.x509.base.load_pem_x509_certificate"
+      ],
+      "signature": []
+     },
+     {
+      "package": "marshmallow",
+      "old": "3.19.0",
+      "new": "3.26.2",
+      "missing": [],
+      "signature": [
+       "marshmallow.fields.Tuple"
+      ]
+     },
+     {
+      "package": "selenium",
+      "old": "3.141.0",
+      "new": "4.14.0",
+      "missing": [],
+      "signature": [
+       "selenium.webdriver.chrome.webdriver.WebDriver",
+       "selenium.webdriver.support.expected_conditions.invisibility_of_element"
+      ]
+     },
+     {
+      "package": "urllib3",
+      "old": "1.26.6",
+      "new": "2.8.0",
+      "missing": [],
+      "signature": [
+       "urllib3.connection.HTTPConnection",
+       "urllib3.exceptions.NewConnectionError"
+      ]
+     },
+     {
+      "package": "werkzeug",
+      "old": "2.3.3",
+      "new": "3.1.9",
+      "missing": [],
+      "signature": [
+       "werkzeug.http.parse_cookie"
+      ]
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "coral_opt": {
+    "used_changed": 13,
+    "checked": 13,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 4,
+    "missing_symbols": 2,
+    "signature_breaks": 6,
+    "examples": [
+     {
+      "package": "cryptography",
+      "old": "39.0.1",
+      "new": "50.0.2",
+      "missing": [
+       "cryptography.hazmat.primitives.serialization.base.load_pem_private_key",
+       "cryptography.x509.base.load_pem_x509_certificate"
+      ],
+      "signature": []
+     },
+     {
+      "package": "marshmallow",
+      "old": "3.19.0",
+      "new": "3.26.2",
+      "missing": [],
+      "signature": [
+       "marshmallow.fields.Tuple"
+      ]
+     },
+     {
+      "package": "selenium",
+      "old": "3.141.0",
+      "new": "4.14.0",
+      "missing": [],
+      "signature": [
+       "selenium.webdriver.chrome.webdriver.WebDriver",
+       "selenium.webdriver.support.expected_conditions.invisibility_of_element"
+      ]
+     },
+     {
+      "package": "urllib3",
+      "old": "1.26.6",
+      "new": "2.8.0",
+      "missing": [],
+      "signature": [
+       "urllib3.connection.HTTPConnection",
+       "urllib3.exceptions.NewConnectionError"
+      ]
+     },
+     {
+      "package": "werkzeug",
+      "old": "2.3.3",
+      "new": "3.1.9",
+      "missing": [],
+      "signature": [
+       "werkzeug.http.parse_cookie"
+      ]
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "cape_opt": {
+    "used_changed": 13,
+    "checked": 13,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 4,
+    "missing_symbols": 2,
+    "signature_breaks": 6,
+    "examples": [
+     {
+      "package": "cryptography",
+      "old": "39.0.1",
+      "new": "50.0.2",
+      "missing": [
+       "cryptography.hazmat.primitives.serialization.base.load_pem_private_key",
+       "cryptography.x509.base.load_pem_x509_certificate"
+      ],
+      "signature": []
+     },
+     {
+      "package": "marshmallow",
+      "old": "3.19.0",
+      "new": "3.26.2",
+      "missing": [],
+      "signature": [
+       "marshmallow.fields.Tuple"
+      ]
+     },
+     {
+      "package": "selenium",
+      "old": "3.141.0",
+      "new": "4.14.0",
+      "missing": [],
+      "signature": [
+       "selenium.webdriver.chrome.webdriver.WebDriver",
+       "selenium.webdriver.support.expected_conditions.invisibility_of_element"
+      ]
+     },
+     {
+      "package": "urllib3",
+      "old": "1.26.6",
+      "new": "2.8.0",
+      "missing": [],
+      "signature": [
+       "urllib3.connection.HTTPConnection",
+       "urllib3.exceptions.NewConnectionError"
+      ]
+     },
+     {
+      "package": "werkzeug",
+      "old": "2.3.3",
+      "new": "3.1.9",
+      "missing": [],
+      "signature": [
+       "werkzeug.http.parse_cookie"
+      ]
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "evident": {
+    "used_changed": 13,
+    "checked": 13,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 4,
+    "missing_symbols": 2,
+    "signature_breaks": 6,
+    "examples": [
+     {
+      "package": "cryptography",
+      "old": "39.0.1",
+      "new": "50.0.2",
+      "missing": [
+       "cryptography.hazmat.primitives.serialization.base.load_pem_private_key",
+       "cryptography.x509.base.load_pem_x509_certificate"
+      ],
+      "signature": []
+     },
+     {
+      "package": "marshmallow",
+      "old": "3.19.0",
+      "new": "3.26.2",
+      "missing": [],
+      "signature": [
+       "marshmallow.fields.Tuple"
+      ]
+     },
+     {
+      "package": "selenium",
+      "old": "3.141.0",
+      "new": "4.14.0",
+      "missing": [],
+      "signature": [
+       "selenium.webdriver.chrome.webdriver.WebDriver",
+       "selenium.webdriver.support.expected_conditions.invisibility_of_element"
+      ]
+     },
+     {
+      "package": "urllib3",
+      "old": "1.26.6",
+      "new": "2.8.0",
+      "missing": [],
+      "signature": [
+       "urllib3.connection.HTTPConnection",
+       "urllib3.exceptions.NewConnectionError"
+      ]
+     },
+     {
+      "package": "werkzeug",
+      "old": "2.3.3",
+      "new": "3.1.9",
+      "missing": [],
+      "signature": [
+       "werkzeug.http.parse_cookie"
+      ]
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "evident_wide": {
+    "used_changed": 13,
+    "checked": 13,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 4,
+    "missing_symbols": 2,
+    "signature_breaks": 6,
+    "examples": [
+     {
+      "package": "cryptography",
+      "old": "39.0.1",
+      "new": "50.0.2",
+      "missing": [
+       "cryptography.hazmat.primitives.serialization.base.load_pem_private_key",
+       "cryptography.x509.base.load_pem_x509_certificate"
+      ],
+      "signature": []
+     },
+     {
+      "package": "marshmallow",
+      "old": "3.19.0",
+      "new": "3.26.2",
+      "missing": [],
+      "signature": [
+       "marshmallow.fields.Tuple"
+      ]
+     },
+     {
+      "package": "selenium",
+      "old": "3.141.0",
+      "new": "4.14.0",
+      "missing": [],
+      "signature": [
+       "selenium.webdriver.chrome.webdriver.WebDriver",
+       "selenium.webdriver.support.expected_conditions.invisibility_of_element"
+      ]
+     },
+     {
+      "package": "urllib3",
+      "old": "1.26.6",
+      "new": "2.8.0",
+      "missing": [],
+      "signature": [
+       "urllib3.connection.HTTPConnection",
+       "urllib3.exceptions.NewConnectionError"
+      ]
+     },
+     {
+      "package": "werkzeug",
+      "old": "2.3.3",
+      "new": "3.1.9",
+      "missing": [],
+      "signature": [
+       "werkzeug.http.parse_cookie"
+      ]
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   }
+  },
+  "arrobalytics__django-ledger@v0.5.3.2": {
+   "audit_fix": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 1,
+    "missing_symbols": 0,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "django",
+      "old": "4.2.1",
+      "new": "5.2.17",
+      "missing": [],
+      "signature": [
+       "django.utils.timezone.make_aware"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   },
+   "upgrade_all": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 1,
+    "missing_symbols": 1,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "django",
+      "old": "4.2.1",
+      "new": "5.2.19",
+      "missing": [],
+      "signature": [
+       "django.utils.timezone.make_aware"
+      ]
+     },
+     {
+      "package": "django-treebeard",
+      "old": "4.7",
+      "new": "7.0.3",
+      "missing": [
+       "treebeard.mp_tree.MP_Node.dump_bulk"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "uv_fix": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 1,
+    "missing_symbols": 0,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "django",
+      "old": "4.2.1",
+      "new": "5.2.19",
+      "missing": [],
+      "signature": [
+       "django.utils.timezone.make_aware"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   },
+   "vm_opt": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 1,
+    "missing_symbols": 0,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "django",
+      "old": "4.2.1",
+      "new": "5.2.17",
+      "missing": [],
+      "signature": [
+       "django.utils.timezone.make_aware"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   },
+   "coral_opt": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 1,
+    "missing_symbols": 0,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "django",
+      "old": "4.2.1",
+      "new": "5.2.17",
+      "missing": [],
+      "signature": [
+       "django.utils.timezone.make_aware"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   },
+   "cape_opt": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 1,
+    "missing_symbols": 0,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "django",
+      "old": "4.2.1",
+      "new": "5.2.17",
+      "missing": [],
+      "signature": [
+       "django.utils.timezone.make_aware"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   },
+   "evident": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 1,
+    "missing_symbols": 0,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "django",
+      "old": "4.2.1",
+      "new": "5.2.17",
+      "missing": [],
+      "signature": [
+       "django.utils.timezone.make_aware"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   },
+   "evident_wide": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 1,
+    "missing_symbols": 0,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "django",
+      "old": "4.2.1",
+      "new": "5.2.17",
+      "missing": [],
+      "signature": [
+       "django.utils.timezone.make_aware"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   }
+  },
+  "athms__learning-from-brains@b061ef97680365a074671e0c95581af426773f9e": {
+   "audit_fix": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "latest": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "upgrade_all": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "uv_fix": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "vm_opt": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "coral_opt": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "cape_opt": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "evident": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "evident_wide": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   }
+  },
+  "autopkg__autopkg@v2.7.2": {
+   "audit_fix": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "latest": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "upgrade_all": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "uv_fix": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "vm_opt": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "coral_opt": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "cape_opt": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "evident": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "evident_wide": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   }
+  },
+  "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047": {
+   "latest": {
+    "used_changed": 6,
+    "checked": 6,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 1,
+    "missing_symbols": 1,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "httpx",
+      "old": "0.22.0",
+      "new": "0.28.1",
+      "missing": [],
+      "signature": [
+       "httpx._client.AsyncClient"
+      ]
+     },
+     {
+      "package": "pydantic",
+      "old": "1.9.0",
+      "new": "2.13.5",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "upgrade_all": {
+    "used_changed": 7,
+    "checked": 7,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 1,
+    "missing_symbols": 1,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "httpx",
+      "old": "0.22.0",
+      "new": "0.28.1",
+      "missing": [],
+      "signature": [
+       "httpx._client.AsyncClient"
+      ]
+     },
+     {
+      "package": "pydantic",
+      "old": "1.9.0",
+      "new": "2.13.5",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "uv_fix": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 1,
+    "missing_symbols": 1,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "httpx",
+      "old": "0.22.0",
+      "new": "0.28.1",
+      "missing": [],
+      "signature": [
+       "httpx._client.AsyncClient"
+      ]
+     },
+     {
+      "package": "pydantic",
+      "old": "1.9.0",
+      "new": "2.13.5",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "vm_opt": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 1,
+    "missing_symbols": 1,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "httpx",
+      "old": "0.22.0",
+      "new": "0.28.1",
+      "missing": [],
+      "signature": [
+       "httpx._client.AsyncClient"
+      ]
+     },
+     {
+      "package": "pydantic",
+      "old": "1.9.0",
+      "new": "2.13.5",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "coral_opt": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 1,
+    "missing_symbols": 1,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "httpx",
+      "old": "0.22.0",
+      "new": "0.28.1",
+      "missing": [],
+      "signature": [
+       "httpx._client.AsyncClient"
+      ]
+     },
+     {
+      "package": "pydantic",
+      "old": "1.9.0",
+      "new": "2.13.5",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "cape_opt": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 1,
+    "missing_symbols": 1,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "httpx",
+      "old": "0.22.0",
+      "new": "0.28.1",
+      "missing": [],
+      "signature": [
+       "httpx._client.AsyncClient"
+      ]
+     },
+     {
+      "package": "pydantic",
+      "old": "1.9.0",
+      "new": "2.13.5",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "evident": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 1,
+    "missing_symbols": 1,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "httpx",
+      "old": "0.22.0",
+      "new": "0.28.1",
+      "missing": [],
+      "signature": [
+       "httpx._client.AsyncClient"
+      ]
+     },
+     {
+      "package": "pydantic",
+      "old": "1.9.0",
+      "new": "2.13.5",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "evident_wide": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 1,
+    "missing_symbols": 1,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "httpx",
+      "old": "0.22.0",
+      "new": "0.28.1",
+      "missing": [],
+      "signature": [
+       "httpx._client.AsyncClient"
+      ]
+     },
+     {
+      "package": "pydantic",
+      "old": "1.9.0",
+      "new": "2.13.5",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   }
+  },
+  "Cog-Creators__Red-DiscordBot@3.5.2": {
+   "audit_fix": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "latest": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "upgrade_all": {
+    "used_changed": 8,
+    "checked": 8,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 1,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "uvloop",
+      "old": "0.17.0",
+      "new": "0.23.0",
+      "missing": [
+       "uvloop.EventLoopPolicy"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "uv_fix": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "vm_opt": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "coral_opt": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "cape_opt": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "evident": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "evident_wide": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   }
+  },
+  "Django-CRM__Django-CRM@0.10.0": {
+   "audit_fix": {
+    "used_changed": 8,
+    "checked": 8,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 1,
+    "missing_symbols": 0,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "sentry-sdk",
+      "old": "1.24.0",
+      "new": "1.45.1",
+      "missing": [],
+      "signature": [
+       "sentry_sdk.hub.init"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   },
+   "latest": {
+    "used_changed": 7,
+    "checked": 7,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 1,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "sentry-sdk",
+      "old": "1.24.0",
+      "new": "2.74.0",
+      "missing": [
+       "sentry_sdk.hub.init"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "upgrade_all": {
+    "used_changed": 14,
+    "checked": 14,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 1,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "sentry-sdk",
+      "old": "1.24.0",
+      "new": "2.75.0",
+      "missing": [
+       "sentry_sdk.hub.init"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "uv_fix": {
+    "used_changed": 7,
+    "checked": 7,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 1,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "sentry-sdk",
+      "old": "1.24.0",
+      "new": "2.75.0",
+      "missing": [
+       "sentry_sdk.hub.init"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "vm_opt": {
+    "used_changed": 8,
+    "checked": 8,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 1,
+    "missing_symbols": 0,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "sentry-sdk",
+      "old": "1.24.0",
+      "new": "1.45.1",
+      "missing": [],
+      "signature": [
+       "sentry_sdk.hub.init"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   },
+   "coral_opt": {
+    "used_changed": 6,
+    "checked": 6,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "cape_opt": {
+    "used_changed": 8,
+    "checked": 8,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 1,
+    "missing_symbols": 0,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "sentry-sdk",
+      "old": "1.24.0",
+      "new": "1.45.1",
+      "missing": [],
+      "signature": [
+       "sentry_sdk.hub.init"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   },
+   "evident": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "evident_wide": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   }
+  },
+  "Ehco1996__django-sspanel@v2023.12.26": {
+   "latest": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 1,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "sentry-sdk",
+      "old": "1.39.1",
+      "new": "2.74.0",
+      "missing": [
+       "sentry_sdk.hub.init"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "upgrade_all": {
+    "used_changed": 8,
+    "checked": 8,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 1,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "sentry-sdk",
+      "old": "1.39.1",
+      "new": "2.75.0",
+      "missing": [
+       "sentry_sdk.hub.init"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "uv_fix": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 1,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "sentry-sdk",
+      "old": "1.39.1",
+      "new": "2.75.0",
+      "missing": [
+       "sentry_sdk.hub.init"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "vm_opt": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "coral_opt": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "cape_opt": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "evident": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "evident_wide": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   }
+  },
+  "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6": {
+   "latest": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 2,
+    "missing_symbols": 0,
+    "signature_breaks": 2,
+    "examples": [
+     {
+      "package": "fastapi",
+      "old": "0.92.0",
+      "new": "0.162.5",
+      "missing": [],
+      "signature": [
+       "fastapi.applications.FastAPI"
+      ]
+     },
+     {
+      "package": "starlette",
+      "old": "0.25.0",
+      "new": "1.7.0",
+      "missing": [],
+      "signature": [
+       "starlette.responses.FileResponse"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   },
+   "upgrade_all": {
+    "used_changed": 6,
+    "checked": 6,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 2,
+    "missing_symbols": 0,
+    "signature_breaks": 2,
+    "examples": [
+     {
+      "package": "fastapi",
+      "old": "0.92.0",
+      "new": "0.162.5",
+      "missing": [],
+      "signature": [
+       "fastapi.applications.FastAPI"
+      ]
+     },
+     {
+      "package": "starlette",
+      "old": "0.25.0",
+      "new": "1.7.0",
+      "missing": [],
+      "signature": [
+       "starlette.responses.FileResponse"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   },
+   "uv_fix": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 2,
+    "missing_symbols": 0,
+    "signature_breaks": 2,
+    "examples": [
+     {
+      "package": "fastapi",
+      "old": "0.92.0",
+      "new": "0.162.5",
+      "missing": [],
+      "signature": [
+       "fastapi.applications.FastAPI"
+      ]
+     },
+     {
+      "package": "starlette",
+      "old": "0.25.0",
+      "new": "1.7.0",
+      "missing": [],
+      "signature": [
+       "starlette.responses.FileResponse"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   },
+   "vm_opt": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 2,
+    "missing_symbols": 0,
+    "signature_breaks": 2,
+    "examples": [
+     {
+      "package": "fastapi",
+      "old": "0.92.0",
+      "new": "0.162.5",
+      "missing": [],
+      "signature": [
+       "fastapi.applications.FastAPI"
+      ]
+     },
+     {
+      "package": "starlette",
+      "old": "0.25.0",
+      "new": "1.7.0",
+      "missing": [],
+      "signature": [
+       "starlette.responses.FileResponse"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   },
+   "coral_opt": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 2,
+    "missing_symbols": 0,
+    "signature_breaks": 2,
+    "examples": [
+     {
+      "package": "fastapi",
+      "old": "0.92.0",
+      "new": "0.162.5",
+      "missing": [],
+      "signature": [
+       "fastapi.applications.FastAPI"
+      ]
+     },
+     {
+      "package": "starlette",
+      "old": "0.25.0",
+      "new": "1.7.0",
+      "missing": [],
+      "signature": [
+       "starlette.responses.FileResponse"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   },
+   "cape_opt": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 2,
+    "missing_symbols": 0,
+    "signature_breaks": 2,
+    "examples": [
+     {
+      "package": "fastapi",
+      "old": "0.92.0",
+      "new": "0.162.5",
+      "missing": [],
+      "signature": [
+       "fastapi.applications.FastAPI"
+      ]
+     },
+     {
+      "package": "starlette",
+      "old": "0.25.0",
+      "new": "1.7.0",
+      "missing": [],
+      "signature": [
+       "starlette.responses.FileResponse"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   },
+   "evident": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 2,
+    "missing_symbols": 0,
+    "signature_breaks": 2,
+    "examples": [
+     {
+      "package": "fastapi",
+      "old": "0.92.0",
+      "new": "0.162.5",
+      "missing": [],
+      "signature": [
+       "fastapi.applications.FastAPI"
+      ]
+     },
+     {
+      "package": "starlette",
+      "old": "0.25.0",
+      "new": "1.7.0",
+      "missing": [],
+      "signature": [
+       "starlette.responses.FileResponse"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   },
+   "evident_wide": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 2,
+    "missing_symbols": 0,
+    "signature_breaks": 2,
+    "examples": [
+     {
+      "package": "fastapi",
+      "old": "0.92.0",
+      "new": "0.162.5",
+      "missing": [],
+      "signature": [
+       "fastapi.applications.FastAPI"
+      ]
+     },
+     {
+      "package": "starlette",
+      "old": "0.25.0",
+      "new": "1.7.0",
+      "missing": [],
+      "signature": [
+       "starlette.responses.FileResponse"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   }
+  },
+  "FoundationAgents__MetaGPT@v0.1.0": {
+   "latest": {
+    "used_changed": 6,
+    "checked": 6,
+    "unknown": 0,
+    "missing_pkgs": 3,
+    "signature_pkgs": 0,
+    "missing_symbols": 13,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "langchain",
+      "old": "0.0.231",
+      "new": "1.4.10",
+      "missing": [
+       "langchain.document_loaders",
+       "langchain.document_loaders.pdf.UnstructuredPDFLoader",
+       "langchain.document_loaders.text.TextLoader",
+       "langchain.document_loaders.word_document.UnstructuredWordDocumentLoader"
+      ],
+      "signature": []
+     },
+     {
+      "package": "pydantic",
+      "old": "1.10.7",
+      "new": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.root_validator",
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     },
+     {
+      "package": "pytest",
+      "old": "7.2.2",
+      "new": "9.2.0",
+      "missing": [
+       "_pytest.python_api.raises"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "upgrade_all": {
+    "used_changed": 9,
+    "checked": 9,
+    "unknown": 0,
+    "missing_pkgs": 4,
+    "signature_pkgs": 1,
+    "missing_symbols": 14,
+    "signature_breaks": 3,
+    "examples": [
+     {
+      "package": "langchain",
+      "old": "0.0.231",
+      "new": "1.4.10",
+      "missing": [
+       "langchain.document_loaders",
+       "langchain.document_loaders.pdf.UnstructuredPDFLoader",
+       "langchain.document_loaders.text.TextLoader",
+       "langchain.document_loaders.word_document.UnstructuredWordDocumentLoader"
+      ],
+      "signature": []
+     },
+     {
+      "package": "openai",
+      "old": "0.27.8",
+      "new": "3.49.0",
+      "missing": [
+       "openai.api_resources.chat_completion.ChatCompletion.acreate"
+      ],
+      "signature": []
+     },
+     {
+      "package": "pandas",
+      "old": "1.4.1",
+      "new": "2.3.3",
+      "missing": [],
+      "signature": [
+       "pandas.io.excel._base.read_excel",
+       "pandas.io.json._json.read_json",
+       "pandas.io.parsers.readers.read_csv"
+      ]
+     },
+     {
+      "package": "pydantic",
+      "old": "1.10.7",
+      "new": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.root_validator",
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     },
+     {
+      "package": "pytest",
+      "old": "7.2.2",
+      "new": "9.2.0",
+      "missing": [
+       "_pytest.python_api.raises"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "uv_fix": {
+    "used_changed": 6,
+    "checked": 6,
+    "unknown": 0,
+    "missing_pkgs": 3,
+    "signature_pkgs": 0,
+    "missing_symbols": 13,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "langchain",
+      "old": "0.0.231",
+      "new": "1.4.10",
+      "missing": [
+       "langchain.document_loaders",
+       "langchain.document_loaders.pdf.UnstructuredPDFLoader",
+       "langchain.document_loaders.text.TextLoader",
+       "langchain.document_loaders.word_document.UnstructuredWordDocumentLoader"
+      ],
+      "signature": []
+     },
+     {
+      "package": "pydantic",
+      "old": "1.10.7",
+      "new": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.root_validator",
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     },
+     {
+      "package": "pytest",
+      "old": "7.2.2",
+      "new": "9.2.0",
+      "missing": [
+       "_pytest.python_api.raises"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "vm_opt": {
+    "used_changed": 6,
+    "checked": 6,
+    "unknown": 0,
+    "missing_pkgs": 3,
+    "signature_pkgs": 0,
+    "missing_symbols": 13,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "langchain",
+      "old": "0.0.231",
+      "new": "1.3.9",
+      "missing": [
+       "langchain.document_loaders",
+       "langchain.document_loaders.pdf.UnstructuredPDFLoader",
+       "langchain.document_loaders.text.TextLoader",
+       "langchain.document_loaders.word_document.UnstructuredWordDocumentLoader"
+      ],
+      "signature": []
+     },
+     {
+      "package": "pydantic",
+      "old": "1.10.7",
+      "new": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.root_validator",
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     },
+     {
+      "package": "pytest",
+      "old": "7.2.2",
+      "new": "9.0.3",
+      "missing": [
+       "_pytest.python_api.raises"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "coral_opt": {
+    "used_changed": 6,
+    "checked": 6,
+    "unknown": 0,
+    "missing_pkgs": 3,
+    "signature_pkgs": 0,
+    "missing_symbols": 13,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "langchain",
+      "old": "0.0.231",
+      "new": "1.3.9",
+      "missing": [
+       "langchain.document_loaders",
+       "langchain.document_loaders.pdf.UnstructuredPDFLoader",
+       "langchain.document_loaders.text.TextLoader",
+       "langchain.document_loaders.word_document.UnstructuredWordDocumentLoader"
+      ],
+      "signature": []
+     },
+     {
+      "package": "pydantic",
+      "old": "1.10.7",
+      "new": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.root_validator",
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     },
+     {
+      "package": "pytest",
+      "old": "7.2.2",
+      "new": "9.0.3",
+      "missing": [
+       "_pytest.python_api.raises"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "cape_opt": {
+    "used_changed": 6,
+    "checked": 6,
+    "unknown": 0,
+    "missing_pkgs": 3,
+    "signature_pkgs": 0,
+    "missing_symbols": 13,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "langchain",
+      "old": "0.0.231",
+      "new": "1.3.9",
+      "missing": [
+       "langchain.document_loaders",
+       "langchain.document_loaders.pdf.UnstructuredPDFLoader",
+       "langchain.document_loaders.text.TextLoader",
+       "langchain.document_loaders.word_document.UnstructuredWordDocumentLoader"
+      ],
+      "signature": []
+     },
+     {
+      "package": "pydantic",
+      "old": "1.10.7",
+      "new": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.root_validator",
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     },
+     {
+      "package": "pytest",
+      "old": "7.2.2",
+      "new": "9.0.3",
+      "missing": [
+       "_pytest.python_api.raises"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "evident": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "missing_pkgs": 3,
+    "signature_pkgs": 0,
+    "missing_symbols": 13,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "langchain",
+      "old": "0.0.231",
+      "new": "1.3.9",
+      "missing": [
+       "langchain.document_loaders",
+       "langchain.document_loaders.pdf.UnstructuredPDFLoader",
+       "langchain.document_loaders.text.TextLoader",
+       "langchain.document_loaders.word_document.UnstructuredWordDocumentLoader"
+      ],
+      "signature": []
+     },
+     {
+      "package": "pydantic",
+      "old": "1.10.7",
+      "new": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.root_validator",
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     },
+     {
+      "package": "pytest",
+      "old": "7.2.2",
+      "new": "9.0.3",
+      "missing": [
+       "_pytest.python_api.raises"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "evident_wide": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "missing_pkgs": 3,
+    "signature_pkgs": 0,
+    "missing_symbols": 13,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "langchain",
+      "old": "0.0.231",
+      "new": "1.3.9",
+      "missing": [
+       "langchain.document_loaders",
+       "langchain.document_loaders.pdf.UnstructuredPDFLoader",
+       "langchain.document_loaders.text.TextLoader",
+       "langchain.document_loaders.word_document.UnstructuredWordDocumentLoader"
+      ],
+      "signature": []
+     },
+     {
+      "package": "pydantic",
+      "old": "1.10.7",
+      "new": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.root_validator",
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     },
+     {
+      "package": "pytest",
+      "old": "7.2.2",
+      "new": "9.0.3",
+      "missing": [
+       "_pytest.python_api.raises"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   }
+  },
+  "FuzzyGrim__Yamtrack@v0.5": {
+   "audit_fix": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "latest": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "upgrade_all": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "uv_fix": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "vm_opt": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "coral_opt": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "cape_opt": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "evident": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "evident_wide": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   }
+  },
+  "Gerapy__Gerapy@v0.9.13": {
+   "upgrade_all": {
+    "used_changed": 14,
+    "checked": 14,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 2,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "django",
+      "old": "2.2.28",
+      "new": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.utils.six"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "vm_opt": {
+    "used_changed": 9,
+    "checked": 9,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 2,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "django",
+      "old": "2.2.28",
+      "new": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.utils.six"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "coral_opt": {
+    "used_changed": 9,
+    "checked": 9,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 2,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "django",
+      "old": "2.2.28",
+      "new": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.utils.six"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "cape_opt": {
+    "used_changed": 9,
+    "checked": 9,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 2,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "django",
+      "old": "2.2.28",
+      "new": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.utils.six"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "evident": {
+    "used_changed": 9,
+    "checked": 9,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 2,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "django",
+      "old": "2.2.28",
+      "new": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.utils.six"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "evident_wide": {
+    "used_changed": 9,
+    "checked": 9,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 2,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "django",
+      "old": "2.2.28",
+      "new": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.utils.six"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   }
+  },
+  "Gozargah__Marzban@v0.3.0": {
+   "latest": {
+    "used_changed": 9,
+    "checked": 9,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 1,
+    "missing_symbols": 2,
+    "signature_breaks": 2,
+    "examples": [
+     {
+      "package": "cryptography",
+      "old": "39.0.1",
+      "new": "50.0.2",
+      "missing": [
+       "cryptography.x509.base.load_pem_x509_certificate"
+      ],
+      "signature": []
+     },
+     {
+      "package": "fastapi",
+      "old": "0.92.0",
+      "new": "0.162.5",
+      "missing": [],
+      "signature": [
+       "fastapi.applications.FastAPI",
+       "fastapi.param_functions.Header"
+      ]
+     },
+     {
+      "package": "pydantic",
+      "old": "1.10.2",
+      "new": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "upgrade_all": {
+    "used_changed": 14,
+    "checked": 14,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 1,
+    "missing_symbols": 2,
+    "signature_breaks": 2,
+    "examples": [
+     {
+      "package": "cryptography",
+      "old": "39.0.1",
+      "new": "50.0.2",
+      "missing": [
+       "cryptography.x509.base.load_pem_x509_certificate"
+      ],
+      "signature": []
+     },
+     {
+      "package": "fastapi",
+      "old": "0.92.0",
+      "new": "0.162.5",
+      "missing": [],
+      "signature": [
+       "fastapi.applications.FastAPI",
+       "fastapi.param_functions.Header"
+      ]
+     },
+     {
+      "package": "pydantic",
+      "old": "1.10.2",
+      "new": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "uv_fix": {
+    "used_changed": 8,
+    "checked": 8,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 1,
+    "missing_symbols": 2,
+    "signature_breaks": 2,
+    "examples": [
+     {
+      "package": "cryptography",
+      "old": "39.0.1",
+      "new": "50.0.2",
+      "missing": [
+       "cryptography.x509.base.load_pem_x509_certificate"
+      ],
+      "signature": []
+     },
+     {
+      "package": "fastapi",
+      "old": "0.92.0",
+      "new": "0.162.5",
+      "missing": [],
+      "signature": [
+       "fastapi.applications.FastAPI",
+       "fastapi.param_functions.Header"
+      ]
+     },
+     {
+      "package": "pydantic",
+      "old": "1.10.2",
+      "new": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "vm_opt": {
+    "used_changed": 9,
+    "checked": 9,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 1,
+    "missing_symbols": 2,
+    "signature_breaks": 2,
+    "examples": [
+     {
+      "package": "cryptography",
+      "old": "39.0.1",
+      "new": "50.0.2",
+      "missing": [
+       "cryptography.x509.base.load_pem_x509_certificate"
+      ],
+      "signature": []
+     },
+     {
+      "package": "fastapi",
+      "old": "0.92.0",
+      "new": "0.162.5",
+      "missing": [],
+      "signature": [
+       "fastapi.applications.FastAPI",
+       "fastapi.param_functions.Header"
+      ]
+     },
+     {
+      "package": "pydantic",
+      "old": "1.10.2",
+      "new": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "coral_opt": {
+    "used_changed": 9,
+    "checked": 9,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 1,
+    "missing_symbols": 2,
+    "signature_breaks": 2,
+    "examples": [
+     {
+      "package": "cryptography",
+      "old": "39.0.1",
+      "new": "50.0.2",
+      "missing": [
+       "cryptography.x509.base.load_pem_x509_certificate"
+      ],
+      "signature": []
+     },
+     {
+      "package": "fastapi",
+      "old": "0.92.0",
+      "new": "0.162.5",
+      "missing": [],
+      "signature": [
+       "fastapi.applications.FastAPI",
+       "fastapi.param_functions.Header"
+      ]
+     },
+     {
+      "package": "pydantic",
+      "old": "1.10.2",
+      "new": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "cape_opt": {
+    "used_changed": 9,
+    "checked": 9,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 1,
+    "missing_symbols": 2,
+    "signature_breaks": 2,
+    "examples": [
+     {
+      "package": "cryptography",
+      "old": "39.0.1",
+      "new": "50.0.2",
+      "missing": [
+       "cryptography.x509.base.load_pem_x509_certificate"
+      ],
+      "signature": []
+     },
+     {
+      "package": "fastapi",
+      "old": "0.92.0",
+      "new": "0.162.5",
+      "missing": [],
+      "signature": [
+       "fastapi.applications.FastAPI",
+       "fastapi.param_functions.Header"
+      ]
+     },
+     {
+      "package": "pydantic",
+      "old": "1.10.2",
+      "new": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "evident": {
+    "used_changed": 8,
+    "checked": 8,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 1,
+    "missing_symbols": 2,
+    "signature_breaks": 2,
+    "examples": [
+     {
+      "package": "cryptography",
+      "old": "39.0.1",
+      "new": "50.0.2",
+      "missing": [
+       "cryptography.x509.base.load_pem_x509_certificate"
+      ],
+      "signature": []
+     },
+     {
+      "package": "fastapi",
+      "old": "0.92.0",
+      "new": "0.162.5",
+      "missing": [],
+      "signature": [
+       "fastapi.applications.FastAPI",
+       "fastapi.param_functions.Header"
+      ]
+     },
+     {
+      "package": "pydantic",
+      "old": "1.10.2",
+      "new": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "evident_wide": {
+    "used_changed": 8,
+    "checked": 8,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 1,
+    "missing_symbols": 2,
+    "signature_breaks": 2,
+    "examples": [
+     {
+      "package": "cryptography",
+      "old": "39.0.1",
+      "new": "50.0.2",
+      "missing": [
+       "cryptography.x509.base.load_pem_x509_certificate"
+      ],
+      "signature": []
+     },
+     {
+      "package": "fastapi",
+      "old": "0.92.0",
+      "new": "0.162.5",
+      "missing": [],
+      "signature": [
+       "fastapi.applications.FastAPI",
+       "fastapi.param_functions.Header"
+      ]
+     },
+     {
+      "package": "pydantic",
+      "old": "1.10.2",
+      "new": "2.14.3",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   }
+  },
+  "Kav-K__GPTDiscord@v11.7.0": {
+   "audit_fix": {
+    "used_changed": 6,
+    "checked": 6,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 0,
+    "missing_symbols": 66,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "langchain",
+      "old": "0.0.191",
+      "new": "1.3.9",
+      "missing": [
+       "langchain.agents.conversational_chat",
+       "langchain.agents.conversational_chat.output_parser",
+       "langchain.agents.conversational_chat.output_parser.ConvoOutputParser.parse",
+       "langchain.agents.initialize.initialize_agent"
+      ],
+      "signature": []
+     },
+     {
+      "package": "llama-index",
+      "old": "0.6.25.post1",
+      "new": "0.13.0",
+      "missing": [
+       "llama_index",
+       "llama_index.composability",
+       "llama_index.composability.joint_qa_summary.QASummaryQueryEngineBuilder",
+       "llama_index.data_structs"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "latest": {
+    "used_changed": 7,
+    "checked": 6,
+    "unknown": 1,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 16,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "langchain",
+      "old": "0.0.191",
+      "new": "1.4.10",
+      "missing": [
+       "langchain.agents.conversational_chat",
+       "langchain.agents.conversational_chat.output_parser",
+       "langchain.agents.conversational_chat.output_parser.ConvoOutputParser.parse",
+       "langchain.agents.initialize.initialize_agent"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "upgrade_all": {
+    "used_changed": 8,
+    "checked": 7,
+    "unknown": 1,
+    "missing_pkgs": 2,
+    "signature_pkgs": 0,
+    "missing_symbols": 20,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "langchain",
+      "old": "0.0.191",
+      "new": "1.4.10",
+      "missing": [
+       "langchain.agents.conversational_chat",
+       "langchain.agents.conversational_chat.output_parser",
+       "langchain.agents.conversational_chat.output_parser.ConvoOutputParser.parse",
+       "langchain.agents.initialize.initialize_agent"
+      ],
+      "signature": []
+     },
+     {
+      "package": "pinecone-client",
+      "old": "2.1.0",
+      "new": "6.0.0",
+      "missing": [
+       "pinecone.config.init",
+       "pinecone.index.Index",
+       "pinecone.manage.create_index",
+       "pinecone.manage.list_indexes"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "uv_fix": {
+    "used_changed": 6,
+    "checked": 5,
+    "unknown": 1,
+    "missing_pkgs": 1,
+    "signature_pkgs": 0,
+    "missing_symbols": 16,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "langchain",
+      "old": "0.0.191",
+      "new": "1.4.10",
+      "missing": [
+       "langchain.agents.conversational_chat",
+       "langchain.agents.conversational_chat.output_parser",
+       "langchain.agents.conversational_chat.output_parser.ConvoOutputParser.parse",
+       "langchain.agents.initialize.initialize_agent"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "vm_opt": {
+    "used_changed": 6,
+    "checked": 6,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 0,
+    "missing_symbols": 66,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "langchain",
+      "old": "0.0.191",
+      "new": "1.3.9",
+      "missing": [
+       "langchain.agents.conversational_chat",
+       "langchain.agents.conversational_chat.output_parser",
+       "langchain.agents.conversational_chat.output_parser.ConvoOutputParser.parse",
+       "langchain.agents.initialize.initialize_agent"
+      ],
+      "signature": []
+     },
+     {
+      "package": "llama-index",
+      "old": "0.6.25.post1",
+      "new": "0.13.0",
+      "missing": [
+       "llama_index",
+       "llama_index.composability",
+       "llama_index.composability.joint_qa_summary.QASummaryQueryEngineBuilder",
+       "llama_index.data_structs"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "coral_opt": {
+    "used_changed": 6,
+    "checked": 6,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 0,
+    "missing_symbols": 66,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "langchain",
+      "old": "0.0.191",
+      "new": "1.3.9",
+      "missing": [
+       "langchain.agents.conversational_chat",
+       "langchain.agents.conversational_chat.output_parser",
+       "langchain.agents.conversational_chat.output_parser.ConvoOutputParser.parse",
+       "langchain.agents.initialize.initialize_agent"
+      ],
+      "signature": []
+     },
+     {
+      "package": "llama-index",
+      "old": "0.6.25.post1",
+      "new": "0.13.0",
+      "missing": [
+       "llama_index",
+       "llama_index.composability",
+       "llama_index.composability.joint_qa_summary.QASummaryQueryEngineBuilder",
+       "llama_index.data_structs"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "cape_opt": {
+    "used_changed": 7,
+    "checked": 7,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 0,
+    "missing_symbols": 66,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "langchain",
+      "old": "0.0.191",
+      "new": "1.3.9",
+      "missing": [
+       "langchain.agents.conversational_chat",
+       "langchain.agents.conversational_chat.output_parser",
+       "langchain.agents.conversational_chat.output_parser.ConvoOutputParser.parse",
+       "langchain.agents.initialize.initialize_agent"
+      ],
+      "signature": []
+     },
+     {
+      "package": "llama-index",
+      "old": "0.6.25.post1",
+      "new": "0.13.0",
+      "missing": [
+       "llama_index",
+       "llama_index.composability",
+       "llama_index.composability.joint_qa_summary.QASummaryQueryEngineBuilder",
+       "llama_index.data_structs"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "evident": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 0,
+    "missing_symbols": 66,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "langchain",
+      "old": "0.0.191",
+      "new": "1.3.9",
+      "missing": [
+       "langchain.agents.conversational_chat",
+       "langchain.agents.conversational_chat.output_parser",
+       "langchain.agents.conversational_chat.output_parser.ConvoOutputParser.parse",
+       "langchain.agents.initialize.initialize_agent"
+      ],
+      "signature": []
+     },
+     {
+      "package": "llama-index",
+      "old": "0.6.25.post1",
+      "new": "0.13.0",
+      "missing": [
+       "llama_index",
+       "llama_index.composability",
+       "llama_index.composability.joint_qa_summary.QASummaryQueryEngineBuilder",
+       "llama_index.data_structs"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "evident_wide": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 0,
+    "missing_symbols": 66,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "langchain",
+      "old": "0.0.191",
+      "new": "1.3.9",
+      "missing": [
+       "langchain.agents.conversational_chat",
+       "langchain.agents.conversational_chat.output_parser",
+       "langchain.agents.conversational_chat.output_parser.ConvoOutputParser.parse",
+       "langchain.agents.initialize.initialize_agent"
+      ],
+      "signature": []
+     },
+     {
+      "package": "llama-index",
+      "old": "0.6.25.post1",
+      "new": "0.13.0",
+      "missing": [
+       "llama_index",
+       "llama_index.composability",
+       "llama_index.composability.joint_qa_summary.QASummaryQueryEngineBuilder",
+       "llama_index.data_structs"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   }
+  },
+  "OWASP__Nettacker@0.3.1": {
+   "audit_fix": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 1,
+    "missing_symbols": 0,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "paramiko",
+      "old": "3.2.0",
+      "new": "5.0.0",
+      "missing": [],
+      "signature": [
+       "paramiko.client.SSHClient.connect"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   },
+   "latest": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 1,
+    "missing_symbols": 0,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "paramiko",
+      "old": "3.2.0",
+      "new": "5.1.0",
+      "missing": [],
+      "signature": [
+       "paramiko.client.SSHClient.connect"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   },
+   "upgrade_all": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 1,
+    "missing_symbols": 0,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "paramiko",
+      "old": "3.2.0",
+      "new": "5.1.0",
+      "missing": [],
+      "signature": [
+       "paramiko.client.SSHClient.connect"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   },
+   "uv_fix": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 1,
+    "missing_symbols": 0,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "paramiko",
+      "old": "3.2.0",
+      "new": "5.1.0",
+      "missing": [],
+      "signature": [
+       "paramiko.client.SSHClient.connect"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   },
+   "vm_opt": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 1,
+    "missing_symbols": 0,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "paramiko",
+      "old": "3.2.0",
+      "new": "5.0.0",
+      "missing": [],
+      "signature": [
+       "paramiko.client.SSHClient.connect"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   },
+   "coral_opt": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 1,
+    "missing_symbols": 0,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "paramiko",
+      "old": "3.2.0",
+      "new": "5.0.0",
+      "missing": [],
+      "signature": [
+       "paramiko.client.SSHClient.connect"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   },
+   "cape_opt": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 1,
+    "missing_symbols": 0,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "paramiko",
+      "old": "3.2.0",
+      "new": "5.0.0",
+      "missing": [],
+      "signature": [
+       "paramiko.client.SSHClient.connect"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   },
+   "evident": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 1,
+    "missing_symbols": 0,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "paramiko",
+      "old": "3.2.0",
+      "new": "5.0.0",
+      "missing": [],
+      "signature": [
+       "paramiko.client.SSHClient.connect"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   },
+   "evident_wide": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 1,
+    "missing_symbols": 0,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "paramiko",
+      "old": "3.2.0",
+      "new": "5.0.0",
+      "missing": [],
+      "signature": [
+       "paramiko.client.SSHClient.connect"
+      ]
+     }
+    ],
+    "level2_ok": true,
+    "level2b_ok": false
+   }
+  },
+  "PostHog__posthog@8f02ac42af212990f6303c30bd7c7cba15294183": {
+   "latest": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "upgrade_all": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "uv_fix": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "vm_opt": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "coral_opt": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "cape_opt": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "evident": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "evident_wide": {
+    "used_changed": 0,
+    "checked": 0,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   }
+  },
+  "Rongronggg9__RSS-to-Telegram-Bot@v2.3.0": {
+   "audit_fix": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "latest": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "upgrade_all": {
+    "used_changed": 11,
+    "checked": 11,
+    "unknown": 0,
+    "missing_pkgs": 1,
+    "signature_pkgs": 1,
+    "missing_symbols": 1,
+    "signature_breaks": 1,
+    "examples": [
+     {
+      "package": "aiohttp-socks",
+      "old": "0.8.1",
+      "new": "0.12.0",
+      "missing": [],
+      "signature": [
+       "aiohttp_socks.connector.ProxyConnector"
+      ]
+     },
+     {
+      "package": "uvloop",
+      "old": "0.17.0",
+      "new": "0.23.0",
+      "missing": [
+       "uvloop.install"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "uv_fix": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "vm_opt": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "coral_opt": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "cape_opt": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "evident": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "evident_wide": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   }
+  },
+  "SamR1__FitTrackee@v0.7.17": {
+   "latest": {
+    "used_changed": 12,
+    "checked": 12,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 0,
+    "missing_symbols": 4,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "flask",
+      "old": "2.2.5",
+      "new": "3.1.3",
+      "missing": [
+       "flask.scaffold.Scaffold.errorhandler",
+       "flask.scaffold.Scaffold.route"
+      ],
+      "signature": []
+     },
+     {
+      "package": "pytest",
+      "old": "7.3.1",
+      "new": "9.2.0",
+      "missing": [
+       "_pytest.python_api.approx",
+       "_pytest.python_api.raises"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "upgrade_all": {
+    "used_changed": 17,
+    "checked": 17,
+    "unknown": 0,
+    "missing_pkgs": 3,
+    "signature_pkgs": 0,
+    "missing_symbols": 5,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "flask",
+      "old": "2.2.5",
+      "new": "3.1.3",
+      "missing": [
+       "flask.scaffold.Scaffold.errorhandler",
+       "flask.scaffold.Scaffold.route"
+      ],
+      "signature": []
+     },
+     {
+      "package": "flask-limiter",
+      "old": "3.3.1",
+      "new": "4.1.1",
+      "missing": [
+       "flask_limiter.extension.Limiter"
+      ],
+      "signature": []
+     },
+     {
+      "package": "pytest",
+      "old": "7.3.1",
+      "new": "9.2.0",
+      "missing": [
+       "_pytest.python_api.approx",
+       "_pytest.python_api.raises"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "uv_fix": {
+    "used_changed": 11,
+    "checked": 11,
+    "unknown": 0,
+    "missing_pkgs": 2,
+    "signature_pkgs": 0,
+    "missing_symbols": 4,
+    "signature_breaks": 0,
+    "examples": [
+     {
+      "package": "flask",
+      "old": "2.2.5",
+      "new": "3.1.3",
+      "missing": [
+       "flask.scaffold.Scaffold.errorhandler",
+       "flask.scaffold.Scaffold.route"
+      ],
+      "signature": []
+     },
+     {
+      "package": "pytest",
+      "old": "7.3.1",
+      "new": "9.2.0",
+      "missing": [
+       "_pytest.python_api.approx",
+       "_pytest.python_api.raises"
+      ],
+      "signature": []
+     }
+    ],
+    "level2_ok": false,
+    "level2b_ok": false
+   },
+   "vm_opt": {
+    "used_changed": 9,
+    "checked": 9,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "coral_opt": {
+    "used_changed": 9,
+    "checked": 9,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "cape_opt": {
+    "used_changed": 10,
+    "checked": 10,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "evident": {
+    "used_changed": 8,
+    "checked": 8,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "evident_wide": {
+    "used_changed": 8,
+    "checked": 8,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   }
+  },
+  "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453": {
+   "latest": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "uv_fix": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "vm_opt": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "coral_opt": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "cape_opt": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "evident": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "evident_wide": {
+    "used_changed": 1,
+    "checked": 1,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   }
+  },
+  "WordOps__WordOps@v3.17.0": {
+   "audit_fix": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "latest": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "upgrade_all": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "uv_fix": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "vm_opt": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "coral_opt": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "cape_opt": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "evident": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   },
+   "evident_wide": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "missing_pkgs": 0,
+    "signature_pkgs": 0,
+    "missing_symbols": 0,
+    "signature_breaks": 0,
+    "examples": [],
+    "level2_ok": true,
+    "level2b_ok": true
+   }
+  }
+ },
+ "weights": {
+  "kev1_sum": {
+   "projects": 24,
+   "mean_changes": 11.625,
+   "mean_jaccard_vs_default": 1.0,
+   "identical_plans": 24
+  },
+  "kev2_sum": {
+   "projects": 24,
+   "mean_changes": 11.625,
+   "mean_jaccard_vs_default": 1.0,
+   "identical_plans": 24
+  },
+  "kev3_sum": {
+   "projects": 24,
+   "mean_changes": 11.625,
+   "mean_jaccard_vs_default": 0.9974747474747474,
+   "identical_plans": 23
+  },
+  "kev2_max": {
+   "projects": 24,
+   "mean_changes": 9.333333333333334,
+   "mean_jaccard_vs_default": 0.7463405955325292,
+   "identical_plans": 6
+  }
+ },
+ "fronts_projects": 24,
+ "devprior": {
+  "0.0": {
+   "expected_exposed": 1273.2053228373045,
+   "expected_exposed_dev_only": 0.0,
+   "mean_plan_jaccard_vs_default": 0.9975490196078431,
+   "mean_changes": 11.583333333333334,
+   "projects": 24
+  },
+  "0.01": {
+   "expected_exposed": 1273.4628701092272,
+   "expected_exposed_dev_only": 0.2575472719227331,
+   "mean_plan_jaccard_vs_default": 0.9975490196078431,
+   "mean_changes": 11.583333333333334,
+   "projects": 24
+  },
+  "0.05": {
+   "expected_exposed": 1274.4930591969182,
+   "expected_exposed_dev_only": 1.2877363596136653,
+   "mean_plan_jaccard_vs_default": 1.0,
+   "mean_changes": 11.625,
+   "projects": 24
+  },
+  "0.1": {
+   "expected_exposed": 1275.7807955565315,
+   "expected_exposed_dev_only": 2.5754727192273306,
+   "mean_plan_jaccard_vs_default": 0.9953703703703703,
+   "mean_changes": 11.625,
+   "projects": 24
+  },
+  "0.25": {
+   "expected_exposed": 1279.6440046353728,
+   "expected_exposed_dev_only": 6.438681798068329,
+   "mean_plan_jaccard_vs_default": 0.9953703703703703,
+   "mean_changes": 11.625,
+   "projects": 24
+  }
+ },
+ "scopes": {
+  "global_UNKNOWN": 352,
+  "package_UNKNOWN": 352,
+  "module_UNKNOWN": 344,
+  "reachable_UNKNOWN": 339,
+  "reachable_REFUTED": 13,
+  "module_REFUTED": 8
+ },
+ "scopes_per_project": {
+  "ActivityWatch__activitywatch@v0.12.2": {},
+  "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0": {
+   "global_UNKNOWN": 9,
+   "package_UNKNOWN": 9,
+   "module_UNKNOWN": 9,
+   "reachable_UNKNOWN": 9
+  },
+  "allegro__ralph@20240213.1": {
+   "global_UNKNOWN": 14,
+   "package_UNKNOWN": 14,
+   "module_UNKNOWN": 14,
+   "reachable_UNKNOWN": 14
+  },
+  "amisadmin__fastapi-scheduler@ec3cb6ebbe0f6a35a80c601b72a4f0fad72d62bf": {
+   "global_UNKNOWN": 9,
+   "package_UNKNOWN": 9,
+   "module_UNKNOWN": 9,
+   "reachable_UNKNOWN": 4,
+   "reachable_REFUTED": 5
+  },
+  "apache__superset@3.0.3": {
+   "global_UNKNOWN": 9,
+   "package_UNKNOWN": 9,
+   "module_UNKNOWN": 9,
+   "reachable_UNKNOWN": 9
+  },
+  "ArchiveBox__ArchiveBox@v0.7.1": {
+   "global_UNKNOWN": 1,
+   "package_UNKNOWN": 1,
+   "module_UNKNOWN": 1,
+   "reachable_UNKNOWN": 1
+  },
+  "arrobalytics__django-ledger@v0.5.3.2": {
+   "global_UNKNOWN": 46,
+   "package_UNKNOWN": 46,
+   "module_UNKNOWN": 46,
+   "reachable_UNKNOWN": 46
+  },
+  "athms__learning-from-brains@b061ef97680365a074671e0c95581af426773f9e": {},
+  "autopkg__autopkg@v2.7.2": {},
+  "babybuddy__babybuddy@v1.16.0": {
+   "global_UNKNOWN": 15,
+   "package_UNKNOWN": 15,
+   "module_UNKNOWN": 15,
+   "reachable_UNKNOWN": 15
+  },
+  "CharlyJazz__Chat-Firebase-Apache-Camel@51e03935013afc4c64269d222bb32e76479f6047": {
+   "global_UNKNOWN": 8,
+   "package_UNKNOWN": 8,
+   "module_UNKNOWN": 3,
+   "reachable_UNKNOWN": 3,
+   "module_REFUTED": 5,
+   "reachable_REFUTED": 5
+  },
+  "Cog-Creators__Red-DiscordBot@3.5.2": {
+   "global_UNKNOWN": 7,
+   "package_UNKNOWN": 7,
+   "module_UNKNOWN": 7,
+   "reachable_UNKNOWN": 7
+  },
+  "CTFd__CTFd@3.5.3": {
+   "global_UNKNOWN": 7,
+   "package_UNKNOWN": 7,
+   "module_UNKNOWN": 7,
+   "reachable_UNKNOWN": 7
+  },
+  "DefectDojo__django-DefectDojo@b1ad396188e813586697588b6928740f6523a99f": {
+   "global_UNKNOWN": 16,
+   "package_UNKNOWN": 16,
+   "module_UNKNOWN": 16,
+   "reachable_UNKNOWN": 16
+  },
+  "Django-CRM__Django-CRM@0.10.0": {
+   "global_UNKNOWN": 11,
+   "package_UNKNOWN": 11,
+   "module_UNKNOWN": 11,
+   "reachable_UNKNOWN": 11
+  },
+  "Ehco1996__django-sspanel@v2023.12.26": {
+   "global_UNKNOWN": 29,
+   "package_UNKNOWN": 29,
+   "module_UNKNOWN": 29,
+   "reachable_UNKNOWN": 29
+  },
+  "Evil0ctal__Douyin_TikTok_Download_API@V3.1.6": {
+   "global_UNKNOWN": 16,
+   "package_UNKNOWN": 16,
+   "module_UNKNOWN": 13,
+   "reachable_UNKNOWN": 13,
+   "module_REFUTED": 3,
+   "reachable_REFUTED": 3
+  },
+  "Flexget__Flexget@dfb206140cc33022771b1e9d5fab26855daea422": {
+   "global_UNKNOWN": 10,
+   "package_UNKNOWN": 10,
+   "module_UNKNOWN": 10,
+   "reachable_UNKNOWN": 10
+  },
+  "FoundationAgents__MetaGPT@v0.1.0": {
+   "global_UNKNOWN": 11,
+   "package_UNKNOWN": 11,
+   "module_UNKNOWN": 11,
+   "reachable_UNKNOWN": 11
+  },
+  "FuzzyGrim__Yamtrack@v0.5": {
+   "global_UNKNOWN": 21,
+   "package_UNKNOWN": 21,
+   "module_UNKNOWN": 21,
+   "reachable_UNKNOWN": 21
+  },
+  "GeoNode__geonode@4.1.0": {
+   "global_UNKNOWN": 10,
+   "package_UNKNOWN": 10,
+   "module_UNKNOWN": 10,
+   "reachable_UNKNOWN": 10
+  },
+  "Gerapy__Gerapy@v0.9.13": {
+   "global_UNKNOWN": 19,
+   "package_UNKNOWN": 19,
+   "module_UNKNOWN": 19,
+   "reachable_UNKNOWN": 19
+  },
+  "Gozargah__Marzban@v0.3.0": {
+   "global_UNKNOWN": 14,
+   "package_UNKNOWN": 14,
+   "module_UNKNOWN": 14,
+   "reachable_UNKNOWN": 14
+  },
+  "HaoZhang95__Python24@7cbc04568a320f0bf048f5473fa72918fda712e4": {},
+  "Hopetree__izone@lts": {
+   "global_UNKNOWN": 9,
+   "package_UNKNOWN": 9,
+   "module_UNKNOWN": 9,
+   "reachable_UNKNOWN": 9
+  },
+  "Kav-K__GPTDiscord@v11.7.0": {
+   "global_UNKNOWN": 8,
+   "package_UNKNOWN": 8,
+   "module_UNKNOWN": 8,
+   "reachable_UNKNOWN": 8
+  },
+  "OWASP__Nettacker@0.3.1": {
+   "global_UNKNOWN": 11,
+   "package_UNKNOWN": 11,
+   "module_UNKNOWN": 11,
+   "reachable_UNKNOWN": 11
+  },
+  "PostHog__posthog@8f02ac42af212990f6303c30bd7c7cba15294183": {},
+  "RasaHQ__rasa@3.5.11": {},
+  "Rongronggg9__RSS-to-Telegram-Bot@v2.3.0": {
+   "global_UNKNOWN": 11,
+   "package_UNKNOWN": 11,
+   "module_UNKNOWN": 11,
+   "reachable_UNKNOWN": 11
+  },
+  "SamR1__FitTrackee@v0.7.17": {
+   "global_UNKNOWN": 12,
+   "package_UNKNOWN": 12,
+   "module_UNKNOWN": 12,
+   "reachable_UNKNOWN": 12
+  },
+  "TandoorRecipes__recipes@1.4.12": {
+   "global_UNKNOWN": 15,
+   "package_UNKNOWN": 15,
+   "module_UNKNOWN": 15,
+   "reachable_UNKNOWN": 15
+  },
+  "TheresAFewConors__Sooty@83fabd955970403f0fc50417e1acba4c59667453": {
+   "global_UNKNOWN": 4,
+   "package_UNKNOWN": 4,
+   "module_UNKNOWN": 4,
+   "reachable_UNKNOWN": 4
+  },
+  "WordOps__WordOps@v3.17.0": {}
+ },
+ "candidates": {
+  "6": {
+   "ok": 1.0,
+   "seconds": 2.794478118419647,
+   "iterations": 1.0,
+   "changes": 11.625,
+   "objective": 14.483010116316756,
+   "candidates": 55.333333333333336,
+   "n": 24
+  },
+  "8": {
+   "ok": 1.0,
+   "seconds": 0.1845627725124359,
+   "iterations": 1.0,
+   "changes": 11.625,
+   "objective": 14.483010116316756,
+   "candidates": 55.333333333333336,
+   "n": 24
+  },
+  "12": {
+   "ok": 1.0,
+   "seconds": 0.18498864769935608,
+   "iterations": 1.0,
+   "changes": 11.625,
+   "objective": 14.483010116316756,
+   "candidates": 55.333333333333336,
+   "n": 24
+  },
+  "20": {
+   "ok": 1.0,
+   "seconds": 0.18112094203631082,
+   "iterations": 1.0,
+   "changes": 11.625,
+   "objective": 14.483010116316756,
+   "candidates": 55.333333333333336,
+   "n": 24
+  }
+ }
+}

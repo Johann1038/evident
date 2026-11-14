@@ -1,0 +1,7177 @@
+[
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54279",
+  "ids": [
+   "GHSA-2fqr-mr3j-6wp8",
+   "PYSEC-2026-2112"
+  ],
+  "cves": [
+   "CVE-2026-54279"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00493,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:08:51Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.cookiejar.CookieJar._load_json_data",
+      "aiohttp.cookiejar.CookieJar.load",
+      "aiohttp.cookiejar.CookieJar.save"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request",
+      "aiohttp.cookiejar.CookieJar.load"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-123817",
+  "ids": [
+   "GHSA-2g87-pp6c-29x5"
+  ],
+  "cves": [
+   "CVE-2026-123817"
+  ],
+  "cvss": 8.7,
+  "epss": 0.00328,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2026-10-19T17:07:23Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client.ClientSession._ws_connect",
+      "aiohttp.client_ws.ClientWebSocketResponse.__init__",
+      "aiohttp.client_ws.ClientWebSocketResponse._handle_ping_pong_exception",
+      "aiohttp.client_ws.ClientWebSocketResponse.close",
+      "aiohttp.client_ws.ClientWebSocketResponse.receive",
+      "aiohttp.http_parser.HttpParser.feed_data",
+      "aiohttp.web_protocol.RequestHandler.__init__",
+      "aiohttp.web_protocol.RequestHandler._resume_msg_queue_reading",
+      "aiohttp.web_protocol.RequestHandler.data_received",
+      "aiohttp.web_protocol.RequestHandler.eof_received",
+      "aiohttp.web_protocol.RequestHandler.finish_response",
+      "aiohttp.web_ws.WebSocketResponse._handle_ping_pong_exception",
+      "aiohttp.web_ws.WebSocketResponse._post_start",
+      "aiohttp.web_ws.WebSocketResponse.close"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "socketio.redis_manager.RedisManager.initialize",
+      "socketio.zmq_manager.ZmqManager.__init__",
+      "socketio.asyncio_client.AsyncClient.connect",
+      "engineio.asyncio_client.AsyncClient.connect",
+      "engineio.asyncio_client.AsyncClient._connect_websocket",
+      "aiohttp.client.ClientSession.ws_connect",
+      "aiohttp.client.ClientSession._ws_connect"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34514",
+  "ids": [
+   "GHSA-2vrm-gr82-f7m5",
+   "PYSEC-2026-2096"
+  ],
+  "cves": [
+   "CVE-2026-34514"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00327,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-04-01T21:16:59.417Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.formdata.FormData.add_field"
+     ],
+     "witness": [
+      "__app__.app.main.Config.__init__",
+      "aiohttp.http_websocket.WebSocketError.__str__",
+      "aiohttp.formdata.FormData.__init__",
+      "aiohttp.formdata.FormData.add_fields",
+      "aiohttp.formdata.FormData.add_field"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34517",
+  "ids": [
+   "GHSA-3wq7-rqq7-wx6j",
+   "PYSEC-2026-2099"
+  ],
+  "cves": [
+   "CVE-2026-34517"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00399,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-04-01T21:16:59.870Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2023-37276",
+  "ids": [
+   "GHSA-45c4-8wx5-qw6w",
+   "PYSEC-2023-120"
+  ],
+  "cves": [
+   "CVE-2023-37276"
+  ],
+  "cvss": 6.9,
+  "epss": 0.01337,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2023-07-20T14:52:00Z",
+  "fixed": [
+   "3.8.5"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "module",
+     "symbols": [
+      "aiohttp.<module>"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "aiohttp.<module>"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111063",
+  "ids": [
+   "GHSA-494j-54xm-rwp3"
+  ],
+  "cves": [
+   "CVE-2026-111063"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00233,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2026-10-19T17:07:47Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.cookiejar.CookieJar.filter_cookies"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request",
+      "aiohttp.cookiejar.CookieJar.filter_cookies"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54273",
+  "ids": [
+   "GHSA-4fvr-rgm6-gqmc",
+   "PYSEC-2026-2107"
+  ],
+  "cves": [
+   "CVE-2026-54273"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00493,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:10:32Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.base_protocol.BaseProtocol.pause_reading",
+      "aiohttp.base_protocol.BaseProtocol.resume_reading",
+      "aiohttp.http_parser.HttpParser.__init__",
+      "aiohttp.http_parser.HttpParser.feed_data",
+      "aiohttp.http_parser.HttpParser.feed_eof",
+      "aiohttp.web_protocol.RequestHandler.__init__",
+      "aiohttp.web_protocol.RequestHandler.data_received",
+      "aiohttp.web_protocol.RequestHandler.keep_alive",
+      "aiohttp.web_protocol.RequestHandler.start"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "aiohttp.web.run_app",
+      "aiohttp.client_ws.ClientWebSocketResponse.close",
+      "aiohttp.streams.StreamReader.feed_data",
+      "aiohttp.base_protocol.BaseProtocol.pause_reading"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54275",
+  "ids": [
+   "GHSA-4m7w-qmgq-4wj5",
+   "PYSEC-2026-237"
+  ],
+  "cves": [
+   "CVE-2026-54275"
+  ],
+  "cvss": 7.5,
+  "epss": 0.0047,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:11:13Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69226",
+  "ids": [
+   "GHSA-54jq-c3m8-4m76",
+   "PYSEC-2026-1097"
+  ],
+  "cves": [
+   "CVE-2025-69226"
+  ],
+  "cvss": 2.7,
+  "epss": 0.00368,
+  "kev": false,
+  "severity_w": 0.27,
+  "published": "2026-01-05T23:09:51Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_urldispatcher.StaticResource._handle",
+      "aiohttp.web_urldispatcher.StaticResource.resolve"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "aiohttp.web_urldispatcher.UrlDispatcher.add_routes",
+      "aiohttp.web_routedef.StaticDef.register",
+      "aiohttp.web_urldispatcher.UrlDispatcher.add_static",
+      "aiohttp.web_urldispatcher.StaticResource.__init__",
+      "aiohttp.web_urldispatcher.StaticResource.resolve"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2024-23334",
+  "ids": [
+   "GHSA-5h86-8mv2-jq9f",
+   "PYSEC-2024-24"
+  ],
+  "cves": [
+   "CVE-2024-23334"
+  ],
+  "cvss": 8.2,
+  "epss": 0.76875,
+  "kev": false,
+  "severity_w": 0.82,
+  "published": "2024-01-29T22:31:03Z",
+  "fixed": [
+   "3.9.2"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.21461021528126487,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (app: dyn_class,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_urldispatcher.StaticResource._handle",
+      "aiohttp.web_urldispatcher.StaticResource.url_for"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2024-30251",
+  "ids": [
+   "GHSA-5m98-qgg9-wh84",
+   "PYSEC-2026-1098"
+  ],
+  "cves": [
+   "CVE-2024-30251"
+  ],
+  "cvss": 7.5,
+  "epss": 0.01094,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2024-05-03T17:29:54Z",
+  "fixed": [
+   "3.9.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.formdata.FormData.add_field",
+      "aiohttp.multipart.BodyPartReader.__init__",
+      "aiohttp.multipart.BodyPartReader._read_chunk_from_length",
+      "aiohttp.multipart.BodyPartReader.decode",
+      "aiohttp.multipart.BodyPartReader.get_charset",
+      "aiohttp.multipart.MultipartReader.__init__",
+      "aiohttp.multipart.MultipartReader._get_boundary",
+      "aiohttp.multipart.MultipartReader._get_part_reader",
+      "aiohttp.multipart.MultipartReader.next",
+      "aiohttp.multipart.MultipartWriter.__init__",
+      "aiohttp.multipart.MultipartWriter.append_payload",
+      "aiohttp.multipart.MultipartWriter.write"
+     ],
+     "witness": [
+      "__app__.app.main.Config.__init__",
+      "aiohttp.http_websocket.WebSocketError.__str__",
+      "aiohttp.formdata.FormData.__init__",
+      "aiohttp.formdata.FormData.add_fields",
+      "aiohttp.formdata.FormData.add_field"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111064",
+  "ids": [
+   "GHSA-5wr8-gcqf-gqf3"
+  ],
+  "cves": [
+   "CVE-2026-111064"
+  ],
+  "cvss": 8.2,
+  "epss": 0.00399,
+  "kev": false,
+  "severity_w": 0.82,
+  "published": "2026-10-19T17:08:04Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_protocol.RequestHandler.__init__",
+      "aiohttp.web_protocol.RequestHandler.connection_made"
+     ],
+     "witness": [
+      "__app__.app.main.Config.__init__",
+      "aiohttp.http_websocket.WebSocketError.__str__",
+      "aiohttp.web_protocol.RequestHandler.__init__"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34520",
+  "ids": [
+   "GHSA-63hf-3vf5-4wqf",
+   "PYSEC-2026-2102"
+  ],
+  "cves": [
+   "CVE-2026-34520"
+  ],
+  "cvss": 9.1,
+  "epss": 0.00479,
+  "kev": false,
+  "severity_w": 0.9099999999999999,
+  "published": "2026-04-01T21:17:00.333Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HeadersParser.parse_headers"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "aiohttp.web_request.BaseRequest.post",
+      "aiohttp.multipart.MultipartReader.next",
+      "aiohttp.multipart.MultipartReader.fetch_next_part",
+      "aiohttp.multipart.MultipartReader._read_headers",
+      "aiohttp.http_parser.HeadersParser.parse_headers"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54277",
+  "ids": [
+   "GHSA-63hw-fmq6-xxg2",
+   "PYSEC-2026-2110"
+  ],
+  "cves": [
+   "CVE-2026-54277"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00563,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:09:16Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69224",
+  "ids": [
+   "GHSA-69f9-5gxw-wvc2",
+   "PYSEC-2026-1099"
+  ],
+  "cves": [
+   "CVE-2025-69224"
+  ],
+  "cvss": 2.7,
+  "epss": 0.0025,
+  "kev": false,
+  "severity_w": 0.27,
+  "published": "2026-01-05T22:58:57Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.21461021528126487,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (app: dyn_class,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HttpParser.parse_headers",
+      "aiohttp.http_parser.HttpRequestParser._is_chunked_te",
+      "aiohttp.http_parser._is_supported_upgrade"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111065",
+  "ids": [
+   "GHSA-6cjc-53gc-5rqm"
+  ],
+  "cves": [
+   "CVE-2026-111065"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00395,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2026-10-20T19:57:24Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client.ClientSession._request",
+      "aiohttp.cookiejar.CookieJar.update_cookies"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69228",
+  "ids": [
+   "GHSA-6jhg-hg63-jvvf",
+   "PYSEC-2026-1100"
+  ],
+  "cves": [
+   "CVE-2025-69228"
+  ],
+  "cvss": 6.6,
+  "epss": 0.00407,
+  "kev": false,
+  "severity_w": 0.6599999999999999,
+  "published": "2026-01-05T23:13:14Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69223",
+  "ids": [
+   "GHSA-6mq8-rvhq-8wgg",
+   "PYSEC-2026-1101"
+  ],
+  "cves": [
+   "CVE-2025-69223"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00583,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-01-05T22:58:41Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.DeflateBuffer.__init__",
+      "aiohttp.http_parser.DeflateBuffer.feed_data",
+      "aiohttp.http_parser.DeflateBuffer.set_exception",
+      "aiohttp.multipart.BodyPartReader.__init__",
+      "aiohttp.multipart.BodyPartReader._decode_content",
+      "aiohttp.multipart.BodyPartReader.decode",
+      "aiohttp.multipart.BodyPartReader.read",
+      "aiohttp.multipart.BodyPartReaderPayload.write",
+      "aiohttp.multipart.MultipartPayloadWriter.__init__",
+      "aiohttp.multipart.MultipartWriter.write",
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "witness": [
+      "__app__.app.main.Config.__init__",
+      "aiohttp.http_websocket.WebSocketError.__str__",
+      "aiohttp.http_parser.DeflateBuffer.__init__"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2024-27306",
+  "ids": [
+   "GHSA-7gpw-8wmc-pm8g",
+   "PYSEC-2026-1102"
+  ],
+  "cves": [
+   "CVE-2024-27306"
+  ],
+  "cvss": 6.1,
+  "epss": 0.00666,
+  "kev": false,
+  "severity_w": 0.61,
+  "published": "2024-04-18T13:45:21Z",
+  "fixed": [
+   "3.9.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.21461021528126487,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (app: dyn_class,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_urldispatcher.StaticResource._directory_as_html"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2024-52304",
+  "ids": [
+   "GHSA-8495-4g3g-x7pr",
+   "PYSEC-2026-1103"
+  ],
+  "cves": [
+   "CVE-2024-52304"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00563,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2024-11-18T21:02:32Z",
+  "fixed": [
+   "3.10.11"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HttpPayloadParser.feed_data"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "aiohttp.web.run_app",
+      "aiohttp.client_ws.ClientWebSocketResponse.close",
+      "aiohttp.http_parser.HttpPayloadParser.feed_data"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2024-23829",
+  "ids": [
+   "GHSA-8qpw-xqxj-h4r2",
+   "PYSEC-2024-26"
+  ],
+  "cves": [
+   "CVE-2024-23829"
+  ],
+  "cvss": 6.9,
+  "epss": 0.01029,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2024-01-29T22:30:07Z",
+  "fixed": [
+   "3.9.2"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HeadersParser.parse_headers",
+      "aiohttp.http_parser.HttpParser.feed_data",
+      "aiohttp.http_parser.HttpPayloadParser.feed_data",
+      "aiohttp.http_parser.HttpRequestParser.parse_message",
+      "aiohttp.http_parser.HttpResponseParser.parse_message"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "aiohttp.web_request.BaseRequest.post",
+      "aiohttp.multipart.MultipartReader.next",
+      "aiohttp.multipart.MultipartReader.fetch_next_part",
+      "aiohttp.multipart.MultipartReader._read_headers",
+      "aiohttp.http_parser.HeadersParser.parse_headers"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-53643",
+  "ids": [
+   "GHSA-9548-qrrj-x5pj",
+   "PYSEC-2026-1104"
+  ],
+  "cves": [
+   "CVE-2025-53643"
+  ],
+  "cvss": 1.7,
+  "epss": 0.00355,
+  "kev": false,
+  "severity_w": 0.16999999999999998,
+  "published": "2025-07-14T19:33:31Z",
+  "fixed": [
+   "3.12.14"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HeadersParser.parse_headers",
+      "aiohttp.http_parser.HttpParser.feed_data",
+      "aiohttp.http_parser.HttpPayloadParser.__init__",
+      "aiohttp.http_parser.HttpPayloadParser.feed_data",
+      "aiohttp.http_parser.HttpRequestParser.parse_message",
+      "aiohttp.http_parser.HttpResponseParser.parse_message",
+      "aiohttp.multipart.MultipartReader._read_headers"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "aiohttp.web_request.BaseRequest.post",
+      "aiohttp.multipart.MultipartReader.next",
+      "aiohttp.multipart.MultipartReader.fetch_next_part",
+      "aiohttp.multipart.MultipartReader._read_headers",
+      "aiohttp.http_parser.HeadersParser.parse_headers"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34518",
+  "ids": [
+   "GHSA-966j-vmvw-g2g9",
+   "PYSEC-2026-2100"
+  ],
+  "cves": [
+   "CVE-2026-34518"
+  ],
+  "cvss": 5.3,
+  "epss": 0.0035,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-04-01T21:17:00.020Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client.ClientSession._request"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54280",
+  "ids": [
+   "GHSA-9x8q-7h8h-wcw9",
+   "PYSEC-2026-2113"
+  ],
+  "cves": [
+   "CVE-2026-54280"
+  ],
+  "cvss": 7.5,
+  "epss": 0.0046,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:10:44Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_response.Response.write_eof"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request",
+      "aiohttp.client_reqrep.ClientRequest.send",
+      "aiohttp.client_reqrep.ClientRequest.write_bytes",
+      "aiohttp.web_response.Response.write_eof"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111066",
+  "ids": [
+   "GHSA-9xw5-w5jj-pvcg"
+  ],
+  "cves": [
+   "CVE-2026-111066"
+  ],
+  "cvss": 8.2,
+  "epss": 0.00412,
+  "kev": false,
+  "severity_w": 0.82,
+  "published": "2026-10-20T19:52:09Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_request.BaseRequest._finish",
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34525",
+  "ids": [
+   "GHSA-c427-h43c-vf67",
+   "PYSEC-2026-2103"
+  ],
+  "cves": [
+   "CVE-2026-34525"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00299,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2026-04-01T21:17:00.490Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HeadersParser.parse_headers",
+      "aiohttp.http_parser.HttpParser.parse_headers"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "aiohttp.web_request.BaseRequest.post",
+      "aiohttp.multipart.MultipartReader.next",
+      "aiohttp.multipart.MultipartReader.fetch_next_part",
+      "aiohttp.multipart.MultipartReader._read_headers",
+      "aiohttp.http_parser.HeadersParser.parse_headers"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-69244",
+  "ids": [
+   "GHSA-cq5v-8q36-5273",
+   "PYSEC-2026-3545"
+  ],
+  "cves": [
+   "CVE-2026-69244"
+  ],
+  "cvss": 7.1,
+  "epss": 0.00528,
+  "kev": false,
+  "severity_w": 0.71,
+  "published": "2026-08-03T20:51:13Z",
+  "fixed": [
+   "3.14.3"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111748",
+  "ids": [
+   "GHSA-f9xw-jh8m-3mwq"
+  ],
+  "cves": [
+   "CVE-2026-111748"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00386,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2026-10-20T20:01:40Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HttpRequestParser.parse_message",
+      "aiohttp.web_request.BaseRequest.__init__"
+     ],
+     "witness": [
+      "__app__.app.main.Config.__init__",
+      "aiohttp.http_websocket.WebSocketError.__str__",
+      "aiohttp.web_request.BaseRequest.__init__"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69230",
+  "ids": [
+   "GHSA-fh55-r93g-j68g",
+   "PYSEC-2026-1105"
+  ],
+  "cves": [
+   "CVE-2025-69230"
+  ],
+  "cvss": 2.7,
+  "epss": 0.00364,
+  "kev": false,
+  "severity_w": 0.27,
+  "published": "2026-01-05T23:13:46Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54278",
+  "ids": [
+   "GHSA-g3cq-j2xw-wf74",
+   "PYSEC-2026-2111"
+  ],
+  "cves": [
+   "CVE-2026-54278"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00493,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:09:51Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.streams.StreamReader._read_nowait"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "aiohttp.web_request.BaseRequest.post",
+      "aiohttp.streams.StreamReader.read",
+      "aiohttp.streams.StreamReader._read_nowait"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69229",
+  "ids": [
+   "GHSA-g84x-mcqj-x9qq",
+   "PYSEC-2026-1106"
+  ],
+  "cves": [
+   "CVE-2025-69229"
+  ],
+  "cvss": 6.6,
+  "epss": 0.00404,
+  "kev": false,
+  "severity_w": 0.6599999999999999,
+  "published": "2026-01-05T23:13:29Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.streams.StreamReader.__init__",
+      "aiohttp.streams.StreamReader._read_nowait_chunk",
+      "aiohttp.streams.StreamReader.begin_http_chunk_receiving",
+      "aiohttp.streams.StreamReader.end_http_chunk_receiving",
+      "aiohttp.streams.StreamReader.readchunk"
+     ],
+     "witness": [
+      "__app__.app.main.Config.__init__",
+      "aiohttp.http_websocket.WebSocketError.__str__",
+      "aiohttp.streams.StreamReader.__init__"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2023-47627",
+  "ids": [
+   "GHSA-gfw2-4jvh-wgfg",
+   "PYSEC-2023-246"
+  ],
+  "cves": [
+   "CVE-2023-47627"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00857,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2023-11-14T21:15:00Z",
+  "fixed": [
+   "3.8.6"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HeadersParser.parse_headers",
+      "aiohttp.http_parser.HttpParser.feed_data",
+      "aiohttp.http_parser.HttpParser.parse_headers",
+      "aiohttp.http_parser.HttpPayloadParser.feed_data",
+      "aiohttp.http_parser.HttpRequestParser.parse_message",
+      "aiohttp.http_parser.HttpResponseParser.parse_message"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "aiohttp.web_request.BaseRequest.post",
+      "aiohttp.multipart.MultipartReader.next",
+      "aiohttp.multipart.MultipartReader.fetch_next_part",
+      "aiohttp.multipart.MultipartReader._read_headers",
+      "aiohttp.http_parser.HeadersParser.parse_headers"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111749",
+  "ids": [
+   "GHSA-gx76-c99x-2c96"
+  ],
+  "cves": [
+   "CVE-2026-111749"
+  ],
+  "cvss": 2.3,
+  "epss": 0.00384,
+  "kev": false,
+  "severity_w": 0.22999999999999998,
+  "published": "2026-10-20T19:58:14Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.abc.AbstractCookieJar.host_only_cookies",
+      "aiohttp.cookiejar.CookieJar.__init__",
+      "aiohttp.cookiejar.CookieJar._delete_cookies",
+      "aiohttp.cookiejar.CookieJar.filter_cookies",
+      "aiohttp.cookiejar.CookieJar.host_only_cookies",
+      "aiohttp.cookiejar.CookieJar.save",
+      "aiohttp.cookiejar.CookieJar.update_cookies",
+      "aiohttp.cookiejar.DummyCookieJar.host_only_cookies"
+     ],
+     "witness": [
+      "__app__.app.main.Config.__init__",
+      "aiohttp.http_websocket.WebSocketError.__str__",
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.cookiejar.CookieJar.__init__"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34513",
+  "ids": [
+   "GHSA-hcc4-c3v8-rx92",
+   "PYSEC-2026-2095"
+  ],
+  "cves": [
+   "CVE-2026-34513"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00457,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-04-01T21:16:59.267Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.connector.TCPConnector.__init__",
+      "aiohttp.connector._DNSCacheTable.__init__",
+      "aiohttp.connector._DNSCacheTable.add",
+      "aiohttp.connector._DNSCacheTable.next_addrs",
+      "aiohttp.connector._DNSCacheTable.remove"
+     ],
+     "witness": [
+      "__app__.app.main.Config.__init__",
+      "aiohttp.http_websocket.WebSocketError.__str__",
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.connector.TCPConnector.__init__"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-47265",
+  "ids": [
+   "GHSA-hg6j-4rv6-33pg",
+   "PYSEC-2026-2105"
+  ],
+  "cves": [
+   "CVE-2026-47265"
+  ],
+  "cvss": 7.5,
+  "epss": 0.0015,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-02T20:16:37.903Z",
+  "fixed": [
+   "3.14.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client.ClientSession._request"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54276",
+  "ids": [
+   "GHSA-hpj7-wq8m-9hgp",
+   "PYSEC-2026-2109"
+  ],
+  "cves": [
+   "CVE-2026-54276"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00307,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2026-06-15T20:09:06Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34993",
+  "ids": [
+   "GHSA-jg22-mg44-37j8",
+   "PYSEC-2026-2104"
+  ],
+  "cves": [
+   "CVE-2026-34993"
+  ],
+  "cvss": 7.3,
+  "epss": 0.00179,
+  "kev": false,
+  "severity_w": 0.73,
+  "published": "2026-06-02T20:16:34.857Z",
+  "fixed": [
+   "3.14.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.cookiejar.CookieJar.load",
+      "aiohttp.cookiejar.CookieJar.save"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request",
+      "aiohttp.cookiejar.CookieJar.load"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69227",
+  "ids": [
+   "GHSA-jj3x-wxrx-4x23",
+   "PYSEC-2026-1107"
+  ],
+  "cves": [
+   "CVE-2025-69227"
+  ],
+  "cvss": 6.6,
+  "epss": 0.00396,
+  "kev": false,
+  "severity_w": 0.6599999999999999,
+  "published": "2026-01-05T23:10:15Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.multipart.BodyPartReader._read_chunk_from_stream",
+      "aiohttp.multipart.BodyPartReader.read_chunk",
+      "aiohttp.web_request.BaseRequest.post"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "aiohttp.web_request.BaseRequest.post",
+      "aiohttp.multipart.BodyPartReader.read_chunk",
+      "aiohttp.multipart.BodyPartReader._read_chunk_from_stream"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34516",
+  "ids": [
+   "GHSA-m5qp-6w8w-w647",
+   "PYSEC-2026-2098"
+  ],
+  "cves": [
+   "CVE-2026-34516"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00457,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-04-01T21:16:59.723Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.multipart.MultipartReader.__init__",
+      "aiohttp.multipart.MultipartReader._get_part_reader",
+      "aiohttp.multipart.MultipartReader._read_headers",
+      "aiohttp.streams.EmptyStreamReader.readline",
+      "aiohttp.streams.StreamReader.readline",
+      "aiohttp.streams.StreamReader.readuntil",
+      "aiohttp.web_protocol.RequestHandler.__init__",
+      "aiohttp.web_request.BaseRequest.multipart"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "aiohttp.web_request.BaseRequest.post",
+      "aiohttp.web_request.BaseRequest.multipart",
+      "aiohttp.multipart.MultipartReader.__init__"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-50269",
+  "ids": [
+   "GHSA-m6qw-4cw2-hm4m",
+   "PYSEC-2026-2106"
+  ],
+  "cves": [
+   "CVE-2026-50269"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00533,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:07:26Z",
+  "fixed": [
+   "3.14.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.21461021528126487,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (app: dyn_class,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.payload.Payload._binary_headers"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-69243",
+  "ids": [
+   "GHSA-mfx4-hv73-q22v",
+   "PYSEC-2026-3546"
+  ],
+  "cves": [
+   "CVE-2026-69243"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00443,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2026-08-03T20:46:10Z",
+  "fixed": [
+   "3.14.2"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HttpParser.__init__",
+      "aiohttp.http_parser.HttpParser.feed_data"
+     ],
+     "witness": [
+      "__app__.app.main.Config.__init__",
+      "aiohttp.http_websocket.WebSocketError.__str__",
+      "aiohttp.http_parser.HttpParser.__init__"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-59881",
+  "ids": [
+   "GHSA-mq44-7p77-q5h7",
+   "PYSEC-2026-3547"
+  ],
+  "cves": [
+   "CVE-2026-59881"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00524,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2026-08-03T20:40:55Z",
+  "fixed": [
+   "3.14.2"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client.ClientSession._ws_connect"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "socketio.redis_manager.RedisManager.initialize",
+      "socketio.zmq_manager.ZmqManager.__init__",
+      "socketio.asyncio_client.AsyncClient.connect",
+      "engineio.asyncio_client.AsyncClient.connect",
+      "engineio.asyncio_client.AsyncClient._connect_websocket",
+      "aiohttp.client.ClientSession.ws_connect",
+      "aiohttp.client.ClientSession._ws_connect"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2025-69225",
+  "ids": [
+   "GHSA-mqqc-3gqh-h2x8",
+   "PYSEC-2026-1109"
+  ],
+  "cves": [
+   "CVE-2025-69225"
+  ],
+  "cvss": 2.7,
+  "epss": 0.00282,
+  "kev": false,
+  "severity_w": 0.27,
+  "published": "2026-01-05T23:09:30Z",
+  "fixed": [
+   "3.13.3"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.21461021528126487,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (app: dyn_class,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_request.BaseRequest.http_range"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34519",
+  "ids": [
+   "GHSA-mwh4-6h8g-pg8w",
+   "PYSEC-2026-2101"
+  ],
+  "cves": [
+   "CVE-2026-34519"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00304,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2026-04-01T21:17:00.170Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.8072878303971307,
+  "exposure_class": "STATICALLY_REACHABLE",
+  "vex": {
+   "state": "exploitable"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "CONFIRMED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_writer._py_serialize_headers",
+      "aiohttp.web_exceptions.HTTPException.__init__",
+      "aiohttp.web_response.StreamResponse._set_status"
+     ],
+     "witness": [
+      "__app__.app.main.add",
+      "aiohttp.web_exceptions.HTTPException.__init__"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-34515",
+  "ids": [
+   "GHSA-p998-jp59-783m",
+   "PYSEC-2026-2097"
+  ],
+  "cves": [
+   "CVE-2026-34515"
+  ],
+  "cvss": 7.5,
+  "epss": 0.0045,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-04-01T21:16:59.570Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.21461021528126487,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (app: dyn_class,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.web_urldispatcher.StaticResource._handle"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "GHSA-pjjw-qhg8-p2p9",
+  "ids": [
+   "GHSA-pjjw-qhg8-p2p9"
+  ],
+  "cves": [],
+  "cvss": null,
+  "epss": 0.0,
+  "kev": false,
+  "severity_w": 0.5,
+  "published": "2023-11-27T23:15:38Z",
+  "fixed": [
+   "3.8.6"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.21461021528126487,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (app: dyn_class,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HttpParser.parse_headers"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-111750",
+  "ids": [
+   "GHSA-pqxq-w44r-73xw"
+  ],
+  "cves": [
+   "CVE-2026-111750"
+  ],
+  "cvss": 6.3,
+  "epss": 0.00382,
+  "kev": false,
+  "severity_w": 0.63,
+  "published": "2026-10-20T19:52:21Z",
+  "fixed": [
+   "3.14.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.http_parser.HttpParser.feed_data"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "aiohttp.web.run_app",
+      "aiohttp.client_ws.ClientWebSocketResponse.close",
+      "aiohttp.http_parser.HttpParser.feed_data"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2023-49081",
+  "ids": [
+   "GHSA-q3qx-c6g2-7pw2",
+   "PYSEC-2023-250"
+  ],
+  "cves": [
+   "CVE-2023-49081"
+  ],
+  "cvss": 7.2,
+  "epss": 0.00882,
+  "kev": false,
+  "severity_w": 0.72,
+  "published": "2023-11-27T23:17:42Z",
+  "fixed": [
+   "3.9.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client_reqrep.ClientRequest.send"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "aiohttp.client.ClientSession.get",
+      "aiohttp.client.ClientSession._request",
+      "aiohttp.client_reqrep.ClientRequest.send"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2023-49082",
+  "ids": [
+   "GHSA-qvrw-v9rv-5rjx",
+   "PYSEC-2023-251"
+  ],
+  "cves": [
+   "CVE-2023-49082"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00948,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2023-11-27T23:17:24Z",
+  "fixed": [
+   "3.9.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client_reqrep.ClientRequest.__init__"
+     ],
+     "witness": [
+      "__app__.app.main.Config.__init__",
+      "aiohttp.http_websocket.WebSocketError.__str__",
+      "aiohttp.client_reqrep.ClientRequest.__init__"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-22815",
+  "ids": [
+   "GHSA-w2fm-2cpv-w7v5",
+   "PYSEC-2026-2094"
+  ],
+  "cves": [
+   "CVE-2026-22815"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00457,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2026-04-01T19:45:17Z",
+  "fixed": [
+   "3.13.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "aiohttp.client.ClientSession.__init__",
+      "aiohttp.client.ClientSession._request",
+      "aiohttp.client_proto.ResponseHandler.set_response_params",
+      "aiohttp.http_exceptions.LineTooLong.__init__",
+      "aiohttp.http_parser.HeadersParser.parse_headers",
+      "aiohttp.http_parser.HttpParser.__init__",
+      "aiohttp.http_parser.HttpParser.feed_data",
+      "aiohttp.http_parser.HttpPayloadParser.__init__",
+      "aiohttp.http_parser.HttpPayloadParser.feed_data",
+      "aiohttp.http_parser.HttpRequestParser.parse_message",
+      "aiohttp.http_parser.HttpResponseParser.parse_message",
+      "aiohttp.web_protocol.RequestHandler.__init__"
+     ],
+     "witness": [
+      "__app__.app.main.Config.__init__",
+      "aiohttp.http_websocket.WebSocketError.__str__",
+      "aiohttp.client.ClientSession.__init__"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "aiohttp",
+  "version": "3.8.4",
+  "advisory": "CVE-2026-54274",
+  "ids": [
+   "GHSA-xcgm-r5h9-7989",
+   "PYSEC-2026-2108"
+  ],
+  "cves": [
+   "CVE-2026-54274"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00539,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-15T20:11:22Z",
+  "fixed": [
+   "3.14.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "brotli",
+  "version": "1.0.9",
+  "advisory": "CVE-2025-6176",
+  "ids": [
+   "GHSA-2qfp-q593-8484",
+   "PYSEC-2026-2401"
+  ],
+  "cves": [
+   "CVE-2025-6176"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00533,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2025-10-31T00:30:35Z",
+  "fixed": [
+   "1.2.0"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "brotli",
+  "version": "1.0.9",
+  "advisory": "CVE-2026-111497",
+  "ids": [
+   "GHSA-9v8h-qqgm-4m35",
+   "PYSEC-2026-4322"
+  ],
+  "cves": [
+   "CVE-2026-111497"
+  ],
+  "cvss": 9.8,
+  "epss": 0.82641,
+  "kev": true,
+  "severity_w": 1.9600000000000002,
+  "published": "2026-10-22T15:32:49Z",
+  "fixed": [
+   "1.2.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "certifi",
+  "version": "2023.5.7",
+  "advisory": "CVE-2024-39689",
+  "ids": [
+   "GHSA-248v-346w-9cwc",
+   "PYSEC-2024-230"
+  ],
+  "cves": [
+   "CVE-2024-39689"
+  ],
+  "cvss": 7.5,
+  "epss": 0.01049,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2024-07-05T19:15:10Z",
+  "fixed": [
+   "2024.7.4"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "module",
+     "symbols": [
+      "certifi.<module>"
+     ],
+     "witness": [
+      "__app__.app.ytdl.<module>",
+      "yt_dlp.<module>",
+      "yt_dlp.utils.<module>",
+      "yt_dlp.dependencies.<module>",
+      "certifi.<module>"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "certifi",
+  "version": "2023.5.7",
+  "advisory": "GHSA-6q48-6c7w-9gw2",
+  "ids": [
+   "GHSA-6q48-6c7w-9gw2",
+   "PYSEC-2026-4320"
+  ],
+  "cves": [],
+  "cvss": 9.1,
+  "epss": 0.0,
+  "kev": false,
+  "severity_w": 0.9099999999999999,
+  "published": "2026-10-20T19:35:05Z",
+  "fixed": [
+   "2026.10.18"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "certifi",
+  "version": "2023.5.7",
+  "advisory": "CVE-2023-37920",
+  "ids": [
+   "GHSA-xqr8-7jwr-rhp7",
+   "PYSEC-2023-135"
+  ],
+  "cves": [
+   "CVE-2023-37920"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00568,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2023-07-25T14:43:53Z",
+  "fixed": [
+   "2023.7.22"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "module",
+     "symbols": [
+      "certifi.<module>"
+     ],
+     "witness": [
+      "__app__.app.ytdl.<module>",
+      "yt_dlp.<module>",
+      "yt_dlp.utils.<module>",
+      "yt_dlp.dependencies.<module>",
+      "certifi.<module>"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "idna",
+  "version": "3.4",
+  "advisory": "CVE-2026-45409",
+  "ids": [
+   "GHSA-65pc-fj4g-8rjx",
+   "PYSEC-2026-215"
+  ],
+  "cves": [
+   "CVE-2026-45409"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00408,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2026-05-19T14:34:32Z",
+  "fixed": [
+   "3.15"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "idna",
+  "version": "3.4",
+  "advisory": "CVE-2024-3651",
+  "ids": [
+   "GHSA-jjg7-2v4v-x38h",
+   "PYSEC-2024-60"
+  ],
+  "cves": [
+   "CVE-2024-3651"
+  ],
+  "cvss": 7.5,
+  "epss": 0.01386,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2024-04-11T21:32:40Z",
+  "fixed": [
+   "3.7"
+  ],
+  "depth": 3,
+  "direct": false,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 3
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "module",
+     "symbols": [
+      "idna.package_data.<module>"
+     ],
+     "witness": [
+      "__app__.app.main.<module>",
+      "aiohttp.<module>",
+      "aiohttp.client.<module>",
+      "yarl.<module>",
+      "yarl._url.<module>",
+      "idna.<module>",
+      "idna.package_data.<module>"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "pycryptodomex",
+  "version": "3.18.0",
+  "advisory": "CVE-2023-52323",
+  "ids": [
+   "GHSA-j225-cvw7-qrx7",
+   "PYSEC-2024-3"
+  ],
+  "cves": [
+   "CVE-2023-52323"
+  ],
+  "cvss": 7.1,
+  "epss": 0.00618,
+  "kev": false,
+  "severity_w": 0.71,
+  "published": "2024-01-05T04:15:00Z",
+  "fixed": [
+   "3.19.1"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "python-engineio",
+  "version": "4.4.1",
+  "advisory": "CVE-2026-48802",
+  "ids": [
+   "GHSA-cgwc-pv48-fhj5",
+   "PYSEC-2026-3032"
+  ],
+  "cves": [
+   "CVE-2026-48802"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00575,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-26T20:51:37Z",
+  "fixed": [
+   "4.13.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "python-engineio",
+  "version": "4.4.1",
+  "advisory": "CVE-2026-48809",
+  "ids": [
+   "GHSA-m9gh-vj53-gvh9",
+   "PYSEC-2026-3033"
+  ],
+  "cves": [
+   "CVE-2026-48809"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00488,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-26T20:48:18Z",
+  "fixed": [
+   "4.13.2"
+  ],
+  "depth": 2,
+  "direct": false,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 2
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "python-socketio",
+  "version": "5.8.0",
+  "advisory": "CVE-2026-48804",
+  "ids": [
+   "GHSA-5w7q-77mv-v69f",
+   "PYSEC-2026-3042"
+  ],
+  "cves": [
+   "CVE-2026-48804"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00488,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-26T20:51:58Z",
+  "fixed": [
+   "5.16.2"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "python-socketio",
+  "version": "5.8.0",
+  "advisory": "CVE-2025-61765",
+  "ids": [
+   "GHSA-g8c6-8fjj-2r4m",
+   "PYSEC-2026-1854"
+  ],
+  "cves": [
+   "CVE-2025-61765"
+  ],
+  "cvss": 6.4,
+  "epss": 0.00482,
+  "kev": false,
+  "severity_w": 0.64,
+  "published": "2025-10-07T12:55:22Z",
+  "fixed": [
+   "5.14.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "socketio.kafka_manager.KafkaManager._listen",
+      "socketio.kafka_manager.KafkaManager._publish",
+      "socketio.kombu_manager.KombuManager._publish",
+      "socketio.pubsub_manager.PubSubManager._thread",
+      "socketio.redis_manager.RedisManager._publish",
+      "socketio.zmq_manager.ZmqManager._listen",
+      "socketio.zmq_manager.ZmqManager._publish"
+     ],
+     "witness": [
+      "__app__.app.main.Notifier.updated",
+      "socketio.pubsub_manager.PubSubManager.emit",
+      "socketio.kafka_manager.KafkaManager._publish"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "yt-dlp",
+  "version": "2023.3.4",
+  "advisory": "CVE-2023-46121",
+  "ids": [
+   "GHSA-3ch3-jhc6-5r8x",
+   "PYSEC-2026-2063"
+  ],
+  "cves": [
+   "CVE-2023-46121"
+  ],
+  "cvss": 5.0,
+  "epss": 0.00321,
+  "kev": false,
+  "severity_w": 0.5,
+  "published": "2023-11-15T14:48:24Z",
+  "fixed": [
+   "2023.11.14"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "yt_dlp.extractor.cybrary.CybraryIE._real_extract",
+      "yt_dlp.extractor.duboku.DubokuIE._real_extract",
+      "yt_dlp.extractor.embedly.EmbedlyIE._real_extract",
+      "yt_dlp.extractor.generic.GenericIE._extract_embeds",
+      "yt_dlp.extractor.generic.GenericIE._real_extract",
+      "yt_dlp.extractor.slideslive.SlidesLiveIE._real_extract",
+      "yt_dlp.extractor.storyfire.StoryFireBaseIE._parse_video",
+      "yt_dlp.extractor.vimeo.VimeoBaseInfoExtractor._smuggle_referrer",
+      "yt_dlp.extractor.vimeo.VimeoBaseInfoExtractor._unsmuggle_headers"
+     ],
+     "witness": [
+      "__app__.app.ytdl.DownloadQueue.__extract_info",
+      "yt_dlp.YoutubeDL.YoutubeDL.extract_info",
+      "yt_dlp.YoutubeDL.YoutubeDL.__extract_info",
+      "yt_dlp.extractor.common.InfoExtractor.extract",
+      "yt_dlp.extractor.aeonco.AeonCoIE._real_extract",
+      "yt_dlp.extractor.vimeo.VimeoBaseInfoExtractor._smuggle_referrer"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "yt-dlp",
+  "version": "2023.3.4",
+  "advisory": "CVE-2023-40581",
+  "ids": [
+   "GHSA-42h4-v29r-42qg",
+   "PYSEC-2026-2064"
+  ],
+  "cves": [
+   "CVE-2023-40581"
+  ],
+  "cvss": 8.3,
+  "epss": 0.0134,
+  "kev": false,
+  "severity_w": 0.8300000000000001,
+  "published": "2023-09-25T17:33:40Z",
+  "fixed": [
+   "2023.09.24"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "yt_dlp.postprocessor.exec.ExecPP.run"
+     ],
+     "witness": [
+      "__app__.app.ytdl.DownloadQueue.__extract_info",
+      "yt_dlp.YoutubeDL.YoutubeDL.extract_info",
+      "yt_dlp.YoutubeDL.YoutubeDL.__extract_info",
+      "yt_dlp.YoutubeDL.YoutubeDL.process_ie_result",
+      "yt_dlp.YoutubeDL.YoutubeDL.__process_playlist",
+      "yt_dlp.YoutubeDL.YoutubeDL.run_all_pps",
+      "yt_dlp.YoutubeDL.YoutubeDL.run_pp",
+      "yt_dlp.postprocessor.exec.ExecPP.run"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "yt-dlp",
+  "version": "2023.3.4",
+  "advisory": "GHSA-69qj-pvh9-c5wg",
+  "ids": [
+   "GHSA-69qj-pvh9-c5wg"
+  ],
+  "cves": [],
+  "cvss": 7.5,
+  "epss": 0.0,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-06-16T22:29:14Z",
+  "fixed": [
+   "2026.6.9"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "yt_dlp.YoutubeDL.YoutubeDL.__init__",
+      "yt_dlp.YoutubeDL.YoutubeDL.prepare_outtmpl",
+      "yt_dlp.YoutubeDL.YoutubeDL.prepare_outtmpl.create_key",
+      "yt_dlp.main",
+      "yt_dlp.options.create_parser",
+      "yt_dlp.postprocessor.exec.ExecPP.__init__"
+     ],
+     "witness": [
+      "__app__.app.ytdl.DownloadQueue.__init__",
+      "yt_dlp.utils.YoutubeDLCookieJar.load",
+      "yt_dlp.YoutubeDL.YoutubeDL.__init__"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "yt-dlp",
+  "version": "2023.3.4",
+  "advisory": "CVE-2026-55404",
+  "ids": [
+   "GHSA-6v4j-43gg-vj32",
+   "PYSEC-2026-3622"
+  ],
+  "cves": [
+   "CVE-2026-55404"
+  ],
+  "cvss": 7.5,
+  "epss": 0.0064,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2026-07-24T20:35:25Z",
+  "fixed": [
+   "2026.7.4"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "yt_dlp.YoutubeDL.YoutubeDL.prepare_outtmpl",
+      "yt_dlp.YoutubeDL.YoutubeDL.prepare_outtmpl.create_key",
+      "yt_dlp.YoutubeDL.YoutubeDL.prepare_outtmpl.filename_sanitizer",
+      "yt_dlp.YoutubeDL.YoutubeDL.process_info._write_link_file",
+      "yt_dlp.options.create_parser"
+     ],
+     "witness": [
+      "__app__.app.ytdl.DownloadQueue.__extract_info",
+      "yt_dlp.YoutubeDL.YoutubeDL.extract_info",
+      "yt_dlp.YoutubeDL.YoutubeDL.__extract_info",
+      "yt_dlp.YoutubeDL.YoutubeDL.process_ie_result",
+      "yt_dlp.YoutubeDL.YoutubeDL.prepare_filename",
+      "yt_dlp.YoutubeDL.YoutubeDL._prepare_filename",
+      "yt_dlp.YoutubeDL.YoutubeDL.evaluate_outtmpl",
+      "yt_dlp.YoutubeDL.YoutubeDL.prepare_outtmpl"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "yt-dlp",
+  "version": "2023.3.4",
+  "advisory": "CVE-2024-38519",
+  "ids": [
+   "GHSA-79w7-vh3h-8g4j",
+   "PYSEC-2026-2065"
+  ],
+  "cves": [
+   "CVE-2024-38519"
+  ],
+  "cvss": 7.8,
+  "epss": 0.00325,
+  "kev": false,
+  "severity_w": 0.78,
+  "published": "2024-07-02T15:58:35Z",
+  "fixed": [
+   "2024.07.01"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "yt_dlp.YoutubeDL.YoutubeDL._prepare_filename",
+      "yt_dlp.YoutubeDL.YoutubeDL.process_info",
+      "yt_dlp.options.create_parser",
+      "yt_dlp.validate_options"
+     ],
+     "witness": [
+      "__app__.app.ytdl.DownloadQueue.__extract_info",
+      "yt_dlp.YoutubeDL.YoutubeDL.extract_info",
+      "yt_dlp.YoutubeDL.YoutubeDL.__extract_info",
+      "yt_dlp.YoutubeDL.YoutubeDL.process_ie_result",
+      "yt_dlp.YoutubeDL.YoutubeDL.prepare_filename",
+      "yt_dlp.YoutubeDL.YoutubeDL._prepare_filename"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "yt-dlp",
+  "version": "2023.3.4",
+  "advisory": "CVE-2026-50023",
+  "ids": [
+   "GHSA-c6mh-fpjc-4pr3",
+   "PYSEC-2026-3430"
+  ],
+  "cves": [
+   "CVE-2026-50023"
+  ],
+  "cvss": 8.3,
+  "epss": 0.00665,
+  "kev": false,
+  "severity_w": 0.8300000000000001,
+  "published": "2026-06-16T20:59:42Z",
+  "fixed": [
+   "2026.6.9"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.21461021528126487,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (app: dyn_class,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "yt_dlp.YoutubeDL.YoutubeDL.process_info._write_link_file"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "yt-dlp",
+  "version": "2023.3.4",
+  "advisory": "CVE-2024-22423",
+  "ids": [
+   "GHSA-hjq6-52gw-2g7p",
+   "PYSEC-2026-2066"
+  ],
+  "cves": [
+   "CVE-2024-22423"
+  ],
+  "cvss": 8.3,
+  "epss": 0.0143,
+  "kev": false,
+  "severity_w": 0.8300000000000001,
+  "published": "2024-04-10T17:07:09Z",
+  "fixed": [
+   "2024.04.09"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "yt_dlp.YoutubeDL.YoutubeDL.prepare_outtmpl.create_key",
+      "yt_dlp.YoutubeDL.YoutubeDL.warn_if_short_id",
+      "yt_dlp.postprocessor.exec.ExecPP.run"
+     ],
+     "witness": [
+      "__app__.app.ytdl.DownloadQueue.__extract_info",
+      "yt_dlp.YoutubeDL.YoutubeDL.extract_info",
+      "yt_dlp.YoutubeDL.YoutubeDL.__extract_info",
+      "yt_dlp.YoutubeDL.YoutubeDL.process_ie_result",
+      "yt_dlp.YoutubeDL.YoutubeDL.__process_playlist",
+      "yt_dlp.YoutubeDL.YoutubeDL.run_all_pps",
+      "yt_dlp.YoutubeDL.YoutubeDL.run_pp",
+      "yt_dlp.postprocessor.exec.ExecPP.run"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "yt-dlp",
+  "version": "2023.3.4",
+  "advisory": "CVE-2023-35934",
+  "ids": [
+   "GHSA-v8mc-9377-rwjj",
+   "PYSEC-2026-2067"
+  ],
+  "cves": [
+   "CVE-2023-35934"
+  ],
+  "cvss": 6.1,
+  "epss": 0.01047,
+  "kev": false,
+  "severity_w": 0.61,
+  "published": "2023-07-06T19:47:40Z",
+  "fixed": [
+   "2023.7.06"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "path requires over-approximated edges",
+     "granularity": "function",
+     "symbols": [
+      "yt_dlp.YoutubeDL.YoutubeDL.__extract_info",
+      "yt_dlp.YoutubeDL.YoutubeDL.__init__",
+      "yt_dlp.YoutubeDL.YoutubeDL.__init__.check_deprecated",
+      "yt_dlp.YoutubeDL.YoutubeDL._calc_headers",
+      "yt_dlp.YoutubeDL.YoutubeDL.download_with_info_file",
+      "yt_dlp.cookies.YoutubeDLCookieJar.clear",
+      "yt_dlp.downloader.common.FileDownloader.download",
+      "yt_dlp.downloader.external.Aria2cFD._make_cmd",
+      "yt_dlp.downloader.external.AxelFD._make_cmd",
+      "yt_dlp.downloader.external.CurlFD._make_cmd",
+      "yt_dlp.downloader.external.ExternalFD._call_downloader",
+      "yt_dlp.downloader.external.ExternalFD.real_download",
+      "yt_dlp.downloader.external.FFmpegFD._call_downloader",
+      "yt_dlp.downloader.external.HttpieFD._make_cmd",
+      "yt_dlp.downloader.external.WgetFD._make_cmd"
+     ],
+     "witness": [
+      "__app__.app.ytdl.DownloadQueue.__extract_info",
+      "yt_dlp.YoutubeDL.YoutubeDL.extract_info",
+      "yt_dlp.YoutubeDL.YoutubeDL.__extract_info"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "yt-dlp",
+  "version": "2023.3.4",
+  "advisory": "CVE-2026-50574",
+  "ids": [
+   "GHSA-vx4q-3cr2-7cg2",
+   "PYSEC-2026-3433"
+  ],
+  "cves": [
+   "CVE-2026-50574"
+  ],
+  "cvss": 8.3,
+  "epss": 0.00465,
+  "kev": false,
+  "severity_w": 0.8300000000000001,
+  "published": "2026-06-16T21:13:47Z",
+  "fixed": [
+   "2026.6.9"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.21461021528126487,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (app: dyn_class,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "yt_dlp.downloader.external.Aria2cFD._call_downloader",
+      "yt_dlp.downloader.external.Aria2cFD._call_process",
+      "yt_dlp.downloader.external.Aria2cFD._call_process.get_stat",
+      "yt_dlp.downloader.external.Aria2cFD._make_cmd",
+      "yt_dlp.downloader.external.Aria2cFD.aria2c_rpc",
+      "yt_dlp.downloader.external.Aria2cFD.supports_manifest"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "alexta69__metube@5ea5a105ecdecb7dd64e79c3be6c70971499d0f0",
+  "package": "pylint",
+  "version": "2.17.4",
+  "advisory": "CVE-2026-114608",
+  "ids": [
+   "GHSA-22qq-2fwx-7p67"
+  ],
+  "cves": [
+   "CVE-2026-114608"
+  ],
+  "cvss": 5.4,
+  "epss": 0.00115,
+  "kev": false,
+  "severity_w": 0.54,
+  "published": "2026-10-27T14:46:51Z",
+  "fixed": [
+   "4.0.9"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.006445961995249406,
+  "exposure_class": "DEV_ONLY",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "pipfile"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "dev",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (app: dyn_class,import_module,namespace,plugin,setattr)",
+     "granularity": "function",
+     "symbols": [
+      "pylint.lint.caching.load_results",
+      "pylint.lint.caching.save_results"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "REFUTED",
+      "reachable": "REFUTED"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ }
+]

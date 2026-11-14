@@ -1,10 +1,10 @@
 {
  "bomFormat": "CycloneDX",
  "specVersion": "1.6",
- "serialNumber": "urn:uuid:a61205f2-e09a-4500-97d5-3333ca511e78",
+ "serialNumber": "urn:uuid:e834fe53-1704-455d-b8f7-d1b20b28f2ba",
  "version": 1,
  "metadata": {
-  "timestamp": "2026-11-12T10:28:57+00:00",
+  "timestamp": "2026-11-13T16:18:36+00:00",
   "tools": {
    "components": [
     {
@@ -394,19 +394,19 @@
   {
    "ref": "app",
    "dependsOn": [
-    "pkg:pypi/requests@2.31.0",
-    "pkg:pypi/python-ldap@3.4.3",
-    "pkg:pypi/croniter@2.0.1",
-    "pkg:pypi/ipython@8.17.2",
     "pkg:pypi/w3lib@2.1.2",
-    "pkg:pypi/yt-dlp@2023.10.13",
-    "pkg:pypi/django-auth-ldap@4.1.0",
-    "pkg:pypi/mypy-extensions@1.0.0",
-    "pkg:pypi/dateparser@1.1.8",
-    "pkg:pypi/python-crontab@3.0.0",
-    "pkg:pypi/django-extensions@3.1.5",
+    "pkg:pypi/python-ldap@3.4.3",
     "pkg:pypi/sonic-client@1.0.0",
-    "pkg:pypi/django@3.1.14"
+    "pkg:pypi/dateparser@1.1.8",
+    "pkg:pypi/ipython@8.17.2",
+    "pkg:pypi/mypy-extensions@1.0.0",
+    "pkg:pypi/django-extensions@3.1.5",
+    "pkg:pypi/python-crontab@3.0.0",
+    "pkg:pypi/yt-dlp@2023.10.13",
+    "pkg:pypi/requests@2.31.0",
+    "pkg:pypi/django@3.1.14",
+    "pkg:pypi/django-auth-ldap@4.1.0",
+    "pkg:pypi/croniter@2.0.1"
    ]
   },
   {
@@ -1151,7 +1151,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -1679,7 +1679,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -1727,7 +1727,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -1775,7 +1775,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -1823,7 +1823,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -1871,7 +1871,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -1919,7 +1919,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -1967,7 +1967,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -2015,7 +2015,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -2111,7 +2111,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -2159,7 +2159,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -2207,7 +2207,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -2399,7 +2399,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -2495,7 +2495,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -2543,7 +2543,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -2591,7 +2591,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -2639,7 +2639,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -2687,7 +2687,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -3119,7 +3119,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -3162,7 +3162,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -3210,7 +3210,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -3258,7 +3258,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -3306,7 +3306,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -3354,7 +3354,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -3402,7 +3402,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -3450,7 +3450,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -3498,7 +3498,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -3546,7 +3546,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {

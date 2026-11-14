@@ -21,7 +21,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -71,7 +71,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (package: dyn_class,eval,import_module,namespace,setattr)",
      "granularity": "function",
      "symbols": [
       "anyio.to_process.process_worker"
@@ -170,18 +170,18 @@
       "anyio.streams.tls.TLSStream.wrap"
      ],
      "witness": [
-      "__app__.app.api.v1.users.get_users",
-      "__app__.app.tests.conftest.connection",
-      "httpx._transports.default.HTTPTransport.__exit__",
-      "httpx._transports.default.map_httpcore_exceptions",
+      "__app__.app.models.base.<module>",
+      "__app__.app.tests.conftest.session",
+      "httpx._client.Client.__enter__",
+      "httpx._models.URL.__eq__",
       "httpx._models.URL.__init__",
-      "httpx._client.AsyncClient.get",
-      "httpx._client.AsyncClient.request",
-      "httpx._client.AsyncClient.send",
-      "httpx._client.AsyncClient._send_handling_auth",
-      "httpx._client.AsyncClient._send_handling_redirects",
-      "httpx._client.AsyncClient._send_single_request",
-      "httpx._transports.default.AsyncHTTPTransport.handle_async_request"
+      "httpx._client.Client.get",
+      "httpx._client.Client.request",
+      "httpx._client.Client.send",
+      "httpx._client.Client._send_handling_auth",
+      "httpx._client.Client._send_handling_redirects",
+      "httpx._client.Client._send_single_request",
+      "httpx._transports.default.HTTPTransport.handle_request"
      ],
      "missing": false
     },
@@ -277,10 +277,10 @@
       "ecdsa.der.remove_octet_string"
      ],
      "witness": [
-      "__app__.app.core.security.create_access_token",
-      "jose.jwt.encode",
+      "__app__.app.core.security.is_valid_password",
+      "jose.backends.cryptography_backend.CryptographyHMACKey.verify",
       "jose.backends.ecdsa_backend.ECDSAECKey.__init__",
-      "ecdsa.keys.VerifyingKey.from_pem",
+      "ecdsa.keys.SigningKey.from_pem",
       "ecdsa.keys.SigningKey.from_der",
       "ecdsa.der.remove_constructed"
      ],
@@ -550,11 +550,11 @@
       "h11._readers.ChunkedReader.__init__"
      ],
      "witness": [
-      "__app__.app.api.v1.users.get_users",
-      "__app__.app.tests.conftest.connection",
-      "httpx._transports.default.HTTPTransport.__exit__",
-      "httpx._transports.default.map_httpcore_exceptions",
-      "httpcore._sync.http11.HTTP11ConnectionByteStream.__iter__",
+      "__app__.app.models.base.<module>",
+      "__app__.app.tests.conftest.session",
+      "httpx._client.Client.__enter__",
+      "httpx._transports.default.ResponseStream.__iter__",
+      "httpcore._sync.http2.HTTP2ConnectionByteStream.__iter__",
       "httpcore._sync.http11.HTTP11Connection._receive_response_body",
       "httpcore._sync.http11.HTTP11Connection._receive_event",
       "h11._connection.Connection.next_event",
@@ -740,10 +740,10 @@
       "idna.package_data.<module>"
      ],
      "witness": [
-      "__app__.app.api.v1.users.get_users",
-      "__app__.app.tests.conftest.connection",
-      "httpx._transports.default.HTTPTransport.__exit__",
-      "httpx._transports.default.map_httpcore_exceptions",
+      "__app__.app.models.base.<module>",
+      "__app__.app.tests.conftest.session",
+      "httpx._client.Client.__enter__",
+      "httpx._utils.URLPattern.__eq__",
       "httpx._utils.URLPattern.__init__",
       "httpx._models.<module>",
       "idna.<module>",
@@ -1149,7 +1149,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -1199,7 +1199,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (package: dyn_class,eval,import_module,namespace,setattr)",
      "granularity": "function",
      "symbols": [
       "pyasn1.codec.ber.decoder.ObjectIdentifierPayloadDecoder.valueDecoder",
@@ -1485,10 +1485,10 @@
       "pyasn1.type.univ.Real.__normalizeBase10"
      ],
      "witness": [
-      "__app__.app.core.security.create_access_token",
-      "jose.jwt.encode",
-      "rsa.key.PrivateKey.__init__",
-      "pyasn1.type.univ.Real.__int__",
+      "__app__.app.core.security.is_valid_password",
+      "jose.backends.cryptography_backend.CryptographyHMACKey.verify",
+      "jose.backends.rsa_backend.RSAKey.__init__",
+      "pyasn1.type.univ.Real.__eq__",
       "pyasn1.type.univ.Real.__float__"
      ],
      "missing": false
@@ -1872,10 +1872,10 @@
       "pydantic.networks.validate_email"
      ],
      "witness": [
-      "__app__.app.schemas.user.<module>",
+      "__app__.app.models.base.<module>",
       "pydantic.main.BaseModel.__init__",
-      "pydantic.main.validate_model",
-      "pydantic.networks.NameEmail.validate",
+      "pydantic.dataclasses.setattr_validate_assignment",
+      "pydantic.networks.EmailStr.validate",
       "pydantic.networks.validate_email"
      ],
      "missing": false
@@ -1914,7 +1914,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -1964,7 +1964,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (importer: dyn_class,eval,import_module,namespace,setattr)",
      "granularity": "function",
      "symbols": [
       "dotenv.cli.set_value",
@@ -3074,7 +3074,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -3124,7 +3124,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (importer: dyn_class,eval,import_module,namespace,setattr)",
      "granularity": "function",
      "symbols": [
       "starlette.datastructures.UploadFile.content_type",
@@ -3167,7 +3167,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -3217,7 +3217,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (importer: dyn_class,eval,import_module,namespace,setattr)",
      "granularity": "function",
      "symbols": [
       "starlette.formparsers.MultiPartParser.__init__",
@@ -3414,7 +3414,7 @@
       "starlette.datastructures.URL.__init__"
      ],
      "witness": [
-      "__app__.app.api.health.<module>",
+      "__app__.app.api.<module>",
       "starlette.routing.Router.__call__",
       "starlette.datastructures.URL.__init__"
      ],
@@ -3454,7 +3454,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -3504,7 +3504,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (importer: dyn_class,eval,import_module,namespace,setattr)",
      "granularity": "function",
      "symbols": [
       "starlette.formparsers.MultiPartParser.on_part_data",
@@ -3635,7 +3635,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -3685,7 +3685,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (importer: dyn_class,eval,import_module,namespace,setattr)",
      "granularity": "function",
      "symbols": [
       "starlette.staticfiles.StaticFiles.lookup_path"
@@ -3727,7 +3727,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -3777,7 +3777,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (importer: dyn_class,eval,import_module,namespace,setattr)",
      "granularity": "function",
      "symbols": [
       "starlette.staticfiles.StaticFiles.lookup_path"
@@ -3907,7 +3907,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -3957,7 +3957,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (importer: dyn_class,eval,import_module,namespace,setattr)",
      "granularity": "function",
      "symbols": [
       "black.cache.Cache.read",
@@ -4091,7 +4091,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.15470308788598575,
+  "p_exposed": 0.12891923990498813,
   "exposure_class": "INSTALLED_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -4141,7 +4141,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (importer: dyn_class,eval,import_module,namespace,setattr)",
      "granularity": "function",
      "symbols": [
       "black.strings.lines_with_leading_tabs_expanded"
@@ -4326,10 +4326,10 @@
       "certifi.<module>"
      ],
      "witness": [
-      "__app__.app.api.v1.users.get_users",
-      "__app__.app.tests.conftest.connection",
-      "httpx._transports.default.HTTPTransport.__exit__",
-      "httpx._transports.default.map_httpcore_exceptions",
+      "__app__.app.models.base.<module>",
+      "__app__.app.tests.conftest.session",
+      "httpx._client.Client.__enter__",
+      "httpx._utils.URLPattern.__eq__",
       "httpx._utils.URLPattern.__init__",
       "httpx.<module>",
       "httpx._config.<module>",
@@ -4428,10 +4428,10 @@
       "certifi.<module>"
      ],
      "witness": [
-      "__app__.app.api.v1.users.get_users",
-      "__app__.app.tests.conftest.connection",
-      "httpx._transports.default.HTTPTransport.__exit__",
-      "httpx._transports.default.map_httpcore_exceptions",
+      "__app__.app.models.base.<module>",
+      "__app__.app.tests.conftest.session",
+      "httpx._client.Client.__enter__",
+      "httpx._utils.URLPattern.__eq__",
       "httpx._utils.URLPattern.__init__",
       "httpx.<module>",
       "httpx._config.<module>",
@@ -4615,10 +4615,10 @@
       "certifi.<module>"
      ],
      "witness": [
-      "__app__.app.api.v1.users.get_users",
-      "__app__.app.tests.conftest.connection",
-      "httpx._transports.default.HTTPTransport.__exit__",
-      "httpx._transports.default.map_httpcore_exceptions",
+      "__app__.app.models.base.<module>",
+      "__app__.app.tests.conftest.session",
+      "httpx._client.Client.__enter__",
+      "httpx._utils.URLPattern.__eq__",
       "httpx._utils.URLPattern.__init__",
       "httpx.<module>",
       "httpx._config.<module>",
@@ -4805,8 +4805,8 @@
       "_pytest.tmpdir.TempPathFactory.getbasetemp"
      ],
      "witness": [
-      "__app__.app.api.v1.users.get_users",
-      "__app__.app.tests.conftest.connection",
+      "__app__.app.models.base.<module>",
+      "__app__.app.tests.conftest.session",
       "_pytest.python_api.RaisesContext.__exit__",
       "_pytest.pytester.Pytester.__init__",
       "_pytest.tmpdir.TempPathFactory.mktemp",

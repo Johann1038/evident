@@ -169,8 +169,8 @@
       "django.core.handlers.asgi.ASGIRequest.__init__"
      ],
      "witness": [
-      "__app__.cases.views.CaseDetailView.post",
-      "django.contrib.gis.utils.layermapping.LayerMapping.save",
+      "__app__.opportunity.urls.<module>",
+      "django.db.models.base.Model.__init__",
       "django.core.handlers.asgi.ASGIRequest.__init__"
      ],
      "missing": false
@@ -650,7 +650,7 @@
       "django.db.models.sql.query.Query.add_filtered_relation"
      ],
      "witness": [
-      "__app__.teams.models.Teams.get_users",
+      "__app__.accounts.models.AccountEmailLog.__str__",
       "django.db.backends.ddl_references.Expressions.__str__",
       "django.db.models.sql.compiler.SQLCompiler.compile",
       "django.db.backends.mysql.compiler.SQLUpdateCompiler.as_sql",
@@ -751,7 +751,7 @@
       "django.db.models.sql.query.Query.add_filtered_relation"
      ],
      "witness": [
-      "__app__.common.models.Document.get_team_users",
+      "__app__.invoices.api_views.InvoiceDetailView.put",
       "django.db.models.query.QuerySet.values_list",
       "django.db.models.query.QuerySet._values",
       "django.db.models.query.QuerySet.annotate",
@@ -1330,9 +1330,9 @@
       "django.utils.html.strip_tags"
      ],
      "witness": [
-      "__app__.cases.views.CaseDetailView.post",
-      "django.db.models.base.Model.save",
-      "django.db.models.base.Model._prepare_related_fields_for_save",
+      "__app__.accounts.models.AccountEmailLog.__str__",
+      "django.contrib.auth.base_user.AbstractBaseUser.__str__",
+      "django.contrib.auth.base_user.AbstractBaseUser.get_username",
       "django.db.models.base.Model.full_clean",
       "wagtail.models.WorkflowState.clean",
       "wagtail.rich_text.RichTextMaxLengthValidator.clean",
@@ -1803,7 +1803,7 @@
       "django.core.files.utils.validate_file_name"
      ],
      "witness": [
-      "__app__.cases.views.CaseDetailView.post",
+      "__app__.common.models.APISettings.save",
       "django.core.files.storage.base.Storage.save"
      ],
      "missing": false
@@ -1899,8 +1899,8 @@
       "django.contrib.gis.gdal.raster.source.GDALRaster.__init__"
      ],
      "witness": [
-      "__app__.cases.views.CaseDetailView.post",
-      "django.contrib.gis.utils.layermapping.LayerMapping.save",
+      "__app__.opportunity.urls.<module>",
+      "django.db.models.base.Model.__init__",
       "django.contrib.gis.gdal.raster.source.GDALRaster.__init__"
      ],
      "missing": false
@@ -1940,7 +1940,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -1990,7 +1990,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (package: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "django.utils.translation.trans_real.get_supported_language_variant",
@@ -2091,7 +2091,7 @@
       "django.db.models.query_utils.Q.__init__"
      ],
      "witness": [
-      "__app__.common.views.ApiHomeView.get",
+      "__app__.invoices.forms.InvoiceForm.__init__",
       "django.db.models.query_utils.Q.__init__"
      ],
      "missing": false
@@ -2188,7 +2188,7 @@
       "django.db.models.sql.query.Query.check_alias"
      ],
      "witness": [
-      "__app__.leads.views.LeadDetailView.put",
+      "__app__.invoices.api_views.InvoiceDetailView.put",
       "django.db.models.sql.query.Query.exists",
       "django.db.models.sql.query.Query.add_annotation",
       "django.db.models.sql.query.Query.check_alias"
@@ -2288,8 +2288,8 @@
       "django.http.response.HttpResponseBase.set_signed_cookie"
      ],
      "witness": [
-      "__app__.cases.views.CaseDetailView.post",
-      "django.contrib.gis.utils.layermapping.LayerMapping.save",
+      "__app__.opportunity.urls.<module>",
+      "django.db.models.base.Model.__init__",
       "django.contrib.messages.storage.cookie.CookieStorage.__init__",
       "django.core.signing.get_cookie_signer"
      ],
@@ -2487,7 +2487,7 @@
       "django.db.models.sql.query.Query.check_alias"
      ],
      "witness": [
-      "__app__.leads.views.LeadDetailView.put",
+      "__app__.invoices.api_views.InvoiceDetailView.put",
       "django.db.models.sql.query.Query.exists",
       "django.db.models.sql.query.Query.add_annotation",
       "django.db.models.sql.query.Query.check_alias"
@@ -2630,7 +2630,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -2680,7 +2680,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (package: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "django.template.defaultfilters.floatformat"
@@ -3140,7 +3140,7 @@
       "django.contrib.gis.db.backends.postgis.operations.PostGISOperator.check_raster"
      ],
      "witness": [
-      "__app__.teams.models.Teams.get_users",
+      "__app__.accounts.models.AccountEmailLog.__str__",
       "django.db.backends.ddl_references.Expressions.__str__",
       "django.db.models.sql.compiler.SQLCompiler.compile",
       "django.contrib.gis.db.backends.postgis.operations.PostGISOperator.as_sql",
@@ -3184,7 +3184,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -3234,7 +3234,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (package: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "django.utils.text.wrap",
@@ -3334,7 +3334,7 @@
       "django.db.models.sql.query.Query.set_values"
      ],
      "witness": [
-      "__app__.common.models.Document.get_team_users",
+      "__app__.invoices.api_views.InvoiceDetailView.put",
       "django.db.models.query.QuerySet.values_list",
       "django.db.models.query.QuerySet._values",
       "django.db.models.sql.query.Query.set_values"
@@ -3542,7 +3542,7 @@
       "django.contrib.gis.geos.prototypes.io._WKBReader.limit_hex"
      ],
      "witness": [
-      "__app__.teams.models.Teams.get_users",
+      "__app__.accounts.models.AccountEmailLog.__str__",
       "django.db.backends.ddl_references.Expressions.__str__",
       "django.db.models.sql.compiler.SQLCompiler.compile",
       "django.contrib.gis.db.models.aggregates.GeoAggregate.as_sql",
@@ -3643,9 +3643,9 @@
       "django.utils.archive.BaseArchive.target_filename"
      ],
      "witness": [
-      "__app__.cases.views.CaseDetailView.post",
-      "django.db.models.base.Model.save",
-      "django.db.models.base.Model._prepare_related_fields_for_save",
+      "__app__.accounts.models.AccountEmailLog.__str__",
+      "django.contrib.auth.base_user.AbstractBaseUser.__str__",
+      "django.contrib.auth.base_user.AbstractBaseUser.get_username",
       "django.db.models.base.Model.full_clean",
       "wagtail.models.WorkflowState.clean",
       "wagtail.whitelist.Whitelister.clean",
@@ -3753,8 +3753,8 @@
       "django.utils.ipv6.is_valid_ipv6_address"
      ],
      "witness": [
-      "__app__.cases.serializer.<module>",
-      "rest_framework.serializers.<module>",
+      "__app__.cms.models.<module>",
+      "wagtail.fields.<module>",
       "django.db.models.fields.<module>",
       "django.core.validators.URLValidator.__call__",
       "django.core.validators.validate_ipv6_address",
@@ -3954,8 +3954,8 @@
       "django.contrib.auth.forms.UsernameField.to_python"
      ],
      "witness": [
-      "__app__.common.views.DomainDetailView.delete",
-      "rest_framework.authtoken.admin.TokenAdmin.get_object",
+      "__app__.leads.forms.csv_doc_validate",
+      "django.urls.resolvers.RoutePattern.match",
       "django.contrib.auth.forms.UsernameField.to_python"
      ],
      "missing": false
@@ -4052,7 +4052,7 @@
       "django.http.response.HttpResponseRedirectBase.__init__"
      ],
      "witness": [
-      "__app__.emails.views.email_move_to_trash",
+      "__app__.emails.views.email_trash_delete",
       "django.http.response.HttpResponseRedirectBase.__init__"
      ],
      "missing": false
@@ -4194,7 +4194,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -4244,7 +4244,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (package: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "module",
      "symbols": [
       "django.db.backends.postgresql.operations.<module>"
@@ -4344,7 +4344,7 @@
       "django.contrib.auth.forms.PasswordResetForm.send_mail"
      ],
      "witness": [
-      "__app__.cases.views.CaseDetailView.post",
+      "__app__.common.models.APISettings.save",
       "django.contrib.auth.forms.PasswordResetForm.save",
       "django.contrib.auth.forms.PasswordResetForm.send_mail"
      ],
@@ -4540,7 +4540,7 @@
       "django.core.serializers.xml_serializer.getInnerText"
      ],
      "witness": [
-      "__app__.common.models.Document.get_team_users",
+      "__app__.invoices.api_views.InvoiceDetailView.put",
       "django.core.serializers.xml_serializer.Deserializer.__next__"
      ],
      "missing": false
@@ -4737,7 +4737,7 @@
       "django.contrib.auth.hashers.verify_password"
      ],
      "witness": [
-      "__app__.teams.models.Teams.get_users",
+      "__app__.accounts.models.AccountEmailLog.__str__",
       "django.contrib.auth.base_user.AbstractBaseUser.__str__",
       "django.contrib.auth.base_user.AbstractBaseUser.get_username",
       "django.contrib.auth.base_user.AbstractBaseUser.check_password",
@@ -4837,8 +4837,8 @@
       "django.contrib.humanize.templatetags.humanize.intcomma"
      ],
      "witness": [
-      "__app__.cms.models.BlogListPage.get_context",
-      "wagtail.admin.views.chooser.SearchView.get",
+      "__app__.cms.models.<module>",
+      "wagtail.models.<module>",
       "django.contrib.humanize.templatetags.humanize.intcomma"
      ],
      "missing": false
@@ -4877,7 +4877,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -4927,7 +4927,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (importer: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "dotenv.cli.set_value",
@@ -4973,7 +4973,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -5023,7 +5023,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (package: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "rest_framework.request.Request._parse"
@@ -5168,7 +5168,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -5218,7 +5218,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (package: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "rest_framework.parsers.FormParser.parse",
@@ -5318,7 +5318,7 @@
       "rest_framework.renderers.AdminRenderer.render"
      ],
      "witness": [
-      "__app__.common.views.DocumentDetailView.delete",
+      "__app__.events.views.EventAttachmentView.delete",
       "rest_framework.test.APIRequestFactory.delete",
       "rest_framework.test.APIRequestFactory._encode_data",
       "rest_framework.renderers.AdminRenderer.render"
@@ -5359,7 +5359,7 @@
   ],
   "depth": 2,
   "direct": false,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -5409,7 +5409,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (package: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "rest_framework.templatetags.rest_framework.break_long_headers"
@@ -5647,7 +5647,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -5697,7 +5697,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (package: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "sentry_sdk.integrations.stdlib._install_subprocess.sentry_patched_popen_init"
@@ -5895,7 +5895,7 @@
       "wagtail.contrib.settings.views.PreviewOnEdit.setup"
      ],
      "witness": [
-      "__app__.cases.views.CaseDetailView.post",
+      "__app__.teams.models.Teams.created_on_arrow",
       "django.views.generic.edit.BaseUpdateView.get",
       "wagtail.admin.views.generic.models.EditView.get_object",
       "wagtail.admin.views.generic.preview.PreviewOnEdit.get_object"
@@ -6565,7 +6565,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -6615,7 +6615,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (package: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "module",
      "symbols": [
       "wagtail.users.views.bulk_actions.user_bulk_action.<module>"
@@ -6895,8 +6895,8 @@
       "wagtail.search.utils.separate_filters_from_query"
      ],
      "witness": [
-      "__app__.cms.models.BlogListPage.get_context",
-      "wagtail.admin.views.chooser.SearchView.get",
+      "__app__.cms.models.<module>",
+      "wagtail.models.<module>",
       "wagtail.admin.views.pages.search.search",
       "wagtail.admin.views.pages.search.page_filter_search",
       "wagtail.search.utils.parse_query_string",
@@ -7041,7 +7041,7 @@
   ],
   "depth": 1,
   "direct": true,
-  "p_exposed": 0.25753225833751786,
+  "p_exposed": 0.21461021528126487,
   "exposure_class": "IMPORTED_REACH_UNKNOWN",
   "vex": {
    "state": "in_triage"
@@ -7091,7 +7091,7 @@
     "level": "L4",
     "state": "UNKNOWN",
     "detail": {
-     "reason": "reflection in reachable region",
+     "reason": "reflection in reachable region (package: __import__,dyn_class,exec,import_module,monkeypatch,namespace,plugin,setattr)",
      "granularity": "function",
      "symbols": [
       "wagtail.contrib.table_block.templatetags.table_block_tags.cell_classname",

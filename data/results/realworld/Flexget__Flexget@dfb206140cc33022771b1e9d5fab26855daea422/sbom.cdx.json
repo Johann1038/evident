@@ -1,10 +1,10 @@
 {
  "bomFormat": "CycloneDX",
  "specVersion": "1.6",
- "serialNumber": "urn:uuid:2ef99334-4113-495c-af2e-ec3f8a50b9d1",
+ "serialNumber": "urn:uuid:feef8d10-b305-4543-a472-31beb4f3e23e",
  "version": 1,
  "metadata": {
-  "timestamp": "2026-11-13T14:32:59+00:00",
+  "timestamp": "2026-11-13T16:57:23+00:00",
   "tools": {
    "components": [
     {
@@ -1266,62 +1266,62 @@
   {
    "ref": "app",
    "dependsOn": [
+    "pkg:pypi/pysftp@0.2.9",
+    "pkg:pypi/jinja2@3.1.2",
+    "pkg:pypi/subliminal@2.1.0",
+    "pkg:pypi/pyyaml@6.0",
+    "pkg:pypi/flask@2.2.5",
+    "pkg:pypi/rich@12.6.0",
+    "pkg:pypi/python-dateutil@2.8.2",
+    "pkg:pypi/qbittorrent-api@2023.3.44",
+    "pkg:pypi/codacy-coverage@1.3.11",
+    "pkg:pypi/deluge-client@1.9.0",
     "pkg:pypi/pyrss2gen@1.1",
+    "pkg:pypi/loguru@0.6.0",
+    "pkg:pypi/cherrypy@18.8.0",
+    "pkg:pypi/coverage@6.5.0",
+    "pkg:pypi/sphinx@5.3.0",
+    "pkg:pypi/pynzb@0.1.0",
+    "pkg:pypi/ruff@0.0.261",
+    "pkg:pypi/flask-restx@1.0.3",
+    "pkg:pypi/pyparsing@3.0.9",
+    "pkg:pypi/jsonschema@4.17.3",
+    "pkg:pypi/beautifulsoup4@4.11.1",
+    "pkg:pypi/flask-login@0.6.2",
+    "pkg:pypi/packaging@22.0",
+    "pkg:pypi/click@8.1.3",
+    "pkg:pypi/importlib-metadata@6.1.0",
+    "pkg:pypi/vcrpy@4.2.1",
+    "pkg:pypi/plexapi@4.13.1",
+    "pkg:pypi/flask-compress@1.13",
+    "pkg:pypi/rebulk@3.1.0",
+    "pkg:pypi/cloudscraper@1.2.69",
+    "pkg:pypi/black@22.12.0",
+    "pkg:pypi/gitpython@3.1.29",
+    "pkg:pypi/psutil@5.9.4",
+    "pkg:pypi/pytest-cov@4.0.0",
+    "pkg:pypi/pre-commit@2.20.0",
+    "pkg:pypi/apscheduler@3.10.1",
+    "pkg:pypi/pytest-xdist@3.1.0",
+    "pkg:pypi/flask-restful@0.3.9",
+    "pkg:pypi/rpyc@5.3.1",
+    "pkg:pypi/python-telegram-bot@12.8",
+    "pkg:pypi/sqlalchemy-stubs@0.4",
+    "pkg:pypi/flask-cors@3.0.10",
+    "pkg:pypi/feedparser@6.0.10",
+    "pkg:pypi/pytest@7.2.0",
+    "pkg:pypi/sqlalchemy@2.0.15",
+    "pkg:pypi/zxcvbn@4.4.28",
+    "pkg:pypi/build@0.9.0",
+    "pkg:pypi/colorama@0.4.6",
+    "pkg:pypi/requests@2.31.0",
     "pkg:pypi/boto3@1.26.27",
     "pkg:pypi/transmission-rpc@4.2.0",
-    "pkg:pypi/pysftp@0.2.9",
-    "pkg:pypi/sqlalchemy@2.0.15",
-    "pkg:pypi/packaging@22.0",
-    "pkg:pypi/deluge-client@1.9.0",
-    "pkg:pypi/colorama@0.4.6",
-    "pkg:pypi/rich@12.6.0",
-    "pkg:pypi/beautifulsoup4@4.11.1",
-    "pkg:pypi/feedparser@6.0.10",
-    "pkg:pypi/pynzb@0.1.0",
-    "pkg:pypi/sqlalchemy-stubs@0.4",
-    "pkg:pypi/pytest-xdist@3.1.0",
-    "pkg:pypi/vcrpy@4.2.1",
-    "pkg:pypi/jsonschema@4.17.3",
-    "pkg:pypi/jinja2@3.1.2",
-    "pkg:pypi/codacy-coverage@1.3.11",
-    "pkg:pypi/plexapi@4.13.1",
-    "pkg:pypi/pytest-cov@4.0.0",
-    "pkg:pypi/guessit@3.5.0",
-    "pkg:pypi/pyyaml@6.0",
-    "pkg:pypi/black@22.12.0",
-    "pkg:pypi/click@8.1.3",
-    "pkg:pypi/qbittorrent-api@2023.3.44",
-    "pkg:pypi/twine@4.0.2",
-    "pkg:pypi/importlib-metadata@6.1.0",
-    "pkg:pypi/flask-compress@1.13",
-    "pkg:pypi/gitpython@3.1.29",
-    "pkg:pypi/flask-restx@1.0.3",
-    "pkg:pypi/loguru@0.6.0",
-    "pkg:pypi/pytest@7.2.0",
-    "pkg:pypi/subliminal@2.1.0",
-    "pkg:pypi/werkzeug@2.2.3",
-    "pkg:pypi/pyparsing@3.0.9",
-    "pkg:pypi/pytest-runner@6.0.0",
-    "pkg:pypi/rebulk@3.1.0",
-    "pkg:pypi/cherrypy@18.8.0",
     "pkg:pypi/html5lib@1.1",
-    "pkg:pypi/requests@2.31.0",
-    "pkg:pypi/zxcvbn@4.4.28",
-    "pkg:pypi/ruff@0.0.261",
-    "pkg:pypi/flask-cors@3.0.10",
-    "pkg:pypi/python-dateutil@2.8.2",
-    "pkg:pypi/cloudscraper@1.2.69",
-    "pkg:pypi/pre-commit@2.20.0",
-    "pkg:pypi/flask@2.2.5",
-    "pkg:pypi/sphinx@5.3.0",
-    "pkg:pypi/apscheduler@3.10.1",
-    "pkg:pypi/psutil@5.9.4",
-    "pkg:pypi/flask-login@0.6.2",
-    "pkg:pypi/build@0.9.0",
-    "pkg:pypi/coverage@6.5.0",
-    "pkg:pypi/python-telegram-bot@12.8",
-    "pkg:pypi/rpyc@5.3.1",
-    "pkg:pypi/flask-restful@0.3.9"
+    "pkg:pypi/twine@4.0.2",
+    "pkg:pypi/werkzeug@2.2.3",
+    "pkg:pypi/pytest-runner@6.0.0",
+    "pkg:pypi/guessit@3.5.0"
    ]
   },
   {
@@ -2269,7 +2269,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.008 class=DEV_ONLY"
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
    },
    "properties": [
     {
@@ -2365,7 +2365,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.008 class=DEV_ONLY"
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
    },
    "properties": [
     {
@@ -2931,7 +2931,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.013 class=DEV_ONLY"
+    "detail": "EVIDENT p_exposed=0.011 class=DEV_ONLY"
    },
    "properties": [
     {
@@ -3070,7 +3070,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.013 class=DEV_ONLY"
+    "detail": "EVIDENT p_exposed=0.011 class=DEV_ONLY"
    },
    "properties": [
     {
@@ -3305,7 +3305,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.013 class=DEV_ONLY"
+    "detail": "EVIDENT p_exposed=0.011 class=DEV_ONLY"
    },
    "properties": [
     {
@@ -3492,7 +3492,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.008 class=DEV_ONLY"
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
    },
    "properties": [
     {
@@ -3540,7 +3540,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.008 class=DEV_ONLY"
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
    },
    "properties": [
     {
@@ -3588,7 +3588,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.008 class=DEV_ONLY"
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
    },
    "properties": [
     {
@@ -3684,7 +3684,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -3732,7 +3732,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -3828,7 +3828,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -3876,7 +3876,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -4836,7 +4836,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.013 class=DEV_ONLY"
+    "detail": "EVIDENT p_exposed=0.011 class=DEV_ONLY"
    },
    "properties": [
     {
@@ -5983,7 +5983,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -6271,7 +6271,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.155 class=INSTALLED_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.129 class=INSTALLED_UNKNOWN"
    },
    "properties": [
     {
@@ -6847,7 +6847,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.258 class=IMPORTED_REACH_UNKNOWN"
+    "detail": "EVIDENT p_exposed=0.215 class=IMPORTED_REACH_UNKNOWN"
    },
    "properties": [
     {
@@ -8762,7 +8762,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.008 class=DEV_ONLY"
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
    },
    "properties": [
     {
@@ -8810,7 +8810,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.008 class=DEV_ONLY"
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
    },
    "properties": [
     {
@@ -8858,7 +8858,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.008 class=DEV_ONLY"
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
    },
    "properties": [
     {
@@ -8906,7 +8906,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.008 class=DEV_ONLY"
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
    },
    "properties": [
     {
@@ -9050,7 +9050,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.008 class=DEV_ONLY"
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
    },
    "properties": [
     {
@@ -9098,7 +9098,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.008 class=DEV_ONLY"
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
    },
    "properties": [
     {
@@ -9146,7 +9146,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.008 class=DEV_ONLY"
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
    },
    "properties": [
     {
@@ -9194,7 +9194,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.008 class=DEV_ONLY"
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
    },
    "properties": [
     {
@@ -9242,7 +9242,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.008 class=DEV_ONLY"
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
    },
    "properties": [
     {
@@ -9290,7 +9290,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.008 class=DEV_ONLY"
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
    },
    "properties": [
     {
@@ -9338,7 +9338,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.008 class=DEV_ONLY"
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
    },
    "properties": [
     {
@@ -9386,7 +9386,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.008 class=DEV_ONLY"
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
    },
    "properties": [
     {
@@ -9482,7 +9482,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.008 class=DEV_ONLY"
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
    },
    "properties": [
     {
@@ -9626,7 +9626,7 @@
    ],
    "analysis": {
     "state": "in_triage",
-    "detail": "EVIDENT p_exposed=0.008 class=DEV_ONLY"
+    "detail": "EVIDENT p_exposed=0.006 class=DEV_ONLY"
    },
    "properties": [
     {

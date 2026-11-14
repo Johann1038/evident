@@ -49,261 +49,1595 @@
   "app_modules": 28,
   "pkgs_analysed": 28,
   "pkgs_no_source": 0,
-  "seconds": 57.71,
+  "seconds": 3.24,
   "funcs": 8280,
-  "roots": 41
+  "roots": 41,
+  "app_refs": {
+   "fastapi": [
+    "fastapi",
+    "fastapi.applications.FastAPI",
+    "fastapi.applications.FastAPI.include_router",
+    "fastapi.exceptions.HTTPException",
+    "fastapi.param_functions.Depends",
+    "fastapi.routing.APIRouter",
+    "fastapi.security"
+   ],
+   "starlette": [
+    "starlette",
+    "starlette.responses",
+    "starlette.responses.Response"
+   ],
+   "pydantic": [
+    "pydantic",
+    "pydantic.class_validators.validator",
+    "pydantic.types.SecretStr"
+   ],
+   "python-jose": [
+    "jose",
+    "jose.jwt",
+    "jose.jwt.encode"
+   ],
+   "arq": [
+    "arq"
+   ],
+   "pytest": [
+    "_pytest.fixtures.fixture",
+    "pytest"
+   ],
+   "httpx": [
+    "httpx",
+    "httpx._client.AsyncClient"
+   ]
+  },
+  "reflection_kinds": {
+   "fastapi": [
+    "namespace"
+   ],
+   "anyio": [
+    "import_module",
+    "namespace"
+   ],
+   "pydantic": [
+    "dyn_class",
+    "eval",
+    "import_module",
+    "namespace",
+    "setattr"
+   ],
+   "pyasn1": [
+    "setattr"
+   ]
+  }
  },
- "scan_seconds": 58.1,
+ "scan_seconds": 4.2,
  "sdist_only": [
   "python-multipart"
  ],
  "baseline_resolution": {
   "ok": true,
-  "seconds": 1.9,
+  "seconds": 0.4,
   "error": ""
  },
  "baseline_drift": 7,
  "strategies": {
   "audit_fix": {
    "planned": {
-    "anyio": "4.14.2",
     "fastapi": "0.109.1",
     "h11": "0.16.0",
     "idna": "3.15",
     "pyasn1": "0.6.5",
     "pydantic": "1.10.13",
-    "python-dotenv": "1.2.2",
-    "python-multipart": "0.0.31",
-    "starlette": "1.3.1",
-    "black": "26.10.1",
     "certifi": "2026.10.18",
-    "httpx": "0.23.0",
-    "pytest": "9.0.3"
+    "httpx": "0.23.0"
    },
    "ok": false,
-   "error": "because you require anyio==4.14.2, we can conclude that your requirements are unsatisfiable.\n\nhint: The `--python-version` value (>=3.9) includes Python versions that are not supported by your dependencies (e.g., anyio==4.14.2 only supports >=3.10). Consider using a higher `--python-version` value.\n",
-   "seconds": 0.5
+   "error": " cause: Because httpx==0.23.0 depends on httpcore>=0.15.0,<0.16.0 and httpcore==0.15.0 depends on h11>=0.11,<0.13, we can conclude that httpx==0.23.0 depends on h11>=0.11,<0.13.\n         And because you require h11==0.16.0 and httpx==0.23.0, we can conclude that your requirements are unsatisfiable.\n",
+   "seconds": 0.0,
+   "failure": "dependency conflict"
   },
   "latest": {
    "planned": {
-    "pydantic": "2.14.3",
     "h11": "0.16.0",
-    "pytest": "9.2.0",
-    "pyasn1": "0.6.5",
     "certifi": "2026.10.23",
-    "ecdsa": "0.19.2",
-    "fastapi": "0.162.5",
-    "python-dotenv": "1.2.4",
-    "idna": "3.20",
-    "starlette": "1.10.0",
-    "black": "26.10.1",
-    "httpx": "0.28.1",
     "python-jose": "3.5.0",
-    "anyio": "4.16.0",
-    "python-multipart": "0.0.33"
+    "idna": "3.20",
+    "black": "25.11.0",
+    "python-dotenv": "1.2.1",
+    "python-multipart": "0.0.20",
+    "pydantic": "2.13.5",
+    "httpx": "0.28.1",
+    "fastapi": "0.128.8",
+    "ecdsa": "0.19.2",
+    "starlette": "0.49.3",
+    "anyio": "4.12.1",
+    "pyasn1": "0.6.5",
+    "pytest": "8.4.2"
    },
-   "ok": false,
-   "error": "ble and you require anyio==4.16.0, we can conclude that your requirements are unsatisfiable.\n\nhint: The `--python-version` value (>=3.9) includes Python versions that are not supported by your dependencies (e.g., anyio==4.16.0 only supports >=3.10). Consider using a higher `--python-version` value.\n",
-   "seconds": 0.3
+   "ok": true,
+   "error": "",
+   "seconds": 0.6,
+   "residual_findings": 22,
+   "residual_risk_evident": 8.271083362524017,
+   "residual_risk_vm": 15.849999999999996,
+   "residual_confirmed": 1,
+   "new_findings": 1,
+   "changed": 31,
+   "major_bumps": 8,
+   "added": 12,
+   "removed": 0,
+   "realised_changes": {
+    "annotated-doc": [
+     null,
+     "0.0.5"
+    ],
+    "annotated-types": [
+     null,
+     "0.7.0"
+    ],
+    "anyio": [
+     "3.5.0",
+     "4.12.1"
+    ],
+    "black": [
+     "22.3.0",
+     "25.11.0"
+    ],
+    "certifi": [
+     "2021.10.8",
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.0.0"
+    ],
+    "ecdsa": [
+     "0.17.0",
+     "0.19.2"
+    ],
+    "exceptiongroup": [
+     null,
+     "1.3.1"
+    ],
+    "fastapi": [
+     "0.75.1",
+     "0.128.8"
+    ],
+    "greenlet": [
+     null,
+     "3.2.5"
+    ],
+    "h11": [
+     "0.13.0",
+     "0.16.0"
+    ],
+    "httpcore": [
+     "0.14.7",
+     "1.0.9"
+    ],
+    "httpx": [
+     "0.22.0",
+     "0.28.1"
+    ],
+    "idna": [
+     "3.3",
+     "3.20"
+    ],
+    "mako": [
+     null,
+     "1.3.12"
+    ],
+    "markupsafe": [
+     null,
+     "3.0.4"
+    ],
+    "packaging": [
+     "21.3",
+     "26.3"
+    ],
+    "pluggy": [
+     "1.0.0",
+     "1.6.0"
+    ],
+    "pyasn1": [
+     "0.4.8",
+     "0.6.5"
+    ],
+    "pycparser": [
+     null,
+     "2.23"
+    ],
+    "pydantic": [
+     "1.9.0",
+     "2.13.5"
+    ],
+    "pydantic-core": [
+     null,
+     "2.46.5"
+    ],
+    "pygments": [
+     null,
+     "2.21.0"
+    ],
+    "pytest": [
+     "7.1.1",
+     "8.4.2"
+    ],
+    "python-dotenv": [
+     "0.20.0",
+     "1.2.1"
+    ],
+    "python-jose": [
+     "3.3.0",
+     "3.5.0"
+    ],
+    "python-multipart": [
+     "0.0.5",
+     "0.0.20"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "starlette": [
+     "0.17.1",
+     "0.49.3"
+    ],
+    "typing-extensions": [
+     "4.1.1",
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.2"
+    ]
+   },
+   "planned_changes": 15,
+   "unplanned_changes": 16,
+   "unplanned_major": 2,
+   "unplanned_added": 12,
+   "new_findings_from_unplanned": 1,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 6,
+    "checked": 6,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 20,
+    "details": [
+     {
+      "package": "pydantic",
+      "version": "2.13.5",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
   },
   "upgrade_all": {
    "planned": null,
    "ok": true,
    "error": "",
-   "seconds": 5.5,
+   "seconds": 3.0,
    "residual_findings": 24,
-   "residual_risk_evident": 9.384807139344172,
+   "residual_risk_evident": 9.272668121613135,
    "residual_risk_vm": 17.47,
    "residual_confirmed": 1,
    "new_findings": 1,
    "changed": 74,
    "major_bumps": 30,
    "added": 17,
-   "removed": 0
+   "removed": 0,
+   "realised_changes": {
+    "aioredis": [
+     "1.3.1",
+     "2.0.1"
+    ],
+    "aiosqlite": [
+     "0.17.0",
+     "0.22.1"
+    ],
+    "alembic": [
+     "1.7.7",
+     "1.16.5"
+    ],
+    "annotated-doc": [
+     null,
+     "0.0.5"
+    ],
+    "annotated-types": [
+     null,
+     "0.7.0"
+    ],
+    "anyio": [
+     "3.5.0",
+     "4.12.1"
+    ],
+    "arq": [
+     "0.22",
+     "0.28.0"
+    ],
+    "asgi-lifespan": [
+     "1.0.1",
+     "2.1.0"
+    ],
+    "asgiref": [
+     "3.5.0",
+     "3.11.1"
+    ],
+    "async-timeout": [
+     "4.0.2",
+     "5.0.1"
+    ],
+    "asyncpg": [
+     "0.25.0",
+     "0.32.0"
+    ],
+    "attrs": [
+     "21.4.0",
+     "26.1.0"
+    ],
+    "backports-asyncio-runner": [
+     null,
+     "1.2.0"
+    ],
+    "bcrypt": [
+     "3.2.0",
+     "5.0.0"
+    ],
+    "black": [
+     "22.3.0",
+     "25.11.0"
+    ],
+    "certifi": [
+     "2021.10.8",
+     "2026.10.23"
+    ],
+    "charset-normalizer": [
+     "2.0.12",
+     "3.5.2"
+    ],
+    "click": [
+     "8.1.2",
+     "8.1.8"
+    ],
+    "coverage": [
+     "6.3.2",
+     "7.10.7"
+    ],
+    "ecdsa": [
+     "0.17.0",
+     "0.19.2"
+    ],
+    "exceptiongroup": [
+     null,
+     "1.3.1"
+    ],
+    "factory-boy": [
+     "3.2.1",
+     "3.3.3"
+    ],
+    "faker": [
+     "13.3.4",
+     "37.12.0"
+    ],
+    "fastapi": [
+     "0.75.1",
+     "0.128.8"
+    ],
+    "flake8": [
+     "4.0.1",
+     "7.3.0"
+    ],
+    "greenlet": [
+     null,
+     "3.2.5"
+    ],
+    "h11": [
+     "0.13.0",
+     "0.16.0"
+    ],
+    "hiredis": [
+     "2.0.0",
+     "3.5.0"
+    ],
+    "httpcore": [
+     "0.14.7",
+     "1.0.9"
+    ],
+    "httpx": [
+     "0.22.0",
+     "0.28.1"
+    ],
+    "idna": [
+     "3.3",
+     "3.20"
+    ],
+    "importlib-metadata": [
+     null,
+     "8.7.1"
+    ],
+    "iniconfig": [
+     "1.1.1",
+     "2.1.0"
+    ],
+    "isort": [
+     "5.10.1",
+     "6.1.0"
+    ],
+    "librt": [
+     null,
+     "0.16.0"
+    ],
+    "mako": [
+     null,
+     "1.3.12"
+    ],
+    "markupsafe": [
+     null,
+     "3.0.4"
+    ],
+    "mccabe": [
+     "0.6.1",
+     "0.7.0"
+    ],
+    "mypy": [
+     "0.942",
+     "1.19.1"
+    ],
+    "mypy-extensions": [
+     "0.4.3",
+     "1.1.0"
+    ],
+    "packaging": [
+     "21.3",
+     "26.3"
+    ],
+    "pathspec": [
+     "0.9.0",
+     "1.1.1"
+    ],
+    "platformdirs": [
+     "2.5.1",
+     "4.4.0"
+    ],
+    "pluggy": [
+     "1.0.0",
+     "1.6.0"
+    ],
+    "pyasn1": [
+     "0.4.8",
+     "0.6.5"
+    ],
+    "pycodestyle": [
+     "2.8.0",
+     "2.14.0"
+    ],
+    "pydantic": [
+     "1.9.0",
+     "2.13.5"
+    ],
+    "pydantic-core": [
+     null,
+     "2.46.5"
+    ],
+    "pyflakes": [
+     "2.4.0",
+     "3.4.0"
+    ],
+    "pygments": [
+     null,
+     "2.21.0"
+    ],
+    "pyhumps": [
+     "3.5.3",
+     "3.8.0"
+    ],
+    "pyjwt": [
+     null,
+     "2.15.1"
+    ],
+    "pyparsing": [
+     "3.0.8",
+     "3.3.3"
+    ],
+    "pytest": [
+     "7.1.1",
+     "8.4.2"
+    ],
+    "pytest-asyncio": [
+     "0.18.3",
+     "1.2.0"
+    ],
+    "pytest-cov": [
+     "3.0.0",
+     "7.1.0"
+    ],
+    "python-dateutil": [
+     "2.8.2",
+     "3.0.0"
+    ],
+    "python-dotenv": [
+     "0.20.0",
+     "1.2.1"
+    ],
+    "python-jose": [
+     "3.3.0",
+     "3.5.0"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "redis": [
+     null,
+     "5.3.1"
+    ],
+    "rfc3986": [
+     "1.5.0",
+     "2.0.0"
+    ],
+    "rsa": [
+     "4.8",
+     "4.9.1"
+    ],
+    "six": [
+     "1.16.0",
+     "1.17.0"
+    ],
+    "sniffio": [
+     "1.2.0",
+     "1.3.1"
+    ],
+    "sqlalchemy": [
+     "1.4.35",
+     "2.0.57"
+    ],
+    "starlette": [
+     "0.17.1",
+     "0.49.3"
+    ],
+    "tomli": [
+     "2.0.1",
+     "2.5.0"
+    ],
+    "typing-extensions": [
+     "4.1.1",
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.2"
+    ],
+    "tzdata": [
+     null,
+     "2026.6"
+    ],
+    "uvicorn": [
+     "0.17.6",
+     "0.39.0"
+    ],
+    "uvloop": [
+     "0.16.0",
+     "0.23.0"
+    ],
+    "zipp": [
+     null,
+     "3.23.1"
+    ]
+   },
+   "failure": "none",
+   "compat": {
+    "used_changed": 7,
+    "checked": 7,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 21,
+    "details": [
+     {
+      "package": "pydantic",
+      "version": "2.13.5",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "uv_fix": {
+   "planned": {
+    "fastapi": "0.109.1",
+    "h11": "0.16.0",
+    "idna": "3.15",
+    "pyasn1": "0.6.5",
+    "pydantic": "1.10.13",
+    "certifi": "2026.10.18",
+    "httpx": "0.23.0"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 0.1,
+   "residual_findings": 30,
+   "residual_risk_evident": 10.946564047707575,
+   "residual_risk_vm": 20.87,
+   "residual_confirmed": 1,
+   "new_findings": 2,
+   "changed": 19,
+   "major_bumps": 3,
+   "added": 9,
+   "removed": 0,
+   "realised_changes": {
+    "annotated-doc": [
+     null,
+     "0.0.5"
+    ],
+    "annotated-types": [
+     null,
+     "0.7.0"
+    ],
+    "certifi": [
+     "2021.10.8",
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.0.0"
+    ],
+    "fastapi": [
+     "0.75.1",
+     "0.128.8"
+    ],
+    "greenlet": [
+     null,
+     "3.2.5"
+    ],
+    "h11": [
+     "0.13.0",
+     "0.16.0"
+    ],
+    "httpcore": [
+     "0.14.7",
+     "1.0.9"
+    ],
+    "httpx": [
+     "0.22.0",
+     "0.28.1"
+    ],
+    "idna": [
+     "3.3",
+     "3.20"
+    ],
+    "mako": [
+     null,
+     "1.3.12"
+    ],
+    "markupsafe": [
+     null,
+     "3.0.4"
+    ],
+    "pyasn1": [
+     "0.4.8",
+     "0.6.5"
+    ],
+    "pycparser": [
+     null,
+     "2.23"
+    ],
+    "pydantic": [
+     "1.9.0",
+     "2.13.5"
+    ],
+    "pydantic-core": [
+     null,
+     "2.46.5"
+    ],
+    "starlette": [
+     "0.17.1",
+     "0.45.1"
+    ],
+    "typing-extensions": [
+     "4.1.1",
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.2"
+    ]
+   },
+   "failure": "none",
+   "compat": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 15,
+    "details": [
+     {
+      "package": "pydantic",
+      "version": "2.13.5",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
   },
   "vm_opt": {
    "planned": {
-    "anyio": "4.14.2",
-    "black": "26.10.1",
+    "anyio": "3.7.1",
     "certifi": "2026.10.23",
     "ecdsa": "0.19.2",
-    "fastapi": "0.162.5",
+    "fastapi": "0.128.8",
     "h11": "0.16.0",
     "httpcore": "1.0.9",
     "httpx": "0.28.1",
     "idna": "3.20",
-    "packaging": "22.0",
-    "pathspec": "1.1.1",
-    "pluggy": "1.7.0",
     "pyasn1": "0.6.5",
-    "pydantic": "2.14.3",
-    "pytest": "9.0.3",
-    "python-dotenv": "1.2.4",
+    "pydantic": "2.13.5",
     "python-jose": "3.5.0",
-    "python-multipart": "0.0.33",
-    "starlette": "1.10.0",
+    "python-multipart": "0.0.20",
+    "starlette": "0.49.3",
     "typing-extensions": "4.16.0"
    },
-   "ok": false,
-   "iterations": 6,
-   "error": "because you require anyio==4.14.2, we can conclude that your requirements are unsatisfiable.\n\nhint: The `--python-version` value (>=3.9) includes Python versions that are not supported by your dependencies (e.g., anyio==4.14.2 only supports >=3.10). Consider using a higher `--python-version` value.\n",
-   "seconds": 7.0,
-   "model_residual": 1.67,
-   "model_cost": 50.5,
-   "scope": 21
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.1,
+   "model_residual": 15.73,
+   "model_cost": 29.699999999999996,
+   "scope": 19,
+   "candidates": 56,
+   "residual_findings": 23,
+   "residual_risk_evident": 8.339410559673661,
+   "residual_risk_vm": 16.38,
+   "residual_confirmed": 1,
+   "new_findings": 1,
+   "changed": 24,
+   "major_bumps": 3,
+   "added": 10,
+   "removed": 0,
+   "realised_changes": {
+    "annotated-doc": [
+     null,
+     "0.0.5"
+    ],
+    "annotated-types": [
+     null,
+     "0.7.0"
+    ],
+    "anyio": [
+     "3.5.0",
+     "3.7.1"
+    ],
+    "certifi": [
+     "2021.10.8",
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.0.0"
+    ],
+    "ecdsa": [
+     "0.17.0",
+     "0.19.2"
+    ],
+    "exceptiongroup": [
+     null,
+     "1.3.1"
+    ],
+    "fastapi": [
+     "0.75.1",
+     "0.128.8"
+    ],
+    "greenlet": [
+     null,
+     "3.2.5"
+    ],
+    "h11": [
+     "0.13.0",
+     "0.16.0"
+    ],
+    "httpcore": [
+     "0.14.7",
+     "1.0.9"
+    ],
+    "httpx": [
+     "0.22.0",
+     "0.28.1"
+    ],
+    "idna": [
+     "3.3",
+     "3.20"
+    ],
+    "mako": [
+     null,
+     "1.3.12"
+    ],
+    "markupsafe": [
+     null,
+     "3.0.4"
+    ],
+    "pyasn1": [
+     "0.4.8",
+     "0.6.5"
+    ],
+    "pycparser": [
+     null,
+     "2.23"
+    ],
+    "pydantic": [
+     "1.9.0",
+     "2.13.5"
+    ],
+    "pydantic-core": [
+     null,
+     "2.46.5"
+    ],
+    "python-jose": [
+     "3.3.0",
+     "3.5.0"
+    ],
+    "python-multipart": [
+     "0.0.5",
+     "0.0.20"
+    ],
+    "starlette": [
+     "0.17.1",
+     "0.49.3"
+    ],
+    "typing-extensions": [
+     "4.1.1",
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.2"
+    ]
+   },
+   "planned_changes": 14,
+   "unplanned_changes": 10,
+   "unplanned_major": 0,
+   "unplanned_added": 10,
+   "new_findings_from_unplanned": 1,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 18,
+    "details": [
+     {
+      "package": "pydantic",
+      "version": "2.13.5",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
   },
   "coral_opt": {
    "planned": {
-    "anyio": "4.14.2",
-    "black": "26.10.1",
+    "anyio": "3.7.1",
     "certifi": "2026.10.23",
     "ecdsa": "0.19.2",
-    "fastapi": "0.162.5",
+    "fastapi": "0.128.8",
     "h11": "0.16.0",
     "httpcore": "1.0.9",
     "httpx": "0.28.1",
     "idna": "3.20",
-    "packaging": "26.3",
-    "pathspec": "1.1.1",
     "pyasn1": "0.6.5",
-    "pydantic": "2.14.3",
+    "pydantic": "2.13.5",
     "python-jose": "3.5.0",
-    "python-multipart": "0.0.33",
-    "starlette": "1.10.0",
+    "python-multipart": "0.0.20",
+    "starlette": "0.49.3",
     "typing-extensions": "4.16.0"
    },
-   "ok": false,
-   "iterations": 6,
-   "error": "because you require anyio==4.14.2, we can conclude that your requirements are unsatisfiable.\n\nhint: The `--python-version` value (>=3.9) includes Python versions that are not supported by your dependencies (e.g., anyio==4.14.2 only supports >=3.10). Consider using a higher `--python-version` value.\n",
-   "seconds": 2.1,
-   "model_residual": 1.5050000000000001,
-   "model_cost": 41.800000000000004,
-   "scope": 21
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.1,
+   "model_residual": 8.515,
+   "model_cost": 29.699999999999996,
+   "scope": 19,
+   "candidates": 56,
+   "residual_findings": 23,
+   "residual_risk_evident": 8.339410559673661,
+   "residual_risk_vm": 16.38,
+   "residual_confirmed": 1,
+   "new_findings": 1,
+   "changed": 24,
+   "major_bumps": 3,
+   "added": 10,
+   "removed": 0,
+   "realised_changes": {
+    "annotated-doc": [
+     null,
+     "0.0.5"
+    ],
+    "annotated-types": [
+     null,
+     "0.7.0"
+    ],
+    "anyio": [
+     "3.5.0",
+     "3.7.1"
+    ],
+    "certifi": [
+     "2021.10.8",
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.0.0"
+    ],
+    "ecdsa": [
+     "0.17.0",
+     "0.19.2"
+    ],
+    "exceptiongroup": [
+     null,
+     "1.3.1"
+    ],
+    "fastapi": [
+     "0.75.1",
+     "0.128.8"
+    ],
+    "greenlet": [
+     null,
+     "3.2.5"
+    ],
+    "h11": [
+     "0.13.0",
+     "0.16.0"
+    ],
+    "httpcore": [
+     "0.14.7",
+     "1.0.9"
+    ],
+    "httpx": [
+     "0.22.0",
+     "0.28.1"
+    ],
+    "idna": [
+     "3.3",
+     "3.20"
+    ],
+    "mako": [
+     null,
+     "1.3.12"
+    ],
+    "markupsafe": [
+     null,
+     "3.0.4"
+    ],
+    "pyasn1": [
+     "0.4.8",
+     "0.6.5"
+    ],
+    "pycparser": [
+     null,
+     "2.23"
+    ],
+    "pydantic": [
+     "1.9.0",
+     "2.13.5"
+    ],
+    "pydantic-core": [
+     null,
+     "2.46.5"
+    ],
+    "python-jose": [
+     "3.3.0",
+     "3.5.0"
+    ],
+    "python-multipart": [
+     "0.0.5",
+     "0.0.20"
+    ],
+    "starlette": [
+     "0.17.1",
+     "0.49.3"
+    ],
+    "typing-extensions": [
+     "4.1.1",
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.2"
+    ]
+   },
+   "planned_changes": 14,
+   "unplanned_changes": 10,
+   "unplanned_major": 0,
+   "unplanned_added": 10,
+   "new_findings_from_unplanned": 1,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 18,
+    "details": [
+     {
+      "package": "pydantic",
+      "version": "2.13.5",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
   },
   "cape_opt": {
    "planned": {
-    "anyio": "4.14.2",
-    "black": "26.10.1",
-    "certifi": "2026.10.18",
-    "ecdsa": "0.19.2",
-    "fastapi": "0.162.5",
-    "h11": "0.16.0",
-    "httpcore": "1.0.9",
-    "httpx": "0.28.1",
-    "idna": "3.15",
-    "packaging": "26.3",
-    "pathspec": "1.1.1",
-    "pyasn1": "0.6.5",
-    "pydantic": "2.14.3",
-    "python-dotenv": "1.2.2",
-    "python-jose": "3.5.0",
-    "python-multipart": "0.0.31",
-    "starlette": "1.3.1",
-    "typing-extensions": "4.16.0"
-   },
-   "ok": false,
-   "iterations": 6,
-   "error": "because you require anyio==4.14.2, we can conclude that your requirements are unsatisfiable.\n\nhint: The `--python-version` value (>=3.9) includes Python versions that are not supported by your dependencies (e.g., anyio==4.14.2 only supports >=3.10). Consider using a higher `--python-version` value.\n",
-   "seconds": 1.7,
-   "model_residual": 2.1686666666666667,
-   "model_cost": 45.300000000000004,
-   "scope": 21
-  },
-  "evident": {
-   "planned": {
-    "anyio": "4.14.2",
+    "anyio": "3.7.1",
     "certifi": "2026.10.23",
     "ecdsa": "0.19.2",
-    "fastapi": "0.162.5",
+    "fastapi": "0.128.8",
     "h11": "0.16.0",
     "httpcore": "1.0.9",
     "httpx": "0.28.1",
     "idna": "3.20",
     "pyasn1": "0.6.5",
-    "pydantic": "2.14.3",
+    "pydantic": "2.13.5",
     "python-jose": "3.5.0",
-    "python-multipart": "0.0.31",
-    "starlette": "1.10.0",
+    "python-multipart": "0.0.20",
+    "starlette": "0.49.3",
     "typing-extensions": "4.16.0"
    },
-   "ok": false,
-   "iterations": 6,
-   "error": "because you require anyio==4.14.2, we can conclude that your requirements are unsatisfiable.\n\nhint: The `--python-version` value (>=3.9) includes Python versions that are not supported by your dependencies (e.g., anyio==4.14.2 only supports >=3.10). Consider using a higher `--python-version` value.\n",
-   "seconds": 1.9,
-   "model_residual": 2.445746540489261,
-   "model_cost": 32.3,
-   "scope": 21
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.1,
+   "model_residual": 15.362666666666666,
+   "model_cost": 29.699999999999996,
+   "scope": 19,
+   "candidates": 56,
+   "residual_findings": 23,
+   "residual_risk_evident": 8.339410559673661,
+   "residual_risk_vm": 16.38,
+   "residual_confirmed": 1,
+   "new_findings": 1,
+   "changed": 24,
+   "major_bumps": 3,
+   "added": 10,
+   "removed": 0,
+   "realised_changes": {
+    "annotated-doc": [
+     null,
+     "0.0.5"
+    ],
+    "annotated-types": [
+     null,
+     "0.7.0"
+    ],
+    "anyio": [
+     "3.5.0",
+     "3.7.1"
+    ],
+    "certifi": [
+     "2021.10.8",
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.0.0"
+    ],
+    "ecdsa": [
+     "0.17.0",
+     "0.19.2"
+    ],
+    "exceptiongroup": [
+     null,
+     "1.3.1"
+    ],
+    "fastapi": [
+     "0.75.1",
+     "0.128.8"
+    ],
+    "greenlet": [
+     null,
+     "3.2.5"
+    ],
+    "h11": [
+     "0.13.0",
+     "0.16.0"
+    ],
+    "httpcore": [
+     "0.14.7",
+     "1.0.9"
+    ],
+    "httpx": [
+     "0.22.0",
+     "0.28.1"
+    ],
+    "idna": [
+     "3.3",
+     "3.20"
+    ],
+    "mako": [
+     null,
+     "1.3.12"
+    ],
+    "markupsafe": [
+     null,
+     "3.0.4"
+    ],
+    "pyasn1": [
+     "0.4.8",
+     "0.6.5"
+    ],
+    "pycparser": [
+     null,
+     "2.23"
+    ],
+    "pydantic": [
+     "1.9.0",
+     "2.13.5"
+    ],
+    "pydantic-core": [
+     null,
+     "2.46.5"
+    ],
+    "python-jose": [
+     "3.3.0",
+     "3.5.0"
+    ],
+    "python-multipart": [
+     "0.0.5",
+     "0.0.20"
+    ],
+    "starlette": [
+     "0.17.1",
+     "0.49.3"
+    ],
+    "typing-extensions": [
+     "4.1.1",
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.2"
+    ]
+   },
+   "planned_changes": 14,
+   "unplanned_changes": 10,
+   "unplanned_major": 0,
+   "unplanned_added": 10,
+   "new_findings_from_unplanned": 1,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 18,
+    "details": [
+     {
+      "package": "pydantic",
+      "version": "2.13.5",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "evident": {
+   "planned": {
+    "anyio": "3.7.1",
+    "certifi": "2026.10.23",
+    "ecdsa": "0.19.2",
+    "fastapi": "0.128.8",
+    "h11": "0.16.0",
+    "httpcore": "1.0.9",
+    "httpx": "0.28.1",
+    "idna": "3.20",
+    "pyasn1": "0.6.5",
+    "pydantic": "2.13.5",
+    "python-jose": "3.5.0",
+    "python-multipart": "0.0.20",
+    "starlette": "0.49.3",
+    "typing-extensions": "4.16.0"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.1,
+   "model_residual": 8.083270417155846,
+   "model_cost": 29.699999999999996,
+   "scope": 19,
+   "candidates": 56,
+   "residual_findings": 23,
+   "residual_risk_evident": 8.339410559673661,
+   "residual_risk_vm": 16.38,
+   "residual_confirmed": 1,
+   "new_findings": 1,
+   "changed": 24,
+   "major_bumps": 3,
+   "added": 10,
+   "removed": 0,
+   "realised_changes": {
+    "annotated-doc": [
+     null,
+     "0.0.5"
+    ],
+    "annotated-types": [
+     null,
+     "0.7.0"
+    ],
+    "anyio": [
+     "3.5.0",
+     "3.7.1"
+    ],
+    "certifi": [
+     "2021.10.8",
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.0.0"
+    ],
+    "ecdsa": [
+     "0.17.0",
+     "0.19.2"
+    ],
+    "exceptiongroup": [
+     null,
+     "1.3.1"
+    ],
+    "fastapi": [
+     "0.75.1",
+     "0.128.8"
+    ],
+    "greenlet": [
+     null,
+     "3.2.5"
+    ],
+    "h11": [
+     "0.13.0",
+     "0.16.0"
+    ],
+    "httpcore": [
+     "0.14.7",
+     "1.0.9"
+    ],
+    "httpx": [
+     "0.22.0",
+     "0.28.1"
+    ],
+    "idna": [
+     "3.3",
+     "3.20"
+    ],
+    "mako": [
+     null,
+     "1.3.12"
+    ],
+    "markupsafe": [
+     null,
+     "3.0.4"
+    ],
+    "pyasn1": [
+     "0.4.8",
+     "0.6.5"
+    ],
+    "pycparser": [
+     null,
+     "2.23"
+    ],
+    "pydantic": [
+     "1.9.0",
+     "2.13.5"
+    ],
+    "pydantic-core": [
+     null,
+     "2.46.5"
+    ],
+    "python-jose": [
+     "3.3.0",
+     "3.5.0"
+    ],
+    "python-multipart": [
+     "0.0.5",
+     "0.0.20"
+    ],
+    "starlette": [
+     "0.17.1",
+     "0.49.3"
+    ],
+    "typing-extensions": [
+     "4.1.1",
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.2"
+    ]
+   },
+   "planned_changes": 14,
+   "unplanned_changes": 10,
+   "unplanned_major": 0,
+   "unplanned_added": 10,
+   "new_findings_from_unplanned": 1,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 18,
+    "details": [
+     {
+      "package": "pydantic",
+      "version": "2.13.5",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   },
+   "objective_gap": 0.2561401425178147
+  },
+  "evident_wide": {
+   "planned": {
+    "anyio": "3.7.1",
+    "certifi": "2026.10.23",
+    "ecdsa": "0.19.2",
+    "fastapi": "0.128.8",
+    "h11": "0.16.0",
+    "httpcore": "1.0.9",
+    "httpx": "0.28.1",
+    "idna": "3.20",
+    "pyasn1": "0.6.5",
+    "pydantic": "2.13.5",
+    "python-jose": "3.5.0",
+    "python-multipart": "0.0.20",
+    "starlette": "0.49.3",
+    "typing-extensions": "4.16.0"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.1,
+   "model_residual": 8.083270417155846,
+   "model_cost": 29.699999999999996,
+   "candidates": 56,
+   "residual_findings": 23,
+   "residual_risk_evident": 8.339410559673661,
+   "residual_risk_vm": 16.38,
+   "residual_confirmed": 1,
+   "new_findings": 1,
+   "changed": 24,
+   "major_bumps": 3,
+   "added": 10,
+   "removed": 0,
+   "realised_changes": {
+    "annotated-doc": [
+     null,
+     "0.0.5"
+    ],
+    "annotated-types": [
+     null,
+     "0.7.0"
+    ],
+    "anyio": [
+     "3.5.0",
+     "3.7.1"
+    ],
+    "certifi": [
+     "2021.10.8",
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.0.0"
+    ],
+    "ecdsa": [
+     "0.17.0",
+     "0.19.2"
+    ],
+    "exceptiongroup": [
+     null,
+     "1.3.1"
+    ],
+    "fastapi": [
+     "0.75.1",
+     "0.128.8"
+    ],
+    "greenlet": [
+     null,
+     "3.2.5"
+    ],
+    "h11": [
+     "0.13.0",
+     "0.16.0"
+    ],
+    "httpcore": [
+     "0.14.7",
+     "1.0.9"
+    ],
+    "httpx": [
+     "0.22.0",
+     "0.28.1"
+    ],
+    "idna": [
+     "3.3",
+     "3.20"
+    ],
+    "mako": [
+     null,
+     "1.3.12"
+    ],
+    "markupsafe": [
+     null,
+     "3.0.4"
+    ],
+    "pyasn1": [
+     "0.4.8",
+     "0.6.5"
+    ],
+    "pycparser": [
+     null,
+     "2.23"
+    ],
+    "pydantic": [
+     "1.9.0",
+     "2.13.5"
+    ],
+    "pydantic-core": [
+     null,
+     "2.46.5"
+    ],
+    "python-jose": [
+     "3.3.0",
+     "3.5.0"
+    ],
+    "python-multipart": [
+     "0.0.5",
+     "0.0.20"
+    ],
+    "starlette": [
+     "0.17.1",
+     "0.49.3"
+    ],
+    "typing-extensions": [
+     "4.1.1",
+     "4.16.0"
+    ],
+    "typing-inspection": [
+     null,
+     "0.4.2"
+    ]
+   },
+   "planned_changes": 14,
+   "unplanned_changes": 10,
+   "unplanned_major": 0,
+   "unplanned_added": 10,
+   "new_findings_from_unplanned": 1,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 18,
+    "details": [
+     {
+      "package": "pydantic",
+      "version": "2.13.5",
+      "missing": [
+       "pydantic.class_validators.validator"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
   }
  },
  "original": {
   "residual_findings": 49,
-  "residual_risk_evident": 18.152699243488033,
+  "residual_risk_evident": 17.870229329171746,
   "residual_risk_vm": 35.55000000000001,
   "residual_confirmed": 2,
   "new_findings": 0,
   "changed": 0,
   "major_bumps": 0,
   "added": 0,
-  "removed": 0
+  "removed": 0,
+  "realised_changes": {}
  },
  "pareto_evident": [
   {
    "lambda": 0.0,
-   "risk": 1.0955026066203644,
-   "cost": 53.50000000000001,
-   "changes": 21
-  },
-  {
-   "lambda": 0.02,
-   "risk": 1.0955026066203644,
-   "cost": 50.5,
-   "changes": 20
-  },
-  {
-   "lambda": 0.05,
-   "risk": 1.5001479656674084,
-   "cost": 41.800000000000004,
+   "risk": 8.014943220006202,
+   "cost": 37.900000000000006,
    "changes": 17
   },
   {
+   "lambda": 0.02,
+   "risk": 8.083270417155846,
+   "cost": 29.699999999999996,
+   "changes": 14
+  },
+  {
+   "lambda": 0.05,
+   "risk": 8.083270417155846,
+   "cost": 29.699999999999996,
+   "changes": 14
+  },
+  {
    "lambda": 0.1,
-   "risk": 2.445746540489261,
-   "cost": 32.3,
+   "risk": 8.083270417155846,
+   "cost": 29.699999999999996,
    "changes": 14
   },
   {
    "lambda": 0.2,
-   "risk": 2.7502307068422573,
-   "cost": 30.599999999999994,
-   "changes": 13
+   "risk": 9.841070468404334,
+   "cost": 17.2,
+   "changes": 8
   },
   {
    "lambda": 0.5,
-   "risk": 9.273673125672715,
+   "risk": 11.647353082859066,
    "cost": 11.999999999999998,
    "changes": 6
   },
   {
    "lambda": 1.0,
-   "risk": 10.15717975949736,
-   "cost": 10.299999999999999,
-   "changes": 5
+   "risk": 13.53244447577283,
+   "cost": 8.6,
+   "changes": 4
   },
   {
    "lambda": 2.0,
-   "risk": 10.15717975949736,
-   "cost": 10.299999999999999,
-   "changes": 5
+   "risk": 13.53244447577283,
+   "cost": 8.6,
+   "changes": 4
   },
   {
    "lambda": 5.0,
-   "risk": 17.472172687668564,
+   "risk": 17.189702773352273,
    "cost": 6.9,
    "changes": 3
   },
   {
    "lambda": 100.0,
-   "risk": 17.472172687668564,
+   "risk": 17.189702773352273,
    "cost": 6.9,
    "changes": 3
   }
@@ -311,51 +1645,51 @@
  "pareto_vm": [
   {
    "lambda": 0.0,
-   "risk": 1.67,
-   "cost": 53.50000000000001,
-   "changes": 21
-  },
-  {
-   "lambda": 0.02,
-   "risk": 1.67,
-   "cost": 50.5,
-   "changes": 20
-  },
-  {
-   "lambda": 0.05,
-   "risk": 1.67,
-   "cost": 50.5,
-   "changes": 20
-  },
-  {
-   "lambda": 0.1,
-   "risk": 1.67,
-   "cost": 50.5,
-   "changes": 20
-  },
-  {
-   "lambda": 0.2,
-   "risk": 3.0100000000000002,
-   "cost": 41.800000000000004,
+   "risk": 15.2,
+   "cost": 37.900000000000006,
    "changes": 17
   },
   {
+   "lambda": 0.02,
+   "risk": 15.2,
+   "cost": 36.2,
+   "changes": 16
+  },
+  {
+   "lambda": 0.05,
+   "risk": 15.2,
+   "cost": 36.2,
+   "changes": 16
+  },
+  {
+   "lambda": 0.1,
+   "risk": 15.73,
+   "cost": 29.699999999999996,
+   "changes": 14
+  },
+  {
+   "lambda": 0.2,
+   "risk": 15.73,
+   "cost": 29.699999999999996,
+   "changes": 14
+  },
+  {
    "lambda": 0.5,
-   "risk": 7.85,
-   "cost": 28.399999999999995,
-   "changes": 12
+   "risk": 21.560000000000002,
+   "cost": 14.999999999999998,
+   "changes": 7
   },
   {
    "lambda": 1.0,
-   "risk": 19.0,
-   "cost": 13.299999999999999,
-   "changes": 6
+   "risk": 24.62,
+   "cost": 11.6,
+   "changes": 5
   },
   {
    "lambda": 2.0,
-   "risk": 22.09,
-   "cost": 10.299999999999999,
-   "changes": 5
+   "risk": 27.71,
+   "cost": 8.6,
+   "changes": 4
   },
   {
    "lambda": 5.0,
@@ -372,46 +1706,46 @@
  ],
  "decision": {
   "uncertain": 49,
-  "critical": 8,
-  "evpi_total": 0.8258537032482801,
+  "critical": 2,
+  "evpi_total": 0.11316115190836287,
   "top": [
-   {
-    "package": "black",
-    "advisory": "CVE-2026-31900",
-    "p": 0.3940617577197149,
-    "critical": true,
-    "evpi": 0.23226711370393968
-   },
-   {
-    "package": "black",
-    "advisory": "CVE-2026-114134",
-    "p": 0.3940617577197149,
-    "critical": true,
-    "evpi": 0.2060016339334574
-   },
-   {
-    "package": "black",
-    "advisory": "CVE-2026-32274",
-    "p": 0.15470308788598575,
-    "critical": true,
-    "evpi": 0.11308902289537957
-   },
-   {
-    "package": "python-dotenv",
-    "advisory": "CVE-2026-28684",
-    "p": 0.25753225833751786,
-    "critical": true,
-    "evpi": 0.07983500008463043
-   },
    {
     "package": "ecdsa",
     "advisory": "CVE-2026-33936",
     "p": 0.5744984270811252,
     "critical": true,
-    "evpi": 0.07233526739620869
+    "evpi": 0.07233526739620945
+   },
+   {
+    "package": "fastapi",
+    "advisory": "CVE-2024-24762",
+    "p": 0.6559895848026134,
+    "critical": true,
+    "evpi": 0.04082588451215343
+   },
+   {
+    "package": "anyio",
+    "advisory": "CVE-2026-64847",
+    "p": 0.21461021528126487,
+    "critical": false,
+    "evpi": 0.0
+   },
+   {
+    "package": "anyio",
+    "advisory": "CVE-2026-63374",
+    "p": 0.5744984270811252,
+    "critical": false,
+    "evpi": 0.0
+   },
+   {
+    "package": "ecdsa",
+    "advisory": "CVE-2024-23342",
+    "p": 0.6559895848026134,
+    "critical": false,
+    "evpi": 0.0
    }
   ]
  },
- "remediation_seconds": 25.7,
+ "remediation_seconds": 15.8,
  "status": "ok"
 }

@@ -78,6 +78,17 @@ def code_evidence(findings: list[Finding], g: nx.DiGraph, app_dir: Path | None, 
     stats["pkgs_analysed"] = sum(1 for d in dirs.values() if d is not None)
     stats["funcs"] = len(prog.funcs)
     stats["roots"] = len(prog.roots)
+    # package APIs used by application code (resolved edges only), for post-remediation API checks
+    refs: dict[str, set] = {}
+    for node, tgts in prog.strong.items():
+        if prog.pkg_of(node) != "__app__":
+            continue
+        for t in tgts:
+            p = prog.pkg_of(t)
+            if p and p != "__app__":
+                refs.setdefault(p, set()).add(t)
+    stats["app_refs"] = {p: sorted(s)[:400] for p, s in refs.items()}
+    stats["reflection_kinds"] = {p: sorted(k) for p, k in getattr(prog, "reflection_kinds", {}).items()}
     for f in live:
         imp = an.import_evidence(f.package) if dirs.get(f.package) is not None else UNKNOWN
         nosrc = dirs.get(f.package) is None
@@ -98,7 +109,7 @@ def code_evidence(findings: list[Finding], g: nx.DiGraph, app_dir: Path | None, 
         if gran == "module" and state == "CONFIRMED":
             state = "POSSIBLE"   # module-level change: imported != vulnerable code executed
         f.add("L4", state, reason=r.reason, granularity=gran, symbols=syms[:20], witness=r.witness[:12],
-              missing=state == UNKNOWN and "reflection" not in r.reason)
+              missing=state == UNKNOWN and "reflection" not in r.reason, scopes=r.scopes)
     stats["seconds"] = round(time.time() - t0, 2)
     return stats
 

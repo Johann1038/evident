@@ -1,0 +1,25 @@
+{
+ "advisory": "GHSA-vpp8-g58w-m8mp",
+ "package": "twisted",
+ "commits": [
+  {
+   "repo": "twisted/twisted",
+   "sha": "498939422b69d5a75c4b8f81fa7926423dac534d",
+   "parent": "e4bee3138a21057f3e46c657f463c4cd8ce674f6",
+   "py_files": 1
+  }
+ ],
+ "files": [
+  {
+   "path": "src/twisted/web/_http2.py",
+   "functions": [
+    "H2Connection.__init__",
+    "H2Connection._handlePriorityUpdate",
+    "H2Connection._tryToWriteControlData",
+    "H2Connection.dataReceived"
+   ],
+   "module_level": true
+  }
+ ],
+ "status": "functions"
+}

@@ -1,0 +1,520 @@
+{
+ "id": "TandoorRecipes__recipes@1.4.12",
+ "meta": {
+  "id": "TandoorRecipes__recipes@1.4.12",
+  "repo": "TandoorRecipes/recipes",
+  "tag": "1.4.12",
+  "published_at": "2023-05-26T07:57:32Z",
+  "stars": 8731,
+  "lock_kind": "requirements",
+  "lock_file": "requirements.txt",
+  "lock_path": "requirements.txt",
+  "subdir": "",
+  "manifest": null,
+  "requires_python": null,
+  "description": "Application for managing recipes, planning meals, building shopping lists and much much more!",
+  "topics": [
+   "cookbook",
+   "cooking",
+   "django",
+   "docker",
+   "food",
+   "hacktoberfest",
+   "markdown",
+   "meal-planner",
+   "recipe",
+   "recipes",
+   "selfhosted",
+   "shopping"
+  ]
+ },
+ "python": "3.10",
+ "summary": {
+  "locked": 47,
+  "installed": 47,
+  "direct": 38,
+  "transitive": 9,
+  "edges": 63,
+  "edges_from_lock": false
+ },
+ "stats": {
+  "app_modules": 135,
+  "pkgs_analysed": 26,
+  "pkgs_no_source": 0,
+  "seconds": 466.65,
+  "funcs": 24546,
+  "roots": 732,
+  "app_refs": {
+   "django": [
+    "django",
+    "django.apps",
+    "django.conf",
+    "django.conf.urls",
+    "django.conf.urls.i18n",
+    "django.contrib",
+    "django.contrib.admin",
+    "django.contrib.admin.decorators.action",
+    "django.contrib.auth",
+    "django.contrib.auth.admin",
+    "django.contrib.auth.backends",
+    "django.contrib.auth.context_processors",
+    "django.contrib.auth.decorators",
+    "django.contrib.auth.decorators.user_passes_test",
+    "django.contrib.auth.forms",
+    "django.contrib.auth.get_user",
+    "django.contrib.auth.middleware",
+    "django.contrib.auth.models",
+    "django.contrib.auth.password_validation",
+    "django.contrib.auth.password_validation.validate_password",
+    "django.contrib.contenttypes",
+    "django.contrib.messages",
+    "django.contrib.messages.api.add_message",
+    "django.contrib.messages.context_processors",
+    "django.contrib.messages.middleware",
+    "django.contrib.postgres",
+    "django.contrib.postgres.aggregates",
+    "django.contrib.postgres.aggregates.general.StringAgg",
+    "django.contrib.postgres.indexes",
+    "django.contrib.postgres.indexes.GinIndex",
+    "django.contrib.postgres.search",
+    "django.contrib.postgres.search.SearchQuery",
+    "django.contrib.postgres.search.SearchRank",
+    "django.contrib.postgres.search.SearchVector",
+    "django.contrib.postgres.search.SearchVectorField",
+    "django.contrib.postgres.search.TrigramSimilarity",
+    "django.contrib.sessions",
+    "django.contrib.sessions.middleware",
+    "django.contrib.sites",
+    "django.contrib.staticfiles",
+    "django.core",
+    "django.core.cache",
+    "django.core.cache.backends",
+    "django.core.cache.backends.locmem",
+    "django.core.exceptions",
+    "django.core.exceptions.ValidationError",
+    "django.core.files",
+    "django.core.files.base.File",
+    "django.core.files.uploadedfile",
+    "django.core.mail",
+    "django.core.mail.send_mail",
+    "django.core.management",
+    "django.core.management.base",
+    "django.core.management.commands",
+    "django.core.management.commands.dumpdata",
+    "django.core.management.commands.loaddata",
+    "django.core.management.commands.runserver",
+    "django.core.management.commands.runserver.Command",
+    "django.core.management.execute_from_command_line",
+    "django.core.validators",
+    "django.core.validators.MinLengthValidator",
+    "django.core.wsgi",
+    "django.core.wsgi.get_wsgi_application",
+    "django.db",
+    "django.db.backends",
+    "django.db.backends.postgresql",
+    "django.db.backends.postgresql.features",
+    "django.db.backends.sqlite3",
+    "django.db.models",
+    "django.db.models.aggregates.Avg",
+    "django.db.models.aggregates.Count",
+    "django.db.models.aggregates.Max",
+    "django.db.models.aggregates.Sum",
+    "django.db.models.base.Model.delete",
+    "django.db.models.base.Model.save",
+    "django.db.models.constraints.UniqueConstraint",
+    "django.db.models.deletion.ProtectedError",
+    "django.db.models.expressions.Case",
+    "django.db.models.expressions.Exists",
+    "django.db.models.expressions.F",
+    "django.db.models.expressions.Func",
+    "django.db.models.expressions.OuterRef",
+    "django.db.models.expressions.Subquery",
+    "django.db.models.expressions.Value",
+    "django.db.models.expressions.When",
+    "django.db.models.fields",
+    "django.db.models.fields.BooleanField",
+    "django.db.models.fields.CharField",
+    "django.db.models.fields.DateField",
+    "django.db.models.fields.DateTimeField",
+    "django.db.models.fields.DecimalField",
+    "django.db.models.fields.EmailField",
+    "django.db.models.fields.IntegerField",
+    "django.db.models.fields.PositiveIntegerField",
+    "django.db.models.fields.TextField",
+    "django.db.models.fields.URLField",
+    "django.db.models.fields.UUIDField",
+    "django.db.models.fields.files.FileField",
+    "django.db.models.fields.files.ImageField",
+    "django.db.models.fields.related",
+    "django.db.models.fields.related.ForeignKey",
+    "django.db.models.fields.related.ManyToManyField",
+    "django.db.models.functions",
+    "django.db.models.functions.comparison.Coalesce",
+    "django.db.models.functions.text.Lower",
+    "django.db.models.functions.text.Substr",
+    "django.db.models.indexes.Index",
+    "django.db.models.query_utils.Q",
+    "django.db.models.signals",
+    "django.dispatch",
+    "django.dispatch.dispatcher.receiver",
+    "django.forms",
+    "django.forms.fields.BooleanField",
+    "django.forms.fields.CharField",
+    "django.forms.fields.ChoiceField",
+    "django.forms.fields.DecimalField",
+    "django.forms.fields.IntegerField",
+    "django.forms.forms.BaseForm.add_error",
+    "django.forms.forms.BaseForm.is_valid",
+    "django.forms.models.BaseModelForm.save",
+    "django.forms.models.ModelMultipleChoiceField",
+    "django.forms.widgets",
+    "django.forms.widgets.HiddenInput",
+    "django.forms.widgets.NumberInput",
+    "django.forms.widgets.TextInput",
+    "django.forms.widgets.Textarea",
+    "django.http",
+    "django.http.response.FileResponse",
+    "django.http.response.HttpResponse",
+    "django.http.response.HttpResponseRedirect",
+    "django.http.response.JsonResponse",
+    "django.middleware",
+    "django.middleware.clickjacking",
+    "django.middleware.common",
+    "django.middleware.csrf",
+    "django.middleware.locale",
+    "django.middleware.security",
+    "django.shortcuts",
+    "django.shortcuts.get_object_or_404",
+    "django.shortcuts.redirect",
+    "django.shortcuts.render",
+    "django.template",
+    "django.template.backends",
+    "django.template.backends.django",
+    "django.template.context_processors",
+    "django.template.library.Library",
+    "django.templatetags",
+    "django.templatetags.static",
+    "django.templatetags.static.static",
+    "django.test",
+    "django.test.runner",
+    "django.test.utils",
+    "django.urls",
+    "django.urls.base.reverse",
+    "django.urls.conf.include",
+    "django.utils",
+    "django.utils.dateparse",
+    "django.utils.dateparse.parse_duration",
+    "django.utils.formats",
+    "django.utils.formats.date_format",
+    "django.utils.html",
+    "django.utils.html.format_html",
+    "django.utils.timezone",
+    "django.utils.timezone.now",
+    "django.utils.translation",
+    "django.utils.translation.get_language",
+    "django.utils.translation.gettext",
+    "django.utils.translation.ngettext",
+    "django.views",
+    "django.views.decorators",
+    "django.views.decorators.csrf",
+    "django.views.generic",
+    "django.views.generic.base.View.as_view",
+    "django.views.generic.detail.SingleObjectMixin.get_object",
+    "django.views.generic.edit",
+    "django.views.generic.edit.DeletionMixin.delete",
+    "django.views.generic.edit.DeletionMixin.get_success_url",
+    "django.views.generic.edit.ModelFormMixin.get_form_kwargs",
+    "django.views.i18n",
+    "django.views.static"
+   ],
+   "django-treebeard": [
+    "treebeard",
+    "treebeard.admin",
+    "treebeard.exceptions",
+    "treebeard.forms",
+    "treebeard.forms.movenodeform_factory",
+    "treebeard.mp_tree",
+    "treebeard.mp_tree.MP_Node.find_problems",
+    "treebeard.mp_tree.MP_Node.get_ancestors",
+    "treebeard.mp_tree.MP_Node.get_children",
+    "treebeard.mp_tree.MP_Node.get_parent",
+    "treebeard.mp_tree.MP_Node.get_root_nodes",
+    "treebeard.mp_tree.MP_Node.get_tree",
+    "treebeard.mp_tree.MP_Node.is_root"
+   ],
+   "django-scopes": [
+    "django_scopes",
+    "django_scopes.forms",
+    "django_scopes.manager.ScopedManager",
+    "django_scopes.state.scope",
+    "django_scopes.state.scopes_disabled"
+   ],
+   "django-allauth": [
+    "allauth",
+    "allauth.account",
+    "allauth.account.adapter",
+    "allauth.account.auth_backends",
+    "allauth.socialaccount",
+    "allauth.urls"
+   ],
+   "django-storages": [
+    "storages",
+    "storages.backends",
+    "storages.backends.s3boto3"
+   ],
+   "pillow": [
+    "PIL",
+    "PIL.Image",
+    "PIL.Image.open"
+   ],
+   "markdown": [
+    "markdown",
+    "markdown.core.markdown",
+    "markdown.extensions",
+    "markdown.extensions.fenced_code",
+    "markdown.extensions.tables",
+    "markdown.extensions.tables.TableExtension",
+    "markdown.treeprocessors",
+    "markdown.util.AtomicString"
+   ],
+   "djangorestframework": [
+    "rest_framework",
+    "rest_framework.authentication",
+    "rest_framework.authtoken",
+    "rest_framework.authtoken.models",
+    "rest_framework.authtoken.views",
+    "rest_framework.decorators",
+    "rest_framework.decorators.action",
+    "rest_framework.decorators.api_view",
+    "rest_framework.decorators.permission_classes",
+    "rest_framework.decorators.renderer_classes",
+    "rest_framework.exceptions",
+    "rest_framework.exceptions.APIException",
+    "rest_framework.exceptions.NotFound",
+    "rest_framework.exceptions.PermissionDenied",
+    "rest_framework.exceptions.ValidationError",
+    "rest_framework.fields.CharField",
+    "rest_framework.fields.ChoiceField",
+    "rest_framework.fields.DateTimeField",
+    "rest_framework.fields.FileField",
+    "rest_framework.fields.ImageField",
+    "rest_framework.fields.IntegerField",
+    "rest_framework.fields.ReadOnlyField",
+    "rest_framework.fields.SerializerMethodField",
+    "rest_framework.generics.GenericAPIView.get_object",
+    "rest_framework.pagination",
+    "rest_framework.pagination.PageNumberPagination.get_next_link",
+    "rest_framework.pagination.PageNumberPagination.get_previous_link",
+    "rest_framework.parsers",
+    "rest_framework.permissions",
+    "rest_framework.renderers",
+    "rest_framework.renderers.JSONRenderer",
+    "rest_framework.response",
+    "rest_framework.response.Response",
+    "rest_framework.routers",
+    "rest_framework.schemas",
+    "rest_framework.schemas.get_schema_view",
+    "rest_framework.schemas.openapi",
+    "rest_framework.schemas.utils",
+    "rest_framework.schemas.utils.is_list_view",
+    "rest_framework.serializers",
+    "rest_framework.serializers.BaseSerializer.is_valid",
+    "rest_framework.status",
+    "rest_framework.throttling",
+    "rest_framework.urls",
+    "rest_framework.viewsets"
+   ],
+   "recipe-scrapers": [
+    "recipe_scrapers",
+    "recipe_scrapers._abstract",
+    "recipe_scrapers._exceptions",
+    "recipe_scrapers._factory",
+    "recipe_scrapers._schemaorg",
+    "recipe_scrapers._schemaorg.SchemaOrg",
+    "recipe_scrapers._utils",
+    "recipe_scrapers._utils.get_host_name",
+    "recipe_scrapers._utils.get_minutes",
+    "recipe_scrapers.scrape_me"
+   ],
+   "beautifulsoup4": [
+    "bs4",
+    "bs4.BeautifulSoup",
+    "bs4.element.Tag.find_all"
+   ],
+   "bleach": [
+    "bleach",
+    "bleach.clean"
+   ],
+   "jinja2": [
+    "jinja2",
+    "jinja2.environment.Template",
+    "jinja2.environment.Template.render"
+   ],
+   "requests": [
+    "requests",
+    "requests.api.get",
+    "requests.api.post",
+    "requests.auth",
+    "requests.auth.HTTPBasicAuth",
+    "requests.exceptions"
+   ],
+   "lxml": [
+    "lxml"
+   ],
+   "django-annoying": [
+    "annoying",
+    "annoying.decorators",
+    "annoying.fields",
+    "annoying.fields.AutoOneToOneField",
+    "annoying.functions",
+    "annoying.functions.get_object_or_None"
+   ],
+   "django-tables2": [
+    "django_tables2",
+    "django_tables2.columns.linkcolumn.LinkColumn",
+    "django_tables2.columns.templatecolumn.TemplateColumn",
+    "django_tables2.config.RequestConfig",
+    "django_tables2.utils",
+    "django_tables2.utils.Accessor"
+   ],
+   "pytest": [
+    "_pytest.fixtures.fixture",
+    "_pytest.python_api.raises",
+    "pytest"
+   ],
+   "pytest-factoryboy": [
+    "pytest_factoryboy",
+    "pytest_factoryboy.fixture.LazyFixture",
+    "pytest_factoryboy.fixture.register"
+   ],
+   "pytest-django": [
+    "pytest_django",
+    "pytest_django.asserts",
+    "pytest_django.asserts.assertTemplateUsed"
+   ],
+   "python-ldap": [
+    "setup"
+   ],
+   "python-dotenv": [
+    "dotenv",
+    "dotenv.main.load_dotenv"
+   ],
+   "django-auth-ldap": [
+    "django_auth_ldap",
+    "django_auth_ldap.backend",
+    "django_auth_ldap.config",
+    "django_auth_ldap.config.LDAPSearch"
+   ],
+   "django-debug-toolbar": [
+    "debug_toolbar",
+    "debug_toolbar.middleware",
+    "debug_toolbar.urls"
+   ],
+   "django-cors-headers": [
+    "corsheaders",
+    "corsheaders.middleware"
+   ]
+  },
+  "reflection_kinds": {
+   "djangorestframework": [
+    "dyn_class",
+    "import_module",
+    "monkeypatch",
+    "namespace",
+    "setattr"
+   ],
+   "bleach": [
+    "eval",
+    "namespace",
+    "setattr"
+   ],
+   "pillow": [
+    "__import__",
+    "namespace",
+    "setattr"
+   ],
+   "markdown": [
+    "import_module",
+    "plugin"
+   ],
+   "python-ldap": [
+    "setattr"
+   ],
+   "django": [
+    "__import__",
+    "dyn_class",
+    "import_module",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "cryptography": [
+    "setattr"
+   ],
+   "requests": [
+    "__import__",
+    "namespace",
+    "setattr"
+   ],
+   "django-allauth": [
+    "__import__",
+    "import_module",
+    "setattr"
+   ],
+   "jinja2": [
+    "__import__",
+    "dyn_class",
+    "exec",
+    "import_module",
+    "namespace",
+    "setattr"
+   ],
+   "recipe-scrapers": [
+    "import_module",
+    "setattr"
+   ],
+   "django-auth-ldap": [
+    "setattr"
+   ],
+   "django-debug-toolbar": [
+    "monkeypatch",
+    "setattr"
+   ],
+   "django-annoying": [
+    "__import__",
+    "setattr"
+   ],
+   "django-tables2": [
+    "dyn_class"
+   ],
+   "django-treebeard": [
+    "dyn_class"
+   ],
+   "django-storages": [
+    "setattr"
+   ],
+   "beautifulsoup4": [
+    "setattr"
+   ],
+   "__app__": [
+    "__import__",
+    "setattr"
+   ]
+  }
+ },
+ "scan_seconds": 474.1,
+ "sdist_only": [
+  "django-allauth",
+  "django-autocomplete-light",
+  "microdata",
+  "python-ldap",
+  "validators",
+  "webdavclient3"
+ ],
+ "baseline_resolution": {
+  "ok": false,
+  "seconds": 1.7,
+  "error": "bled for all packages (i.e., with `--no-build`)\n\nhint: Wheels are required for `django-auth-ldap` because building from source is disabled for all packages (i.e., with `--no-build`)\n\nhint: The `--python-version` value (>=3.10) includes Python versions that are not supported by your dependencies (e.g., django-auth-ldap==5.4.0 only supports >=3.11). Consider using a higher `--python-version` value.\n"
+ },
+ "status": "baseline_unresolvable"
+}

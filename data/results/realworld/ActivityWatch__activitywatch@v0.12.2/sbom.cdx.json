@@ -1,10 +1,10 @@
 {
  "bomFormat": "CycloneDX",
  "specVersion": "1.6",
- "serialNumber": "urn:uuid:be466c43-249f-4946-8464-54c4580c9bf9",
+ "serialNumber": "urn:uuid:98163eda-9551-4737-85bb-7aef52756c0a",
  "version": 1,
  "metadata": {
-  "timestamp": "2026-11-12T10:24:06+00:00",
+  "timestamp": "2026-11-13T16:18:04+00:00",
   "tools": {
    "components": [
     {
@@ -202,14 +202,14 @@
   {
    "ref": "app",
    "dependsOn": [
-    "pkg:pypi/pytest@7.2.0",
-    "pkg:pypi/pyinstaller@5.7.0",
-    "pkg:pypi/pywin32-ctypes@0.2.0",
-    "pkg:pypi/pytest-benchmark@4.0.0",
+    "pkg:pypi/psutil@5.9.4",
     "pkg:pypi/pytest-cov@4.0.0",
-    "pkg:pypi/pefile@2022.5.30",
+    "pkg:pypi/pyinstaller@5.7.0",
+    "pkg:pypi/pytest@7.2.0",
+    "pkg:pypi/pytest-benchmark@4.0.0",
     "pkg:pypi/mypy@0.991",
-    "pkg:pypi/psutil@5.9.4"
+    "pkg:pypi/pywin32-ctypes@0.2.0",
+    "pkg:pypi/pefile@2022.5.30"
    ]
   },
   {

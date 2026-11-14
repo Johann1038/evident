@@ -23,3 +23,6 @@ data/*.log
 data/*.err
 data/collect*.log
 data/intel/*.pkl
+revision.txt
+data/queue.out
+data/results/*.prev.jsonl

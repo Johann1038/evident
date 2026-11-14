@@ -1,0 +1,2564 @@
+[
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "black",
+  "version": "19.10b0",
+  "advisory": "CVE-2026-32274",
+  "ids": [
+   "GHSA-3936-cmfr-pm3m",
+   "PYSEC-2026-2121"
+  ],
+  "cves": [
+   "CVE-2026-32274"
+  ],
+  "cvss": 8.7,
+  "epss": 0.00691,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2026-03-12T18:33:10Z",
+  "fixed": [
+   "26.3.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.3940617577197149,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "black",
+  "version": "19.10b0",
+  "advisory": "CVE-2026-114134",
+  "ids": [
+   "GHSA-cg8m-r9f2-5wm2"
+  ],
+  "cves": [
+   "CVE-2026-114134"
+  ],
+  "cvss": 8.7,
+  "epss": 0.00404,
+  "kev": false,
+  "severity_w": 0.8699999999999999,
+  "published": "2026-10-22T16:18:57Z",
+  "fixed": [
+   "26.10.1"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.3940617577197149,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "black",
+  "version": "19.10b0",
+  "advisory": "CVE-2024-21503",
+  "ids": [
+   "GHSA-fj7x-q9j7-g6q6",
+   "PYSEC-2024-48"
+  ],
+  "cves": [
+   "CVE-2024-21503"
+  ],
+  "cvss": 5.3,
+  "epss": 0.00979,
+  "kev": false,
+  "severity_w": 0.53,
+  "published": "2024-03-19T05:15:00Z",
+  "fixed": [
+   "24.3.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.3940617577197149,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "black",
+  "version": "19.10b0",
+  "advisory": "CVE-2026-31900",
+  "ids": [
+   "PYSEC-2026-2120"
+  ],
+  "cves": [
+   "CVE-2026-31900"
+  ],
+  "cvss": 9.8,
+  "epss": 0.00522,
+  "kev": false,
+  "severity_w": 0.9800000000000001,
+  "published": "2026-03-11T20:16:15.960Z",
+  "fixed": [
+   "26.3.0"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.3940617577197149,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (module_only)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "certifi",
+  "version": "2019.9.11",
+  "advisory": "CVE-2022-23491",
+  "ids": [
+   "GHSA-43fp-rhv2-5gv8",
+   "PYSEC-2022-42986"
+  ],
+  "cves": [
+   "CVE-2022-23491"
+  ],
+  "cvss": 6.8,
+  "epss": 0.0053,
+  "kev": false,
+  "severity_w": 0.6799999999999999,
+  "published": "2022-12-07T22:15:00Z",
+  "fixed": [
+   "2022.12.07",
+   "2022.12.7"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "module",
+     "symbols": [
+      "certifi.<module>"
+     ],
+     "witness": [
+      "__app__.Scripts.bulk_repo_add.<module>",
+      "certifi.<module>"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "certifi",
+  "version": "2019.9.11",
+  "advisory": "GHSA-6q48-6c7w-9gw2",
+  "ids": [
+   "GHSA-6q48-6c7w-9gw2",
+   "PYSEC-2026-4320"
+  ],
+  "cves": [],
+  "cvss": 9.1,
+  "epss": 0.0,
+  "kev": false,
+  "severity_w": 0.9099999999999999,
+  "published": "2026-10-20T19:35:05Z",
+  "fixed": [
+   "2026.10.18"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.6559895848026134,
+  "exposure_class": "IMPORTED_REACH_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "certifi",
+  "version": "2019.9.11",
+  "advisory": "CVE-2023-37920",
+  "ids": [
+   "GHSA-xqr8-7jwr-rhp7",
+   "PYSEC-2023-135"
+  ],
+  "cves": [
+   "CVE-2023-37920"
+  ],
+  "cvss": 7.5,
+  "epss": 0.00568,
+  "kev": false,
+  "severity_w": 0.75,
+  "published": "2023-07-25T14:43:53Z",
+  "fixed": [
+   "2023.7.22"
+  ],
+  "depth": 1,
+  "direct": true,
+  "p_exposed": 0.5744984270811252,
+  "exposure_class": "POSSIBLY_REACHABLE",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "CONFIRMED",
+  "L4_state": "POSSIBLE",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 1
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "CONFIRMED",
+    "detail": {
+     "reason": "",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "POSSIBLE",
+    "detail": {
+     "reason": "strong call path",
+     "granularity": "module",
+     "symbols": [
+      "certifi.<module>"
+     ],
+     "witness": [
+      "__app__.Scripts.bulk_repo_add.<module>",
+      "certifi.<module>"
+     ],
+     "missing": false,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "virtualenv",
+  "version": "20.0.8",
+  "advisory": "CVE-2026-113718",
+  "ids": [
+   "GHSA-394h-qwmc-48pf"
+  ],
+  "cves": [
+   "CVE-2026-113718"
+  ],
+  "cvss": 7.1,
+  "epss": 0.00242,
+  "kev": false,
+  "severity_w": 0.71,
+  "published": "2026-10-23T22:24:43Z",
+  "fixed": [
+   "21.14.9"
+  ],
+  "depth": 4,
+  "direct": false,
+  "p_exposed": 0.3940617577197149,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 4
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "vulnerable symbols not found in installed source",
+     "granularity": "function",
+     "symbols": [
+      "virtualenv.activation.xonsh.XonshActivator.quote"
+     ],
+     "witness": [],
+     "missing": true,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "virtualenv",
+  "version": "20.0.8",
+  "advisory": "CVE-2026-113724",
+  "ids": [
+   "GHSA-43mp-35q3-x3fq"
+  ],
+  "cves": [
+   "CVE-2026-113724"
+  ],
+  "cvss": 4.5,
+  "epss": 0.00203,
+  "kev": false,
+  "severity_w": 0.45,
+  "published": "2026-10-21T21:31:34Z",
+  "fixed": [
+   "21.14.9"
+  ],
+  "depth": 4,
+  "direct": false,
+  "p_exposed": 0.12891923990498813,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 4
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (app: __import__,namespace)",
+     "granularity": "function",
+     "symbols": [
+      "virtualenv.util.path._sync.safe_delete.onerror"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "virtualenv",
+  "version": "20.0.8",
+  "advisory": "CVE-2026-113714",
+  "ids": [
+   "GHSA-494p-63j8-28p3"
+  ],
+  "cves": [
+   "CVE-2026-113714"
+  ],
+  "cvss": 2.3,
+  "epss": 0.00249,
+  "kev": false,
+  "severity_w": 0.22999999999999998,
+  "published": "2026-10-23T22:25:22Z",
+  "fixed": [
+   "21.14.9"
+  ],
+  "depth": 4,
+  "direct": false,
+  "p_exposed": 0.12891923990498813,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 4
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (app: __import__,namespace)",
+     "granularity": "function",
+     "symbols": [
+      "virtualenv.seed.embed.pip_invoke.PipInvoke.get_pip_install_cmd"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "virtualenv",
+  "version": "20.0.8",
+  "advisory": "CVE-2026-113721",
+  "ids": [
+   "GHSA-558c-9hv2-4prj"
+  ],
+  "cves": [
+   "CVE-2026-113721"
+  ],
+  "cvss": 4.5,
+  "epss": 0.00144,
+  "kev": false,
+  "severity_w": 0.45,
+  "published": "2026-10-22T17:03:12Z",
+  "fixed": [
+   "21.14.9"
+  ],
+  "depth": 4,
+  "direct": false,
+  "p_exposed": 0.12891923990498813,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 4
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (app: __import__,namespace)",
+     "granularity": "function",
+     "symbols": [
+      "virtualenv.activation.via_template.ViaTemplateActivator._generate",
+      "virtualenv.create.creator.Creator.add_cachedir_tag",
+      "virtualenv.create.creator.Creator.setup_ignore_vcs",
+      "virtualenv.create.via_global_ref.api.ViaGlobalRefApi.install_patch",
+      "virtualenv.create.via_global_ref.venv.Venv.create",
+      "virtualenv.util.path._sync.ensure_safe_to_do"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "virtualenv",
+  "version": "20.0.8",
+  "advisory": "CVE-2026-22702",
+  "ids": [
+   "GHSA-597g-3phw-6986",
+   "PYSEC-2026-2009"
+  ],
+  "cves": [
+   "CVE-2026-22702"
+  ],
+  "cvss": 4.5,
+  "epss": 0.001,
+  "kev": false,
+  "severity_w": 0.45,
+  "published": "2026-01-13T18:45:57Z",
+  "fixed": [
+   "20.36.1"
+  ],
+  "depth": 4,
+  "direct": false,
+  "p_exposed": 0.12891923990498813,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 4
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (app: __import__,namespace)",
+     "granularity": "function",
+     "symbols": [
+      "virtualenv.util.lock.ReentrantFileLock._lock_file",
+      "virtualenv.util.lock._CountedFileLock.__init__"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "virtualenv",
+  "version": "20.0.8",
+  "advisory": "CVE-2026-113726",
+  "ids": [
+   "GHSA-5vjq-rrrf-7h2q"
+  ],
+  "cves": [
+   "CVE-2026-113726"
+  ],
+  "cvss": 7.8,
+  "epss": 0.00345,
+  "kev": false,
+  "severity_w": 0.78,
+  "published": "2026-10-21T16:46:23Z",
+  "fixed": [
+   "21.14.4"
+  ],
+  "depth": 4,
+  "direct": false,
+  "p_exposed": 0.3940617577197149,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 4
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "virtualenv",
+  "version": "20.0.8",
+  "advisory": "CVE-2026-113723",
+  "ids": [
+   "GHSA-6w3r-xr62-4xcp"
+  ],
+  "cves": [
+   "CVE-2026-113723"
+  ],
+  "cvss": 7.1,
+  "epss": 0.00242,
+  "kev": false,
+  "severity_w": 0.71,
+  "published": "2026-10-23T22:21:57Z",
+  "fixed": [
+   "21.14.9"
+  ],
+  "depth": 4,
+  "direct": false,
+  "p_exposed": 0.3940617577197149,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 4
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "virtualenv",
+  "version": "20.0.8",
+  "advisory": "CVE-2026-102930",
+  "ids": [
+   "GHSA-94p9-xgh2-xp45",
+   "PYSEC-2026-4011"
+  ],
+  "cves": [
+   "CVE-2026-102930"
+  ],
+  "cvss": 7.7,
+  "epss": 0.00197,
+  "kev": false,
+  "severity_w": 0.77,
+  "published": "2026-09-18T01:41:45Z",
+  "fixed": [
+   "21.7.12"
+  ],
+  "depth": 4,
+  "direct": false,
+  "p_exposed": 0.3940617577197149,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 4
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "virtualenv",
+  "version": "20.0.8",
+  "advisory": "CVE-2026-102938",
+  "ids": [
+   "GHSA-9h9j-4vrj-gf7g",
+   "PYSEC-2026-4012"
+  ],
+  "cves": [
+   "CVE-2026-102938"
+  ],
+  "cvss": 5.8,
+  "epss": 0.00146,
+  "kev": false,
+  "severity_w": 0.58,
+  "published": "2026-09-17T16:42:47Z",
+  "fixed": [
+   "21.7.11"
+  ],
+  "depth": 4,
+  "direct": false,
+  "p_exposed": 0.3940617577197149,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 4
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "virtualenv",
+  "version": "20.0.8",
+  "advisory": "CVE-2026-113732",
+  "ids": [
+   "GHSA-c947-3pg5-gm8q"
+  ],
+  "cves": [
+   "CVE-2026-113732"
+  ],
+  "cvss": 7.8,
+  "epss": 0.00236,
+  "kev": false,
+  "severity_w": 0.78,
+  "published": "2026-10-21T16:39:58Z",
+  "fixed": [
+   "21.14.2"
+  ],
+  "depth": 4,
+  "direct": false,
+  "p_exposed": 0.12891923990498813,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 4
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (app: __import__,namespace)",
+     "granularity": "function",
+     "symbols": [
+      "virtualenv.activation.fish.FishActivator.replacements"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "virtualenv",
+  "version": "20.0.8",
+  "advisory": "CVE-2026-113722",
+  "ids": [
+   "GHSA-c978-59m8-c77v"
+  ],
+  "cves": [
+   "CVE-2026-113722"
+  ],
+  "cvss": 7.8,
+  "epss": 0.00285,
+  "kev": false,
+  "severity_w": 0.78,
+  "published": "2026-10-21T21:30:12Z",
+  "fixed": [
+   "21.14.9"
+  ],
+  "depth": 4,
+  "direct": false,
+  "p_exposed": 0.12891923990498813,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 4
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (app: __import__,namespace)",
+     "granularity": "function",
+     "symbols": [
+      "virtualenv.seed.embed.pip_invoke.PipInvoke.run"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "virtualenv",
+  "version": "20.0.8",
+  "advisory": "CVE-2026-113716",
+  "ids": [
+   "GHSA-cw65-gx24-rc82"
+  ],
+  "cves": [
+   "CVE-2026-113716"
+  ],
+  "cvss": 4.5,
+  "epss": 0.00144,
+  "kev": false,
+  "severity_w": 0.45,
+  "published": "2026-10-21T21:35:56Z",
+  "fixed": [
+   "21.14.9"
+  ],
+  "depth": 4,
+  "direct": false,
+  "p_exposed": 0.12891923990498813,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 4
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (app: __import__,namespace)",
+     "granularity": "function",
+     "symbols": [
+      "virtualenv.create.via_global_ref.builtin.via_global_self_do.ViaGlobalRefVirtualenvBuiltin.create",
+      "virtualenv.create.via_global_ref.venv.Venv.create"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "virtualenv",
+  "version": "20.0.8",
+  "advisory": "CVE-2026-113717",
+  "ids": [
+   "GHSA-cx28-75q4-x26q"
+  ],
+  "cves": [
+   "CVE-2026-113717"
+  ],
+  "cvss": 2.3,
+  "epss": 0.00293,
+  "kev": false,
+  "severity_w": 0.22999999999999998,
+  "published": "2026-10-23T22:26:04Z",
+  "fixed": [
+   "21.14.9"
+  ],
+  "depth": 4,
+  "direct": false,
+  "p_exposed": 0.12891923990498813,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 4
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (app: __import__,namespace)",
+     "granularity": "function",
+     "symbols": [
+      "virtualenv.seed.embed.pip_invoke.PipInvoke.get_pip_install_cmd"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "virtualenv",
+  "version": "20.0.8",
+  "advisory": "CVE-2026-113720",
+  "ids": [
+   "GHSA-fc2g-4w5p-6whm"
+  ],
+  "cves": [
+   "CVE-2026-113720"
+  ],
+  "cvss": 4.4,
+  "epss": 0.00134,
+  "kev": false,
+  "severity_w": 0.44000000000000006,
+  "published": "2026-10-23T22:23:11Z",
+  "fixed": [
+   "21.14.9"
+  ],
+  "depth": 4,
+  "direct": false,
+  "p_exposed": 0.12891923990498813,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 4
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (app: __import__,namespace)",
+     "granularity": "function",
+     "symbols": [
+      "virtualenv.util.path._sync.copy",
+      "virtualenv.util.path._sync.copytree"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "virtualenv",
+  "version": "20.0.8",
+  "advisory": "CVE-2026-113719",
+  "ids": [
+   "GHSA-hhxq-47xx-j5xx"
+  ],
+  "cves": [
+   "CVE-2026-113719"
+  ],
+  "cvss": 4.5,
+  "epss": 0.00203,
+  "kev": false,
+  "severity_w": 0.45,
+  "published": "2026-10-23T22:19:15Z",
+  "fixed": [
+   "21.14.9"
+  ],
+  "depth": 4,
+  "direct": false,
+  "p_exposed": 0.3940617577197149,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 4
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (functions)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "virtualenv",
+  "version": "20.0.8",
+  "advisory": "CVE-2026-102925",
+  "ids": [
+   "GHSA-p58f-9548-mpm2",
+   "PYSEC-2026-4013"
+  ],
+  "cves": [
+   "CVE-2026-102925"
+  ],
+  "cvss": 7.8,
+  "epss": 0.00164,
+  "kev": false,
+  "severity_w": 0.78,
+  "published": "2026-09-18T04:37:14Z",
+  "fixed": [
+   "21.7.13"
+  ],
+  "depth": 4,
+  "direct": false,
+  "p_exposed": 0.3940617577197149,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 4
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "virtualenv",
+  "version": "20.0.8",
+  "advisory": "CVE-2026-113715",
+  "ids": [
+   "GHSA-qmx5-4p3x-wvqf"
+  ],
+  "cves": [
+   "CVE-2026-113715"
+  ],
+  "cvss": 2.0,
+  "epss": 0.00242,
+  "kev": false,
+  "severity_w": 0.2,
+  "published": "2026-10-23T22:20:43Z",
+  "fixed": [
+   "21.14.9"
+  ],
+  "depth": 4,
+  "direct": false,
+  "p_exposed": 0.12891923990498813,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 4
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection in reachable region (app: __import__,namespace)",
+     "granularity": "function",
+     "symbols": [
+      "virtualenv.create.via_global_ref.venv.Venv.create_inline",
+      "virtualenv.create.via_global_ref.venv.Venv.set_pyenv_cfg"
+     ],
+     "witness": [],
+     "missing": false,
+     "scopes": {
+      "global": "UNKNOWN",
+      "package": "UNKNOWN",
+      "module": "UNKNOWN",
+      "reachable": "UNKNOWN"
+     }
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "virtualenv",
+  "version": "20.0.8",
+  "advisory": "CVE-2024-53899",
+  "ids": [
+   "GHSA-rqc4-2hc7-8c8v",
+   "PYSEC-2024-187"
+  ],
+  "cves": [
+   "CVE-2024-53899"
+  ],
+  "cvss": 9.8,
+  "epss": 0.01572,
+  "kev": false,
+  "severity_w": 0.9800000000000001,
+  "published": "2024-11-24T16:15:06Z",
+  "fixed": [
+   "20.26.6"
+  ],
+  "depth": 4,
+  "direct": false,
+  "p_exposed": 0.3940617577197149,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 4
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_commit)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "virtualenv",
+  "version": "20.0.8",
+  "advisory": "CVE-2026-113725",
+  "ids": [
+   "GHSA-vxj4-q4g9-crj7"
+  ],
+  "cves": [
+   "CVE-2026-113725"
+  ],
+  "cvss": 7.8,
+  "epss": 0.00263,
+  "kev": false,
+  "severity_w": 0.78,
+  "published": "2026-10-21T16:49:01Z",
+  "fixed": [
+   "21.14.7"
+  ],
+  "depth": 4,
+  "direct": false,
+  "p_exposed": 0.3940617577197149,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 1
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 4
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no vulnerable symbols (no_python_change)",
+     "granularity": "none",
+     "missing": true
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "virtualenv",
+  "version": "20.0.8",
+  "advisory": "CVE-2026-102937",
+  "ids": [
+   "GHSA-x78j-v8h9-3j2q",
+   "PYSEC-2026-4014"
+  ],
+  "cves": [
+   "CVE-2026-102937"
+  ],
+  "cvss": 7.3,
+  "epss": 0.00208,
+  "kev": false,
+  "severity_w": 0.73,
+  "published": "2026-09-18T01:41:45Z",
+  "fixed": [
+   "21.7.12"
+  ],
+  "depth": 4,
+  "direct": false,
+  "p_exposed": 0.3940617577197149,
+  "exposure_class": "INSTALLED_UNKNOWN",
+  "vex": {
+   "state": "in_triage"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "CONFIRMED",
+  "L3b_state": "UNKNOWN",
+  "L4_state": "UNKNOWN",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "CONFIRMED",
+    "detail": {
+     "scope": "prod",
+     "depth": 4
+    },
+    "tool": "evident"
+   },
+   "L3b": {
+    "level": "L3b",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "reflection",
+     "missing": false
+    },
+    "tool": "evident"
+   },
+   "L4": {
+    "level": "L4",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "vulnerable symbols not found in installed source",
+     "granularity": "function",
+     "symbols": [
+      "virtualenv.activation.batch.BatchActivator.quote"
+     ],
+     "witness": [],
+     "missing": true,
+     "scopes": null
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ },
+ {
+  "snapshot": "autopkg__autopkg@v2.7.2",
+  "package": "zipp",
+  "version": "0.5.1",
+  "advisory": "CVE-2024-5569",
+  "ids": [
+   "GHSA-jfmj-5v4g-7637",
+   "PYSEC-2026-2074"
+  ],
+  "cves": [
+   "CVE-2024-5569"
+  ],
+  "cvss": 6.9,
+  "epss": 0.00236,
+  "kev": false,
+  "severity_w": 0.6900000000000001,
+  "published": "2024-07-09T00:31:40Z",
+  "fixed": [
+   "3.19.1"
+  ],
+  "depth": 4,
+  "direct": false,
+  "p_exposed": 0.0,
+  "exposure_class": "NOT_INSTALLED",
+  "vex": {
+   "state": "not_affected",
+   "justification": "component_not_present"
+  },
+  "L1_state": "CONFIRMED",
+  "L2_state": "CONFIRMED",
+  "L3_state": "REFUTED",
+  "L5_state": "UNKNOWN",
+  "evidence": {
+   "L1": {
+    "level": "L1",
+    "state": "CONFIRMED",
+    "detail": {
+     "source": "requirements"
+    },
+    "tool": "evident"
+   },
+   "L2": {
+    "level": "L2",
+    "state": "CONFIRMED",
+    "detail": {
+     "ranges": 2
+    },
+    "tool": "evident"
+   },
+   "L3": {
+    "level": "L3",
+    "state": "REFUTED",
+    "detail": {
+     "reason": "marker/target-environment excludes package",
+     "scope": "none"
+    },
+    "tool": "evident"
+   },
+   "L5": {
+    "level": "L5",
+    "state": "UNKNOWN",
+    "detail": {
+     "reason": "no runtime traces collected"
+    },
+    "tool": "evident"
+   }
+  }
+ }
+]

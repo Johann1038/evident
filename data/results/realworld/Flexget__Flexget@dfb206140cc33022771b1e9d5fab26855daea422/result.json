@@ -36,11 +36,522 @@
   "app_modules": 643,
   "pkgs_analysed": 71,
   "pkgs_no_source": 0,
-  "seconds": 149.63,
+  "seconds": 102.69,
   "funcs": 52203,
-  "roots": 3804
+  "roots": 3804,
+  "app_refs": {
+   "click": [
+    "click",
+    "click.decorators.argument",
+    "click.decorators.group",
+    "click.decorators.option",
+    "click.exceptions.Abort",
+    "click.exceptions.ClickException",
+    "click.types.Choice",
+    "click.utils.echo"
+   ],
+   "requests": [
+    "requests",
+    "requests.api.delete",
+    "requests.api.get",
+    "requests.api.post",
+    "requests.api.put",
+    "requests.auth",
+    "requests.auth.HTTPBasicAuth",
+    "requests.auth.HTTPDigestAuth",
+    "requests.cookies",
+    "requests.cookies.RequestsCookieJar",
+    "requests.cookies.cookiejar_from_dict",
+    "requests.exceptions",
+    "requests.exceptions.RequestException",
+    "requests.exceptions.Timeout",
+    "requests.models.Request",
+    "requests.models.Response",
+    "requests.packages",
+    "requests.sessions",
+    "requests.sessions.Session",
+    "requests.structures.CaseInsensitiveDict",
+    "requests.utils",
+    "requests.utils.dict_from_cookiejar",
+    "requests.utils.parse_header_links"
+   ],
+   "sphinx": [
+    "sphinx",
+    "sphinx.ext",
+    "sphinx.ext.autodoc",
+    "sphinx.ext.coverage",
+    "sphinx.ext.doctest",
+    "sphinx.ext.extlinks",
+    "sphinx.ext.intersphinx"
+   ],
+   "flask-compress": [
+    "flask_compress",
+    "flask_compress.flask_compress.Compress"
+   ],
+   "flask": [
+    "flask",
+    "flask.app.Flask",
+    "flask.helpers",
+    "flask.helpers.abort",
+    "flask.helpers.make_response",
+    "flask.helpers.redirect",
+    "flask.helpers.send_file",
+    "flask.helpers.send_from_directory",
+    "flask.json.jsonify",
+    "flask.templating.render_template",
+    "flask.wrappers.Response"
+   ],
+   "flask-restx": [
+    "flask_restx",
+    "flask_restx.inputs",
+    "flask_restx.reqparse"
+   ],
+   "sqlalchemy": [
+    "sqlalchemy",
+    "sqlalchemy.engine",
+    "sqlalchemy.engine.base.Connection.execute",
+    "sqlalchemy.engine.create.create_engine",
+    "sqlalchemy.event",
+    "sqlalchemy.event.api.listen",
+    "sqlalchemy.event.api.listens_for",
+    "sqlalchemy.exc",
+    "sqlalchemy.ext",
+    "sqlalchemy.ext.associationproxy",
+    "sqlalchemy.ext.associationproxy.association_proxy",
+    "sqlalchemy.ext.compiler",
+    "sqlalchemy.ext.compiler.compiles",
+    "sqlalchemy.ext.declarative",
+    "sqlalchemy.ext.hybrid",
+    "sqlalchemy.ext.hybrid.Comparator.__clause_element__",
+    "sqlalchemy.ext.hybrid.hybrid_property",
+    "sqlalchemy.ext.hybrid.hybrid_property.comparator",
+    "sqlalchemy.orm",
+    "sqlalchemy.orm._orm_constructors.backref",
+    "sqlalchemy.orm._orm_constructors.relationship",
+    "sqlalchemy.orm._orm_constructors.synonym",
+    "sqlalchemy.orm.decl_api.as_declarative",
+    "sqlalchemy.orm.decl_api.declarative_base",
+    "sqlalchemy.orm.exc",
+    "sqlalchemy.orm.query",
+    "sqlalchemy.orm.query.Query.__iter__",
+    "sqlalchemy.orm.session.Session.commit",
+    "sqlalchemy.orm.session.Session.rollback",
+    "sqlalchemy.orm.session.object_session",
+    "sqlalchemy.orm.session.sessionmaker",
+    "sqlalchemy.orm.strategy_options.joinedload",
+    "sqlalchemy.schema",
+    "sqlalchemy.sql",
+    "sqlalchemy.sql._dml_constructors.delete",
+    "sqlalchemy.sql._dml_constructors.update",
+    "sqlalchemy.sql._elements_constructors.and_",
+    "sqlalchemy.sql._elements_constructors.column",
+    "sqlalchemy.sql._elements_constructors.desc",
+    "sqlalchemy.sql._elements_constructors.extract",
+    "sqlalchemy.sql._elements_constructors.not_",
+    "sqlalchemy.sql._elements_constructors.or_",
+    "sqlalchemy.sql._elements_constructors.text",
+    "sqlalchemy.sql._selectable_constructors.select",
+    "sqlalchemy.sql.elements",
+    "sqlalchemy.sql.elements.BooleanClauseList.and_",
+    "sqlalchemy.sql.expression",
+    "sqlalchemy.sql.schema",
+    "sqlalchemy.sql.schema.Column",
+    "sqlalchemy.sql.schema.ColumnDefault",
+    "sqlalchemy.sql.schema.DefaultGenerator._set_parent",
+    "sqlalchemy.sql.schema.ForeignKey",
+    "sqlalchemy.sql.schema.Index",
+    "sqlalchemy.sql.schema.MetaData",
+    "sqlalchemy.sql.schema.MetaData.reflect",
+    "sqlalchemy.sql.schema.Table",
+    "sqlalchemy.sql.sqltypes",
+    "sqlalchemy.sql.sqltypes.Unicode",
+    "sqlalchemy.types"
+   ],
+   "jsonschema": [
+    "jsonschema",
+    "jsonschema._format.FormatChecker",
+    "jsonschema._utils.find_additional_properties",
+    "jsonschema.exceptions",
+    "jsonschema.exceptions.RefResolutionError",
+    "jsonschema.validators.RefResolver.from_schema",
+    "jsonschema.validators.extend",
+    "jsonschema.validators.validates"
+   ],
+   "flask-cors": [
+    "flask_cors",
+    "flask_cors.extension.CORS"
+   ],
+   "werkzeug": [
+    "werkzeug",
+    "werkzeug.http",
+    "werkzeug.http.generate_etag",
+    "werkzeug.security",
+    "werkzeug.security.check_password_hash",
+    "werkzeug.security.generate_password_hash"
+   ],
+   "flask-login": [
+    "flask_login",
+    "flask_login.login_manager.LoginManager",
+    "flask_login.utils",
+    "flask_login.utils.login_user"
+   ],
+   "cherrypy": [
+    "cherrypy"
+   ],
+   "rich": [
+    "rich",
+    "rich.box",
+    "rich.box.Box",
+    "rich.console",
+    "rich.console.Console.render_str",
+    "rich.highlighter",
+    "rich.highlighter.ReprHighlighter",
+    "rich.markup",
+    "rich.markup.escape",
+    "rich.pretty",
+    "rich.pretty.Pretty",
+    "rich.pretty.is_expandable",
+    "rich.progress",
+    "rich.progress.track",
+    "rich.rule",
+    "rich.rule.Rule",
+    "rich.segment",
+    "rich.segment.Segment.line",
+    "rich.segment.Segment.split_lines",
+    "rich.syntax",
+    "rich.syntax.Syntax",
+    "rich.table",
+    "rich.table.Table.add_row",
+    "rich.text",
+    "rich.text.Text",
+    "rich.text.Text.append"
+   ],
+   "pysftp": [
+    "pysftp",
+    "pysftp.CnOpts",
+    "pysftp.Connection",
+    "pysftp.exceptions.CredentialException"
+   ],
+   "paramiko": [
+    "paramiko",
+    "paramiko.client.AutoAddPolicy",
+    "paramiko.client.SSHClient",
+    "paramiko.client.SSHClient.close",
+    "paramiko.client.SSHClient.connect",
+    "paramiko.client.SSHClient.exec_command",
+    "paramiko.client.SSHClient.set_missing_host_key_policy",
+    "paramiko.common",
+    "paramiko.pkey.PKey.from_private_key_file",
+    "paramiko.sftp",
+    "paramiko.sftp_attr.SFTPAttributes.from_stat",
+    "paramiko.sftp_server.SFTPServer.convert_errno",
+    "paramiko.sftp_server.SFTPServer.set_file_attr",
+    "paramiko.ssh_exception.SSHException",
+    "paramiko.transport.Transport",
+    "paramiko.transport.Transport.accept",
+    "paramiko.transport.Transport.add_server_key",
+    "paramiko.transport.Transport.is_active",
+    "paramiko.transport.Transport.set_subsystem_handler",
+    "paramiko.transport.Transport.start_server"
+   ],
+   "plexapi": [
+    "plexapi",
+    "plexapi.myplex",
+    "plexapi.myplex.MyPlexAccount",
+    "plexapi.video"
+   ],
+   "subliminal": [
+    "subliminal",
+    "subliminal.cli",
+    "subliminal.core",
+    "subliminal.core.ProviderPool",
+    "subliminal.core.refine",
+    "subliminal.core.save_subtitles",
+    "subliminal.core.scan_archive",
+    "subliminal.core.scan_video",
+    "subliminal.core.search_external_subtitles",
+    "subliminal.extensions",
+    "subliminal.score",
+    "subliminal.video"
+   ],
+   "jinja2": [
+    "jinja2",
+    "jinja2.environment.Template",
+    "jinja2.environment.Template.render",
+    "jinja2.ext",
+    "jinja2.filters",
+    "jinja2.filters.do_default",
+    "jinja2.loaders.ChoiceLoader",
+    "jinja2.loaders.FileSystemLoader",
+    "jinja2.loaders.PackageLoader",
+    "jinja2.nativetypes",
+    "jinja2.nativetypes.NativeEnvironment"
+   ],
+   "python-telegram-bot": [
+    "telegram",
+    "telegram.bot.Bot",
+    "telegram.error",
+    "telegram.utils",
+    "telegram.utils.request",
+    "telegram.utils.request.Request"
+   ],
+   "apscheduler": [
+    "apscheduler",
+    "apscheduler.jobstores",
+    "apscheduler.jobstores.sqlalchemy",
+    "apscheduler.jobstores.sqlalchemy.SQLAlchemyJobStore",
+    "apscheduler.schedulers",
+    "apscheduler.schedulers.background",
+    "apscheduler.schedulers.background.BackgroundScheduler",
+    "apscheduler.triggers",
+    "apscheduler.triggers.cron",
+    "apscheduler.triggers.cron.CronTrigger"
+   ],
+   "cloudscraper": [
+    "cloudscraper",
+    "cloudscraper.CloudScraper.create_scraper",
+    "cloudscraper.exceptions"
+   ],
+   "beautifulsoup4": [
+    "bs4",
+    "bs4.BeautifulSoup"
+   ],
+   "rpyc": [
+    "rpyc",
+    "rpyc.core.channel.Channel",
+    "rpyc.core.channel.Channel.recv",
+    "rpyc.core.channel.Channel.send",
+    "rpyc.core.stream.SocketStream",
+    "rpyc.core.stream.SocketStream.connect",
+    "rpyc.utils",
+    "rpyc.utils.authenticators.AuthenticationError",
+    "rpyc.utils.classic.obtain",
+    "rpyc.utils.factory.connect_channel",
+    "rpyc.utils.server",
+    "rpyc.utils.server.ThreadedServer"
+   ],
+   "setuptools": [
+    "pkg_resources"
+   ],
+   "qbittorrent-api": [
+    "qbittorrentapi",
+    "qbittorrentapi.client.Client"
+   ],
+   "importlib-metadata": [
+    "importlib_metadata"
+   ],
+   "transmission-rpc": [
+    "transmission_rpc",
+    "transmission_rpc.client.Client",
+    "transmission_rpc.error"
+   ],
+   "pynzb": [
+    "pynzb"
+   ],
+   "dogpile-cache": [
+    "dogpile",
+    "dogpile.cache",
+    "dogpile.cache.exception"
+   ],
+   "boto3": [
+    "boto3"
+   ],
+   "pytest": [
+    "_pytest",
+    "_pytest.fixtures.fixture",
+    "_pytest.logging",
+    "_pytest.python_api.approx",
+    "_pytest.python_api.raises",
+    "pytest"
+   ],
+   "vcrpy": [
+    "vcr",
+    "vcr.config.VCR",
+    "vcr.stubs"
+   ],
+   "gitpython": [
+    "git",
+    "git.repo.base.Repo"
+   ]
+  },
+  "reflection_kinds": {
+   "jinja2": [
+    "__import__",
+    "dyn_class",
+    "exec",
+    "import_module",
+    "namespace",
+    "setattr"
+   ],
+   "flask": [
+    "__import__",
+    "eval",
+    "exec",
+    "import_module",
+    "plugin"
+   ],
+   "flask-cors": [
+    "setattr"
+   ],
+   "soupsieve": [
+    "exec"
+   ],
+   "pygments": [
+    "__import__",
+    "dyn_class",
+    "exec",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "paramiko": [
+    "namespace",
+    "setattr"
+   ],
+   "cryptography": [
+    "setattr"
+   ],
+   "requests": [
+    "__import__",
+    "namespace",
+    "setattr"
+   ],
+   "gitpython": [
+    "namespace",
+    "setattr"
+   ],
+   "zipp": [
+    "eval"
+   ],
+   "setuptools": [
+    "__import__",
+    "exec",
+    "import_module",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "urllib3": [
+    "__import__",
+    "exec",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "rpyc": [
+    "__import__",
+    "dyn_class",
+    "eval",
+    "exec",
+    "import_module",
+    "namespace",
+    "setattr"
+   ],
+   "werkzeug": [
+    "__import__",
+    "dyn_class",
+    "exec",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "beautifulsoup4": [
+    "setattr"
+   ],
+   "python-telegram-bot": [
+    "__import__",
+    "exec",
+    "monkeypatch",
+    "namespace",
+    "setattr"
+   ],
+   "rich": [
+    "namespace"
+   ],
+   "cherrypy": [
+    "__import__",
+    "eval",
+    "namespace",
+    "setattr"
+   ],
+   "cloudscraper": [
+    "__import__",
+    "setattr"
+   ],
+   "transmission-rpc": [
+    "setattr"
+   ],
+   "qbittorrent-api": [
+    "setattr"
+   ],
+   "jsonschema": [
+    "setattr"
+   ],
+   "importlib-metadata": [
+    "import_module",
+    "namespace",
+    "setattr"
+   ],
+   "sqlalchemy": [
+    "__import__",
+    "dyn_class",
+    "eval",
+    "exec",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "apscheduler": [
+    "__import__",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "boto3": [
+    "__import__",
+    "dyn_class",
+    "import_module",
+    "setattr"
+   ],
+   "jaraco-collections": [
+    "dyn_class"
+   ],
+   "requests-toolbelt": [
+    "setattr"
+   ],
+   "cheroot": [
+    "__import__",
+    "dyn_class",
+    "namespace"
+   ],
+   "dogpile-cache": [
+    "__import__"
+   ],
+   "stevedore": [
+    "plugin"
+   ],
+   "s3transfer": [
+    "setattr"
+   ],
+   "botocore": [
+    "__import__",
+    "dyn_class",
+    "exec",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "__app__": [
+    "exec",
+    "import_module",
+    "monkeypatch",
+    "namespace",
+    "plugin",
+    "setattr"
+   ]
+  }
  },
- "scan_seconds": 151.4,
+ "scan_seconds": 103.9,
  "sdist_only": [
   "enzyme",
   "pynzb",
@@ -52,7 +563,7 @@
  ],
  "baseline_resolution": {
   "ok": false,
-  "seconds": 10.1,
+  "seconds": 2.6,
   "error": "irements are unsatisfiable.\n\nhint: Wheels are required for `pysrt` because building from source is disabled for all packages (i.e., with `--no-build`)\n\nhint: Wheels are required for `subliminal` because building from source is disabled for all packages (i.e., with `--no-build`)\n\nhint: Wheels are required for `srt` because building from source is disabled for all packages (i.e., with `--no-build`)\n"
  },
  "status": "baseline_unresolvable"

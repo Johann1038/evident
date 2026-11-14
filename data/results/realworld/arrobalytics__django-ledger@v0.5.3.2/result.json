@@ -1,0 +1,2534 @@
+{
+ "id": "arrobalytics__django-ledger@v0.5.3.2",
+ "meta": {
+  "id": "arrobalytics__django-ledger@v0.5.3.2",
+  "repo": "arrobalytics/django-ledger",
+  "tag": "v0.5.3.2",
+  "published_at": "2023-06-01T04:39:19Z",
+  "stars": 1399,
+  "lock_kind": "pipfile",
+  "lock_file": "Pipfile.lock",
+  "lock_path": "Pipfile.lock",
+  "subdir": "",
+  "manifest": "pyproject.toml",
+  "requires_python": ">=3.7",
+  "description": "Django Ledger is a double entry accounting system and financial analysis engine built on the Django Web Framework.",
+  "topics": [
+   "accounting",
+   "bookkeeping",
+   "cashmanagement",
+   "django",
+   "django-application",
+   "django-framework",
+   "django-ledger",
+   "django-project",
+   "entities",
+   "finance",
+   "financial",
+   "financial-analysis-engine",
+   "forecasting",
+   "ledger-journal",
+   "quickbooks"
+  ]
+ },
+ "python": "3.11",
+ "summary": {
+  "locked": 145,
+  "installed": 141,
+  "direct": 22,
+  "transitive": 119,
+  "edges": 398,
+  "edges_from_lock": false
+ },
+ "stats": {
+  "app_modules": 162,
+  "pkgs_analysed": 66,
+  "pkgs_no_source": 0,
+  "seconds": 1977.6,
+  "funcs": 67018,
+  "roots": 1177,
+  "app_refs": {
+   "django": [
+    "django",
+    "django.apps",
+    "django.conf",
+    "django.contrib",
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.auth.backends",
+    "django.contrib.auth.context_processors",
+    "django.contrib.auth.forms",
+    "django.contrib.auth.forms.UsernameField",
+    "django.contrib.auth.get_user_model",
+    "django.contrib.auth.middleware",
+    "django.contrib.auth.mixins",
+    "django.contrib.auth.password_validation",
+    "django.contrib.auth.views",
+    "django.contrib.contenttypes",
+    "django.contrib.messages",
+    "django.contrib.messages.api.add_message",
+    "django.contrib.messages.context_processors",
+    "django.contrib.messages.middleware",
+    "django.contrib.sessions",
+    "django.contrib.sessions.middleware",
+    "django.contrib.staticfiles",
+    "django.core",
+    "django.core.asgi",
+    "django.core.asgi.get_asgi_application",
+    "django.core.exceptions",
+    "django.core.exceptions.FieldError",
+    "django.core.exceptions.ImproperlyConfigured",
+    "django.core.exceptions.ValidationError",
+    "django.core.mail",
+    "django.core.mail.backends",
+    "django.core.mail.backends.console",
+    "django.core.mail.send_mail",
+    "django.core.management",
+    "django.core.management.base",
+    "django.core.management.execute_from_command_line",
+    "django.core.validators",
+    "django.core.validators.MaxValueValidator",
+    "django.core.validators.MinLengthValidator",
+    "django.core.validators.MinValueValidator",
+    "django.core.validators.int_list_validator",
+    "django.core.wsgi",
+    "django.core.wsgi.get_wsgi_application",
+    "django.db",
+    "django.db.backends",
+    "django.db.backends.sqlite3",
+    "django.db.models",
+    "django.db.models.aggregates.Count",
+    "django.db.models.aggregates.Sum",
+    "django.db.models.base.Model.clean_fields",
+    "django.db.models.base.Model.save",
+    "django.db.models.expressions.Case",
+    "django.db.models.expressions.ExpressionWrapper",
+    "django.db.models.expressions.F",
+    "django.db.models.expressions.Value",
+    "django.db.models.expressions.When",
+    "django.db.models.fields.BigIntegerField",
+    "django.db.models.fields.BooleanField",
+    "django.db.models.fields.CharField",
+    "django.db.models.fields.DateField",
+    "django.db.models.fields.DateTimeField",
+    "django.db.models.fields.DecimalField",
+    "django.db.models.fields.EmailField",
+    "django.db.models.fields.FloatField",
+    "django.db.models.fields.IntegerField",
+    "django.db.models.fields.SlugField",
+    "django.db.models.fields.SmallIntegerField",
+    "django.db.models.fields.TextField",
+    "django.db.models.fields.URLField",
+    "django.db.models.fields.UUIDField",
+    "django.db.models.fields.files.ImageField",
+    "django.db.models.fields.json.JSONField",
+    "django.db.models.fields.related.ForeignKey",
+    "django.db.models.fields.related.ManyToManyField",
+    "django.db.models.fields.related.OneToOneField",
+    "django.db.models.functions",
+    "django.db.models.functions.comparison.Coalesce",
+    "django.db.models.functions.datetime.TruncMonth",
+    "django.db.models.indexes.Index",
+    "django.db.models.query.QuerySet.exclude",
+    "django.db.models.query.QuerySet.filter",
+    "django.db.models.query_utils.Q",
+    "django.db.models.signals",
+    "django.db.transaction",
+    "django.db.transaction.atomic",
+    "django.forms",
+    "django.forms.fields.BooleanField",
+    "django.forms.fields.CharField",
+    "django.forms.fields.ChoiceField",
+    "django.forms.fields.FileField",
+    "django.forms.fields.IntegerField",
+    "django.forms.formsets.BaseFormSet._should_delete_form",
+    "django.forms.models",
+    "django.forms.models.ModelChoiceField",
+    "django.forms.models.modelformset_factory",
+    "django.forms.widgets.CheckboxInput",
+    "django.forms.widgets.DateInput",
+    "django.forms.widgets.DateTimeInput",
+    "django.forms.widgets.EmailInput",
+    "django.forms.widgets.FileInput",
+    "django.forms.widgets.HiddenInput",
+    "django.forms.widgets.NumberInput",
+    "django.forms.widgets.PasswordInput",
+    "django.forms.widgets.Select",
+    "django.forms.widgets.TextInput",
+    "django.forms.widgets.Textarea",
+    "django.forms.widgets.URLInput",
+    "django.http",
+    "django.http.response.Http404",
+    "django.http.response.HttpResponseBadRequest",
+    "django.http.response.HttpResponseForbidden",
+    "django.http.response.HttpResponseNotFound",
+    "django.http.response.HttpResponseRedirect",
+    "django.http.response.JsonResponse",
+    "django.middleware",
+    "django.middleware.clickjacking",
+    "django.middleware.common",
+    "django.middleware.csrf",
+    "django.middleware.security",
+    "django.setup",
+    "django.shortcuts",
+    "django.shortcuts.get_object_or_404",
+    "django.template",
+    "django.template.backends",
+    "django.template.backends.django",
+    "django.template.context_processors",
+    "django.template.library.Library",
+    "django.test",
+    "django.test.client",
+    "django.test.client.Client",
+    "django.test.testcases.SimpleTestCase.assertContains",
+    "django.test.testcases.SimpleTestCase.assertFormError",
+    "django.test.testcases.SimpleTestCase.assertNotContains",
+    "django.test.testcases.SimpleTestCase.assertRedirects",
+    "django.test.testcases.TransactionTestCase.assertNumQueries",
+    "django.urls",
+    "django.urls.base.reverse",
+    "django.urls.conf.include",
+    "django.utils",
+    "django.utils.dateparse",
+    "django.utils.dateparse.parse_date",
+    "django.utils.dateparse.parse_datetime",
+    "django.utils.decorators",
+    "django.utils.decorators.method_decorator",
+    "django.utils.encoding",
+    "django.utils.encoding.force_str",
+    "django.utils.formats",
+    "django.utils.formats.number_format",
+    "django.utils.html",
+    "django.utils.html.format_html",
+    "django.utils.safestring",
+    "django.utils.safestring.mark_safe",
+    "django.utils.text",
+    "django.utils.text.slugify",
+    "django.utils.timezone",
+    "django.utils.timezone.get_default_timezone",
+    "django.utils.timezone.is_naive",
+    "django.utils.timezone.localdate",
+    "django.utils.timezone.localtime",
+    "django.utils.timezone.make_aware",
+    "django.utils.timezone.now",
+    "django.utils.translation",
+    "django.utils.translation.gettext",
+    "django.views",
+    "django.views.decorators",
+    "django.views.decorators.csrf",
+    "django.views.generic",
+    "django.views.generic.base.TemplateResponseMixin.render_to_response",
+    "django.views.generic.dates",
+    "django.views.generic.dates.DayMixin.get_day",
+    "django.views.generic.dates.MonthMixin.get_month",
+    "django.views.generic.dates.YearMixin.get_year",
+    "django.views.generic.detail",
+    "django.views.generic.detail.BaseDetailView.get",
+    "django.views.generic.detail.SingleObjectMixin.get_object",
+    "django.views.generic.edit.FormMixin.get_context_data",
+    "django.views.generic.edit.FormMixin.get_initial",
+    "django.views.generic.edit.FormMixin.get_prefix",
+    "django.views.generic.edit.ModelFormMixin.get_form_kwargs"
+   ],
+   "django-treebeard": [
+    "treebeard",
+    "treebeard.forms",
+    "treebeard.mp_tree",
+    "treebeard.mp_tree.MP_Node.add_root",
+    "treebeard.mp_tree.MP_Node.dump_bulk"
+   ],
+   "markdown": [
+    "markdown",
+    "markdown.core.markdown"
+   ],
+   "behave": [
+    "behave"
+   ],
+   "sphinx": [
+    "sphinx",
+    "sphinx.ext",
+    "sphinx.ext.autodoc",
+    "sphinx.ext.autosummary",
+    "sphinx.ext.napoleon"
+   ]
+  },
+  "reflection_kinds": {
+   "markdown": [
+    "import_module",
+    "plugin"
+   ],
+   "black": [
+    "eval",
+    "namespace",
+    "setattr"
+   ],
+   "pygments": [
+    "__import__",
+    "dyn_class",
+    "exec",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "sqlparse": [
+    "namespace",
+    "setattr"
+   ],
+   "zipp": [
+    "eval"
+   ],
+   "django": [
+    "__import__",
+    "dyn_class",
+    "import_module",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "pillow": [
+    "__import__",
+    "namespace",
+    "setattr"
+   ],
+   "requests": [
+    "__import__",
+    "namespace",
+    "setattr"
+   ],
+   "jinja2": [
+    "__import__",
+    "dyn_class",
+    "exec",
+    "import_module",
+    "namespace",
+    "setattr"
+   ],
+   "tornado": [
+    "__import__",
+    "exec",
+    "import_module",
+    "setattr"
+   ],
+   "ipykernel": [
+    "__import__",
+    "dyn_class",
+    "eval",
+    "exec",
+    "monkeypatch",
+    "setattr"
+   ],
+   "importlib-metadata": [
+    "import_module",
+    "namespace",
+    "setattr"
+   ],
+   "traitlets": [
+    "__import__",
+    "dyn_class",
+    "exec",
+    "namespace",
+    "setattr"
+   ],
+   "ipython": [
+    "__import__",
+    "dyn_class",
+    "eval",
+    "exec",
+    "import_module",
+    "monkeypatch",
+    "namespace",
+    "setattr"
+   ],
+   "nbformat": [
+    "__import__"
+   ],
+   "attrs": [
+    "dyn_class",
+    "eval",
+    "exec",
+    "setattr"
+   ],
+   "jupyter-client": [
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "jsonschema": [
+    "setattr"
+   ],
+   "jedi": [
+    "__import__",
+    "import_module",
+    "plugin",
+    "setattr"
+   ],
+   "executing": [
+    "exec",
+    "setattr"
+   ],
+   "__app__": [
+    "import_module",
+    "namespace"
+   ]
+  }
+ },
+ "scan_seconds": 1980.0,
+ "sdist_only": [
+  "ofxtools",
+  "pipenv-setup"
+ ],
+ "baseline_resolution": {
+  "ok": true,
+  "seconds": 3.6,
+  "error": ""
+ },
+ "baseline_drift": 5,
+ "strategies": {
+  "audit_fix": {
+   "planned": {
+    "django": "5.2.17",
+    "markdown": "3.8.1",
+    "sqlparse": "0.6.0",
+    "anyio": "4.14.2",
+    "black": "26.10.1",
+    "bleach": "6.4.0",
+    "certifi": "2026.10.18",
+    "idna": "3.15",
+    "jinja2": "3.1.6",
+    "jupyter-core": "5.8.1",
+    "jupyter-lsp": "2.2.2",
+    "jupyter-server": "2.21.0",
+    "jupyterlab": "4.5.11",
+    "mistune": "3.3.0",
+    "nbconvert": "7.17.2",
+    "pygments": "2.20.0",
+    "pylint": "4.0.9",
+    "python-dotenv": "1.2.2",
+    "requests": "2.33.0",
+    "soupsieve": "2.9",
+    "tornado": "6.6",
+    "urllib3": "2.8.0",
+    "zipp": "3.19.1"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 0.5,
+   "residual_findings": 54,
+   "residual_risk_evident": 24.954494629836795,
+   "residual_risk_vm": 42.829999999999984,
+   "residual_confirmed": 0,
+   "new_findings": 1,
+   "changed": 50,
+   "major_bumps": 11,
+   "added": 17,
+   "removed": 0,
+   "realised_changes": {
+    "anyio": [
+     "3.7.0",
+     "4.14.2"
+    ],
+    "asgiref": [
+     "3.7.2",
+     "3.13.0"
+    ],
+    "astroid": [
+     "2.15.5",
+     "4.0.4"
+    ],
+    "attrs": [
+     "19.1.0",
+     "26.1.0"
+    ],
+    "black": [
+     "19.3b0",
+     "26.10.1"
+    ],
+    "bleach": [
+     "6.0.0",
+     "6.4.0"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.18"
+    ],
+    "cffi": [
+     null,
+     "2.1.1"
+    ],
+    "click": [
+     "7.0",
+     "8.5.1"
+    ],
+    "cryptography": [
+     null,
+     "50.0.2"
+    ],
+    "django": [
+     "4.2.1",
+     "5.2.17"
+    ],
+    "h11": [
+     null,
+     "0.16.0"
+    ],
+    "httpcore": [
+     null,
+     "1.0.9"
+    ],
+    "httpx": [
+     null,
+     "0.28.1"
+    ],
+    "idna": [
+     "3.4",
+     "3.15"
+    ],
+    "jeepney": [
+     null,
+     "0.9.0"
+    ],
+    "jinja2": [
+     "3.1.2",
+     "3.1.6"
+    ],
+    "jsonschema": [
+     "4.17.3",
+     "4.26.0"
+    ],
+    "jsonschema-specifications": [
+     null,
+     "2025.9.1"
+    ],
+    "jupyter-core": [
+     "5.3.0",
+     "5.8.1"
+    ],
+    "jupyter-events": [
+     "0.6.3",
+     "0.12.1"
+    ],
+    "jupyter-lsp": [
+     "2.2.0",
+     "2.2.2"
+    ],
+    "jupyter-server": [
+     "2.6.0",
+     "2.21.0"
+    ],
+    "jupyterlab": [
+     "4.0.1",
+     "4.5.11"
+    ],
+    "jupyterlab-server": [
+     "2.22.1",
+     "2.28.1"
+    ],
+    "lark": [
+     null,
+     "1.3.1"
+    ],
+    "markdown": [
+     "3.4.3",
+     "3.8.1"
+    ],
+    "mistune": [
+     "2.0.5",
+     "3.3.0"
+    ],
+    "mypy-extensions": [
+     null,
+     "1.2.0"
+    ],
+    "nbconvert": [
+     "7.4.0",
+     "7.17.2"
+    ],
+    "packaging": [
+     "23.1",
+     "26.3"
+    ],
+    "pathspec": [
+     null,
+     "1.1.1"
+    ],
+    "pycparser": [
+     null,
+     "3.12"
+    ],
+    "pygments": [
+     "2.15.1",
+     "2.20.0"
+    ],
+    "pylint": [
+     "2.17.4",
+     "4.0.9"
+    ],
+    "python-dotenv": [
+     "1.0.0",
+     "1.2.2"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "referencing": [
+     null,
+     "0.37.0"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.33.0"
+    ],
+    "rfc3987-syntax": [
+     null,
+     "1.1.0"
+    ],
+    "rpds-py": [
+     null,
+     "2026.9.1"
+    ],
+    "secretstorage": [
+     null,
+     "3.5.0"
+    ],
+    "setuptools": [
+     null,
+     "84.2.1"
+    ],
+    "soupsieve": [
+     "2.4.1",
+     "2.9"
+    ],
+    "sqlparse": [
+     "0.4.4",
+     "0.6.0"
+    ],
+    "tornado": [
+     "6.3.2",
+     "6.6"
+    ],
+    "urllib3": [
+     "2.0.2",
+     "2.8.0"
+    ],
+    "webcolors": [
+     "1.13",
+     "25.10.0"
+    ],
+    "websocket-client": [
+     "1.5.2",
+     "1.9.2"
+    ],
+    "zipp": [
+     "3.15.0",
+     "3.19.1"
+    ]
+   },
+   "planned_changes": 23,
+   "unplanned_changes": 27,
+   "unplanned_major": 5,
+   "unplanned_added": 17,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 182,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "latest": {
+   "planned": {
+    "jupyter-server": "2.21.1",
+    "markdown": "3.11.3",
+    "jupyter-lsp": "2.3.1",
+    "jupyter-core": "5.9.1",
+    "black": "26.10.1",
+    "soupsieve": "4.1",
+    "pygments": "2.21.0",
+    "urllib3": "2.8.0",
+    "anyio": "4.16.0",
+    "sqlparse": "0.6.1",
+    "zipp": "4.1.2",
+    "python-dotenv": "1.2.4",
+    "pylint": "4.1.3",
+    "nbconvert": "7.17.2",
+    "requests": "2.34.2",
+    "django": "5.2.19",
+    "bleach": "6.4.0",
+    "certifi": "2026.10.23",
+    "jinja2": "3.1.6",
+    "pillow": "12.2.0",
+    "mistune": "3.4.0",
+    "tornado": "6.6.1",
+    "idna": "3.20",
+    "jupyterlab": "4.6.6"
+   },
+   "ok": false,
+   "error": "nd you require soupsieve==4.1, we can conclude that your requirements are unsatisfiable.\n\nhint: The `--python-version` value (>=3.11) includes Python versions that are not supported by your dependencies (e.g., soupsieve==4.1 only supports >=3.11.5). Consider using a higher `--python-version` value.\n",
+   "seconds": 0.3,
+   "failure": "requires newer python"
+  },
+  "upgrade_all": {
+   "planned": null,
+   "ok": true,
+   "error": "",
+   "seconds": 4.1,
+   "residual_findings": 0,
+   "residual_risk_evident": 0.0,
+   "residual_risk_vm": 0.0,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 158,
+   "major_bumps": 54,
+   "added": 30,
+   "removed": 0,
+   "realised_changes": {
+    "accessible-pygments": [
+     null,
+     "0.0.5"
+    ],
+    "alabaster": [
+     "0.7.13",
+     "1.0.0"
+    ],
+    "anyio": [
+     "3.7.0",
+     "4.16.0"
+    ],
+    "appdirs": [
+     "1.4.3",
+     "1.4.4"
+    ],
+    "argon2-cffi": [
+     "21.3.0",
+     "25.1.0"
+    ],
+    "argon2-cffi-bindings": [
+     "21.2.0",
+     "26.1.0"
+    ],
+    "arrow": [
+     "1.2.3",
+     "1.4.0"
+    ],
+    "asgiref": [
+     "3.7.2",
+     "3.13.0"
+    ],
+    "astroid": [
+     "2.15.5",
+     "4.3.4"
+    ],
+    "asttokens": [
+     "2.2.1",
+     "3.0.2"
+    ],
+    "async-lru": [
+     "2.0.2",
+     "2.4.0"
+    ],
+    "attrs": [
+     "19.1.0",
+     "26.1.0"
+    ],
+    "babel": [
+     "2.12.1",
+     "2.18.0"
+    ],
+    "backports-tarfile": [
+     null,
+     "1.2.0"
+    ],
+    "beautifulsoup4": [
+     "4.12.2",
+     "4.15.0"
+    ],
+    "behave": [
+     "1.2.6",
+     "1.3.3"
+    ],
+    "black": [
+     "19.3b0",
+     "26.10.1"
+    ],
+    "bleach": [
+     "6.0.0",
+     "6.4.0"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.1.1"
+    ],
+    "charset-normalizer": [
+     "3.1.0",
+     "3.5.2"
+    ],
+    "click": [
+     "7.0",
+     "8.5.1"
+    ],
+    "colorama": [
+     null,
+     "0.4.6"
+    ],
+    "comm": [
+     "0.1.3",
+     "0.2.3"
+    ],
+    "cryptography": [
+     null,
+     "50.0.2"
+    ],
+    "cucumber-expressions": [
+     null,
+     "20.2.0"
+    ],
+    "cucumber-tag-expressions": [
+     null,
+     "11.0.1"
+    ],
+    "debugpy": [
+     "1.6.7",
+     "1.8.22"
+    ],
+    "decorator": [
+     "5.1.1",
+     "5.3.1"
+    ],
+    "dill": [
+     "0.3.6",
+     "0.4.1"
+    ],
+    "django": [
+     "4.2.1",
+     "5.2.19"
+    ],
+    "django-treebeard": [
+     "4.7",
+     "7.0.3"
+    ],
+    "docutils": [
+     "0.19",
+     "0.22.4"
+    ],
+    "executing": [
+     "1.2.0",
+     "2.3.0"
+    ],
+    "faker": [
+     "18.9.0",
+     "40.54.0"
+    ],
+    "fastjsonschema": [
+     "2.17.1",
+     "2.22.3"
+    ],
+    "fqdn": [
+     "1.5.1",
+     "1.6.0"
+    ],
+    "furo": [
+     "2023.5.20",
+     "2025.12.19"
+    ],
+    "h11": [
+     null,
+     "0.16.0"
+    ],
+    "httpcore": [
+     null,
+     "1.0.9"
+    ],
+    "httpx": [
+     null,
+     "0.28.1"
+    ],
+    "id": [
+     null,
+     "1.6.1"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "imagesize": [
+     "1.4.1",
+     "2.0.1"
+    ],
+    "importlib-metadata": [
+     "6.6.0",
+     "10.2.0"
+    ],
+    "ipykernel": [
+     "6.23.1",
+     "7.4.0"
+    ],
+    "ipython": [
+     "8.13.2",
+     "9.18.1"
+    ],
+    "ipython-pygments-lexers": [
+     null,
+     "1.1.1"
+    ],
+    "isort": [
+     "5.12.0",
+     "9.0.2"
+    ],
+    "jaraco-classes": [
+     "3.2.3",
+     "3.4.0"
+    ],
+    "jaraco-context": [
+     null,
+     "6.1.2"
+    ],
+    "jaraco-functools": [
+     null,
+     "4.6.0"
+    ],
+    "jedi": [
+     "0.18.2",
+     "0.20.1"
+    ],
+    "jeepney": [
+     null,
+     "0.9.0"
+    ],
+    "jinja2": [
+     "3.1.2",
+     "3.1.6"
+    ],
+    "json5": [
+     "0.9.14",
+     "0.17.3"
+    ],
+    "jsonpointer": [
+     "2.3",
+     "3.12"
+    ],
+    "jsonschema": [
+     "4.17.3",
+     "4.26.0"
+    ],
+    "jsonschema-specifications": [
+     null,
+     "2025.9.1"
+    ],
+    "jupyter-builder": [
+     null,
+     "1.3.0"
+    ],
+    "jupyter-client": [
+     "8.2.0",
+     "8.10.0"
+    ],
+    "jupyter-core": [
+     "5.3.0",
+     "5.9.1"
+    ],
+    "jupyter-events": [
+     "0.6.3",
+     "0.12.1"
+    ],
+    "jupyter-lsp": [
+     "2.2.0",
+     "2.3.1"
+    ],
+    "jupyter-server": [
+     "2.6.0",
+     "2.21.1"
+    ],
+    "jupyter-server-terminals": [
+     "0.4.4",
+     "0.5.4"
+    ],
+    "jupyterlab": [
+     "4.0.1",
+     "4.6.6"
+    ],
+    "jupyterlab-pygments": [
+     "0.2.2",
+     "0.3.0"
+    ],
+    "jupyterlab-server": [
+     "2.22.1",
+     "2.28.1"
+    ],
+    "keyring": [
+     "23.13.1",
+     "25.7.0"
+    ],
+    "lark": [
+     null,
+     "1.3.1"
+    ],
+    "lazy-importer": [
+     null,
+     "0.1.0"
+    ],
+    "lazy-object-proxy": [
+     "1.9.0",
+     "1.13.0"
+    ],
+    "markdown": [
+     "3.4.3",
+     "3.11.3"
+    ],
+    "markdown-it-py": [
+     "2.2.0",
+     "4.3.0"
+    ],
+    "markupsafe": [
+     "2.1.2",
+     "3.0.4"
+    ],
+    "matplotlib-inline": [
+     "0.1.6",
+     "0.2.2"
+    ],
+    "mdit-py-plugins": [
+     "0.3.5",
+     "0.7.0"
+    ],
+    "mistune": [
+     "2.0.5",
+     "3.4.0"
+    ],
+    "more-itertools": [
+     "9.1.0",
+     "11.2.1"
+    ],
+    "mypy-extensions": [
+     null,
+     "1.2.0"
+    ],
+    "myst-parser": [
+     "1.0.0",
+     "5.2.0"
+    ],
+    "nbclient": [
+     "0.8.0",
+     "0.11.0"
+    ],
+    "nbconvert": [
+     "7.4.0",
+     "7.17.2"
+    ],
+    "nbformat": [
+     "5.9.0",
+     "5.11.1"
+    ],
+    "nest-asyncio": [
+     "1.5.6",
+     "1.6.0"
+    ],
+    "nest-asyncio2": [
+     null,
+     "1.7.4"
+    ],
+    "nh3": [
+     null,
+     "0.3.7"
+    ],
+    "notebook-shim": [
+     "0.2.3",
+     "0.2.4"
+    ],
+    "numpy": [
+     "1.24.3",
+     "2.4.6"
+    ],
+    "overrides": [
+     "7.3.1",
+     "7.7.0"
+    ],
+    "packaging": [
+     "23.1",
+     "26.3"
+    ],
+    "pandas": [
+     "2.0.2",
+     "3.1.1"
+    ],
+    "pandocfilters": [
+     "1.5.0",
+     "1.5.1"
+    ],
+    "parse": [
+     "1.19.0",
+     "1.22.4"
+    ],
+    "parse-type": [
+     "0.6.0",
+     "0.6.6"
+    ],
+    "parso": [
+     "0.8.3",
+     "0.8.7"
+    ],
+    "pathspec": [
+     null,
+     "1.1.1"
+    ],
+    "pexpect": [
+     "4.8.0",
+     "4.9.0"
+    ],
+    "pillow": [
+     "9.5.0",
+     "13.0.0"
+    ],
+    "pkginfo": [
+     "1.9.6",
+     "2.0"
+    ],
+    "platformdirs": [
+     "3.5.1",
+     "4.14.5"
+    ],
+    "prometheus-client": [
+     "0.17.0",
+     "0.26.0"
+    ],
+    "prompt-toolkit": [
+     "3.0.38",
+     "3.0.53"
+    ],
+    "psutil": [
+     "5.9.5",
+     "7.2.2"
+    ],
+    "pure-eval": [
+     "0.2.2",
+     "0.2.4"
+    ],
+    "pycparser": [
+     null,
+     "3.12"
+    ],
+    "pygments": [
+     "2.15.1",
+     "2.21.0"
+    ],
+    "pylint": [
+     "2.17.4",
+     "4.1.3"
+    ],
+    "pyrsistent": [
+     "0.19.3",
+     "0.20.0"
+    ],
+    "python-dateutil": [
+     "2.8.2",
+     "4.0.0"
+    ],
+    "python-dotenv": [
+     "1.0.0",
+     "1.2.4"
+    ],
+    "python-json-logger": [
+     "2.0.7",
+     "4.2.0"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "pytz": [
+     "2023.3",
+     "2026.6"
+    ],
+    "pyyaml": [
+     "6.0",
+     "6.0.3"
+    ],
+    "pyzmq": [
+     "25.1.0",
+     "27.3.0"
+    ],
+    "readme-renderer": [
+     "37.3",
+     "46.0"
+    ],
+    "referencing": [
+     null,
+     "0.37.0"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.34.2"
+    ],
+    "rfc3987-syntax": [
+     null,
+     "1.1.0"
+    ],
+    "rich": [
+     "13.4.1",
+     "15.0.0"
+    ],
+    "roman-numerals": [
+     null,
+     "4.1.0"
+    ],
+    "rpds-py": [
+     null,
+     "2026.9.1"
+    ],
+    "secretstorage": [
+     null,
+     "3.5.0"
+    ],
+    "send2trash": [
+     "1.8.2",
+     "2.2.0"
+    ],
+    "six": [
+     "1.16.0",
+     "1.17.0"
+    ],
+    "sniffio": [
+     "1.3.0",
+     "1.3.1"
+    ],
+    "snowballstemmer": [
+     "2.2.0",
+     "3.1.1"
+    ],
+    "soupsieve": [
+     "2.4.1",
+     "2.10"
+    ],
+    "sphinx": [
+     "6.2.1",
+     "9.0.4"
+    ],
+    "sphinx-basic-ng": [
+     "1.0.0b1",
+     "1.0.0b2"
+    ],
+    "sphinxcontrib-applehelp": [
+     "1.0.4",
+     "2.0.0"
+    ],
+    "sphinxcontrib-devhelp": [
+     "1.0.2",
+     "2.0.0"
+    ],
+    "sphinxcontrib-htmlhelp": [
+     "2.0.1",
+     "2.1.0"
+    ],
+    "sphinxcontrib-jsmath": [
+     "1.0.1",
+     "2.0.0"
+    ],
+    "sphinxcontrib-qthelp": [
+     "1.0.3",
+     "2.0.0"
+    ],
+    "sphinxcontrib-serializinghtml": [
+     "1.1.5",
+     "2.0.0"
+    ],
+    "sqlparse": [
+     "0.4.4",
+     "0.6.1"
+    ],
+    "stack-data": [
+     "0.6.2",
+     "0.6.3"
+    ],
+    "tabulate": [
+     "0.9.0",
+     "0.10.0"
+    ],
+    "terminado": [
+     "0.17.1",
+     "0.18.1"
+    ],
+    "tinycss2": [
+     "1.2.1",
+     "1.5.1"
+    ],
+    "toml": [
+     "0.10.0",
+     "0.10.2"
+    ],
+    "tomlkit": [
+     "0.11.8",
+     "0.15.2"
+    ],
+    "tornado": [
+     "6.3.2",
+     "6.6.1"
+    ],
+    "traitlets": [
+     "5.9.0",
+     "5.16.1"
+    ],
+    "twine": [
+     "4.0.2",
+     "7.0.0"
+    ],
+    "typing-extensions": [
+     "4.6.2",
+     "4.16.0"
+    ],
+    "tzdata": [
+     "2023.3",
+     "2026.6"
+    ],
+    "uri-template": [
+     "1.2.0",
+     "1.3.0"
+    ],
+    "urllib3": [
+     "2.0.2",
+     "2.8.0"
+    ],
+    "wcwidth": [
+     "0.2.6",
+     "0.9.4"
+    ],
+    "webcolors": [
+     "1.13",
+     "25.10.0"
+    ],
+    "webencodings": [
+     "0.5.1",
+     "0.6.1"
+    ],
+    "websocket-client": [
+     "1.5.2",
+     "1.9.2"
+    ],
+    "wrapt": [
+     "1.15.0",
+     "2.5.2"
+    ],
+    "zipp": [
+     "3.15.0",
+     "4.1.2"
+    ]
+   },
+   "failure": "none",
+   "compat": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 193,
+    "details": [
+     {
+      "package": "django-treebeard",
+      "version": "7.0.3",
+      "missing": [
+       "treebeard.mp_tree.MP_Node.dump_bulk"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "uv_fix": {
+   "planned": {
+    "django": "5.2.17",
+    "markdown": "3.8.1",
+    "sqlparse": "0.6.0",
+    "anyio": "4.14.2",
+    "black": "26.10.1",
+    "bleach": "6.4.0",
+    "certifi": "2026.10.18",
+    "idna": "3.15",
+    "jinja2": "3.1.6",
+    "jupyter-core": "5.8.1",
+    "jupyter-lsp": "2.2.2",
+    "jupyter-server": "2.21.0",
+    "jupyterlab": "4.5.11",
+    "mistune": "3.3.0",
+    "nbconvert": "7.17.2",
+    "pygments": "2.20.0",
+    "pylint": "4.0.9",
+    "python-dotenv": "1.2.2",
+    "requests": "2.33.0",
+    "soupsieve": "2.9",
+    "tornado": "6.6",
+    "urllib3": "2.8.0",
+    "zipp": "3.19.1"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 0.1,
+   "residual_findings": 53,
+   "residual_risk_evident": 24.658948311547007,
+   "residual_risk_vm": 42.07999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 51,
+   "major_bumps": 12,
+   "added": 17,
+   "removed": 0,
+   "realised_changes": {
+    "anyio": [
+     "3.7.0",
+     "4.16.0"
+    ],
+    "asgiref": [
+     "3.7.2",
+     "3.13.0"
+    ],
+    "astroid": [
+     "2.15.5",
+     "4.3.4"
+    ],
+    "attrs": [
+     "19.1.0",
+     "26.1.0"
+    ],
+    "black": [
+     "19.3b0",
+     "26.10.1"
+    ],
+    "bleach": [
+     "6.0.0",
+     "6.4.0"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.1.1"
+    ],
+    "click": [
+     "7.0",
+     "8.5.1"
+    ],
+    "cryptography": [
+     null,
+     "50.0.2"
+    ],
+    "django": [
+     "4.2.1",
+     "5.2.19"
+    ],
+    "h11": [
+     null,
+     "0.16.0"
+    ],
+    "httpcore": [
+     null,
+     "1.0.9"
+    ],
+    "httpx": [
+     null,
+     "0.28.1"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "jeepney": [
+     null,
+     "0.9.0"
+    ],
+    "jinja2": [
+     "3.1.2",
+     "3.1.6"
+    ],
+    "jsonschema": [
+     "4.17.3",
+     "4.26.0"
+    ],
+    "jsonschema-specifications": [
+     null,
+     "2025.9.1"
+    ],
+    "jupyter-builder": [
+     null,
+     "1.3.0"
+    ],
+    "jupyter-core": [
+     "5.3.0",
+     "5.9.1"
+    ],
+    "jupyter-events": [
+     "0.6.3",
+     "0.12.1"
+    ],
+    "jupyter-lsp": [
+     "2.2.0",
+     "2.3.1"
+    ],
+    "jupyter-server": [
+     "2.6.0",
+     "2.21.1"
+    ],
+    "jupyterlab": [
+     "4.0.1",
+     "4.6.6"
+    ],
+    "jupyterlab-server": [
+     "2.22.1",
+     "2.28.1"
+    ],
+    "lark": [
+     null,
+     "1.3.1"
+    ],
+    "markdown": [
+     "3.4.3",
+     "3.11.3"
+    ],
+    "mistune": [
+     "2.0.5",
+     "3.4.0"
+    ],
+    "mypy-extensions": [
+     null,
+     "1.2.0"
+    ],
+    "nbconvert": [
+     "7.4.0",
+     "7.17.2"
+    ],
+    "packaging": [
+     "23.1",
+     "26.3"
+    ],
+    "pathspec": [
+     null,
+     "1.1.1"
+    ],
+    "pycparser": [
+     null,
+     "3.12"
+    ],
+    "pygments": [
+     "2.15.1",
+     "2.21.0"
+    ],
+    "pylint": [
+     "2.17.4",
+     "4.1.3"
+    ],
+    "python-dotenv": [
+     "1.0.0",
+     "1.2.4"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "referencing": [
+     null,
+     "0.37.0"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.34.2"
+    ],
+    "rfc3987-syntax": [
+     null,
+     "1.1.0"
+    ],
+    "rpds-py": [
+     null,
+     "2026.9.1"
+    ],
+    "secretstorage": [
+     null,
+     "3.5.0"
+    ],
+    "soupsieve": [
+     "2.4.1",
+     "2.10"
+    ],
+    "sqlparse": [
+     "0.4.4",
+     "0.6.1"
+    ],
+    "tornado": [
+     "6.3.2",
+     "6.6.1"
+    ],
+    "typing-extensions": [
+     "4.6.2",
+     "4.16.0"
+    ],
+    "urllib3": [
+     "2.0.2",
+     "2.8.0"
+    ],
+    "webcolors": [
+     "1.13",
+     "25.10.0"
+    ],
+    "websocket-client": [
+     "1.5.2",
+     "1.9.2"
+    ],
+    "zipp": [
+     "3.15.0",
+     "4.1.2"
+    ]
+   },
+   "failure": "none",
+   "compat": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 182,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "vm_opt": {
+   "planned": {
+    "anyio": "4.14.2",
+    "asgiref": "3.13.0",
+    "black": "26.10.1",
+    "bleach": "6.4.0",
+    "certifi": "2026.10.23",
+    "click": "8.5.1",
+    "django": "5.2.17",
+    "idna": "3.20",
+    "jinja2": "3.1.6",
+    "jupyter-core": "5.9.1",
+    "jupyter-lsp": "2.2.6",
+    "jupyterlab": "4.0.13",
+    "markdown": "3.8.1",
+    "mistune": "3.4.0",
+    "nbconvert": "7.17.2",
+    "pygments": "2.21.0",
+    "python-dotenv": "1.2.2",
+    "requests": "2.34.2",
+    "soupsieve": "2.9",
+    "sqlparse": "0.6.1",
+    "tornado": "6.6.1",
+    "urllib3": "2.8.0",
+    "zipp": "3.19.1"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 1.4,
+   "model_residual": 59.04999999999999,
+   "model_cost": 48.40000000000002,
+   "scope": 33,
+   "candidates": 110,
+   "residual_findings": 78,
+   "residual_risk_evident": 24.951134564516128,
+   "residual_risk_vm": 59.04999999999997,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 31,
+   "major_bumps": 6,
+   "added": 8,
+   "removed": 0,
+   "realised_changes": {
+    "anyio": [
+     "3.7.0",
+     "4.14.2"
+    ],
+    "asgiref": [
+     "3.7.2",
+     "3.13.0"
+    ],
+    "black": [
+     "19.3b0",
+     "26.10.1"
+    ],
+    "bleach": [
+     "6.0.0",
+     "6.4.0"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.1.1"
+    ],
+    "click": [
+     "7.0",
+     "8.5.1"
+    ],
+    "cryptography": [
+     null,
+     "50.0.2"
+    ],
+    "django": [
+     "4.2.1",
+     "5.2.17"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "jeepney": [
+     null,
+     "0.9.0"
+    ],
+    "jinja2": [
+     "3.1.2",
+     "3.1.6"
+    ],
+    "jupyter-core": [
+     "5.3.0",
+     "5.9.1"
+    ],
+    "jupyter-lsp": [
+     "2.2.0",
+     "2.2.6"
+    ],
+    "jupyterlab": [
+     "4.0.1",
+     "4.0.13"
+    ],
+    "markdown": [
+     "3.4.3",
+     "3.8.1"
+    ],
+    "mistune": [
+     "2.0.5",
+     "3.4.0"
+    ],
+    "mypy-extensions": [
+     null,
+     "1.2.0"
+    ],
+    "nbconvert": [
+     "7.4.0",
+     "7.17.2"
+    ],
+    "pathspec": [
+     null,
+     "1.1.1"
+    ],
+    "pycparser": [
+     null,
+     "3.12"
+    ],
+    "pygments": [
+     "2.15.1",
+     "2.21.0"
+    ],
+    "python-dotenv": [
+     "1.0.0",
+     "1.2.2"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.34.2"
+    ],
+    "secretstorage": [
+     null,
+     "3.5.0"
+    ],
+    "soupsieve": [
+     "2.4.1",
+     "2.9"
+    ],
+    "sqlparse": [
+     "0.4.4",
+     "0.6.1"
+    ],
+    "tornado": [
+     "6.3.2",
+     "6.6.1"
+    ],
+    "urllib3": [
+     "2.0.2",
+     "2.8.0"
+    ],
+    "zipp": [
+     "3.15.0",
+     "3.19.1"
+    ]
+   },
+   "planned_changes": 23,
+   "unplanned_changes": 8,
+   "unplanned_major": 0,
+   "unplanned_added": 8,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 182,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "coral_opt": {
+   "planned": {
+    "anyio": "4.14.2",
+    "asgiref": "3.13.0",
+    "black": "26.10.1",
+    "bleach": "6.4.0",
+    "certifi": "2026.10.23",
+    "click": "8.5.1",
+    "django": "5.2.17",
+    "idna": "3.20",
+    "jinja2": "3.1.6",
+    "jupyter-core": "5.9.1",
+    "jupyter-lsp": "2.2.6",
+    "jupyterlab": "4.0.13",
+    "markdown": "3.8.1",
+    "mistune": "3.4.0",
+    "nbconvert": "7.17.2",
+    "python-dotenv": "1.2.2",
+    "requests": "2.34.2",
+    "soupsieve": "2.9",
+    "sqlparse": "0.6.1",
+    "tornado": "6.6.1",
+    "urllib3": "2.8.0",
+    "zipp": "3.19.1"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.3,
+   "model_residual": 29.689999999999994,
+   "model_cost": 46.70000000000002,
+   "scope": 33,
+   "candidates": 110,
+   "residual_findings": 79,
+   "residual_risk_evident": 25.1407190454529,
+   "residual_risk_vm": 59.37999999999997,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 30,
+   "major_bumps": 6,
+   "added": 8,
+   "removed": 0,
+   "realised_changes": {
+    "anyio": [
+     "3.7.0",
+     "4.14.2"
+    ],
+    "asgiref": [
+     "3.7.2",
+     "3.13.0"
+    ],
+    "black": [
+     "19.3b0",
+     "26.10.1"
+    ],
+    "bleach": [
+     "6.0.0",
+     "6.4.0"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.1.1"
+    ],
+    "click": [
+     "7.0",
+     "8.5.1"
+    ],
+    "cryptography": [
+     null,
+     "50.0.2"
+    ],
+    "django": [
+     "4.2.1",
+     "5.2.17"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "jeepney": [
+     null,
+     "0.9.0"
+    ],
+    "jinja2": [
+     "3.1.2",
+     "3.1.6"
+    ],
+    "jupyter-core": [
+     "5.3.0",
+     "5.9.1"
+    ],
+    "jupyter-lsp": [
+     "2.2.0",
+     "2.2.6"
+    ],
+    "jupyterlab": [
+     "4.0.1",
+     "4.0.13"
+    ],
+    "markdown": [
+     "3.4.3",
+     "3.8.1"
+    ],
+    "mistune": [
+     "2.0.5",
+     "3.4.0"
+    ],
+    "mypy-extensions": [
+     null,
+     "1.2.0"
+    ],
+    "nbconvert": [
+     "7.4.0",
+     "7.17.2"
+    ],
+    "pathspec": [
+     null,
+     "1.1.1"
+    ],
+    "pycparser": [
+     null,
+     "3.12"
+    ],
+    "python-dotenv": [
+     "1.0.0",
+     "1.2.2"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.34.2"
+    ],
+    "secretstorage": [
+     null,
+     "3.5.0"
+    ],
+    "soupsieve": [
+     "2.4.1",
+     "2.9"
+    ],
+    "sqlparse": [
+     "0.4.4",
+     "0.6.1"
+    ],
+    "tornado": [
+     "6.3.2",
+     "6.6.1"
+    ],
+    "urllib3": [
+     "2.0.2",
+     "2.8.0"
+    ],
+    "zipp": [
+     "3.15.0",
+     "3.19.1"
+    ]
+   },
+   "planned_changes": 22,
+   "unplanned_changes": 8,
+   "unplanned_major": 0,
+   "unplanned_added": 8,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 182,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "cape_opt": {
+   "planned": {
+    "anyio": "4.14.2",
+    "asgiref": "3.13.0",
+    "black": "26.10.1",
+    "bleach": "6.4.0",
+    "certifi": "2026.10.23",
+    "click": "8.5.1",
+    "django": "5.2.17",
+    "idna": "3.20",
+    "jinja2": "3.1.6",
+    "jupyter-core": "5.9.1",
+    "jupyter-lsp": "2.2.6",
+    "jupyterlab": "4.0.13",
+    "markdown": "3.8.1",
+    "mistune": "3.4.0",
+    "nbconvert": "7.17.2",
+    "pillow": "12.2.0",
+    "pygments": "2.21.0",
+    "python-dotenv": "1.2.2",
+    "requests": "2.34.2",
+    "soupsieve": "2.9",
+    "sqlparse": "0.6.1",
+    "tornado": "6.6.1",
+    "urllib3": "2.8.0",
+    "zipp": "3.19.1"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.3,
+   "model_residual": 46.05385417595253,
+   "model_cost": 51.90000000000002,
+   "scope": 33,
+   "candidates": 110,
+   "residual_findings": 79,
+   "residual_risk_evident": 25.759410343600617,
+   "residual_risk_vm": 59.47999999999997,
+   "residual_confirmed": 0,
+   "new_findings": 8,
+   "changed": 32,
+   "major_bumps": 7,
+   "added": 8,
+   "removed": 0,
+   "realised_changes": {
+    "anyio": [
+     "3.7.0",
+     "4.14.2"
+    ],
+    "asgiref": [
+     "3.7.2",
+     "3.13.0"
+    ],
+    "black": [
+     "19.3b0",
+     "26.10.1"
+    ],
+    "bleach": [
+     "6.0.0",
+     "6.4.0"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.1.1"
+    ],
+    "click": [
+     "7.0",
+     "8.5.1"
+    ],
+    "cryptography": [
+     null,
+     "50.0.2"
+    ],
+    "django": [
+     "4.2.1",
+     "5.2.17"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "jeepney": [
+     null,
+     "0.9.0"
+    ],
+    "jinja2": [
+     "3.1.2",
+     "3.1.6"
+    ],
+    "jupyter-core": [
+     "5.3.0",
+     "5.9.1"
+    ],
+    "jupyter-lsp": [
+     "2.2.0",
+     "2.2.6"
+    ],
+    "jupyterlab": [
+     "4.0.1",
+     "4.0.13"
+    ],
+    "markdown": [
+     "3.4.3",
+     "3.8.1"
+    ],
+    "mistune": [
+     "2.0.5",
+     "3.4.0"
+    ],
+    "mypy-extensions": [
+     null,
+     "1.2.0"
+    ],
+    "nbconvert": [
+     "7.4.0",
+     "7.17.2"
+    ],
+    "pathspec": [
+     null,
+     "1.1.1"
+    ],
+    "pillow": [
+     "9.5.0",
+     "12.2.0"
+    ],
+    "pycparser": [
+     null,
+     "3.12"
+    ],
+    "pygments": [
+     "2.15.1",
+     "2.21.0"
+    ],
+    "python-dotenv": [
+     "1.0.0",
+     "1.2.2"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.34.2"
+    ],
+    "secretstorage": [
+     null,
+     "3.5.0"
+    ],
+    "soupsieve": [
+     "2.4.1",
+     "2.9"
+    ],
+    "sqlparse": [
+     "0.4.4",
+     "0.6.1"
+    ],
+    "tornado": [
+     "6.3.2",
+     "6.6.1"
+    ],
+    "urllib3": [
+     "2.0.2",
+     "2.8.0"
+    ],
+    "zipp": [
+     "3.15.0",
+     "3.19.1"
+    ]
+   },
+   "planned_changes": 24,
+   "unplanned_changes": 8,
+   "unplanned_major": 0,
+   "unplanned_added": 8,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 182,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "evident": {
+   "planned": {
+    "asgiref": "3.13.0",
+    "black": "26.10.1",
+    "bleach": "6.4.0",
+    "certifi": "2026.10.23",
+    "click": "8.5.1",
+    "django": "5.2.17",
+    "idna": "3.20",
+    "jinja2": "3.1.6",
+    "markdown": "3.8.1",
+    "mistune": "3.4.0",
+    "nbconvert": "7.17.2",
+    "pygments": "2.21.0",
+    "requests": "2.34.2",
+    "soupsieve": "2.9",
+    "sqlparse": "0.6.1",
+    "tornado": "6.6.1",
+    "urllib3": "2.8.0"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.3,
+   "model_residual": 25.174739457310736,
+   "model_cost": 36.9,
+   "scope": 33,
+   "candidates": 110,
+   "residual_findings": 86,
+   "residual_risk_evident": 25.17473945731074,
+   "residual_risk_vm": 64.87999999999995,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 25,
+   "major_bumps": 5,
+   "added": 8,
+   "removed": 0,
+   "realised_changes": {
+    "asgiref": [
+     "3.7.2",
+     "3.13.0"
+    ],
+    "black": [
+     "19.3b0",
+     "26.10.1"
+    ],
+    "bleach": [
+     "6.0.0",
+     "6.4.0"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.1.1"
+    ],
+    "click": [
+     "7.0",
+     "8.5.1"
+    ],
+    "cryptography": [
+     null,
+     "50.0.2"
+    ],
+    "django": [
+     "4.2.1",
+     "5.2.17"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "jeepney": [
+     null,
+     "0.9.0"
+    ],
+    "jinja2": [
+     "3.1.2",
+     "3.1.6"
+    ],
+    "markdown": [
+     "3.4.3",
+     "3.8.1"
+    ],
+    "mistune": [
+     "2.0.5",
+     "3.4.0"
+    ],
+    "mypy-extensions": [
+     null,
+     "1.2.0"
+    ],
+    "nbconvert": [
+     "7.4.0",
+     "7.17.2"
+    ],
+    "pathspec": [
+     null,
+     "1.1.1"
+    ],
+    "pycparser": [
+     null,
+     "3.12"
+    ],
+    "pygments": [
+     "2.15.1",
+     "2.21.0"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.34.2"
+    ],
+    "secretstorage": [
+     null,
+     "3.5.0"
+    ],
+    "soupsieve": [
+     "2.4.1",
+     "2.9"
+    ],
+    "sqlparse": [
+     "0.4.4",
+     "0.6.1"
+    ],
+    "tornado": [
+     "6.3.2",
+     "6.6.1"
+    ],
+    "urllib3": [
+     "2.0.2",
+     "2.8.0"
+    ]
+   },
+   "planned_changes": 17,
+   "unplanned_changes": 8,
+   "unplanned_major": 0,
+   "unplanned_added": 8,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 182,
+    "details": [],
+    "api_compatible": true
+   },
+   "objective_gap": 3.552713678800501e-15
+  },
+  "evident_wide": {
+   "planned": {
+    "asgiref": "3.13.0",
+    "black": "26.10.1",
+    "bleach": "6.4.0",
+    "certifi": "2026.10.23",
+    "click": "8.5.1",
+    "django": "5.2.17",
+    "idna": "3.20",
+    "jinja2": "3.1.6",
+    "markdown": "3.8.1",
+    "mistune": "3.4.0",
+    "nbconvert": "7.17.2",
+    "pygments": "2.21.0",
+    "requests": "2.34.2",
+    "soupsieve": "2.9",
+    "sqlparse": "0.6.1",
+    "tornado": "6.6.1",
+    "urllib3": "2.8.0"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.3,
+   "model_residual": 25.174739457310736,
+   "model_cost": 36.9,
+   "candidates": 110,
+   "residual_findings": 86,
+   "residual_risk_evident": 25.17473945731074,
+   "residual_risk_vm": 64.87999999999995,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 25,
+   "major_bumps": 5,
+   "added": 8,
+   "removed": 0,
+   "realised_changes": {
+    "asgiref": [
+     "3.7.2",
+     "3.13.0"
+    ],
+    "black": [
+     "19.3b0",
+     "26.10.1"
+    ],
+    "bleach": [
+     "6.0.0",
+     "6.4.0"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.1.1"
+    ],
+    "click": [
+     "7.0",
+     "8.5.1"
+    ],
+    "cryptography": [
+     null,
+     "50.0.2"
+    ],
+    "django": [
+     "4.2.1",
+     "5.2.17"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "jeepney": [
+     null,
+     "0.9.0"
+    ],
+    "jinja2": [
+     "3.1.2",
+     "3.1.6"
+    ],
+    "markdown": [
+     "3.4.3",
+     "3.8.1"
+    ],
+    "mistune": [
+     "2.0.5",
+     "3.4.0"
+    ],
+    "mypy-extensions": [
+     null,
+     "1.2.0"
+    ],
+    "nbconvert": [
+     "7.4.0",
+     "7.17.2"
+    ],
+    "pathspec": [
+     null,
+     "1.1.1"
+    ],
+    "pycparser": [
+     null,
+     "3.12"
+    ],
+    "pygments": [
+     "2.15.1",
+     "2.21.0"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.34.2"
+    ],
+    "secretstorage": [
+     null,
+     "3.5.0"
+    ],
+    "soupsieve": [
+     "2.4.1",
+     "2.9"
+    ],
+    "sqlparse": [
+     "0.4.4",
+     "0.6.1"
+    ],
+    "tornado": [
+     "6.3.2",
+     "6.6.1"
+    ],
+    "urllib3": [
+     "2.0.2",
+     "2.8.0"
+    ]
+   },
+   "planned_changes": 17,
+   "unplanned_changes": 8,
+   "unplanned_major": 0,
+   "unplanned_added": 8,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 2,
+    "checked": 2,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 182,
+    "details": [],
+    "api_compatible": true
+   }
+  }
+ },
+ "original": {
+  "residual_findings": 221,
+  "residual_risk_evident": 65.9025796654077,
+  "residual_risk_vm": 155.98000000000005,
+  "residual_confirmed": 8,
+  "new_findings": 0,
+  "changed": 0,
+  "major_bumps": 0,
+  "added": 0,
+  "removed": 0,
+  "realised_changes": {}
+ },
+ "decision": {
+  "uncertain": 190,
+  "critical": 5,
+  "evpi_total": 0.3743194391199688,
+  "top": [
+   {
+    "package": "jupyter-core",
+    "advisory": "CVE-2025-30167",
+    "p": 0.21461021528126487,
+    "critical": true,
+    "evpi": 0.12018172055750881
+   },
+   {
+    "package": "bleach",
+    "advisory": "GHSA-gj48-438w-jh9v",
+    "p": 0.3940617577197149,
+    "critical": true,
+    "evpi": 0.10300950118764948
+   },
+   {
+    "package": "markdown",
+    "advisory": "CVE-2025-69534",
+    "p": 0.6559895848026134,
+    "critical": true,
+    "evpi": 0.07568229134342588
+   },
+   {
+    "package": "pygments",
+    "advisory": "CVE-2026-4539",
+    "p": 0.5744984270811252,
+    "critical": true,
+    "evpi": 0.07233526739620945
+   },
+   {
+    "package": "idna",
+    "advisory": "CVE-2026-45409",
+    "p": 0.6559895848026134,
+    "critical": true,
+    "evpi": 0.0031106586351751847
+   }
+  ]
+ },
+ "remediation_seconds": 85.1,
+ "status": "ok"
+}

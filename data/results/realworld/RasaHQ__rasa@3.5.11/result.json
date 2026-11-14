@@ -1,0 +1,73 @@
+{
+ "id": "RasaHQ__rasa@3.5.11",
+ "meta": {
+  "id": "RasaHQ__rasa@3.5.11",
+  "repo": "RasaHQ/rasa",
+  "tag": "3.5.11",
+  "published_at": "2023-06-08T13:21:36Z",
+  "stars": 21385,
+  "lock_kind": "poetry",
+  "lock_file": "poetry.lock",
+  "lock_path": "poetry.lock",
+  "subdir": "",
+  "manifest": "pyproject.toml",
+  "requires_python": ">=3.7,<3.11",
+  "description": "\ud83d\udcac   Open source machine learning framework to automate text- and voice-based conversations: NLU, dialogue management, connect to Slack, Facebook, and more - Create chatbots and voice assistants",
+  "topics": [
+   "bot",
+   "bot-framework",
+   "botkit",
+   "bots",
+   "chatbot",
+   "chatbots",
+   "chatbots-framework",
+   "conversation-driven-development",
+   "conversational-agents",
+   "conversational-ai",
+   "conversational-bots",
+   "machine-learning",
+   "machine-learning-library",
+   "mitie",
+   "natural-language-processing",
+   "nlp",
+   "nlu",
+   "rasa",
+   "spacy",
+   "wit"
+  ]
+ },
+ "python": "3.10",
+ "summary": {
+  "locked": 280,
+  "installed": 270,
+  "direct": 117,
+  "transitive": 153,
+  "edges": 620,
+  "edges_from_lock": true
+ },
+ "stats": {
+  "app_modules": 0,
+  "pkgs_analysed": 0,
+  "pkgs_no_source": 0,
+  "seconds": 0.0
+ },
+ "scan_seconds": 1.9,
+ "sdist_only": [
+  "click-default-group",
+  "docopt",
+  "docstring-parser",
+  "fire",
+  "future",
+  "jieba",
+  "mattermostwrapper",
+  "mypy-extensions",
+  "randomname",
+  "sentinels"
+ ],
+ "baseline_resolution": {
+  "ok": false,
+  "seconds": 1.6,
+  "error": "-aws` (v2.10.1) on the following platforms: `manylinux_2_17_aarch64`, `manylinux2014_aarch64`\n\nhint: You require CPython 3.10 (`cp310`), but we only found wheels for `tensorflow-cpu-aws` (v2.12.0rc0) with the following Python implementation tag: `cp311`\n\nhint: You require CPython 3.10 (`cp310`), but we only found wheels for `tensorflow-cpu-aws` (v2.11.1) with the following Python ABI tag: `cp37m`\n"
+ },
+ "status": "baseline_unresolvable"
+}

@@ -1,0 +1,2374 @@
+{
+ "id": "allegro__ralph@20240213.1",
+ "meta": {
+  "id": "allegro__ralph@20240213.1",
+  "repo": "allegro/ralph",
+  "tag": "20240213.1",
+  "published_at": "2024-02-13T10:09:48Z",
+  "stars": 2532,
+  "lock_kind": "requirements",
+  "lock_file": "base.txt",
+  "lock_path": "requirements/base.txt",
+  "subdir": "",
+  "manifest": null,
+  "requires_python": null,
+  "description": "Ralph is the CMDB / Asset Management system for data center and back office hardware.",
+  "topics": [
+   "assets-management",
+   "backoffice",
+   "cmdb",
+   "data-center",
+   "dcim",
+   "django",
+   "hacktoberfest",
+   "inventory",
+   "inventory-management",
+   "python3"
+  ]
+ },
+ "python": "3.10",
+ "summary": {
+  "locked": 35,
+  "installed": 35,
+  "direct": 28,
+  "transitive": 7,
+  "edges": 37,
+  "edges_from_lock": false
+ },
+ "stats": {
+  "app_modules": 599,
+  "pkgs_analysed": 10,
+  "pkgs_no_source": 0,
+  "seconds": 104.47,
+  "funcs": 14319,
+  "roots": 2058,
+  "app_refs": {
+   "django": [
+    "django",
+    "django.apps",
+    "django.apps.config.AppConfig.get_model",
+    "django.conf",
+    "django.conf.urls",
+    "django.conf.urls.i18n",
+    "django.conf.urls.include",
+    "django.conf.urls.static",
+    "django.conf.urls.static.static",
+    "django.conf.urls.url",
+    "django.contrib",
+    "django.contrib.admin",
+    "django.contrib.admin.checks.must_inherit_from",
+    "django.contrib.admin.decorators",
+    "django.contrib.admin.decorators.register",
+    "django.contrib.admin.filters",
+    "django.contrib.admin.filters.FieldListFilter.register",
+    "django.contrib.admin.filters.SimpleListFilter.value",
+    "django.contrib.admin.options",
+    "django.contrib.admin.options.BaseModelAdmin.has_change_permission",
+    "django.contrib.admin.options.IncorrectLookupParameters",
+    "django.contrib.admin.options.ModelAdmin.get_object",
+    "django.contrib.admin.sites",
+    "django.contrib.admin.sites.AdminSite",
+    "django.contrib.admin.templatetags",
+    "django.contrib.admin.templatetags.admin_modify",
+    "django.contrib.admin.templatetags.admin_modify.submit_row",
+    "django.contrib.admin.templatetags.admin_static",
+    "django.contrib.admin.templatetags.admin_static.static",
+    "django.contrib.admin.utils",
+    "django.contrib.admin.utils.NestedObjects",
+    "django.contrib.admin.utils.NestedObjects.collect",
+    "django.contrib.admin.utils.flatten_fieldsets",
+    "django.contrib.admin.utils.get_fields_from_path",
+    "django.contrib.admin.utils.get_model_from_relation",
+    "django.contrib.admin.utils.unquote",
+    "django.contrib.admin.views",
+    "django.contrib.admin.views.main",
+    "django.contrib.admin.widgets",
+    "django.contrib.auth",
+    "django.contrib.auth.admin",
+    "django.contrib.auth.context_processors",
+    "django.contrib.auth.decorators",
+    "django.contrib.auth.decorators.login_required",
+    "django.contrib.auth.get_permission_codename",
+    "django.contrib.auth.get_user_model",
+    "django.contrib.auth.hashers",
+    "django.contrib.auth.hashers.check_password",
+    "django.contrib.auth.management",
+    "django.contrib.auth.management._get_all_permissions",
+    "django.contrib.auth.middleware",
+    "django.contrib.auth.models",
+    "django.contrib.auth.models.AbstractUser.get_full_name",
+    "django.contrib.auth.models.PermissionsMixin.get_all_permissions",
+    "django.contrib.auth.models.PermissionsMixin.has_perm",
+    "django.contrib.auth.views",
+    "django.contrib.auth.views.redirect_to_login",
+    "django.contrib.contenttypes",
+    "django.contrib.contenttypes.admin",
+    "django.contrib.contenttypes.fields",
+    "django.contrib.contenttypes.fields.GenericForeignKey",
+    "django.contrib.contenttypes.fields.GenericRelation",
+    "django.contrib.contenttypes.fields.create_generic_related_manager",
+    "django.contrib.contenttypes.forms",
+    "django.contrib.contenttypes.generic",
+    "django.contrib.contenttypes.models",
+    "django.contrib.humanize",
+    "django.contrib.humanize.templatetags",
+    "django.contrib.humanize.templatetags.humanize",
+    "django.contrib.humanize.templatetags.humanize.naturaltime",
+    "django.contrib.messages",
+    "django.contrib.messages.api.add_message",
+    "django.contrib.messages.api.error",
+    "django.contrib.messages.api.info",
+    "django.contrib.messages.api.success",
+    "django.contrib.messages.api.warning",
+    "django.contrib.messages.constants",
+    "django.contrib.messages.context_processors",
+    "django.contrib.messages.middleware",
+    "django.contrib.messages.storage",
+    "django.contrib.messages.storage.fallback",
+    "django.contrib.messages.storage.fallback.FallbackStorage",
+    "django.contrib.sessions",
+    "django.contrib.sessions.middleware",
+    "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.contrib.sessions.middleware.SessionMiddleware.process_request",
+    "django.contrib.staticfiles",
+    "django.contrib.staticfiles.storage",
+    "django.core",
+    "django.core.cache",
+    "django.core.cache.backends",
+    "django.core.cache.backends.dummy",
+    "django.core.cache.backends.locmem",
+    "django.core.checks",
+    "django.core.checks.messages.Error",
+    "django.core.exceptions",
+    "django.core.exceptions.ImproperlyConfigured",
+    "django.core.exceptions.SuspiciousOperation",
+    "django.core.exceptions.ValidationError",
+    "django.core.files",
+    "django.core.files.base",
+    "django.core.files.base.ContentFile",
+    "django.core.files.base.File",
+    "django.core.files.uploadedfile",
+    "django.core.files.uploadedfile.SimpleUploadedFile",
+    "django.core.mail",
+    "django.core.mail.backends",
+    "django.core.mail.backends.locmem",
+    "django.core.mail.message.EmailMessage",
+    "django.core.mail.message.EmailMessage.attach",
+    "django.core.mail.message.EmailMessage.attach_file",
+    "django.core.mail.message.EmailMessage.send",
+    "django.core.mail.message.EmailMultiAlternatives",
+    "django.core.mail.message.EmailMultiAlternatives.attach_alternative",
+    "django.core.management",
+    "django.core.management.base",
+    "django.core.management.base.CommandError",
+    "django.core.management.call_command",
+    "django.core.management.execute_from_command_line",
+    "django.core.serializers",
+    "django.core.serializers.base",
+    "django.core.serializers.base.DeserializationError",
+    "django.core.serializers.json",
+    "django.core.serializers.python",
+    "django.core.serializers.python.Deserializer",
+    "django.core.serializers.python._get_model",
+    "django.core.serializers.register_serializer",
+    "django.core.serializers.serialize",
+    "django.core.urlresolvers",
+    "django.core.urlresolvers.clear_url_caches",
+    "django.core.urlresolvers.reverse",
+    "django.core.validators",
+    "django.core.validators.EmailValidator",
+    "django.core.validators.MaxLengthValidator",
+    "django.core.validators.MaxValueValidator",
+    "django.core.validators.MinLengthValidator",
+    "django.core.validators.MinValueValidator",
+    "django.core.validators.RegexValidator",
+    "django.core.wsgi",
+    "django.core.wsgi.get_wsgi_application",
+    "django.db",
+    "django.db.backends",
+    "django.db.backends.base",
+    "django.db.backends.base.schema",
+    "django.db.backends.base.schema._related_non_m2m_objects",
+    "django.db.backends.utils",
+    "django.db.backends.utils.CursorWrapper.execute",
+    "django.db.backends.utils.CursorWrapper.executemany",
+    "django.db.migrations",
+    "django.db.migrations.operations",
+    "django.db.migrations.operations.base",
+    "django.db.migrations.operations.base.Operation.allow_migrate_model",
+    "django.db.migrations.operations.fields.AddField",
+    "django.db.migrations.operations.fields.RemoveField",
+    "django.db.migrations.operations.special.RunPython",
+    "django.db.migrations.operations.special.RunSQL",
+    "django.db.models",
+    "django.db.models.aggregates.Count",
+    "django.db.models.aggregates.Sum",
+    "django.db.models.base",
+    "django.db.models.base.Model.refresh_from_db",
+    "django.db.models.base.Model.save",
+    "django.db.models.constants",
+    "django.db.models.expressions",
+    "django.db.models.expressions.Case",
+    "django.db.models.expressions.F",
+    "django.db.models.expressions.Value",
+    "django.db.models.expressions.When",
+    "django.db.models.fields",
+    "django.db.models.fields.AutoField",
+    "django.db.models.fields.BooleanField",
+    "django.db.models.fields.CharField",
+    "django.db.models.fields.DateField",
+    "django.db.models.fields.DateTimeField",
+    "django.db.models.fields.DecimalField",
+    "django.db.models.fields.FloatField",
+    "django.db.models.fields.GenericIPAddressField",
+    "django.db.models.fields.IntegerField",
+    "django.db.models.fields.PositiveIntegerField",
+    "django.db.models.fields.PositiveSmallIntegerField",
+    "django.db.models.fields.SlugField",
+    "django.db.models.fields.TextField",
+    "django.db.models.fields.URLField",
+    "django.db.models.fields.UUIDField",
+    "django.db.models.fields.files.FileField",
+    "django.db.models.fields.files.ImageField",
+    "django.db.models.fields.related",
+    "django.db.models.fields.related.ForeignKey",
+    "django.db.models.fields.related.ManyToManyField",
+    "django.db.models.fields.related.OneToOneField",
+    "django.db.models.fields.related.add_lazy_relation",
+    "django.db.models.functions",
+    "django.db.models.functions.Coalesce",
+    "django.db.models.loading",
+    "django.db.models.manager",
+    "django.db.models.manager.Manager",
+    "django.db.models.options",
+    "django.db.models.query",
+    "django.db.models.query.Prefetch",
+    "django.db.models.query.QuerySet.as_manager",
+    "django.db.models.query.QuerySet.exclude",
+    "django.db.models.query.QuerySet.filter",
+    "django.db.models.query_utils.Q",
+    "django.db.models.signals",
+    "django.db.transaction",
+    "django.db.transaction.atomic",
+    "django.db.transaction.commit",
+    "django.db.transaction.non_atomic_requests",
+    "django.db.utils",
+    "django.dispatch",
+    "django.dispatch.dispatcher.Signal",
+    "django.dispatch.dispatcher.receiver",
+    "django.forms",
+    "django.forms.fields.BooleanField",
+    "django.forms.fields.CharField",
+    "django.forms.fields.ChoiceField",
+    "django.forms.fields.DateField",
+    "django.forms.fields.Field.clean",
+    "django.forms.fields.GenericIPAddressField",
+    "django.forms.fields.IPAddressField",
+    "django.forms.fields.IntegerField",
+    "django.forms.fields.MultipleChoiceField",
+    "django.forms.fields.URLField",
+    "django.forms.formsets",
+    "django.forms.models",
+    "django.forms.models.BaseModelFormSet.save_existing",
+    "django.forms.models.ModelChoiceField",
+    "django.forms.models.ModelMultipleChoiceField",
+    "django.forms.models.model_to_dict",
+    "django.forms.models.modelform_defines_fields",
+    "django.forms.models.modelformset_factory",
+    "django.forms.utils",
+    "django.forms.utils.ErrorList",
+    "django.forms.utils.flatatt",
+    "django.forms.widgets.CheckboxInput",
+    "django.forms.widgets.CheckboxSelectMultiple",
+    "django.forms.widgets.HiddenInput",
+    "django.forms.widgets.Media",
+    "django.forms.widgets.TextInput",
+    "django.forms.widgets.Textarea",
+    "django.forms.widgets.Widget.build_attrs",
+    "django.http",
+    "django.http.request",
+    "django.http.request.QueryDict",
+    "django.http.response.FileResponse",
+    "django.http.response.Http404",
+    "django.http.response.HttpResponse",
+    "django.http.response.HttpResponseBadRequest",
+    "django.http.response.HttpResponseForbidden",
+    "django.http.response.HttpResponseNotFound",
+    "django.http.response.HttpResponseNotModified",
+    "django.http.response.HttpResponseRedirect",
+    "django.http.response.JsonResponse",
+    "django.middleware",
+    "django.middleware.clickjacking",
+    "django.middleware.common",
+    "django.middleware.csrf",
+    "django.middleware.locale",
+    "django.middleware.security",
+    "django.setup",
+    "django.shortcuts",
+    "django.shortcuts.get_object_or_404",
+    "django.template",
+    "django.template.backends",
+    "django.template.backends.django",
+    "django.template.base",
+    "django.template.base.Library",
+    "django.template.base.Template",
+    "django.template.base.Template.render",
+    "django.template.base.TemplateDoesNotExist",
+    "django.template.base.TemplateSyntaxError",
+    "django.template.context",
+    "django.template.context.Context",
+    "django.template.context.RenderContext",
+    "django.template.context_processors",
+    "django.template.defaultfilters",
+    "django.template.defaultfilters.date",
+    "django.template.defaultfilters.slugify",
+    "django.template.defaultfilters.timesince_filter",
+    "django.template.defaultfilters.title",
+    "django.template.loader",
+    "django.template.loader.get_template",
+    "django.template.loader.render_to_string",
+    "django.template.loaders",
+    "django.template.loaders.app_directories",
+    "django.template.loaders.base",
+    "django.template.loaders.cached",
+    "django.template.loaders.filesystem",
+    "django.test",
+    "django.test.client",
+    "django.test.client.Client",
+    "django.test.client.RequestFactory",
+    "django.test.client.RequestFactory.get",
+    "django.test.testcases.SimpleTestCase.assertContains",
+    "django.test.testcases.SimpleTestCase.assertFormError",
+    "django.test.testcases.SimpleTestCase.assertHTMLEqual",
+    "django.test.testcases.SimpleTestCase.assertNotContains",
+    "django.test.testcases.SimpleTestCase.assertRedirects",
+    "django.test.testcases.SimpleTestCase.settings",
+    "django.test.testcases.TransactionTestCase.assertNumQueries",
+    "django.test.utils",
+    "django.test.utils.CaptureQueriesContext",
+    "django.test.utils.override_settings",
+    "django.utils",
+    "django.utils.datastructures",
+    "django.utils.datastructures.MultiValueDict",
+    "django.utils.decorators",
+    "django.utils.encoding",
+    "django.utils.encoding.force_bytes",
+    "django.utils.encoding.force_text",
+    "django.utils.encoding.smart_text",
+    "django.utils.formats",
+    "django.utils.formats.get_format",
+    "django.utils.functional",
+    "django.utils.functional.curry",
+    "django.utils.html",
+    "django.utils.html.conditional_escape",
+    "django.utils.html.escape",
+    "django.utils.html.format_html",
+    "django.utils.html.smart_urlquote",
+    "django.utils.html.strip_tags",
+    "django.utils.http",
+    "django.utils.http.http_date",
+    "django.utils.http.parse_http_date_safe",
+    "django.utils.http.urlencode",
+    "django.utils.importlib",
+    "django.utils.lru_cache",
+    "django.utils.lru_cache.lru_cache",
+    "django.utils.safestring",
+    "django.utils.safestring.mark_safe",
+    "django.utils.six",
+    "django.utils.six.iteritems",
+    "django.utils.six.reraise",
+    "django.utils.text",
+    "django.utils.text.get_text_list",
+    "django.utils.text.slugify",
+    "django.utils.timezone",
+    "django.utils.timezone.now",
+    "django.utils.translation",
+    "django.utils.translation.activate",
+    "django.utils.translation.gettext",
+    "django.utils.translation.ugettext",
+    "django.views",
+    "django.views.decorators",
+    "django.views.decorators.csrf",
+    "django.views.decorators.http",
+    "django.views.generic",
+    "django.views.generic.base",
+    "django.views.generic.base.TemplateResponseMixin.render_to_response",
+    "django.views.generic.base.View.as_view"
+   ],
+   "djangorestframework": [
+    "rest_framework",
+    "rest_framework.authentication",
+    "rest_framework.authtoken",
+    "rest_framework.authtoken.models",
+    "rest_framework.authtoken.views",
+    "rest_framework.compat",
+    "rest_framework.compat.get_model_name",
+    "rest_framework.exceptions",
+    "rest_framework.exceptions.NotFound",
+    "rest_framework.exceptions.ValidationError",
+    "rest_framework.fields",
+    "rest_framework.fields.CharField",
+    "rest_framework.fields.Field.fail",
+    "rest_framework.fields.FloatField",
+    "rest_framework.fields.IntegerField",
+    "rest_framework.fields.ListField",
+    "rest_framework.fields.ReadOnlyField",
+    "rest_framework.fields.SerializerMethodField",
+    "rest_framework.filters",
+    "rest_framework.generics.GenericAPIView.get_object",
+    "rest_framework.metadata",
+    "rest_framework.metadata.SimpleMetadata.get_serializer_info",
+    "rest_framework.pagination",
+    "rest_framework.parsers",
+    "rest_framework.permissions",
+    "rest_framework.relations",
+    "rest_framework.relations.HyperlinkedRelatedField",
+    "rest_framework.relations.PrimaryKeyRelatedField",
+    "rest_framework.relations.RelatedField.get_queryset",
+    "rest_framework.relations.SlugRelatedField",
+    "rest_framework.renderers",
+    "rest_framework.response",
+    "rest_framework.response.Response",
+    "rest_framework.reverse",
+    "rest_framework.reverse.reverse",
+    "rest_framework.routers",
+    "rest_framework.routers.DefaultRouter",
+    "rest_framework.serializers",
+    "rest_framework.serializers.BaseSerializer.is_valid",
+    "rest_framework.serializers.ModelSerializer.update",
+    "rest_framework.settings",
+    "rest_framework.status",
+    "rest_framework.test",
+    "rest_framework.test.APIClient",
+    "rest_framework.test.APIRequestFactory",
+    "rest_framework.throttling",
+    "rest_framework.utils",
+    "rest_framework.utils.model_meta",
+    "rest_framework.utils.model_meta.get_field_info",
+    "rest_framework.versioning",
+    "rest_framework.views",
+    "rest_framework.views.exception_handler",
+    "rest_framework.viewsets"
+   ],
+   "django-money": [
+    "djmoney",
+    "djmoney.forms",
+    "djmoney.forms.fields.MoneyField",
+    "djmoney.models",
+    "djmoney.models.fields",
+    "djmoney.models.fields.MoneyField",
+    "djmoney.money",
+    "djmoney.money.Money",
+    "djmoney.utils",
+    "djmoney.utils.get_currency_field_name"
+   ],
+   "django-filter": [
+    "django_filters",
+    "django_filters.filters.CharFilter"
+   ],
+   "tablib": [
+    "tablib",
+    "tablib.core.Dataset"
+   ],
+   "requests": [
+    "requests",
+    "requests.sessions.Session"
+   ],
+   "django-rq": [
+    "django_rq",
+    "django_rq.queues.get_queue"
+   ]
+  },
+  "reflection_kinds": {
+   "pillow": [
+    "__import__",
+    "namespace",
+    "setattr"
+   ],
+   "django": [
+    "__import__",
+    "dyn_class",
+    "exec",
+    "import_module",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "tablib": [
+    "namespace",
+    "setattr"
+   ],
+   "requests": [
+    "__import__",
+    "namespace",
+    "setattr"
+   ],
+   "djangorestframework": [
+    "import_module",
+    "monkeypatch",
+    "setattr"
+   ],
+   "openpyxl": [
+    "namespace",
+    "setattr"
+   ],
+   "django-filter": [
+    "dyn_class",
+    "namespace"
+   ],
+   "django-money": [
+    "setattr"
+   ],
+   "__app__": [
+    "__import__",
+    "dyn_class",
+    "import_module",
+    "monkeypatch",
+    "namespace",
+    "plugin",
+    "setattr"
+   ]
+  }
+ },
+ "scan_seconds": 111.4,
+ "sdist_only": [
+  "dj-choices",
+  "django-import-export",
+  "django-reversion",
+  "django-taggit-serializer",
+  "django-threadlocals",
+  "django-transaction-hooks",
+  "drf-nested-routers",
+  "mysqlclient",
+  "openpyxl",
+  "rq",
+  "tablib",
+  "unidecode"
+ ],
+ "baseline_resolution": {
+  "ok": true,
+  "seconds": 2.0,
+  "error": ""
+ },
+ "baseline_drift": 21,
+ "strategies": {
+  "audit_fix": {
+   "planned": {
+    "django": "5.2.17",
+    "django-filter": "2.4.0",
+    "djangorestframework": "3.18.2",
+    "requests": "2.33.0",
+    "sqlparse": "0.6.0",
+    "tablib": "3.10.0",
+    "openpyxl": "3.0.4"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 0.7,
+   "residual_findings": 41,
+   "residual_risk_evident": 20.222290919271604,
+   "residual_risk_vm": 32.89000000000001,
+   "residual_confirmed": 0,
+   "new_findings": 16,
+   "changed": 31,
+   "major_bumps": 7,
+   "added": 21,
+   "removed": 0,
+   "realised_changes": {
+    "asgiref": [
+     null,
+     "3.12.1"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "babel": [
+     null,
+     "2.18.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.1.1"
+    ],
+    "charset-normalizer": [
+     null,
+     "3.5.2"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "croniter": [
+     null,
+     "7.0.0"
+    ],
+    "cryptography": [
+     null,
+     "50.0.2"
+    ],
+    "defusedxml": [
+     null,
+     "0.7.1"
+    ],
+    "django": [
+     "1.8.19",
+     "5.2.17"
+    ],
+    "django-appconf": [
+     null,
+     "1.2.0"
+    ],
+    "django-filter": [
+     "0.13.0",
+     "2.4.0"
+    ],
+    "djangorestframework": [
+     "3.2.2",
+     "3.18.2"
+    ],
+    "et-xmlfile": [
+     null,
+     "2.0.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "jdcal": [
+     null,
+     "1.4.1"
+    ],
+    "oauthlib": [
+     null,
+     "4.0.1"
+    ],
+    "openpyxl": [
+     "2.4.0",
+     "3.0.4"
+    ],
+    "pillow": [
+     "6.2.2",
+     "12.3.0"
+    ],
+    "pycparser": [
+     null,
+     "3.11"
+    ],
+    "redis": [
+     "3.2.1",
+     "8.1.0"
+    ],
+    "requests": [
+     "2.20.0",
+     "2.33.0"
+    ],
+    "rq": [
+     "1.0",
+     "3.0.0"
+    ],
+    "setuptools": [
+     null,
+     "84.2.1"
+    ],
+    "six": [
+     null,
+     "1.17.0"
+    ],
+    "sqlparse": [
+     "0.2.3",
+     "0.6.0"
+    ],
+    "tablib": [
+     "0.11.5",
+     "3.10.0"
+    ],
+    "text-unidecode": [
+     null,
+     "1.2"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "urllib3": [
+     null,
+     "2.8.0"
+    ]
+   },
+   "planned_changes": 7,
+   "unplanned_changes": 24,
+   "unplanned_major": 3,
+   "unplanned_added": 21,
+   "new_findings_from_unplanned": 16,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "packages_with_missing": 2,
+    "missing_symbols": 24,
+    "refs_checked": 409,
+    "details": [
+     {
+      "package": "django",
+      "version": "5.2.17",
+      "missing": [
+       "django.conf.urls.url",
+       "django.contrib.admin.templatetags.admin_static",
+       "django.contrib.admin.templatetags.admin_static.static",
+       "django.contrib.contenttypes.generic",
+       "django.core.serializers.python._get_model",
+       "django.core.urlresolvers",
+       "django.core.urlresolvers.clear_url_caches",
+       "django.core.urlresolvers.reverse",
+       "django.db.models.fields.related.add_lazy_relation",
+       "django.db.models.loading"
+      ],
+      "n_missing": 23
+     },
+     {
+      "package": "djangorestframework",
+      "version": "3.18.2",
+      "missing": [
+       "rest_framework.compat.get_model_name"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "latest": {
+   "planned": {
+    "pillow": "12.2.0",
+    "django": "5.2.19",
+    "sqlparse": "0.6.1",
+    "tablib": "3.10.0",
+    "requests": "2.34.2",
+    "djangorestframework": "3.18.3",
+    "openpyxl": "3.1.5",
+    "django-filter": "26.1"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 0.1,
+   "residual_findings": 54,
+   "residual_risk_evident": 25.847787797190847,
+   "residual_risk_vm": 42.50999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 18,
+   "changed": 30,
+   "major_bumps": 7,
+   "added": 20,
+   "removed": 0,
+   "realised_changes": {
+    "asgiref": [
+     null,
+     "3.12.1"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "babel": [
+     null,
+     "2.18.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.1.1"
+    ],
+    "charset-normalizer": [
+     null,
+     "3.5.2"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "croniter": [
+     null,
+     "7.0.0"
+    ],
+    "cryptography": [
+     null,
+     "50.0.2"
+    ],
+    "defusedxml": [
+     null,
+     "0.7.1"
+    ],
+    "django": [
+     "1.8.19",
+     "5.2.19"
+    ],
+    "django-appconf": [
+     null,
+     "1.2.0"
+    ],
+    "django-filter": [
+     "0.13.0",
+     "26.1"
+    ],
+    "djangorestframework": [
+     "3.2.2",
+     "3.18.3"
+    ],
+    "et-xmlfile": [
+     null,
+     "2.0.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "oauthlib": [
+     null,
+     "4.0.1"
+    ],
+    "openpyxl": [
+     "2.4.0",
+     "3.1.5"
+    ],
+    "pillow": [
+     "6.2.2",
+     "12.2.0"
+    ],
+    "pycparser": [
+     null,
+     "3.11"
+    ],
+    "redis": [
+     "3.2.1",
+     "8.1.0"
+    ],
+    "requests": [
+     "2.20.0",
+     "2.34.2"
+    ],
+    "rq": [
+     "1.0",
+     "3.0.0"
+    ],
+    "setuptools": [
+     null,
+     "84.2.1"
+    ],
+    "six": [
+     null,
+     "1.17.0"
+    ],
+    "sqlparse": [
+     "0.2.3",
+     "0.6.1"
+    ],
+    "tablib": [
+     "0.11.5",
+     "3.10.0"
+    ],
+    "text-unidecode": [
+     null,
+     "1.2"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "urllib3": [
+     null,
+     "2.8.0"
+    ]
+   },
+   "planned_changes": 8,
+   "unplanned_changes": 22,
+   "unplanned_major": 2,
+   "unplanned_added": 20,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "packages_with_missing": 2,
+    "missing_symbols": 24,
+    "refs_checked": 409,
+    "details": [
+     {
+      "package": "django",
+      "version": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.contrib.admin.templatetags.admin_static",
+       "django.contrib.admin.templatetags.admin_static.static",
+       "django.contrib.contenttypes.generic",
+       "django.core.serializers.python._get_model",
+       "django.core.urlresolvers",
+       "django.core.urlresolvers.clear_url_caches",
+       "django.core.urlresolvers.reverse",
+       "django.db.models.fields.related.add_lazy_relation",
+       "django.db.models.loading"
+      ],
+      "n_missing": 23
+     },
+     {
+      "package": "djangorestframework",
+      "version": "3.18.3",
+      "missing": [
+       "rest_framework.compat.get_model_name"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "upgrade_all": {
+   "planned": null,
+   "ok": true,
+   "error": "",
+   "seconds": 1.2,
+   "residual_findings": 43,
+   "residual_risk_evident": 21.114436754603158,
+   "residual_risk_vm": 34.25000000000001,
+   "residual_confirmed": 0,
+   "new_findings": 16,
+   "changed": 43,
+   "major_bumps": 18,
+   "added": 19,
+   "removed": 0,
+   "realised_changes": {
+    "asgiref": [
+     null,
+     "3.12.1"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "babel": [
+     null,
+     "2.18.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.1.1"
+    ],
+    "charset-normalizer": [
+     null,
+     "3.5.2"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "croniter": [
+     null,
+     "7.0.0"
+    ],
+    "cryptography": [
+     null,
+     "50.0.2"
+    ],
+    "defusedxml": [
+     null,
+     "0.7.1"
+    ],
+    "django": [
+     "1.8.19",
+     "5.2.19"
+    ],
+    "django-appconf": [
+     null,
+     "1.2.0"
+    ],
+    "django-cryptography": [
+     "0.3",
+     "1.1"
+    ],
+    "django-extensions": [
+     "1.7.5",
+     "4.1"
+    ],
+    "django-filter": [
+     "0.13.0",
+     "26.1"
+    ],
+    "django-js-asset": [
+     null,
+     "5.0.0"
+    ],
+    "django-money": [
+     "0.15.1",
+     "3.6.2"
+    ],
+    "django-mptt": [
+     "0.8.7",
+     "0.21.1"
+    ],
+    "django-rq": [
+     "2.0",
+     "4.2.0"
+    ],
+    "django-sitetree": [
+     "1.7.0",
+     "1.18.1"
+    ],
+    "django-taggit": [
+     "0.17.1",
+     "7.0.0"
+    ],
+    "djangorestframework": [
+     "3.2.2",
+     "3.18.3"
+    ],
+    "djangorestframework-xml": [
+     "1.2.0",
+     "2.0.0"
+    ],
+    "factory-boy": [
+     "2.11.1",
+     "3.3.3"
+    ],
+    "faker": [
+     "0.9.0",
+     "40.54.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "netaddr": [
+     "0.7.18",
+     "1.3.0"
+    ],
+    "oauthlib": [
+     null,
+     "4.0.1"
+    ],
+    "pillow": [
+     "6.2.2",
+     "12.3.0"
+    ],
+    "py-moneyed": [
+     "1.2",
+     "3.0"
+    ],
+    "pycparser": [
+     null,
+     "3.11"
+    ],
+    "python-dateutil": [
+     "2.4.2",
+     "3.0.0"
+    ],
+    "pytz": [
+     "2015.4",
+     "2026.6"
+    ],
+    "redis": [
+     "3.2.1",
+     "8.1.0"
+    ],
+    "requests": [
+     "2.20.0",
+     "2.34.2"
+    ],
+    "requests-oauthlib": [
+     "1.3.0",
+     "2.0.0"
+    ],
+    "rq": [
+     "1.0",
+     "3.0.0"
+    ],
+    "six": [
+     null,
+     "1.17.0"
+    ],
+    "sqlparse": [
+     "0.2.3",
+     "0.6.1"
+    ],
+    "typing": [
+     "3.6.6",
+     "3.10.0.0"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "tzdata": [
+     null,
+     "2026.6"
+    ],
+    "urllib3": [
+     null,
+     "2.8.0"
+    ]
+   },
+   "failure": "none",
+   "compat": {
+    "used_changed": 6,
+    "checked": 6,
+    "unknown": 0,
+    "packages_with_missing": 2,
+    "missing_symbols": 24,
+    "refs_checked": 419,
+    "details": [
+     {
+      "package": "django",
+      "version": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.contrib.admin.templatetags.admin_static",
+       "django.contrib.admin.templatetags.admin_static.static",
+       "django.contrib.contenttypes.generic",
+       "django.core.serializers.python._get_model",
+       "django.core.urlresolvers",
+       "django.core.urlresolvers.clear_url_caches",
+       "django.core.urlresolvers.reverse",
+       "django.db.models.fields.related.add_lazy_relation",
+       "django.db.models.loading"
+      ],
+      "n_missing": 23
+     },
+     {
+      "package": "djangorestframework",
+      "version": "3.18.3",
+      "missing": [
+       "rest_framework.compat.get_model_name"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "uv_fix": {
+   "planned": {
+    "django": "5.2.17",
+    "django-filter": "2.4.0",
+    "djangorestframework": "3.18.2",
+    "requests": "2.33.0",
+    "sqlparse": "0.6.0",
+    "tablib": "3.10.0",
+    "openpyxl": "3.0.4"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 0.1,
+   "residual_findings": 43,
+   "residual_risk_evident": 21.114436754603158,
+   "residual_risk_vm": 34.25000000000001,
+   "residual_confirmed": 0,
+   "new_findings": 16,
+   "changed": 27,
+   "major_bumps": 5,
+   "added": 19,
+   "removed": 0,
+   "realised_changes": {
+    "asgiref": [
+     null,
+     "3.12.1"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "babel": [
+     null,
+     "2.18.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.1.1"
+    ],
+    "charset-normalizer": [
+     null,
+     "3.5.2"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "croniter": [
+     null,
+     "7.0.0"
+    ],
+    "cryptography": [
+     null,
+     "50.0.2"
+    ],
+    "defusedxml": [
+     null,
+     "0.7.1"
+    ],
+    "django": [
+     "1.8.19",
+     "5.2.19"
+    ],
+    "django-appconf": [
+     null,
+     "1.2.0"
+    ],
+    "django-filter": [
+     "0.13.0",
+     "26.1"
+    ],
+    "djangorestframework": [
+     "3.2.2",
+     "3.18.3"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "oauthlib": [
+     null,
+     "4.0.1"
+    ],
+    "pillow": [
+     "6.2.2",
+     "12.3.0"
+    ],
+    "pycparser": [
+     null,
+     "3.11"
+    ],
+    "redis": [
+     "3.2.1",
+     "8.1.0"
+    ],
+    "requests": [
+     "2.20.0",
+     "2.34.2"
+    ],
+    "rq": [
+     "1.0",
+     "3.0.0"
+    ],
+    "setuptools": [
+     null,
+     "84.2.1"
+    ],
+    "six": [
+     null,
+     "1.17.0"
+    ],
+    "sqlparse": [
+     "0.2.3",
+     "0.6.1"
+    ],
+    "text-unidecode": [
+     null,
+     "1.2"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "urllib3": [
+     null,
+     "2.8.0"
+    ]
+   },
+   "failure": "none",
+   "compat": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "packages_with_missing": 2,
+    "missing_symbols": 24,
+    "refs_checked": 407,
+    "details": [
+     {
+      "package": "django",
+      "version": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.contrib.admin.templatetags.admin_static",
+       "django.contrib.admin.templatetags.admin_static.static",
+       "django.contrib.contenttypes.generic",
+       "django.core.serializers.python._get_model",
+       "django.core.urlresolvers",
+       "django.core.urlresolvers.clear_url_caches",
+       "django.core.urlresolvers.reverse",
+       "django.db.models.fields.related.add_lazy_relation",
+       "django.db.models.loading"
+      ],
+      "n_missing": 23
+     },
+     {
+      "package": "djangorestframework",
+      "version": "3.18.3",
+      "missing": [
+       "rest_framework.compat.get_model_name"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "vm_opt": {
+   "planned": {
+    "django": "5.2.19",
+    "django-filter": "2.4.0",
+    "djangorestframework": "3.18.2",
+    "openpyxl": "3.0.4",
+    "pillow": "12.2.0",
+    "requests": "2.33.0",
+    "sqlparse": "0.6.1",
+    "tablib": "3.10.0"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 3.8,
+   "model_residual": 42.50999999999999,
+   "model_cost": 23.599999999999998,
+   "scope": 8,
+   "candidates": 28,
+   "residual_findings": 54,
+   "residual_risk_evident": 25.847787797190847,
+   "residual_risk_vm": 42.50999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 18,
+   "changed": 31,
+   "major_bumps": 7,
+   "added": 21,
+   "removed": 0,
+   "realised_changes": {
+    "asgiref": [
+     null,
+     "3.12.1"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "babel": [
+     null,
+     "2.18.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.1.1"
+    ],
+    "charset-normalizer": [
+     null,
+     "3.5.2"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "croniter": [
+     null,
+     "7.0.0"
+    ],
+    "cryptography": [
+     null,
+     "50.0.2"
+    ],
+    "defusedxml": [
+     null,
+     "0.7.1"
+    ],
+    "django": [
+     "1.8.19",
+     "5.2.19"
+    ],
+    "django-appconf": [
+     null,
+     "1.2.0"
+    ],
+    "django-filter": [
+     "0.13.0",
+     "2.4.0"
+    ],
+    "djangorestframework": [
+     "3.2.2",
+     "3.18.2"
+    ],
+    "et-xmlfile": [
+     null,
+     "2.0.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "jdcal": [
+     null,
+     "1.4.1"
+    ],
+    "oauthlib": [
+     null,
+     "4.0.1"
+    ],
+    "openpyxl": [
+     "2.4.0",
+     "3.0.4"
+    ],
+    "pillow": [
+     "6.2.2",
+     "12.2.0"
+    ],
+    "pycparser": [
+     null,
+     "3.11"
+    ],
+    "redis": [
+     "3.2.1",
+     "8.1.0"
+    ],
+    "requests": [
+     "2.20.0",
+     "2.33.0"
+    ],
+    "rq": [
+     "1.0",
+     "3.0.0"
+    ],
+    "setuptools": [
+     null,
+     "84.2.1"
+    ],
+    "six": [
+     null,
+     "1.17.0"
+    ],
+    "sqlparse": [
+     "0.2.3",
+     "0.6.1"
+    ],
+    "tablib": [
+     "0.11.5",
+     "3.10.0"
+    ],
+    "text-unidecode": [
+     null,
+     "1.2"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "urllib3": [
+     null,
+     "2.8.0"
+    ]
+   },
+   "planned_changes": 8,
+   "unplanned_changes": 23,
+   "unplanned_major": 2,
+   "unplanned_added": 21,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "packages_with_missing": 2,
+    "missing_symbols": 24,
+    "refs_checked": 409,
+    "details": [
+     {
+      "package": "django",
+      "version": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.contrib.admin.templatetags.admin_static",
+       "django.contrib.admin.templatetags.admin_static.static",
+       "django.contrib.contenttypes.generic",
+       "django.core.serializers.python._get_model",
+       "django.core.urlresolvers",
+       "django.core.urlresolvers.clear_url_caches",
+       "django.core.urlresolvers.reverse",
+       "django.db.models.fields.related.add_lazy_relation",
+       "django.db.models.loading"
+      ],
+      "n_missing": 23
+     },
+     {
+      "package": "djangorestframework",
+      "version": "3.18.2",
+      "missing": [
+       "rest_framework.compat.get_model_name"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "coral_opt": {
+   "planned": {
+    "django": "5.2.19",
+    "django-filter": "2.4.0",
+    "djangorestframework": "3.18.2",
+    "openpyxl": "3.0.4",
+    "pillow": "12.2.0",
+    "requests": "2.33.0",
+    "sqlparse": "0.6.1"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.2,
+   "model_residual": 23.72133335402079,
+   "model_cost": 20.099999999999998,
+   "scope": 8,
+   "candidates": 28,
+   "residual_findings": 55,
+   "residual_risk_evident": 26.202022172984258,
+   "residual_risk_vm": 43.04999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 18,
+   "changed": 30,
+   "major_bumps": 6,
+   "added": 21,
+   "removed": 0,
+   "realised_changes": {
+    "asgiref": [
+     null,
+     "3.12.1"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "babel": [
+     null,
+     "2.18.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.1.1"
+    ],
+    "charset-normalizer": [
+     null,
+     "3.5.2"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "croniter": [
+     null,
+     "7.0.0"
+    ],
+    "cryptography": [
+     null,
+     "50.0.2"
+    ],
+    "defusedxml": [
+     null,
+     "0.7.1"
+    ],
+    "django": [
+     "1.8.19",
+     "5.2.19"
+    ],
+    "django-appconf": [
+     null,
+     "1.2.0"
+    ],
+    "django-filter": [
+     "0.13.0",
+     "2.4.0"
+    ],
+    "djangorestframework": [
+     "3.2.2",
+     "3.18.2"
+    ],
+    "et-xmlfile": [
+     null,
+     "2.0.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "jdcal": [
+     null,
+     "1.4.1"
+    ],
+    "oauthlib": [
+     null,
+     "4.0.1"
+    ],
+    "openpyxl": [
+     "2.4.0",
+     "3.0.4"
+    ],
+    "pillow": [
+     "6.2.2",
+     "12.2.0"
+    ],
+    "pycparser": [
+     null,
+     "3.11"
+    ],
+    "redis": [
+     "3.2.1",
+     "8.1.0"
+    ],
+    "requests": [
+     "2.20.0",
+     "2.33.0"
+    ],
+    "rq": [
+     "1.0",
+     "3.0.0"
+    ],
+    "setuptools": [
+     null,
+     "84.2.1"
+    ],
+    "six": [
+     null,
+     "1.17.0"
+    ],
+    "sqlparse": [
+     "0.2.3",
+     "0.6.1"
+    ],
+    "text-unidecode": [
+     null,
+     "1.2"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "urllib3": [
+     null,
+     "2.8.0"
+    ]
+   },
+   "planned_changes": 7,
+   "unplanned_changes": 23,
+   "unplanned_major": 2,
+   "unplanned_added": 21,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "packages_with_missing": 2,
+    "missing_symbols": 24,
+    "refs_checked": 407,
+    "details": [
+     {
+      "package": "django",
+      "version": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.contrib.admin.templatetags.admin_static",
+       "django.contrib.admin.templatetags.admin_static.static",
+       "django.contrib.contenttypes.generic",
+       "django.core.serializers.python._get_model",
+       "django.core.urlresolvers",
+       "django.core.urlresolvers.clear_url_caches",
+       "django.core.urlresolvers.reverse",
+       "django.db.models.fields.related.add_lazy_relation",
+       "django.db.models.loading"
+      ],
+      "n_missing": 23
+     },
+     {
+      "package": "djangorestframework",
+      "version": "3.18.2",
+      "missing": [
+       "rest_framework.compat.get_model_name"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "cape_opt": {
+   "planned": {
+    "django": "5.2.19",
+    "django-filter": "2.4.0",
+    "djangorestframework": "3.18.2",
+    "openpyxl": "3.0.4",
+    "pillow": "12.2.0",
+    "requests": "2.33.0",
+    "sqlparse": "0.6.1",
+    "tablib": "3.10.0"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.1,
+   "model_residual": 33.920333354020805,
+   "model_cost": 23.599999999999998,
+   "scope": 8,
+   "candidates": 28,
+   "residual_findings": 54,
+   "residual_risk_evident": 25.847787797190847,
+   "residual_risk_vm": 42.50999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 18,
+   "changed": 31,
+   "major_bumps": 7,
+   "added": 21,
+   "removed": 0,
+   "realised_changes": {
+    "asgiref": [
+     null,
+     "3.12.1"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "babel": [
+     null,
+     "2.18.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.1.1"
+    ],
+    "charset-normalizer": [
+     null,
+     "3.5.2"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "croniter": [
+     null,
+     "7.0.0"
+    ],
+    "cryptography": [
+     null,
+     "50.0.2"
+    ],
+    "defusedxml": [
+     null,
+     "0.7.1"
+    ],
+    "django": [
+     "1.8.19",
+     "5.2.19"
+    ],
+    "django-appconf": [
+     null,
+     "1.2.0"
+    ],
+    "django-filter": [
+     "0.13.0",
+     "2.4.0"
+    ],
+    "djangorestframework": [
+     "3.2.2",
+     "3.18.2"
+    ],
+    "et-xmlfile": [
+     null,
+     "2.0.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "jdcal": [
+     null,
+     "1.4.1"
+    ],
+    "oauthlib": [
+     null,
+     "4.0.1"
+    ],
+    "openpyxl": [
+     "2.4.0",
+     "3.0.4"
+    ],
+    "pillow": [
+     "6.2.2",
+     "12.2.0"
+    ],
+    "pycparser": [
+     null,
+     "3.11"
+    ],
+    "redis": [
+     "3.2.1",
+     "8.1.0"
+    ],
+    "requests": [
+     "2.20.0",
+     "2.33.0"
+    ],
+    "rq": [
+     "1.0",
+     "3.0.0"
+    ],
+    "setuptools": [
+     null,
+     "84.2.1"
+    ],
+    "six": [
+     null,
+     "1.17.0"
+    ],
+    "sqlparse": [
+     "0.2.3",
+     "0.6.1"
+    ],
+    "tablib": [
+     "0.11.5",
+     "3.10.0"
+    ],
+    "text-unidecode": [
+     null,
+     "1.2"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "urllib3": [
+     null,
+     "2.8.0"
+    ]
+   },
+   "planned_changes": 8,
+   "unplanned_changes": 23,
+   "unplanned_major": 2,
+   "unplanned_added": 21,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "packages_with_missing": 2,
+    "missing_symbols": 24,
+    "refs_checked": 409,
+    "details": [
+     {
+      "package": "django",
+      "version": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.contrib.admin.templatetags.admin_static",
+       "django.contrib.admin.templatetags.admin_static.static",
+       "django.contrib.contenttypes.generic",
+       "django.core.serializers.python._get_model",
+       "django.core.urlresolvers",
+       "django.core.urlresolvers.clear_url_caches",
+       "django.core.urlresolvers.reverse",
+       "django.db.models.fields.related.add_lazy_relation",
+       "django.db.models.loading"
+      ],
+      "n_missing": 23
+     },
+     {
+      "package": "djangorestframework",
+      "version": "3.18.2",
+      "missing": [
+       "rest_framework.compat.get_model_name"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "evident": {
+   "planned": {
+    "django": "5.2.19",
+    "django-filter": "2.4.0",
+    "djangorestframework": "3.18.2",
+    "openpyxl": "3.0.4",
+    "pillow": "12.2.0",
+    "requests": "2.33.0",
+    "sqlparse": "0.6.1",
+    "tablib": "3.10.0"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.1,
+   "model_residual": 25.847787797190847,
+   "model_cost": 23.599999999999998,
+   "scope": 8,
+   "candidates": 28,
+   "residual_findings": 54,
+   "residual_risk_evident": 25.847787797190847,
+   "residual_risk_vm": 42.50999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 18,
+   "changed": 31,
+   "major_bumps": 7,
+   "added": 21,
+   "removed": 0,
+   "realised_changes": {
+    "asgiref": [
+     null,
+     "3.12.1"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "babel": [
+     null,
+     "2.18.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.1.1"
+    ],
+    "charset-normalizer": [
+     null,
+     "3.5.2"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "croniter": [
+     null,
+     "7.0.0"
+    ],
+    "cryptography": [
+     null,
+     "50.0.2"
+    ],
+    "defusedxml": [
+     null,
+     "0.7.1"
+    ],
+    "django": [
+     "1.8.19",
+     "5.2.19"
+    ],
+    "django-appconf": [
+     null,
+     "1.2.0"
+    ],
+    "django-filter": [
+     "0.13.0",
+     "2.4.0"
+    ],
+    "djangorestframework": [
+     "3.2.2",
+     "3.18.2"
+    ],
+    "et-xmlfile": [
+     null,
+     "2.0.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "jdcal": [
+     null,
+     "1.4.1"
+    ],
+    "oauthlib": [
+     null,
+     "4.0.1"
+    ],
+    "openpyxl": [
+     "2.4.0",
+     "3.0.4"
+    ],
+    "pillow": [
+     "6.2.2",
+     "12.2.0"
+    ],
+    "pycparser": [
+     null,
+     "3.11"
+    ],
+    "redis": [
+     "3.2.1",
+     "8.1.0"
+    ],
+    "requests": [
+     "2.20.0",
+     "2.33.0"
+    ],
+    "rq": [
+     "1.0",
+     "3.0.0"
+    ],
+    "setuptools": [
+     null,
+     "84.2.1"
+    ],
+    "six": [
+     null,
+     "1.17.0"
+    ],
+    "sqlparse": [
+     "0.2.3",
+     "0.6.1"
+    ],
+    "tablib": [
+     "0.11.5",
+     "3.10.0"
+    ],
+    "text-unidecode": [
+     null,
+     "1.2"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "urllib3": [
+     null,
+     "2.8.0"
+    ]
+   },
+   "planned_changes": 8,
+   "unplanned_changes": 23,
+   "unplanned_major": 2,
+   "unplanned_added": 21,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "packages_with_missing": 2,
+    "missing_symbols": 24,
+    "refs_checked": 409,
+    "details": [
+     {
+      "package": "django",
+      "version": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.contrib.admin.templatetags.admin_static",
+       "django.contrib.admin.templatetags.admin_static.static",
+       "django.contrib.contenttypes.generic",
+       "django.core.serializers.python._get_model",
+       "django.core.urlresolvers",
+       "django.core.urlresolvers.clear_url_caches",
+       "django.core.urlresolvers.reverse",
+       "django.db.models.fields.related.add_lazy_relation",
+       "django.db.models.loading"
+      ],
+      "n_missing": 23
+     },
+     {
+      "package": "djangorestframework",
+      "version": "3.18.2",
+      "missing": [
+       "rest_framework.compat.get_model_name"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   },
+   "objective_gap": 0.0
+  },
+  "evident_wide": {
+   "planned": {
+    "django": "5.2.19",
+    "django-filter": "2.4.0",
+    "djangorestframework": "3.18.2",
+    "openpyxl": "3.0.4",
+    "pillow": "12.2.0",
+    "requests": "2.33.0",
+    "sqlparse": "0.6.1",
+    "tablib": "3.10.0"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.1,
+   "model_residual": 25.847787797190847,
+   "model_cost": 23.599999999999998,
+   "candidates": 28,
+   "residual_findings": 54,
+   "residual_risk_evident": 25.847787797190847,
+   "residual_risk_vm": 42.50999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 18,
+   "changed": 31,
+   "major_bumps": 7,
+   "added": 21,
+   "removed": 0,
+   "realised_changes": {
+    "asgiref": [
+     null,
+     "3.12.1"
+    ],
+    "async-timeout": [
+     null,
+     "5.0.1"
+    ],
+    "babel": [
+     null,
+     "2.18.0"
+    ],
+    "certifi": [
+     null,
+     "2026.10.23"
+    ],
+    "cffi": [
+     null,
+     "2.1.1"
+    ],
+    "charset-normalizer": [
+     null,
+     "3.5.2"
+    ],
+    "click": [
+     null,
+     "8.5.1"
+    ],
+    "croniter": [
+     null,
+     "7.0.0"
+    ],
+    "cryptography": [
+     null,
+     "50.0.2"
+    ],
+    "defusedxml": [
+     null,
+     "0.7.1"
+    ],
+    "django": [
+     "1.8.19",
+     "5.2.19"
+    ],
+    "django-appconf": [
+     null,
+     "1.2.0"
+    ],
+    "django-filter": [
+     "0.13.0",
+     "2.4.0"
+    ],
+    "djangorestframework": [
+     "3.2.2",
+     "3.18.2"
+    ],
+    "et-xmlfile": [
+     null,
+     "2.0.0"
+    ],
+    "idna": [
+     null,
+     "3.20"
+    ],
+    "jdcal": [
+     null,
+     "1.4.1"
+    ],
+    "oauthlib": [
+     null,
+     "4.0.1"
+    ],
+    "openpyxl": [
+     "2.4.0",
+     "3.0.4"
+    ],
+    "pillow": [
+     "6.2.2",
+     "12.2.0"
+    ],
+    "pycparser": [
+     null,
+     "3.11"
+    ],
+    "redis": [
+     "3.2.1",
+     "8.1.0"
+    ],
+    "requests": [
+     "2.20.0",
+     "2.33.0"
+    ],
+    "rq": [
+     "1.0",
+     "3.0.0"
+    ],
+    "setuptools": [
+     null,
+     "84.2.1"
+    ],
+    "six": [
+     null,
+     "1.17.0"
+    ],
+    "sqlparse": [
+     "0.2.3",
+     "0.6.1"
+    ],
+    "tablib": [
+     "0.11.5",
+     "3.10.0"
+    ],
+    "text-unidecode": [
+     null,
+     "1.2"
+    ],
+    "typing-extensions": [
+     null,
+     "4.16.0"
+    ],
+    "urllib3": [
+     null,
+     "2.8.0"
+    ]
+   },
+   "planned_changes": 8,
+   "unplanned_changes": 23,
+   "unplanned_major": 2,
+   "unplanned_added": 21,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 5,
+    "checked": 5,
+    "unknown": 0,
+    "packages_with_missing": 2,
+    "missing_symbols": 24,
+    "refs_checked": 409,
+    "details": [
+     {
+      "package": "django",
+      "version": "5.2.19",
+      "missing": [
+       "django.conf.urls.url",
+       "django.contrib.admin.templatetags.admin_static",
+       "django.contrib.admin.templatetags.admin_static.static",
+       "django.contrib.contenttypes.generic",
+       "django.core.serializers.python._get_model",
+       "django.core.urlresolvers",
+       "django.core.urlresolvers.clear_url_caches",
+       "django.core.urlresolvers.reverse",
+       "django.db.models.fields.related.add_lazy_relation",
+       "django.db.models.loading"
+      ],
+      "n_missing": 23
+     },
+     {
+      "package": "djangorestframework",
+      "version": "3.18.2",
+      "missing": [
+       "rest_framework.compat.get_model_name"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  }
+ },
+ "original": {
+  "residual_findings": 110,
+  "residual_risk_evident": 45.38708337395759,
+  "residual_risk_vm": 84.03999999999995,
+  "residual_confirmed": 2,
+  "new_findings": 0,
+  "changed": 0,
+  "major_bumps": 0,
+  "added": 0,
+  "removed": 0,
+  "realised_changes": {}
+ },
+ "decision": {
+  "uncertain": 110,
+  "critical": 3,
+  "evpi_total": 0.3897328411597784,
+  "top": [
+   {
+    "package": "django-filter",
+    "advisory": "CVE-2020-15225",
+    "p": 0.5744984270811252,
+    "critical": true,
+    "evpi": 0.14892555052160678
+   },
+   {
+    "package": "tablib",
+    "advisory": "CVE-2026-9318",
+    "p": 0.6559895848026134,
+    "critical": true,
+    "evpi": 0.1204036453190858
+   },
+   {
+    "package": "openpyxl",
+    "advisory": "CVE-2017-5992",
+    "p": 0.6559895848026134,
+    "critical": true,
+    "evpi": 0.1204036453190858
+   },
+   {
+    "package": "django",
+    "advisory": "CVE-2026-48588",
+    "p": 0.21461021528126487,
+    "critical": false,
+    "evpi": 0.0
+   },
+   {
+    "package": "django",
+    "advisory": "CVE-2021-33203",
+    "p": 0.5744984270811252,
+    "critical": false,
+    "evpi": 0.0
+   }
+  ]
+ },
+ "remediation_seconds": 43.6,
+ "status": "ok"
+}

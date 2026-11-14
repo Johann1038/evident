@@ -33,22 +33,45 @@ def load_realworld():
     return out
 
 
-def fig_reliability(ev):
-    fig, ax = plt.subplots(figsize=(3.2, 2.6))
+def fig_calibration(ev):
+    """Two panels: (a) 10-bin reliability with bootstrap 95% CIs (static setting); (b) ECE under missing evidence."""
+    fig, (ax, bx) = plt.subplots(1, 2, figsize=(6.3, 2.5))
     ax.plot([0, 1], [0, 1], ls=":", c="0.5", lw=0.8)
-    mk = {"version_match": "s", "coral_style": "^", "cape_style": "v", "logistic_iso": "D", "evident": "o"}
-    for m, pts in ev["reliability"].items():
+    mk = {"coral_style": "^", "cape_style": "v", "logistic_iso": "D", "evident": "o"}
+    for m, pts in ev["reliability"]["static"].items():
         if not pts:
             continue
-        x, y, n = zip(*pts)
-        ax.plot(x, y, marker=mk.get(m, "o"), ms=3.5, lw=1.0 if m == "evident" else 0.7,
-                c="k" if m == "evident" else None, label=LABEL[m])
+        x, y, n, lo, hi = zip(*pts)
+        yerr = [np.array(y) - np.array(lo), np.array(hi) - np.array(y)]
+        ax.errorbar(x, y, yerr=yerr if m == "evident" else None, marker=mk[m], ms=3, lw=1.0 if m == "evident" else 0.6,
+                    capsize=1.5, c="k" if m == "evident" else None, label=LABEL[m])
     ax.set_xlabel("Predicted exposure probability")
     ax.set_ylabel("Observed exposure rate")
     ax.set_xlim(-0.02, 1.02)
-    ax.set_ylim(-0.02, 1.02)
-    ax.legend(fontsize=6, frameon=False, loc="upper left")
-    fig.savefig(FIG / "reliability.png")
+    ax.set_ylim(-0.05, 1.05)
+    ax.set_title("(a) Reliability, 10 bins, 95% CI", loc="left")
+    ax.legend(fontsize=5.5, frameon=False, loc="upper left")
+    miss = ev["missingness"]
+    cats = [("independent", "0.5", "random\n50%"), ("advisory", "0.5", "per advisory\n50%"),
+            ("package", "0.5", "per package\n50%")]
+    vals = {m: [miss[a][q][m]["ece"] for a, q, _ in cats] for m in ("evident", "logistic_iso", "coral_style", "cape_style")}
+    labels = [c[2] for c in cats]
+    if "realworld_profile" in miss:
+        for m in vals:
+            vals[m].append(miss["realworld_profile"][m]["ece"])
+        labels.append("real-world\nprofile")
+    xs = np.arange(len(labels))
+    for i, m in enumerate(("evident", "logistic_iso", "coral_style", "cape_style")):
+        bx.bar(xs + (i - 1.5) * 0.2, vals[m], width=0.2, label=LABEL[m],
+               color=["0.1", "0.45", "0.7", "0.88"][i], edgecolor="0.2", lw=0.3)
+    bx.set_xticks(xs)
+    bx.set_xticklabels(labels, fontsize=6)
+    bx.set_ylim(0, 1.45 * max(max(v) for v in vals.values()))
+    bx.legend(fontsize=5, frameon=False, loc="upper left", ncol=2)
+    bx.set_ylabel("Expected calibration error")
+    bx.set_title("(b) Static evidence (L4) missing", loc="left")
+    fig.tight_layout()
+    fig.savefig(FIG / "calibration.png")
     plt.close(fig)
 
 
@@ -189,13 +212,17 @@ def fig_pareto(rw):
 def tables(ev, rw):
     T = {}
     T["bench"] = {k: ev[k] for k in ("n_rows", "n_packages", "n_advisories", "label_rate")}
-    T["bench_methods"] = ev["methods"]
     T["bench_confusion"] = ev["analysis_confusion"]
-    T["bench_patterns"] = ev["verdicts_by_pattern"]
     ok = [r for r in rw if r.get("status") == "ok"]
     T["realworld_n"] = {"snapshots": len(rw), "resolvable": len(ok),
                         "lock_kinds": dict(Counter(r["meta"]["lock_kind"] for r in rw)),
                         "unresolvable": [r["id"] for r in rw if r.get("status") != "ok"]}
+    snaps = [p for p in (ROOT / "data" / "snapshots").iterdir() if (p / "meta.json").exists()]
+    tos = [p.name for p in (RES / "realworld").iterdir()
+           if (p / "error.txt").exists() and not (p / "result.json").exists()
+           and (p / "error.txt").read_text("utf8", errors="replace").startswith("timeout after")]
+    T["realworld_n"].update({"collected": len(snaps), "timeouts": len(tos), "timeout_ids": tos,
+                             "not_run": len(snaps) - len(rw) - len(tos)})
     agg = defaultdict(list)
     for r in rw:
         s = r["summary"]
@@ -224,9 +251,19 @@ def tables(ev, rw):
             if not s.get("ok"):
                 continue
             for k in ("changed", "major_bumps", "residual_findings", "residual_risk_evident", "residual_risk_vm",
-                      "residual_confirmed", "new_findings", "unplanned_changes", "plan_not_realised"):
-                if k in s:
+                      "residual_confirmed", "new_findings", "unplanned_changes", "plan_not_realised",
+                      "unplanned_major", "unplanned_added", "new_findings_from_unplanned", "objective_gap",
+                      "planned_changes"):
+                if k in s and s[k] is not None:
                     strat[name][k].append(s[k])
+            c = s.get("compat") or {}
+            if "api_compatible" in c:
+                strat[name]["api_compatible"].append(1 if c["api_compatible"] else 0)
+                strat[name]["api_broken_pkgs"].append(c["packages_with_missing"])
+                strat[name]["api_used_changed"].append(c["used_changed"])
+            orig_kev = orig.get("residual_kev")
+            if orig.get("residual_findings"):
+                strat[name]["findings_removed"].append(1 - s["residual_findings"] / orig["residual_findings"])
             strat[name]["risk_reduction_evident"].append(
                 1 - s["residual_risk_evident"] / orig["residual_risk_evident"] if orig["residual_risk_evident"] else 1)
             strat[name]["risk_reduction_vm"].append(
@@ -239,6 +276,77 @@ def tables(ev, rw):
                 strat[name]["iterations"].append(s["iterations"])
     T["remediation"] = {n: {k: {"mean": float(np.mean(v)), "median": float(np.median(v)), "n": len(v)}
                             for k, v in d.items() if v} for n, d in strat.items()}
+    rng = np.random.default_rng(11)
+    rci = {}
+    for n_ in ("evident", "vm_opt", "uv_fix", "upgrade_all"):
+        for k in ("changed", "findings_removed"):
+            v = np.array(strat[n_].get(k, []), float)
+            if len(v) >= 3:
+                bs = [rng.choice(v, len(v)).mean() for _ in range(2000)]
+                rci[f"{n_}_{k}"] = f"[{np.percentile(bs, 2.5):.1f}, {np.percentile(bs, 97.5):.1f}]" if k == "changed" \
+                    else f"[{100 * np.percentile(bs, 2.5):.0f}%, {100 * np.percentile(bs, 97.5):.0f}%]"
+    T["remediation_ci"] = rci
+    # per-project outcomes (supplement)
+    T["per_project"] = {r["id"]: {n_: {k: s.get(k) for k in ("ok", "changed", "major_bumps", "residual_findings",
+                                                               "unplanned_changes", "failure")}
+                                  for n_, s in r["strategies"].items()} | {"original_findings": r["original"]["residual_findings"]}
+                        for r in ok}
+    # failure taxonomy over resolvable projects
+    fail = defaultdict(Counter)
+    for r in ok:
+        for name, s in r["strategies"].items():
+            fail[name][s.get("failure", "none" if s.get("ok") else "other")] += 1
+    T["failures"] = {n: dict(c) for n, c in fail.items()}
+    # paired tests EVIDENT vs alternatives (projects where both resolved)
+    from scipy.stats import wilcoxon
+    tests = {}
+    for other in ("vm_opt", "uv_fix", "upgrade_all", "coral_opt"):
+        for k in ("changed", "major_bumps", "risk_reduction_evident", "findings_removed"):
+            a, b = [], []
+            for r in ok:
+                se, so = r["strategies"].get("evident", {}), r["strategies"].get(other, {})
+                if not (se.get("ok") and so.get("ok")):
+                    continue
+                orig = r["original"]
+                def val(s):
+                    if k == "risk_reduction_evident":
+                        return 1 - s["residual_risk_evident"] / orig["residual_risk_evident"] if orig["residual_risk_evident"] else 1
+                    if k == "findings_removed":
+                        return 1 - s["residual_findings"] / orig["residual_findings"] if orig["residual_findings"] else 1
+                    return s[k]
+                a.append(val(se))
+                b.append(val(so))
+            if len(a) >= 5 and any(x != y for x, y in zip(a, b)):
+                st_, p = wilcoxon(a, b)
+                tests[f"evident_vs_{other}_{k}"] = {"n": len(a), "evident": float(np.median(a)),
+                                                     "other": float(np.median(b)), "p": float(p)}
+    T["remediation_tests"] = tests
+    # why no statically unreachable findings: reasons for non-REFUTED static verdicts among imported packages
+    reasons = Counter()
+    blockers = Counter()
+    for r in rw:
+        for f in json.loads((RES / "realworld" / r["id"] / "findings.json").read_text("utf8")):
+            if f.get("L3_state") != "CONFIRMED" or f.get("L3b_state") != "CONFIRMED":
+                continue
+            ev4 = f["evidence"].get("L4", {})
+            st4 = ev4.get("state")
+            rs = (ev4.get("detail") or {}).get("reason", "")
+            if st4 == "UNKNOWN":
+                key = "no symbol data / no source" if (ev4.get("detail") or {}).get("missing") else "reflection blocks refutation"
+                if "reflection" in rs:
+                    where = rs.split("(")[-1].split(":")[0] if "(" in rs else "?"
+                    blockers[where] += 1
+            else:
+                key = st4
+            reasons[key] += 1
+    T["l4_breakdown"] = {"states": dict(reasons), "reflection_where": dict(blockers)}
+    app_refl = Counter()
+    for r in rw:
+        kinds = (r.get("stats") or {}).get("reflection_kinds", {})
+        app_refl["projects"] += 1
+        if kinds.get("__app__"):
+            app_refl["app_has_blocking_reflection"] += 1
+    T["app_reflection"] = dict(app_refl)
     dec = [r["decision"] for r in ok if r.get("decision")]
     T["decision"] = {"projects": len(dec), "uncertain_total": sum(d["uncertain"] for d in dec),
                      "critical_total": sum(d["critical"] for d in dec),
@@ -251,8 +359,7 @@ def tables(ev, rw):
 def main():
     FIG.mkdir(parents=True, exist_ok=True)
     ev = json.loads((RES / "bench_eval.json").read_text("utf8"))
-    fig_reliability(ev)
-    fig_missingness(ev)
+    fig_calibration(ev)
     fig_architecture()
     rw = load_realworld()
     T = tables(ev, rw)

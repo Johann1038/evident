@@ -1,0 +1,247 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.6",
+ "serialNumber": "urn:uuid:bd746508-49bd-4b70-863d-1ea2bd4a66f2",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-11-13T17:41:27+00:00",
+  "tools": {
+   "components": [
+    {
+     "type": "application",
+     "name": "evident",
+     "version": "0.1.0"
+    }
+   ]
+  },
+  "component": {
+   "type": "application",
+   "bom-ref": "app",
+   "name": "WordOps/WordOps"
+  }
+ },
+ "components": [
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/cement@2.10.12",
+   "name": "cement",
+   "version": "2.10.12",
+   "purl": "pkg:pypi/cement@2.10.12",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/pynginxconfig@0.3.4",
+   "name": "pynginxconfig",
+   "version": "0.3.4",
+   "purl": "pkg:pypi/pynginxconfig@0.3.4",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/pymysql@1.1.0",
+   "name": "pymysql",
+   "version": "1.1.0",
+   "purl": "pkg:pypi/pymysql@1.1.0",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/psutil@5.9.5",
+   "name": "psutil",
+   "version": "5.9.5",
+   "purl": "pkg:pypi/psutil@5.9.5",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/sh@2.0.4",
+   "name": "sh",
+   "version": "2.0.4",
+   "purl": "pkg:pypi/sh@2.0.4",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/sqlalchemy@1.4.49",
+   "name": "sqlalchemy",
+   "version": "1.4.49",
+   "purl": "pkg:pypi/sqlalchemy@1.4.49",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/distro@1.8.0",
+   "name": "distro",
+   "version": "1.8.0",
+   "purl": "pkg:pypi/distro@1.8.0",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/argcomplete@3.1.1",
+   "name": "argcomplete",
+   "version": "3.1.1",
+   "purl": "pkg:pypi/argcomplete@3.1.1",
+   "scope": "required"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:pypi/colorlog@6.7.0",
+   "name": "colorlog",
+   "version": "6.7.0",
+   "purl": "pkg:pypi/colorlog@6.7.0",
+   "scope": "required"
+  }
+ ],
+ "dependencies": [
+  {
+   "ref": "app",
+   "dependsOn": [
+    "pkg:pypi/pynginxconfig@0.3.4",
+    "pkg:pypi/pymysql@1.1.0",
+    "pkg:pypi/distro@1.8.0",
+    "pkg:pypi/sqlalchemy@1.4.49",
+    "pkg:pypi/psutil@5.9.5",
+    "pkg:pypi/sh@2.0.4",
+    "pkg:pypi/argcomplete@3.1.1",
+    "pkg:pypi/cement@2.10.12",
+    "pkg:pypi/colorlog@6.7.0"
+   ]
+  },
+  {
+   "ref": "pkg:pypi/cement@2.10.12",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/pynginxconfig@0.3.4",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/pymysql@1.1.0",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/psutil@5.9.5",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/sh@2.0.4",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/sqlalchemy@1.4.49",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/distro@1.8.0",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/argcomplete@3.1.1",
+   "dependsOn": []
+  },
+  {
+   "ref": "pkg:pypi/colorlog@6.7.0",
+   "dependsOn": []
+  }
+ ],
+ "vulnerabilities": [
+  {
+   "id": "CVE-2024-36039",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-v9hf-5j83-6xpp"
+   },
+   "ratings": [
+    {
+     "score": 9.8,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/pymysql@1.1.0"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.574 class=POSSIBLY_REACHABLE"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "POSSIBLE"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  },
+  {
+   "id": "CVE-2026-54552",
+   "source": {
+    "name": "OSV",
+    "url": "https://osv.dev/vulnerability/GHSA-q38v-wp89-2w55"
+   },
+   "ratings": [
+    {
+     "score": 7.9,
+     "method": "CVSSv31"
+    }
+   ],
+   "affects": [
+    {
+     "ref": "pkg:pypi/sh@2.0.4"
+    }
+   ],
+   "analysis": {
+    "state": "in_triage",
+    "detail": "EVIDENT p_exposed=0.656 class=IMPORTED_REACH_UNKNOWN"
+   },
+   "properties": [
+    {
+     "name": "evident:L1",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L2",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L3b",
+     "value": "CONFIRMED"
+    },
+    {
+     "name": "evident:L4",
+     "value": "UNKNOWN"
+    },
+    {
+     "name": "evident:L5",
+     "value": "UNKNOWN"
+    }
+   ]
+  }
+ ]
+}

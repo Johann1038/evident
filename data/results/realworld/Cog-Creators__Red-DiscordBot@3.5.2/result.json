@@ -39,15 +39,254 @@
   "app_modules": 211,
   "pkgs_analysed": 15,
   "pkgs_no_source": 0,
-  "seconds": 91.64,
+  "seconds": 7.11,
   "funcs": 10189,
-  "roots": 2608
+  "roots": 2608,
+  "app_refs": {
+   "discord-py": [
+    "discord",
+    "discord.abc",
+    "discord.activity.Activity",
+    "discord.activity.Game",
+    "discord.activity.Streaming",
+    "discord.app_commands",
+    "discord.app_commands.checks",
+    "discord.app_commands.errors.CommandAlreadyRegistered",
+    "discord.app_commands.errors.CommandLimitReached",
+    "discord.backoff",
+    "discord.backoff.ExponentialBackoff",
+    "discord.backoff.ExponentialBackoff.delay",
+    "discord.client.Client.fetch_user",
+    "discord.client.Client.get_channel",
+    "discord.client.Client.get_user",
+    "discord.client.Client.login",
+    "discord.client.Client.wait_for",
+    "discord.colour.Colour",
+    "discord.colour.Colour.dark_green",
+    "discord.colour.Colour.dark_red",
+    "discord.colour.Colour.red",
+    "discord.components.SelectOption",
+    "discord.embeds.Embed",
+    "discord.embeds.Embed.add_field",
+    "discord.embeds.Embed.copy",
+    "discord.embeds.Embed.from_dict",
+    "discord.embeds.Embed.set_author",
+    "discord.embeds.Embed.set_footer",
+    "discord.embeds.Embed.set_image",
+    "discord.embeds.Embed.set_thumbnail",
+    "discord.enums.AppCommandType",
+    "discord.errors.ClientException",
+    "discord.ext.commands",
+    "discord.ext.commands._types",
+    "discord.ext.commands.bot.BotBase._call_module_finalizers",
+    "discord.ext.commands.bot.BotBase._remove_module_references",
+    "discord.ext.commands.bot.BotBase.dispatch",
+    "discord.ext.commands.bot.BotBase.get_prefix",
+    "discord.ext.commands.bot.BotBase.invoke",
+    "discord.ext.commands.bot.when_mentioned_or",
+    "discord.ext.commands.converter",
+    "discord.ext.commands.converter.RoleConverter",
+    "discord.ext.commands.converter.RoleConverter.convert",
+    "discord.ext.commands.core.Command._parse_arguments",
+    "discord.ext.commands.core.Command._prepare_cooldowns",
+    "discord.ext.commands.core.Command.call_before_hooks",
+    "discord.ext.commands.core.GroupMixin.add_command",
+    "discord.ext.commands.core.bot_has_guild_permissions",
+    "discord.ext.commands.core.check",
+    "discord.ext.commands.core.command",
+    "discord.ext.commands.core.cooldown",
+    "discord.ext.commands.core.guild_only",
+    "discord.ext.commands.core.max_concurrency",
+    "discord.ext.commands.errors.BadArgument",
+    "discord.ext.commands.errors.CheckFailure",
+    "discord.ext.commands.errors.CommandError",
+    "discord.ext.commands.errors.DisabledCommand",
+    "discord.ext.commands.hybrid",
+    "discord.ext.commands.parameters.Parameter",
+    "discord.ext.commands.view",
+    "discord.ext.commands.view.StringView",
+    "discord.ext.commands.view.StringView.get_quoted_word",
+    "discord.ext.commands.view.StringView.skip_ws",
+    "discord.file.File",
+    "discord.flags.Intents.all",
+    "discord.mentions.AllowedMentions",
+    "discord.object.Object",
+    "discord.partial_emoji.PartialEmoji",
+    "discord.partial_emoji.PartialEmoji.from_str",
+    "discord.permissions.PermissionOverwrite",
+    "discord.permissions.Permissions",
+    "discord.permissions.Permissions.none",
+    "discord.permissions.Permissions.update",
+    "discord.shard.AutoShardedClient.connect",
+    "discord.ui.button",
+    "discord.ui.button.Button",
+    "discord.ui.text_input.TextInput",
+    "discord.ui.view.View",
+    "discord.ui.view.View.add_item",
+    "discord.ui.view.View.remove_item",
+    "discord.utils",
+    "discord.utils._string_width",
+    "discord.utils.async_all",
+    "discord.utils.escape_markdown",
+    "discord.utils.find",
+    "discord.utils.format_dt",
+    "discord.utils.get",
+    "discord.utils.maybe_coroutine",
+    "discord.utils.oauth_url"
+   ],
+   "uvloop": [
+    "uvloop",
+    "uvloop.EventLoopPolicy"
+   ],
+   "rich": [
+    "rich",
+    "rich._log_render",
+    "rich.box",
+    "rich.columns",
+    "rich.columns.Columns",
+    "rich.console",
+    "rich.console.detect_legacy_windows",
+    "rich.console.group",
+    "rich.get_console",
+    "rich.highlighter",
+    "rich.highlighter.NullHighlighter",
+    "rich.logging",
+    "rich.markdown",
+    "rich.markdown.Markdown",
+    "rich.panel",
+    "rich.panel.Panel",
+    "rich.print",
+    "rich.progress",
+    "rich.progress.BarColumn",
+    "rich.progress.Progress",
+    "rich.progress.SpinnerColumn",
+    "rich.progress.TextColumn",
+    "rich.progress.TimeElapsedColumn",
+    "rich.progress.TimeRemainingColumn",
+    "rich.progress_bar",
+    "rich.progress_bar.ProgressBar",
+    "rich.reconfigure",
+    "rich.style",
+    "rich.style.Style",
+    "rich.syntax",
+    "rich.syntax.ANSISyntaxTheme",
+    "rich.syntax.PygmentsSyntaxTheme",
+    "rich.table",
+    "rich.table.Table",
+    "rich.table.Table.add_row",
+    "rich.text",
+    "rich.text.Text",
+    "rich.text.Text.append",
+    "rich.text.Text.from_markup",
+    "rich.text.Text.highlight_words",
+    "rich.theme",
+    "rich.theme.Theme",
+    "rich.traceback",
+    "rich.traceback.Traceback.from_exception"
+   ],
+   "red-lavalink": [
+    "lavalink",
+    "lavalink.lavalink.active_players",
+    "lavalink.lavalink.all_connected_players",
+    "lavalink.lavalink.all_players",
+    "lavalink.lavalink.close",
+    "lavalink.lavalink.connect",
+    "lavalink.lavalink.get_player",
+    "lavalink.lavalink.initialize",
+    "lavalink.lavalink.register_event_listener",
+    "lavalink.lavalink.register_update_listener",
+    "lavalink.lavalink.unregister_event_listener",
+    "lavalink.lavalink.unregister_update_listener",
+    "lavalink.lavalink.wait_until_ready",
+    "lavalink.log.set_logging_level",
+    "lavalink.node.get_all_nodes",
+    "lavalink.rest_api",
+    "lavalink.rest_api.LoadResult",
+    "lavalink.rest_api.Track"
+   ],
+   "aiohttp": [
+    "aiohttp",
+    "aiohttp.client.ClientSession",
+    "aiohttp.client.ClientTimeout",
+    "aiohttp.web",
+    "aiohttp.web_app.Application",
+    "aiohttp.web_runner.AppRunner",
+    "aiohttp.web_runner.TCPSite"
+   ],
+   "yarl": [
+    "yarl",
+    "yarl._url.URL",
+    "yarl._url.URL.with_user"
+   ],
+   "aiohttp-json-rpc": [
+    "aiohttp_json_rpc",
+    "aiohttp_json_rpc.rpc",
+    "aiohttp_json_rpc.rpc.JsonRpc.add_methods",
+    "aiohttp_json_rpc.rpc.JsonRpcMethod"
+   ],
+   "markdown": [
+    "markdown",
+    "markdown.core.markdown"
+   ],
+   "pygments": [
+    "pygments",
+    "pygments.styles",
+    "pygments.styles.monokai",
+    "pygments.token"
+   ]
+  },
+  "reflection_kinds": {
+   "aiohttp": [
+    "import_module"
+   ],
+   "pycares": [
+    "namespace"
+   ],
+   "pygments": [
+    "__import__",
+    "dyn_class",
+    "exec",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "markdown": [
+    "import_module",
+    "plugin"
+   ],
+   "aiohttp-json-rpc": [
+    "import_module"
+   ],
+   "rich": [
+    "namespace"
+   ],
+   "discord-py": [
+    "eval",
+    "monkeypatch",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "aiodns": [
+    "namespace"
+   ],
+   "__app__": [
+    "dyn_class",
+    "eval",
+    "exec",
+    "import_module",
+    "monkeypatch",
+    "namespace",
+    "plugin",
+    "setattr"
+   ]
+  }
  },
- "scan_seconds": 92.3,
+ "scan_seconds": 8.1,
  "sdist_only": [],
  "baseline_resolution": {
   "ok": true,
-  "seconds": 1.5,
+  "seconds": 0.5,
   "error": ""
  },
  "baseline_drift": 0,
@@ -64,7 +303,7 @@
    },
    "ok": true,
    "error": "",
-   "seconds": 0.7,
+   "seconds": 0.3,
    "residual_findings": 0,
    "residual_risk_evident": 0.0,
    "residual_risk_vm": 0.0,
@@ -74,29 +313,161 @@
    "major_bumps": 0,
    "added": 2,
    "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.14.4"
+    ],
+    "aiosignal": [
+     "1.3.1",
+     "1.4.0"
+    ],
+    "brotli": [
+     "1.0.9",
+     "1.2.1"
+    ],
+    "idna": [
+     "3.4",
+     "3.15"
+    ],
+    "markdown": [
+     "3.4.3",
+     "3.8.1"
+    ],
+    "orjson": [
+     "3.8.12",
+     "3.11.6"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pycares": [
+     "4.3.0",
+     "4.9.0"
+    ],
+    "pygments": [
+     "2.15.1",
+     "2.20.0"
+    ],
+    "yarl": [
+     "1.9.2",
+     "1.25.1"
+    ]
+   },
    "planned_changes": 7,
    "unplanned_changes": 4,
-   "plan_not_realised": 0
+   "unplanned_major": 0,
+   "unplanned_added": 2,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 16,
+    "details": [],
+    "api_compatible": true
+   }
   },
   "latest": {
    "planned": {
+    "brotli": "1.2.1",
+    "idna": "3.20",
+    "aiohttp": "3.14.5",
     "orjson": "3.13.0",
     "pygments": "2.21.0",
-    "aiohttp": "3.14.5",
-    "pycares": "5.2.1",
-    "brotli": "1.2.1",
-    "markdown": "3.11.3",
-    "idna": "3.20"
+    "pycares": "4.9.0",
+    "markdown": "3.10.3"
    },
-   "ok": false,
-   "error": " you require markdown==3.11.3, we can conclude that your requirements are unsatisfiable.\n\nhint: The `--python-version` value (>=3.10) includes Python versions that are not supported by your dependencies (e.g., markdown==3.11.3 only supports >=3.11). Consider using a higher `--python-version` value.\n",
-   "seconds": 0.3
+   "ok": true,
+   "error": "",
+   "seconds": 0.1,
+   "residual_findings": 0,
+   "residual_risk_evident": 0.0,
+   "residual_risk_vm": 0.0,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 11,
+   "major_bumps": 0,
+   "added": 2,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.14.5"
+    ],
+    "aiosignal": [
+     "1.3.1",
+     "1.4.0"
+    ],
+    "brotli": [
+     "1.0.9",
+     "1.2.1"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "markdown": [
+     "3.4.3",
+     "3.10.3"
+    ],
+    "orjson": [
+     "3.8.12",
+     "3.13.0"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pycares": [
+     "4.3.0",
+     "4.9.0"
+    ],
+    "pygments": [
+     "2.15.1",
+     "2.21.0"
+    ],
+    "yarl": [
+     "1.9.2",
+     "1.25.1"
+    ]
+   },
+   "planned_changes": 7,
+   "unplanned_changes": 4,
+   "unplanned_major": 0,
+   "unplanned_added": 2,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 16,
+    "details": [],
+    "api_compatible": true
+   }
   },
   "upgrade_all": {
    "planned": null,
    "ok": true,
    "error": "",
-   "seconds": 5.5,
+   "seconds": 0.9,
    "residual_findings": 0,
    "residual_risk_evident": 0.0,
    "residual_risk_vm": 0.0,
@@ -105,7 +476,257 @@
    "changed": 37,
    "major_bumps": 12,
    "added": 3,
-   "removed": 0
+   "removed": 0,
+   "realised_changes": {
+    "aiodns": [
+     "3.0.0",
+     "4.0.4"
+    ],
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.14.5"
+    ],
+    "aiosignal": [
+     "1.3.1",
+     "1.4.0"
+    ],
+    "apsw": [
+     "3.41.2.0",
+     "3.54.0.0"
+    ],
+    "async-timeout": [
+     "4.0.2",
+     "5.0.1"
+    ],
+    "attrs": [
+     "23.1.0",
+     "26.1.0"
+    ],
+    "babel": [
+     "2.12.1",
+     "2.18.0"
+    ],
+    "brotli": [
+     "1.0.9",
+     "1.2.1"
+    ],
+    "cffi": [
+     "1.15.1",
+     "2.1.1"
+    ],
+    "charset-normalizer": [
+     "3.1.0",
+     "3.5.2"
+    ],
+    "click": [
+     "8.1.3",
+     "8.5.1"
+    ],
+    "discord-py": [
+     "2.2.3",
+     "2.7.1"
+    ],
+    "distro": [
+     "1.8.0",
+     "1.9.0"
+    ],
+    "frozenlist": [
+     "1.3.3",
+     "1.8.0"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "markdown": [
+     "3.4.3",
+     "3.10.3"
+    ],
+    "markdown-it-py": [
+     "2.2.0",
+     "4.3.0"
+    ],
+    "multidict": [
+     "6.0.4",
+     "7.1.0"
+    ],
+    "orjson": [
+     "3.8.12",
+     "3.13.0"
+    ],
+    "platformdirs": [
+     "3.5.1",
+     "4.12.4"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "psutil": [
+     "5.9.5",
+     "7.2.2"
+    ],
+    "pycares": [
+     "4.3.0",
+     "5.1.0"
+    ],
+    "pycparser": [
+     "2.21",
+     "3.11"
+    ],
+    "pygments": [
+     "2.15.1",
+     "2.21.0"
+    ],
+    "python-dateutil": [
+     "2.8.2",
+     "3.0.0"
+    ],
+    "pyyaml": [
+     "6.0",
+     "6.0.3"
+    ],
+    "rapidfuzz": [
+     "3.0.0",
+     "3.14.5"
+    ],
+    "red-lavalink": [
+     "0.11.0",
+     "0.11.1"
+    ],
+    "rich": [
+     "13.3.5",
+     "15.0.0"
+    ],
+    "schema": [
+     "0.7.5",
+     "0.7.8"
+    ],
+    "six": [
+     "1.16.0",
+     "1.17.0"
+    ],
+    "typing-extensions": [
+     "4.5.0",
+     "4.16.0"
+    ],
+    "tzdata": [
+     null,
+     "2026.6"
+    ],
+    "uvloop": [
+     "0.17.0",
+     "0.23.0"
+    ],
+    "yarl": [
+     "1.9.2",
+     "1.25.1"
+    ]
+   },
+   "failure": "none",
+   "compat": {
+    "used_changed": 8,
+    "checked": 8,
+    "unknown": 0,
+    "packages_with_missing": 1,
+    "missing_symbols": 1,
+    "refs_checked": 169,
+    "details": [
+     {
+      "package": "uvloop",
+      "version": "0.23.0",
+      "missing": [
+       "uvloop.EventLoopPolicy"
+      ],
+      "n_missing": 1
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "uv_fix": {
+   "planned": {
+    "aiohttp": "3.14.4",
+    "brotli": "1.2.1",
+    "idna": "3.15",
+    "markdown": "3.8.1",
+    "orjson": "3.11.6",
+    "pycares": "4.9.0",
+    "pygments": "2.20.0"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 0.1,
+   "residual_findings": 0,
+   "residual_risk_evident": 0.0,
+   "residual_risk_vm": 0.0,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 11,
+   "major_bumps": 1,
+   "added": 2,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.14.5"
+    ],
+    "aiosignal": [
+     "1.3.1",
+     "1.4.0"
+    ],
+    "brotli": [
+     "1.0.9",
+     "1.2.1"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "markdown": [
+     "3.4.3",
+     "3.10.3"
+    ],
+    "orjson": [
+     "3.8.12",
+     "3.13.0"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pycares": [
+     "4.3.0",
+     "5.1.0"
+    ],
+    "pygments": [
+     "2.15.1",
+     "2.21.0"
+    ],
+    "yarl": [
+     "1.9.2",
+     "1.25.1"
+    ]
+   },
+   "failure": "none",
+   "compat": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 16,
+    "details": [],
+    "api_compatible": true
+   }
   },
   "vm_opt": {
    "planned": {
@@ -122,10 +743,11 @@
    "ok": true,
    "iterations": 1,
    "error": "",
-   "seconds": 3.1,
+   "seconds": 0.2,
    "model_residual": 0.0,
    "model_cost": 15.299999999999997,
    "scope": 9,
+   "candidates": 29,
    "residual_findings": 0,
    "residual_risk_evident": 0.0,
    "residual_risk_vm": 0.0,
@@ -135,9 +757,69 @@
    "major_bumps": 0,
    "added": 2,
    "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.14.5"
+    ],
+    "aiosignal": [
+     "1.3.1",
+     "1.4.0"
+    ],
+    "brotli": [
+     "1.0.9",
+     "1.2.1"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "markdown": [
+     "3.4.3",
+     "3.8.1"
+    ],
+    "orjson": [
+     "3.8.12",
+     "3.11.6"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pycares": [
+     "4.3.0",
+     "4.9.0"
+    ],
+    "pygments": [
+     "2.15.1",
+     "2.20.0"
+    ],
+    "yarl": [
+     "1.9.2",
+     "1.25.1"
+    ]
+   },
    "planned_changes": 9,
    "unplanned_changes": 2,
-   "plan_not_realised": 0
+   "unplanned_major": 0,
+   "unplanned_added": 2,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 16,
+    "details": [],
+    "api_compatible": true
+   }
   },
   "coral_opt": {
    "planned": {
@@ -153,10 +835,11 @@
    "ok": true,
    "iterations": 1,
    "error": "",
-   "seconds": 0.2,
+   "seconds": 0.1,
    "model_residual": 0.16499999999999998,
    "model_cost": 13.599999999999998,
    "scope": 9,
+   "candidates": 29,
    "residual_findings": 1,
    "residual_risk_evident": 0.1895844809367713,
    "residual_risk_vm": 0.32999999999999996,
@@ -166,9 +849,65 @@
    "major_bumps": 0,
    "added": 2,
    "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.14.5"
+    ],
+    "aiosignal": [
+     "1.3.1",
+     "1.4.0"
+    ],
+    "brotli": [
+     "1.0.9",
+     "1.2.1"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "markdown": [
+     "3.4.3",
+     "3.8.1"
+    ],
+    "orjson": [
+     "3.8.12",
+     "3.11.6"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pycares": [
+     "4.3.0",
+     "4.9.0"
+    ],
+    "yarl": [
+     "1.9.2",
+     "1.25.1"
+    ]
+   },
    "planned_changes": 8,
    "unplanned_changes": 2,
-   "plan_not_realised": 0
+   "unplanned_major": 0,
+   "unplanned_added": 2,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 3,
+    "checked": 3,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 12,
+    "details": [],
+    "api_compatible": true
+   }
   },
   "cape_opt": {
    "planned": {
@@ -185,10 +924,11 @@
    "ok": true,
    "iterations": 1,
    "error": "",
-   "seconds": 0.2,
+   "seconds": 0.1,
    "model_residual": 0.0,
    "model_cost": 15.299999999999997,
    "scope": 9,
+   "candidates": 29,
    "residual_findings": 0,
    "residual_risk_evident": 0.0,
    "residual_risk_vm": 0.0,
@@ -198,9 +938,69 @@
    "major_bumps": 0,
    "added": 2,
    "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.14.5"
+    ],
+    "aiosignal": [
+     "1.3.1",
+     "1.4.0"
+    ],
+    "brotli": [
+     "1.0.9",
+     "1.2.1"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "markdown": [
+     "3.4.3",
+     "3.8.1"
+    ],
+    "orjson": [
+     "3.8.12",
+     "3.11.6"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pycares": [
+     "4.3.0",
+     "4.9.0"
+    ],
+    "pygments": [
+     "2.15.1",
+     "2.20.0"
+    ],
+    "yarl": [
+     "1.9.2",
+     "1.25.1"
+    ]
+   },
    "planned_changes": 9,
    "unplanned_changes": 2,
-   "plan_not_realised": 0
+   "unplanned_major": 0,
+   "unplanned_added": 2,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 16,
+    "details": [],
+    "api_compatible": true
+   }
   },
   "evident": {
    "planned": {
@@ -217,10 +1017,11 @@
    "ok": true,
    "iterations": 1,
    "error": "",
-   "seconds": 0.3,
+   "seconds": 0.1,
    "model_residual": 0.0,
    "model_cost": 15.299999999999997,
    "scope": 9,
+   "candidates": 29,
    "residual_findings": 0,
    "residual_risk_evident": 0.0,
    "residual_risk_vm": 0.0,
@@ -230,21 +1031,175 @@
    "major_bumps": 0,
    "added": 2,
    "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.14.5"
+    ],
+    "aiosignal": [
+     "1.3.1",
+     "1.4.0"
+    ],
+    "brotli": [
+     "1.0.9",
+     "1.2.1"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "markdown": [
+     "3.4.3",
+     "3.8.1"
+    ],
+    "orjson": [
+     "3.8.12",
+     "3.11.6"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pycares": [
+     "4.3.0",
+     "4.9.0"
+    ],
+    "pygments": [
+     "2.15.1",
+     "2.20.0"
+    ],
+    "yarl": [
+     "1.9.2",
+     "1.25.1"
+    ]
+   },
    "planned_changes": 9,
    "unplanned_changes": 2,
-   "plan_not_realised": 0
+   "unplanned_major": 0,
+   "unplanned_added": 2,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 16,
+    "details": [],
+    "api_compatible": true
+   },
+   "objective_gap": 0.0
+  },
+  "evident_wide": {
+   "planned": {
+    "aiohttp": "3.14.5",
+    "aiosignal": "1.4.0",
+    "brotli": "1.2.1",
+    "idna": "3.20",
+    "markdown": "3.8.1",
+    "orjson": "3.11.6",
+    "pycares": "4.9.0",
+    "pygments": "2.20.0",
+    "yarl": "1.25.1"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.1,
+   "model_residual": 0.0,
+   "model_cost": 15.299999999999997,
+   "candidates": 29,
+   "residual_findings": 0,
+   "residual_risk_evident": 0.0,
+   "residual_risk_vm": 0.0,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 11,
+   "major_bumps": 0,
+   "added": 2,
+   "removed": 0,
+   "realised_changes": {
+    "aiohappyeyeballs": [
+     null,
+     "2.7.1"
+    ],
+    "aiohttp": [
+     "3.8.4",
+     "3.14.5"
+    ],
+    "aiosignal": [
+     "1.3.1",
+     "1.4.0"
+    ],
+    "brotli": [
+     "1.0.9",
+     "1.2.1"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "markdown": [
+     "3.4.3",
+     "3.8.1"
+    ],
+    "orjson": [
+     "3.8.12",
+     "3.11.6"
+    ],
+    "propcache": [
+     null,
+     "0.5.4"
+    ],
+    "pycares": [
+     "4.3.0",
+     "4.9.0"
+    ],
+    "pygments": [
+     "2.15.1",
+     "2.20.0"
+    ],
+    "yarl": [
+     "1.9.2",
+     "1.25.1"
+    ]
+   },
+   "planned_changes": 9,
+   "unplanned_changes": 2,
+   "unplanned_major": 0,
+   "unplanned_added": 2,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 4,
+    "checked": 4,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 16,
+    "details": [],
+    "api_compatible": true
+   }
   }
  },
  "original": {
   "residual_findings": 60,
-  "residual_risk_evident": 23.29328537439016,
+  "residual_risk_evident": 23.12288486345683,
   "residual_risk_vm": 40.13999999999999,
   "residual_confirmed": 5,
   "new_findings": 0,
   "changed": 0,
   "major_bumps": 0,
   "added": 0,
-  "removed": 0
+  "removed": 0,
+  "realised_changes": {}
  },
  "pareto_evident": [
   {
@@ -297,13 +1252,13 @@
   },
   {
    "lambda": 5.0,
-   "risk": 23.293285374390166,
+   "risk": 23.12288486345684,
    "cost": 0.0,
    "changes": 0
   },
   {
    "lambda": 100.0,
-   "risk": 23.293285374390166,
+   "risk": 23.12288486345684,
    "cost": 0.0,
    "changes": 0
   }
@@ -412,6 +1367,6 @@
    }
   ]
  },
- "remediation_seconds": 17.0,
+ "remediation_seconds": 11.3,
  "status": "ok"
 }

@@ -1,0 +1,2097 @@
+{
+ "id": "SamR1__FitTrackee@v0.7.17",
+ "meta": {
+  "id": "SamR1__FitTrackee@v0.7.17",
+  "repo": "SamR1/FitTrackee",
+  "tag": "v0.7.17",
+  "published_at": "2023-06-03T14:12:47Z",
+  "stars": 1176,
+  "lock_kind": "poetry",
+  "lock_file": "poetry.lock",
+  "lock_path": "poetry.lock",
+  "subdir": "",
+  "manifest": "pyproject.toml",
+  "requires_python": "^3.7",
+  "description": "Self-hosted outdoor activity tracker :bicyclist: [mirror of codeberg repository: https://codeberg.org/FitTrackee/FitTrackee]",
+  "topics": [
+   "activity-tracker",
+   "chartjs",
+   "flask",
+   "gpx",
+   "gpxpy",
+   "leaflet",
+   "outdoor-activities",
+   "python",
+   "self-hosted",
+   "vue3",
+   "workout-tracker",
+   "workouts"
+  ]
+ },
+ "python": "3.10",
+ "summary": {
+  "locked": 131,
+  "installed": 127,
+  "direct": 41,
+  "transitive": 86,
+  "edges": 219,
+  "edges_from_lock": true
+ },
+ "stats": {
+  "app_modules": 136,
+  "pkgs_analysed": 46,
+  "pkgs_no_source": 2,
+  "seconds": 426.06,
+  "funcs": 33733,
+  "roots": 342,
+  "app_refs": {
+   "sphinxcontrib-httpdomain": [
+    "sphinxcontrib.autohttp",
+    "sphinxcontrib.autohttp.flask"
+   ],
+   "pytest": [
+    "_pytest.assertion.register_assert_rewrite",
+    "_pytest.fixtures.fixture",
+    "_pytest.python_api.approx",
+    "_pytest.python_api.raises",
+    "pytest"
+   ],
+   "selenium": [
+    "selenium",
+    "selenium.webdriver",
+    "selenium.webdriver.common",
+    "selenium.webdriver.common.by",
+    "selenium.webdriver.support",
+    "selenium.webdriver.support.expected_conditions",
+    "selenium.webdriver.support.expected_conditions.url_changes",
+    "selenium.webdriver.support.select.Select",
+    "selenium.webdriver.support.select.Select.select_by_index",
+    "selenium.webdriver.support.ui",
+    "selenium.webdriver.support.wait.WebDriverWait"
+   ],
+   "urllib3": [
+    "urllib3",
+    "urllib3.util",
+    "urllib3.util.url.parse_url"
+   ],
+   "requests": [
+    "requests",
+    "requests.api.get"
+   ],
+   "flask": [
+    "flask",
+    "flask.app.Flask.app_context",
+    "flask.app.Flask.register_blueprint",
+    "flask.blueprints.Blueprint",
+    "flask.helpers.send_file",
+    "flask.helpers.send_from_directory",
+    "flask.json",
+    "flask.json.dumps",
+    "flask.scaffold.Scaffold.errorhandler",
+    "flask.scaffold.Scaffold.route",
+    "flask.templating.render_template",
+    "flask.testing",
+    "flask.wrappers.Response"
+   ],
+   "flask-limiter": [
+    "flask_limiter",
+    "flask_limiter.errors",
+    "flask_limiter.extension.Limiter",
+    "flask_limiter.util"
+   ],
+   "flask-migrate": [
+    "flask_migrate",
+    "flask_migrate.Migrate",
+    "flask_migrate.upgrade"
+   ],
+   "werkzeug": [
+    "werkzeug",
+    "werkzeug.datastructures",
+    "werkzeug.datastructures.FileStorage",
+    "werkzeug.exceptions",
+    "werkzeug.middleware",
+    "werkzeug.middleware.proxy_fix",
+    "werkzeug.middleware.proxy_fix.ProxyFix",
+    "werkzeug.security",
+    "werkzeug.security.gen_salt",
+    "werkzeug.test",
+    "werkzeug.user_agent",
+    "werkzeug.utils",
+    "werkzeug.utils.secure_filename"
+   ],
+   "flask-bcrypt": [
+    "flask_bcrypt",
+    "flask_bcrypt.Bcrypt"
+   ],
+   "flask-sqlalchemy": [
+    "flask_sqlalchemy",
+    "flask_sqlalchemy.extension.SQLAlchemy"
+   ],
+   "gunicorn": [
+    "gunicorn",
+    "gunicorn.app",
+    "gunicorn.app.base"
+   ],
+   "jinja2": [
+    "jinja2",
+    "jinja2.environment.Environment",
+    "jinja2.ext",
+    "jinja2.loaders.FileSystemLoader",
+    "jinja2.utils.select_autoescape"
+   ],
+   "alembic": [
+    "alembic",
+    "alembic.context"
+   ],
+   "authlib": [
+    "authlib",
+    "authlib.common",
+    "authlib.common.security",
+    "authlib.common.security.generate_token",
+    "authlib.integrations",
+    "authlib.integrations.flask_oauth2",
+    "authlib.integrations.flask_oauth2.authorization_server.AuthorizationServer",
+    "authlib.integrations.flask_oauth2.resource_protector.ResourceProtector.acquire_token",
+    "authlib.integrations.flask_oauth2.resource_protector.ResourceProtector.raise_error_response",
+    "authlib.integrations.sqla_oauth2",
+    "authlib.integrations.sqla_oauth2.client_mixin.OAuth2ClientMixin.set_client_metadata",
+    "authlib.integrations.sqla_oauth2.functions.create_bearer_token_validator",
+    "authlib.integrations.sqla_oauth2.functions.create_query_client_func",
+    "authlib.integrations.sqla_oauth2.functions.create_revocation_endpoint",
+    "authlib.integrations.sqla_oauth2.functions.create_save_token_func",
+    "authlib.integrations.sqla_oauth2.tokens_mixins.OAuth2TokenMixin.is_revoked",
+    "authlib.oauth2",
+    "authlib.oauth2.rfc6749",
+    "authlib.oauth2.rfc6749.errors",
+    "authlib.oauth2.rfc6749.grants",
+    "authlib.oauth2.rfc7636",
+    "authlib.oauth2.rfc7636.challenge.CodeChallenge",
+    "authlib.oauth2.rfc7636.challenge.create_s256_code_challenge"
+   ],
+   "pillow": [
+    "PIL",
+    "PIL.Image",
+    "PIL.Image.new"
+   ],
+   "pyjwt": [
+    "jwt"
+   ],
+   "cryptography": [
+    "cryptography",
+    "cryptography.hazmat",
+    "cryptography.hazmat.primitives",
+    "cryptography.hazmat.primitives._serialization.NoEncryption",
+    "cryptography.hazmat.primitives.asymmetric",
+    "cryptography.hazmat.primitives.asymmetric.rsa",
+    "cryptography.hazmat.primitives.asymmetric.rsa.generate_private_key",
+    "cryptography.hazmat.primitives.serialization"
+   ],
+   "staticmap": [
+    "staticmap",
+    "staticmap.staticmap.Line",
+    "staticmap.staticmap.StaticMap",
+    "staticmap.staticmap.StaticMap.add_line",
+    "staticmap.staticmap.StaticMap.render"
+   ]
+  },
+  "reflection_kinds": {
+   "pillow": [
+    "__import__",
+    "namespace",
+    "setattr"
+   ],
+   "gunicorn": [
+    "__import__",
+    "import_module",
+    "namespace",
+    "plugin"
+   ],
+   "flask": [
+    "__import__",
+    "eval",
+    "exec",
+    "import_module",
+    "plugin"
+   ],
+   "requests": [
+    "__import__",
+    "namespace",
+    "setattr"
+   ],
+   "selenium": [
+    "import_module"
+   ],
+   "cryptography": [
+    "setattr"
+   ],
+   "mako": [
+    "__import__",
+    "eval",
+    "exec",
+    "plugin",
+    "setattr"
+   ],
+   "h11": [
+    "namespace"
+   ],
+   "jinja2": [
+    "__import__",
+    "dyn_class",
+    "exec",
+    "import_module",
+    "namespace",
+    "setattr"
+   ],
+   "werkzeug": [
+    "__import__",
+    "dyn_class",
+    "exec",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "setuptools": [
+    "__import__",
+    "exec",
+    "import_module",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "pygments": [
+    "__import__",
+    "dyn_class",
+    "exec",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "flask-migrate": [
+    "setattr"
+   ],
+   "sphinxcontrib-httpdomain": [
+    "__import__",
+    "eval",
+    "namespace"
+   ],
+   "sphinx": [
+    "dyn_class",
+    "eval",
+    "exec",
+    "import_module",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "flask-sqlalchemy": [
+    "import_module"
+   ],
+   "alembic": [
+    "exec",
+    "namespace",
+    "plugin",
+    "setattr"
+   ],
+   "limits": [
+    "__import__"
+   ],
+   "trio": [
+    "namespace",
+    "setattr"
+   ]
+  }
+ },
+ "scan_seconds": 429.4,
+ "sdist_only": [
+  "gpxpy",
+  "pytest-black",
+  "staticmap"
+ ],
+ "baseline_resolution": {
+  "ok": true,
+  "seconds": 1.5,
+  "error": ""
+ },
+ "baseline_drift": 0,
+ "strategies": {
+  "audit_fix": {
+   "planned": {
+    "authlib": "1.9.1",
+    "black": "26.10.1",
+    "certifi": "2026.10.18",
+    "cryptography": "49.0.0",
+    "flask": "3.1.3",
+    "gitpython": "3.2.1",
+    "gunicorn": "22.0.0",
+    "h11": "0.16.0",
+    "idna": "3.15",
+    "jinja2": "3.1.6",
+    "mako": "1.4.2",
+    "pygments": "2.20.0",
+    "pyjwt": "2.15.0",
+    "pyopenssl": "26.0.0",
+    "pytest": "9.0.3",
+    "requests": "2.33.0",
+    "selenium": "4.14.0",
+    "setuptools": "84.1.0",
+    "urllib3": "2.8.0",
+    "werkzeug": "3.1.9"
+   },
+   "ok": false,
+   "error": "s\n  cause: Because pyopenssl==26.0.0 depends on cryptography>=46.0.0,<47 and you require cryptography==49.0.0, we can conclude that your requirements and pyopenssl==26.0.0 are incompatible.\n         And because you require pyopenssl==26.0.0, we can conclude that your requirements are unsatisfiable.\n",
+   "seconds": 1.0,
+   "failure": "dependency conflict"
+  },
+  "latest": {
+   "planned": {
+    "pillow": "12.2.0",
+    "pyjwt": "2.15.1",
+    "gunicorn": "27.0.0",
+    "flask": "3.1.3",
+    "black": "26.10.1",
+    "requests": "2.34.2",
+    "selenium": "4.52.0",
+    "cryptography": "50.0.2",
+    "authlib": "1.9.5",
+    "urllib3": "2.8.0",
+    "mako": "1.4.3",
+    "idna": "3.20",
+    "certifi": "2026.10.23",
+    "h11": "0.16.0",
+    "pytest": "9.2.0",
+    "jinja2": "3.1.6",
+    "gitpython": "3.2.1",
+    "werkzeug": "3.1.9",
+    "setuptools": "84.2.1",
+    "pygments": "2.21.0",
+    "pyopenssl": "26.4.0"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 1.6,
+   "residual_findings": 54,
+   "residual_risk_evident": 25.467224090631497,
+   "residual_risk_vm": 42.50999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 8,
+   "changed": 38,
+   "major_bumps": 17,
+   "added": 4,
+   "removed": 0,
+   "realised_changes": {
+    "attrs": [
+     "23.1.0",
+     "26.1.0"
+    ],
+    "authlib": [
+     "1.2.0",
+     "1.9.5"
+    ],
+    "black": [
+     "23.3.0",
+     "26.10.1"
+    ],
+    "blinker": [
+     null,
+     "1.9.0"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "cffi": [
+     "1.15.1",
+     "2.1.1"
+    ],
+    "cryptography": [
+     "41.0.1",
+     "50.0.2"
+    ],
+    "flask": [
+     "2.2.5",
+     "3.1.3"
+    ],
+    "gitpython": [
+     "3.1.31",
+     "3.2.1"
+    ],
+    "gunicorn": [
+     "20.1.0",
+     "27.0.0"
+    ],
+    "h11": [
+     "0.14.0",
+     "0.16.0"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "itsdangerous": [
+     "2.1.2",
+     "2.2.0"
+    ],
+    "jinja2": [
+     "3.1.2",
+     "3.1.6"
+    ],
+    "joserfc": [
+     null,
+     "1.7.7"
+    ],
+    "limits": [
+     "3.5.0",
+     "5.8.0"
+    ],
+    "mako": [
+     "1.2.4",
+     "1.4.3"
+    ],
+    "packaging": [
+     "23.1",
+     "26.3"
+    ],
+    "pathspec": [
+     "0.11.1",
+     "1.1.1"
+    ],
+    "pillow": [
+     "9.5.0",
+     "12.2.0"
+    ],
+    "pluggy": [
+     "1.0.0",
+     "1.7.0"
+    ],
+    "pygments": [
+     "2.15.1",
+     "2.21.0"
+    ],
+    "pyjwt": [
+     "2.7.0",
+     "2.15.1"
+    ],
+    "pyopenssl": [
+     "23.2.0",
+     "26.4.0"
+    ],
+    "pytest": [
+     "7.3.1",
+     "9.2.0"
+    ],
+    "pytest-base-url": [
+     "2.0.0",
+     "2.1.0"
+    ],
+    "pytest-metadata": [
+     "2.0.4",
+     "3.1.1"
+    ],
+    "pytest-variables": [
+     "2.0.0",
+     "3.1.0"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.34.2"
+    ],
+    "selenium": [
+     "4.9.1",
+     "4.52.0"
+    ],
+    "setuptools": [
+     "67.8.0",
+     "84.2.1"
+    ],
+    "trio": [
+     "0.22.0",
+     "0.35.0"
+    ],
+    "trio-websocket": [
+     "0.10.2",
+     "0.12.2"
+    ],
+    "typing-extensions": [
+     "4.6.3",
+     "4.16.0"
+    ],
+    "urllib3": [
+     "2.0.2",
+     "2.8.0"
+    ],
+    "websocket-client": [
+     null,
+     "1.9.2"
+    ],
+    "werkzeug": [
+     "2.2.3",
+     "3.1.9"
+    ]
+   },
+   "planned_changes": 21,
+   "unplanned_changes": 17,
+   "unplanned_major": 7,
+   "unplanned_added": 4,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 12,
+    "checked": 12,
+    "unknown": 0,
+    "packages_with_missing": 2,
+    "missing_symbols": 4,
+    "refs_checked": 90,
+    "details": [
+     {
+      "package": "flask",
+      "version": "3.1.3",
+      "missing": [
+       "flask.scaffold.Scaffold.errorhandler",
+       "flask.scaffold.Scaffold.route"
+      ],
+      "n_missing": 2
+     },
+     {
+      "package": "pytest",
+      "version": "9.2.0",
+      "missing": [
+       "_pytest.python_api.approx",
+       "_pytest.python_api.raises"
+      ],
+      "n_missing": 2
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "upgrade_all": {
+   "planned": null,
+   "ok": true,
+   "error": "",
+   "seconds": 8.0,
+   "residual_findings": 41,
+   "residual_risk_evident": 19.841727212712257,
+   "residual_risk_vm": 32.89000000000001,
+   "residual_confirmed": 0,
+   "new_findings": 7,
+   "changed": 123,
+   "major_bumps": 59,
+   "added": 10,
+   "removed": 0,
+   "realised_changes": {
+    "alabaster": [
+     "0.7.13",
+     "1.0.0"
+    ],
+    "alembic": [
+     "1.11.1",
+     "1.20.1"
+    ],
+    "ast-serialize": [
+     null,
+     "0.13.1"
+    ],
+    "async-timeout": [
+     "4.0.2",
+     "5.0.1"
+    ],
+    "attrs": [
+     "23.1.0",
+     "26.1.0"
+    ],
+    "authlib": [
+     "1.2.0",
+     "1.9.5"
+    ],
+    "babel": [
+     "2.12.1",
+     "2.18.0"
+    ],
+    "bandit": [
+     "1.7.5",
+     "1.9.4"
+    ],
+    "bcrypt": [
+     "4.0.1",
+     "5.0.0"
+    ],
+    "black": [
+     "23.3.0",
+     "26.10.1"
+    ],
+    "blinker": [
+     null,
+     "1.9.0"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "cffi": [
+     "1.15.1",
+     "2.1.1"
+    ],
+    "charset-normalizer": [
+     "3.1.0",
+     "3.5.2"
+    ],
+    "click": [
+     "8.1.3",
+     "8.5.1"
+    ],
+    "commonmark": [
+     "0.9.1",
+     "0.9.2"
+    ],
+    "coverage": [
+     "7.2.7",
+     "7.16.2"
+    ],
+    "cryptography": [
+     "41.0.1",
+     "50.0.2"
+    ],
+    "deprecated": [
+     "1.2.14",
+     "1.3.1"
+    ],
+    "docutils": [
+     "0.19",
+     "0.21.2"
+    ],
+    "dramatiq": [
+     "1.14.2",
+     "2.2.1"
+    ],
+    "exceptiongroup": [
+     "1.1.1",
+     "1.3.1"
+    ],
+    "execnet": [
+     "1.9.0",
+     "2.1.2"
+    ],
+    "flake8": [
+     "3.9.2",
+     "7.4.1"
+    ],
+    "flask": [
+     "2.2.5",
+     "3.1.3"
+    ],
+    "flask-dramatiq": [
+     "0.6.0",
+     "0.8.0"
+    ],
+    "flask-limiter": [
+     "3.3.1",
+     "4.1.1"
+    ],
+    "flask-migrate": [
+     "4.0.4",
+     "4.1.0"
+    ],
+    "flask-sqlalchemy": [
+     "3.0.3",
+     "3.1.1"
+    ],
+    "freezegun": [
+     "1.2.2",
+     "1.5.5"
+    ],
+    "gitdb": [
+     "4.0.10",
+     "4.0.12"
+    ],
+    "gitpython": [
+     "3.1.31",
+     "3.2.1"
+    ],
+    "greenlet": [
+     "2.0.2",
+     "3.5.6"
+    ],
+    "gunicorn": [
+     "20.1.0",
+     "27.0.0"
+    ],
+    "h11": [
+     "0.14.0",
+     "0.16.0"
+    ],
+    "humanize": [
+     "4.6.0",
+     "4.16.0"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "imagesize": [
+     "1.4.1",
+     "2.0.1"
+    ],
+    "importlib-resources": [
+     "5.12.0",
+     "7.1.0"
+    ],
+    "iniconfig": [
+     "2.0.0",
+     "2.3.1"
+    ],
+    "isort": [
+     "5.11.5",
+     "9.0.2"
+    ],
+    "itsdangerous": [
+     "2.1.2",
+     "2.2.0"
+    ],
+    "jinja2": [
+     "3.1.2",
+     "3.1.6"
+    ],
+    "joserfc": [
+     null,
+     "1.7.7"
+    ],
+    "librt": [
+     null,
+     "0.16.0"
+    ],
+    "limits": [
+     "3.5.0",
+     "5.8.0"
+    ],
+    "mako": [
+     "1.2.4",
+     "1.4.3"
+    ],
+    "markdown-it-py": [
+     "2.2.0",
+     "4.3.0"
+    ],
+    "markupsafe": [
+     "2.1.3",
+     "3.0.4"
+    ],
+    "mccabe": [
+     "0.6.1",
+     "0.7.0"
+    ],
+    "mypy": [
+     "1.3.0",
+     "2.4.1"
+    ],
+    "mypy-extensions": [
+     "1.0.0",
+     "1.2.0"
+    ],
+    "outcome": [
+     "1.2.0",
+     "1.3.0.post0"
+    ],
+    "packaging": [
+     "23.1",
+     "26.3"
+    ],
+    "pathspec": [
+     "0.11.1",
+     "1.1.1"
+    ],
+    "pbr": [
+     "5.11.1",
+     "7.1.3"
+    ],
+    "pillow": [
+     "9.5.0",
+     "12.3.0"
+    ],
+    "platformdirs": [
+     "3.5.1",
+     "4.12.4"
+    ],
+    "pluggy": [
+     "1.0.0",
+     "1.7.0"
+    ],
+    "prometheus-client": [
+     "0.17.0",
+     "0.26.0"
+    ],
+    "psutil": [
+     "5.9.5",
+     "7.2.2"
+    ],
+    "psycopg2-binary": [
+     "2.9.6",
+     "2.9.13"
+    ],
+    "pycodestyle": [
+     "2.7.0",
+     "2.15.0"
+    ],
+    "pycparser": [
+     "2.21",
+     "3.11"
+    ],
+    "pyflakes": [
+     "2.3.1",
+     "4.0.3"
+    ],
+    "pygments": [
+     "2.15.1",
+     "2.21.0"
+    ],
+    "pyjwt": [
+     "2.7.0",
+     "2.15.1"
+    ],
+    "pyopenssl": [
+     "23.2.0",
+     "26.4.0"
+    ],
+    "pytest": [
+     "7.3.1",
+     "9.2.0"
+    ],
+    "pytest-base-url": [
+     "2.0.0",
+     "2.1.0"
+    ],
+    "pytest-cov": [
+     "3.0.0",
+     "7.1.0"
+    ],
+    "pytest-flake8": [
+     "1.1.0",
+     "1.3.0"
+    ],
+    "pytest-html": [
+     "3.2.0",
+     "4.2.0"
+    ],
+    "pytest-isort": [
+     "3.1.0",
+     "4.0.0"
+    ],
+    "pytest-metadata": [
+     "2.0.4",
+     "3.1.1"
+    ],
+    "pytest-runner": [
+     "6.0.0",
+     "6.0.1"
+    ],
+    "pytest-selenium": [
+     "2.0.1",
+     "4.1.0"
+    ],
+    "pytest-variables": [
+     "2.0.0",
+     "3.1.0"
+    ],
+    "pytest-xdist": [
+     "3.3.1",
+     "3.8.0"
+    ],
+    "python-dateutil": [
+     "2.8.2",
+     "3.0.0"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "pytz": [
+     "2023.3",
+     "2026.6"
+    ],
+    "pyyaml": [
+     "6.0",
+     "6.0.3"
+    ],
+    "redis": [
+     "4.5.5",
+     "8.1.0"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.34.2"
+    ],
+    "rich": [
+     "13.4.1",
+     "15.0.0"
+    ],
+    "selenium": [
+     "4.9.1",
+     "4.52.0"
+    ],
+    "setuptools": [
+     "67.8.0",
+     "84.2.1"
+    ],
+    "shortuuid": [
+     "1.0.11",
+     "1.0.13"
+    ],
+    "six": [
+     "1.16.0",
+     "1.17.0"
+    ],
+    "smmap": [
+     "5.0.0",
+     "5.0.3"
+    ],
+    "sniffio": [
+     "1.3.0",
+     "1.3.1"
+    ],
+    "snowballstemmer": [
+     "2.2.0",
+     "3.1.1"
+    ],
+    "sphinx": [
+     "5.3.0",
+     "8.1.3"
+    ],
+    "sphinxcontrib-applehelp": [
+     "1.0.2",
+     "2.0.0"
+    ],
+    "sphinxcontrib-devhelp": [
+     "1.0.2",
+     "2.0.0"
+    ],
+    "sphinxcontrib-htmlhelp": [
+     "2.0.0",
+     "2.1.0"
+    ],
+    "sphinxcontrib-httpdomain": [
+     "1.8.1",
+     "2.2.1"
+    ],
+    "sphinxcontrib-jsmath": [
+     "1.0.1",
+     "2.0.0"
+    ],
+    "sphinxcontrib-qthelp": [
+     "1.0.3",
+     "2.0.0"
+    ],
+    "sphinxcontrib-serializinghtml": [
+     "1.1.5",
+     "2.0.0"
+    ],
+    "sqlalchemy": [
+     "1.4.47",
+     "2.0.57"
+    ],
+    "stevedore": [
+     "3.5.2",
+     "5.8.0"
+    ],
+    "tenacity": [
+     "6.3.1",
+     "9.2.1"
+    ],
+    "tomli": [
+     "2.0.1",
+     "2.5.0"
+    ],
+    "trio": [
+     "0.22.0",
+     "0.35.0"
+    ],
+    "trio-websocket": [
+     "0.10.2",
+     "0.12.2"
+    ],
+    "types-cffi": [
+     null,
+     "2.1.0.20260827"
+    ],
+    "types-pyopenssl": [
+     "23.2.0.0",
+     "24.1.0.20240722"
+    ],
+    "types-pytz": [
+     "2023.3.0.0",
+     "2026.6.0.20261031"
+    ],
+    "types-redis": [
+     "4.5.5.2",
+     "4.6.0.20241004"
+    ],
+    "types-requests": [
+     "2.31.0.1",
+     "2.33.0.20261030"
+    ],
+    "types-setuptools": [
+     null,
+     "84.2.0.20261104"
+    ],
+    "types-urllib3": [
+     "1.26.25.13",
+     "1.26.25.14"
+    ],
+    "typing-extensions": [
+     "4.6.3",
+     "4.16.0"
+    ],
+    "tzdata": [
+     null,
+     "2026.6"
+    ],
+    "ua-parser": [
+     "0.16.1",
+     "1.0.2"
+    ],
+    "ua-parser-builtins": [
+     null,
+     "202610"
+    ],
+    "urllib3": [
+     "2.0.2",
+     "2.8.0"
+    ],
+    "websocket-client": [
+     null,
+     "1.9.2"
+    ],
+    "werkzeug": [
+     "2.2.3",
+     "3.1.9"
+    ],
+    "wrapt": [
+     "1.15.0",
+     "2.5.2"
+    ],
+    "wsproto": [
+     "1.2.0",
+     "1.3.2"
+    ]
+   },
+   "failure": "none",
+   "compat": {
+    "used_changed": 17,
+    "checked": 17,
+    "unknown": 0,
+    "packages_with_missing": 3,
+    "missing_symbols": 5,
+    "refs_checked": 103,
+    "details": [
+     {
+      "package": "flask",
+      "version": "3.1.3",
+      "missing": [
+       "flask.scaffold.Scaffold.errorhandler",
+       "flask.scaffold.Scaffold.route"
+      ],
+      "n_missing": 2
+     },
+     {
+      "package": "flask-limiter",
+      "version": "4.1.1",
+      "missing": [
+       "flask_limiter.extension.Limiter"
+      ],
+      "n_missing": 1
+     },
+     {
+      "package": "pytest",
+      "version": "9.2.0",
+      "missing": [
+       "_pytest.python_api.approx",
+       "_pytest.python_api.raises"
+      ],
+      "n_missing": 2
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "uv_fix": {
+   "planned": {
+    "authlib": "1.9.1",
+    "black": "26.10.1",
+    "certifi": "2026.10.18",
+    "cryptography": "49.0.0",
+    "flask": "3.1.3",
+    "gitpython": "3.2.1",
+    "gunicorn": "22.0.0",
+    "h11": "0.16.0",
+    "idna": "3.15",
+    "jinja2": "3.1.6",
+    "mako": "1.4.2",
+    "pygments": "2.20.0",
+    "pyjwt": "2.15.0",
+    "pyopenssl": "26.0.0",
+    "pytest": "9.0.3",
+    "requests": "2.33.0",
+    "selenium": "4.14.0",
+    "setuptools": "84.1.0",
+    "urllib3": "2.8.0",
+    "werkzeug": "3.1.9"
+   },
+   "ok": true,
+   "error": "",
+   "seconds": 0.6,
+   "residual_findings": 53,
+   "residual_risk_evident": 24.658948311547007,
+   "residual_risk_vm": 42.07999999999999,
+   "residual_confirmed": 0,
+   "new_findings": 0,
+   "changed": 34,
+   "major_bumps": 15,
+   "added": 4,
+   "removed": 0,
+   "realised_changes": {
+    "authlib": [
+     "1.2.0",
+     "1.9.5"
+    ],
+    "black": [
+     "23.3.0",
+     "26.10.1"
+    ],
+    "blinker": [
+     null,
+     "1.9.0"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "cffi": [
+     "1.15.1",
+     "2.1.1"
+    ],
+    "cryptography": [
+     "41.0.1",
+     "50.0.2"
+    ],
+    "flask": [
+     "2.2.5",
+     "3.1.3"
+    ],
+    "gitpython": [
+     "3.1.31",
+     "3.2.1"
+    ],
+    "gunicorn": [
+     "20.1.0",
+     "27.0.0"
+    ],
+    "h11": [
+     "0.14.0",
+     "0.16.0"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "itsdangerous": [
+     "2.1.2",
+     "2.2.0"
+    ],
+    "jinja2": [
+     "3.1.2",
+     "3.1.6"
+    ],
+    "joserfc": [
+     null,
+     "1.7.7"
+    ],
+    "limits": [
+     "3.5.0",
+     "5.8.0"
+    ],
+    "mako": [
+     "1.2.4",
+     "1.4.3"
+    ],
+    "packaging": [
+     "23.1",
+     "26.3"
+    ],
+    "pathspec": [
+     "0.11.1",
+     "1.1.1"
+    ],
+    "pluggy": [
+     "1.0.0",
+     "1.7.0"
+    ],
+    "pygments": [
+     "2.15.1",
+     "2.21.0"
+    ],
+    "pyjwt": [
+     "2.7.0",
+     "2.15.1"
+    ],
+    "pyopenssl": [
+     "23.2.0",
+     "26.4.0"
+    ],
+    "pytest": [
+     "7.3.1",
+     "9.2.0"
+    ],
+    "pytest-base-url": [
+     "2.0.0",
+     "2.1.0"
+    ],
+    "pytest-metadata": [
+     "2.0.4",
+     "3.1.1"
+    ],
+    "pytest-variables": [
+     "2.0.0",
+     "3.1.0"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.34.2"
+    ],
+    "selenium": [
+     "4.9.1",
+     "4.32.0"
+    ],
+    "setuptools": [
+     "67.8.0",
+     "84.2.1"
+    ],
+    "typing-extensions": [
+     "4.6.3",
+     "4.16.0"
+    ],
+    "urllib3": [
+     "2.0.2",
+     "2.8.0"
+    ],
+    "websocket-client": [
+     null,
+     "1.9.2"
+    ],
+    "werkzeug": [
+     "2.2.3",
+     "3.1.9"
+    ]
+   },
+   "failure": "none",
+   "compat": {
+    "used_changed": 11,
+    "checked": 11,
+    "unknown": 0,
+    "packages_with_missing": 2,
+    "missing_symbols": 4,
+    "refs_checked": 87,
+    "details": [
+     {
+      "package": "flask",
+      "version": "3.1.3",
+      "missing": [
+       "flask.scaffold.Scaffold.errorhandler",
+       "flask.scaffold.Scaffold.route"
+      ],
+      "n_missing": 2
+     },
+     {
+      "package": "pytest",
+      "version": "9.2.0",
+      "missing": [
+       "_pytest.python_api.approx",
+       "_pytest.python_api.raises"
+      ],
+      "n_missing": 2
+     }
+    ],
+    "api_compatible": false
+   }
+  },
+  "vm_opt": {
+   "planned": {
+    "authlib": "1.9.1",
+    "black": "26.10.1",
+    "certifi": "2026.10.23",
+    "cffi": "2.1.1",
+    "cryptography": "50.0.2",
+    "gitpython": "3.2.1",
+    "gunicorn": "27.0.0",
+    "h11": "0.16.0",
+    "idna": "3.20",
+    "jinja2": "3.1.6",
+    "mako": "1.4.2",
+    "pathspec": "1.1.1",
+    "pygments": "2.21.0",
+    "pyjwt": "2.15.1",
+    "pyopenssl": "26.4.0",
+    "requests": "2.34.2",
+    "selenium": "4.14.0",
+    "setuptools": "84.2.1",
+    "typing-extensions": "4.16.0",
+    "urllib3": "2.8.0",
+    "werkzeug": "3.1.9"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 16.6,
+   "model_residual": 43.18999999999999,
+   "model_cost": 49.400000000000006,
+   "scope": 34,
+   "candidates": 109,
+   "residual_findings": 55,
+   "residual_risk_evident": 25.01781578204499,
+   "residual_risk_vm": 43.18999999999998,
+   "residual_confirmed": 1,
+   "new_findings": 0,
+   "changed": 23,
+   "major_bumps": 9,
+   "added": 2,
+   "removed": 0,
+   "realised_changes": {
+    "authlib": [
+     "1.2.0",
+     "1.9.1"
+    ],
+    "black": [
+     "23.3.0",
+     "26.10.1"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "cffi": [
+     "1.15.1",
+     "2.1.1"
+    ],
+    "cryptography": [
+     "41.0.1",
+     "50.0.2"
+    ],
+    "gitpython": [
+     "3.1.31",
+     "3.2.1"
+    ],
+    "gunicorn": [
+     "20.1.0",
+     "27.0.0"
+    ],
+    "h11": [
+     "0.14.0",
+     "0.16.0"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "jinja2": [
+     "3.1.2",
+     "3.1.6"
+    ],
+    "joserfc": [
+     null,
+     "1.7.7"
+    ],
+    "mako": [
+     "1.2.4",
+     "1.4.2"
+    ],
+    "pathspec": [
+     "0.11.1",
+     "1.1.1"
+    ],
+    "pygments": [
+     "2.15.1",
+     "2.21.0"
+    ],
+    "pyjwt": [
+     "2.7.0",
+     "2.15.1"
+    ],
+    "pyopenssl": [
+     "23.2.0",
+     "26.4.0"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.34.2"
+    ],
+    "selenium": [
+     "4.9.1",
+     "4.14.0"
+    ],
+    "setuptools": [
+     "67.8.0",
+     "84.2.1"
+    ],
+    "typing-extensions": [
+     "4.6.3",
+     "4.16.0"
+    ],
+    "urllib3": [
+     "2.0.2",
+     "2.8.0"
+    ],
+    "werkzeug": [
+     "2.2.3",
+     "3.1.9"
+    ]
+   },
+   "planned_changes": 21,
+   "unplanned_changes": 2,
+   "unplanned_major": 0,
+   "unplanned_added": 2,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 9,
+    "checked": 9,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 69,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "coral_opt": {
+   "planned": {
+    "authlib": "1.9.1",
+    "black": "26.10.1",
+    "certifi": "2026.10.23",
+    "cffi": "2.1.1",
+    "cryptography": "50.0.2",
+    "gitpython": "3.2.1",
+    "gunicorn": "27.0.0",
+    "h11": "0.16.0",
+    "idna": "3.20",
+    "jinja2": "3.1.6",
+    "mako": "1.4.2",
+    "pathspec": "1.1.1",
+    "pyjwt": "2.15.1",
+    "pyopenssl": "26.4.0",
+    "requests": "2.34.2",
+    "selenium": "4.14.0",
+    "setuptools": "84.2.1",
+    "typing-extensions": "4.16.0",
+    "urllib3": "2.8.0",
+    "werkzeug": "3.1.9"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.3,
+   "model_residual": 21.974999999999994,
+   "model_cost": 47.7,
+   "scope": 34,
+   "candidates": 109,
+   "residual_findings": 56,
+   "residual_risk_evident": 25.207400262981764,
+   "residual_risk_vm": 43.51999999999998,
+   "residual_confirmed": 1,
+   "new_findings": 0,
+   "changed": 22,
+   "major_bumps": 9,
+   "added": 2,
+   "removed": 0,
+   "realised_changes": {
+    "authlib": [
+     "1.2.0",
+     "1.9.1"
+    ],
+    "black": [
+     "23.3.0",
+     "26.10.1"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "cffi": [
+     "1.15.1",
+     "2.1.1"
+    ],
+    "cryptography": [
+     "41.0.1",
+     "50.0.2"
+    ],
+    "gitpython": [
+     "3.1.31",
+     "3.2.1"
+    ],
+    "gunicorn": [
+     "20.1.0",
+     "27.0.0"
+    ],
+    "h11": [
+     "0.14.0",
+     "0.16.0"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "jinja2": [
+     "3.1.2",
+     "3.1.6"
+    ],
+    "joserfc": [
+     null,
+     "1.7.7"
+    ],
+    "mako": [
+     "1.2.4",
+     "1.4.2"
+    ],
+    "pathspec": [
+     "0.11.1",
+     "1.1.1"
+    ],
+    "pyjwt": [
+     "2.7.0",
+     "2.15.1"
+    ],
+    "pyopenssl": [
+     "23.2.0",
+     "26.4.0"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.34.2"
+    ],
+    "selenium": [
+     "4.9.1",
+     "4.14.0"
+    ],
+    "setuptools": [
+     "67.8.0",
+     "84.2.1"
+    ],
+    "typing-extensions": [
+     "4.6.3",
+     "4.16.0"
+    ],
+    "urllib3": [
+     "2.0.2",
+     "2.8.0"
+    ],
+    "werkzeug": [
+     "2.2.3",
+     "3.1.9"
+    ]
+   },
+   "planned_changes": 20,
+   "unplanned_changes": 2,
+   "unplanned_major": 0,
+   "unplanned_added": 2,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 9,
+    "checked": 9,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 69,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "cape_opt": {
+   "planned": {
+    "authlib": "1.9.1",
+    "black": "26.10.1",
+    "certifi": "2026.10.23",
+    "cffi": "2.1.1",
+    "cryptography": "50.0.2",
+    "gitpython": "3.2.1",
+    "gunicorn": "27.0.0",
+    "h11": "0.16.0",
+    "idna": "3.20",
+    "jinja2": "3.1.6",
+    "mako": "1.4.2",
+    "pathspec": "1.1.1",
+    "pillow": "12.2.0",
+    "pygments": "2.21.0",
+    "pyjwt": "2.15.1",
+    "pyopenssl": "26.4.0",
+    "requests": "2.34.2",
+    "selenium": "4.14.0",
+    "setuptools": "84.2.1",
+    "typing-extensions": "4.16.0",
+    "urllib3": "2.8.0",
+    "werkzeug": "3.1.9"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.3,
+   "model_residual": 36.45758750928586,
+   "model_cost": 52.40000000000001,
+   "scope": 34,
+   "candidates": 109,
+   "residual_findings": 56,
+   "residual_risk_evident": 25.82609156112948,
+   "residual_risk_vm": 43.61999999999999,
+   "residual_confirmed": 1,
+   "new_findings": 8,
+   "changed": 24,
+   "major_bumps": 10,
+   "added": 2,
+   "removed": 0,
+   "realised_changes": {
+    "authlib": [
+     "1.2.0",
+     "1.9.1"
+    ],
+    "black": [
+     "23.3.0",
+     "26.10.1"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "cffi": [
+     "1.15.1",
+     "2.1.1"
+    ],
+    "cryptography": [
+     "41.0.1",
+     "50.0.2"
+    ],
+    "gitpython": [
+     "3.1.31",
+     "3.2.1"
+    ],
+    "gunicorn": [
+     "20.1.0",
+     "27.0.0"
+    ],
+    "h11": [
+     "0.14.0",
+     "0.16.0"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "jinja2": [
+     "3.1.2",
+     "3.1.6"
+    ],
+    "joserfc": [
+     null,
+     "1.7.7"
+    ],
+    "mako": [
+     "1.2.4",
+     "1.4.2"
+    ],
+    "pathspec": [
+     "0.11.1",
+     "1.1.1"
+    ],
+    "pillow": [
+     "9.5.0",
+     "12.2.0"
+    ],
+    "pygments": [
+     "2.15.1",
+     "2.21.0"
+    ],
+    "pyjwt": [
+     "2.7.0",
+     "2.15.1"
+    ],
+    "pyopenssl": [
+     "23.2.0",
+     "26.4.0"
+    ],
+    "pytokens": [
+     null,
+     "0.4.1"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.34.2"
+    ],
+    "selenium": [
+     "4.9.1",
+     "4.14.0"
+    ],
+    "setuptools": [
+     "67.8.0",
+     "84.2.1"
+    ],
+    "typing-extensions": [
+     "4.6.3",
+     "4.16.0"
+    ],
+    "urllib3": [
+     "2.0.2",
+     "2.8.0"
+    ],
+    "werkzeug": [
+     "2.2.3",
+     "3.1.9"
+    ]
+   },
+   "planned_changes": 22,
+   "unplanned_changes": 2,
+   "unplanned_major": 0,
+   "unplanned_added": 2,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 10,
+    "checked": 10,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 72,
+    "details": [],
+    "api_compatible": true
+   }
+  },
+  "evident": {
+   "planned": {
+    "authlib": "1.9.1",
+    "certifi": "2026.10.23",
+    "cffi": "2.1.1",
+    "cryptography": "50.0.2",
+    "gitpython": "3.1.62",
+    "gunicorn": "27.0.0",
+    "idna": "3.20",
+    "jinja2": "3.1.6",
+    "mako": "1.4.2",
+    "pygments": "2.21.0",
+    "pyjwt": "2.15.1",
+    "pyopenssl": "26.4.0",
+    "requests": "2.34.2",
+    "setuptools": "84.2.1",
+    "typing-extensions": "4.16.0",
+    "urllib3": "2.8.0",
+    "werkzeug": "3.1.9"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.9,
+   "model_residual": 25.146517777745757,
+   "model_cost": 39.0,
+   "scope": 34,
+   "candidates": 109,
+   "residual_findings": 68,
+   "residual_risk_evident": 25.14651777774576,
+   "residual_risk_vm": 53.13999999999998,
+   "residual_confirmed": 1,
+   "new_findings": 0,
+   "changed": 18,
+   "major_bumps": 7,
+   "added": 1,
+   "removed": 0,
+   "realised_changes": {
+    "authlib": [
+     "1.2.0",
+     "1.9.1"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "cffi": [
+     "1.15.1",
+     "2.1.1"
+    ],
+    "cryptography": [
+     "41.0.1",
+     "50.0.2"
+    ],
+    "gitpython": [
+     "3.1.31",
+     "3.1.62"
+    ],
+    "gunicorn": [
+     "20.1.0",
+     "27.0.0"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "jinja2": [
+     "3.1.2",
+     "3.1.6"
+    ],
+    "joserfc": [
+     null,
+     "1.7.7"
+    ],
+    "mako": [
+     "1.2.4",
+     "1.4.2"
+    ],
+    "pygments": [
+     "2.15.1",
+     "2.21.0"
+    ],
+    "pyjwt": [
+     "2.7.0",
+     "2.15.1"
+    ],
+    "pyopenssl": [
+     "23.2.0",
+     "26.4.0"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.34.2"
+    ],
+    "setuptools": [
+     "67.8.0",
+     "84.2.1"
+    ],
+    "typing-extensions": [
+     "4.6.3",
+     "4.16.0"
+    ],
+    "urllib3": [
+     "2.0.2",
+     "2.8.0"
+    ],
+    "werkzeug": [
+     "2.2.3",
+     "3.1.9"
+    ]
+   },
+   "planned_changes": 17,
+   "unplanned_changes": 1,
+   "unplanned_major": 0,
+   "unplanned_added": 1,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 8,
+    "checked": 8,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 58,
+    "details": [],
+    "api_compatible": true
+   },
+   "objective_gap": 3.552713678800501e-15
+  },
+  "evident_wide": {
+   "planned": {
+    "authlib": "1.9.1",
+    "certifi": "2026.10.23",
+    "cffi": "2.1.1",
+    "cryptography": "50.0.2",
+    "gitpython": "3.1.62",
+    "gunicorn": "27.0.0",
+    "idna": "3.20",
+    "jinja2": "3.1.6",
+    "mako": "1.4.2",
+    "pygments": "2.21.0",
+    "pyjwt": "2.15.1",
+    "pyopenssl": "26.4.0",
+    "requests": "2.34.2",
+    "setuptools": "84.2.1",
+    "typing-extensions": "4.16.0",
+    "urllib3": "2.8.0",
+    "werkzeug": "3.1.9"
+   },
+   "ok": true,
+   "iterations": 1,
+   "error": "",
+   "seconds": 0.2,
+   "model_residual": 25.146517777745757,
+   "model_cost": 39.0,
+   "candidates": 109,
+   "residual_findings": 68,
+   "residual_risk_evident": 25.14651777774576,
+   "residual_risk_vm": 53.13999999999998,
+   "residual_confirmed": 1,
+   "new_findings": 0,
+   "changed": 18,
+   "major_bumps": 7,
+   "added": 1,
+   "removed": 0,
+   "realised_changes": {
+    "authlib": [
+     "1.2.0",
+     "1.9.1"
+    ],
+    "certifi": [
+     "2023.5.7",
+     "2026.10.23"
+    ],
+    "cffi": [
+     "1.15.1",
+     "2.1.1"
+    ],
+    "cryptography": [
+     "41.0.1",
+     "50.0.2"
+    ],
+    "gitpython": [
+     "3.1.31",
+     "3.1.62"
+    ],
+    "gunicorn": [
+     "20.1.0",
+     "27.0.0"
+    ],
+    "idna": [
+     "3.4",
+     "3.20"
+    ],
+    "jinja2": [
+     "3.1.2",
+     "3.1.6"
+    ],
+    "joserfc": [
+     null,
+     "1.7.7"
+    ],
+    "mako": [
+     "1.2.4",
+     "1.4.2"
+    ],
+    "pygments": [
+     "2.15.1",
+     "2.21.0"
+    ],
+    "pyjwt": [
+     "2.7.0",
+     "2.15.1"
+    ],
+    "pyopenssl": [
+     "23.2.0",
+     "26.4.0"
+    ],
+    "requests": [
+     "2.31.0",
+     "2.34.2"
+    ],
+    "setuptools": [
+     "67.8.0",
+     "84.2.1"
+    ],
+    "typing-extensions": [
+     "4.6.3",
+     "4.16.0"
+    ],
+    "urllib3": [
+     "2.0.2",
+     "2.8.0"
+    ],
+    "werkzeug": [
+     "2.2.3",
+     "3.1.9"
+    ]
+   },
+   "planned_changes": 17,
+   "unplanned_changes": 1,
+   "unplanned_major": 0,
+   "unplanned_added": 1,
+   "new_findings_from_unplanned": 0,
+   "plan_not_realised": 0,
+   "failure": "none",
+   "compat": {
+    "used_changed": 8,
+    "checked": 8,
+    "unknown": 0,
+    "packages_with_missing": 0,
+    "missing_symbols": 0,
+    "refs_checked": 58,
+    "details": [],
+    "api_compatible": true
+   }
+  }
+ },
+ "original": {
+  "residual_findings": 190,
+  "residual_risk_evident": 60.255635869989575,
+  "residual_risk_vm": 140.55999999999995,
+  "residual_confirmed": 11,
+  "new_findings": 0,
+  "changed": 0,
+  "major_bumps": 0,
+  "added": 0,
+  "removed": 0,
+  "realised_changes": {}
+ },
+ "decision": {
+  "uncertain": 142,
+  "critical": 1,
+  "evpi_total": 0.07233526739620794,
+  "top": [
+   {
+    "package": "pygments",
+    "advisory": "CVE-2026-4539",
+    "p": 0.5744984270811252,
+    "critical": true,
+    "evpi": 0.07233526739620794
+   },
+   {
+    "package": "authlib",
+    "advisory": "CVE-2024-37568",
+    "p": 0.6559895848026134,
+    "critical": false,
+    "evpi": 0.0
+   },
+   {
+    "package": "authlib",
+    "advisory": "CVE-2026-96760",
+    "p": 0.21461021528126487,
+    "critical": false,
+    "evpi": 0.0
+   },
+   {
+    "package": "authlib",
+    "advisory": "CVE-2026-28490",
+    "p": 0.5744984270811252,
+    "critical": false,
+    "evpi": 0.0
+   },
+   {
+    "package": "authlib",
+    "advisory": "CVE-2026-114616",
+    "p": 0.6559895848026134,
+    "critical": false,
+    "evpi": 0.0
+   }
+  ]
+ },
+ "remediation_seconds": 433.1,
+ "status": "ok"
+}
