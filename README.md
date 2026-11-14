@@ -284,4 +284,6 @@ If you use EVIDENT, please cite the accompanying paper (venue details will be ad
 > Needs an Upgrade: Calibrated Exposure Evidence and Metadata-Verified Remediation for Python Projects*.
 > Department of Computer Science and Engineering, Karunya Institute of Technology and Sciences, Coimbatore, India.
 
+Archived release (v0.3.0): [doi:10.5281/zenodo.24215409](https://doi.org/10.5281/zenodo.24215409).
+
 Licensed under the Apache License 2.0 (see `LICENSE`).

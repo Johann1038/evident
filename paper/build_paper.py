@@ -457,11 +457,12 @@ def build():
            "exploit-oriented evidence are the most promising ways to let calibration change decisions.")
     P.h_unnumbered("Data Availability")
     P._first = True
+    from docx.enum.text import WD_ALIGN_PARAGRAPH
     P.para(f"Code, EVIDENT-Bench, mined symbols, snapshot list, intelligence snapshot dates, scripts, all result files "
-           f"and the online supplement: {REPO}, immutable release tag "
-           f"{RELEASE.get('tag', 'v0.3.0')}"
-           + (f", archived on Zenodo (https://doi.org/{RELEASE['doi']})" if RELEASE.get("doi") else "")
-           + " (every number in this paper is regenerated from that tag's data/results).")
+           f"and the online supplement are in {REPO} (immutable release {RELEASE.get('tag', 'v0.3.0')}"
+           + (f", archived as doi:{RELEASE['doi']}" if RELEASE.get("doi") else "")
+           + "). Every number in this paper is regenerated from that release's data/results."
+           ).alignment = WD_ALIGN_PARAGRAPH.LEFT  # a long URL would otherwise stretch a justified line
     P.references(REFS)
     import os
     out = Path(os.environ.get("EVIDENT_PAPER_OUT", HERE / "EVIDENT_paper.docx"))

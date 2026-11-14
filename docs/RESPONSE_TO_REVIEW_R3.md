@@ -30,4 +30,4 @@ Generated from `data/results/` by `paper/build_response_r3.py`; numbers match th
 2. Optional: process a stratified sample of the 84 unprocessed applications (compute).
 3. Level-3 (test-based) compatibility needs an isolated sandbox; stated as not evaluated.
 
-Author names, affiliation and corresponding author are now in the manuscript; the release is archived on Zenodo.
+Author names, affiliation and corresponding author are now in the manuscript; the release is archived on Zenodo (https://doi.org/10.5281/zenodo.24215409).
