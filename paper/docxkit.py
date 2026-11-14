@@ -87,6 +87,42 @@ class Paper:
             b.bold = True
             self._runs(p, " " + text)
 
+    def set_authors(self, authors: list[str], affiliation: str, footnote: str, corresponding: int = 0):
+        """All authors share one affiliation; the template's footnote 1 marks the corresponding author."""
+        p = self.author._p
+        fn_run = next(r for r in p.findall(qn("w:r")) if r.find(qn("w:footnoteReference")) is not None)
+        for r in p.findall(qn("w:r")):
+            p.remove(r)
+        for i, a in enumerate(authors):
+            sep = "" if i == 0 else (" and " if i == len(authors) - 1 else ", ")
+            if sep:
+                self.author.add_run(sep)
+            self.author.add_run(a)
+            if i == corresponding:
+                p.append(fn_run)
+        affs = [q for q in self.doc.paragraphs if q.style.name == "Affiliation"]
+        for q in affs[1:]:
+            q._p.getparent().remove(q._p)
+        a = affs[0]
+        for r in list(a.runs):
+            r._r.getparent().remove(r._r)
+        a.add_run(affiliation)
+        # footnote 1 text
+        from docx.opc.constants import RELATIONSHIP_TYPE as RT
+        part = self.doc.part.part_related_by(RT.FOOTNOTES)
+        from lxml import etree
+        root = etree.fromstring(part.blob)
+        W = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+        fn = root.find(f"{{{W}}}footnote[@{{{W}}}id='1']")
+        par = fn.find(f"{{{W}}}p")
+        for r in par.findall(f"{{{W}}}r")[1:]:
+            par.remove(r)
+        r = etree.SubElement(par, f"{{{W}}}r")
+        t = etree.SubElement(r, f"{{{W}}}t")
+        t.set("{http://www.w3.org/XML/1998/namespace}space", "preserve")
+        t.text = " " + footnote
+        part._blob = etree.tostring(root, xml_declaration=True, encoding="UTF-8", standalone=True)
+
     def h1(self, text):
         self._runs(self._new_p("Heading1"), text)
         self._first = True

@@ -278,6 +278,10 @@ The reference machine for the paper was a 14-core laptop with 16 GB RAM. Memory,
 
 ## Citation and license
 
-If you use EVIDENT, please cite the accompanying paper (citation details will be added after publication).
+If you use EVIDENT, please cite the accompanying paper (venue details will be added after publication):
+
+> J. S. George, F. K. Renu, A. Sajikumar, R. J. A, G. N. Sundar and D. Narmadha, *Not Every Vulnerable Dependency
+> Needs an Upgrade: Calibrated Exposure Evidence and Metadata-Verified Remediation for Python Projects*.
+> Department of Computer Science and Engineering, Karunya Institute of Technology and Sciences, Coimbatore, India.
 
 Licensed under the Apache License 2.0 (see `LICENSE`).

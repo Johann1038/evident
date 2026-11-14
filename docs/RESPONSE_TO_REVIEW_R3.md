@@ -27,7 +27,7 @@ Generated from `data/results/` by `paper/build_response_r3.py`; numbers match th
 ## Still open (authors)
 
 1. Manual two-annotator validation of mined symbols on the 40-advisory sample, with Cohen's kappa (Priority A1).
-2. Author names and affiliations.
-3. An archival DOI (e.g. Zenodo) for the release tag.
-4. Optional: process a stratified sample of the 84 unprocessed applications (compute).
-5. Level-3 (test-based) compatibility needs an isolated sandbox; stated as not evaluated.
+2. Optional: process a stratified sample of the 84 unprocessed applications (compute).
+3. Level-3 (test-based) compatibility needs an isolated sandbox; stated as not evaluated.
+
+Author names, affiliation and corresponding author are now in the manuscript; the release is archived on Zenodo.

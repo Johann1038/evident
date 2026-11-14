@@ -107,6 +107,10 @@ ABSTRACT = (
     + (f"({frac(_cov.get('resolvable'), _cov.get('completed'))} end to end); " if _cov else "; ")
     + "calibrated weights trade fewer changes for fewer removed findings. Evidence helps triage more than it "
       "changes remediation.")
+AUTHORS = ["Johann Shoni GEORGE", "Febin K RENU", "Adwaith SAJIKUMAR", "Rishi Jayanath A", "G. Naveen SUNDAR",
+           "D. NARMADHA"]
+AFFILIATION = ("Department of Computer Science and Engineering, Karunya Institute of Technology and Sciences, "
+               "Coimbatore, India")
 KEYWORDS = ("software supply chain security, vulnerability reachability, calibration, dependency remediation, "
             "constraint optimisation, Python")
 
@@ -114,6 +118,8 @@ KEYWORDS = ("software supply chain security, vulnerability reachability, calibra
 def build():
     P = Paper(HERE / "template.docx")
     P.set_front(TITLE, ABSTRACT, KEYWORDS)
+    P.set_authors(AUTHORS, AFFILIATION, "Corresponding Author: Johann Shoni George, " + AFFILIATION
+                  + (f"; E-mail: {RELEASE['email']}." if RELEASE.get("email") else "."))
 
     # ---------------------------------------------------------------- 1
     P.h1("Introduction")
@@ -453,7 +459,9 @@ def build():
     P._first = True
     P.para(f"Code, EVIDENT-Bench, mined symbols, snapshot list, intelligence snapshot dates, scripts, all result files "
            f"and the online supplement: {REPO}, immutable release tag "
-           f"{RELEASE.get('tag', 'v0.3.0')} (every number in this paper is regenerated from that tag's data/results).")
+           f"{RELEASE.get('tag', 'v0.3.0')}"
+           + (f", archived on Zenodo (https://doi.org/{RELEASE['doi']})" if RELEASE.get("doi") else "")
+           + " (every number in this paper is regenerated from that tag's data/results).")
     P.references(REFS)
     import os
     out = Path(os.environ.get("EVIDENT_PAPER_OUT", HERE / "EVIDENT_paper.docx"))
