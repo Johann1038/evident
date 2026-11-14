@@ -13,6 +13,9 @@ from pathlib import Path
 
 from .intel import Advisory
 from .reach import TEST_RX
+
+# fix commits also touch test modules inside the package directory (e.g. contrib/x/tests.py)
+MINING_TEST_RX = re.compile(TEST_RX.pattern + r"|(^|/)tests?\.py$")
 from .util import DATA, gh_api, http_get, read_json, write_json
 
 SYM = DATA / "symbols"
@@ -88,7 +91,7 @@ def mine(adv: Advisory, max_commits: int = 4) -> dict:
         if not j or "files" not in j:
             continue
         parent = (j.get("parents") or [{}])[0].get("sha")
-        pyfiles = [f for f in j["files"] if f["filename"].endswith(".py") and not TEST_RX.search(f["filename"])
+        pyfiles = [f for f in j["files"] if f["filename"].endswith(".py") and not MINING_TEST_RX.search(f["filename"])
                    and f.get("status") in ("modified", "renamed", "removed", "changed")]
         res["commits"].append({"repo": repo, "sha": sha, "parent": parent, "py_files": len(pyfiles)})
         if len(pyfiles) > 25 or not parent:

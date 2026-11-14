@@ -1,0 +1,200 @@
+{
+ "n": 962,
+ "refutations": {
+  "L3b_refuted": 122,
+  "L3b_refuted_exposed": 0,
+  "L4_refuted_total": 144,
+  "L4_refuted_exposed": 0,
+  "L4_refuted_by_reason": {
+   "no path even with over-approximation": 22,
+   "package not imported": 122
+  },
+  "imported_without_strong_path": 68,
+  "imported_path_refuted": 22,
+  "imported_blocked_by_reflection": 46,
+  "upper95_false_refutation_all": 0.02058879229949585,
+  "upper95_false_refutation_path": 0.1273054316548387,
+  "upper95_false_refutation_L3b": 0.02425615662029787
+ },
+ "factorisation": {
+  "staged": {
+   "brier": 0.1689030810811565,
+   "brier_ci": [
+    0.153936026448062,
+    0.17699223018279162
+   ],
+   "ece": 0.020848209033231674,
+   "auc": 0.7621001237186285
+  },
+  "joint_configuration": {
+   "brier": 0.16902694043770375,
+   "brier_ci": [
+    0.15381707005516396,
+    0.17703658651544907
+   ],
+   "ece": 0.013651993270855992,
+   "auc": 0.7621001237186285
+  },
+  "logistic_iso": {
+   "brier": 0.17015556857827174,
+   "brier_ci": [
+    0.15552385637273713,
+    0.17731464810356573
+   ],
+   "ece": 0.020227513895052583,
+   "auc": 0.7592369211735596
+  },
+  "single_level_L4": {
+   "brier": 0.1688986054524808,
+   "brier_ci": [
+    0.15360839150535552,
+    0.17696270826750848
+   ],
+   "ece": 0.015331508602376708,
+   "auc": 0.7621001237186285
+  },
+  "staged_minus_joint_brier": {
+   "mean": -0.00012385935654724012,
+   "ci": [
+    -0.0004309859302853887,
+    0.0001432283688227287
+   ],
+   "max_abs_prob_diff": 0.012899846801671416
+  }
+ },
+ "subgroups": {
+  "strong_reachability (L4 CONFIRMED)": {
+   "n": 424,
+   "mean_p": 0.8216146988729961,
+   "observed": 0.8089622641509434,
+   "observed_ci": [
+    0.7682557366902376,
+    0.8452926829360616
+   ],
+   "abs_gap": 0.012652434722052686
+  },
+  "weak_reachability (L4 POSSIBLE)": {
+   "n": 348,
+   "mean_p": 0.570662147340805,
+   "observed": 0.5747126436781609,
+   "observed_ci": [
+    0.520881903431994,
+    0.6272610920788175
+   ],
+   "abs_gap": 0.00405049633735588
+  },
+  "reflection_blocked (L4 UNKNOWN)": {
+   "n": 46,
+   "mean_p": 0.13461971410293908,
+   "observed": 0.1956521739130435,
+   "observed_ci": [
+    0.0935757344214087,
+    0.33914759951099843
+   ],
+   "abs_gap": 0.06103245981010441
+  },
+  "path_refuted (L4 REFUTED, imported)": {
+   "n": 22,
+   "mean_p": 0.0841383853186976,
+   "observed": 0.0,
+   "observed_ci": [
+    0.0,
+    0.15437251281557454
+   ],
+   "abs_gap": 0.0841383853186976
+  },
+  "not_imported (L3b REFUTED)": {
+   "n": 122,
+   "mean_p": 0.0006755455928073782,
+   "observed": 0.0,
+   "observed_ci": [
+    0.0,
+    0.029784160061428703
+   ],
+   "abs_gap": 0.0006755455928073782
+  },
+  "missing_symbol_info (L4 masked)": {
+   "n": 318,
+   "mean_p": 0.5717738355313113,
+   "observed": 0.5660377358490566,
+   "observed_ci": [
+    0.5095904350505922,
+    0.6212433530986696
+   ],
+   "abs_gap": 0.005736099682254747,
+   "mask_rate": 0.28987240829346095
+  },
+  "development_only": {
+   "n": 0,
+   "note": "not present in EVIDENT-Bench (all applications install the package for production); evaluated only through the delta sensitivity"
+  }
+ },
+ "leave_pattern_out": {
+  "coral_style": {
+   "brier": 0.18808731808731807,
+   "brier_ci": [
+    0.16564229539641942,
+    0.2009732079333974
+   ]
+  },
+  "logistic_iso": {
+   "brier": 0.19492130568040114,
+   "brier_ci": [
+    0.17740492008537878,
+    0.20477068970911072
+   ]
+  },
+  "evident": {
+   "brier": 0.1951664815844667,
+   "brier_ci": [
+    0.17781890540205542,
+    0.20492987045979197
+   ]
+  }
+ },
+ "time_split": {
+  "coral_style": {
+   "brier": 0.1841486068111455,
+   "brier_ci": [
+    0.1440406617647059,
+    0.20075281975255133
+   ]
+  },
+  "logistic_iso": {
+   "brier": 0.16271798091909534,
+   "brier_ci": [
+    0.13703086951400653,
+    0.17239241459057073
+   ]
+  },
+  "evident": {
+   "brier": 0.16370264951800031,
+   "brier_ci": [
+    0.13973599011826848,
+    0.17280367112549797
+   ]
+  },
+  "train_rows": 316,
+  "test_rows": 646
+ },
+ "missingness_generator": {
+  "level_masked": "L4 only (state set to UNKNOWN with missing=True); L3b and labels untouched",
+  "modes": {
+   "independent": "each (application, advisory) pair masked i.i.d. with probability q",
+   "advisory": "one Bernoulli(q) draw per (package, advisory); all its applications share it",
+   "package": "one Bernoulli(q) draw per package; all its advisories and applications share it",
+   "realworld_profile": "one draw per (package, advisory) with q = that package's share of imported real-world findings whose L4 is missing (packages with >= 3 such findings; otherwise the corpus-wide share)"
+  },
+  "rates": [
+   0.25,
+   0.5,
+   0.75
+  ],
+  "seeds_per_setting": 5,
+  "label_independent": true,
+  "same_masks_for_all_models": true,
+  "realworld_rate_overall": 0.28987240829346095,
+  "realworld_packages_with_rate": 59,
+  "training": "models are trained on unmasked rows of the other packages (leave-one-package-out); only the held-out package's rows are masked"
+ }
+}

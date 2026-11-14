@@ -1,0 +1,65 @@
+{
+ "applications": 222,
+ "common_subset": 153,
+ "failure_rate": {
+  "PyCG": 0.3108108108108108,
+  "Jarvis": 0.018018018018018018,
+  "EVIDENT": 0.0
+ },
+ "common": {
+  "PyCG": {
+   "n": 153,
+   "tp": 40,
+   "fp": 6,
+   "fn": 41,
+   "tn": 66,
+   "precision": 0.8695652173913043,
+   "recall": 0.49382716049382713,
+   "f1": 0.6299212598425197,
+   "false_refutation_rate": 0.5061728395061729,
+   "missed_exposed": 41,
+   "false_alarms": 6
+  },
+  "Jarvis": {
+   "n": 153,
+   "tp": 50,
+   "fp": 7,
+   "fn": 31,
+   "tn": 65,
+   "precision": 0.8771929824561403,
+   "recall": 0.6172839506172839,
+   "f1": 0.7246376811594202,
+   "false_refutation_rate": 0.38271604938271603,
+   "missed_exposed": 31,
+   "false_alarms": 7
+  },
+  "EVIDENT strong": {
+   "n": 153,
+   "tp": 49,
+   "fp": 6,
+   "fn": 32,
+   "tn": 66,
+   "precision": 0.8909090909090909,
+   "recall": 0.6049382716049383,
+   "f1": 0.7205882352941176,
+   "false_refutation_rate": 0.3950617283950617,
+   "missed_exposed": 32,
+   "false_alarms": 6
+  },
+  "EVIDENT strong+weak": {
+   "n": 153,
+   "tp": 81,
+   "fp": 32,
+   "fn": 0,
+   "tn": 40,
+   "precision": 0.7168141592920354,
+   "recall": 1.0,
+   "f1": 0.8350515463917526,
+   "false_refutation_rate": 0.0,
+   "missed_exposed": 0,
+   "false_alarms": 32
+  }
+ },
+ "failed_by_pycg_label_rate": 0.6521739130434783,
+ "all_label_rate": 0.5675675675675675
+}

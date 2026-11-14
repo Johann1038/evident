@@ -1,0 +1,170 @@
+advisory,package,named_in_text,mined_functions
+CVE-2023-49081,aiohttp,ClientSession; Connection,ClientRequest.send
+CVE-2023-49082,aiohttp,ClientSession,ClientRequest.__init__
+CVE-2024-23334,aiohttp,app.router.add_routes; follow_symlinks; web.static,StaticResource._handle; StaticResource.url_for
+CVE-2024-27306,aiohttp,show_index; web.static,StaticResource._directory_as_html
+CVE-2025-69223,aiohttp,auto_decompress,BaseRequest.post; BodyPartReader.__init__; BodyPartReader._decode_content; BodyPartReader.decode; BodyPartReader.read; BodyPartReaderPayload.write; BrotliDecompressor.__init__; BrotliDecompressor.decompress_sync; BrotliDecompressor.flush; DeflateBuffer.__init__; DeflateBuffer.feed_data; DeflateBuffer.set_exception; MultipartPayloadWriter.__init__; MultipartWriter.write; ZLibCompressor.__init__; ZLibDecompressor.__init__; ZLibDecompressor.decompress; ZLibDecompressor.decompress_sync; ZSTDDecompressor.__init__; ZSTDDecompressor.decompress_sync; ZlibBaseHandler.__init__
+CVE-2025-69226,aiohttp,web.static,StaticResource._handle; StaticResource.resolve
+CVE-2025-69229,aiohttp,request.read,StreamReader.__init__; StreamReader.__init__; StreamReader._read_nowait_chunk; StreamReader._read_nowait_chunk; StreamReader.begin_http_chunk_receiving; StreamReader.end_http_chunk_receiving; StreamReader.readchunk
+CVE-2025-69230,aiohttp,cookies,parse_cookie_header
+CVE-2026-111748,aiohttp,Request.scheme,BaseRequest.__init__; HttpRequestParser.parse_message
+CVE-2026-123817,aiohttp,WebSocket; max_msg_size,ClientSession._ws_connect; ClientWebSocketResponse.__init__; ClientWebSocketResponse._handle_ping_pong_exception; ClientWebSocketResponse.close; ClientWebSocketResponse.receive; HttpParser.feed_data; RequestHandler.__init__; RequestHandler._resume_msg_queue_reading; RequestHandler.data_received; RequestHandler.eof_received; RequestHandler.finish_response; RequestHandler.finish_response; WebSocketDataQueue.__init__; WebSocketDataQueue._read_from_buffer; WebSocketDataQueue.feed_data; WebSocketReader.__init__; WebSocketReader.__init__; WebSocketReader._feed_data; WebSocketReader._feed_data; WebSo
+CVE-2026-34514,aiohttp,content_type,FormData.add_field
+CVE-2026-34519,aiohttp,reason,HTTPException.__init__; StreamResponse._set_status; _py_serialize_headers
+CVE-2026-34520,aiohttp,request.url.origin,HeadersParser.parse_headers
+CVE-2026-34525,aiohttp,Application.add_domain,HeadersParser.parse_headers; HttpParser.parse_headers
+CVE-2026-47265,aiohttp,Cookie; cookies,ClientSession._request
+CVE-2026-50269,aiohttp,MultipartWriter.append,Payload._binary_headers
+CVE-2026-54274,aiohttp,WebSocket,WebSocketReader._feed_data; WebSocketReader._handle_frame
+CVE-2026-54278,aiohttp,client_max_size,StreamReader._read_nowait
+CVE-2026-59881,aiohttp,WebSocket,ClientSession._ws_connect; WebSocketReader.__init__
+CVE-2026-69243,aiohttp,WebSocket,HttpParser.__init__; HttpParser.feed_data
+CVE-2026-64847,anyio,stderr; sys.stderr,process_worker
+CVE-2026-114134,black,pyproject.toml; tool.black.required; use_pyproject,read_version_specifier_from_pyproject
+CVE-2020-6802,bleach,AppSec; CxSCA; bleach.clean; fp170.pdf; noscript; nvd.nist.gov; show_bug.cgi,BleachHTMLParser._parse
+CVE-2021-23980,bleach,AppSec; CxSCA; SecurityMB; bleach.clean; fp170.pdf; iframe; math; noframes; noscript; script; show_bug.cgi; strip_comments; style; svg; textarea; title; xmp,BleachSanitizerFilter.sanitize_token
+CVE-2023-49083,cryptography,cryptography.hazmat.primitives.serialization.pkcs7; der_p7; load_der_pkcs7_certificates; load_pem_pkcs7_certificates; pem_p7,Backend._load_pkcs7_certificates
+CVE-2024-26130,cryptography,PrivateFormat.PKCS12.encryption_builder; ValueError; encryption_algorithm; hmac_hash; pkcs12.serialize_key_and_certificates,Backend.serialize_key_and_certificates_to_pkcs12
+CVE-2026-26007,cryptography,EllipticCurvePublicNumbers.public_key; XlabAI; load_der_public_key; load_pem_public_key; public_key_from_numbers; small_subgroup_order; victim_private_key,get_curve_for_oid
+CVE-2026-40036,dfir-unfurl,ValueError; api_url; argparse.ArgumentParser; args.generate_only; args.nested; args.output; args.size; args.target; args.test; b64_payload; base64.b64encode; base_size_mb; chunks.append; compressed_data.read; compression_ratio; confirm.lower; create_compression_bomb; create_malicious_url; create_nested_bomb; create_recursive_quine_bomb; decode; decompressor.decompress; encode_for_unfurl; f.write; inflated_bytes; iter; main; malicious_url; max_length; memory_exhaustion_likely; os.path.abspath; os.path.dirname; os.path.join; parser.add_argument; parser.parse_args; payload_path; payload_url; requests.exceptions.ConnectionError; requests.get; response.status_code; response_time; script_dir; security_poc; status_code; store_true; sys.exit; target_bytes; target_size_mb; target_url; test_data; test_vulnerability; theoretical_size; time.time; total_size; zlib.compress; zlib.decompress; zlib.decompressobj,run
+CVE-2025-65430,django-allauth,IdP; is_active,OAuthLibRequestValidator.validate_bearer_token; OAuthLibRequestValidator.validate_refresh_token; TokenView._create_token_response; TokenView._post_device_token; TokenView._pre_token; poll_device_code
+CVE-2025-65431,django-allauth,NetIQ; preferred_username,NetIQProvider.extract_uid; OktaProvider.extract_uid
+CVE-2020-17495,django-celery-results,result_extended,DatabaseBackend._store_result
+CVE-2023-31047,django,forms.FileField; forms.ImageField,FileInput.format_value; FileInput.format_value; FileInput.format_value; FileInput.value_from_datadict; FileInput.value_from_datadict; FileInput.value_from_datadict
+CVE-2023-41164,django,django.utils.encoding.uri_to_iri,repercent_broken_unicode; repercent_broken_unicode; repercent_broken_unicode
+CVE-2023-43665,django,chars; truncatechars_html; truncatewords_html; words,Truncator.__init__; Truncator.__init__; Truncator.__init__; Truncator._truncate_html; Truncator._truncate_html; Truncator._truncate_html
+CVE-2024-39329,django,django.contrib.auth.backends.ModelBackend.authenticate,check_password; verify_password
+CVE-2024-41990,django,urlize; urlizetrunc,Urlizer.trim_punctuation; Urlizer.trim_punctuation
+CVE-2024-42005,django,QuerySet.values; values_list,Query.set_values; Query.set_values
+CVE-2024-45230,django,urlize; urlizetrunc,Urlizer.trim_punctuation; Urlizer.trim_punctuation; Urlizer.trim_punctuation
+CVE-2025-57833,django,FilteredRelation; QuerySet.alias; QuerySet.annotate,Query.add_filtered_relation; Query.add_filtered_relation; Query.add_filtered_relation
+CVE-2025-59681,django,MariaDB; MySQL; QuerySet.aggregate; QuerySet.alias; QuerySet.annotate; QuerySet.extra,Query.check_alias
+CVE-2025-59682,django,django.utils.archive.extract,BaseArchive.target_filename
+CVE-2025-64458,django,django.http.HttpResponsePermanentRedirect; django.http.HttpResponseRedirect; django.shortcuts.redirect,HttpResponseRedirectBase.__init__; HttpResponseRedirectBase.__init__; HttpResponseRedirectBase.__init__; HttpResponseRedirectBase.__init__
+CVE-2025-64459,django,QuerySet; QuerySet.exclude; QuerySet.filter; QuerySet.get; _connector,Q.__init__; Q.__init__; Q.__init__; Q.__init__
+CVE-2026-1207,django,PostGIS; RasterField,PostGISOperator.check_raster
+CVE-2026-1285,django,Truncator.words; django.utils.text.Truncator.chars; truncatechars_html; truncatewords_html,TruncateHTMLParser.handle_endtag
+CVE-2026-1287,django,FilteredRelation; QuerySet; aggregate; alias; annotate; extra; values; values_list,Query.check_alias
+CVE-2026-1312,django,FilteredRelation; QuerySet.order_by,Query.add_filtered_relation; SQLCompiler._order_by_pairs
+CVE-2023-29483,dnspython,TuDoor,receive_udp; receive_udp; udp
+CVE-2024-45314,flask-appbuilder,AppBuilder,AuthDBView.login; AuthLDAPView.login; AuthOIDView.login; response_unauthorized_mvc
+CVE-2025-32962,flask-appbuilder,AppBuilder,is_safe_redirect_url
+CVE-2025-58065,flask-appbuilder,AppBuilder,BaseSecurityManager.register_views
+CVE-2024-6844,flask-cors,unquote_plus,make_after_request_function.cors_after_request
+CVE-2023-30861,flask,flask.session.permanent; session; session.permanent,SecureCookieSessionInterface.save_session; SecureCookieSessionInterface.save_session
+CVE-2026-27205,flask,session,Flask.process_response; RequestContext.__init__; RequestContext.copy; RequestContext.push; SecureCookieSession.__getitem__; SecureCookieSession.__init__; SecureCookieSession.__init__.on_update; SecureCookieSession.get; SecureCookieSession.setdefault; _default_template_ctx_processor
+CVE-2023-40267,gitpython,clone; clone_from,Repo._clone
+CVE-2023-40590,gitpython,git; git.exe,Git.custom_environment; Git.execute
+CVE-2023-41040,gitpython,r.commit; r.index.diff; r.tree; repodir,SymbolicReference._get_ref_info_helper; SymbolicReference._get_ref_info_helper
+CVE-2025-43859,h11,length,ChunkedReader.__call__; ChunkedReader.__init__
+CVE-2020-28493,jinja2,_punctuation_re,urlize
+CVE-2024-22195,jinja2,xmlattr,do_xmlattr
+CVE-2024-34064,jinja2,xmlattr,do_xmlattr
+CVE-2024-56326,jinja2,format; str.format,SandboxedEnvironment.call; SandboxedEnvironment.format_string; SandboxedEnvironment.getattr; SandboxedEnvironment.getitem; inspect_format_method
+CVE-2025-27516,jinja2,str.format,do_attr
+CVE-2024-22415,jupyter-lsp,pillar.security,LanguageServerWebSocketHandler.open; LanguageServersHandler.get; LanguageServersHandler.initialize; PackageVersionInfo.change_version; file_uri_to_path; load_jupyter_server_extension; normalized_uri; setup_shadow_filesystem.shadow_virtual_documents
+CVE-2023-40170,jupyter-server,ContentsManager.files_handler_class; jupyter_server.files.handlers.FilesHandler,AuthenticatedFileHandler.get
+CVE-2023-49080,jupyter-server,JupyterLab,APIHandler.write_error; KernelActionHandler.post
+CVE-2026-40110,jupyter-server,allow_origin_pat; re.fullmatch; re.match,JupyterHandler._origin_matches_pat; JupyterHandler.check_origin; JupyterHandler.check_origin; JupyterHandler.check_referer; JupyterHandler.check_referer; JupyterHandler.set_cors_headers; JupyterHandler.set_cors_headers; JupyterHandler.set_default_headers; LoginFormHandler._redirect_safe; LoginFormHandler._redirect_safe; WebSocketMixin.check_origin; WebSocketMixin.check_origin; url_path_join
+CVE-2026-86049,jupyter-server,ServerApp,log_request
+CVE-2026-73417,jupyterlab,Import,ExtensionManager._is_allowed_by_listing; ExtensionManager._is_allowed_by_listing; ExtensionManager._update_extensions_list; ExtensionManager._update_extensions_list; LabApp.initialize_handlers; LabApp.initialize_handlers; PluginManager._find_locked; PluginManager._find_locked; PyPIExtensionManager.get_latest_version; PyPIExtensionManager.get_latest_version; PyPIExtensionManager.install; PyPIExtensionManager.install; PyPIExtensionManager.is_install_allowed; PyPIExtensionManager.is_install_allowed
+CVE-2023-36281,langchain,__subclasses__; load_prompt,_load_prompt; jinja2_formatter
+CVE-2023-39631,langchain,LanChain,NumExpr; evaluate; stringToExpression
+CVE-2023-46229,langchain,document_loaders,RecursiveUrlLoader.__init__
+CVE-2024-0243,langchain,BeautifulSoup; RecursiveUrlLoader; Soup; document_loaders; example.completely.different; html.parser; langchain_community; loader.load; max_depth; prevent_outside,extract_sub_links
+CVE-2024-28088,langchain,load_chain,try_load_from_hub
+CVE-2024-5998,langchain,FAISS.deserialize_from_bytes; os.system,WebResearchRetriever.from_llm
+CVE-2024-8309,langchain,GraphCypherQAChain,ArangoGraphQAChain.input_keys; FalkorDBQAChain.input_keys; GraphSparqlQAChain.input_keys; GremlinQAChain.input_keys; HugeGraphQAChain.input_keys; KuzuQAChain.input_keys; NebulaGraphQAChain.input_keys; NeptuneOpenCypherQAChain.input_keys; NeptuneSparqlQAChain.input_keys; OntotextGraphDBQAChain.input_keys; _get_configs_for_multi_dirs; _get_configs_for_single_dir; get_min_version_from_toml
+CVE-2026-55443,langchain,LangSmith,FilesystemFileSearchMiddleware.__init__.glob_search; FilesystemFileSearchMiddleware._python_search; FilesystemFileSearchMiddleware._ripgrep_search; _FilesystemClaudeFileToolMiddleware._validate_and_resolve_path; _expand_include_patterns; _validate_path
+CVE-2023-39662,llama-index,PandasQueryEngine,default_output_processor; safe_eval; safe_exec
+CVE-2025-1753,llama-index,os.system,RagCLI.chat_engine_from_query_pipeline; RagCLI.handle_cli
+CVE-2025-3044,llama-index,ArxivReader,default_formatter
+CVE-2025-68480,marshmallow,Schema.load; ValidationError; isinstance; load_many; schema.load,ErrorStore.store_error; merge_errors
+CVE-2026-59928,mistune,block_parser; mistune.create_markdown; ref_def; ref_links; state.env; time.time; unikey,BlockParser.parse_ref_link; _trim_partial_next_line_indent
+CVE-2024-21272,mysql-connector-python,MySQL,CMySQLConnection.prepare_for_mysql; CMySQLCursor._batch_insert; CMySQLCursor.execute
+CVE-2025-53000,nbconvert,Batch_file; LoadLibrary; LoadLibraryEx; Machine_Learning.ipynb; inkscape; inkscape.bat,SVG2PDFPreprocessor._inkscape_default; SVG2PDFPreprocessor.convert_figure
+CVE-2023-48795,paramiko,MitM; OpenSSH,output; post_process_findings
+CVE-2020-35653,pillow,PcxDecode,PcxImageFile._open
+CVE-2022-22817,pillow,exit,eval
+CVE-2026-112892,pillow,io.BytesIO,MspDecoder.decode
+CVE-2026-112896,pillow,AddressSanitizer; BitsPerSample; BufferError; BytesIO; ColorMap; CustomField; Image.__file__; Image.__version__; Image.core.__file__; ImagingLibTiffSetField; KiB; MiB; PACKAGE_PINS.items; PackBits; ProcessLookupError; PyImaging_LibTiffEncoderNew; RuntimeError; SystemExit; TimeoutError; UnicodeError; ValueError; __asan_address_is_poisoned; __asan_init; __asan_region_is_poisoned; _imaging.cpython; abort_on_error; all; argparse.ArgumentParser; arguments.asan_runtime.resolve; arguments.child; arguments.package_path.resolve; base64.b64decode; bits_preserved; bytearray; checked_image_module; child; child_failed; colormap16; colormap8; colormap_absent; control_passed; decoder.decompress; decoder.eof; decoder.unconsumed_tail; decoder.unused_data; detect_leaks; diagnostics.clear; disable_coredump; dlopen; emit; encode; expected_hash; expected_observation; field; fixture; getattr; guard_passed; halt_on_error; hashlib.sha256; hexdigest; image.info.get; image.load; image.save; image.size; image.tag_v2; image_module; io.BytesIO; json.dumps; json.loads; key.data.extend; key.fileobj; key.fileobj.fileno; libclang_rt.asan_osx_dynamic.dylib; limits; log_path; macosx_11_0_arm64.whl; main; malloc_fill_byte; map_field; map_preserved; max; max_malloc_fill_size; min; os.close; os.devnull; os.dup; os.dup2; os.killpg; os.read; os.write; output.clear; output.getvalue; output.splitlines; package.is_dir; parser.add_argument; parser.parse_args; path.is_relative_to; path.read_bytes; platform.machine; preexec_fn; process.pid; process.returncode; process.stderr; process.stdout; process.wait; process_symbols; quiet.fileno; resolve; resource.setrlimit; run_case; runtime.is_file; saved_bits; selector.get_map; selector.register; selector.select; selector.unregister; selectors.DefaultSelector; setup_failed; sort_keys; start_new_session; struct.unpack; struct.unpack_from; subprocess.TimeoutExpired; sys.executable; sys.path.insert; sys.platform; sys.version_info; td_bitspersample; tempfile.TemporaryDirectory; time.monotonic; unsafe_save_returned; within_limits; zlib.decompressobj,_save
+CVE-2026-59198,pillow,AddressSanitizer; Image.new; ImagingTgaRleEncode; PIL.__version__; _setimage; bytearray; calloc; ceil; comparePixels; extract_oob_payload; fp.write; hashlib.sha256; hexdigest; im.save; io.BytesIO; max; max_oob_bytes.bin; maximum_oob_window; memcmp; memcpy; nonzero_oob_bytes; oob.append; oob.extend; out.getvalue; packed_row_bytes; save; serialized_distinct_oob_offsets; sum; tga_rle,_save
+GHSA-4fx9-vc88-q2xc,pillow,JpegImagePlugin,JpegImageFile.load_read
+OSV-2022-1074,pillow,_Py_DECREF; frame_dealloc,BLP1Decoder._decode_jpeg_stream
+OSV-2022-715,pillow,ImagingJpegDecode; jpeg_read_scanlines,BLP1Decoder._decode_jpeg_stream
+CVE-2025-4565,protobuf,message_test,GroupDecoder; MessageDecoder; _DecodeFixed32; _DecodeUnknownField
+CVE-2026-0994,protobuf,RecursionError; google.protobuf.json_format.ParseDict; max_recursion_depth,_Parser.ConvertMessage; _Parser.ConvertMessage; _Parser._ConvertAnyMessage; _Parser._ConvertAnyMessage
+CVE-2026-30922,pyasn1,ByteDance; MemoryError; RecursionError; _decodeComponentsSchemaless; decodeFun; decoder.decode; depth; indefLenValueDecoder; pyasn1.codec.ber; sys.setrecursionlimit; valueDecoder,SingleItemDecoder.__call__; SingleItemDecoder.__call__
+CVE-2023-52323,pycryptodomex,PyCryptodome,PKCS115_Cipher.decrypt; PKCS115_Cipher.encrypt; PKCS1OAEP_Cipher.__init__; PKCS1OAEP_Cipher.decrypt; PKCS1OAEP_Cipher.encrypt; _pkcs1_decode; new
+CVE-2022-40896,pygments,SmithyLexer,SqlJinjaLexer.analyse_text
+CVE-2022-29217,pyjwt,EdDSA; cryptography.hazmat.primitives; cryptography.hazmat.primitives.asymmetric; decoded_bad; decoded_good; ed25519.Ed25519PrivateKey.generate; encoded_bad; encoded_good; encryption_algorithm; invalid_strings; jwt.algorithms.get_default_algorithms; jwt.decode; jwt.encode; load_pem_private_key; load_pem_public_key; load_ssh_public_key; priv.pem; priv_key_bytes; private_key; private_key.private_bytes; private_key.public_key; pub.pem; pub_key_bytes; public_bytes; serialization.Encoding.OpenSSH; serialization.NoEncryption; serialization.PublicFormat.OpenSSH; ssh.pub; ssh_key_bytes; str_key,HMACAlgorithm.prepare_key; raw_to_der_signature
+CVE-2026-102269,pyjwt,jti; master; raw_token,PyJWS._load
+CVE-2026-114608,pylint,pickle.load,load_results; load_results; save_results; save_results
+CVE-2026-96749,pymongo,MongoDB,_EncryptionIO.kms_request; _EncryptionIO.kms_request; _parse_srv; _parse_srv; _validate_uri; split_hosts
+CVE-2025-69277,pynacl,crypto_core_ed25519_is_valid_point,get_project_configurations
+CVE-2026-27459,pyopenssl,OpenSSL; set_cookie_generate_callback,_CookieGenerateCallbackHelper.__init__; _CookieGenerateCallbackHelper.__init__.wrapper
+CVE-2023-46250,pypdf,PdfWriter; clone_from,ContentStream._clone; ContentStream.clone; DictionaryObject._clone; DictionaryObject.clone; StreamObject._clone
+CVE-2026-102995,pypdf,ToUnicode,parse_bfchar; process_cm_line
+CVE-2026-102996,pypdf,TrueType,Font.__check_entry_count; Font._collect_tt_t1_character_widths
+CVE-2026-102997,pypdf,FlateDecode,decompress
+CVE-2026-119203,pypdf,trailer,PdfReader._read_standard_xref_table; PdfReader._read_xref_tables_and_trailers
+CVE-2026-27025,pypdf,ToUnicode,parse_bfchar; parse_bfrange
+CVE-2026-27026,pypdf,FlateDecode,decompress
+CVE-2026-31826,pypdf,BytesIO; file.pdf,DictionaryObject.read_from_stream
+CVE-2026-71870,pypdf,ToUnicode,parse_bfrange
+CVE-2022-4396,pyrdfa3,_get_option,processURI; pyRdfa.rdf_from_sources
+CVE-2026-24486,python-multipart,file_dir; os.path.join,File.__init__
+CVE-2025-61765,python-socketio,__reduce__; pickle; pickle.loads,AsyncAioPikaManager._listen; AsyncAioPikaManager._publish; AsyncPubSubManager._thread; AsyncRedisManager._publish; KafkaManager._listen; KafkaManager._publish; KombuManager._publish; PubSubManager._thread; RedisManager._publish; ZmqManager._listen; ZmqManager._publish
+CVE-2023-28858,redis,ChatGPT,Redis.from_url; SentinelCommands.sentinel; SentinelCommands.sentinel_flushconfig; SentinelCommands.sentinel_get_master_addr_by_name; SentinelCommands.sentinel_master; SentinelCommands.sentinel_masters; SentinelCommands.sentinel_monitor; SentinelCommands.sentinel_remove; SentinelCommands.sentinel_sentinels; SentinelCommands.sentinel_set; SentinelCommands.sentinel_slaves
+CVE-2024-35195,requests,Session,HTTPAdapter.get_connection; HTTPAdapter.send
+CVE-2024-47081,requests,requests.Session.trust_env; trust_env,get_netrc_auth
+CVE-2024-3574,scrapy,Authentication; Authorization; dont_redirect; request.meta,_build_redirect_request
+GHSA-jm3v-qxmh-hxwv,scrapy,MetaRefreshMiddleware; RedirectMiddleware,_build_redirect_request
+CVE-2024-40647,sentry-sdk,env; sentry_sdk.init; sentry_sdk.integrations._DEFAULT_INTEGRATIONS.remove; sentry_sdk.integrations.stdlib.StdlibIntegration; subprocess; subprocess.check_output,_install_subprocess.sentry_patched_popen_init
+CVE-2024-6345,setuptools,package_index,PackageIndex._download_git; PackageIndex._download_hg; PackageIndex._download_svn; PackageIndex._download_url; PackageIndex._vcs_split_rev_from_url; PackageIndex.download
+CVE-2024-32879,social-auth-app-django,MariaDB; MySQL; social_auth_usersocialauth; uid; utf8_bin; varchar,AbstractUserSocialAuth.get_social_auth
+CVE-2025-61783,social-auth-app-django,associate_by_email,DjangoUserMixin.create_user
+CVE-2026-57175,social-auth-core,AuthnRequest; IdP,SAMLAuth.auth_complete; SAMLAuth.auth_url; SAMLAuth.get_idp
+CVE-2026-57176,social-auth-core,user_id,UserMixin.create_social_auth; UserMixin.get_social_auth; VendOAuth2.access_token_url; VendOAuth2.user_data
+CVE-2026-57177,social-auth-core,LoginRadius,LoginRadiusAuth.auth_html
+CVE-2026-59893,sqlparse,Dockerfile; Exception; FilterStack.run; ImportError; PostgreSQL; SQLParseError; byte_len; join; lexer.tokenize; make_payload; n_curr; n_prev; n_ratio; parse; parsestream; payload.encode; ratio_1000_2000; re.finditer; results.append; rexmatch; sample_sizes; sqlparse.__version__; sqlparse.exceptions; sqlparse.format; sqlparse.parse; sqlparse.split; sys.exit; sys.stderr; t_1000; t_2000; t_curr; t_prev; t_start; time.perf_counter,Lexer.get_tokens; offset
+CVE-2026-59894,sqlparse,output_format; output_format_snippet_injection; poc.zip; sqlparse.format; write_text,OutputPHPFilter._process; OutputPythonFilter._process
+CVE-2024-47874,starlette,FastAPI; Route; filename; poc; request.form; starlette.applications; starlette.routing,MultiPartParser.on_part_data; _user_safe_decode
+CVE-2026-48710,starlette,BadHost; Host; host; scope,URL.__init__
+CVE-2023-54397,tornado,chunk_len; chunk_len_str.strip; content_length; self._expected_content_remaining,HTTP1Connection._read_body; HTTP1Connection._read_chunked_body; HTTP1Connection.write_headers; HTTP1ServerConnection._server_request_loop
+CVE-2024-14029,tornado,MainHandler; Pound_; TornadoServer; asyncio.run; listen; main; post; self.request.body; self.write; tornado.web.RequestHandler; wait,HTTP1Connection._can_keep_alive; HTTP1Connection._read_body; HTTP1Connection.write_headers; HTTPHeaders.parse_line; parse_hex_int
+CVE-2025-67725,tornado,max_header_size,_parseparam
+CVE-2026-103261,tornado,IOLoop; ParseUrlEncodedConfig.max_arguments; ValueError; _DEFAULT_PARSE_BODY_CONFIG.urlencoded.max_arguments; config.urlencoded.max_arguments; keep_blank_values; max_header_size; max_num_fields; parse_body_arguments; parse_qs_bytes; self.arguments; self.query; set_parse_body_config; tornado.escape.parse_qs_bytes; uri.partition; uri_arguments; urllib.parse.parse_qs; urllib.parse.parse_qsl; web_test,HTTPServerRequest.__init__; HTTPServerRequest.__init__
+CVE-2026-116577,tornado,max_header_size,HTTPHeaders.__init__; HTTPHeaders.add; HTTPHeaders.parse_line
+CVE-2026-31958,tornado,max_body_size; tornado.httputil.ParseMultipartConfig,doctests; parse_body_arguments; parse_multipart_form_data
+CVE-2024-34062,tqdm,nos.system,cast
+CVE-2026-4372,transformers,AutoModelForCausalLM.from_pretrained; HuggingFace; _attn_implementation_internal; trust_remote_code,PreTrainedConfig.__init__; is_kernel
+CVE-2024-41671,twisted,TheResource; TwistedWeb; reactor.listenTCP; reactor.run; render_GET; render_POST; twisted.internet; twisted.web,HTTPChannel._finishRequestBody; _ChunkedTransferDecoder._dataReceived_TRAILER; redirectTo
+CVE-2019-11324,urllib3,ca_certs; ca_certs_dir; ssl_context,PoolManager.urlopen; Retry.__init__; _dnsname_to_stdlib; ssl_wrap_socket
+CVE-2020-26137,urllib3,putrequest,HTTPConnection.request_chunked
+CVE-2020-7212,urllib3,_encode_invalid_chars; percent_encodings,parse_url
+CVE-2025-66418,urllib3,preload_content,MultiDecoder.__init__
+CVE-2026-21441,urllib3,deflate; gzip; preload_content; zstd,HTTPResponse.drain_conn; redirect
+CVE-2026-97687,urllib3,FutureWarning; cert_reqs; proxy_assert_fingerprint; proxy_assert_hostname; proxy_ssl_context; ssl_context; use_forwarding_for_https; verify_mode,HTTPSConnection._connect_tls_proxy; HTTPSConnection.connect; HTTPSConnection.connect; ProxyManager.__init__; ProxyManager.__init__
+CVE-2026-113715,virtualenv,SystemExit; ascii; base_python; capture_output; command; created.returncode; home; ignore_errors; keys_injected; os.path.dirname; os.path.realpath; pyvenv.cfg; pyvenv_cfg_lines; read; real_home; repro; shutil.rmtree; shutil.which; split; splitlines; stdlib_cfg; stdlib_env; stdlib_home; stdout.strip; str.splitlines; subprocess.run; sys._home; sys_home; via_global_ref; virtualenv_cfg; virtualenv_env; virtualenv_home,Venv.create_inline; Venv.set_pyenv_cfg
+CVE-2026-113716,virtualenv,bin; capture_output; ensure_dir; exists; ignore_errors; lib; link_staying_inside_followed; local_bin; local_bin_before; make_checkout; mkdir; os.environ; os.getcwd; os.listdir; os.path.expanduser; os.path.realpath; payload.pth; payload_marker; payload_marker.exists; payload_ran_at_creation; pip.stderr; pip.stdout; pip_ran_payload_1; pip_ran_payload_2; plain_link_followed; repro; shutil.rmtree; site_packages; site_packages.mkdir; sorted; strip; subprocess.run; symlink_to; sys.argv; sys.executable; user_creates_venv_in_checkout_then_runs_pip; user_env; via_global_ref; write; write_text; written_1; written_2,Venv.create; ViaGlobalRefVirtualenvBuiltin.create
+CVE-2026-22702,virtualenv,app_data; exist_ok; os.makedirs,ReentrantFileLock._lock_file; _CountedFileLock.__init__; make_app_data
+CVE-2024-39317,wagtail,RealOrangeOne; parse_query_string,separate_filters_from_query; separate_filters_from_query; separate_filters_from_query
+CVE-2026-28222,wagtail,JavaScript; StreamField; TableBlock; class; first_col_is_header; forloop.first; table_caption; table_header; template,TestTableBlock.test_render_empty_table; TestTableBlock.test_render_empty_table; TestTableBlock.test_render_empty_table; TestTableBlock.test_render_empty_table; cell_classname; cell_classname; cell_classname; cell_classname; cell_span; cell_span; cell_span; cell_span
+CVE-2022-31015,waitress,select,HTTPChannel._flush_exception; HTTPChannel._flush_outbufs_below_high_watermark; HTTPChannel._flush_some; HTTPChannel._flush_some_if_lockable; HTTPChannel.write_soon; dispatcher.send
+CVE-2024-49768,waitress,TianGong; channel_request_lookahead; recv_bytes,HTTPChannel.readable; HTTPChannel.readable; HTTPChannel.received; HTTPChannel.received
+CVE-2024-49769,waitress,getpeername,HTTPChannel.__init__; HTTPChannel.__init__; HTTPChannel.handle_write; HTTPChannel.handle_write; dispatcher.__init__; dispatcher.__init__; dispatcher.connect; dispatcher.connect; dispatcher.handle_expt_event; dispatcher.handle_expt_event; dispatcher_with_send.__init__; dispatcher_with_send.__init__; dispatcher_with_send.initiate_send; dispatcher_with_send.initiate_send; dispatcher_with_send.send; dispatcher_with_send.send; dispatcher_with_send.writable; dispatcher_with_send.writable
+CVE-2024-42353,webob,ParseResult; location; parse.urljoin; parse.urlparse; urljoin; urlparse,Response._make_location_absolute; Response._make_location_absolute
+CVE-2026-44889,webob,ParseResult; Response.location; location; parse.urljoin; parse.urlparse; urljoin; urllib.parse; urlsplit,Response._make_location_absolute; Response._make_location_absolute
+CVE-2023-25577,werkzeug,parse_form_data; request.files; request.form; request.get_data,FormDataParser.__init__; FormDataParser._parse_multipart; MultiPartParser.__init__; MultiPartParser.parse; MultipartDecoder.__init__; MultipartDecoder.next_event; Request.make_form_data_parser
+CVE-2023-35934,yt-dlp,Cookie; axel; cookies; curl; nvd.nist.gov,Aria2cFD._make_cmd; AxelFD._make_cmd; CurlFD._make_cmd; ExternalFD._call_downloader; ExternalFD.real_download; FFmpegFD._call_downloader; FileDownloader.download; HttpieFD._make_cmd; WgetFD._make_cmd; YoutubeDL.__extract_info; YoutubeDL.__init__; YoutubeDL.__init__.check_deprecated; YoutubeDL._calc_headers; YoutubeDL.download_with_info_file; YoutubeDLCookieJar.clear; YoutubeDLRedirectHandler.redirect_request
+CVE-2023-40581,yt-dlp,PowerShell; cmd; echo; f135.mp4; f251.webm; format; nvd.nist.gov; rem; subprocess,ExecPP.run; Popen.__init__
+CVE-2023-46121,yt-dlp,Referer; Secure_cookie; __youtubedl_smuggle; cinerama.embedPlayer; nvd.nist.gov; target_site,CybraryIE._real_extract; DubokuIE._real_extract; EmbedlyIE._real_extract; GenericIE._extract_embeds; GenericIE._real_extract; SlidesLiveIE._real_extract; StoryFireBaseIE._parse_video; VimeoBaseInfoExtractor._smuggle_referrer; VimeoBaseInfoExtractor._unsmuggle_headers; clean_headers
+CVE-2024-22423,yt-dlp,calc.exe; cmd.exe; compat_shlex_quote; format; join; nvd.nist.gov; re.match; s.replace,ExecPP.run; Popen.__init__; Popen.__init__; YoutubeDL.prepare_outtmpl.create_key; YoutubeDL.warn_if_short_id; args_to_str; shell_quote
+CVE-2024-38519,yt-dlp,JarLob; VideoObject; dlp.conf; ffmpeg.exe; nvd.nist.gov; system32; video.mp4,Namespace.__init__; Namespace.__iter__; Namespace.items_; YoutubeDL._prepare_filename; YoutubeDL.process_info; YoutubeDL.process_info; create_parser; join_nonempty; prepend_extension; prepend_extension; replace_extension; replace_extension; validate_options
+CVE-2026-26331,yt-dlp,GetCourseRu; GetCourseRuIE; TeachableCourseIE; TeachableIE; netrc_cmd; nvd.nist.gov,InfoExtractor._get_netrc_login_info; InfoExtractor.initialize
+CVE-2026-50019,yt-dlp,curl,Aria2cFD._make_cmd; CurlFD._make_cmd; ExternalFD._write_cookies; Popen.run; WgetFD._make_cmd
+CVE-2026-50023,yt-dlp,MyVideo; MyVideo.en.desktop; master.m3u8; payload.desktop; x.desktop; ytdlp_pwned_,YoutubeDL.process_info._write_link_file; _UnsafeExtensionError.sanitize_extension; _change_extension
+CVE-2026-50574,yt-dlp,dlp.conf; dlp.exe; ffmpeg.exe; title,Aria2cFD._call_downloader; Aria2cFD._call_process; Aria2cFD._call_process.get_stat; Aria2cFD._make_cmd; Aria2cFD.aria2c_rpc; Aria2cFD.supports_manifest
+CVE-2026-55404,yt-dlp,Application; Directory; Link; VideoObject; filename; pwned.exe; video.mp4; webpage_url,YoutubeDL.prepare_outtmpl; YoutubeDL.prepare_outtmpl.create_key; YoutubeDL.prepare_outtmpl.filename_sanitizer; YoutubeDL.process_info._write_link_file; create_parser; iri_to_uri
+GHSA-3v33-3wmw-3785,yt-dlp,DouyuShow; DouyuTV; JavaScript; LeSuisse; PhantomJS,DouyuBaseIE._download_cryptojs_md5; DouyuBaseIE._get_cryptojs_md5

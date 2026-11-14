@@ -1,0 +1,810 @@
+{
+ "sample": {
+  "groups": {
+   "completed": {
+    "n": 33,
+    "stars_median": 3064.0,
+    "locked_median": 56.0,
+    "locked_iqr": [
+     30.0,
+     94.0
+    ],
+    "lock_kind": {
+     "poetry": 7,
+     "pipfile": 3,
+     "requirements": 21,
+     "pdm": 2
+    },
+    "framework": {
+     "other": 6,
+     "aiohttp": 3,
+     "django": 13,
+     "fastapi": 5,
+     "flask": 6
+    },
+    "year": {
+     "2023": 28,
+     "2024": 3,
+     "2022": 2
+    }
+   },
+   "timeout": {
+    "n": 3,
+    "stars_median": 1569.0,
+    "locked_median": 67.0,
+    "locked_iqr": [
+     64.5,
+     76.5
+    ],
+    "lock_kind": {
+     "requirements": 1,
+     "pdm": 1,
+     "poetry": 1
+    },
+    "framework": {
+     "flask": 1,
+     "fastapi": 2
+    },
+    "year": {
+     "2022": 1,
+     "2023": 2
+    }
+   },
+   "not_processed": {
+    "n": 84,
+    "stars_median": 2947.5,
+    "locked_median": 63.5,
+    "locked_iqr": [
+     33.5,
+     106.75
+    ],
+    "lock_kind": {
+     "requirements": 33,
+     "poetry": 46,
+     "pipfile": 5
+    },
+    "framework": {
+     "django": 41,
+     "flask": 14,
+     "fastapi": 18,
+     "other": 7,
+     "aiohttp": 2,
+     "tornado": 2
+    },
+    "year": {
+     "2023": 74,
+     "2022": 4,
+     "2024": 6
+    }
+   }
+  },
+  "tests_completed_vs_not_processed": {
+   "stars": {
+    "mannwhitney_p": 0.9107809618017755
+   },
+   "locked": {
+    "mannwhitney_p": 0.41003103057084145
+   },
+   "lock_kind": {
+    "chi2_p": 0.0024503585858555005,
+    "categories": [
+     "pdm",
+     "pipfile",
+     "poetry",
+     "requirements"
+    ]
+   },
+   "framework": {
+    "chi2_p": 0.2770525977518931,
+    "categories": [
+     "aiohttp",
+     "django",
+     "fastapi",
+     "flask",
+     "other",
+     "tornado"
+    ]
+   }
+  },
+  "timeouts": [
+   {
+    "id": "alfredfrancis__ai-chatbot-framework@1a9e40805cbff0e16e124aad67656da09d3adcc7",
+    "stars": 2168,
+    "locked": 62,
+    "lock_kind": "requirements",
+    "framework": "flask",
+    "scan_done": false
+   },
+   {
+    "id": "amisadmin__fastapi-amis-admin@v0.5.7",
+    "stars": 1569,
+    "locked": 67,
+    "lock_kind": "pdm",
+    "framework": "fastapi",
+    "scan_done": false
+   },
+   {
+    "id": "CMHopeSunshine__LittlePaimon@v3.0.8",
+    "stars": 1155,
+    "locked": 86,
+    "lock_kind": "poetry",
+    "framework": "fastapi",
+    "scan_done": false
+   }
+  ]
+ },
+ "coverage": {
+  "completed": 33,
+  "resolvable": 24,
+  "end_to_end_coverage": 0.7272727272727273,
+  "excluded": [
+   {
+    "id": "ArchiveBox__ArchiveBox@v0.7.1",
+    "status": "baseline_unresolvable",
+    "reason": "required package has no compatible wheel (source builds disabled)"
+   },
+   {
+    "id": "CTFd__CTFd@3.5.3",
+    "status": "baseline_unresolvable",
+    "reason": "baseline dependency conflict (lockfile unsatisfiable for the target platform)"
+   },
+   {
+    "id": "DefectDojo__django-DefectDojo@b1ad396188e813586697588b6928740f6523a99f",
+    "status": "baseline_unresolvable",
+    "reason": "baseline dependency conflict (lockfile unsatisfiable for the target platform)"
+   },
+   {
+    "id": "Flexget__Flexget@dfb206140cc33022771b1e9d5fab26855daea422",
+    "status": "baseline_unresolvable",
+    "reason": "baseline dependency conflict (lockfile unsatisfiable for the target platform)"
+   },
+   {
+    "id": "GeoNode__geonode@4.1.0",
+    "status": "baseline_unresolvable",
+    "reason": "baseline dependency conflict (lockfile unsatisfiable for the target platform)"
+   },
+   {
+    "id": "HaoZhang95__Python24@7cbc04568a320f0bf048f5473fa72918fda712e4",
+    "status": "baseline_unresolvable",
+    "reason": "required package has no compatible wheel (source builds disabled)"
+   },
+   {
+    "id": "Hopetree__izone@lts",
+    "status": "baseline_unresolvable",
+    "reason": "baseline dependency conflict (lockfile unsatisfiable for the target platform)"
+   },
+   {
+    "id": "RasaHQ__rasa@3.5.11",
+    "status": "baseline_unresolvable",
+    "reason": "other: -aws` (v2.10.1) on the following platforms: `manylinux_2_17_aarch64`, `manylinux"
+   },
+   {
+    "id": "TandoorRecipes__recipes@1.4.12",
+    "status": "baseline_unresolvable",
+    "reason": "required package has no compatible wheel (source builds disabled)"
+   }
+  ],
+  "excluded_reasons": {
+   "required package has no compatible wheel (source builds disabled)": 3,
+   "baseline dependency conflict (lockfile unsatisfiable for the target platform)": 5,
+   "other: -aws` (v2.10.1) on the following platforms: `manylinux_2_17_aarch64`, `manylinux": 1
+  }
+ },
+ "drift": {
+  "evident": {
+   "n": 24,
+   "planned_changes": {
+    "mean": 11.625,
+    "median": 9.5,
+    "ci_mean": [
+     8.290625,
+     15.458333333333334
+    ]
+   },
+   "plan_not_realised": {
+    "mean": 0.0,
+    "median": 0.0,
+    "ci_mean": [
+     0.0,
+     0.0
+    ]
+   },
+   "unplanned_changes": {
+    "mean": 22.375,
+    "median": 10.5,
+    "ci_mean": [
+     11.833333333333334,
+     37.834374999999994
+    ]
+   },
+   "unplanned_major": {
+    "mean": 0.5416666666666666,
+    "median": 0.0,
+    "ci_mean": [
+     0.20833333333333334,
+     1.0
+    ]
+   },
+   "new_findings_from_unplanned": {
+    "mean": 6.791666666666667,
+    "median": 0.0,
+    "ci_mean": [
+     1.0833333333333333,
+     14.791666666666666
+    ]
+   },
+   "residual_findings": {
+    "mean": 37.833333333333336,
+    "median": 31.5,
+    "ci_mean": [
+     24.707291666666666,
+     52.375
+    ]
+   },
+   "new_findings": {
+    "mean": 7.958333333333333,
+    "median": 0.0,
+    "ci_mean": [
+     2.125,
+     15.666666666666666
+    ]
+   },
+   "planned_pins_realised": {
+    "mean": 1.0,
+    "all_realised": 23
+   },
+   "objective_gap": {
+    "definition": "realised residual expected risk (sum over remaining advisories of severity weight x exposure probability) minus the optimiser's planned residual",
+    "mean": 1.7615808737879028,
+    "median": 0.0,
+    "ci_mean": [
+     0.2752849762470311,
+     3.8026860081378433
+    ],
+    "zero_gap": 16,
+    "planned_objective_mean": 14.483010116316757
+   }
+  },
+  "vm_opt": {
+   "n": 24,
+   "planned_changes": {
+    "mean": 13.583333333333334,
+    "median": 9.5,
+    "ci_mean": [
+     9.915625,
+     17.75
+    ]
+   },
+   "plan_not_realised": {
+    "mean": 0.0,
+    "median": 0.0,
+    "ci_mean": [
+     0.0,
+     0.0
+    ]
+   },
+   "unplanned_changes": {
+    "mean": 22.666666666666668,
+    "median": 11.5,
+    "ci_mean": [
+     12.208333333333334,
+     37.875
+    ]
+   },
+   "unplanned_major": {
+    "mean": 0.5833333333333334,
+    "median": 0.0,
+    "ci_mean": [
+     0.20833333333333334,
+     1.0
+    ]
+   },
+   "new_findings_from_unplanned": {
+    "mean": 6.333333333333333,
+    "median": 0.0,
+    "ci_mean": [
+     0.9583333333333334,
+     13.958333333333334
+    ]
+   },
+   "residual_findings": {
+    "mean": 34.291666666666664,
+    "median": 22.5,
+    "ci_mean": [
+     20.998958333333334,
+     48.709374999999994
+    ]
+   },
+   "new_findings": {
+    "mean": 8.458333333333334,
+    "median": 0.5,
+    "ci_mean": [
+     2.9166666666666665,
+     15.792708333333326
+    ]
+   },
+   "planned_pins_realised": {
+    "mean": 1.0,
+    "all_realised": 24
+   },
+   "objective_gap": {
+    "definition": "realised residual expected risk (sum over remaining advisories of severity weight x exposure probability) minus the optimiser's planned residual",
+    "mean": -7.772266861027748,
+    "median": -3.1983006067872397,
+    "ci_mean": [
+     -12.340859157238839,
+     -3.589895795753975
+    ],
+    "zero_gap": 4,
+    "planned_objective_mean": 24.241666666666664
+   }
+  },
+  "coral_opt": {
+   "n": 24,
+   "planned_changes": {
+    "mean": 12.666666666666666,
+    "median": 9.0,
+    "ci_mean": [
+     8.997916666666667,
+     16.79270833333333
+    ]
+   },
+   "plan_not_realised": {
+    "mean": 0.0,
+    "median": 0.0,
+    "ci_mean": [
+     0.0,
+     0.0
+    ]
+   },
+   "unplanned_changes": {
+    "mean": 22.583333333333332,
+    "median": 11.0,
+    "ci_mean": [
+     12.041666666666666,
+     37.91770833333332
+    ]
+   },
+   "unplanned_major": {
+    "mean": 0.5416666666666666,
+    "median": 0.0,
+    "ci_mean": [
+     0.20833333333333334,
+     1.0
+    ]
+   },
+   "new_findings_from_unplanned": {
+    "mean": 6.583333333333333,
+    "median": 0.0,
+    "ci_mean": [
+     0.9583333333333334,
+     14.584374999999994
+    ]
+   },
+   "residual_findings": {
+    "mean": 35.458333333333336,
+    "median": 23.0,
+    "ci_mean": [
+     22.208333333333332,
+     49.79374999999999
+    ]
+   },
+   "new_findings": {
+    "mean": 8.708333333333334,
+    "median": 0.5,
+    "ci_mean": [
+     2.9166666666666665,
+     16.211458333333315
+    ]
+   },
+   "planned_pins_realised": {
+    "mean": 1.0,
+    "all_realised": 23
+   },
+   "objective_gap": {
+    "definition": "realised residual expected risk (sum over remaining advisories of severity weight x exposure probability) minus the optimiser's planned residual",
+    "mean": 2.6995364628643532,
+    "median": 0.8667444003156798,
+    "ci_mean": [
+     0.88443895465174,
+     4.984523299219487
+    ],
+    "zero_gap": 1,
+    "planned_objective_mean": 13.737188348755362
+   }
+  },
+  "uv_fix": {
+   "n": 23,
+   "residual_findings": {
+    "mean": 35.82608695652174,
+    "median": 30.0,
+    "ci_mean": [
+     22.043478260869566,
+     51.08695652173913
+    ]
+   },
+   "new_findings": {
+    "mean": 7.0,
+    "median": 0.0,
+    "ci_mean": [
+     1.6956521739130435,
+     13.95760869565217
+    ]
+   }
+  },
+  "latest": {
+   "n": 22,
+   "planned_changes": {
+    "mean": 10.909090909090908,
+    "median": 8.5,
+    "ci_mean": [
+     8.180681818181817,
+     14.001136363636357
+    ]
+   },
+   "plan_not_realised": {
+    "mean": 0.0,
+    "median": 0.0,
+    "ci_mean": [
+     0.0,
+     0.0
+    ]
+   },
+   "unplanned_changes": {
+    "mean": 27.90909090909091,
+    "median": 17.0,
+    "ci_mean": [
+     16.09090909090909,
+     42.63863636363635
+    ]
+   },
+   "unplanned_major": {
+    "mean": 2.1818181818181817,
+    "median": 2.0,
+    "ci_mean": [
+     1.2272727272727273,
+     3.272727272727273
+    ]
+   },
+   "new_findings_from_unplanned": {
+    "mean": 6.7272727272727275,
+    "median": 0.0,
+    "ci_mean": [
+     0.7261363636363637,
+     14.954545454545455
+    ]
+   },
+   "residual_findings": {
+    "mean": 33.09090909090909,
+    "median": 19.5,
+    "ci_mean": [
+     19.45340909090909,
+     48.7772727272727
+    ]
+   },
+   "new_findings": {
+    "mean": 11.727272727272727,
+    "median": 8.0,
+    "ci_mean": [
+     4.818181818181818,
+     20.5
+    ]
+   },
+   "planned_pins_realised": {
+    "mean": 1.0,
+    "all_realised": 22
+   }
+  },
+  "audit_fix": {
+   "n": 13,
+   "planned_changes": {
+    "mean": 6.846153846153846,
+    "median": 6.0,
+    "ci_mean": [
+     4.461538461538462,
+     10.001923076923067
+    ]
+   },
+   "plan_not_realised": {
+    "mean": 0.0,
+    "median": 0.0,
+    "ci_mean": [
+     0.0,
+     0.0
+    ]
+   },
+   "unplanned_changes": {
+    "mean": 29.384615384615383,
+    "median": 17.0,
+    "ci_mean": [
+     12.0,
+     54.53846153846154
+    ]
+   },
+   "unplanned_major": {
+    "mean": 1.3846153846153846,
+    "median": 0.0,
+    "ci_mean": [
+     0.38461538461538464,
+     2.4615384615384617
+    ]
+   },
+   "new_findings_from_unplanned": {
+    "mean": 12.153846153846153,
+    "median": 0.0,
+    "ci_mean": [
+     2.230769230769231,
+     25.540384615384607
+    ]
+   },
+   "residual_findings": {
+    "mean": 44.53846153846154,
+    "median": 42.0,
+    "ci_mean": [
+     22.073076923076922,
+     68.3076923076923
+    ]
+   },
+   "new_findings": {
+    "mean": 12.461538461538462,
+    "median": 1.0,
+    "ci_mean": [
+     2.5365384615384614,
+     25.61923076923075
+    ]
+   },
+   "planned_pins_realised": {
+    "mean": 1.0,
+    "all_realised": 13
+   }
+  },
+  "evident_vs_untouched_drift": {
+   "n": 24,
+   "median_diff": 2.5,
+   "p": 8.572377593819395e-05,
+   "unplanned_mean": 22.375,
+   "untouched_mean": 13.958333333333334
+  }
+ },
+ "confirmed_fixed": {
+  "definition": "share of the original findings with strong static reachability (L4 CONFIRMED) whose affected version is no longer installed in the resolver-realised environment; newly introduced findings are counted separately (new_findings); advisories are counted per (package, advisory)",
+  "evident": {
+   "projects_with_confirmed": 18,
+   "confirmed_findings": 89,
+   "fixed": 83,
+   "pooled": 0.9325842696629213,
+   "per_project_mean": 0.8750420875420875
+  },
+  "vm_opt": {
+   "projects_with_confirmed": 18,
+   "confirmed_findings": 89,
+   "fixed": 84,
+   "pooled": 0.9438202247191011,
+   "per_project_mean": 0.8861531986531986
+  },
+  "coral_opt": {
+   "projects_with_confirmed": 18,
+   "confirmed_findings": 89,
+   "fixed": 84,
+   "pooled": 0.9438202247191011,
+   "per_project_mean": 0.8861531986531986
+  },
+  "uv_fix": {
+   "projects_with_confirmed": 17,
+   "confirmed_findings": 86,
+   "fixed": 84,
+   "pooled": 0.9767441860465116,
+   "per_project_mean": 0.9117647058823529
+  },
+  "latest": {
+   "projects_with_confirmed": 16,
+   "confirmed_findings": 78,
+   "fixed": 76,
+   "pooled": 0.9743589743589743,
+   "per_project_mean": 0.90625
+  },
+  "audit_fix": {
+   "projects_with_confirmed": 9,
+   "confirmed_findings": 45,
+   "fixed": 44,
+   "pooled": 0.9777777777777777,
+   "per_project_mean": 0.8888888888888888
+  },
+  "upgrade_all": {
+   "projects_with_confirmed": 17,
+   "confirmed_findings": 88,
+   "fixed": 85,
+   "pooled": 0.9659090909090909,
+   "per_project_mean": 0.8921568627450981
+  }
+ },
+ "paired_tests": {
+  "family_size": 8,
+  "correction": "Holm",
+  "tests": [
+   {
+    "comparison": "evident_vs_uv_fix",
+    "metric": "changed",
+    "n": 23,
+    "n_nonzero": 17,
+    "median_evident": 25.0,
+    "median_other": 27.0,
+    "median_diff": 0.0,
+    "iqr_diff": [
+     -8.0,
+     1.5
+    ],
+    "ci_median_diff": [
+     -7.0,
+     0.0
+    ],
+    "rank_biserial": -0.2549019607843137,
+    "p": 0.39396761461121355,
+    "sides": "two-sided",
+    "p_holm": 0.5318932922118496
+   },
+   {
+    "comparison": "evident_vs_uv_fix",
+    "metric": "findings_removed",
+    "n": 23,
+    "n_nonzero": 17,
+    "median_evident": 0.6108597285067874,
+    "median_other": 0.7210526315789474,
+    "median_diff": -0.012658227848101333,
+    "iqr_diff": [
+     -0.08947368421052637,
+     0.0
+    ],
+    "ci_median_diff": [
+     -0.06818181818181823,
+     0.0
+    ],
+    "rank_biserial": -0.30718954248366015,
+    "p": 0.2659466461059248,
+    "sides": "two-sided",
+    "p_holm": 0.5318932922118496
+   },
+   {
+    "comparison": "evident_vs_vm_opt",
+    "metric": "changed",
+    "n": 24,
+    "n_nonzero": 15,
+    "median_evident": 26.5,
+    "median_other": 29.0,
+    "median_diff": -1.0,
+    "iqr_diff": [
+     -2.5,
+     0.0
+    ],
+    "ci_median_diff": [
+     -2.0,
+     0.0
+    ],
+    "rank_biserial": -1.0,
+    "p": 0.0005640585502400774,
+    "sides": "two-sided",
+    "p_holm": 0.003948409851680542
+   },
+   {
+    "comparison": "evident_vs_vm_opt",
+    "metric": "findings_removed",
+    "n": 24,
+    "n_nonzero": 15,
+    "median_evident": 0.6264824958323411,
+    "median_other": 0.7137106464792118,
+    "median_diff": -0.008549783549783585,
+    "iqr_diff": [
+     -0.044254584424862964,
+     0.0
+    ],
+    "ci_median_diff": [
+     -0.03448275862068961,
+     0.0
+    ],
+    "rank_biserial": -1.0,
+    "p": 0.0006549583433856954,
+    "sides": "two-sided",
+    "p_holm": 0.003948409851680542
+   },
+   {
+    "comparison": "evident_vs_coral_opt",
+    "metric": "changed",
+    "n": 24,
+    "n_nonzero": 15,
+    "median_evident": 26.5,
+    "median_other": 28.0,
+    "median_diff": 0.0,
+    "iqr_diff": [
+     -1.25,
+     0.0
+    ],
+    "ci_median_diff": [
+     -1.0,
+     0.0
+    ],
+    "rank_biserial": -0.7166666666666667,
+    "p": 0.019838752843622014,
+    "sides": "two-sided",
+    "p_holm": 0.07935501137448805
+   },
+   {
+    "comparison": "evident_vs_coral_opt",
+    "metric": "findings_removed",
+    "n": 24,
+    "n_nonzero": 15,
+    "median_evident": 0.6264824958323411,
+    "median_other": 0.6838815789473685,
+    "median_diff": 0.0,
+    "iqr_diff": [
+     -0.014787798408488095,
+     0.0
+    ],
+    "ci_median_diff": [
+     -0.012658227848101333,
+     0.0
+    ],
+    "rank_biserial": -0.6166666666666667,
+    "p": 0.03560071215888041,
+    "sides": "two-sided",
+    "p_holm": 0.10680213647664122
+   },
+   {
+    "comparison": "evident_vs_upgrade_all",
+    "metric": "changed",
+    "n": 23,
+    "n_nonzero": 23,
+    "median_evident": 25.0,
+    "median_other": 63.0,
+    "median_diff": -24.0,
+    "iqr_diff": [
+     -55.0,
+     -14.0
+    ],
+    "ci_median_diff": [
+     -50.0,
+     -14.0
+    ],
+    "rank_biserial": -0.9347826086956522,
+    "p": 9.259243651734428e-05,
+    "sides": "two-sided",
+    "p_holm": 0.0007407394921387543
+   },
+   {
+    "comparison": "evident_vs_upgrade_all",
+    "metric": "findings_removed",
+    "n": 23,
+    "n_nonzero": 18,
+    "median_evident": 0.6108597285067874,
+    "median_other": 0.7842105263157895,
+    "median_diff": -0.06338028169014087,
+    "iqr_diff": [
+     -0.13295739348370927,
+     0.0
+    ],
+    "ci_median_diff": [
+     -0.12380952380952381,
+     -0.025316455696202556
+    ],
+    "rank_biserial": -0.847953216374269,
+    "p": 0.0015918239652689542,
+    "sides": "two-sided",
+    "p_holm": 0.007959119826344771
+   }
+  ]
+ },
+ "case": {
+  "id": "Ehco1996__django-sspanel@v2023.12.26",
+  "django_advisories_affecting_4.2.6": 47,
+  "remaining_advisories_if_upgraded_to": {
+   "4.2.26": 23,
+   "4.2.30": 8,
+   "5.2.8": 28,
+   "5.2.19": 0
+  },
+  "planned_django": "5.2.19",
+  "planned_changes": 19,
+  "unplanned_changes": 4,
+  "residual_findings": 5,
+  "original_findings": 145
+ }
+}
